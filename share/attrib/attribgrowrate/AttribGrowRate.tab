@@ -1,0 +1,8 @@
+Id	Life	AttackNormal	DefenseNormal	Crit	CritP	AntiDefenseNormal	AttackMagic1	AttackMagic2	AttackMagic3	AttackMagic4	AntiDamageMagicImmunity	AntiAttackNormal	AntiAttackMagic1	AntiAttackMagic2	AntiAttackMagic3	AntiAttackMagic4	DamageChangeP	DamageNormalChangeP	DamageMagic1ChangeP	DamageMagic2ChangeP	DamageMagic3ChangeP	DamageMagic4ChangeP	AntiDamageChangeP	AntiDamageNormalChangeP	AntiDamageMagic1ChangeP	AntiDamageMagic2ChangeP	AntiDamageMagic3ChangeP	AntiDamageMagic4ChangeP	Energy	RunSpeed	WalkSpeed	TurnRoundSpeed	BallInterval	DamageNormalImmunity	DamageMagicImmunity	AntiDamageNormalImmunity	Damage1P	Damage2P	Damage3P	CritDamageP	AntiCritP	AntiCritDamageP	Lifesteal	LifestealP	CureChangeP	AntiCureChangeP	Endure	ThreatRateP	DodgeEnergy	DodgeEnergyAutoRecovery
+50001	0.05	0.025	0.01	0.1	0.1	0.025	0.025	0	0.008	0.005	0.15																																							
+50002	0.05	0.025	0.01	0.1	0.1	0.025	0.025	0	0.008	0.005	0.15																																							
+500	0.05	0.025																																																
+501		0.025																																																
+502			0.01																																															
+503				0.1																																														
+504	0.05																																																	

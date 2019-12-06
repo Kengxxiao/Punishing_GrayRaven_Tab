@@ -1,0 +1,151 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+99210101	剑客拔刀斩-伤害子弹	1	5.5	2.5		1.5	0			4		0.3			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992101011	991101	991109	991111						0	HitCase	1	1		1			1					
+99210106	剑客拔刀斩-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1					991110								0	HitCase		0		1			0					
+99210201	剑客连续斩-一段伤害子弹	1	5.5	2.5	0	1.5	0			4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992102011	991102								0	HitCase	1	0		1			1					
+99210202	剑客连续斩-二段伤害子弹	1	5.5	2.5	0	1.5	0			4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992102021	991103								0	HitCase	1	0		1			1					
+99210203	剑客连续斩-三段伤害子弹	1	5.5	2.5	0	1.5	0			4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992102031	991104	991109	991111						0	HitCase	1	1		1			1					
+99210208	剑客连续斩-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1					991110								0	HitCase		0		1			0					
+99210301	剑客挥劈-伤害子弹	1	3	6	-0.5	0	0			4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992103011	991105								0	HitCase	1	0		1			1					
+99210302	剑客挥劈-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+99210401	剑客戳刺-伤害子弹	1	1	6	0	3	0			4		0.27			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				992104011	991106								0	HitCase	1	0		1			1					
+99210403	剑客戳刺-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+99210501	剑客大招-伤害子弹1	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105011	991107								0	HitCase	1	1		1			1					
+99210502	剑客大招-伤害子弹2	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105021	991107								0	HitCase	1	1		1			1					
+99210503	剑客大招-伤害子弹3	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105031	991107								0	HitCase	1	1		1			1					
+99210504	剑客大招-伤害子弹4	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105041	991107								0	HitCase	1	1		1			1					
+99210505	剑客大招-伤害子弹5	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105051	991107								0	HitCase	1	1		1			1					
+99210506	剑客大招-伤害子弹6	2	2.5		0	0	0			4		0.15			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1				992105061	991107								0	HitCase	1	1		1			1					
+99210507	剑客大招-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1					991110								0	HitCase		0		1			0					
+97010201	酸液喷射者-Skill-02-戳刺	2	3			4	0			4		0.1			-1		FxMe1SpiderMd000001Shouji						-1			1					0	0	0	0							0	3				970102011	801026	970106							0	HitCase	1	0		1			1					
+97010202	酸液喷射者-Skill-02-戳刺	2	3			4	0			4		0.1			-1		FxMe1SpiderMd000001Shouji						-1			1					0	0	0	0							0	3				970102021	801026	970106							0	HitCase	1	0		1			1					
+97010301	酸液喷射者-Skill-03-吐息	2	0.9			3.6	25			4		3		1	1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		1	0.9		3	-20	0	10	1	0	0	0	0	3		1	97010302	1		1	1				970103011	801052	970106							0	HitCase		0		1	9999	1	1					
+97010302	酸液喷射者-Skill-03-吐息爆炸子子弹	2	2				0			4		1.5			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0.05		1	97010305	1		0	1													0	HitCase	1	0		1		1	0					
+97010303	酸液喷射者-Skill-03-吐息 预警	2	2				0			4		0.7			-1								-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010304	酸液喷射者-Skill-03-吐息 预警	2	2				0			4		1.5			-1						FxYujing1M05S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010305	酸液喷射者-Skill-03-吐息 持续毒液	2	1.5				0			4		4			-1	1			0.3		FxMe1SpiderMd000001Attack0304		-1			1	0				0	0	0	2							0	1					801007								0	HitCase	1	0		1			0					
+97010401	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97010406	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97010402	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97010407	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97010403	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97010408	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97010404	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97010409	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97010405	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97010410	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97010406	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97010411	1		0	1													0	HitCase	1	0		1		1	0					
+97010407	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97010412	1		0	1													0	HitCase	1	0		1		1	0					
+97010408	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97010413	1		0	1													0	HitCase	1	0		1		1	0					
+97010409	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97010414	1		0	1													0	HitCase	1	0		1		1	0					
+97010410	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97010415	1		0	1													0	HitCase	1	0		1		1	0					
+97010411	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970104111	801022	970107							0	HitCase		0		1			0					
+97010412	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970104121	801022	970107							0	HitCase		0		1			0					
+97010413	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970104131	801022	970107							0	HitCase		0		1			0					
+97010414	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970104141	801022	970107							0	HitCase		0		1			0					
+97010415	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970104151	801022	970107							0	HitCase		0		1			0					
+97010417	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010418	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010419	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010420	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010421	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97010501	酸液喷射者-Skill-05-漏酸	2	4			-2	0			4		7			-1	1	FxMe1SpiderMd000001Shouji		0.2				-1			1					0	0	0	0							0	1					801005								0	HitCase	1	0		1			0					
+97010502	酸液喷射者-Skill-05-漏酸	2	4				0			4		7			-1		FxMe1SpiderMd000001Shouji				FxMe1SpiderMd000001Attack0502		-1			1					0	0	0	0							0	1					801005								0	HitCase		0		1			0					
+97011001	转身-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+97020201	酸液喷射者-Skill-02-戳刺	2	3			4	0			4		0.1			-1		FxMe1SpiderMd000001Shouji						-1			1					0	0	0	0							0	3				970202011	801026	970106							0	HitCase	1	0		1			1					
+97020202	酸液喷射者-Skill-02-戳刺	2	3			4	0			4		0.1			-1		FxMe1SpiderMd000001Shouji						-1			1					0	0	0	0							0	3				970202021	801026	970106							0	HitCase	1	0		1			1					
+97020301	酸液喷射者-Skill-03-吐息	2	0.9			3.6	25			4		3		1	1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		1	0.9		3	-20	0	10	1	0	0	0	0	3		1	97010302	1		1	1				970203011	801052	970106							0	HitCase		0		1	9999	1	1					
+97020302	酸液喷射者-Skill-03-吐息爆炸子子弹	2	2				0			4		1.5			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0.05		1	97010305	1		0	1													0	HitCase	1	0		1		1	0					
+97020303	酸液喷射者-Skill-03-吐息 预警	2	2				0			4		1.5			-1								-1			1	0				0	0	0	1							0	1													0	HitCase	1	1		1			0					
+97020304	酸液喷射者-Skill-03-吐息 预警	2	2				0			4		1.5			-1						FxYujing1M05S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020305	酸液喷射者-Skill-03-吐息 持续毒液	2	1.5				0			4		4			-1	1			0.3		FxMe1SpiderMd000001Attack0304		-1			1	0				0	0	0	2							0	1					801007								0	HitCase	1	0		1			0					
+97020401	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97020406	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97020402	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97020407	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97020403	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97020408	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97020404	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97020409	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97020405	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1			3	-20	0	10	1	0	0	0	0	3		1	97020410	1		1	1													0	HitCase	1	0		1	9999	1	1					
+97020406	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97020411	1		0	1													0	HitCase	1	0		1		1	0					
+97020407	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97020412	1		0	1													0	HitCase	1	0		1		1	0					
+97020408	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97020413	1		0	1													0	HitCase	1	0		1		1	0					
+97020409	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97020414	1		0	1													0	HitCase	1	0		1		1	0					
+97020410	酸液喷射者-Skill-04-轰炸	2	1				0			4		1			-1						FxMe1SpiderMd000001Attack0303		-1			1					0	0	0	2	0		1	97020415	1		0	1													0	HitCase	1	0		1		1	0					
+97020411	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970204111	801022	970107							0	HitCase		0		1			0					
+97020412	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970204121	801022	970107							0	HitCase		0		1			0					
+97020413	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970204131	801022	970107							0	HitCase		0		1			0					
+97020414	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970204141	801022	970107							0	HitCase		0		1			0					
+97020415	酸液喷射者-Skill-04-轰炸	2	1				0			4		0.1			-1								-1			1					0	0	0	2							0	1				970204151	801022	970107							0	HitCase		0		1			0					
+97020417	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020418	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020419	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020420	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020421	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		1.5			-1						FxYujing1M10S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+97020501	酸液喷射者-Skill-05-漏酸	2	4			-2	0			4		7			-1	1	FxMe1SpiderMd000001Shouji		0.2				-1			1					0	0	0	0							0	1					801005								0	HitCase	1	0		1			0					
+97020502	酸液喷射者-Skill-05-漏酸	2	4				0			4		7			-1						FxMe1SpiderMd000001Attack0502		-1			1					0	0	0	0							0	1					801007								0	HitCase		0		1			0					
+97021001	转身-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+99220201	酸液喷射者-Skill-02-戳刺	1	3	8		4	0			4		0.1			-1		FxMe1SpiderMd000001Shouji				FxNpcYujing02		-1			1					0	0	0	0							0	1					701031								0	HitCase	1	0		1			1					
+99220301	酸液喷射者-Skill-03-喷泉-预警	2	1.2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3							4	1													0	HitCase	1	0		1			0					
+99220302	酸液喷射者-Skill-03-喷泉-实弹	2	1.2				10			4		3		1	-1	1	FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1.2	FxMe1SpiderMd000001Attack04	3	-25	0	10	0	0	0	0	3							4	1					701031								0	HitCase	1	0		1	9999	1	1					
+99220401	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1	FxMe1SpiderMd000001Attack04	3	-20	0	10	0	0	0	0	0							1	1					701031								0	HitCase		0		1	9999	1	1					
+99220402	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1	FxMe1SpiderMd000001Attack04	3	-20	0	10	0	0	0	0	0							1	1					701031								0	HitCase		0		1	9999	1	1					
+99220403	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1	FxMe1SpiderMd000001Attack04	3	-20	0	10	0	0	0	0	0							1	1					701031								0	HitCase		0		1	9999	1	1					
+99220404	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1	FxMe1SpiderMd000001Attack04	3	-20	0	10	0	0	0	0	0							1	1					701031								0	HitCase		0		1	9999	1	1					
+99220405	酸液喷射者-Skill-04-轰炸	2	1				10			4		3		1	-1		FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1	FxMe1SpiderMd000001Attack04	3	-20	0	10	0	0	0	0	0							1	1					701031								0	HitCase		0		1	9999	1	1					
+99220407	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		0.5			-1						FxNpcYujing01		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+99220408	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		0.5			-1						FxNpcYujing01		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+99220409	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		0.5			-1						FxNpcYujing01		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+99220410	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		0.5			-1						FxNpcYujing01		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+99220411	酸液喷射者-Skill-04-轰炸 预警	2	1				0			4		0.5			-1						FxNpcYujing01		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+99220501	酸液喷射者-Skill-05-漏酸	2	4			-2	0			4		7			-1	1	FxMe1SpiderMd000001Shouji		0.3				-1			1					0	0	0	0							0	1					701031								0	HitCase	1	0		1			0					
+99220502	酸液喷射者-Skill-05-漏酸	2	4			-2	0			4		7			-1		FxMe1SpiderMd000001Shouji				FxMe1SpiderMd000001Attack0503		-1			1					0	0	0	0							0	1					701031								0	HitCase		0		1			0					
+99221001	酸液喷射者-Skill-06-直线-预警	2	1.5				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3							4	1													0	HitCase	1	0		1			0					
+99221002	酸液喷射者-Skill-06-直线-实弹	2	1.5				10			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			EffectCase1	FxMe1SpiderMd000001Attack03Dandao		-1	1.5	FxMe1SpiderMd000001Attack04	3	20	0	10	0	0	0	0	3	5000		1	99221005	1		4	1					701031								0	HitCase	1	0		1	9999	1	1					
+99221005	酸液喷射者-Skill-06-直线-毒圈实际	2	1.5				0			4		2.5			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221006			0	1					701031								0	HitCase	1	0		1			0					
+99221006	酸液喷射者-Skill-06-直线-毒圈特效	2	1				0			4		2.5			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99221101	酸液喷射者-Skill-07-爱心3-预警	2	1				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3							4	1													0	HitCase	1	0		1			0					
+99221102	酸液喷射者-Skill-07-爱心3-实弹	2	1				5			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			Bone22	FxMe1SpiderMd000001Attack03Dandao		0	2	FxMe1SpiderMd000001Attack04	3	-100	0	10	0	0	0	0	3	0.5		1	99221103	1		4	1													0	HitCase	1	0		1	9999	1	1					
+99221103	酸液喷射者-Skill-07-爱心3-毒圈	2	2				0			4		2.1			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221104			0	1					701031								0	HitCase	1	0		1			0					
+99221104	酸液喷射者-Skill-07-爱心3-毒圈特效	2	1				0			4		2.5			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99221201	酸液喷射者-Skill-08-爱心4-预警	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3	0.5		1	99221203	1		4	1													0	HitCase	1	0		1			0					
+99221202	酸液喷射者-Skill-08-爱心4-实弹	2	2				5			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			Bone22	FxMe1SpiderMd000001Attack03Dandao		0	2	FxMe1SpiderMd000001Attack04	3	-100	0	10	0	0	0	0	3							4	1													0	HitCase	1	0		1	9999	1	1					
+99221203	酸液喷射者-Skill-08-爱心4-毒圈	2	2				0			4		2.1			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221204			0	1					701031								0	HitCase	1	0		1			0					
+99221204	酸液喷射者-Skill-08-爱心4-毒圈特效	2	1				0			4		2.1			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99221301	酸液喷射者-Skill-09-爱心5-预警	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3	0.5		1	99221303	1		4	1													0	HitCase	1	0		1			0					
+99221302	酸液喷射者-Skill-09-爱心5-实弹	2	2				5			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			Bone22	FxMe1SpiderMd000001Attack03Dandao		0	2	FxMe1SpiderMd000001Attack04	3	-100	0	10	0	0	0	0	3							4	1													0	HitCase	1	0		1	9999	1	1					
+99221303	酸液喷射者-Skill-09-爱心5-毒圈	2	2				0			4		2.1			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221304			0	1					701031								0	HitCase	1	0		1			0					
+99221304	酸液喷射者-Skill-09-爱心5-毒圈特效	2	1				0			4		2.1			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99221401	酸液喷射者-Skill-10-爱心6-预警	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3	0.5		1	99221403	1		4	1													0	HitCase	1	0		1			0					
+99221402	酸液喷射者-Skill-10-爱心6-实弹	2	2				5			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			Bone22	FxMe1SpiderMd000001Attack03Dandao		0	2	FxMe1SpiderMd000001Attack04	3	-100	0	10	0	0	0	0	3							4	1													0	HitCase	1	0		1	9999	1	1					
+99221403	酸液喷射者-Skill-10-爱心6-毒圈	2	2				0			4		2.1			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221404			0	1					701031								0	HitCase	1	0		1			0					
+99221404	酸液喷射者-Skill-10-爱心6-毒圈特效	2	1				0			4		2.1			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99221501	酸液喷射者-Skill-11-爱心7-预警	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	3	0.5		1	99221503	1		4	1													0	HitCase	1	0		1			0					
+99221502	酸液喷射者-Skill-11-爱心7-实弹	2	2				5			4		10		1	-1	1	FxMe1SpiderMd000001Shouji			Bone22	FxMe1SpiderMd000001Attack03Dandao		0	2	FxMe1SpiderMd000001Attack04	3	-100	0	10	0	0	0	0	3							4	1													0	HitCase	1	0		1	9999	1	1					
+99221503	酸液喷射者-Skill-11-爱心7-毒圈	2	2				0			4		2.1			-1	1			0.3				-1			1	0				0	0	0	2	0		1	99221504			0	1					701031								0	HitCase	1	0		1			0					
+99221504	酸液喷射者-Skill-11-爱心7-毒圈特效	2	1				0			4		2.1			-1						FxMe1SpiderMd000001Attack0503		-1			1	0				0	0	0	2							0	1													0	HitCase	1	0		1			0					
+99230101	重构镇暴兵盾猛-伤害子弹	3	3	210		1	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				992301011	901901	700279							0	HitCase	1	0		1			1					
+99230201	重构镇暴兵横扫-伤害子弹	3	3	210		1	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				992302011	901902								0	HitCase	1	0		1			1					
+99230401	重构镇暴兵-冲锋	1	2	2		1.5	0			4		2			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				992304011	901903	700281							0	HitCase	1	1		1			0					
+99230402	重构镇暴兵-预警	1	2	20		6	0			4		2			-1						FxNpcYujing02		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90350101	铁罐（实验级）-普攻-红茶-伤害	1	3	3		1.5	0			4		0.1			-1		FxMe1BioMd004040Attack06Shouji						-1			1					0	0	0	0							0	1				903501011	903512	903524							0	HitCase	1	0		1			1					
+90350104	铁罐（实验级）-普攻-红茶-范围	1	3	3		1.5	0			4		0.5			-1								-1	3		1	0				0	0	0	0							0	1													0	HitCase	1	0		0			0					
+90350105	铁罐（实验级）-普攻-红茶-特效	2	0.1				0			4		1.5			-1						FxMe1BioMd004040Attack05		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
+90350603	铁罐（实验级）-摇摇乐-技红-预警	2	4				0			4		2			-1						FxYujing1M05S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
+90350604	铁罐（实验级）-摇摇乐-技红-飞桶	2	0				10			4		5		1	-1		FxMe1BioMd004040Attack02Shouji			Me1BioMd004040Part	FxMe1BioMd004040Attack02Dandao		-1	2	FxMe1BioMd004040Attack0201	3	-50	0	10	0	0	0	0	0	5000		1	90350605	1		1	1				903506041	903513	903510	903521						0	HitCase		0		0		1	1					
+90350605	铁罐（实验级）-摇摇乐-技红-圆火	2	4				0			4		25			-1	1	FxMe1BioMd004040Attack02Shouji		0.3		FxMe1BioMd004040Attack0202		-1			1	0				0	0	0	2							0	1					903514								0	HitCase		0		0			1					
+90350703	铁罐（实验级）-摇摇乐-技黄-预警	1	3	25		12.5	0			4		1	0.5		-1						FxYujingJu01		-1			1	0				0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90350704	铁罐（实验级）-摇摇乐-技黄-飞桶	1	3	1			20			4		1		1	-1	1	FxMe1BioMd004040Attack03Shouji			Me1BioMd004040Part			-1	2		1	0				0	0	0	0	5000		1	90350705	1		0	1				903507041	903515	903510	903522						0	HitCase		0		1			1					
+90350705	铁罐（实验级）-摇摇乐-技黄-线火伤害	1	3	25		13.5	0			4		25			-1	1	FxMe1BioMd004040Attack03Shouji		0.3				-1			1	0				0	0	0	0							2	1					903516								0	HitCase		0		0			1					
+90350706	铁罐（实验级）-摇摇乐-技黄-线火特效	1	3	25			0			4		25			-1						FxMe1BioMd004040Attack03		-1			1	0				0	0	0	0							0	1													0	HitCase		0		0			0					
+90350804	铁罐（实验级）-摇摇乐-技蓝-爆炸	2	15				0			4		0.1			-1		FxMe1BioMd004040Attack04Shouji			Me1BioMd004040Part			-1			1	0				0	0	0	0							0	1				903508041	903517	903518	903510						0	HitCase	1	0		1			1					
+90350805	铁罐（实验级）-摇摇乐-技蓝-爆炸特效	2	15				0			4		0		1	-1								-1		FxMe1BioMd004040Attack04	1	0				0	0	0	0							0	1													0	HitCase		0		1			0					
+90350808	铁罐（实验级）-摇摇乐-技蓝-范围预警	2	15				0			4		1.5			-1					Me1BioMd004040Part	FxYujing1M06S		-1			1	0				0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90350902	铁罐（实验级）-空手-炮台-子弹1	1	1.5	40		0.5	0		22	4		3.8			-1	1	FxMe1BioMd004040Attack07Shouji		0.1				-1			2	-90	0	0	0	0	0	0	0							0	1					903519	903510							0	HitCase	1	0		1			0					
+90350903	铁罐（实验级）-空手-炮台-子弹2	1	1.5	40		0.5	0		-68	4		3.8			-1	1	FxMe1BioMd004040Attack07Shouji		0.1				-1			2	-90	0	0	0	0	0	0	0							0	1					903520	903510							0	HitCase	1	0		1			0					
+90350904	铁罐（实验级）-空手-炮台-预警1	1	1.5	40		0.5	0		22	4		1.3			-1								-1			2	0	0	0	0	0	0	0	0							0	1													0	HitCase	1	0		0			0					
+90350905	铁罐（实验级）-空手-炮台-预警2	1	1.5	40		0.5	0		-68	4		1.3			-1								-1			2	0	0	0	0	0	0	0	0							0	1													0	HitCase	1	0		0			0					
+90350906	铁罐（实验级）-空手-炮台-范围1	1	1.5	40		0.5	0		22	4		3.8			-1								-1			2	-90	0	0	0	0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90350907	铁罐（实验级）-空手-炮台-范围2	1	1.5	40		0.5	0		-68	4		3.8			-1								-1			2	-90	0	0	0	0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90351101	铁罐（实验级）-普攻-空手-伤害	1	3	3		1.5	0			4		0.1			-1		FxMe1BioMd004040Attack06Shouji						-1			1					0	0	0	0							0	1				903511011	903512	903524							0	HitCase	1	0		1			1					
+90351104	铁罐（实验级）-普攻-空手-范围	1	3	3		1.5	0			4		0.5			-1								-1	3		1	0				0	0	0	0							0	1													0	HitCase	1	0		0			0					
+90351105	铁罐（实验级）-普攻-空手-特效	2	0.1				0			4		1.5			-1						FxMe1BioMd004040Attack05		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
+90351301	铁罐（实验级）-特殊-小自爆-预警	2	2			0	0			4		1.8			-1								-1			1	0				0	0	0	0							0	1													0	HitCase	1	0		1			0					
+90351302	铁罐（实验级）-特殊-小自爆-伤害	2	0.1			0	0			4		0.1		1	-1								-1	2	FxMe1BioMd004040Attack0201	1	0				0	0	0	0							0	1					903537								0	HitCase		0		1			0					
+20080101	新空气墙-空气墙碰撞-1	1	10	2	0	0	0			6		0.1		0	-1								-1			1	0				0	0	0	0							0	1										715036			0	HitCase		0		1			0					
+20160401	电网 - 放电-1	2	8				0			4		1.2		0	-1								-1	0		1	0				0	0	0	0							0	1					201603	201610	201611	201612					0	HitCase		0		1			0					
+20160901	其他 - 瞄准线	2	0.2				20			4		3			-1					EffectCase1	FxWeaponExChongnengDandao		-1			3	-60	0	10	0	0	0	0	0							1	1													0	HitCase		0		0		1	0					
+20160902	掉落银螺母	2	1				10			4		5		1	-1						FxDrop02		-1			3	-10	0	20	0	0	0	0	3							4	1													1	HitCase		0		0			0					
+90199801	重构镇暴兵的技能5-盾墙释放	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+90199901	重构镇暴兵的技能5-盾墙结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					

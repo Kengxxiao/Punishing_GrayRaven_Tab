@@ -1,0 +1,61 @@
+Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11]	Key[12]	Key[13]	Key[14]	Key[15]	Key[16]	Key[17]	Key[18]	Key[19]	Key[20]	Key[21]	Key[22]	Key[23]	Key[24]	Key[25]	Key[26]	Key[27]	Key[28]	Key[29]	Key[30]	Key[31]	Key[32]	Key[33]	Key[34]	Key[35]	Key[36]	Key[37]	Key[38]	Key[39]	Key[40]	Key[41]	Key[42]	Key[43]	Key[44]	Key[45]	Key[46]	Key[47]	Key[48]	Key[49]	Key[50]	Key[51]	Key[52]	Key[53]	Key[54]	Key[55]	Key[56]	Key[57]	Key[58]	Key[59]	Key[60]	Key[61]	Key[62]	Key[63]	Key[64]	Key[65]	Key[66]	Key[67]	Key[68]	Key[69]	Key[70]	Key[71]	Key[72]	Key[73]	Key[74]	Key[75]	Key[76]	Key[77]	Key[78]	Key[79]	Key[80]
+994101	45|Cast|99410101	0|Effect|FxMo1JgrcMd000002Attack0102||1	25|Cast|99410103	55|Turn|90|1|																																																																												
+994102	0|Cast|99410201|99410202|99410203																																																																															
+994103	12|Cast|99410301	27|Cast|99410302|99410303																																																																														
+994104	45|Cast|99410401	0|Effect|FxMo1JgrcMd000002Attack0102||1	25|Cast|99410403	55|Turn|-90|1|																																																																												
+994105	30|Cast|99410501	0|Cast|99410502																																																																														
+904101																																																																																
+994501	45|Cast|99450101	0|Effect|FxMo1JgrcMd000002Attack0102||1																																																																														
+994301	27|Cast|99430101	0|Effect|||1	11|Effect|FxYubei02|HitCase|1	14|Magic|730063|0	0|Effect||Bip001Prop2|1	1|Magic|900029|0	0|Turn|180|1|																																																																									
+994302	23|Cast|99430201	0|Effect|FxMo1ArmorMd010071Attack02||1	10|Effect|FxYubei02|HitCase|1	13|Magic|730063|0	0|Effect||Bip001Prop1|1	1|Magic|900029|0	1|Turn|180|1|																																																																									
+994303	0|Magic|901907|0	0|Turn|180|1|																																																																														
+994304	1|Cast|99430401	0|Cast|99430402	0|Magic|901909|0	0|Move|10|1|0	0|Magic|901908|0	1|Magic|900029|0																																																																										
+994305	0|Magic|901913|0	0|Cast|99430502	0|Move|5|1|-5																																																																													
+994306	1|Magic|901911|0	0|Cast|99430602																																																																														
+994307	1|Magic|901913|0	0|Cast|99430702																																																																														
+994308																																																																																
+994401	26|Cast|99440101	0|Turn|30|1.2|1	0|Effect||Bip001Prop1|1	0|Cast|99440104	28|Effect|FxYubei02|HitCase|1																																																																											
+994402	15|Cast|99440201	0|Effect|||1																																																																														
+994403	15|Cast|99440301	0|Effect||Bip001Prop1|1	0|Turn|30|1.3|1																																																																													
+994404	15|Cast|99440401	0|Effect||Bip001Prop1|1	0|Turn|40|1.3|1																																																																													
+971601	35|Cast|97160101|97160102	999|Move|||	999|Move|||	999|Magic|971606|0	999|Magic|971607|0	999|Magic|971608|0	1|Cast|97160108	20|Effect|FxYubei02|HitCase|1	23|Magic|730063|0	0|Effect|FxMe1CattleMd000002Attack01||1	999|Cast|97160112|97160113	113|Magic|900025|0																																																																				
+971602	19|Cast|97160201|97160202	1|Cast|97160203|97160204	4|Effect|FxYubei02|HitCase|1	7|Magic|730063|0	0|Effect|FxMe1CattleMd000002Attack02||1	0|Effect|FxMe1CattleMd000002Attack02GuadianBone03|Bone03|1	0|Effect|FxMe1CattleMd000002Attack02GuadianBone09|Bone09|1																																																																									
+971603	26|Cast|97160301|97160302|97160303	23|Cast|97160304	5|Cast|97160305	7|Cast|97160306	1|Magic|970001|0	1|Cast|97160308	0|Effect|FxMe1CattleMd000002Attack03||1																																																																									
+971604	44|Cast|97160401	43|Cast|97160402|97160403	1|Cast|97160404|97160407|97160408	28|Effect|FxYubei02|HitCase|1	31|Magic|730063|0	2|Effect|FxMe1CattleMd000002Attack04||1																																																																										
+971605	23|Cast|97160501|97160502|97160503	1|Cast|97160504|97160507|97160508	8|Effect|FxYubei02|HitCase|1	11|Magic|730063|0	23|Cast|97160511	0|Effect|FxMe1CattleMd000002Attack05GuadianBone17|Bone17|1																																																																										
+971606	19|Cast|97160601|97160602|97160603	1|Cast|97160604|97160607|97160608|97160609	4|Effect|FxYubei02|HitCase|1	7|Magic|730063|0	1|Cast|97160610|97160611	0|Effect|FxMe1CattleMd000002Attack06||1																																																																										
+971607	18|Magic|970004|0	1|Magic|971608|0	1|Cast|97160703																																																																													
+971608	1|Cast|97160801|97160802|97160803																																																																															
+971609	27|Magic|970005|0	1|Cast|97160902|97160903																																																																														
+971610	1|Magic|970004|0	20|Magic|971650|0	1|Magic|971608|0																																																																													
+971611	1|Cast|97161101|97161102|97161103																																																																															
+971612	1|Magic|970005|0	1|Magic|971651|0	1|Cast|97161203																																																																													
+971613	0|Cast|97161301	4|Turn|580|0.3|1																																																																														
+904501	16|Cast|90450101	16|Effect|FxMe1BioMd005010Attack01||1	3|Effect|FxYubei02|HitCase|1	0|Turn|60|0.5|1																																																																												
+904502	15|Cast|90450201	15|Effect|FxMe1BioMd005010Attack02||1	3|Effect|FxYubei02|HitCase|1	0|Turn|60|0.5|1																																																																												
+904503	26|Cast|90450301	0|Effect|FxMe1BioMd005010Attack03||1	0|Turn|20|1|1	0|Cast|90450309	22|Cast|90450310	0|Magic|904509|0	0|Magic|904520|0																																																																									
+904504	0|Cast|90450401	0|Magic|904516|0	23|Magic|904517|0	23|Magic|904521|0																																																																												
+904505	0|Cast|90450501	0|Magic|904504|0	0|Effect|FxMe1BioMd005010Attack05||1	0|Turn|10|0.5|1	0|Magic|700027|0																																																																											
+904506	0|Cast|90450601|90450605	0|Move|10|3|2	0|Magic|904505|0	0|Turn|60|3|1																																																																												
+904507	0|Cast|90450701	0|Effect|FxMe1BioMd005010Attack07||1	0|Move|5|1|-2	0|Magic|904518|0	34|Magic|700031|0																																																																											
+904508	0|Cast|90450801	0|Effect|FxMe1BioMd005010Attack08||1	0|Magic|904518|0	60|Magic|700031|0																																																																												
+904509	0|Cast|90450901	0|Magic|904510|0	0|Magic|730018|0	2|Effect|FxMe1BioMd005010Attack09||1	0|Magic|700027|0																																																																											
+904510	0|Cast|90451001																																																																															
+904511	0|Cast|90451101																																																																															
+904512	0|Cast|90451201|90451205	0|Magic|730095|0	0|Move|8|0.9|	6|Move|0|0|	30|Magic|730096|0	1|Magic|700021|0	24|Cast|90451208																																																																									
+904513	0|Cast|90451301	0|Magic|904518|0	0|Move|-1|0.3|	39|Magic|700031|0																																																																												
+904514	15|Cast|90451401	5|Cast|90451402	47|Magic|904511|0	13|Magic|730020|0	15|Effect|FxMe1BioMd005010Attack14||1	47|Magic|700031|0																																																																										
+904515	0|Cast|90451501|90451504	0|Move|10|3|2																																																																														
+904601	30|Cast|90460101|90460102	7|Turn|30|0.95|1	10|Cast|90460104|90460105	26|Cast|90460106|90460107	0|Effect|FxMe1BioMd005020Attack01||1	30|Cast|90460109|90460110																																																																										
+904602	0|Cast|90460201																																																																															
+904603	0|Cast|90460301	0|Magic|904601|0	0|Magic|700027|0																																																																													
+904604	0|Cast|90460401	0|Magic|904603|0	0|Move|1|1|	0|Magic|904604|0																																																																												
+904605	0|Cast|90460501	0|Magic|904603|0	0|Move|-1|1|	0|Magic|904604|0																																																																												
+904606	0|Cast|90460601	0|Magic|904603|0	0|Move|1.1|1|	0|Magic|904604|0	0|Turn|30|1|																																																																											
+904607	0|Cast|90460701	0|Magic|904603|0	0|Move|1.1|1|	0|Magic|904604|0	0|Turn|30|1|																																																																											
+904608	0|Cast|90460801	0|Magic|904602|0	21|Magic|700031|0	0|Magic|904605|0	0|Magic|700271|0																																																																											
+904609	19|Cast|90460901|90460905	21|Move|25|0.8|-15	19|Move|13|0.1|	0|Magic|700027|0	19|Magic|730021|0	50|Magic|730026|0	5|Effect|FxYubei02|HitCase|1																																																																									
+904610	0|Cast|90461001	6|Move|-8|0.4|	5|Effect|FxMe1BioMd005020Attack10||	6|Magic|700027|0																																																																												
+904611	0|Cast|90461101	1|Turn|300|0.65|1	0|Magic|700027|0																																																																													
+904612	0|Effect|FxMe1BioMd005020Attack12|WeaponCase|	28|Cast|90461202	30|Cast|90461203	33|Cast|90461204	35|Cast|90461205	38|Cast|90461206	41|Cast|90461207	44|Cast|90461208	47|Cast|90461209	50|Cast|90461210	53|Cast|90461211	56|Cast|90461212	59|Cast|90461213	14|Effect|FxYubei02|HitCase|1																																																																		
+904613	0|Cast|90461301|90461305	0|Magic|730095|0	0|Move|15|0.3|	6|Move|10|0.7|	30|Magic|730096|0	1|Magic|700021|0	20|Cast|90461308																																																																									

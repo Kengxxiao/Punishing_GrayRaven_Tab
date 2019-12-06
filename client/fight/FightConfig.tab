@@ -1,0 +1,12 @@
+Key	Type	Value
+CollisionEffect	string	FxAirwallActivated
+CollisionEffectInterval	float	1
+RebootContaminationColor	string	ff3f3fff
+RebootRescuingColor	string	34aff9ff
+RebootRecontaminationTransitionTime	float	0.3
+TopHpTransitionDuration	float	0.8
+EndureTransitionDuration	float	0.2
+TopHpShakeDuration	float	0.2
+TopHpShakeRange	float	3
+HpTransitionDuration	float	0.3
+HpDynamicTransitionDuration	float	1

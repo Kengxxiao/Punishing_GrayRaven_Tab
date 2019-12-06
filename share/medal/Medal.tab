@@ -1,0 +1,6 @@
+Id	Name	Desc	UnlockType	UnlockPara[1]	UnlockPara[2]	UnlockDesc	SkillId[1]	SkillId[2]	Priority	Medal3D	MedalImg	MedalIcon	MedalHeadframe
+1	王牌指挥勋章	在任何组织中，“王牌”都具有着非同凡响的分量，这枚“王牌指挥”勋章正是对那些在各种任务中都能进行出色指挥，起到关键作用之人的认可。	1	11080106		通关主线—隐藏难度第8章			5		Assets/Product/Texture/Image/UiMedal/UiMedalIcon1.png	Assets/Product/Texture/Image/UiMedal/UiMedalIconSp1.png	
+2	绝境开拓勋章	如何从帕弥什病毒手中夺回据点一直是空中花园面临的重要难题，为了表彰那些成功收复据点，开拓出人类重返地球希望的杰出小队，空中花园制作了这枚“绝境开拓”勋章。	1	12080303		通关据点战第八章			4		Assets/Product/Texture/Image/UiMedal/UiMedalIcon2.png	Assets/Product/Texture/Image/UiMedal/UiMedalIconSp2.png	
+3	百万讨伐勋章	如果感染体拥有情感，那么它们在见到这枚勋章持有者时恐怕都会落荒而逃。“百万讨伐”勋章既是指挥官强大实力的证明，亦是所有感染体的克星和噩梦。	3	3	1000000	幻痛囚笼高级区100万讨伐值			3		Assets/Product/Texture/Image/UiMedal/UiMedalIcon3.png	Assets/Product/Texture/Image/UiMedal/UiMedalIconSp3.png	
+4	意志灯塔勋章	在与帕弥什无尽的战斗中，坚定的意志能够如同灯塔一般将黑夜照亮。“意志灯塔”勋章属于那些在其意志之下，集结出强大构造体军团的指挥官。	2	4	9	终阶解放9个构造体			2		Assets/Product/Texture/Image/UiMedal/UiMedalIcon4.png	Assets/Product/Texture/Image/UiMedal/UiMedalIconSp4.png	
+5	人类领袖勋章	人类阵线为参与化解重大危机、做出重要决策之人，制作了这枚“人类领袖”勋章。这枚勋章的特殊力量并非只来自荣誉，更多在于它所象征的责任。	4	172		通关黄金之涡第四章			1		Assets/Product/Texture/Image/UiMedal/UiMedalIcon5.png	Assets/Product/Texture/Image/UiMedal/UiMedalIconSp5.png	

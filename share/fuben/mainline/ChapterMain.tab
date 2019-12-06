@@ -1,0 +1,9 @@
+Id	ChapterName	ChapterEn	Bg	Icon	TabIcon	OrderId	ChapterId[1]	ChapterId[2]	BfrtId
+1001	第一章	涂鸦艺术	UiFubenMainMapTab.ChapterBg01A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic01.png	product/texture/image/uifubenmaintab/fubenmaintab1.png.unity3d	1	1001	1101	1001
+1002	第二章	苦刑之旅	UiFubenMainMapTab.ChapterBg02A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic02.png	product/texture/image/uifubenmaintab/fubenmaintab2.png.unity3d	2	1002	1102	1002
+1003	第三章	终末展览	UiFubenMainMapTab.ChapterBg03A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic03.png	product/texture/image/uifubenmaintab/fubenmaintab3.png.unity3d	3	1003	1103	1003
+1004	第四章	遗忘黄沙	UiFubenMainMapTab.ChapterBg04A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic04.png	product/texture/image/uifubenmaintab/fubenmaintab4.png.unity3d	4	1004	1104	1004
+1005	第五章	破碎幻影	UiFubenMainMapTab.ChapterBg05A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic05.png	product/texture/image/uifubenmaintab/fubenmaintab5.png.unity3d	5	1005	1105	1005
+1006	第六章	合金浸染	UiFubenMainMapTab.ChapterBg06A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic06.png	product/texture/image/uifubenmaintab/fubenmaintab6.png.unity3d	6	1006	1106	1006
+1007	第七章	逆元坍塌	UiFubenMainMapTab.ChapterBg07A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic07.png	product/texture/image/uifubenmaintab/fubenmaintab7.png.unity3d	7	1007	1107	1007
+1008	第八章	噬暗	UiFubenMainMapTab.ChapterBg08A	Assets/Product/Texture/Image/UiFubenMainTabChapter/InstanceIconPic08.png	product/texture/image/uifubenmaintab/fubenmaintab8.png.unity3d	8	1008	1108	1008

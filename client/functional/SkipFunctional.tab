@@ -1,0 +1,1138 @@
+SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2]	CustomParams[3]
+8000	3	UiFuben	30090101	活动支线副本	10101			
+8002	2	UiActivityBase	1	活动页签		1	1	0
+8001	2	UiActivityBase	2	公告页签		1	1	0
+40000	2	UiAutoWindow	1					
+40001	2	UiAutoWindow	2					
+50000	2	UiSignBanner	1					
+50001	2	UiSignBanner	2					
+50004	2	UiSignBanner	3					
+50005	2	UiSignBanner	4					
+50006	2	UiPurchase	2	礼包界面		1	0	0
+50007	2	UiPurchase	3			1	0	0
+50008	2	UiPurchase	1	充值界面		1	0	0
+50009	6	UiSign		首充界面		3	0	0
+500	1	UiMedalUnlock		进入徽章解锁				
+11	2	UiDrawGroup	1	研发系统				
+21	4		2	回到主界面				
+31	5		3					
+41	1		4					
+51	1		5					
+12	2		6					
+13	3		7					
+23	1	UiFuben		进入副本	10101			
+98	1	UiFuben		前往普通剧情				
+100	3	UiFuben	10010101	前往普通剧情				
+101	3	UiFuben	10010102	前往普通剧情				
+102	3	UiFuben	10010103	前往普通剧情				
+103	3	UiFuben	10010104	前往普通剧情				
+104	3	UiFuben	10010201	前往普通剧情				
+105	3	UiFuben	10010202	前往普通剧情				
+106	6	UiCharacter		前往穿戴	101	0		
+107	6	UiCharacter		前往强化	301	0		
+108	3	UiFuben	10010203	前往普通剧情				
+109	3	UiFuben	10010204	前往普通剧情				
+110	3	UiFuben	10010301	前往普通剧情				
+111	3	UiFuben	10010302	前往普通剧情				
+112	6	UiCharacter		前往穿戴	101	0		
+113	6	UiCharacter		前往强化	301	0		
+114	3	UiFuben	10010303	前往普通剧情				
+115	6	UiTask		前往任务		1	0	0
+116	6	UiCharacter		前往强化构造体	101	0		
+117	3	UiFuben	10020101	前往普通剧情				
+118	3	UiFuben	10020102	前往普通剧情				
+119	3	UiFuben	10020103	前往普通剧情				
+120	3	UiFuben	10020104	前往普通剧情				
+121	7	OnOpenUiFubenDaily		前往日常关卡	10401	1000		
+122	6	UiCharacter		前往升级构造体	101	0		
+123	3	UiFuben	10020201	前往普通剧情				
+124	3	UiFuben	10020202	前往普通剧情				
+125	3	UiFuben	10020203	前往普通剧情				
+126	3	UiFuben	10020204	前往普通剧情				
+127	6	UiTask		前往任务		2		
+128	6	UiCharacter		前往强化	301	0		
+129	3	UiFuben	10020301	前往普通剧情				
+130	3	UiFuben	10020302	前往普通剧情				
+131	7	OnOpenUiFubenDaily		前往日常关卡	10401	1003		
+132	6	UiCharacter		前往强化	301	0		
+133	3	UiFuben	10020303	前往普通剧情				
+134	6	UiTask		前往任务		1	0	0
+135	7	OnOpenUiFubenDaily		前往日常关卡	10401	1002		
+136	6	UiCharacter		前往突破	301	0		
+137	6	UiCharacter		前往强化构造体	101	0		
+138	3	UiFuben	11010101	前往隐藏剧情	10102			
+139	3	UiFuben	11010102	前往隐藏剧情	10102			
+140	3	UiFuben	11010103	前往隐藏剧情	10102			
+141	6	UiCharacter		前往升级构造体	101	0		
+142	6	UiCharacter		前往升级构造体	101	0		
+143	3	UiFuben	11010104	前往隐藏剧情	10102			
+144	3	UiFuben	11010105	前往隐藏剧情	10102			
+145	6	UiTask		前往任务		1	0	0
+146	6	UiCharacter		前往强化构造体	101	0		
+147	3	UiFuben	10030101	前往普通剧情				
+148	3	UiFuben	10030102	前往普通剧情				
+149	3	UiFuben	10030103	前往普通剧情				
+150	3	UiFuben	10030104	前往普通剧情				
+151	6	UiCharacter		前往强化	301	0		
+152	6	UiCharacter		前往强化	301	0		
+153	3	UiFuben	10030201	前往普通剧情				
+154	3	UiFuben	10030202	前往普通剧情				
+155	3	UiFuben	10030203	前往普通剧情				
+156	3	UiFuben	10030204	前往普通剧情				
+157	6	UiCharacter		前往突破	301	0		
+158	6	UiCharacter		前往突破	301	0		
+159	3	UiFuben	10030301	前往普通剧情				
+160	3	UiFuben	10030302	前往普通剧情				
+161	3	UiFuben	10030303	前往普通剧情				
+162	6	UiTask		前往任务		1	0	0
+163	6	UiCharacter		前往升级构造体	101	0		
+164	6	UiCharacter		前往升级构造体	101	0		
+165	6	UiCharacter		前往强化构造体	101	0		
+166	3	UiFuben	11020101	前往隐藏剧情	10102			
+167	3	UiFuben	11020102	前往隐藏剧情	10102			
+168	3	UiFuben	11020103	前往隐藏剧情	10102			
+169	3	UiFuben	11020104	前往隐藏剧情	10102			
+170	6	UiCharacter		前往升级构造体	101	0		
+171	6	UiCharacter		前往强化	301	0		
+172	3	UiFuben	11020105	前往普通剧情				
+173	6	UiTask		前往任务		1	0	0
+174	6	UiCharacter		前往强化构造体	101	0		
+175	3	UiFuben	10040101	前往普通剧情				
+176	3	UiFuben	10040102	前往普通剧情				
+177	3	UiFuben	10040103	前往普通剧情				
+178	3	UiFuben	10040104	前往普通剧情				
+179	6	UiCharacter		前往突破	301	0		
+180	6	UiCharacter		前往突破	301	0		
+181	3	UiFuben	10040201	前往普通剧情				
+182	3	UiFuben	10040202	前往普通剧情				
+183	3	UiFuben	10040203	前往普通剧情				
+184	3	UiFuben	10040204	前往普通剧情				
+185	6	UiCharacter		前往强化	301	0		
+186	6	UiCharacter		前往强化	301	0		
+187	3	UiFuben	10040301	前往普通剧情				
+188	3	UiFuben	10040302	前往普通剧情				
+189	3	UiFuben	10040303	前往普通剧情				
+190	6	UiTask		前往任务		1	0	0
+191	6	UiCharacter		前往升级构造体	101	0		
+192	6	UiCharacter		前往升级构造体	101	0		
+193	6	UiCharacter		前往强化构造体	101	0		
+194	3	UiFuben	11030101	前往隐藏剧情	10102			
+195	3	UiFuben	11030102	前往隐藏剧情	10102			
+196	3	UiFuben	11030103	前往隐藏剧情	10102			
+197	3	UiFuben	11030104	前往隐藏剧情	10102			
+198	6	UiCharacter		前往升级构造体	101	0		
+199	6	UiCharacter		前往强化	301	0		
+200	3	UiFuben	11030105	前往普通剧情				
+201	6	UiTask		前往任务		1	0	0
+202	3	UiFuben	10050101	前往普通剧情				
+203	3	UiFuben	10050102	前往普通剧情				
+204	3	UiFuben	10050103	前往普通剧情				
+205	3	UiFuben	10050104	前往普通剧情				
+206	6	UiCharacter		前往强化	301	0		
+207	7	OnOpenUiFubenDaily		前往日常关卡	10401	1000	30010302	
+208	3	UiFuben	10050201	前往普通剧情				
+209	3	UiFuben	10050202	前往普通剧情				
+210	3	UiFuben	10050203	前往普通剧情				
+211	3	UiFuben	10050204	前往普通剧情				
+212	6	UiCharacter		前往突破	301	0		
+213	6	UiCharacter		前往突破	301	0		
+214	3	UiFuben	10050301	前往普通剧情				
+215	3	UiFuben	10050302	前往普通剧情				
+216	3	UiFuben	10050303	前往普通剧情				
+217	6	UiTask		前往任务		1	0	0
+218	6	UiCharacter		前往升级构造体	101	0		
+219	6	UiCharacter		前往升级构造体	101	0		
+220	3	UiFuben	11040101	前往隐藏剧情	10102			
+221	3	UiFuben	11040102	前往隐藏剧情	10102			
+222	3	UiFuben	11040103	前往隐藏剧情	10102			
+223	3	UiFuben	11040104	前往隐藏剧情	10102			
+224	6	UiCharacter		前往升级构造体	101	0		
+225	6	UiCharacter		前往强化	301	0		
+226	3	UiFuben	11040105	前往普通剧情				
+227	6	UiTask		前往任务		1	0	0
+228	3	UiFuben	10060101	前往普通剧情				
+229	3	UiFuben	10060102	前往普通剧情				
+230	3	UiFuben	10060103	前往普通剧情				
+231	3	UiFuben	10060104	前往普通剧情				
+232	6	UiCharacter		前往强化	301	0		
+233	6	UiCharacter		前往强化	301	0		
+234	3	UiFuben	10060201	前往普通剧情				
+235	3	UiFuben	10060202	前往普通剧情				
+236	3	UiFuben	10060203	前往普通剧情				
+237	3	UiFuben	10060204	前往普通剧情				
+238	6	UiCharacter		前往突破	301	0		
+239	6	UiCharacter		前往突破	301	0		
+240	3	UiFuben	10060301	前往普通剧情				
+241	3	UiFuben	10060302	前往普通剧情				
+242	3	UiFuben	10060303	前往普通剧情				
+243	6	UiTask		前往任务		1	0	0
+244	6	UiCharacter		前往升级构造体	101	0		
+245	6	UiCharacter		前往升级构造体	101	0		
+246	3	UiFuben	11050101	前往隐藏剧情	10102			
+247	3	UiFuben	11050102	前往隐藏剧情	10102			
+248	3	UiFuben	11050103	前往隐藏剧情	10102			
+249	3	UiFuben	11050104	前往隐藏剧情	10102			
+250	6	UiCharacter		前往升级构造体	101	0		
+251	6	UiCharacter		前往强化	301	0		
+252	3	UiFuben	11050105	前往普通剧情				
+253	6	UiTask		前往任务		1	0	0
+254	3	UiFuben	10070101	前往普通剧情				
+255	3	UiFuben	10070102	前往普通剧情				
+256	3	UiFuben	10070103	前往普通剧情				
+257	3	UiFuben	10070104	前往普通剧情				
+258	6	UiCharacter		前往强化	301	0		
+259	6	UiCharacter		前往强化	301	0		
+260	3	UiFuben	10070201	前往普通剧情				
+261	3	UiFuben	10070202	前往普通剧情				
+262	3	UiFuben	10070203	前往普通剧情				
+263	3	UiFuben	10070204	前往普通剧情				
+264	6	UiCharacter		前往突破	301	0		
+265	6	UiCharacter		前往突破	301	0		
+266	3	UiFuben	10070301	前往普通剧情				
+267	3	UiFuben	10070302	前往普通剧情				
+268	3	UiFuben	10070303	前往普通剧情				
+269	6	UiTask		前往任务		1	0	0
+270	6	UiCharacter		前往升级构造体	101	0		
+271	6	UiCharacter		前往升级构造体	101	0		
+272	3	UiFuben	11060101	前往隐藏剧情	10102			
+273	3	UiFuben	11060102	前往隐藏剧情	10102			
+274	3	UiFuben	11060103	前往隐藏剧情	10102			
+275	3	UiFuben	11060104	前往隐藏剧情	10102			
+276	6	UiCharacter		前往升级构造体	101	0		
+277	6	UiCharacter		前往强化	301	0		
+278	3	UiFuben	11060105	前往普通剧情				
+279	6	UiTask		前往任务		1	0	0
+280	3	UiFuben	10080101	前往普通剧情				
+281	3	UiFuben	10080102	前往普通剧情				
+282	3	UiFuben	10080103	前往普通剧情				
+283	3	UiFuben	10080104	前往普通剧情				
+284	6	UiCharacter		前往强化	301	0		
+285	6	UiCharacter		前往强化	301	0		
+286	3	UiFuben	10080201	前往普通剧情				
+287	3	UiFuben	10080202	前往普通剧情				
+288	3	UiFuben	10080203	前往普通剧情				
+289	3	UiFuben	10080204	前往普通剧情				
+290	6	UiCharacter		前往突破	301	0		
+291	6	UiCharacter		前往突破	301	0		
+292	3	UiFuben	10080301	前往普通剧情				
+293	3	UiFuben	10080302	前往普通剧情				
+294	3	UiFuben	10080303	前往普通剧情				
+295	6	UiTask		前往任务		1	0	0
+296	6	UiCharacter		前往升级构造体	101	0		
+297	6	UiCharacter		前往升级构造体	101	0		
+298	3	UiFuben	11070101	前往隐藏剧情	10102			
+299	3	UiFuben	11070102	前往隐藏剧情	10102			
+300	3	UiFuben	11070103	前往隐藏剧情	10102			
+301	3	UiFuben	11070104	前往隐藏剧情	10102			
+302	6	UiCharacter		前往升级构造体	101	0		
+303	6	UiCharacter		前往强化	301	0		
+304	3	UiFuben	11070105	前往隐藏剧情	10102			
+305	6	UiTask		前往任务		1	0	0
+306	3	UiFuben	11080101	前往隐藏剧情	10102			
+307	3	UiFuben	11080102	前往隐藏剧情	10102			
+308	3	UiFuben	11080103	前往隐藏剧情	10102			
+309	3	UiFuben	11080104	前往隐藏剧情	10102			
+310	6	UiCharacter		前往强化	301	0		
+311	6	UiCharacter		前往强化	301	0		
+312	3	UiFuben	11080105	前往隐藏剧情	10102			
+313	6	UiTask		前往任务		1	0	0
+320	3	UiFuben	10010304	普通1-12				
+321	3	UiFuben	10020304	普通2-12				
+322	3	UiFuben	10030304	普通3-12				
+323	3	UiFuben	10040304	普通4-12				
+324	3	UiFuben	10050304	普通5-12				
+325	3	UiFuben	10060304	普通6-12				
+326	3	UiFuben	10070304	普通7-12				
+327	3	UiFuben	10080304	普通8-12				
+328	3	UiFuben	11010106	困难1-6	10102			
+329	3	UiFuben	11020106	困难2-6	10102			
+330	3	UiFuben	11030106	困难3-6	10102			
+331	3	UiFuben	11040106	困难4-6	10102			
+332	3	UiFuben	11050106	困难5-6	10102			
+333	3	UiFuben	11060106	困难6-6	10102			
+334	3	UiFuben	11070106	困难7-6	10102			
+335	3	UiFuben	11080106	困难8-6	10102			
+350	6	UiCharacter		前往晋升	102	0		
+700	3	UiFuben	12010102	前往据点模式	10103			
+701	3	UiFuben	12010202	前往据点模式	10103			
+702	3	UiFuben	12010402	前往据点模式	10103			
+710	3	UiFuben	12010503	前往据点模式	10103			
+711	3	UiFuben	12010703	前往据点模式	10103			
+712	3	UiFuben	12011002	前往据点模式	10103			
+720	3	UiFuben	12011102	前往据点模式	10103			
+721	3	UiFuben	12011302	前往据点模式	10103			
+722	3	UiFuben	12011601	前往据点模式	10103			
+730	3	UiFuben	12020102	前往据点模式	10103			
+731	3	UiFuben	12020402	前往据点模式	10103			
+732	3	UiFuben	12020801	前往据点模式	10103			
+740	3	UiFuben	12020901	前往据点模式	10103			
+741	3	UiFuben	12021201	前往据点模式	10103			
+742	3	UiFuben	12030402	前往据点模式	10103			
+750	3	UiFuben	12030501	前往据点模式	10103			
+751	3	UiFuben	12030802	前往据点模式	10103			
+752	3	UiFuben	12040401	前往据点模式	10103			
+760	3	UiFuben	12050102	前往据点模式	10103			
+761	3	UiFuben	12060103	前往据点模式	10103			
+762	3	UiFuben	12060402	前往据点模式	10103			
+770	3	UiFuben	12070102	前往据点模式	10103			
+771	3	UiFuben	12070402	前往据点模式	10103			
+772	3	UiFuben	12080402	前往据点模式	10103			
+800	3	UiFuben	12010102	前往据点模式	10103			
+801	3	UiFuben	12010202	前往据点模式	10103			
+802	3	UiFuben	12010302	前往据点模式	10103			
+803	3	UiFuben	12010402	前往据点模式	10103			
+804	3	UiFuben	12010503	前往据点模式	10103			
+805	3	UiFuben	12010603	前往据点模式	10103			
+806	3	UiFuben	12010703	前往据点模式	10103			
+807	3	UiFuben	12010803	前往据点模式	10103			
+808	3	UiFuben	12010901	前往据点模式	10103			
+809	3	UiFuben	12011002	前往据点模式	10103			
+810	3	UiFuben	12011102	前往据点模式	10103			
+811	3	UiFuben	12011201	前往据点模式	10103			
+812	3	UiFuben	12011302	前往据点模式	10103			
+813	3	UiFuben	12011402	前往据点模式	10103			
+814	3	UiFuben	12011503	前往据点模式	10103			
+815	3	UiFuben	12011601	前往据点模式	10103			
+816	3	UiFuben	12020102	前往据点模式	10103			
+817	3	UiFuben	12020202	前往据点模式	10103			
+818	3	UiFuben	12020302	前往据点模式	10103			
+819	3	UiFuben	12020402	前往据点模式	10103			
+820	3	UiFuben	12020502	前往据点模式	10103			
+821	3	UiFuben	12020603	前往据点模式	10103			
+822	3	UiFuben	12020702	前往据点模式	10103			
+823	3	UiFuben	12020801	前往据点模式	10103			
+824	3	UiFuben	12020901	前往据点模式	10103			
+825	3	UiFuben	12021002	前往据点模式	10103			
+826	3	UiFuben	12021103	前往据点模式	10103			
+827	3	UiFuben	12021201	前往据点模式	10103			
+828	3	UiFuben	12030102	前往据点模式	10103			
+829	3	UiFuben	12030202	前往据点模式	10103			
+830	3	UiFuben	12030302	前往据点模式	10103			
+831	3	UiFuben	12030402	前往据点模式	10103			
+832	3	UiFuben	12030501	前往据点模式	10103			
+833	3	UiFuben	12030602	前往据点模式	10103			
+834	3	UiFuben	12030703	前往据点模式	10103			
+835	3	UiFuben	12030802	前往据点模式	10103			
+836	3	UiFuben	12040102	前往据点模式	10103			
+837	3	UiFuben	12040201	前往据点模式	10103			
+838	3	UiFuben	12040303	前往据点模式	10103			
+839	3	UiFuben	12040401	前往据点模式	10103			
+840	3	UiFuben	12050102	前往据点模式	10103			
+841	3	UiFuben	12050202	前往据点模式	10103			
+842	3	UiFuben	12050303	前往据点模式	10103			
+843	3	UiFuben	12050402	前往据点模式	10103			
+844	3	UiFuben	12060103	前往据点模式	10103			
+845	3	UiFuben	12060202	前往据点模式	10103			
+846	3	UiFuben	12060303	前往据点模式	10103			
+847	3	UiFuben	12060402	前往据点模式	10103			
+848	3	UiFuben	12070102	前往据点模式	10103			
+849	3	UiFuben	12070203	前往据点模式	10103			
+850	3	UiFuben	12070303	前往据点模式	10103			
+851	3	UiFuben	12070402	前往据点模式	10103			
+852	3	UiFuben	12080103	前往据点模式	10103			
+853	3	UiFuben	12080203	前往据点模式	10103			
+854	3	UiFuben	12080303	前往据点模式	10103			
+855	3	UiFuben	12080402	前往据点模式	10103			
+900	1	UiFuben		前往普通剧情				
+901	1	UiFuben		前往普通剧情				
+902	1	UiFuben		前往隐藏剧情	10102			
+903	1	UiFuben		前往普通剧情				
+904	1	UiFuben		前往隐藏剧情	10102			
+905	1	UiFuben		前往普通剧情				
+906	1	UiFuben		前往隐藏剧情	10102			
+907	1	UiFuben		前往普通剧情				
+908	1	UiFuben		前往隐藏剧情	10102			
+909	1	UiFuben		前往普通剧情				
+910	1	UiFuben		前往隐藏剧情	10102			
+911	1	UiFuben		前往普通剧情				
+912	1	UiFuben		前往隐藏剧情	10102			
+913	1	UiFuben		前往普通剧情				
+914	1	UiFuben		前往隐藏剧情	10102			
+915	1	UiFuben		前往隐藏剧情	10102			
+2000	4			登录				
+2001	4			电量				
+2002	4			电量				
+2003	1	UiFuben		前往关卡				
+2004	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+2005	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+2006	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+2007	7	OnOpenUiOnlineBoss		前往联机副本	10302			
+2008	6	UiBag		前往强化	301	1	0	0
+2009	6	UiBag		前往强化	301	1	0	0
+2010	6	UiBag		前往强化	301	2	0	0
+2011	6	UiCharacter		前往升级构造体	101	0		
+2012	6	UiShop		购买商品	1001	1	0	
+2013	4			电量兑换				
+2014	7	OnOpenUiFubenDaily		前往消耗电量				
+2015	7	OnOpenUiFubenDaily		前往消耗电量				
+2016	7	OnOpenUiFubenDaily		前往消耗电量				
+2017	4			前往互动				
+2018	8	SkipDormMain		前往宿舍	902			
+3000	1	UiFuben		前往主线关卡				
+3001	1	UiFuben		前往主线关卡				
+3002	1	UiFuben		前往主线关卡				
+3003	1	UiFuben		前往主线关卡				
+3020	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+3021	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+3022	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+3023	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+3030	7	OnOpenUiOnlineBoss		前往活动关卡	10302			
+3031	7	OnOpenUiOnlineBoss		前往活动关卡	10302			
+3032	7	OnOpenUiOnlineBoss		前往活动关卡	10302			
+3033	7	OnOpenUiOnlineBoss		前往活动关卡	10302			
+3040	7	OnOpenUiFubenBossSingle		前往幻痛囚笼	10203			
+3041	7	OnOpenUiFubenBossSingle		前往幻痛囚笼	10203			
+3042	7	OnOpenUiFubenBossSingle		前往幻痛囚笼	10203			
+3043	7	OnOpenUiFubenBossSingle		前往幻痛囚笼	10203			
+3050	7	OnOpenUiArena		前往战区	10204			
+3051	7	OnOpenUiArena		前往战区	10204			
+3052	7	OnOpenUiArena		前往战区	10204			
+3053	7	OnOpenUiArena		前往战区	10204			
+3060	7	OnOpenUiMoneyReward		前往任务				
+3061	7	OnOpenUiMoneyReward		前往任务				
+3062	7	OnOpenUiMoneyReward		前往任务				
+3063	7	OnOpenUiMoneyReward		前往任务				
+3064	3	UiFuben	10030402	通关噩梦剧情3-2				
+3065	3	UiFuben	10030403	通关噩梦剧情3-3				
+3066	3	UiFuben	10030404	通关噩梦剧情3-4				
+3067	3	UiFuben	10030501	通关噩梦剧情3-5				
+3068	3	UiFuben	10030502	通关噩梦剧情3-6				
+3069	3	UiFuben	10030503	通关噩梦剧情3-7				
+3070	3	UiFuben	10030504	通关噩梦剧情3-8				
+3071	3	UiFuben	10030602	通关噩梦剧情3-10				
+3072	3	UiFuben	10030603	通关噩梦剧情3-11				
+3073	3	UiFuben	10030604	通关噩梦剧情3-12				
+3074	3	UiFuben	10040401	通关噩梦剧情4-1				
+3075	3	UiFuben	10040402	通关噩梦剧情4-2				
+3076	3	UiFuben	10040403	通关噩梦剧情4-3				
+3077	3	UiFuben	10040404	通关噩梦剧情4-4				
+3078	3	UiFuben	10040501	通关噩梦剧情4-5				
+3079	3	UiFuben	10040502	通关噩梦剧情4-6				
+3080	3	UiFuben	10040503	通关噩梦剧情4-7				
+3081	3	UiFuben	10040504	通关噩梦剧情4-8				
+3082	3	UiFuben	10040601	通关噩梦剧情4-9				
+3083	3	UiFuben	10040602	通关噩梦剧情4-10				
+3084	3	UiFuben	10040603	通关噩梦剧情4-11				
+3085	3	UiFuben	10040604	通关噩梦剧情4-12				
+3100	6	UiCharacter		前往成员功能	101	0		
+3101	6	UiCharacter		前往成员功能	101	0		
+3102	6	UiCharacter		前往成员功能	101	0		
+3103	6	UiCharacter		前往成员功能	101	0		
+3104	6	UiCharacter		前往成员功能	101	0		
+3105	6	UiCharacter		前往成员功能	101	0		
+3106	6	UiCharacter		前往成员功能	101	0		
+3107	6	UiCharacter		前往成员功能	101	0		
+3108	6	UiCharacter		前往成员功能	101	0		
+3109	6	UiCharacter		前往成员功能	101	0		
+3110	6	UiCharacter		前往成员功能	101	0		
+3120	6	UiCharacter		前往成员功能	101	0		
+3121	6	UiCharacter		前往成员功能	101	0		
+3122	6	UiCharacter		前往成员功能	101	0		
+3123	6	UiCharacter		前往成员功能	101	0		
+3124	6	UiCharacter		前往成员功能	101	0		
+3125	6	UiCharacter		前往成员功能	101	0		
+3130	6	UiCharacter		前往成员功能	101	0		
+3131	6	UiCharacter		前往成员功能	101	0		
+3132	6	UiCharacter		前往成员功能	101	0		
+3133	6	UiCharacter		前往成员功能	101	0		
+3134	6	UiCharacter		前往成员功能	101	0		
+3135	6	UiCharacter		前往成员功能	101	0		
+3136	6	UiCharacter		前往成员功能	101	0		
+3140	6	UiCharacter		前往成员功能	101	0		
+3141	6	UiCharacter		前往成员功能	101	0		
+3142	6	UiCharacter		前往成员功能	101	0		
+3143	6	UiCharacter		前往成员功能	101	0		
+3144	6	UiCharacter		前往成员功能	101	0		
+3145	6	UiCharacter		前往成员功能	101	0		
+3146	6	UiCharacter		前往成员功能	101	0		
+3150	6	UiShop		前往涂装商店	1001	1	0	501
+3151	6	UiShop		前往涂装商店	1001	1	0	501
+3152	6	UiShop		前往涂装商店	1001	1	0	501
+3153	6	UiShop		前往涂装商店	1001	1	0	501
+3160	6	UiShop		前往涂装商店	1001	1	0	501
+3161	6	UiShop		前往涂装商店	1001	1	0	501
+3162	6	UiShop		前往涂装商店	1001	1	0	501
+3163	6	UiShop		前往涂装商店	1001	1	0	501
+3170	6	UiBag		前往背包	301	1	0	0
+3171	6	UiBag		前往背包	301	1	0	0
+3172	6	UiBag		前往背包	301	1	0	0
+3173	6	UiBag		前往背包	301	1	0	0
+3174	6	UiBag		前往背包	301	1	0	0
+3175	6	UiBag		前往背包	301	1	0	0
+3176	6	UiBag		前往背包	301	1	0	0
+3177	6	UiBag		前往背包	301	1	0	0
+3178	6	UiBag		前往背包	301	1	0	0
+3180	6	UiBag		前往背包	301	2	0	0
+3181	6	UiBag		前往背包	301	2	0	0
+3182	6	UiBag		前往背包	301	2	0	0
+3183	6	UiBag		前往背包	301	2	0	0
+3184	6	UiBag		前往背包	301	2	0	0
+3185	6	UiBag		前往背包	301	2	0	0
+3186	6	UiBag		前往背包	301	2	0	0
+3187	6	UiBag		前往背包	301	2	0	0
+3188	6	UiBag		前往背包	301	2	0	0
+3190	6	UiBag		前往背包	301	1	0	0
+3191	6	UiBag		前往背包	301	1	0	0
+3192	6	UiBag		前往背包	301	1	0	0
+3193	6	UiBag		前往背包	301	1	0	0
+3194	6	UiBag		前往背包	301	1	0	0
+3195	6	UiBag		前往背包	301	1	0	0
+3196	6	UiBag		前往背包	301	1	0	0
+3197	6	UiBag		前往背包	301	1	0	0
+3198	6	UiBag		前往背包	301	1	0	0
+3199	6	UiBag		前往背包	301	1	0	0
+3200	6	UiBag		前往背包	301	1	0	0
+3201	6	UiBag		前往背包	301	1	0	0
+3202	6	UiBag		前往背包	301	1	0	0
+3203	6	UiBag		前往背包	301	1	0	0
+3204	6	UiBag		前往背包	301	1	0	0
+3210	6	UiBag		前往背包	301	2	0	0
+3211	6	UiBag		前往背包	301	2	0	0
+3212	6	UiBag		前往背包	301	2	0	0
+3213	6	UiBag		前往背包	301	2	0	0
+3214	6	UiBag		前往背包	301	2	0	0
+3215	6	UiBag		前往背包	301	2	0	0
+3216	6	UiBag		前往背包	301	2	0	0
+3217	6	UiBag		前往背包	301	2	0	0
+3218	6	UiBag		前往背包	301	2	0	0
+3219	6	UiBag		前往背包	301	2	0	0
+3220	6	UiBag		前往背包	301	2	0	0
+3221	6	UiBag		前往背包	301	2	0	0
+3222	6	UiBag		前往背包	301	2	0	0
+3223	6	UiBag		前往背包	301	2	0	0
+3224	6	UiBag		前往背包	301	2	0	0
+3230	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3231	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3232	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3233	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3234	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3235	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3236	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3237	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3238	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3239	7	OnOpenUiFubenDaily		前往日常关卡	10101	1004		
+3240	8	SkipDormMain		前往宿舍	902			
+3241	8	SkipDormMain		前往宿舍	902			
+3242	8	SkipDormMain		前往宿舍	902			
+3243	8	SkipDormMain		前往宿舍	902			
+3300	6	UiCharacter		前往成员功能	101	0		
+3301	6	UiCharacter		前往成员功能	101	0		
+3302	6	UiCharacter		前往成员功能	101	0		
+3303	6	UiCharacter		前往成员功能	101	0		
+3304	6	UiCharacter		前往成员功能	101	0		
+3305	6	UiCharacter		前往成员功能	101	0		
+3306	6	UiCharacter		前往成员功能	101	0		
+3307	6	UiCharacter		前往成员功能	101	0		
+3310	6	UiCharacter		前往成员功能	101	0		
+3311	6	UiCharacter		前往成员功能	101	0		
+3312	6	UiCharacter		前往成员功能	101	0		
+3313	6	UiCharacter		前往成员功能	101	0		
+3314	6	UiCharacter		前往成员功能	101	0		
+3315	6	UiCharacter		前往成员功能	101	0		
+3316	6	UiCharacter		前往成员功能	101	0		
+3317	6	UiCharacter		前往成员功能	101	0		
+3320	6	UiCharacter		前往成员功能	101	0		
+3321	6	UiCharacter		前往成员功能	101	0		
+3322	6	UiCharacter		前往成员功能	101	0		
+3323	6	UiCharacter		前往成员功能	101	0		
+3324	6	UiCharacter		前往成员功能	101	0		
+3325	6	UiCharacter		前往成员功能	101	0		
+3326	6	UiCharacter		前往成员功能	101	0		
+3327	6	UiCharacter		前往成员功能	101	0		
+3330	6	UiCharacter		前往成员功能	101	0		
+3331	6	UiCharacter		前往成员功能	101	0		
+3332	6	UiCharacter		前往成员功能	101	0		
+3333	6	UiCharacter		前往成员功能	101	0		
+3334	6	UiCharacter		前往成员功能	101	0		
+3335	6	UiCharacter		前往成员功能	101	0		
+3336	6	UiCharacter		前往成员功能	101	0		
+3337	6	UiCharacter		前往成员功能	101	0		
+3340	6	UiCharacter		前往成员功能	101	0		
+3341	6	UiCharacter		前往成员功能	101	0		
+3342	6	UiCharacter		前往成员功能	101	0		
+3343	6	UiCharacter		前往成员功能	101	0		
+3344	6	UiCharacter		前往成员功能	101	0		
+3345	6	UiCharacter		前往成员功能	101	0		
+3346	6	UiCharacter		前往成员功能	101	0		
+3347	6	UiCharacter		前往成员功能	101	0		
+3350	6	UiCharacter		前往成员功能	101	0		
+3351	6	UiCharacter		前往成员功能	101	0		
+3352	6	UiCharacter		前往成员功能	101	0		
+3353	6	UiCharacter		前往成员功能	101	0		
+3354	6	UiCharacter		前往成员功能	101	0		
+3355	6	UiCharacter		前往成员功能	101	0		
+3356	6	UiCharacter		前往成员功能	101	0		
+3357	6	UiCharacter		前往成员功能	101	0		
+3360	6	UiCharacter		前往成员功能	101	0		
+3361	6	UiCharacter		前往成员功能	101	0		
+3362	6	UiCharacter		前往成员功能	101	0		
+3363	6	UiCharacter		前往成员功能	101	0		
+3364	6	UiCharacter		前往成员功能	101	0		
+3365	6	UiCharacter		前往成员功能	101	0		
+3366	6	UiCharacter		前往成员功能	101	0		
+3367	6	UiCharacter		前往成员功能	101	0		
+3370	6	UiCharacter		前往成员功能	101	0		
+3371	6	UiCharacter		前往成员功能	101	0		
+3372	6	UiCharacter		前往成员功能	101	0		
+3373	6	UiCharacter		前往成员功能	101	0		
+3374	6	UiCharacter		前往成员功能	101	0		
+3375	6	UiCharacter		前往成员功能	101	0		
+3376	6	UiCharacter		前往成员功能	101	0		
+3377	6	UiCharacter		前往成员功能	101	0		
+3380	6	UiCharacter		前往成员功能	101	0		
+3381	6	UiCharacter		前往成员功能	101	0		
+3382	6	UiCharacter		前往成员功能	101	0		
+3383	6	UiCharacter		前往成员功能	101	0		
+3384	6	UiCharacter		前往成员功能	101	0		
+3385	6	UiCharacter		前往成员功能	101	0		
+3386	6	UiCharacter		前往成员功能	101	0		
+3387	6	UiCharacter		前往成员功能	101	0		
+3390	6	UiCharacter		前往成员功能	101	0		
+3391	6	UiCharacter		前往成员功能	101	0		
+3392	6	UiCharacter		前往成员功能	101	0		
+3393	6	UiCharacter		前往成员功能	101	0		
+3394	6	UiCharacter		前往成员功能	101	0		
+3395	6	UiCharacter		前往成员功能	101	0		
+3396	6	UiCharacter		前往成员功能	101	0		
+3397	6	UiCharacter		前往成员功能	101	0		
+3400	6	UiCharacter		前往成员功能	101	0		
+3401	6	UiCharacter		前往成员功能	101	0		
+3402	6	UiCharacter		前往成员功能	101	0		
+3403	6	UiCharacter		前往成员功能	101	0		
+3404	6	UiCharacter		前往成员功能	101	0		
+3405	6	UiCharacter		前往成员功能	101	0		
+3406	6	UiCharacter		前往成员功能	101	0		
+3407	6	UiCharacter		前往成员功能	101	0		
+3410	6	UiCharacter		前往成员功能	101	0		
+3411	6	UiCharacter		前往成员功能	101	0		
+3412	6	UiCharacter		前往成员功能	101	0		
+3413	6	UiCharacter		前往成员功能	101	0		
+3414	6	UiCharacter		前往成员功能	101	0		
+3415	6	UiCharacter		前往成员功能	101	0		
+3416	6	UiCharacter		前往成员功能	101	0		
+3417	6	UiCharacter		前往成员功能	101	0		
+3420	6	UiCharacter		前往成员功能	101	0		
+3421	6	UiCharacter		前往成员功能	101	0		
+3422	6	UiCharacter		前往成员功能	101	0		
+3423	6	UiCharacter		前往成员功能	101	0		
+3424	6	UiCharacter		前往成员功能	101	0		
+3425	6	UiCharacter		前往成员功能	101	0		
+3426	6	UiCharacter		前往成员功能	101	0		
+3427	6	UiCharacter		前往成员功能	101	0		
+3430	6	UiCharacter		前往成员功能	101	0		
+3431	6	UiCharacter		前往成员功能	101	0		
+3432	6	UiCharacter		前往成员功能	101	0		
+3433	6	UiCharacter		前往成员功能	101	0		
+3434	6	UiCharacter		前往成员功能	101	0		
+3435	6	UiCharacter		前往成员功能	101	0		
+3436	6	UiCharacter		前往成员功能	101	0		
+3437	6	UiCharacter		前往成员功能	101	0		
+3500	6	UiCharacter		前往成员功能	101	0		
+3501	6	UiCharacter		前往成员功能	101	0		
+3502	6	UiCharacter		前往成员功能	101	0		
+3503	6	UiCharacter		前往成员功能	101	0		
+3504	6	UiCharacter		前往成员功能	101	0		
+3505	6	UiCharacter		前往成员功能	101	0		
+3506	6	UiCharacter		前往成员功能	101	0		
+3507	6	UiCharacter		前往成员功能	101	0		
+3508	6	UiCharacter		前往成员功能	101	0		
+3509	6	UiCharacter		前往成员功能	101	0		
+3510	6	UiCharacter		前往成员功能	101	0		
+3511	6	UiCharacter		前往成员功能	101	0		
+3512	6	UiCharacter		前往成员功能	101	0		
+3513	6	UiCharacter		前往成员功能	101	0		
+3514	6	UiCharacter		前往成员功能	101	0		
+3515	6	UiCharacter		前往成员功能	101	0		
+3516	6	UiCharacter		前往成员功能	101	0		
+3517	6	UiCharacter		前往成员功能	101	0		
+3518	6	UiCharacter		前往成员功能	101	0		
+3519	6	UiCharacter		前往成员功能	101	0		
+3520	6	UiBag		前往背包	301	1	0	0
+3521	6	UiBag		前往背包	301	1	0	0
+3522	6	UiBag		前往背包	301	1	0	0
+3523	6	UiBag		前往背包	301	1	0	0
+3524	6	UiBag		前往背包	301	1	0	0
+3525	6	UiBag		前往背包	301	1	0	0
+3526	6	UiBag		前往背包	301	1	0	0
+3527	6	UiBag		前往背包	301	1	0	0
+3528	6	UiBag		前往背包	301	1	0	0
+3529	6	UiBag		前往背包	301	1	0	0
+3530	6	UiBag		前往背包	301	1	0	0
+3531	6	UiBag		前往背包	301	1	0	0
+3532	6	UiBag		前往背包	301	1	0	0
+3533	6	UiBag		前往背包	301	1	0	0
+3534	6	UiBag		前往背包	301	1	0	0
+3535	6	UiBag		前往背包	301	1	0	0
+3536	6	UiBag		前往背包	301	1	0	0
+3537	6	UiBag		前往背包	301	1	0	0
+3538	6	UiBag		前往背包	301	1	0	0
+3539	6	UiBag		前往背包	301	1	0	0
+3540	6	UiBag		前往背包	301	1	0	0
+3550	6	UiBag		前往背包	301	1	0	0
+3551	6	UiBag		前往背包	301	1	0	0
+3552	6	UiBag		前往背包	301	1	0	0
+3553	6	UiBag		前往背包	301	1	0	0
+3554	6	UiBag		前往背包	301	1	0	0
+3555	6	UiBag		前往背包	301	1	0	0
+3556	6	UiBag		前往背包	301	1	0	0
+3557	6	UiBag		前往背包	301	1	0	0
+3558	6	UiBag		前往背包	301	1	0	0
+3559	6	UiBag		前往背包	301	1	0	0
+3560	6	UiBag		前往背包	301	1	0	0
+3561	6	UiBag		前往背包	301	1	0	0
+3562	6	UiBag		前往背包	301	1	0	0
+3563	6	UiBag		前往背包	301	1	0	0
+3570	1	UiBaseEquip		前往基建	901			
+3571	1	UiBaseEquip		前往基建	901			
+3572	1	UiBaseEquip		前往基建	901			
+3573	1	UiBaseEquip		前往基建	901			
+3600	4			返回主界面				
+3601	4			返回主界面				
+3602	4			返回主界面				
+3603	4			返回主界面				
+3604	4			返回主界面				
+3605	4			返回主界面				
+3606	4			返回主界面				
+3607	4			返回主界面				
+3608	4			返回主界面				
+3609	4			返回主界面				
+3610	6	UiSocial		前往好友	801	0	1	0
+3611	6	UiSocial		前往好友	801	0	1	0
+3612	6	UiSocial		前往好友	801	0	1	0
+3613	6	UiSocial		前往好友	801	0	1	0
+3620	6	UiSocial		前往好友	801	0	1	0
+3621	6	UiSocial		前往好友	801	0	1	0
+3622	6	UiSocial		前往好友	801	0	1	0
+3623	6	UiSocial		前往好友	801	0	1	0
+3630	1	UiFuben		前往主线关卡	2001			
+3631	1	UiFuben		前往主线关卡	2001			
+3632	1	UiFuben		前往主线关卡	2001			
+3633	1	UiFuben		前往主线关卡	2001			
+3640	1	UiFavorability		前往与构造体交流	1400			
+3641	1	UiFavorability		前往与构造体交流	1400			
+3642	1	UiFavorability		前往与构造体交流	1400			
+3643	1	UiFavorability		前往与构造体交流	1400			
+3650	1	UiFavorability		前往与构造体交流	1400			
+3651	1	UiFavorability		前往与构造体交流	1400			
+3652	1	UiFavorability		前往与构造体交流	1400			
+3653	1	UiFavorability		前往与构造体交流	1400			
+3660	1	UiFuben		前往升级				
+3661	1	UiFuben		前往升级				
+3662	1	UiFuben		前往升级				
+3663	1	UiFuben		前往升级				
+3664	1	UiFuben		前往升级				
+3665	1	UiFuben		前往升级				
+3666	1	UiFuben		前往升级				
+3667	1	UiFuben		前往升级				
+3801	7	OnOpenUiArena		前往战区	10204			
+3802	7	OnOpenUiArena		前往战区	10204			
+3803	7	OnOpenUiArena		前往战区	10204			
+3804	7	OnOpenUiArena		前往战区	10204			
+3805	7	OnOpenUiArena		前往战区	10204			
+3806	7	OnOpenUiArena		前往战区	10204			
+3807	7	OnOpenUiArena		前往战区	10204			
+3808	7	OnOpenUiArena		前往战区	10204			
+4000	7	OnOpenUiFubenDaily		前往后勤保养	10409	1003		
+4001	7	OnOpenUiOnlineBoss		前往协同作战	10302			
+4002	7	OnOpenUiFubenDaily		前往作战补给	10407	1001		
+7100	3	UiFuben	10010201	前往主线关卡				
+7101	6	UiCharacter		前往强化	301	0		
+7102	6	UiCharacter		前往升级构造体	101	0		
+7103	6	UiCharacter		前往强化	301	0		
+7104	7	OnOpenUiFubenDaily		前往日常关卡	10401			
+7105	6	UiBag		前往分解	301	1	0	0
+7106	6	UiFubenPractice		通关基础教学	1800	1	0	0
+7200	3	UiFuben	10030304	前往主线关卡				
+7201	6	UiCharacter		前往强化构造体	101	0		
+7202	6	UiCharacter		前往升级构造体	101	0		
+7203	7	OnOpenUiPrequel		前往间章	1701	1001		
+7204	1	UiTrial		前往意识营救战	1601			
+7205	6	UiDrawMain		前往研发	401	1	0	0
+7300	3	UiFuben	11020106	前往隐藏剧情	10102			
+7301	7	OnOpenUiPrequel		前往间章	1701			
+7302	7	OnOpenUiArena		前往战区	10204			
+7303	1	UiFavorability		前往与构造体交流	1400			
+7304	7	OnOpenUiMoneyReward		赏金任务	1301			
+7305	7	OnOpenUiFubenDaily		军备突破	10408	1002		
+7400	7	OnOpenUiFubenBossSingle		前往幻痛囚笼	10203			
+7401	1	UiFuben		前往升级				
+7402	7	OnOpenUiFubenDaily		前往日常关卡	10401	1000	30010302	
+7403	6	UiCharacter		前往培养构造体	101	0		
+7404	8	SkipDormFurnitureBuild		前往宿舍	902	2		
+7500	1	UiTrial		前往意识营救战	1601			
+7501	6	UiCharacter		前往强化	301	0		
+7502	1	UiFuben		前往升级				
+7503	6	UiCharacter		前往成员功能	101	0		
+7600	3	UiFuben	10050304	通关普通第5章				
+7601	1	UiTrial		前往意识营救战	1601			
+7602	7	OnOpenUiPrequel		前往间章	1701	1004		
+7603	6	UiCharacter		前往成员功能	101	0		
+7700	4			累计登陆				
+7701	1	UiFuben		前往升级				
+7702	6	UiCharacter		前往培养构造体	101	0		
+90201	1	UiFuben		前往活动				
+90202	1	UiFuben		前往活动				
+90203	1	UiFuben		前往活动				
+90204	1	UiFuben		前往活动				
+90205	1	UiFuben		前往活动				
+90206	1	UiFuben		前往活动				
+12001	8	SkipDormWarehouse		分解家具	902	1		
+12002	8	SkipDormFurnitureBuild		建造家具	902	1		
+12003	8	SkipDormRoom		前往宿舍	902	21001		
+12004	8	SkipDormWork		前往打工	902			
+12005	8	SkipDormRoom		前往宿舍	902	21001		
+14001	8	SkipDormMember		入住构造体	902			
+14002	8	SkipDormRoom		前往宿舍	902	21001		
+14003	8	SkipDormFurnitureBuild		改装家具	902	2		
+14004	8	SkipDormFurnitureBuild		建造家具	902	1		
+14005	8	SkipDormWork		前往打工	902			
+14006	8	SkipDormRoom		前往宿舍	902	21001		
+14007	8	SkipDormTask		完成指引	902			
+13001	8	SkipDormMain		前往宿舍	902			
+13002	8	SkipDormMain		前往宿舍	902			
+13003	8	SkipDormMain		前往宿舍	902			
+13004	8	SkipDormMain		前往宿舍	902			
+13005	8	SkipDormMain		前往宿舍	902			
+13006	8	SkipDormMember		入住构造体	902			
+13007	8	SkipDormMember		入住构造体	902			
+13008	8	SkipDormMember		入住构造体	902			
+13009	8	SkipDormMember		入住构造体	902			
+13010	8	SkipDormMember		入住构造体	902			
+13011	8	SkipDormWork		前往打工	902			
+13012	8	SkipDormWork		前往打工	902			
+13013	8	SkipDormWork		前往打工	902			
+13014	8	SkipDormWork		前往打工	902			
+13015	8	SkipDormWork		前往打工	902			
+13016	8	SkipDormWork		前往打工	902			
+13017	8	SkipDormWork		前往打工	902			
+13018	8	SkipDormWork		前往打工	902			
+13019	8	SkipDormWork		前往打工	902			
+13020	8	SkipDormWork		前往打工	902			
+13021	8	SkipDormRoom		前往宿舍	902	21001		
+13022	8	SkipDormRoom		前往宿舍	902	21001		
+13023	8	SkipDormRoom		前往宿舍	902	21001		
+13024	8	SkipDormRoom		前往宿舍	902	21001		
+13025	8	SkipDormRoom		前往宿舍	902	21001		
+13026	8	SkipDormRoom		前往宿舍	902	21001		
+13027	8	SkipDormRoom		前往宿舍	902	21001		
+13028	8	SkipDormRoom		前往宿舍	902	21001		
+13029	8	SkipDormRoom		前往宿舍	902	21001		
+13030	8	SkipDormRoom		前往宿舍	902	21001		
+13031	8	SkipDormRoom		前往宿舍	902	21001		
+13032	8	SkipDormRoom		前往宿舍	902	21001		
+13033	8	SkipDormRoom		前往宿舍	902	21001		
+13034	8	SkipDormRoom		前往宿舍	902	21001		
+13035	8	SkipDormRoom		前往宿舍	902	21001		
+13036	8	SkipDormRoom		前往宿舍	902	21001		
+13037	8	SkipDormRoom		前往宿舍	902	21001		
+13038	8	SkipDormRoom		前往宿舍	902	21001		
+13039	8	SkipDormRoom		前往宿舍	902	21001		
+13040	8	SkipDormRoom		前往宿舍	902	21001		
+13041	8	SkipDormFurnitureBuild		建造家具	902	1		
+13042	8	SkipDormFurnitureBuild		建造家具	902	1		
+13043	8	SkipDormFurnitureBuild		建造家具	902	1		
+13044	8	SkipDormFurnitureBuild		建造家具	902	1		
+13045	8	SkipDormFurnitureBuild		建造家具	902	1		
+13046	8	SkipDormFurnitureBuild		建造家具	902	1		
+13047	8	SkipDormFurnitureBuild		建造家具	902	1		
+13048	8	SkipDormFurnitureBuild		建造家具	902	1		
+13049	8	SkipDormFurnitureBuild		建造家具	902	1		
+13050	8	SkipDormFurnitureBuild		建造家具	902	1		
+13051	8	SkipDormFurnitureBuild		建造家具	902	1		
+13052	8	SkipDormFurnitureBuild		建造家具	902	1		
+13053	8	SkipDormFurnitureBuild		建造家具	902	1		
+13054	8	SkipDormFurnitureBuild		建造家具	902	1		
+13055	8	SkipDormFurnitureBuild		建造家具	902	1		
+13056	8	SkipDormFurnitureBuild		建造家具	902	1		
+13057	8	SkipDormFurnitureBuild		建造家具	902	1		
+13058	8	SkipDormFurnitureBuild		建造家具	902	1		
+13059	8	SkipDormFurnitureBuild		建造家具	902	1		
+13060	8	SkipDormFurnitureBuild		建造家具	902	1		
+13061	8	SkipDormFurnitureBuild		建造家具	902	1		
+13062	8	SkipDormFurnitureBuild		建造家具	902	1		
+13063	8	SkipDormFurnitureBuild		建造家具	902	1		
+13064	8	SkipDormFurnitureBuild		建造家具	902	1		
+13065	8	SkipDormFurnitureBuild		建造家具	902	1		
+13066	8	SkipDormFurnitureBuild		建造家具	902	1		
+13067	8	SkipDormFurnitureBuild		建造家具	902	1		
+13068	8	SkipDormFurnitureBuild		建造家具	902	1		
+13069	8	SkipDormFurnitureBuild		建造家具	902	1		
+13070	8	SkipDormFurnitureBuild		建造家具	902	1		
+13071	8	SkipDormFurnitureBuild		建造家具	902	1		
+13072	8	SkipDormFurnitureBuild		建造家具	902	1		
+13073	8	SkipDormFurnitureBuild		建造家具	902	1		
+13074	8	SkipDormFurnitureBuild		建造家具	902	1		
+13075	8	SkipDormFurnitureBuild		建造家具	902	1		
+13076	8	SkipDormFurnitureBuild		建造家具	902	1		
+13077	8	SkipDormFurnitureBuild		建造家具	902	1		
+13078	8	SkipDormFurnitureBuild		建造家具	902	1		
+13079	8	SkipDormFurnitureBuild		建造家具	902	1		
+13080	8	SkipDormFurnitureBuild		建造家具	902	1		
+13081	8	SkipDormFurnitureBuild		建造家具	902	1		
+13082	8	SkipDormFurnitureBuild		建造家具	902	1		
+13083	8	SkipDormFurnitureBuild		建造家具	902	1		
+13084	8	SkipDormFurnitureBuild		建造家具	902	1		
+13085	8	SkipDormFurnitureBuild		建造家具	902	1		
+13086	8	SkipDormFurnitureBuild		建造家具	902	1		
+13087	8	SkipDormFurnitureBuild		建造家具	902	1		
+13088	8	SkipDormFurnitureBuild		建造家具	902	1		
+13089	8	SkipDormFurnitureBuild		建造家具	902	1		
+13090	8	SkipDormFurnitureBuild		建造家具	902	1		
+13091	8	SkipDormFurnitureBuild		建造家具	902	1		
+13092	8	SkipDormFurnitureBuild		建造家具	902	1		
+13093	8	SkipDormFurnitureBuild		建造家具	902	1		
+13094	8	SkipDormFurnitureBuild		建造家具	902	1		
+13095	8	SkipDormFurnitureBuild		建造家具	902	1		
+13096	8	SkipDormFurnitureBuild		建造家具	902	1		
+13097	8	SkipDormFurnitureBuild		建造家具	902	1		
+13098	8	SkipDormFurnitureBuild		建造家具	902	1		
+13099	8	SkipDormFurnitureBuild		建造家具	902	1		
+13100	8	SkipDormFurnitureBuild		建造家具	902	1		
+13101	8	SkipDormFurnitureBuild		改装家具	902	2		
+13102	8	SkipDormFurnitureBuild		改装家具	902	2		
+13103	8	SkipDormFurnitureBuild		改装家具	902	2		
+13104	8	SkipDormFurnitureBuild		改装家具	902	2		
+13105	8	SkipDormFurnitureBuild		改装家具	902	2		
+13106	8	SkipDormWarehouse		分解家具	902	1		
+13107	8	SkipDormWarehouse		分解家具	902	1		
+13108	8	SkipDormWarehouse		分解家具	902	1		
+13109	8	SkipDormWarehouse		分解家具	902	1		
+13110	8	SkipDormWarehouse		分解家具	902	1		
+13111	8	SkipDormWarehouse		前往宿舍	902	1		
+13112	8	SkipDormWarehouse		前往宿舍	902	1		
+13113	8	SkipDormWarehouse		前往宿舍	902	1		
+13114	8	SkipDormWarehouse		前往宿舍	902	1		
+13115	8	SkipDormWarehouse		前往宿舍	902	1		
+13116	8	SkipDormMain		前往宿舍	902			
+13117	8	SkipDormMain		前往宿舍	902			
+13118	8	SkipDormMain		前往宿舍	902			
+13119	8	SkipDormMain		前往宿舍	902			
+13120	8	SkipDormMain		前往宿舍	902			
+13121	8	SkipDormMain		前往宿舍	902			
+13122	8	SkipDormMain		前往宿舍	902			
+13123	8	SkipDormMain		前往宿舍	902			
+13124	8	SkipDormMain		前往宿舍	902			
+13125	8	SkipDormMain		前往宿舍	902			
+13126	8	SkipDormMain		前往宿舍	902			
+13127	8	SkipDormMain		前往宿舍	902			
+13128	8	SkipDormMain		前往宿舍	902			
+13129	8	SkipDormMain		前往宿舍	902			
+13130	8	SkipDormMain		前往宿舍	902			
+13131	8	SkipDormMain		前往宿舍	902			
+13132	8	SkipDormMain		前往宿舍	902			
+13133	8	SkipDormMain		前往宿舍	902			
+13134	8	SkipDormMain		前往宿舍	902			
+13135	8	SkipDormMain		前往宿舍	902			
+13136	8	SkipDormMain		前往宿舍	902			
+13137	8	SkipDormMain		前往宿舍	902			
+13138	8	SkipDormMain		前往宿舍	902			
+13139	8	SkipDormMain		前往宿舍	902			
+13140	8	SkipDormMain		前往宿舍	902			
+10000	7	OnOpenUiArena		纷争战区	10204			
+10001	6	UiBag		分解4星武器	301	1	0	0
+10002	6	UiBag		分解5星武器	301	1	0	0
+10003	6	UiBag		分解6星武器	301	1	0	0
+10004	6	UiBag		分解4星意识	301	2	0	0
+10005	6	UiBag		分解5星意识	301	2	0	0
+10006	6	UiBag		分解6星意识	301	2	0	0
+10007	8	SkipDormMain		宿舍事件	902			
+10008	6	UiPurchase		礼包获得	5	2	0	0
+10009	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+10010	4			分解基地装备	901			
+10011	7	OnOpenUiPrequel		间章	1701			
+10012	1	UiDrawMain		研发	401			
+10013	7	OnOpenUiFubenDaily		构造体特训	10406	1000		
+10014	7	OnOpenUiFubenDaily		军备突破2-4关	10408	1002		
+10015	8	SkipDormShop		宿舍商店	902			
+10016	6	UiShop	3	涂装商店	1001	1	0	501
+10017	7	OnOpenExhibition		构造体军团	105			
+10018	1	UiSign		登陆礼包	5			
+10019	6	UiPurchase		首充获得	3	1	0	0
+10020	8	SkipDormDraw		宿舍研发	902			
+10021	7	OnOpenUiFubenDaily		军备突破1-4关	10408	1002		
+10022	7	OnOpenUiFubenDaily		军备突破2-4关	10408	1002		
+10023	7	OnOpenUiFubenDaily		军备突破3-4关	10408	1002		
+10024	6	UiBag		逆元碎片分解	301	4	0	0
+10025	6	UiPurchase		累积充值	5	2	0	0
+10026	8	SkipDormWork		宿舍执勤	902			
+10027	8	SkipDormTask		宿舍任务	902	2		
+10028	8	SkipDormMain		宿舍事件	902			
+20000	1	UiFuben		活动副本				
+20001	7	OnOpenUiActivityBossSingle		格式塔				
+20002	7	OnOpenUiOnlineBoss		协同作战	10302			
+20003	7	OnOpenMainlineSubtab		间章	1701	2		
+11010101	3	UiFuben	11010101	困难1-1				
+11010102	3	UiFuben	11010102	困难1-2				
+11010103	3	UiFuben	11010103	困难1-3				
+11010104	3	UiFuben	11010104	困难1-4				
+11010105	3	UiFuben	11010105	困难1-5				
+11010106	3	UiFuben	11010106	困难1-6				
+11020101	3	UiFuben	11020101	困难2-1				
+11020102	3	UiFuben	11020102	困难2-2				
+11020103	3	UiFuben	11020103	困难2-3				
+11020104	3	UiFuben	11020104	困难2-4				
+11020105	3	UiFuben	11020105	困难2-5				
+11020106	3	UiFuben	11020106	困难2-6				
+11030101	3	UiFuben	11030101	困难3-1				
+11030102	3	UiFuben	11030102	困难3-2				
+11030103	3	UiFuben	11030103	困难3-3				
+11030104	3	UiFuben	11030104	困难3-4				
+11030105	3	UiFuben	11030105	困难3-5				
+11030106	3	UiFuben	11030106	困难3-6				
+11040101	3	UiFuben	11040101	困难4-1				
+11040102	3	UiFuben	11040102	困难4-2				
+11040103	3	UiFuben	11040103	困难4-3				
+11040104	3	UiFuben	11040104	困难4-4				
+11040105	3	UiFuben	11040105	困难4-5				
+11040106	3	UiFuben	11040106	困难4-6				
+11050101	3	UiFuben	11050101	困难5-1				
+11050102	3	UiFuben	11050102	困难5-2				
+11050103	3	UiFuben	11050103	困难5-3				
+11050104	3	UiFuben	11050104	困难5-4				
+11050105	3	UiFuben	11050105	困难5-5				
+11050106	3	UiFuben	11050106	困难5-6				
+11060101	3	UiFuben	11060101	困难6-1				
+11060102	3	UiFuben	11060102	困难6-2				
+11060103	3	UiFuben	11060103	困难6-3				
+11060104	3	UiFuben	11060104	困难6-4				
+11060105	3	UiFuben	11060105	困难6-5				
+11060106	3	UiFuben	11060106	困难6-6				
+11070101	3	UiFuben	11070101	困难7-1				
+11070102	3	UiFuben	11070102	困难7-2				
+11070103	3	UiFuben	11070103	困难7-3				
+11070104	3	UiFuben	11070104	困难7-4				
+11070105	3	UiFuben	11070105	困难7-5				
+11070106	3	UiFuben	11070106	困难7-6				
+11080101	3	UiFuben	11080101	困难8-1				
+11080102	3	UiFuben	11080102	困难8-2				
+11080103	3	UiFuben	11080103	困难8-3				
+11080104	3	UiFuben	11080104	困难8-4				
+11080105	3	UiFuben	11080105	困难8-5				
+11080106	3	UiFuben	11080106	困难8-6				
+10010101	3	UiFuben	10010101	普通1-1				
+10010102	3	UiFuben	10010102	普通1-2				
+10010103	3	UiFuben	10010103	普通1-3				
+10010104	3	UiFuben	10010104	普通1-4				
+10010201	3	UiFuben	10010201	普通1-5				
+10010202	3	UiFuben	10010202	普通1-6				
+10010203	3	UiFuben	10010203	普通1-7				
+10010204	3	UiFuben	10010204	普通1-8				
+10010301	3	UiFuben	10010301	普通1-9				
+10010302	3	UiFuben	10010302	普通1-10				
+10010303	3	UiFuben	10010303	普通1-11				
+10010304	3	UiFuben	10010304	普通1-12				
+10020101	3	UiFuben	10020101	普通2-1				
+10020102	3	UiFuben	10020102	普通2-2				
+10020103	3	UiFuben	10020103	普通2-3				
+10020104	3	UiFuben	10020104	普通2-4				
+10020201	3	UiFuben	10020201	普通2-5				
+10020202	3	UiFuben	10020202	普通2-6				
+10020203	3	UiFuben	10020203	普通2-7				
+10020204	3	UiFuben	10020204	普通2-8				
+10020301	3	UiFuben	10020301	普通2-9				
+10020302	3	UiFuben	10020302	普通2-10				
+10020303	3	UiFuben	10020303	普通2-11				
+10020304	3	UiFuben	10020304	普通2-12				
+10030101	3	UiFuben	10030101	普通3-1				
+10030102	3	UiFuben	10030102	普通3-2				
+10030103	3	UiFuben	10030103	普通3-3				
+10030104	3	UiFuben	10030104	普通3-4				
+10030201	3	UiFuben	10030201	普通3-5				
+10030202	3	UiFuben	10030202	普通3-6				
+10030203	3	UiFuben	10030203	普通3-7				
+10030204	3	UiFuben	10030204	普通3-8				
+10030301	3	UiFuben	10030301	普通3-9				
+10030302	3	UiFuben	10030302	普通3-10				
+10030303	3	UiFuben	10030303	普通3-11				
+10030304	3	UiFuben	10030304	普通3-12				
+10040101	3	UiFuben	10040101	普通4-1				
+10040102	3	UiFuben	10040102	普通4-2				
+10040103	3	UiFuben	10040103	普通4-3				
+10040104	3	UiFuben	10040104	普通4-4				
+10040201	3	UiFuben	10040201	普通4-5				
+10040202	3	UiFuben	10040202	普通4-6				
+10040203	3	UiFuben	10040203	普通4-7				
+10040204	3	UiFuben	10040204	普通4-8				
+10040301	3	UiFuben	10040301	普通4-9				
+10040302	3	UiFuben	10040302	普通4-10				
+10040303	3	UiFuben	10040303	普通4-11				
+10040304	3	UiFuben	10040304	普通4-12				
+10050101	3	UiFuben	10050101	普通5-1				
+10050102	3	UiFuben	10050102	普通5-2				
+10050103	3	UiFuben	10050103	普通5-3				
+10050104	3	UiFuben	10050104	普通5-4				
+10050201	3	UiFuben	10050201	普通5-5				
+10050202	3	UiFuben	10050202	普通5-6				
+10050203	3	UiFuben	10050203	普通5-7				
+10050204	3	UiFuben	10050204	普通5-8				
+10050301	3	UiFuben	10050301	普通5-9				
+10050302	3	UiFuben	10050302	普通5-10				
+10050303	3	UiFuben	10050303	普通5-11				
+10050304	3	UiFuben	10050304	普通5-12				
+10060101	3	UiFuben	10060101	普通6-1				
+10060102	3	UiFuben	10060102	普通6-2				
+10060103	3	UiFuben	10060103	普通6-3				
+10060104	3	UiFuben	10060104	普通6-4				
+10060201	3	UiFuben	10060201	普通6-5				
+10060202	3	UiFuben	10060202	普通6-6				
+10060203	3	UiFuben	10060203	普通6-7				
+10060204	3	UiFuben	10060204	普通6-8				
+10060301	3	UiFuben	10060301	普通6-9				
+10060302	3	UiFuben	10060302	普通6-10				
+10060303	3	UiFuben	10060303	普通6-11				
+10060304	3	UiFuben	10060304	普通6-12				
+10070101	3	UiFuben	10070101	普通7-1				
+10070102	3	UiFuben	10070102	普通7-2				
+10070103	3	UiFuben	10070103	普通7-3				
+10070104	3	UiFuben	10070104	普通7-4				
+10070201	3	UiFuben	10070201	普通7-5				
+10070202	3	UiFuben	10070202	普通7-6				
+10070203	3	UiFuben	10070203	普通7-7				
+10070204	3	UiFuben	10070204	普通7-8				
+10070301	3	UiFuben	10070301	普通7-9				
+10070302	3	UiFuben	10070302	普通7-10				
+10070303	3	UiFuben	10070303	普通7-11				
+10070304	3	UiFuben	10070304	普通7-12				
+10080101	3	UiFuben	10080101	普通8-1				
+10080102	3	UiFuben	10080102	普通8-2				
+10080103	3	UiFuben	10080103	普通8-3				
+10080104	3	UiFuben	10080104	普通8-4				
+10080201	3	UiFuben	10080201	普通8-5				
+10080202	3	UiFuben	10080202	普通8-6				
+10080203	3	UiFuben	10080203	普通8-7				
+10080204	3	UiFuben	10080204	普通8-8				
+10080301	3	UiFuben	10080301	普通8-9				
+10080302	3	UiFuben	10080302	普通8-10				
+10080303	3	UiFuben	10080303	普通8-11				
+10080304	3	UiFuben	10080304	普通8-12				
+30001	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30002	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30003	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30004	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30005	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30006	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30007	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30008	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30009	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30010	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30011	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30012	7	OnOpenUiFubenBossSingle		幻痛囚笼	10203			
+30013	7	OnOpenUiArena		纷争战区	10204			
+30014	7	OnOpenUiArena		纷争战区	10204			
+30015	7	OnOpenUiArena		纷争战区	10204			
+30016	7	OnOpenUiArena		纷争战区	10204			
+30017	7	OnOpenUiArena		纷争战区	10204			
+30018	7	OnOpenUiArena		纷争战区	10204			
+30019	7	OnOpenUiArena		纷争战区	10204			
+30020	7	OnOpenUiArena		纷争战区	10204			
+30021	7	OnOpenUiArena		纷争战区	10204			
+30022	7	OnOpenUiArena		纷争战区	10204			
+30023	7	OnOpenUiArena		纷争战区	10204			
+30024	7	OnOpenUiArena		纷争战区	10204			
+30025	7	OnOpenUiArena		纷争战区	10204			
+30026	7	OnOpenUiArena		纷争战区	10204			
+500000	3	UiFuben	10010102	普通1-2				
+500010	3	UiFuben	10010104	普通1-4				
+500020	3	UiFuben	10010202	普通1-6				
+500030	3	UiFuben	10010204	普通1-8				
+500040	3	UiFuben	10010302	普通1-10				

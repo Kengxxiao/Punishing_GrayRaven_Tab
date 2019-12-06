@@ -1,0 +1,3 @@
+Id	Name	Info	BornPosition[1]	BornPosition[2]	BornPosition[3]	BornPosition[4]	BornPosition[5]	LookPosition[1]	LookPosition[2]	LookPosition[3]	LookPosition[4]	LookPosition[5]	DefaultObstacleArea[1]	DefaultObstacleArea[2]	DefaultObstacleArea[3]	DefaultObstacleArea[4]	DefaultDynamicObject[1]	DefaultDynamicObject[2]	DefaultDynamicObject[3]	DefaultDynamicObject[4]
+301101070	SceneDLC00101	30110107	PB1	PB2	PB3	PB4	PB5	B101	S1	S1	S1	S1	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101
+301101080	SceneDLC00101	30110108	PB1	PB2	PB3	PB4	PB5	B101	S1	S1	S1	S1	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101	SceneDLC00101

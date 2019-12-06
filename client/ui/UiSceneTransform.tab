@@ -1,0 +1,3 @@
+Id	UiName	SceneUrl	PositionX	PositionY	PositionZ	RotationX	RotationY	RotationZ	ScaleX	ScaleY	ScaleZ
+1	UiOnlineBoss	Assets/Product/Ui/Scene3DPrefab/UiOnlineBossScene1.prefab	-33	0	-83	0	0	0	1	1	1
+2	UiOnlineBossActivity	Assets/Product/Ui/Scene3DPrefab/UiOnlineBossScene1.prefab	-33	0	-83	0	0	0	1	1	1

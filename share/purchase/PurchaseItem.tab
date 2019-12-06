@@ -1,0 +1,8 @@
+Id	ConsumeId	ConsumeCount	ObtainId	ObtainCount	FirstObtainId	FirstObtainCount	ExtraObtainId	ExtraObtainCount	Desc	Icon	UiType	Priority	FirstObtainStartTimeStr	FirstObtainEndTimeStr	LogType
+100	5	1	2	10	2	10	2	0	购买10黑卡	UiPurchaseIconDh1	3	1	2019/1/1 0:00		1
+101	5	6	2	60	2	60	2	0	购买60黑卡	UiPurchaseIconDh6	3	2	2019/1/1 0:00		1
+102	5	30	2	300	2	300	2	30	购买300黑卡	UiPurchaseIconDh30	3	3	2019/1/1 0:00		1
+103	5	68	2	680	2	680	2	120	购买680黑卡	UiPurchaseIconDh68	3	4	2019/1/1 0:00		1
+104	5	128	2	1280	2	1280	2	270	购买1280黑卡	UiPurchaseIconDh128	3	5	2019/1/1 0:00		1
+105	5	328	2	3280	2	3280	2	800	购买3280黑卡	UiPurchaseIconDh328	3	6	2019/1/1 0:00		1
+106	5	648	2	6480	2	6480	2	1680	购买6480黑卡	UiPurchaseIconDh648	3	7	2019/9/1 0:00		1

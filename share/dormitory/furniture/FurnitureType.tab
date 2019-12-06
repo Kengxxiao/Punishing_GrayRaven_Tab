@@ -1,0 +1,13 @@
+Id	MajorType	MajorName	MinorType	MinorName	Category	CategoryName	TypeIcon
+25001	1	改造	1	地板	1	地板	Assets/Product/Texture/Image/IconTools/IconDormBasisfloor001.png
+25002	1	改造	2	墙	2	墙	Assets/Product/Texture/Image/IconTools/IconDormBasiswall001.png
+25003	1	改造	3	天花板	3	天花板	Assets/Product/Texture/Image/IconTools/IconDormBasisceiling001.png
+25004	2	家具	4	大件	4	沙发	Assets/Product/Texture/Image/IconTools/IconDormBasissofa001.png
+25005	2	家具	4	大件	5	床	Assets/Product/Texture/Image/IconTools/IconDormBasisbed001.png
+25006	2	家具	4	大件	6	柜子	Assets/Product/Texture/Image/IconTools/IconDormBasiswardrobe001.png
+25007	2	家具	4	大件	7	桌子	Assets/Product/Texture/Image/IconTools/IconDormBasistable001.png
+25008	2	家具	5	小件	8	椅子	Assets/Product/Texture/Image/IconTools/IconDormBasischair001.png
+25009	2	家具	5	小件	9	板凳	Assets/Product/Texture/Image/IconTools/IconDormBasisstool001.png
+25010	2	家具	5	小件	10	矮柜	Assets/Product/Texture/Image/IconTools/IconDormBasiscabinet001.png
+25011	2	家具	5	小件	11	物件	Assets/Product/Texture/Image/IconTools/IconDormBasisterminal001.png
+25012	2	家具	6	挂饰	12	挂饰	Assets/Product/Texture/Image/IconTools/IconDormBasisairconditioning001.png

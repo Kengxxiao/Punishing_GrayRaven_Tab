@@ -1,0 +1,4 @@
+Id	OrderId	Name	ChapterName	Cover	Icon	Description	MinLevel	MaxLevel	ShowRewardId	ShopId	ChallengeId[1]	ChallengeId[2]	ChallengeId[3]	ChallengeId[4]	ChallengeId[5]
+1	1	黎明烽燧	深蓝伤痕	Assets/Product/Texture/Image/UiFubenActivityBanner/FubenActivityBanner04.png	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon1.png	作战提示：尽量规避守林人的攻击，优先清理其他敌人。\n通关奖励：活动货币\n活动时间：2019年10月1日-2019年10月30日	1	30	1001	2001	1	2	3	4	5
+2	2	钢铁守御	深蓝伤痕	Assets/Product/Texture/Image/UiFubenActivityBanner/FubenActivityBanner04.png	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon2.png	作战提示：尽量规避守林人的攻击，优先清理其他敌人。\n通关奖励：活动货币\n活动时间：2019年10月1日-2019年10月30日	31	50	1002	2001	6	7	8	9	10
+3	3	机械关城	深蓝伤痕	Assets/Product/Texture/Image/UiFubenActivityBanner/FubenActivityBanner04.png	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon3.png	作战提示：尽量规避守林人的攻击，优先清理其他敌人。\n通关奖励：活动货币\n活动时间：2019年10月1日-2019年10月30日	51	80	1003	2001	11	12	13	14	15

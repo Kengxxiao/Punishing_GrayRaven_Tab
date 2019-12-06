@@ -1,0 +1,4 @@
+Id	MoodMinValue	MoodMaxValue	Describe	Color	Icon
+1	-1	49	<color=#ed5f55ff>心情差</color>	ed5f55ff	Assets/Product/Texture/Atlas/UiDorm/FurnitureImgS0_2.png
+2	49	79	<color=#edd255ff>平静</color>	edd255ff	Assets/Product/Texture/Atlas/UiDorm/FurnitureImgS0_1.png
+3	79	100	<color=#46ca4fff>开心</color>	46ca4fff	Assets/Product/Texture/Atlas/UiDorm/FurnitureImgS0.png

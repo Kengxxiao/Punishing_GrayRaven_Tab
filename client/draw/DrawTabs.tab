@@ -1,0 +1,5 @@
+Id	TxtName1	TxtName2	TxtName3	TxtTagName	Priority	ParentName
+1	01	基准	标准组合		8	PanelCardsStandard
+2	02	活动	活动组合		9	PanelCardsActivity
+3	03	狙击活动	狙击组合		10	PanelCardsStandard
+4	04	角色活动	角色组合	角色	11	PanelCardsActivity

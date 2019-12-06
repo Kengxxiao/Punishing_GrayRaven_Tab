@@ -1,0 +1,5 @@
+Id	Name	BgPic	Icon	RewardId	RewardIcon	PreId	Endurance	StoryId	ChapterPrefab
+1	黄金核心	Assets/Product/Texture/Image/UiExplore/UiExploreBg1.png	Assets/Product/Texture/Image/UiExplore/UiExploreZj1.png	3001	Assets/Product/Texture/Image/IconcurrencySp/IconConsumeMoneySp.png	0	12	1110834	Assets/Product/Ui/ComponentPrefab/FuBenExplore/FuBenExplore01.prefab
+2	砂之梦	Assets/Product/Texture/Image/UiExplore/UiExploreBg2.png	Assets/Product/Texture/Image/UiExplore/UiExploreZj2.png	3002	Assets/Product/Texture/Image/IconcurrencySp/IconConsumeMoneySp.png	1	12	1110834	Assets/Product/Ui/ComponentPrefab/FuBenExplore/FuBenExplore02.prefab
+3	织命	Assets/Product/Texture/Image/UiExplore/UiExploreBg3.png	Assets/Product/Texture/Image/UiExplore/UiExploreZj3.png	3003	Assets/Product/Texture/Image/IconcurrencySp/IconConsumeMoneySp.png	2	12	1110834	Assets/Product/Ui/ComponentPrefab/FuBenExplore/FuBenExplore03.prefab
+4	再无黄金	Assets/Product/Texture/Image/UiExplore/UiExploreBg4.png	Assets/Product/Texture/Image/UiExplore/UiExploreZj4.png	3004	Assets/Product/Texture/Image/IconcurrencySp/IconConsumeMoneySp.png	3	12	1110834	Assets/Product/Ui/ComponentPrefab/FuBenExplore/FuBenExplore04.prefab

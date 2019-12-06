@@ -1,0 +1,4 @@
+Id	Name	Icon	MinLevel	MaxLevel	ShowRewardId	NormalId	DifficultyId	ShopId
+1	黎明烽燧	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon1.png	40	54	1001	1	2	2001
+2	钢铁守御	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon2.png	55	69	1002	1	2	2001
+3	机械关城	Assets/Product/Texture/Atlas/UiFubenActivityZhixian/UFAZhixianIcon3.png	70	100	1003	1	2	2001

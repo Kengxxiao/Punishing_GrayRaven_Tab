@@ -1,0 +1,61 @@
+Id	CharacterId	GrowUpLevel	ModelId	EffectRootName	EffectPath
+1	1011002	1	R2LiangMd010011		
+2	1011002	2	R2LiangMd010021		
+3	1011002	3	R2LiangMd010031		
+4	1011002	4	R2LiangMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR2Liang/FxR2LiangPinzhiGuadianBip001LForearm.prefab
+5	1021001	1	R1LuxiyaMd010011		
+6	1021001	2	R1LuxiyaMd010021		
+7	1021001	3	R1LuxiyaMd010031		
+8	1021001	4	R1LuxiyaMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR1Luxiya/FxR1LuxiyaPinzhiGuadianBip001RForearm.prefab
+9	1031001	1	R1LifuMd010011		
+10	1031001	2	R1LifuMd010021		
+11	1031001	3	R1LifuMd010031		
+12	1031001	4	R1LifuMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR1Lifu/FxR1LifuPinzhiGuadianBip001LForearm.prefab
+13	1041002	1	R2BiankaMd010011		
+14	1041002	2	R2BiankaMd010021		
+15	1041002	3	R2BiankaMd010031		
+16	1041002	4	R2BiankaMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR2Bianka/FxR2BiankaPinzhiGuadianBip001LForearm.prefab
+17	1051001	1	R2YongyechaoMd010011		
+18	1051001	2	R2YongyechaoMd010021		
+19	1051001	3	R2YongyechaoMd010031		
+20	1051001	4	R2YongyechaoMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR2Qishi/FxR2YongyechaoPinzhiGuadianBip001LForearm.prefab
+21	1061002	1	R2ShenweiMd010011		
+22	1061002	2	R2ShenweiMd010021		
+23	1061002	3	R2ShenweiMd010031		
+24	1061002	4	R2ShenweiMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR2Shenwei/FxR2ShenweiPinzhiGuadianBip001RForearm.prefab
+25	1071002	1	R2KalieninaMd010011		
+26	1071002	2	R2KalieninaMd010021		
+27	1071002	3	R2KalieninaMd010031		
+28	1071002	4	R2KalieninaMd010031	Bip001RUpperArm	Assets/Product/Effect/Prefab/FxR2Kalienina/FxR2KalieninaPinzhiGuadianBip001RUpperArm.prefab
+29	1081002	1	R2DubianMd010011		
+30	1081002	2	R2DubianMd010021		
+31	1081002	3	R2DubianMd010031		
+32	1081002	4	R2DubianMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR2Dubian/FxR2DubianPinzhiGuadianBip001RForearm.prefab
+33	1021002	1	R2LuxiyaMd010011		
+34	1021002	2	R2LuxiyaMd010021		
+35	1021002	3	R2LuxiyaMd010031		
+36	1021002	4	R2LuxiyaMd010031	Bip001RUpperArm	Assets/Product/Effect/Prefab/FxR2Luxiya/FxR2LuxiyaPinzhiGuadianBip001RUpperArm.prefab
+37	1031002	1	R2LifuMd010011		
+38	1031002	2	R2LifuMd010021		
+39	1031002	3	R2LifuMd010031		
+40	1031002	4	R2LifuMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR2Lifu/FxR2LifuPinzhiGuadianBip001RForearm.prefab
+41	1011003	1	R3LiangMd010011		
+42	1011003	2	R3LiangMd010021		
+43	1011003	3	R3LiangMd010031		
+44	1011003	4	R3LiangMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR3Liang/FxR3LiangPinzhiGuadianBip001LForearm.prefab
+45	1031003	1	R3LifuMd010011		
+46	1031003	2	R3LifuMd010021		
+47	1031003	3	R3LifuMd010031		
+48	1031003	4	R3LifuMd010031	Bip001RUpperArm	Assets/Product/Effect/Prefab/FxR3Lifu/FxR3LifuPinzhiGuadianBip001RUpperArm.prefab
+49	1061003	1	R3ShenweiMd010011		
+50	1061003	2	R3ShenweiMd010021		
+51	1061003	3	R3ShenweiMd010031		
+52	1061003	4	R3ShenweiMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR3Shenwei/FxR3ShenweiPinzhiGuadianBip001RForearm.prefab
+53	1071003	1	R3KalieninaMd010011		
+54	1071003	2	R3KalieninaMd010021		
+55	1071003	3	R3KalieninaMd010031		
+56	1071003	4	R3KalieninaMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR3Kalienina/FxR3KalieninaPinzhiGuadianBip001RForearm.prefab
+57	1051003	1	R3YongyechaoMd010011		
+58	1051003	2	R3YongyechaoMd010021		
+59	1051003	3	R3YongyechaoMd010031		
+60	1051003	4	R3YongyechaoMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR3Yongyechao/FxR3YongyechaoPinzhiGuadianBip001RForearm.prefab

@@ -1,0 +1,16 @@
+Id	Name	TradeName	Sex	Intro	StoryChapterId	ItemId	LevelUpTemplateId	Priority	EquipType	EquipId	EmotionIcon	Foreshow	DefaultNpcFashtionId	CaptainSkillId	MissionInfo	NeedFirstShow	Code
+1011002	里	异火	2	灰鸦小队队员，表面上有些冷漠，擅长程序与机械，负责灰鸦小队的硬件升级与解决技术难题。	1	501	1	100	1	2013001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6110101	101222	回来了，快收数据。	0	BPN-06
+1021001	露西亚	红莲	1	灰鸦小队队长，具有强大的勇气与牺牲精神，意志坚定地遵守命令在各个战区和感染体作战。	1	502	1	80	2	2022001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6210101	102122	已达成任务目标。	0	BPL-01
+1031001	丽芙	蚀暗	1	灰鸦小队队员，富有同情心的她作为最新辅助型构造体，为团队提供着可靠的支援力量，是团队最坚实的后盾。	1	503	1	90	3	2032001	Assets/Product/Texture/Image/IconType/IconCharacter2.png	0	6310101	103122	丽芙回来了，感觉很新鲜呢……	0	BPN-08
+1041002	比安卡	零度	1	清理部队队长，优雅而冷酷的构造体，能够很好的安排并且处理好总部派来的清理命令。	1	504	1	400	4	2043001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6410101	104222	您嘱托的事情已经完成。	0	BPO-87
+1051001	七实	风暴	1	行踪时常捉摸不定的神秘构造体，活泼热闹却几乎无人知晓她的真实身份，最大的爱好是观察人类和恶作剧。	1	505	1	300	5	2053001	Assets/Product/Texture/Image/IconType/IconCharacter1.png	0	6510101	105122	七实有大发现哦！	0	MPL-00
+1061002	神威	重能	2	突击鹰小队的队员，擅长单独行动，天性乐观并且乐于助人，但脱线的性格也经常让他惹出不少麻烦。	1	506	1	200	6	2063001	Assets/Product/Texture/Image/IconType/IconCharacter1.png	1	6610101	106222	嗨嗨！有没有想我啊？	0	BPE-72
+1071002	卡列尼娜	爆裂	1	工程部队的成员，出身自寰宇技师工会，目前长期作为清理部队的外援行动，生性暴躁单纯，比起谋略更倾向用爆炸解决问题。	1	507	1	500	7	2073001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6710101	107222	哼，比露西亚做得好吧？	0	BPD-72
+1081002	渡边	夜刃	2	遗忘者们的领袖，曾经选择了离开空中花园，与那些被世界遗忘的战友们共同安守住一方绿洲。	1	508	1	600	8	2083001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6810101	108222	不知道这样的结果你是否满意……	0	BPO-29
+1021002	露西亚	黎明	1	露西亚的标志性机体，其强大而绚丽的身姿在战场上鼓舞着无数同伴，因被视作希望的象征而被冠以“黎明”之名。	1	512	1	800	2	2023001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6210201	102222	请确认这次任务的结果。	0	BPL-01
+1031002	丽芙	流光	1	丽芙剪去了长发，以表明自身的觉悟意志，在调整为更适合战斗的姿态后，终于重新返回战场。	1	513	1	700	3	2033001	Assets/Product/Texture/Image/IconType/IconCharacter2.png	0	6310201	103222	丽芙达成了您的期望吗……	0	BPN-08
+1011003	里	乱数	2	突破了准则的限制，过去与现在的感情交织，构造了机体的基础。以强大的运算能力更精确地把握住弹道，里成为了战场上最精锐的攻击尖兵。	1	521	1	900	1	2013001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6110301	101322	你该不会以为我有可能失败吧？	0	BPN-06
+1031003	丽芙	仰光	1	丽芙强大的内心中始终保存着一个单纯的梦，而这份耀眼的单纯也铸就了这台强大的机体。	1	523	1	1000	3	2033001	Assets/Product/Texture/Image/IconType/IconCharacter2.png	0	6310301	103322	这是，为了大家的未来。	0	BPN-08
+1061003	神威	暗能	2	神威在被灌入并压制住体内澎湃的暗能后所诞生的机体形态，能够自由在两种战斗模式间切换。	1	516	1	1100	6	2063001	Assets/Product/Texture/Image/IconType/IconCharacter1.png	0	6610301	106322	指挥官，这样的任务也太简单了。	0	BPE-72
+1071003	卡列尼娜	烬燃	1	解放了武器的出力限制，获得完全状态的卡列尼娜。脱去隐藏烈焰的外套，展现战斗本能，释放的高热是她燃尽一切阻碍的决心。	1	517	1	1200	7	2073001	Assets/Product/Texture/Image/IconType/IconCharacter3.png	0	6710301	107322	不夸奖我下次就不去了。	0	BPD-72
+1051003	七实	脉冲	1	七实的机动强化型机体，自行加装了IR-005推进轮，拥有高速突进能力的她能在战场上自由驰骋，“只能看到我的残影吧，哼哼”。	1	515	1	1300	5	2053001	Assets/Product/Texture/Image/IconType/IconCharacter1.png	0	6510301	105322	七实是最快回来的！	0	MPL-00

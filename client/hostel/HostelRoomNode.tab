@@ -1,0 +1,5 @@
+Id	Scene	Name	Desc	Path
+1	RoomDomitory	电脑房		GroupBase/Plant001/Bind/Room
+2	RoomDomitory	电厂		GroupBase/Plant002/Bind/Room
+3	RoomDomitory	工厂		GroupBase/Plant003/Bind/Room
+4	RoomDomitory	基地装备		GroupBase/Plant004/Bind/Room

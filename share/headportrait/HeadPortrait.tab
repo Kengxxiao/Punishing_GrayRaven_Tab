@@ -1,0 +1,26 @@
+Id	Name	ImgSrc	LockDescId	ConvertItemId	ConvertItemCount	Description	WorldDesc	Effect	Priority
+9000001	灰鸦	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer01.png	1	1	10000	玩家头像	默认头像之一。		53
+9000002	感染体	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer02.png	1	1	10000	玩家头像	默认头像之一。		52
+9000003	铭牌	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer03.png	1	1	10000	玩家头像	默认头像之一。		50
+9010101	头像-红莲	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadluxiya5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		30
+9010102	头像-黎明	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadluxiya5S.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		29
+9010201	头像-蚀暗	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		28
+9010202	头像-流光	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5S.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		27
+9010203	头像-仰光	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		26
+9010301	头像-异火	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLi5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		25
+9010302	头像-乱数	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLi5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		24
+9010401	头像-风暴	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadYongyechao5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		23
+9010402	头像-脉冲	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadYongyechao5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		22
+9010501	头像-爆裂	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadKalienina5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		21
+9010502	头像-烬燃	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadKalienina5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		20
+9010601	头像-夜刃	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadDubian5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		19
+9010701	头像-零度	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadAolisuo5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		18
+9010801	头像-重能	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadShenwei5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		17
+9010802	头像-暗能	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadShenwei5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		16
+9080001	头像-执行部队	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer06.png	8	1	10000	玩家头像	执行部队的标志。		10
+9090001	库罗罗	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer04.png	3	1	10000	玩家头像	地表各处存在的神秘机械种族，对收集螺母有狂热兴趣。		9
+9090002	头像-特殊身份	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer05.png	4	1	10000	玩家头像	“抱歉，我拒绝透露我的指挥官的真实身份。”	Assets/Product/Effect/Prefab/FxUi/FxUiComponent/FxUiTouxiang.prefab	8
+9090003	库罗罗指挥官	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer10.png	10	1	10000	玩家头像	披着指挥官外套的神秘机械。		7
+9090004	小电视指挥官	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer11.png	11	1	10000	玩家头像	披着指挥官外套的小电视家具，似乎被当成了衣架。		6
+9090005	土豆先生	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer12.png	12	1	10000	玩家头像	空中花园的知名快餐，经过千锤百炼后依然坚挺。		5
+9090006	逝世土豆	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer13.png	13	1	10000	玩家头像	纪念成熟后被做成熟食的土豆先生。		4

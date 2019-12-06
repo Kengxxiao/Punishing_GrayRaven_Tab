@@ -1,0 +1,4 @@
+Id	IsCaptain	EffectPath	Color
+1	1	Assets/Product/Effect/Prefab/FxUi/FxUiCommon/FxUiRoleEffect1.prefab	FF1111FF
+2	0	Assets/Product/Effect/Prefab/FxUi/FxUiCommon/FxUiRoleEffect2.prefab	4F99FFFF
+3	0	Assets/Product/Effect/Prefab/FxUi/FxUiCommon/FxUiRoleEffect3.prefab	F9CB35FF

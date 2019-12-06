@@ -1,0 +1,57 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+99710101	左手前刺	1	3	4	-3.5	0.8	0			4		0.25			-1		FxMb1RobotarmorMd030001Attack01YShouji01						-1			2	100	50	2	6	0	0	0	0							0	1				997101011	801030	200003	902277			200003			0	HitCase	1	1			0		1					
+99710201	右手勾拳1	2	2		4	-2	0			4		0.15			-1		FxMb1RobotarmorMd030001Attack02YShouji01						-1			2	-20	50	4	6	0	0	0	0							0	1				997102011	801030	200003	902278			200003			0	HitCase	1	1			0		1					
+99710301	泰山压顶	2	8				0			4		0.1			-1		FxMb1RobotarmorMd030001Attack03Yshouji01						-1			1					0	0	0	1							0	2				997103011	801080	200005	902275			200005			0	HitCase	1	1	1		0		1					
+99710601	释放攻击6	2	10				0			4		0.7			-1		FxMb1RobotarmorMd030001Attack07YShouji01						-1			1					0	0	0	0							0	1				997106011	801100	200006	902275			200006			0	HitCase	1	1			0		1					
+99710606	大红圈预警	2	10				0			4		1			-1						FxYujing1M05S		-1			1					0	0	0	0							0	1													0	HitCase	1	1					1					
+99710801	连续发射8-子弹1	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108011	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710803	连续发射8-子弹2	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108031	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710805	连续发射8-子弹3	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108051	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710807	连续发射8-子弹4	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108071	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710809	连续发射8-子弹5	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108091	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710811	连续发射8-子弹6	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108111	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710813	连续发射8-子弹7	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108131	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710815	连续发射8-子弹8	2	0.4		0.5	4	25			4		2			-1		FxMb1RobotarmorMd030001Attack08Shouji01				FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997108151	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99710901	大炮球-子弹	2	2.4		0	4	5			4		3		1	-1	1	FxMb1RobotarmorMd030001Attack09Shouji01		0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997109011	801260	811045				811043			0	HitCase	0	0		0	0		1					
+99711001	左脚踩地板	1	1	2		1.5	0			4		0.1			-1		FxMb1RobotarmorMd030001Attack16Shouji01						1			1					0	0	0	0							0	1				997110011	801030	200003	997115			200003			0	HitCase		0		0	0		1					
+99711101	右脚踹	1	1	3	0	2.7	0			4		0.1			-1		FxMb1RobotarmorMd030001Attack17Shouji01						1			1					0	0	0	0							0	1				997111011	801030	200003	995551			200003			0	HitCase		0		0	0		1					
+99711201	出现1	2	0.1				0			4		8			-1						FxMb1RobotarmorMd030001Attack11Y01		-1			1					0	0	0	1	0.5		1	99711202			0	1													0	HitCase		0					0					
+99711202	出现2	2	0.1				0			4		8			-1						FxMb1RobotarmorMd030001Attack11Y03		-1			1					0	0	0	2	0.5		1	99711203			0	1													0	HitCase		0					0					
+99711203	出现特效	2	0.1				0			4		8			-1						FxMb1RobotarmorMd030001Attack11Y02		-1			1					0	0	0	2	0.5		1	99711204			0	1													0	HitCase		0					0					
+99711204	光罩	2	1				0			4		8		1	-1	1			1		FxMb1RobotarmorMd030001Attack11Y04		-1		FxMb1RobotarmorMd030001Attack11Y05	1					0	0	0	2							0	1				997112041	801250								0	HitCase		0					0					
+99711401	光罩	2	1				0			4		5		1	-1						FxYujingJu01		-1			1					0	0	0	0							0	1				997114011	801010								0	HitCase		0					1					
+99711501	环绕球	2	2		0	4	5			4		5		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	2	40	120	4	8	0	0	0	0							0	1				997115011	801220								0	HitCase	0	0		0	0		1					
+99715103	光罩	2	1				0			4		1.3		1	-1						FxMb1RobotarmorMd030001Attack11Y04		-1		FxMb1RobotarmorMd030001Attack11Y05	1					0	0	0	0	0		1	99715104			0	1													0.6	HitCase	1	0					0					
+99715104	子子弹	2	1.2				0			4		1.05			-1	1	FxMb1RobotarmorMd030001Attack11Y05		0.3				-1			1					0	0	0	0							0	1				997151041	801210								0	HitCase		0					0					
+99715203	光罩	2	1				0			4		1.3		1	-1						FxMb1RobotarmorMd030001Attack11Y04		-1		FxMb1RobotarmorMd030001Attack11Y05	1					0	0	0	0	0		1	99715104			0	1													0.6	HitCase	1	0					0					
+99715204	子子弹	2	1.2				0			4		1.05			-1	1	FxMb1RobotarmorMd030001Attack11Y05		0.3				-1			1					0	0	0	0							0	1				997152041	801210								0	HitCase		0					0					
+99715501	左手前刺	1	3	4	-3.5	0.8	0			4		0.25			-1								-1			2	100	50	2	6	0	0	0	0							0	1				997155011	801010	200003	902277			200003		997155012	0	HitCase	1	1			0		1					
+99715601	右手勾拳1	2	2		4	-2	0			4		0.15			-1								-1			2	-20	50	4	6	0	0	0	0							0	1				997156011	801015	200003	902278			200003		997156012	0	HitCase	1	1			0		1					
+99715701	天残脚-玩家操作	1	2	2		1.5	0			4		0.1			-1								1			1					0	0	0	0							0	1				997157011	801010	200003	997115			200003		997157012	0	HitCase		0		0	0		1					
+99715801	右脚踹	1	1	3	0	2.7	0			4		0.1			-1								1			1					0	0	0	0							0	1				997158011	801015	200003	995551	831011		200003		997158012	0	HitCase		0		0	0		1					
+99716101	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.1	HitCase		0					1					
+99716103	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716105	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716107	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716109	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716111	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716113	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716115	连续发射8-子弹1	2	0.1		-0.2	-2.5	0			4		0.1			-1						FxMb1RobotarmorMd030001Attack08		-1			1					0	0	0	0			1	99716119			0	1													-0.4	HitCase		0					1					
+99716119	开枪	2	0.7		0.5	3.8	40			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997161191	801010	811044				811044			2.5	HitCase	1	0					1					
+99716201	大炮球-子弹1-玩家操作	2	2.4		0	4	5		0	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997162011	801230	811045				811043			0	HitCase	0	0		0	0		1					
+99716202	大炮球-子弹2-玩家操作	2	2.4		0	4	5		45	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997162021	801230	811045				811043			0	HitCase	0	0		0	0		1					
+99716203	大炮球-子弹3-玩家操作	2	2.4		0	4	5		-45	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997162031	801230	811045				811043			0	HitCase	0	0		0	0		1					
+99716301	泰山压顶-玩家操作	2	8				0			4		0.1			-1								-1			1					0	0	0	1							0	2				997163011	801015	200005	902275			200005			0	HitCase	1	1	1		0		1					
+99716401	连续发射8-子弹1	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164011	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716403	连续发射8-子弹2	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164031	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716405	连续发射8-子弹3	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164051	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716407	连续发射8-子弹4	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164071	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716409	连续发射8-子弹5	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164091	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716411	连续发射8-子弹6	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164111	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716413	连续发射8-子弹7	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164131	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716415	连续发射8-子弹8	2	0.7		0.5	4	25			4		2			-1						FxMb1RobotarmorMd030001Attack08Dandao		-1			1					0	0	0	0							0	1				997164151	801110	811044				811044			1.7	HitCase	1	0		0			1					
+99716501	大炮球-子弹1-玩家操作	2	2.4		0	4	5		0	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997165011	801260	811045				811043			0	HitCase	0	0		0	0		1					
+99716502	大炮球-子弹2-玩家操作	2	2.4		0	4	5		45	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997165021	801260	811045				811043			0	HitCase	0	0		0	0		1					
+99716503	大炮球-子弹3-玩家操作	2	2.4		0	4	5		-45	4		3		1	-1	1			0.5		FxMb1RobotarmorMd030001Attack09Dandao01		-1		FxMb1RobotarmorMd030001Attack09bao	1	40	150	3	8	0	0	0	0							0	1				997165031	801260	811045				811043			0	HitCase	0	0		0	0		1					
+99716601	天残脚-玩家操作	2	10			1.5	0			4		0.1			-1								1			1					0	0	0	0							0	1				997166011	801080	200003	997115			200003			0	HitCase		0		0	0		1					
+99717101	泰山压顶-玩家操作	2	8				0			4		0.1			-1								-1			1					0	0	0	1							0	2				997171011	801080	200005	902275			200005			0	HitCase	1	1	1		0		1					

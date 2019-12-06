@@ -1,0 +1,3 @@
+Id	Name	PrefabPath	CanBuyDay	Description
+1	月卡	Assets/Product/Ui/ComponentPrefab/Sign/SignCard.prefab	30	月卡购买后，持续30日，每日5:00，可领取100黑卡。\n月卡最多购买2张，超过2张后无法购买。\n购买后可立即获取300黑卡。
+2	S2月卡	Assets/Product/Ui/ComponentPrefab/Sign/SignCard.prefab	60	S2赛季月卡大礼包，爱买不买！

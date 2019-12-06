@@ -1,0 +1,24 @@
+Id	NpcOperationKey	RecommendXboxIco[1]	RecommendXboxIco[2]	RecommendPsIco[1]	RecommendPsIco[2]	RecommendOtherIco[1]	RecommendOtherIco[2]
+1	1	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon8.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon8.png			
+2	2	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon6.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon6.png			
+3	3	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon7.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon7.png			
+4	4	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon5.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon5.png			
+5	5	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon10.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon8.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon9.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon8.png		
+6	6	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon10.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon6.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon9.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon6.png		
+7	7	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon10.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon7.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon9.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon7.png		
+8	8	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon10.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon5.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon9.png	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon5.png		
+9	9						
+10	10						
+11	15	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon16.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon16.png			
+12	16	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon9.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon17.png			
+13	17	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon17.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon10.png			
+14	20	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon1.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon11.png			
+15	21	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon2.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon12.png			
+16	100	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon11.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon1.png			
+17	101	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon12.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon2.png			
+18	102	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon13.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon3.png			
+19	103	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon14.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon4.png			
+20	104	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon18.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon18.png			
+21	105	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon19.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon19.png			
+22	106	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon20.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon20.png			
+23	107	Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadXboxIcon21.png		Assets/Product/Texture/Atlas/UiSetGamePad/UiGamePadPs4Icon21.png			

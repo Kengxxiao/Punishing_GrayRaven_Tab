@@ -1,0 +1,5 @@
+Key	Numerical	GrowRate
+Life	1	100
+AttackNormal	10	1000
+DefenseNormal	10	1000
+Crit	5	500
