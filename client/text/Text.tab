@@ -945,7 +945,7 @@ FurnitureColorAttrA	#ff8a8f
 FurnitureColorAttrB	#ffc259
 FurnitureColorAttrC	#87afff
 DormWorkVitTxt	体力<color=#000000FF><size=32>{0}/{1}</size></color>
-BossSingleDesc	可挑战游戏中各大boss，boss每次随机刷新3只（初级区2只）。\nboss以α、β、γ组区分，并进行刷新。\n击杀boss可获取讨伐值，当讨伐值达到一定值后，自动领取讨伐值奖励。\n每周一结算排名奖励，根据当前的排名情况发送奖励。\n当角色耐力为0时，无法挑战未通关关卡，角色耐力每次重置时恢复。\n每日仅可挑战boss3次。/n使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。
+BossSingleDesc	可挑战游戏中各大boss，boss每次随机刷新3只（初级区2只）。\nboss以α、β、γ组区分，并进行刷新。\n击杀boss可获取讨伐值，当讨伐值达到一定值后，自动领取讨伐值奖励。\n每周一结算排名奖励，根据当前的排名情况发送奖励。\n当角色耐力为0时，无法挑战未通关关卡，角色耐力每次重置时恢复。\n每日仅可挑战boss3次。\n使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。
 BossSingleAutoFightDesc	使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。\n自动战斗刷新周期内可使用5次。
 BossSingleAutoFightRateDesc	该处讨伐值为原记录的<color=#0e70bd>{0}</color>
 BossSingleAutoFightCount2	自动作战       {0}/{1}
