@@ -1,7 +1,7 @@
 Id	Code	Name	Description	BgImg	StageId[1]	StageId[2]	StageId[3]	StageId[4]	ConditionId[1]	ConditionId[2]	ConditionId[3]	ConditionId[4]
-1000	RS	构造体特训	作战提示：注意躲避场上的机关。\n通关奖励：掉落构造体经验。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010301	30010302	30010303	30010304	0	9001	9002	9003
-1001	AE	作战补给	作战提示：注意躲避场上的机关。\n通关奖励：5-6★意识概率掉落。\n\n6★意识掉率：\n【AE-1】0%\n【AE-2】4.11%\n【AE-3】8.23%\n【AE-4】17.14%	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010401	30010402	30010403	30010404	0	9101	9102	9002
-1002	AB	军备突破	作战提示：注意躲避场上的机关。\n通关奖励：装备突破素材。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010801	30010802	30010803	30010804	0	9201	9202	9203
-1003	LM	后勤保养	作战提示：注意躲避场上的机关。\n通关奖励：装备经验素材。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010701	30010702	30010703	30010704	0	9101	9102	9103
-1004	NF	螺母大作战	作战提示：注意躲避场上的机关。\n通关奖励：大量螺母。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30050101	30050102	30050103	30050104	0	9401	9402	9403
-1005	BE	战技演习	作战提示：注意躲避场上的机关。\n通关奖励：技能点若干。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30050201	30050202	30050203	30050204	0	9401	9402	9403
+1000	RS	构造体特训	作战提示：注意躲避场上的机关。\n通关奖励：掉落构造体经验。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010301	30010302	30010303	30010304	772800	9001	9002	9003
+1001	AE	作战补给	作战提示：注意躲避场上的机关。\n通关奖励：5-6★意识概率掉落。\n\n6★意识掉率：\n【AE-1】0%\n【AE-2】4.11%\n【AE-3】8.23%\n【AE-4】17.14%	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010401	30010402	30010403	30010404	772900	9101	9102	9002
+1002	AB	军备突破	作战提示：注意躲避场上的机关。\n通关奖励：装备突破素材。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010801	30010802	30010803	30010804	773000	9201	9202	9203
+1003	LM	后勤保养	作战提示：注意躲避场上的机关。\n通关奖励：装备经验素材。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30010701	30010702	30010703	30010704	773100	9101	9102	9103
+1004	NF	螺母大作战	作战提示：注意躲避场上的机关。\n通关奖励：大量螺母。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30050101	30050102	30050103	30050104	773200	9401	9402	9403
+1005	BE	战技演习	作战提示：注意躲避场上的机关。\n通关奖励：技能点若干。\n	Assets/Product/Texture/Image/BgUi/BgCommon3c.png	30050201	30050202	30050203	30050204	773300	9401	9402	9403

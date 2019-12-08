@@ -1029,3 +1029,4 @@ DisableJoystickError	教学关卡暂不支持手柄模式
 SetJoyStickSuccess	设置成功
 SetJoyStickError	设置失败，有重复按键
 PurchaseSettOut	已售罄
+MailCountText	容量:<size=40><color=#0e70bd>{0}</color></size>/{1}

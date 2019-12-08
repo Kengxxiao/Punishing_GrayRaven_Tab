@@ -43,7 +43,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 118	3	UiFuben	10020102	前往普通剧情				
 119	3	UiFuben	10020103	前往普通剧情				
 120	3	UiFuben	10020104	前往普通剧情				
-121	7	OnOpenUiFubenDaily		前往日常关卡	10401	1000		
+121	7	OnOpenUiFubenDaily		构造体特训	10406	1000		
 122	6	UiCharacter		前往升级构造体	101	0		
 123	3	UiFuben	10020201	前往普通剧情				
 124	3	UiFuben	10020202	前往普通剧情				
@@ -53,11 +53,11 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 128	6	UiCharacter		前往强化	301	0		
 129	3	UiFuben	10020301	前往普通剧情				
 130	3	UiFuben	10020302	前往普通剧情				
-131	7	OnOpenUiFubenDaily		前往日常关卡	10401	1003		
+131	7	OnOpenUiFubenDaily		后勤保养	10409	1003		
 132	6	UiCharacter		前往强化	301	0		
 133	3	UiFuben	10020303	前往普通剧情				
 134	6	UiTask		前往任务		1	0	0
-135	7	OnOpenUiFubenDaily		前往日常关卡	10401	1002		
+135	7	OnOpenUiFubenDaily		军备突破	10408	1002		
 136	6	UiCharacter		前往突破	301	0		
 137	6	UiCharacter		前往强化构造体	101	0		
 138	3	UiFuben	11010101	前往隐藏剧情	10102			
