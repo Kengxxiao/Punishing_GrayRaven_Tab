@@ -35,6 +35,7 @@ Id	Key	Text
 1028	ReconnectInvalidToken	
 1029	ReconnectPlayerLogout	
 1030	ReconnectInvalidSeqNo	
+1031	ReconnectAgain	
 10001	HeroUsdkLoginFail	账号登录失败
 10002	HeroUsdkConnectSdkServerFail	连接账号服失败
 10003	HeroUsdkUserIdIsEmpty	用户Id不能为空
@@ -69,6 +70,7 @@ Id	Key	Text
 20002013	PlayerDataManagerReportTagInvalid	举报类型错误
 20002014	PlayerDataManagerReportSendFail	发送举报失败
 20002015	PlayerDataManagerReportFail	举报失败
+20002016	PlayerDataManagerNameIsTooLong	名字不能超过8个字
 20003001	FubenManagerCheckTreasureIsGet	章节宝箱奖励已经领取
 20003002	FubenManagerCheckPreMapNotFound	关卡Id不存在
 20003003	FubenManagerCheckPreMapNotPass	前置关卡未通过
@@ -176,6 +178,8 @@ Id	Key	Text
 20003105	FubenManagerDailyTimeNotFit	未到达开启时间
 20003106	FubenManagerDailyInvalidId	无效的日常副本id
 20003107	FubenManagerAutoFightTimesError	自动战斗次数错误
+20003108	FubenManagerBossSingleResetCanNotSaveScore	玩法已刷新，无法保存记录
+20003109	FubenManagerBossSingleDataIsRefresh	副本数据已刷新，请重新打开页面
 20004001	TeamManagerGetTeamIdFail	获取队伍ID失败
 20004002	TeamManagerPrefabExceedMax	队伍预设达到上限
 20004003	TeamManagerSetTeamParaError	队伍设置数量错误
@@ -554,6 +558,7 @@ Id	Key	Text
 20032002	FightCheckManagerCodesTooLong	客户端code过长
 20032003	FightCheckManagerAddFightCheckException	战斗服添加校验失败
 20032004	FightCheckManagerFightCheckIdNotFound	战斗服校验Id不存在
+20032005	FightCheckManagerCheckSkip	
 20033001	ChatManagerSendChatErrorCannotSendGift	发送聊天出错
 20033002	ChatManagerChatContentCanNotBeNull	聊天内容不能为空
 20033003	ChatManagerGetGiftFailedInvalidGift	无效礼物
@@ -570,7 +575,7 @@ Id	Key	Text
 20033014	ChatManagerChatChannelIdInvalid	聊天输入不合法
 20033015	ChatManagerPlayerOffline	该好友已离线
 20033016	ChatContentTooLong	聊天信息过长
-20033017	ChatIsBanned	禁言中
+20033017	ChatIsBanned	禁言中，无法添加好友
 20033018	ChatChannelNotExist	频道已解散
 20034001	ConditionManagerParamsError	条件参数错误
 20034002	ConditionManagerGetConditionTemplateNotFound	条件配置不存在
@@ -745,7 +750,8 @@ Id	Key	Text
 20045018	MatchRoomLeaderForceLeave	被房主踢出房间
 20045019	MatchRoomClose	房间解散
 20045020	MatchStartTimeout	待机时间太长被踢出房间
-20045021	MatchCharacterNotUnique	
+20045021	MatchCharacterNotUnique	队伍中存在相同角色
+20045022	MatchPlayerOffline	与房间断开连接
 20046001	ExploreChapterIsNotExist	探索章节不存在
 20046002	ExploreChapterIsNotFinished	章节未完成
 20046003	ExplorePreChapterIsNotFinished	前置章节未完成

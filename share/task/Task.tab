@@ -164,7 +164,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 252	1	8380	隐藏第五章	通关隐藏剧情5-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					252			1	100152	252			剧情	243		11	10		1
 332	1	8370	隐藏第五章	通关隐藏剧情5-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					332			1	100232	332			剧情	243		11	10		1
 250	1	8360	隐藏第五章	1个构造体达到50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					250			1	100150	250			剧情	243		11	10		1
-251	1	8350	隐藏第五章	拥有1件45级以上的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					251			3	100151	251			剧情	243		11	10		1
+251	1	8350	隐藏第五章	拥有1件45级以上的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					251			1	100151	251			剧情	243		11	10		1
 253	1	8340	完成第五章所有任务	完成隐藏第五章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					253			8	100153				剧情	243		11	10	1	1
 254	1	8330	普通第七章	通关普通剧情7-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					254			1	100154	254			剧情	253		12	11		1
 255	1	8320	普通第七章	通关普通剧情7-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					255			1	100155	255			剧情	253		12	11		1
@@ -324,7 +324,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 2010	2	9900	意识强化	强化1次意识(素材除外)	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2010			1	10011	2010			强化						
 2011	2	9890	构造升级	任意角色使用1次经验材料	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2011			1	10012	2011			升级						
 2012	2	9880	道具购买	商店购买1次任意商品	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2012			1	10013	2012			商店						
-2013	2	9870	血清兑换	完成1次血清兑换	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2013			1	10014	2013			血清	123					
+2013	2	9870	血清兑换	使用黑卡补充1次血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2013			1	10014	2013			血清	123					
 2014	2	9860	消耗血清1	消耗100毫升血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2014			100	10015	2014			血清						
 2015	2	9850	消耗血清2	消耗200毫升血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2015			200	10016	2015			血清						
 2016	2	9840	消耗血清3	消耗300毫升血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2016			300	10017	2016			血清	2015					
@@ -735,12 +735,12 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 7700	7	9740	卡列尼娜的考验Ⅰ	累计登录7天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7700			1	77000	7700			目标						
 7701	7	9730	卡列尼娜的考验Ⅱ	指挥官等级到达50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7701			50	77010	7701			目标						
 7702	7	9720	卡列尼娜的考验Ⅲ	培养4个到达特种Ⅱ称号的构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7702			4	77020	7702			目标						
-90201	11	1	极圈追击Ⅰ	完成极圈之夜第1关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90201			活动						
-90202	11	1	极圈追击Ⅱ	完成极圈之夜第2关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90202			活动						
-90203	11	1	极圈追击Ⅲ	完成极圈之夜第3关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90203			活动						
-90204	11	1	林地截击Ⅰ	完成清剿异变体第1关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90204			活动						
-90205	11	1	林地截击Ⅱ	完成清剿异变体第2关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90205			活动						
-90206	11	1	林地截击Ⅲ	完成清剿异变体第3关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90206			活动						
+90201	11	1	测试任务1	测试任务1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90201			活动						
+90202	11	1	测试任务2	测试任务2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90202			活动						
+90203	11	1	测试任务3	测试任务3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90203			活动						
+90204	11	1	测试任务4	测试任务4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90204			活动						
+90205	11	1	测试任务5	测试任务5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90205			活动						
+90206	11	1	测试任务6	测试任务6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90206			活动						
 12001	13	487	旧的不去新的不来	回收家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12001			1	12001	12001			宿舍						
 12002	13	486	小小粉刷匠	制造家具3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12002			3	12002	12002			宿舍						
 12003	13	488	恒定温柔	爱抚构造体5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍						
@@ -939,3 +939,10 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 50017	5	9800	活动登录ⅩⅢ	累积登录13天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50017			13	50017				登录						
 50018	5	9790	活动登录ⅩⅣ	累积登录14天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50018			14	50018				登录						
 50019	5	9780	活动登录ⅩⅤ	累积登录15天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50019			15	50019				登录						
+50020	5	12000	研发支持Ⅰ	指挥官等级到达10级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50020			10	50020				目标						
+50021	5	11900	动力充能Ⅰ	指挥官等级到达20级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50021			20	50021				目标						
+50022	5	11800	动力充能Ⅱ	指挥官等级到达30级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50022			30	50022				目标						
+50023	5	11700	研发支持Ⅱ	指挥官等级到达35级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50023			35	50023				目标						
+50024	5	11600	动力充能Ⅲ	指挥官等级到达40级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50024			40	50024				目标						
+50025	5	11500	动力充能Ⅳ	指挥官等级到达45级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50025			45	50025				目标						
+50026	5	11400	研发支持Ⅲ	指挥官等级到达50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50026			50	50026				目标						

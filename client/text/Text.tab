@@ -1031,3 +1031,7 @@ SetJoyStickError	设置失败，有重复按键
 PurchaseSettOut	已售罄
 MailCountText	容量:<size=40><color=#0e70bd>{0}</color></size>/{1}
 DormNameMaxNameLengthTips	宿舍名字长度超过{0}个字符
+SignLengthError	签名不能为空
+FubenDialogTitle	行动说明
+ItemOverLimit	超过储存上限的物品已发送至邮箱
+OverLimitCanNotUse	使用后血清数量将会超出上限，暂无法使用
