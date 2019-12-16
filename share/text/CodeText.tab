@@ -88,7 +88,7 @@ Id	Key	Text
 20003015	FubenManagerCheckPreFightChallengeCountNotEnough	挑战次数不足
 20003016	FubenManagerCheckPreFightUrgentEventMapNotOpen	关卡尚未开启
 20003017	FubenManagerCheckPreFightTowerNotCurrentMapId	非当前可挑战关卡
-20003018	FubenManagerChallengeWinFightIdNotMatch	战斗结算FightId不匹配
+20003018	FubenManagerChallengeWinFightIdNotMatch	战斗结算不匹配（0）
 20003019	FubenManagerChallengeNotExit	无当前挑战配置
 20003020	FubenManagerChallengeIsOver	挑战正在结算
 20003021	FubenManagerReceiveChallengeRewardConfigNotFound	获取挑战奖励配置失败
@@ -180,6 +180,10 @@ Id	Key	Text
 20003107	FubenManagerAutoFightTimesError	自动战斗次数错误
 20003108	FubenManagerBossSingleResetCanNotSaveScore	玩法已刷新，无法保存记录
 20003109	FubenManagerBossSingleDataIsRefresh	副本数据已刷新，请重新打开页面
+20003110	FubenManagerChallengeWinPreFightDataNotMatch	战前数据不存在（0）
+20003111	FubenManagerChallengeLoseFightIdNotMatch	战斗结算不匹配（1）
+20003112	FubenManagerChallengeLoseStageCfgNotFound	副本配置不存在
+20003113	FubenManagerChallengeLosePreFightDataNotMatch	战前数据不存在（1）
 20004001	TeamManagerGetTeamIdFail	获取队伍ID失败
 20004002	TeamManagerPrefabExceedMax	队伍预设达到上限
 20004003	TeamManagerSetTeamParaError	队伍设置数量错误
@@ -554,11 +558,14 @@ Id	Key	Text
 20031019	FriendManagerMyFriendFull	好友人数已满
 20031020	FriendManagerOtherFriendFull	对方好友人数已满
 20031021	FriendManagerAgreeIsFriend	同意失败，已经是好友
-20032001	FightCheckManagerCodeNotMatch	战斗数据异常
-20032002	FightCheckManagerCodesTooLong	客户端code过长
-20032003	FightCheckManagerAddFightCheckException	战斗服添加校验失败
-20032004	FightCheckManagerFightCheckIdNotFound	战斗服校验Id不存在
-20032005	FightCheckManagerCheckSkip	
+20032001	FightCheckManagerCodeNotMatch	战斗数据异常(0)
+20032002	FightCheckManagerCodesTooLong	战斗数据异常(1)
+20032003	FightCheckManagerAddFightCheckException	战斗数据异常(2)
+20032004	FightCheckManagerFightCheckIdNotFound	战斗数据异常(3)
+20032005	FightCheckManagerCheckSkip	战斗数据异常(4)
+20032006	FightCheckManagerSettleCodeNotMatch	战斗数据异常(5)
+20032007	FightCheckManagerParamIllegal	战斗数据异常(6)
+20032008	FightCheckManagerNotSettle	战斗数据异常(7)
 20033001	ChatManagerSendChatErrorCannotSendGift	发送聊天出错
 20033002	ChatManagerChatContentCanNotBeNull	聊天内容不能为空
 20033003	ChatManagerGetGiftFailedInvalidGift	无效礼物

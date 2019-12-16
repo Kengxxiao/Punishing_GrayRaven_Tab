@@ -1,4 +1,4 @@
 MarkId	MinPoint	MaxPoint	EnemyHpPoint	MaxEnemyHpPoint	MyHpPoint	MaxMyHpPoint	TimePoint	MaxTimePoint	NpcGroupPoint	MaxNpcGroupPoint
 1	0	10000	KillNum/TotalNum * 1500	1500	Hp*30	3000	LeftTime*90	9000		
 2	0	20000	KillNum/TotalNum * 3000	3000	Hp*60	6000	LeftTime*125	15000		
-3	0		EnemyHp/10		Hp*200	20000			NpcGroup*2500	
+3	0	1000000	EnemyHp/10		Hp*200	20000			NpcGroup*2500	
