@@ -1,5 +1,5 @@
 Id	TxtName1	TxtName2	TxtName3	TxtTagName	Priority	ParentName
-1	1	基准	标准组合		8	PanelCardsStandard
-2	2	活动	活动组合		9	PanelCardsActivity
+1	1	基准	固定保底		8	PanelCardsStandard
+2	2	活动	固定保底		9	PanelCardsActivity
 3	3	特殊活动	浮动保底		10	PanelCardsStandard
 4	4	角色活动	角色组合	角色	11	PanelCardsActivity

@@ -71,6 +71,14 @@ FxEquipBall64Blue	Assets/Product/Effect/Prefab/FxEquip/FxEquipBall64Blue.prefab
 FxEquipBall64Chongjibo	Assets/Product/Effect/Prefab/FxEquip/FxEquipBall64Chongjibo.prefab
 FxEquipBall64Red	Assets/Product/Effect/Prefab/FxEquip/FxEquipBall64Red.prefab
 FxEquipBall64Yellow	Assets/Product/Effect/Prefab/FxEquip/FxEquipBall64Yellow.prefab
+FxEquipChristmasBox01	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox01.prefab
+FxEquipChristmasBox02	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox02.prefab
+FxEquipChristmasBox03	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox03.prefab
+FxEquipChristmasBox04	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox04.prefab
+FxEquipChristmasBox05	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox05.prefab
+FxEquipChristmasBox06	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox06.prefab
+FxEquipChristmasBox07	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox07.prefab
+FxEquipChristmasBox08	Assets/Product/Effect/Prefab/FxEquip/FxEquipChristmasBox08.prefab
 FxEquipDarkAtk64Anying	Assets/Product/Effect/Prefab/FxEquip/FxEquipDarkAtk64Anying.prefab
 FxEquipDarkAtk64Jiaqiu	Assets/Product/Effect/Prefab/FxEquip/FxEquipDarkAtk64Jiaqiu.prefab
 FxEquipEleAtk64Leibao	Assets/Product/Effect/Prefab/FxEquip/FxEquipEleAtk64Leibao.prefab
@@ -109,6 +117,7 @@ FxEquipTripleBall64Ready	Assets/Product/Effect/Prefab/FxEquip/FxEquipTripleBall6
 FxEquipYuansuGuanghuan	Assets/Product/Effect/Prefab/FxEquip/FxEquipYuansuGuanghuan.prefab
 FxWeaponBow61Wuqi02	Assets/Product/Effect/Prefab/FxEquip/FxWeaponBow61Wuqi02.prefab
 FxWeaponBow62Wuqi02	Assets/Product/Effect/Prefab/FxEquip/FxWeaponBow62Wuqi02.prefab
+FxWeaponClaymore51Wuqi01	Assets/Product/Effect/Prefab/FxEquip/FxWeaponClaymore51Wuqi01.prefab
 FxWeaponClaymore61Wuqi02	Assets/Product/Effect/Prefab/FxEquip/FxWeaponClaymore61Wuqi02.prefab
 FxWeaponClaymore61Wuqi03	Assets/Product/Effect/Prefab/FxEquip/FxWeaponClaymore61Wuqi03.prefab
 FxWeaponClaymore62Wuqi02	Assets/Product/Effect/Prefab/FxEquip/FxWeaponClaymore62Wuqi02.prefab
@@ -249,9 +258,6 @@ FxMb1LuosaitaMd010001Attack0702	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd0100
 FxMb1LuosaitaMd010001Attack07Dandao	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack07Dandao.prefab
 FxMb1LuosaitaMd010001Attack0801	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack0801.prefab
 FxMb1LuosaitaMd010001Attack0802	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack0802.prefab
-FxMb1LuosaitaMd010001Attack09DandaoLJ	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack09DandaoLJ.prefab
-FxMb1LuosaitaMd010001Attack09LJ	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack09LJ.prefab
-FxMb1LuosaitaMd010001Attack09ZhaLJ	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack09ZhaLJ.prefab
 FxMb1LuosaitaMd010001Attack12	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack12.prefab
 FxMb1LuosaitaMd010001Attack16	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack16.prefab
 FxMb1LuosaitaMd010001Attack16Dandao	Assets/Product/Effect/Prefab/FxMb1LuosaitaMd010001/FxMb1LuosaitaMd010001Attack16Dandao.prefab
@@ -2070,7 +2076,6 @@ FxYujing1M08S	Assets/Product/Effect/Prefab/FxYujing/FxYujing1M08S.prefab
 FxYujing1M09S	Assets/Product/Effect/Prefab/FxYujing/FxYujing1M09S.prefab
 FxYujing1M10S	Assets/Product/Effect/Prefab/FxYujing/FxYujing1M10S.prefab
 FxYujingJu01	Assets/Product/Effect/Prefab/FxYujing/FxYujingJu01.prefab
-FxYujingKuang	Assets/Product/Effect/Prefab/FxYujing/FxYujingKuang.prefab
 FxYujingRing	Assets/Product/Effect/Prefab/FxYujing/FxYujingRing.prefab
 FxYujingShan01	Assets/Product/Effect/Prefab/FxYujing/FxYujingShan01.prefab
 FxYujingXian01	Assets/Product/Effect/Prefab/FxYujing/FxYujingXian01.prefab

@@ -1,3 +1,4 @@
 Id	Name	PrefabPath	Type	RoundDays[1]	SubRoundId[1]	RoundDays[2]	SubRoundId[2]	RoundDays[3]	SubRoundId[3]	RoundDays[3]	SubRoundId[3]	OpenLevel	OpenStage	PreSignId	StartTimeStr	CloseTimeStr	IsShowWhenDayOver	IsShowWhenSignOver
 1	日常签到	Assets/Product/Ui/ComponentPrefab/Sign/SignDaily.prefab	1	28	101									2	2019/8/8 0:00	2029/11/14 0:00	0	1
 2	新手签到	Assets/Product/Ui/ComponentPrefab/Sign/SignNewhand.prefab	2	7	1001	7	1002						10010202		2019/8/8 0:00	2029/11/14 0:00	0	0
+5	圣诞签到	Assets/Product/Ui/ComponentPrefab/Sign/SignChristmas.prefab	2	7	1003							40			2019/12/20 5:00	2020/1/21 5:00	0	0

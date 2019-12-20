@@ -21,6 +21,9 @@ FxDrop02BeHit	557	0
 FxDrop03BeHit	557	0
 FxDropCureBeHit	557	0
 FxDropAttackBeHit	557	0
+FxEquipChristmasBox04	557	0
+FxEquipChristmasBox05	557	0
+FxEquipChristmasBox06	557	0
 FxDrop01Bing	558	0
 FxDrop02Bing	558	0
 FxDrop03Bing	558	0
@@ -30,6 +33,8 @@ FxTongyongBaozha	561	0
 FxFaxianQianxing	562	0
 FxBorn01	570	0
 FxJiantou02		
+FxWeaponClaymore51Wuqi01	572	0
+FxEquipChristmasBox08	573	0
 FxR1LuxiyaAttack01	20001	0
 FxR1LuxiyaAttack02	20002	0
 FxR1LuxiyaAttack03	20003	0

@@ -40,6 +40,8 @@ Id	CueSheetId	CueName	Is1pOr3p
 561	32	g_ingame_baozha	3
 562	32	g_ingame_faxianqianxing	3
 570	32	g_ingame_enemyborn	3
+572	32	g_ingame_claymore	3
+573	32	g_ingame_christmasbox	3
 501	5	g_ui_default	1
 502	1	b_empty	1
 503	1	b_empty	1

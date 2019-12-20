@@ -13,6 +13,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 50007	2	UiPurchase	3			1	0	0
 50008	2	UiPurchase	1	充值界面		1	0	0
 50009	6	UiSign		首充界面		3	0	0
+50010	2	UiSignBanner	5	圣诞节签到				
 500	1	UiMedalUnlock		进入徽章解锁				
 11	2	UiDrawGroup	1	研发系统				
 21	4		2	回到主界面				
