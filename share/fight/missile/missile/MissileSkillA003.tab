@@ -10,8 +10,11 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 10061207		2	0.1				0			4		10			999						FxR2ShenweiAttack21Dilie		-1			1															0																											
 10061307		2	0.1				0			4		10			999						FxR2ShenweiAttack23Dilie		-1			1															0																											
 10061407		2	0.1				0			4		10			999						FxR2ShenweiQteDilie		-1			1															0																											
-10062107		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
 10062203		2	0.1				0			4		10			999						FxR2ShenweiAttack13Dilie		-1			1															0																											
+10062405		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
+10062505		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
+10062605		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
+10063003		2	0.1				0			4		10			999						FxR2ShenweiAttack01Dilie		-1			1															0																											
 10110203		2	0.1			0.7	0			4		1.4			999						FxR3LiangAttack02Dilie		-1			1															0																											
 10110603		2	0.1				0			4		1.3			999						FxR3LiangAttack06Dilie		-1			1															0																											
 10111310		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1															0																											

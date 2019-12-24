@@ -1,5 +1,5 @@
 Key	Text
-HeroSdkLoginFailed	渠道账号登录失败
+HeroSdkLoginFailed	用户账号登录失败
 CommonNotOpen	暂未开放
 TeamManagerCheckCaptainNil	队长不能为空
 EquipLevelUpItemEmpty	请选择材料
@@ -23,6 +23,7 @@ EquipReformNot	<color=#FF0000FF>绿蓝品质</color>的装备不可改造
 EquipAwakenMax	已觉醒到最高等级
 EquipAwakenItemNotEnough	材料不足
 EquipAwakenCoinNotEnough	螺母不足
+EquipAutoTakeOffNotWearingEquip	当前没有可卸下的装备
 EquipMinCritMultiple	小暴击  {0:P1} 的经验
 EquipMaxCritMultiple	小暴击  {0:P1} 的经验
 EquipBreakthroughConfirmTiltle	装备突破确认
@@ -89,6 +90,7 @@ EquipStrengthenPreciousTipTitle	强化提示
 EquipStrengthenPreciousTipContent	强化材料中包含5★或以上装备，是否继续。
 EquipResonancePreciousTipTitle	共鸣提示
 EquipResonancePreciousTipContent	共鸣材料中包含5★或以上装备，是否继续。
+EquipResonancePosText	位置{0}
 StoryReviewTip	选项
 StoryGetRewardTip	获得{0}x{1}
 OnlineInstanceQuitRoom	确定退出协同作战房间？
@@ -145,7 +147,7 @@ CharacterSignTip	请多多指教
 EquipCoinLack	螺母不足
 FubenBuyCountTitle	购买挑战次数
 FubenBuyCountDesc	是否花费{0}钻石购买{1}次挑战次数？
-FubenPreStage	请先通关前置关卡{0}
+FubenPreStage	请先通关前置关卡【{0}】
 Liveness	活跃度:{0}/{1}
 Finish	活跃度:已完成
 DifficultMode	难度:
@@ -413,7 +415,7 @@ DrawCount	{0}回研发
 ServerDisconnect	服务器断开连接
 ServerError	连接服务器错误
 HeartbeatTimeout	与服务器失去连接
-LoginTimeOut	登陆超时，是否重试?
+LoginTimeOut	登录超时，是否重试?
 FubenNotTime	副本已过期
 FubenDailyIsAlreadyReset	副本已重置
 FubenDailyRemainCount	剩余：{0}次   
@@ -530,7 +532,7 @@ EquipResonanceNoAwarenessTip	暂无意识选择
 CustomUiTip	<color=#ffffff>提示：点击需要调整的按钮，拖动调整位置</color>
 CustomUiConflict	<color=#ff0000>提示：有按钮重叠，请重新检查</color>
 CustomUiSaved	<color=#0000ff>提示：方案保存成功</color>
-CustomUiUnsave	自定义方案尚未保存，确定要退出吗？
+CustomUiUnsave	按键方案尚未保存，确定要退出吗？
 CustomUiSchemeCustomName	自定义方案
 AwarenessDetailTitle	意识属性
 WeaponDetailTitle	武器属性
@@ -596,14 +598,14 @@ FavorabilityStorySectionName	第{0}章
 EquipCapacityDes	拥有的武器
 AwarenessCapacityDes	拥有的意识
 SuitCapacityDes	拥有的套装
-MaterialCapacityDes	拥有的材料
+MaterialCapacityDes	拥有的道具
 FragmentCapacityDes	拥有的碎片
 DecomposeTitle	分解预览
 ConverseTitle	转化预览
 SellTitle	出售预览
 DecomposeConfirmTip	分解返还70%左右所有培养材料（返还不包括共鸣材料）
 DecomposeConfirmTitle	装备分解二次确认
-SellConfirmTip	分解返还70%左右所有培养材料（返还不包括共鸣材料）
+SellConfirmTip	选中物品为高品质物品
 SellConfirmTitle	物品出售二次确认
 ItemDeadLine	（{0}后过期）
 SelectGiftCount	可自由选择{0}个奖励
@@ -769,6 +771,11 @@ BossOnlineKillCount	击杀构造体：{0}
 BossOnlineConsumeTips	拾荒者已消耗完毕，结算时将失去【拾荒者奖励】选择权，是否继续。
 BossOnlineNotUnlock	请完成上一难度关卡
 BossOnlineConsumeFinish	拾荒者已消耗完毕
+BossOnlineInvade1	终于见面了呢
+BossOnlineInvade2	在天上的人类们
+BossOnlineInvade3	接下来的表演估计会很精彩吧
+BossOnlineInvade4	准备好承受守林人的怒火了吗
+BossOnlineInvade5	那么，有请主角上场
 ActivityBranchNormalProcess	进度：{0}/{1}（普通）
 ActivityBranchLeftTime	活动剩余：{0}
 ActivityBranchDifficultProcess	进度：{0}/{1}（挑战）
@@ -776,11 +783,12 @@ ActivityBranchCurLevelDes	{0} - {1}级
 ActivityBranchLevelDes	{0} - {1}级
 ActivityBranchFightLeftTime	作战时间剩余：
 ActivityBranchShopLeftTime	兑换时间剩余：
+ActivityBranchChallengeBeginTime	挑战开启时间：{0}
 PayAcceptTips	充值已受理，请耐心等待
 PaySuccess	充值成功
 PayFail	充值失败
-ActivityMainLineEnd	主线副本活动已结束
-ActivityBranchFightEnd	支线活动战斗时间已结束
+ActivityMainLineEnd	活动已结束
+ActivityBranchFightEnd	战斗时间已结束
 DormCaressTips	构造体放于床上有助于恢复心情
 FurnitureCleanRoom	是否全部收起？
 FurnitureRevertRoom	是否重置修改
@@ -791,7 +799,7 @@ DormRemouldTxt	装扮宿舍
 DormMenTxt	菜 单
 ActivityBossSingleProcess	进度：{0}/{1}
 ActivityBossSinglePreStage	通关前置关卡{0}
-ActivityBossSingleFightEnd	单挑BOSS活动战斗时间已结束
+ActivityBossSingleFightEnd	战斗时间已结束
 DormVisitNameStyle	{0}<size=28>（{1}）</size>
 DormFieldGuildeCountText	<size=52><color=#0f70bc>{0}</color></size>/{1}
 DormWorkRefreshTime	每日<size=66><color=#0f70bc>{0}</color></size>刷新
@@ -802,11 +810,11 @@ FurntiureBuildCreateEN	基础家具
 FurnitureBuildRefitCH	改装
 FurnitureBuildRefitEN	家具改造
 FurnitureRefitScore	评分   <size=26><color=#000000CC>{0}</color></size>
-ActivityBranchNotOpen	支线副本活动未开启
-ActivityBranchOver	支线副本活动已结束
-ActivityBossSingleNotOpen	单挑BOSS活动未开启
-ActivityBossSingleOver	单挑BOSS活动已结束
-ActivityBossOnlineOver	协同作战已刷新
+ActivityBranchNotOpen	活动未开启
+ActivityBranchOver	活动已结束
+ActivityBossSingleNotOpen	活动未开启
+ActivityBossSingleOver	活动已结束
+ActivityBossOnlineOver	"每天中午11:00-14:00,晚上20:00-23:00开启"
 FurnitureWholeText	全部
 FurnitureAddType	添加类型
 MaxRecommendFight	需有角色战力高于
@@ -960,8 +968,8 @@ InTeamCantLookDorm	联机房间中不能进入宿舍
 DormNullFurniture	暂无家具
 DormNullCharacter	暂无构造体
 DormNullDraft	暂无图纸
-LoginNetworkError	登陆网络错误
-LoginHttpError	登陆网络错误
+LoginNetworkError	登录网络错误
+LoginHttpError	登录网络错误
 DormVitalityRecovery	体力恢复 <color=#0E70BDFF>+{0}/h</color>
 DormMoodRecovery	心情恢复 <color=#0E70BDFF>+{0}/h</color>
 DormNextRecovery	下级条件
@@ -998,9 +1006,11 @@ ActivityBriefTotalTime	活动时间：{0}-{1}
 ActivityBriefFightTime	作战时间：{0}-{1}
 ActivityBriefShopTime	商店时间：{0}-{1}
 ActivityBriefLeftTime	剩余{0}
+ActivityBriefShopLeftTime	（商店剩余：{0}）
+ActivityBriefTaskLeftTime	（任务剩余：{0}）
 ActivityBriefNoTask	当前暂无任务
-ActivityBriefMainlineNotInTime	活动未开启
-ActivityBriefPrequelNotInTime	活动未开启
+ActivityBriefMainlineNotInTime	活动已结束
+ActivityBriefPrequelNotInTime	活动已结束
 ChannelLabel	频道
 ChannelNumberLabel	（{0}人）
 ChannelChanged	进入 [ <color=#78e1ff>{0}</color> ] 频道
@@ -1026,12 +1036,21 @@ TaskAlreadyFinish	奖励已领取
 DrawResetTimeActivity	<size=40><color=#FFFFFFFF>活动结束剩余:</color></size>{0}
 DrawResetTimeOldActivity	<size=40><color=#FFFFFFFF>活动结束剩余:</color></size>{0}
 DisableJoystickError	教学关卡暂不支持手柄模式
+FubenDialogTitle	行动说明
+MailCountText	容量:<size=40><color=#0e70bd>{0}</color></size>/{1}
 SetJoyStickSuccess	设置成功
 SetJoyStickError	设置失败，有重复按键
-PurchaseSettOut	已售罄
-MailCountText	容量:<size=40><color=#0e70bd>{0}</color></size>/{1}
-DormNameMaxNameLengthTips	宿舍名字长度超过{0}个字符
 SignLengthError	签名不能为空
-FubenDialogTitle	行动说明
+PurchaseSettOut	已售罄
+HideStageIsOpen	隐藏关卡[{0}]已开启
 ItemOverLimit	超过储存上限的物品已发送至邮箱
 OverLimitCanNotUse	使用后血清数量将会超出上限，暂无法使用
+FunctionalMaintain	功能维护中
+MaxNameLengthTips	名字长度超过{0}个字符
+DormNameMaxNameLengthTips	宿舍名字长度超过{0}个字符
+MaxSignLengthTips	签名长度超过{0}个字符
+DormScoreAttrADes	<size=28><color=#AD3434FF>{0}</color></size>
+DormScoreAttrBDes	<size=28><color=#D58216FF>{0}</color></size>
+DormScoreAttrCDes	<size=28><color=#0A77b9FF>{0}</color></size>
+FestivalNotInActivity	当前不在活动时间范围内
+BatteryLeftTime	血清组剩余时间：{0}

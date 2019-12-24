@@ -830,7 +830,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 763006	AddBuff	763006																													
 763006000	AddBehavior	763006																													
 763007	AddBuff	763007																													
-763007000	ChangeAttribAdditive	25|5000000|																													
+763007000	ChangeAttribAdditive	25|500000000|																													
 763008	AddBuff	763008																													
 763008000	AddBehavior	763008																													
 763009	AddBuff	763009																													

@@ -18,7 +18,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100141			0	1			1	0	1001410	1001410			FxR2LiangBuffGandianShouji	HitCase			
 100142			0	1			1	0	1001420	1001420			FxR2LiangBuffGandianShouji	HitCase			
 100143			0	1			1	0	1001430	1001430			FxR2LiangBuffGandianShouji	HitCase			
-100150			0	0.1			1	0	1001500			100150000					
+100150			0	-1			1	0	1001500			100150000					
 100151			0	-1			1	0	1001510			100151000					
 100152			0	-1			1	0	1001520			100152000					
 100153			0	-1			1	0	1001530			100153000					
@@ -147,9 +147,9 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100837			0	0			1	0	1008370	1008360							
 100841			0	1			1	0	1008410	1008410			FxR2DubianAttack21Shouji02	HitCase			
 100850			0	-1			1	0	1008500|403			100850000					1
-100852			0	5.7			1	0	1008520|402			100852000					1
+100852			0	5			1	0	1008520|402			100852000					1
 100855			0	5			1	0	1008550			100855000					1
-100856			0	3.3			1	0	1008560|401			100856000					1
+100856			0	2.9			1	0	1008560|401			100856000					1
 100857			0	1.5			1	0	1008570|1	1008570		100857000					
 100860			0	-1			1	0	1008600			100860000					
 100861			0	-1			1	0	1008610	1008610			FxR2DubianAttackBD1	MarkCase			
@@ -191,7 +191,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101351			0	0.5			1	0	1013510			101351000	FxR2LifuAttack51Buff	Root			
 101353			0	7			1	0	1013530								
 101354			0	3.2			1	0	1013540|402			101354000					1
-101356			0	2			1	0	1013560	1013560							
+101356			0	0.1			1	0	1013560			101356000					
 101360			0	-1			1	0	1013600|403			101360000					1
 101361			0	-1			1	0	1013610			101361000					
 101362			0	0.1			1	0	1013620			101362000					
@@ -212,8 +212,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101377			0	-1			1	0	1013770			101377000	FxR2LifuPinzhiGuadianBip001RForearm	Bip001RForearm			
 101378			0	1.5			1	0	1013780				FxTongyongGuanghuanKuosan	Root			
 101380			0	3.2			1	0	1013800|1	1013800		101380000					
-101390			0	-1			1	0	1013900			101390000					
-101391			0	2	101		1	0	1013910|101|100|6	1013910		101391000	FxTongyongJiagong	HitCase			
+101390			0	-1			1	0	1013900								
+101391			0	1.3	101		1	0	1013910|101|100|6	1013910		101391000	FxTongyongJiagong	HitCase			
 101392			0	-1			1	0	1013920			101392000					
 101394			0	-1			1	0	1013940			101394000					
 101395			0	1.2			1	0	1013950	1013950		101395000					

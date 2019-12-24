@@ -65,65 +65,69 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 87030401	处刑之眼预备技能-1	1	0.5	40		20	0			4		1.35			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0	0							0	1				870304011									0	HitCase	1	1		1			1					
 87030601	龙卷风范围表示弹道	2	3				0			4		-1			-1	1			0.05				-1			1					0	0	0	1							0	1					870205								0	HitCase	1	1		1			1					
 87030602	龙卷风伤害子弹	2	3				0			4		-1			-1	1	FxMb1OsirisMd000001Shouji2		1		FxYujingRing		-1			1					0	0	0	1							0	1					870134								0	HitCase	1	1		1			1					
-87310104	近战-扇形伤害子弹出现	3	4.6	140	-0.5	-0.5	0		40	4		0.15			-1		FxMb1XiuMd010001Attack06Shouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				873101041	801025	873150							0	HitCase	1	0		1			1					
-87310203	近战-矩形伤害子弹出现	1	2	5		4	0			4		0.05			-1		FxMb1XiuMd010001Attack06Shouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				873102031	801025	873152							0	HitCase	1	0		1			1					
-87310302	近战-扇伤子弹出现	3	3.7	140	0.5	-1.5	0		-130	4		0.1			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873103021	801010	873153							0	HitCase	1	0		1			1					
-87310306	近战-扇伤出现	1	2.5	7.5	2	2	0		-10	4		0.05			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingJu01		-1			1					0	0	0	0							0	3				873103061	801010	873153							0	HitCase	1	0		1			1					
-87310310	近战-扇伤开始	3	5	180	-0.5	-0.5	0		60	4		0.15			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873103101	801025	873154							0	HitCase	1	0		1			1					
-87310506	近战击飞-扫击开始	3	5	130	0.5	0	0		10	4		0.15			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873105061	801010	873152							0	HitCase	1	0		1			1					
-87310508	近战击飞-挑击	1	2.5	4.5	-1	2	0		10	4		0.05			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingJu01		-1			1					0	0	0	0							0	3				873105081	801015	873152							0	HitCase	1	0		1			1					
+87310104	近战-扇形伤害子弹出现	3	4.6	140	-0.5	-0.5	0		40	4		0.15			-1		FxMb1LuosaitaMd010001Attack01Shouji						-1			1					0	0	0	0							0	1				873101041	801025	873150							0	HitCase		0		1			1					
+87310203	近战-矩形伤害子弹出现	1	2	5		4	0			4		0.05			-1		FxMb1LuosaitaMd010001Attack02Shouji						-1			1					0	0	0	0							0	1				873102031	801025	873152							0	HitCase		0		1			1					
+87310302	近战-扇伤子弹出现	3	3.7	140	0.5	-1.5	0		-130	4		0.1			-1		FxMb1LuosaitaMd010001Attack03Shouji						-1			1					0	0	0	0							0	1				873103021	801010	873153							0	HitCase		0		1			1					
+87310306	近战-扇伤出现	1	2.5	7.5	2	2	0		-10	4		0.05			-1		FxMb1LuosaitaMd010001Attack03Shouji						-1			1					0	0	0	0							0	3				873103061	801010	873153							0	HitCase		0		1			1					
+87310310	近战-扇伤开始	3	5	180	-0.5	-0.5	0		60	4		0.15			-1		FxMb1LuosaitaMd010001Attack03Shouji						-1			1					0	0	0	0							0	1				873103101	801033	873154							0	HitCase		0		1			1					
+87310506	近战击飞-扫击开始	3	5	130	0.5	0	0		10	4		0.15			-1		FxMb1LuosaitaMd010001Attack06Shouji01						-1			1					0	0	0	0							0	1				873105061	801010	873152							0	HitCase		0		1			1					
+87310508	近战击飞-挑击	1	2.5	4.5	-1	2	0		10	4		0.05			-1		FxMb1LuosaitaMd010001Attack06Shouji02						-1			1					0	0	0	0							0	3				873105081	801020	873152							0	HitCase		0		1			1					
 87310610	远程-离子弹-散射-1	2	2				0			4		0.1			-1								-1			1					0	0	0	2							0	2				873106101									0	HitCase		0		1			1					
 87310611	远程-离子弹-散射-1	2	2				0			4		3			-1						FxMb1LuosaitaMd010001Attack0702		-1			1					0	0	0	2	0.05	0	1	87310610	1		0	1													0	HitCase		0		1			0					
-87310612	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	0	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801005	873155							0	HitCase		0	0	1			0					
-87310613	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	20	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801005	873155							0	HitCase		0	0	1			0					
-87310614	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	40	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801005	873155							0	HitCase		0	0	1			0					
-87310615	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	-20	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801005	873155							0	HitCase		0	0	1			0					
-87310616	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	-40	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801005	873155							0	HitCase		0	0	1			0					
+87310612	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	0	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801215	873155							0	HitCase		0	0	1			0					
+87310613	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	20	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801215	873155							0	HitCase		0	0	1			0					
+87310614	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	40	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801215	873155							0	HitCase		0	0	1			0					
+87310615	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	-20	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801215	873155							0	HitCase		0	0	1			0					
+87310616	远程-离子弹-散射-4	2	0.1			-1.9	5			4	1	10		1	1					Bone041	FxMb1LuosaitaMd010001Attack07Dandao		1			5	-40	30	0.1	2	2.617991667	-0.3	7	0	10	0	1	87310611	1		0	1					801215	873155							0	HitCase		0	0	1			0					
 87310705	远程-离子弹-巨炮-5	2	5			3	0			4		1.25			-1	1			0.05				-1			1					0	0	0	0							0	1					873105								0	HitCase		1		1			0					
-87310706	远程-离子弹-巨炮-6	2	2.5			0	0			4		0.05			-1	1			0.05				-1			1					0	0	0	0							0	3				873107061	873106	873111							0	HitCase		1		1			1	1				
-87310707	远程-离子弹-巨炮-7	2	5			0	0			4		3			-1						FxMb1BraveMd010011Attack0303		-1			1					0	0	0	1	0.05	1	1	87310708	1		0	1					873114								0	HitCase		0		1			0					
-87310708	远程-离子弹-巨炮-8	2	5			0	0			4		0.1			-1						FxYujingRing		-1			1					0	0	0	2							0	2				873107081	873112	870128	801035	873154					0	HitCase	1	0		1			1					
-87310802	位移-扫动开始	3	5	110		-1	0		30	4		0.1			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873108021	801015	873156							0	HitCase	1	1		1			1					
-87310804	位移-扫动开始	3	5	150		-1	0		-10	4		0.1			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873108041	801015	873157							0	HitCase	1	1		1			1					
-87310808	位移-冲锋砍杀-8	1	2	2		2	0			4		1.35			-1						FxYujingJu01		-1			1					0	0	0	0							0	4				873108081									0	HitCase	1	1		1			1					
-87310906	近战-伤害帧	1	2	10		6	0			4		0.1			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingJu01		-1			1					0	0	0	0							0	1				873109061	801035	873158							0	HitCase	1	1		1			1					
+87310706	远程-离子弹-巨炮-6	2	2.5			0	0			4		1			-1	1			0.05				-1			1					0	0	0	0							0	3				873107061	873106	873111							0	HitCase		1		1			1	1				
+87310707	远程-离子弹-巨炮-7	2	5			0	0			4		3			-1		FxMb1LuosaitaMd010001Attack09Shouji				FxMb1LuosaitaMd010001Attack09ZhaLJ		-1			1					0	0	0	1	0.05	1	1	87310708	1		0	1													0	HitCase		0		1			0					
+87310708	远程-离子弹-巨炮-8	2	5			0	0			4		0.1			-1								-1			1					0	0	0	2							0	2				873107081	873112	870128	801240	873154					0	HitCase		0		1			1					
+87310802	位移-扫动开始	3	5	110		-1	0		30	4		0.1			-1		FxMb1LuosaitaMd010001Attack17Shouji01						-1			1					0	0	0	0							0	1				873108021	801020	873156							0	HitCase		1		1			1					
+87310804	位移-扫动开始	3	5	150		-1	0		-10	4		0.1			-1		FxMb1LuosaitaMd010001Attack17Shouji02						-1			1					0	0	0	0							0	1				873108041	801020	873157							0	HitCase		1		1			1					
+87310808	位移-冲锋砍杀-8	1	2	2		2	0			4		1.35			-1								-1			1					0	0	0	0							0	4				873108081	801020								0	HitCase		1		1			1					
+87310906	近战-伤害帧	1	2	10		6	0			4		0.1			-1		FxMb1LuosaitaMd010001Attack18Shouji						-1			1					0	0	0	0							0	1				873109061	801035	873158							0	HitCase		1		1			1					
 87311001	远程-技能开始-特效子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-87311002	远程-横扫开始	1	6	4		2.5	0			4		1.7			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingJu01		-1			1					0	0	0	0							0	1				873110021	801010	873157							0	HitCase	1	1		1			1					
-87311004	远程-竖劈	1	2	5		3	0			4		0.1			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingJu01		-1			1					0	0	0	0							0	1				873110041	801010	873159							0	HitCase	1	1		1			1					
-87311005	远程-十字斩出击	3	15	120		0	0			4		0.1			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingRing		-1			1					0	0	0	0							0	1				873110051	801025	873152							0	HitCase	1	1		1			1					
-87311304	骚套路-挑击	1	2	5		2.5	0			4		0.25			-1		FxMb1XiuMd010002Attack14Shouji				FxYujingJu01		-1			1					0	0	0	0							0	1				873113041	801025	873160							0	HitCase	1	1		1			1					
-87330101	空中戳-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack01Shouji01				FxYujingJu01		-1			1					0	0	0	0							0	3				873301011	801010								0	HitCase	1	0		1			1					
-87330102	空中戳-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack01Shouji02				FxYujingJu01		-1			1					0	0	0	0							0	3				873301021	801010								0	HitCase	1	0		1			1					
-87330201	盾击突刺-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack02Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	1				873302011	801010								0	HitCase	1	0		1			1					
-87330202	盾击突刺-2	3	4	72			0		-60	4		0.6			-1	1	FxMb1LuosaitaMd010002Attack02Shouji02		0.05		FxYujingShan01		-1			2	1440	0	0	0	0	0	0	0							0	1				873302021	801010								0	HitCase	1	1		1			1					
-87330301	快速三连-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	1				873303011	801005								0	HitCase	1	0		1			1					
-87330302	快速三连-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	1				873303021	801010								0	HitCase	1	0		1			1					
-87330303	快速三连-3	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	3				873303031	801010								0	HitCase	1	0		1			1					
-87330401	丢盾四连-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	1				873304011	801005								0	HitCase	1	0		1			1					
-87330402	丢盾四连-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji02				FxNpcYujing02		-1			1					0	0	0	0							0	1				873304021	801005								0	HitCase	1	0		1			1					
-87330403	丢盾四连-3	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji02				FxNpcYujing02		-1			1					0	0	0	0							0	1				873304031	801005								0	HitCase	1	0		1			1					
-87330404	丢盾四连-4	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji03				FxNpcYujing02		-1			1					0	0	0	0							0	3				873304041	801005								0	HitCase	1	1		1			1					
-87330501	抽枪-1	1	2	4		2	0			4		0.15			-1		FxMb1LuosaitaMd010002Attack05Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	3				873305011	801005								0	HitCase	1	1		1			1					
-87330502	抽枪-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack05Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	3				873305021	801005								0	HitCase	1	0		1			1					
-87330503	抽枪-3	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack05Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	3				873305031	801005								0	HitCase	1	0		1			1					
-87330504	抽枪-4	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack05Shouji01				FxNpcYujing02		-1			1					0	0	0	0							0	3				873305041	801005								0	HitCase	1	0		1			1					
-87330505	抽枪-5	1	2	4		2	0			4		0.2			-1		FxMb1LuosaitaMd010002Attack05Shouji02				FxNpcYujing02		-1			1					0	0	0	0							0	3				873305051	801005								0	HitCase	1	1		1			1					
-87330611	飞天 坠落子弹 预警	2	3				100			4	1	1			-1						FxMb1LuosaitaMd010002Attack06Yujing02		-1			1					0	0	0	1	1		1	87330612			0	1													1	HitCase	1	0		1			0					
-87330612	飞天 坠落子弹 预警	2	3				100			4	1	1			-1						FxMb1LuosaitaMd010002Attack06Yujing01		-1			1					0	0	0	2	0.3		1	87330613			0	1													1	HitCase	1	0		1			0					
-87330613	飞天 坠落子弹 特效	2	3				0			4		3			-1		FxMb1LuosaitaMd010002Attack06Shouji				FxMb1LuosaitaMd010002Attack06Dandao		-1			1					0	0	0	1	0.05		1	87330614			0	1													0	HitCase		0		1			0					
-87330614	飞天 坠落子弹 伤害	2	3				0			4		0.1			-1								-1			1					0	0	0	2	0		1	87330615			0	2				873306141	801005								0	HitCase		0		1			1					
-87330615	飞天 坠落子弹 残留子弹	2	1				0			4		10			-1						FxMb1LuosaitaMd010002Gandian		-1		FxMb1LuosaitaMd010002Gandianbaozha	1					0	0	0	2							0	1													0	HitCase		0		1			0					
-87330705	落地-5	2	4				0			4		0.15			-1		FxMb1LuosaitaMd010002Attack07Shouji01				FxNpcYujing01		-1			1					0	0	0	0							0	1				873307051	801005								0	HitCase		1		1			1					
-87330706	落地-6	3	4	90			0			4		0.6			-1	1	FxMb1LuosaitaMd010002Attack07Shouji02		0.05		FxYujingShan01		-1			2	1800	0	0	0	0	0	0	0							0	1				873307061	801005								0	HitCase		1		1			1					
-87331101	移动剑风-1	2	0.1				50		0	4		3			-1		FxMb1XiuMd010002Attack14Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1			1	873311011	801010								0	HitCase		0		1			1	2	4		2	0
-87331201	追踪离子弹-1	1	0.1	0.1		-2	15			4	1	5		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	-40	30	0.5	5	6.28318	-0.3	10	0							0	1				873312011	801005								0	HitCase		0		1			1					
-87331202	追踪离子弹-2	1	0.1	0.1		-2	16			4	1	5		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	-20	30	0.5	5	6.28318	-0.3	10	0							0	1				873312021	801005								0	HitCase		0		1			1					
-87331203	追踪离子弹-3	1	0.1	0.1		-2	17			4	1	5		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	0	30	0.5	5	6.28318	-0.3	10	0							0	1				873312031	801005								0	HitCase		0		1			1					
-87331204	追踪离子弹-4	1	0.1	0.1		-2	18			4	1	5		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	20	30	0.5	5	6.28318	-0.3	10	0							0	1				873312041	801005								0	HitCase		0		1			1					
-87331205	追踪离子弹-5	1	0.1	0.1		-2	19			4	1	5		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	40	30	0.5	5	6.28318	-0.3	10	0							0	1				873312051	801005								0	HitCase		0		1			1					
-87331501	旋转连击-1	1	2	4		2	0			4		0.15			-1		FxMb1LuosaitaMd010002Attack15Shouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				873315011	801005								0	HitCase	1	1		1			1					
-87331502	旋转连击-2	3	4	72			0		-60	4		0.9			-1	1	FxMb1XiuMd010001Attack06Shouji		0.05		FxYujingShan01		-1			2	1440	0	0	0	0	0	0	0							0	1				873315021	801005								0	HitCase	1	1		1			1					
-87331503	旋转连击-3	3	4	72			0			4		0.3			-1		FxMb1XiuMd010001Attack06Shouji				FxYujingShan01		-1			2	1200	0	0	0	0	0	0	0							0	3				873315031	801005								0	HitCase	1	1		1			1					
-87331601	地裂斩-1	1	2	4		1.5	50		0	4		3			-1		FxMb1XiuMd010002Attack14Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316011	801005								0	HitCase		0		1			1					
-87331602	地裂斩-2	1	2	4		1.5	50		30	4		3			-1		FxMb1XiuMd010002Attack14Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316021	801005								0	HitCase		0		1			1					
-87331603	地裂斩-3	1	2	4		1.5	50		-30	4		3			-1		FxMb1XiuMd010002Attack14Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316031	801005								0	HitCase		0		1			1					
+87311002	远程-横扫开始	1	6	4		2.5	0			4		1.7			-1		FxMb1LuosaitaMd010001Attack19Shouji						-1			1					0	0	0	0							0	1				873110021	801210	873157							0	HitCase		1		1			1					
+87311004	远程-竖劈	1	2	5		3	0			4		0.1			-1		FxMb1LuosaitaMd010001Attack19Shouji						-1			1					0	0	0	0							0	1				873110041	801210	873159							0	HitCase		1		1			1					
+87311005	远程-十字斩出击	3	15	120		0	0			4		0.1			-1		FxMb1LuosaitaMd010001Attack19Shouji						-1			1					0	0	0	0							0	1				873110051	801245	873152							0	HitCase		1		1			1					
+87311304	骚套路-挑击	1	2	5		2.5	0			4		0.25			-1		FxMb1LuosaitaMd010001Attack16Shouji						-1			1					0	0	0	0							0	1				873113041	801025	873160							0	HitCase		1		1			1					
+87330101	空中戳-技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+87330106	空中戳-落地	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack01Shouji01						-1			1					0	0	0	0							0	3				873301061	801015	873301							0	HitCase		0		1			1					
+87330107	空中戳-扫	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack01Shouji02						-1			1					0	0	0	0							0	3				873301071	801020	873302							0	HitCase		0		1			1					
+87330112	空中戳-技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+87330201	盾击突刺-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack02Shouji01						-1			1					0	0	0	0							0	1				873302011	801010	873303							0	HitCase		0		1			1					
+87330202	盾击突刺-2	3	4	72			0		-60	4		0.6			-1	1	FxMb1LuosaitaMd010002Attack02Shouji02		0.05				-1			2	1440	0	0	0	0	0	0	0							0	1				873302021	801020	873304							0	HitCase		1		1			1					
+87330301	快速三连-1	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01						-1			1					0	0	0	0							0	1				873303011	801007	873305							0	HitCase		0		1			1					
+87330302	快速三连-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01						-1			1					0	0	0	0							0	1				873303021	801013	873305							0	HitCase		0		1			1					
+87330303	快速三连-3	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack03Shouji01						-1			1					0	0	0	0							0	3				873303031	801015	873306							0	HitCase		0		1			1					
+87330401	丢盾四连-1	3	4	140			0		50	4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji01						-1			1					0	0	0	0							0	1				873304011	801005	873307							0	HitCase		1		1			1					
+87330402	丢盾四连-2	3	4	70			0		5	4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji02						-1			1					0	0	0	0							0	1				873304021	801010	873307							0	HitCase		1		1			1					
+87330403	丢盾四连-3	2	2				80		30	4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji02						-1			1					0	0	0	0							0	1				873304031	801207	873308							0	HitCase		0		1			1					
+87330404	丢盾四连-4	1	2	5		2.5	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji03						-1			1					0	0	0	0							0	3				873304041	801015	873305							0	HitCase		1		1			1					
+87330405	丢盾四连-3	2	2			-9	75		150	4		0.1			-1		FxMb1LuosaitaMd010002Attack04Shouji02						-1			1					0	0	0	0							0	1				873304051	801207	873308							0	HitCase		0		1			1					
+87330406	丢盾四连-3	2	2			0	0		30	4		0.2			-1		FxMb1LuosaitaMd010002Attack04Shouji02						-1			2	-270	0	8	8	0	0	0	0							0	1				873304061	801207	873308							0	HitCase		0		1			1					
+87330501	抽枪-1	1	2	4		2	0			4		0.15			-1		FxMb1LuosaitaMd010002Attack05Shouji01						-1			1					0	0	0	0							0	3				873305011	801015	873309							0	HitCase		1		1			1					
+87330502	抽枪-2	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack05Shouji01						-1			1					0	0	0	0							0	3				873305021	801205								0	HitCase		0		1			1					
+87330503	抽枪-3	1	2	4		2	0			4		0.1			-1		FxMb1LuosaitaMd010002Attack05Shouji01						-1			1					0	0	0	0							0	3				873305031	801205	873310							0	HitCase		0		1			1					
+87330504	抽枪-5	1	2	4		2	0			4		0.2			-1		FxMb1LuosaitaMd010002Attack05Shouji02						-1			1					0	0	0	0							0	3				873305041	801210								0	HitCase		1		1			1					
+87330505	抽枪-5	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+87330612	飞天 坠落子弹 预警	2	3				0			4		1			-1						FxMb1LuosaitaMd010002GandianYujing		-1			1					0	0	0	3	0.6		1	87330613			4	1													0	HitCase		0		1			0					
+87330613	飞天 坠落子弹 预警	2	3				0			4		1			-1						FxMb1LuosaitaMd010002Attack06Yujing01		-1			1					0	0	0	2	0.3		1	87330614			0	1													0	HitCase	1	0		1			0					
+87330614	飞天 坠落子弹 特效	2	3				0			4		3			-1		FxMb1LuosaitaMd010002Attack06Shouji				FxMb1LuosaitaMd010002Attack06Dandao		-1			1					0	0	0	2	0.05		1	87330615			0	1													0	HitCase		0		1			0					
+87330615	飞天 坠落子弹 伤害	2	3				0			4		0.1			-1								-1			1					0	0	0	2							0	2				873306151	801020	873311							0	HitCase		0		1			1					
+87330616	飞天 坠落子弹 残留子弹	2	1				0			4		10			-1						FxMb1LuosaitaMd010002Gandian		-1		FxMb1LuosaitaMd010002Gandianbaozha	1					0	0	0	2							0	1													0	HitCase		0		1			0					
+87330705	落地-5	2	4				0			4		0.15			-1		FxMb1LuosaitaMd010002Attack07Shouji01						-1			1					0	0	0	0							0	1				873307051	801005	873312							0	HitCase		1		1			1					
+87330706	落地-6	3	4	90			0			4		0.6			-1	1	FxMb1LuosaitaMd010002Attack07Shouji02		0.05				-1			2	1800	0	0	0	0	0	0	0							0	1				873307061	801005	873313							0	HitCase		1		1			1					
+87331101	移动剑风-1	2	0.1				50		0	4		5			-1		FxMb1LuosaitaMd010001Attack16Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1			1	873311011	801025	873314							0	HitCase		0		0			1	2	4		2	0
+87331201	追踪离子弹-1	1	0.1	0.1		-2	15			4	1	10		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	0	30	0.3	7	4.014253889	-0.3	7	0							0	1				873312011	801010	873315							0	HitCase		0		0			1					
+87331202	追踪离子弹-2	1	0.1	0.1		-2	16			4	1	10		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	20	30	0.3	7	4.014253889	-0.3	7	0							0	1				873312021	801010	873316							0	HitCase		0		0			1					
+87331203	追踪离子弹-3	1	0.1	0.1		-2	17			4	1	10		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	40	30	0.3	7	4.014253889	-0.3	7	0							0	1				873312031	801010	873317							0	HitCase		0		0			1					
+87331204	追踪离子弹-4	1	0.1	0.1		-2	18			4	1	10		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	-20	30	0.3	7	4.014253889	-0.3	7	0							0	1				873312041	801010	873318							0	HitCase		0		0			1					
+87331205	追踪离子弹-5	1	0.1	0.1		-2	19			4	1	10		1	1					Mb1LuosaitaMd010002Weapon2	FxMb1LuosaitaMd010001Attack07Dandao		1		FxMb1LuosaitaMd010001Attack0702	5	-40	30	0.3	7	4.014253889	-0.3	7	0							0	1				873312051	801010	873319							0	HitCase		0		0			1					
+87331501	旋转连击-1	1	2	4		2	0			4		0.15			-1		FxMb1LuosaitaMd010002Attack15Shouji						-1			1					0	0	0	0							0	1				873315011	801005	873320							0	HitCase		1		1			1					
+87331502	旋转连击-2	3	4	72			0		-60	4		0.9			-1	1	FxMb1LuosaitaMd010002Attack15Shouji		0.05				-1			2	1440	0	0	0	0	0	0	0							0	1				873315021	801010	873321							0	HitCase		1		1			1					
+87331503	旋转连击-3	3	4	72			0			4		0.3			-1		FxMb1LuosaitaMd010002Attack15Shouji						-1			2	1200	0	0	0	0	0	0	0							0	3				873315031	801015	873322							0	HitCase		1		1			1					
+87331601	地裂斩-1	1	2	4		1.5	50		0	4		5			-1		FxMb1LuosaitaMd010001Attack16Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316011	801025	873314							0	HitCase		0		0			1					
+87331602	地裂斩-2	1	2	4		1.5	50		30	4		5			-1		FxMb1LuosaitaMd010001Attack16Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316021	801025	873314							0	HitCase		0		0			1					
+87331603	地裂斩-3	1	2	4		1.5	50		-30	4		5			-1		FxMb1LuosaitaMd010001Attack16Shouji				FxMb1LuosaitaMd010001Attack16Dandao		-1			1					0	0	0	0							0	1				873316031	801025	873314							0	HitCase		0		0			1					

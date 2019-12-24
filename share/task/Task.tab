@@ -228,7 +228,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 309	1	7740	隐藏第八章	通关隐藏剧情8-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					309			1	100209	309			剧情	305		16	15		1
 312	1	7730	隐藏第八章	通关隐藏剧情8-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					312			1	100212	312			剧情	305		16	15		1
 335	1	7720	隐藏第八章	通关隐藏剧情8-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					335			1	100235	335			剧情	305		16	15		1
-310	1	7710	隐藏第八章	3个构造体达到70级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					310			3	100210	310			剧情	305		16	15		1
+310	1	7710	隐藏第八章	6个构造体达到60级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					310			6	100210	310			剧情	305		16	15		1
 311	1	7700	隐藏第八章	拥有18件45级的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					311			18	100211	311			剧情	305		16	15		1
 313	1	7690	完成第八章所有任务	完成隐藏第八章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					313			8	100213				剧情	305		16	15	1	1
 700	9	10000	远征	派遣1次队伍通关据点战	Assets/Product/Texture/Image/IconTask/TaskIconThread01.png					700			1	210000	700			通关						
@@ -314,10 +314,10 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 2000	2	10000	每日登录	每日首次登录	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2000			1	10001				登录						
 2001	6	9990	午间连接	中午赠送血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2001			1	10002				登录						
 2002	6	9980	晚间连接	晚上赠送血清	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2002			1	10003				登录						
-2003	2	9970	每日战斗	通关5次任意关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2003			5	10004	2003			通关						
-2004	2	9960	日常挑战1	通关1次任意日常关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2004			1	10005	2004			通关						
-2005	2	9950	日常挑战2	通关2次任意日常关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2005			2	10006	2005			通关	2004					
-2006	2	9940	日常挑战3	通关3次任意日常关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2006			3	10007	2006			通关	2005					
+2003	2	9935	每日战斗4	通关5次任意关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2003			5	10004	2003			通关	2006					
+2004	2	9960	每日战斗1	通关1次任意关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2004			1	10005	2004			通关						
+2005	2	9950	每日战斗2	通关2次任意关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2005			2	10006	2005			通关	2004					
+2006	2	9940	每日战斗3	通关3次任意关卡	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2006			3	10007	2006			通关	2005					
 2007	2	9930	联机挑战	通关1次联机副本	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2007			1	10008	2007			通关						
 2008	6	9920			Assets/Product/Texture/Image/IconTask/TaskIconOnline.png					2008			9	10009	2008			通关						
 2009	2	9910	武器强化	强化1次武器	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					2009			1	10010	2009			强化						
@@ -539,14 +539,14 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 3375	4	8140	刀光冷冽Ⅵ	渡边·夜刃提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconDubian2.png					3375			1	33750	3375			培养	3374	3				
 3376	4	8130	刀光冷冽Ⅶ	渡边·夜刃提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconDubian2.png					3376			1	33760	3376			培养	3375	3				
 3377	4	8120	GR·刀光冷冽	渡边·夜刃提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconDubian2.png					3377			1	33770	3377			培养	3376	3				
-3380	4	8110	拂晓之时Ⅰ	露西亚·黎明提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3380			1	33800	3380			培养		3				
-3381	4	8100	拂晓之时Ⅱ	露西亚·黎明提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3381			1	33810	3381			培养	3380	3				
-3382	4	8090	拂晓之时Ⅲ	露西亚·黎明提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3382			1	33820	3382			培养	3381	3				
-3383	4	8080	拂晓之时Ⅳ	露西亚·黎明提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3383			1	33830	3383			培养	3382	3				
-3384	4	8070	拂晓之时Ⅴ	露西亚·黎明提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3384			1	33840	3384			培养	3383	3				
-3385	4	8060	拂晓之时Ⅵ	露西亚·黎明提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3385			1	33850	3385			培养	3384	3				
-3386	4	8050	拂晓之时Ⅶ	露西亚·黎明提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3386			1	33860	3386			培养	3385	3				
-3387	4	8040	GR·拂晓之时	露西亚·黎明提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya1.png					3387			1	33870	3387			培养	3386	3				
+3380	4	8110	拂晓之时Ⅰ	露西亚·黎明提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3380			1	33800	3380			培养		3				
+3381	4	8100	拂晓之时Ⅱ	露西亚·黎明提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3381			1	33810	3381			培养	3380	3				
+3382	4	8090	拂晓之时Ⅲ	露西亚·黎明提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3382			1	33820	3382			培养	3381	3				
+3383	4	8080	拂晓之时Ⅳ	露西亚·黎明提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3383			1	33830	3383			培养	3382	3				
+3384	4	8070	拂晓之时Ⅴ	露西亚·黎明提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3384			1	33840	3384			培养	3383	3				
+3385	4	8060	拂晓之时Ⅵ	露西亚·黎明提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3385			1	33850	3385			培养	3384	3				
+3386	4	8050	拂晓之时Ⅶ	露西亚·黎明提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3386			1	33860	3386			培养	3385	3				
+3387	4	8040	GR·拂晓之时	露西亚·黎明提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiya2.png					3387			1	33870	3387			培养	3386	3				
 3390	4	8030	皎皎其泽Ⅰ	丽芙·流光提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLifu2.png					3390			1	33900	3390			培养		3				
 3391	4	8020	皎皎其泽Ⅱ	丽芙·流光提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLifu2.png					3391			1	33910	3391			培养	3390	3				
 3392	4	8010	皎皎其泽Ⅲ	丽芙·流光提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLifu2.png					3392			1	33920	3392			培养	3391	3				
@@ -563,22 +563,22 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 3405	4	7900	仰仗光辉Ⅵ	丽芙·仰光提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLifu3.png					3405			1	34050	3405			培养	3404	3				
 3406	4	7890	仰仗光辉Ⅶ	丽芙·仰光提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLifu3.png					3406			1	34060	3406			培养	3405	3				
 3407	4	7880	GR·仰仗光辉	丽芙·仰光提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLifu3.png					3407			1	34070	3407			培养	3406	3				
-3410	4	7870	胜者为我Ⅰ	神威·暗能提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3410			1	34100	3410			培养		3				
-3411	4	7860	胜者为我Ⅱ	神威·暗能提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3411			1	34110	3411			培养	3410	3				
-3412	4	7850	胜者为我Ⅲ	神威·暗能提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3412			1	34120	3412			培养	3411	3				
-3413	4	7840	胜者为我Ⅳ	神威·暗能提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3413			1	34130	3413			培养	3412	3				
-3414	4	7830	胜者为我Ⅴ	神威·暗能提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3414			1	34140	3414			培养	3413	3				
-3415	4	7820	胜者为我Ⅵ	神威·暗能提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3415			1	34150	3415			培养	3414	3				
-3416	4	7810	胜者为我Ⅶ	神威·暗能提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3416			1	34160	3416			培养	3415	3				
-3417	4	7800	GR·胜者为我	神威·暗能提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei2.png					3417			1	34170	3417			培养	3416	3				
-3420	4	7790	逻辑演算Ⅰ	里·乱数提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3420			1	34200	3420			培养		3				
-3421	4	7780	逻辑演算Ⅱ	里·乱数提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3421			1	34210	3421			培养	3420	3				
-3422	4	7770	逻辑演算Ⅲ	里·乱数提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3422			1	34220	3422			培养	3421	3				
-3423	4	7760	逻辑演算Ⅳ	里·乱数提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3423			1	34230	3423			培养	3422	3				
-3424	4	7750	逻辑演算Ⅴ	里·乱数提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3424			1	34240	3424			培养	3423	3				
-3425	4	7740	逻辑演算Ⅵ	里·乱数提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3425			1	34250	3425			培养	3424	3				
-3426	4	7730	逻辑演算Ⅶ	里·乱数提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3426			1	34260	3426			培养	3425	3				
-3427	4	7720	GR·逻辑演算	里·乱数提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLi2.png					3427			1	34270	3427			培养	3426	3				
+3410	4	7870	胜者为我Ⅰ	神威·暗能提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3410			1	34100	3410			培养		3				
+3411	4	7860	胜者为我Ⅱ	神威·暗能提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3411			1	34110	3411			培养	3410	3				
+3412	4	7850	胜者为我Ⅲ	神威·暗能提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3412			1	34120	3412			培养	3411	3				
+3413	4	7840	胜者为我Ⅳ	神威·暗能提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3413			1	34130	3413			培养	3412	3				
+3414	4	7830	胜者为我Ⅴ	神威·暗能提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3414			1	34140	3414			培养	3413	3				
+3415	4	7820	胜者为我Ⅵ	神威·暗能提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3415			1	34150	3415			培养	3414	3				
+3416	4	7810	胜者为我Ⅶ	神威·暗能提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3416			1	34160	3416			培养	3415	3				
+3417	4	7800	GR·胜者为我	神威·暗能提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconShenwei3.png					3417			1	34170	3417			培养	3416	3				
+3420	4	7790	逻辑演算Ⅰ	里·乱数提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3420			1	34200	3420			培养		3				
+3421	4	7780	逻辑演算Ⅱ	里·乱数提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3421			1	34210	3421			培养	3420	3				
+3422	4	7770	逻辑演算Ⅲ	里·乱数提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3422			1	34220	3422			培养	3421	3				
+3423	4	7760	逻辑演算Ⅳ	里·乱数提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3423			1	34230	3423			培养	3422	3				
+3424	4	7750	逻辑演算Ⅴ	里·乱数提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3424			1	34240	3424			培养	3423	3				
+3425	4	7740	逻辑演算Ⅵ	里·乱数提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3425			1	34250	3425			培养	3424	3				
+3426	4	7730	逻辑演算Ⅶ	里·乱数提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3426			1	34260	3426			培养	3425	3				
+3427	4	7720	GR·逻辑演算	里·乱数提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLi3.png					3427			1	34270	3427			培养	3426	3				
 3430	4	7710	漫天焰火Ⅰ	卡列尼娜·烬燃提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconKalienina3.png					3430			1	34300	3430			培养		3				
 3431	4	7700	漫天焰火Ⅱ	卡列尼娜·烬燃提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconKalienina3.png					3431			1	34310	3431			培养	3430	3				
 3432	4	7690	漫天焰火Ⅲ	卡列尼娜·烬燃提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconKalienina3.png					3432			1	34320	3432			培养	3431	3				
@@ -595,6 +595,14 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 3445	4	7634	冲击信号Ⅵ	七实·脉冲提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconYongyechao3.png					3445			1	34350	3435			培养	3444	3				
 3446	4	7633	冲击信号Ⅶ	七实·脉冲提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconYongyechao3.png					3446			1	34360	3436			培养	3445	3				
 3447	4	7632	GR·冲击信号	七实·脉冲提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconYongyechao3.png					3447			1	34370	3437			培养	3446	3				
+3450	4	7631	赤渊之上Ⅰ	露西亚·深红之渊提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3450			1	34300	3430			培养		3				
+3451	4	7630	赤渊之上Ⅱ	露西亚·深红之渊提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3451			1	34310	3431			培养	3450	3				
+3452	4	7629	赤渊之上Ⅲ	露西亚·深红之渊提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3452			1	34320	3432			培养	3451	3				
+3453	4	7628	赤渊之上Ⅳ	露西亚·深红之渊提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3453			1	34330	3433			培养	3452	3				
+3454	4	7627	赤渊之上Ⅴ	露西亚·深红之渊提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3454			1	34340	3434			培养	3453	3				
+3455	4	7626	赤渊之上Ⅵ	露西亚·深红之渊提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3455			1	34350	3435			培养	3454	3				
+3456	4	7625	赤渊之上Ⅶ	露西亚·深红之渊提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3456			1	34360	3436			培养	3455	3				
+3457	4	7624	GR·赤渊之上	露西亚·深红之渊提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3457			1	34370	3437			培养	3456	3				
 3500	4	7630	军勋在此Ⅰ	构造体累积晋升5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3500			5	35000	3500			培养		3				
 3501	4	7620	军勋在此Ⅱ	构造体累积晋升10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3501			10	35010	3501			培养	3500	3				
 3502	4	7610	军勋在此Ⅲ	构造体累积晋升20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3502			20	35020	3502			培养	3501	3				
@@ -735,17 +743,18 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 7700	7	9740	卡列尼娜的考验Ⅰ	累计登录7天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7700			1	77000	7700			目标						
 7701	7	9730	卡列尼娜的考验Ⅱ	指挥官等级到达50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7701			50	77010	7701			目标						
 7702	7	9720	卡列尼娜的考验Ⅲ	培养4个到达特种Ⅱ称号的构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					7702			4	77020	7702			目标						
-90201	11	1	测试任务1	测试任务1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90201			活动						
-90202	11	1	测试任务2	测试任务2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90202			活动						
-90203	11	1	测试任务3	测试任务3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90203			活动						
-90204	11	1	测试任务4	测试任务4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90204			活动						
-90205	11	1	测试任务5	测试任务5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90205			活动						
-90206	11	1	测试任务6	测试任务6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90206			活动						
-12001	13	487	旧的不去新的不来	回收家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12001			1	12001	12001			宿舍						
-12002	13	486	小小粉刷匠	制造家具3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12002			3	12002	12002			宿舍						
-12003	13	488	恒定温柔	爱抚构造体5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍						
-12004	13	500	能者多劳	宿舍构造体执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍						
-12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍						
+90201	6	1	极圈追击Ⅰ	完成极圈之夜第1关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90201			活动						
+90202	6	1	极圈追击Ⅱ	完成极圈之夜第2关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90202			活动						
+90203	6	1	极圈追击Ⅲ	完成极圈之夜第3关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90203			活动						
+90204	6	1	林地截击Ⅰ	完成清剿异变体第1关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90204			活动						
+90205	6	1	林地截击Ⅱ	完成清剿异变体第2关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90205			活动						
+90206	6	1	林地截击Ⅲ	完成清剿异变体第3关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90206			活动						
+12001	13	487	旧的不去新的不来	回收家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12001			1	12001	12001			宿舍			9998			
+12002	13	486	小小粉刷匠	制造家具3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12002			3	12002	12002			宿舍			9998			
+12003	13	488	恒定温柔	爱抚构造体5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍			9998			
+12004	13	500	能者多劳	宿舍构造体执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍			9998			
+12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍			9998			
+12006	13	600	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006				宿舍			9998		1	
 14001	12	2001	宿舍指引	指引-入住1位构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14001			1	14001	14001			宿舍			9999			
 14002	12	2000	宿舍指引	指引-放置家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14002			1	14002	14002			宿舍			9999			
 14003	12	1999	宿舍指引	指引-将椅子改装1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14003			1	14003	14003			宿舍			9999			
@@ -946,3 +955,59 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 50024	5	11600	动力充能Ⅲ	指挥官等级到达40级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50024			40	50024				目标						
 50025	5	11500	动力充能Ⅳ	指挥官等级到达45级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50025			45	50025				目标						
 50026	5	11400	研发支持Ⅲ	指挥官等级到达50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					50026			50	50026				目标						
+11001	11	10000	冰雪裹夹之下	通关雪印						11001			1	11001	11001			通关						
+11002	11	9990	永不落幕之夜	通关追猎						11002			1	11002	11002			通关						
+11003	11	9980	不停追踪之心	通关掘地						11003			1	11003	11003			通关						
+11004	11	9970	掩埋真相之时	通关咫尺						11004			1	11004	11004			通关						
+11005	11	9960	托付信赖之人	通关零下守卫						11005			1	11005	11005			通关						
+11006	11	9900	地平线的光芒Ⅰ	通关8次极圈之夜-普通						11006			8	11006	11006			通关						
+11007	11	9890	地平线的光芒Ⅱ	通关12次极圈之夜-普通						11007			12	11007	11007			通关						
+11008	11	9880	地平线的光芒Ⅲ	通关18次极圈之夜-普通						11008			18	11008	11008			通关						
+11009	11	9870	地平线的光芒Ⅳ	通关25次极圈之夜-普通						11009			25	11009	11009			通关						
+11010	11	9860	地平线的光芒Ⅴ	通关35次极圈之夜-普通						11010			35	11010	11010			通关						
+11011	11	9850	地平线的光芒Ⅵ	通关50次极圈之夜-普通						11011			50	11011	11011			通关						
+11013	11	9770	红色袜子里Ⅱ	兑换4号位圣诞丽芙·驯鹿						11013			1	11013	11013			商店						
+11014	11	9760	红色袜子里Ⅲ	兑换5号位圣诞丽芙·驯鹿						11014			1	11014	11014			商店						
+11015	11	9750	红色袜子里Ⅳ	兑换6号位圣诞丽芙·驯鹿						11015			1	11015	11015			商店						
+11016	11	9780	闪耀！伯利恒之星	兑换伯利恒之星						11016			1	11016	11016			商店						
+11020	11	9950	极！冰雪裹夹之下	通关冰点-C1						11020			1	11020	11020			通关						
+11021	11	9940	极！永不落幕之夜	通关冰点-C2						11021			1	11021	11021			通关						
+11022	11	9930	极！不停追踪之心	通关冰点-C3						11022			1	11022	11022			通关						
+11023	11	9920	极！掩埋真相之时	通关冰点-C4						11023			1	11023	11023			通关						
+11024	11	9910	极！托付信赖之人	通关冰点-C5						11024			1	11024	11024			通关						
+11025	11	9840	击落深空的喀戎Ⅰ	通关8次极圈之夜-挑战						11025			8	11025	11025			通关						
+11026	11	9830	击落深空的喀戎Ⅱ	通关12次极圈之夜-挑战						11026			12	11026	11026			通关						
+11027	11	9820	击落深空的喀戎Ⅲ	通关18次极圈之夜-挑战						11027			18	11027	11027			通关						
+11028	11	9810	击落深空的喀戎Ⅳ	通关25次极圈之夜-挑战						11028			25	11028	11028			通关						
+11029	11	9800	击落深空的喀戎Ⅴ	通关35次极圈之夜-挑战						11029			35	11029	11029			通关						
+11030	11	9790	击落深空的喀戎Ⅵ	通关50次极圈之夜-挑战						11030			50	11030	11030			通关						
+11033	11	9740	构造基地之心	兑换3件圣诞图纸						11033			3	11033	11033			商店						
+11034	11	9730	冰雪中的建筑	兑换6件圣诞图纸						11034			6	11034	11034			商店						
+11035	11	9720	极夜的永久庇护所	兑换10件圣诞图纸						11035			10	11035	11035			商店						
+11037	11	9280	指挥官的日常行为	通关1次极地暗流	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11037			1	11037	11037			通关						
+11038	11	9260	出击！永不落之夜	通关1次极圈之夜	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11038			1	11038	11038			通关						
+11049	11	9040	烟囱下的节日大使	激活神威·重能	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11049			1	11049	11049			激活						
+11050	11	9020	集成！能源反应堆	使用500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11050			500	11050	11050			商店						
+11051	11	9000	能源反应堆活化	使用1000个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11051			1000	11051	11051			商店						
+11052	11	8980	能源反应堆释放	使用1500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11052			1500	11052	11052			商店						
+11053	11	8960	能源反应堆置换	使用2000个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11053			2000	11053	11053			商店						
+11054	11	8940	贸易·换换乐Ⅰ	使用2500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11054			2500	11054	11054			商店						
+11055	11	8920	贸易·换换乐Ⅱ	使用3500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11055			3500	11055	11055			商店						
+11056	11	8900	贸易·换换乐Ⅲ	使用4500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11056			4500	11056	11056			商店						
+11057	11	8880	贸易·换换乐Ⅳ	使用5500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11057			5500	11057	11057			商店						
+11058	11	8860	贸易·换换乐Ⅴ	使用6500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11058			6500	11058	11058			商店						
+11059	11	8840	贸易·换换乐Ⅵ	使用7500个反应物He-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11059			7500	11059	11059			商店						
+11060	11	8820	出击！冲锋陷阵	将神威·重能等级升至20级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11060			1	11060	11060			培养						
+11061	11	8800	重击！无坚不摧	将神威·重能等级升至40级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11061			1	11061	11061			培养						
+11062	11	8780	横扫！所向披靡	将神威·重能等级升至60级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11062			1	11062	11062			培养						
+11063	11	8760	数据库一级扩容	神威·重能学习技能20次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11063			20	11063	11063			培养						
+11064	11	8740	数据库二级扩容	神威·重能学习技能40次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11064			40	11064	11064			培养						
+11065	11	8720	数据库三级扩容	神威·重能学习技能60次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11065			60	11065	11065			培养						
+11066	11	8700	数据库扩容完成	神威·重能学习技能80次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge04.png					11066			80	11066	11066			培养						
+11069	11	8640	作战的展开	通关圣诞活动关卡【作战的展开】	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11069			1	11069	11069			培养						
+11070	11	8620	伐木小行家	通关圣诞活动关卡【伐木小行家】	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11070			1	11070	11070			培养						
+11073	11	8560	孤狼的战斗	通关圣诞活动关卡【孤狼的战斗】	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11073			1	11073	11073			培养						
+11075	11	8520	圣诞快乐！	通关圣诞活动关卡【圣诞快乐！】	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11075			1	11075	11075			培养						
+11043	6	8510	温柔的驯服Ⅰ	收集1号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11043			1	11043	11043			收集						
+11044	6	8500	温柔的驯服Ⅱ	收集2号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11044			1	11044	11044			收集						
+11045	6	8490	温柔的驯服Ⅲ	收集3号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11045			1	11045	11045			收集						

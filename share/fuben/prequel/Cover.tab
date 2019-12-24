@@ -1,8 +1,9 @@
 CoverId	CoverName	Priority	ChallengeCondition	ChallengeStage[1]	ChallengeConsumeItem[1]	ChallengeConsumeCount[1]	ChallengeStage[2]	ChallengeConsumeItem[2]	ChallengeConsumeCount[2]	ChallengeStage[3]	ChallengeConsumeItem[3]	ChallengeConsumeCount[3]	ChallengePrefabName	ChapterId[1]	ChapterId[2]	ChapterId[3]
-1001	露西亚	1	7001	13010101	21	0	13010102	21	0				Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel01.prefab	1001001		
-1002	丽芙	2	7002	13010201	21	0	13010202	21	0				Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel02.prefab	1002001		
-1003	七实	3	7003	13010301	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel03.prefab	1003001	1003002	
-1004	里	4	7004	13010401	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel04.prefab	1004001		
-1005	卡列尼	5	7005	13010501	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel05.prefab	1005001		
-1006	渡边	6	7006	13010601	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel06.prefab	1006001		
-1007	卡安比	7	7007	13010701	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel07.prefab	1007001		
+1001	露西亚	1		13010101	21	0	13010102	21	0				Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel01.prefab	1001001	1001002	
+1002	丽芙	2		13010201	21	0	13010202	21	0				Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel02.prefab	1002001		
+1003	七实	3		13010301	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel03.prefab	1003001	1003002	
+1004	里	4		13010401	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel04.prefab	1004001		
+1005	卡列尼	5		13010501	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel05.prefab	1005001		
+1006	渡边	6		13010601	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel06.prefab	1006001		
+1007	卡安比	7		13010701	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel07.prefab	1007001		
+1008	神威	8		13010801	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel08.prefab	1008001		

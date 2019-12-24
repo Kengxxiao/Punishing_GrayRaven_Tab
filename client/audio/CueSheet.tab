@@ -1,7 +1,8 @@
 Id	CueSheetName	CueAwb	HasAwb
 1	External/Criware/b_char.acb		0
 2	External/Criware/c_nornal_step.acb		0
-4	External/Criware/g_amb_story.acb		1
+3	External/Criware/g_amb.acb		0
+4	External/Criware/g_amb_story.acb	External/Criware/g_amb_story.awb	1
 5	External/Criware/g_ui.acb		0
 6	External/Criware/e_signal.acb		0
 7	External/Criware/g_story.acb		0
@@ -30,6 +31,10 @@ Id	CueSheetName	CueAwb	HasAwb
 30	External/Criware/m_nbat_nightmare.acb	External/Criware/m_nbat_nightmare.awb	1
 31	External/Criware/me_step.acb		0
 32	External/Criware/g_ingame.acb		0
+33	External/Criware/me_jiaojing.acb		0
+34	External/Criware/m_ev1_intro.acb	External/Criware/m_ev1_intro.awb	1
+35	External/Criware/m_ev1_normalbattle.acb	External/Criware/m_ev1_normalbattle.awb	1
+36	External/Criware/m_ev1_bossbattle.acb	External/Criware/m_ev1_bossbattle.awb	1
 101	External/Criware/c_liRK2.acb		0
 111	External/Criware/c_liRK3.acb		0
 102	External/Criware/c_lucia.acb		0
@@ -113,3 +118,8 @@ Id	CueSheetName	CueAwb	HasAwb
 8210	External/Criware/mb_robotarmor.acb		0
 8110	External/Criware/mb_tankarmor.acb		0
 8190	External/Criware/mb_luciaRK3.acb		0
+9045	External/Criware/me_jidijibing.acb		0
+9046	External/Criware/me_jijuxie.acb		0
+8320	External/Criware/me_luosaita_ma.acb		0
+8322	External/Criware/me_luosaita_ren.acb		0
+9002	External/Criware/mo_kuro.acb		0

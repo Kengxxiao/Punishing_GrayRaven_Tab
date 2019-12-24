@@ -148,6 +148,14 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 813030000	PlaySound	813026|0																													
 813031	AddBuff	813031																													
 813031000	AddBehavior	813031																													
+813032	AddBuff	813032																													
+813032000	PlaySound	813030|0																													
+813033	AddBuff	813033																													
+813033000	PlaySound	813031|0																													
+813034	AddBuff	813034																													
+813034000	PlaySound	813032|0																													
+814000	AddBuff	814000																													
+814000000	PlayCameraTrackOnAllClients	CTLady01Born|0|1.5																													
 814001	AddBuff	814001																													
 814001000	AddBehavior	814001																													
 814002	AddBuff	814002																													
@@ -189,3 +197,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 814108000	AddBehavior	814108																													
 814109	AddBuff	814109																													
 814109000	AddBehavior	814109																													
+814110	AddBuff	814110																													
+814111	AddBuff	814111																													
+814111000	PlaySound	814017|0																													
+814112	AddBuff	814112																													
+814112000	AddBehavior	814112																													

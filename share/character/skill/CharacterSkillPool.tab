@@ -106,7 +106,7 @@ Id	PoolId	Weight	SkillId	Icon	Description	Name
 108	1	100	107301	Assets/Product/Texture/Image/IconSkill/R3kalieninahong1.png	红球等级+1	光刃交击
 109	1	100	107306	Assets/Product/Texture/Image/IconSkill/R3kalieninahuang1.png	黄球等级+1	掩护炮击
 110	1	100	107311	Assets/Product/Texture/Image/IconSkill/R3kalieninalan1.png	蓝球等级+1	僚机召唤
-111	1	100	107316	Assets/Product/Texture/Image/IconSkill/lipugong1.png	普通攻击等级+1	膛压解放
+111	1	100	107316	Assets/Product/Texture/Image/IconSkill/kalieninapugong1.png	普通攻击等级+1	膛压解放
 112	2	100	107317	Assets/Product/Texture/Image/IconSkill/R3kalieninadazhao1.png	必杀技等级+1	必杀-大地伤痕
 113	2	100	107318	Assets/Product/Texture/Image/IconSkill/QTE1.png	qte等级+1	重力坠落
 114	2	100	107321	Assets/Product/Texture/Image/IconSkill/R3kalieninahexin1.png	核心被动+1	热能武装
@@ -119,3 +119,11 @@ Id	PoolId	Weight	SkillId	Icon	Description	Name
 121	2	100	105318	Assets/Product/Texture/Image/IconSkill/QTE1.png	qte等级+1	熔火圆斩
 122	2	100	105321	Assets/Product/Texture/Image/IconSkill/R3yongyechaohexin1.png	核心被动+1	超频共振
 123	2	100	105323	Assets/Product/Texture/Image/IconSkill/R3yongyechaohexin1.png	职业技等级+1	装甲型
+124	1	100	102301	Assets/Product/Texture/Image/IconSkill/R3luxiyahong1.png	红球等级+1	赤渊-烁华
+125	1	100	102306	Assets/Product/Texture/Image/IconSkill/R3luxiyahuang1.png	黄球等级+1	赤渊-缭乱
+126	1	100	102311	Assets/Product/Texture/Image/IconSkill/R3luxiyalan1.png	蓝球等级+1	赤渊-碎光散
+127	1	100	102316	Assets/Product/Texture/Image/IconSkill/luxiyapugong1.png	普通攻击等级+1	赤渊-居合意
+128	2	100	102317	Assets/Product/Texture/Image/IconSkill/R3luxiyadazhao1.png	必杀技等级+1	必杀-渊裂之术
+129	2	100	102318	Assets/Product/Texture/Image/IconSkill/QTE1.png	qte等级+1	极渊落华
+130	2	100	102321	Assets/Product/Texture/Image/IconSkill/R3luxiyahexin1.png	核心被动+1	赤渊-刀光意
+131	2	100	102323	Assets/Product/Texture/Image/IconSkill/R3luxiyahexin1.png	职业技等级+1	进攻型

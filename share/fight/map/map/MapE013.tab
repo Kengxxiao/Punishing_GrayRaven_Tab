@@ -1,2 +1,5 @@
 Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCamera	CameraId	Terrains[1]	Terrains[2]	Terrains[3]	Position[1]	Position[2]	Position[3]	Rotation[1]	Rotation[2]	Rotation[3]
-30130103	30130103	圣诞节 - 教堂			0.15	15	33	9	301301030								
+30130103	30130103	圣诞节 - 屋顶1			0.15	15	9	9	301301030			0|0|0			0|0|0		
+30130104	30130104	圣诞节 - 伐木场			0.15	15	40	9	301301040			0|0|0			0|0|0		
+30130107	30130107	圣诞节 - 教堂			0.15	15	33	11	301301070			0|0|0			0|0|0		
+30130109	30130109	圣诞节 - 屋顶2			0.15	15	9	9	301301090			0|0|0			0|0|0		

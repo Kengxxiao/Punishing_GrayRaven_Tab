@@ -122,7 +122,6 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100513052	ShakeCamera	6|00.12|-00.5|20|00.2|3																													
 100513062	ShakeCamera	3|00.3|-00.4|20|00.35|4																													
 100516012	ShakeCamera	2|00.13|0|20|00.4|0																													
-100516022	ShakeCamera	5|00.6|-1|10|00.35|1																													
 100520032	ShakeCamera	5|00.6|-1|10|00.25|0																													
 100524022	ShakeCamera	2|00.15|-00.25|20|00.25|0																													
 100701022	ShakeCamera	3|00.15|-00.5|10|00.15|0																													
@@ -168,8 +167,11 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100814012	ShakeCamera	2|00.3|-00.5|10|00.35|0																													
 100815012	ShakeCamera	2|00.3|-00.5|10|00.35|0																													
 100815072	ShakeCamera	3|00.3|-00.5|10|00.25|0																													
-100817012	ShakeCamera	5|00.4|-00.5|10|00.15|0																													
-100817022	ShakeCamera	4|00.8|-00.5|20|00.25|1																													
+100817012	ShakeCamera	6|00.12|-00.5|10|00.15|0																													
+100817022	ShakeCamera	7|00.12|-00.5|10|00.15|1																													
+100817032	ShakeCamera	2|00.12|-00.5|10|00.15|2																													
+100817042	ShakeCamera	4|00.25|-00.75|10|00.2|3																													
+100817052	ShakeCamera	2|00.35|-00.5|10|00.25|3																													
 100824022	ShakeCamera	5|00.4|-1|20|00.15|10																													
 100824042	ShakeCamera	7|00.3|-1|20|00.15|10																													
 100824062	ShakeCamera	3|00.2|-1|20|00.15|10																													
@@ -197,5 +199,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 101314052	ShakeCamera	5|00.5|-00.5|10|00.25|0																													
 101316042	ShakeCamera	5|00.5|-00.5|10|00.25|0																													
 101320032	ShakeCamera	3|00.3|-1|10|00.25|0																													
+101320072	ShakeCamera	3|00.3|-1|10|00.25|0																													
 101323012	ShakeCamera	3|00.1|-00.4|10|00.25|0																													
 101323032	ShakeCamera	3|00.3|-1|10|00.25|0																													
+101323052	ShakeCamera	3|00.3|-1|10|00.25|0																													

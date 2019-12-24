@@ -2,17 +2,17 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 80000001	破霸体	1	0.1	0.1			0			4		0.1			1		FxTongyongPobati				FxNpcYujing02		1			1					0	0	0	1							0	3					800010					200105			0	HitCase		0					0					
 80000002	1点伤害	1	0.1	0.1			0			1		0.1			1		FxMb1LuolanMd010001QiangkouShouji						1			1					0	0	0	1							0	3					801010								0	HitCase		0					0					
 80000003	破霸体后死亡	2	0.1				0			4		0.1			1		FxTongyongPobati				FxNpcYujing02		1			1					0	0	0	1							0	3					100002								0	HitCase		0					0					
-81500101	耳光	1	3	3		1.5	0			4		0.1			-1								-1			1					0	0	0	0							0	3				815001011	801040	200003	815056			200003			0	HitCase	1	0					1					
+81500101	耳光	1	3	3		1.5	0			4		0.1			-1		FxMb1OrphanMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				815001011	801040	200003	815056			200003			0	HitCase	1	0					1					
 81500201	随意喷发（抛物线）	2	2.5				15			4		3		1	1					Bip001LHand	FxMb1OrphanMd030001Attack02Dandao		1		FxMb1OrphanMd030001Attack02Bao	3	-50	0	12	0.75	0	0	0	0	5000		1	81500203	1		0	3				815002011									0	HitCase		0			9999	1	1					
-81500203	投掷物伤害	2	2.5				0			4		0.1			-1								-1			1					0	0	0	2	0.1		1	81500204	1		3	2				815002031	801040	815057							0	HitCase		0					0					
+81500203	投掷物伤害	2	2.5				0			4		0.1			-1		FxMb1OrphanMd030001Attack02Shouji						-1			1					0	0	0	2	0.1		1	81500204	1		3	2				815002031	801040	815057							0	HitCase		0					0					
 81500204	持续冰冻区域	2	2.5				0			4		5			-1	1			0.1				-1			1	0				0	0	0	2							0	3					815002	815003							0	HitCase		0					0					
-81500301	随意踩踏	2	3			3	0			4		0.1			-1								-1			1					0	0	0	0							0	1				815003011	801040	200003	815058			200003			0	HitCase	1	0					1					
+81500301	随意踩踏	2	3			3	0			4		0.1			-1		FxMb1OrphanMd030001Attack03Shouji						-1			1					0	0	0	0							0	1				815003011	801040	200003	815058			200003			0	HitCase	1	0					1					
 81500303	随意踩踏（特效）	2	1.33			1	0			4		2			-1						FxMb1OrphanMd030001Attack03		-1			1					0	0	0	0							0	3													0	HitCase		0					0					
 81500401	跳跃 - 轻	2	3				0			4		0.75			-1								-1			1					0	0	0	0	0.75		1	81500411			0	3													0	HitCase	1	1					1					
-81500411	跳跃 - 轻 （伤害）	2	5				0			4		0.1			-1								-1			1					0	0	0	2	0		1	81500412			0	2				815004111	801050	200003	815059			200003		815004112	0	HitCase		0					1					
+81500411	跳跃 - 轻 （伤害）	2	5				0			4		0.1			-1		FxMb1OrphanMd030001Attack04Shouji						-1			1					0	0	0	2	0		1	81500412			0	2				815004111	801050	200003	815059			200003		815004112	0	HitCase		0					1					
 81500412	P3 空中飞人 （弹道特效）	2	10				0			4		2			-1						FxMb1OrphanMd030001Attack04		-1			1					0	0	0	2							0	3													0	HitCase		0					0					
 81500501	跳跃 - 重	2	7				0			4		0.7			-1								-1			1					0	0	0	0	0.7		1	81500511			0	3													0	HitCase	1	1					1					
-81500511	跳跃 - 重 （伤害）	2	10				0			4		0.1			-1								-1			1					0	0	0	2	0		1	81500512			0	2				815005111	801080	200005	815001	815060		200005			0	HitCase	1	0					1					
+81500511	跳跃 - 重 （伤害）	2	10				0			4		0.1			-1		FxMb1OrphanMd030001Attack05Shouji						-1			1					0	0	0	2	0		1	81500512			0	2				815005111	801080	200005	815001	815060		200005			0	HitCase	1	0					1					
 81500512	P3 空中飞人 （弹道特效）	2	15				0			4		1			-1						FxMb1OrphanMd030001Attack05		-1			1					0	0	0	2							0	3													0	HitCase		0					0					
 81500601	喷射 - 直线	1	1.5	1.5	1.5	1	3.7			4		2			-1								-1			1					0	0	0	0		0.25	8	81500611			0	3													0	HitCase		0					1					
 81500602	喷射 - 地面特效	2	1.33				0			4		15			-1						FxMb1OrphanMd030001Attack06Dimian		-1			1					0	0	0	0							0	3													0	HitCase		0					0					
@@ -36,8 +36,8 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81503005	随意踩踏	2	2				0			4		1			-1						FxYujing1M08S		-1			1					0	0	0	1							0	3													0	HitCase	1	0					0					
 81505101	跳跃 - 轻	2	3				0			4		0.7			-1								-1			1					0	0	0	0	0		1	81500412			0	3		0.2	0.1	815051011									0	HitCase	1	1					1					
 81505201	跳跃 - 轻	2	3				0			4		0.7			-1								-1			1					0	0	0	0	0		1	81500412			0	3		0.2	0.1	815052011									0	HitCase	1	1					1					
-81505501	耳光	1	3	3		1.5	0			4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	815055011	801010	200003	995556			200003		815055012	0	HitCase	1	0					1					
-81505601	随意踩踏	2	4			1	0			4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	815056011	801010	200004	995557			200004			0	HitCase	1	0					1					
+81505501	耳光	1	3	3		1.5	0			4		0.1			-1		FxMb1OrphanMd030001Attack01Shouji						-1			1					0	0	0	0							0	3		0.2	0.1	815055011	801010	200003	995556			200003		815055012	0	HitCase	1	0					1					
+81505601	随意踩踏	2	4			1	0			4		0.1			-1		FxMb1OrphanMd030001Attack03Shouji						-1			1					0	0	0	0							0	3		0.2	0.1	815056011	801010	200004	995557			200004			0	HitCase	1	0					1					
 81505603	随意踩踏（特效）	2	1.33			1	0			4		2			-1						FxMb1OrphanMd030001Attack03		-1			1					0	0	0	0							0	3													0	HitCase		0					0					
 81505701	跳跃 - 轻	2	3				0			4		0.7			-1								-1			1					0	0	0	0	0		1	81500412			0	3		0.2	0.1	815057011	801020	200004				200004			0	HitCase	1	1					1					
 81506101	随意喷发（抛物线）	2	2.5				15		0	4		3		1	1					Bip001LHand	FxMb1OrphanMd030001Attack02Dandao		1		FxMb1OrphanMd030001Attack02Bao	3	-100	0	12	0.75	0	0	0	0	5000		1	81506103	1		0	3				815061011									0	HitCase		0			9999	1	1					
@@ -116,9 +116,9 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81607206	链刀3式 地裂 特效	1	1	2			0			4		2			-1		FxMb1LuolanMd010001BianziShouji				FxMb1LuolanMd010001Attack08Dilie		-1			1					0	0	0	0							0	3													0	HitCase		0					0					
 81607303	P3 炸药桶 （爆炸伤害）	2	20			5	0			4		1			-1								-1			1					0	0	0	0							0	3				816073031	801100	200005	816003			200005			1.3	HitCase	1	0					1					
 81700102	地火-特效1	2	3				0			4		3			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.55		1	81700111			0	3													0	HitCase		0					0					
-81700111	地火-伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2							0	3				817001111	801020	200003	995557			200003			0	HitCase		0					1					
+81700111	地火-伤害	2	3				0			4		0.1			-1		FxMb1VirginbioMd030001Attack02Shouji						-1			1					0	0	0	2							0	3				817001111	801020	200003	995557			200003			0	HitCase		0					1					
 81700202	地火-特效1	2	3				0			4		3			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.55		1	81700211			0	3													0	HitCase		0					0					
-81700211	地火-伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2							0	3				817002111	801020	200003	995557			200003			0	HitCase		0					1					
+81700211	地火-伤害	2	3				0			4		0.1			-1		FxMb1VirginbioMd030001Attack02Shouji						-1			1					0	0	0	2							0	3				817002111	801020	200003	995557			200003			0	HitCase		0					1					
 81700301	旋转尖刺	2	1				0		0	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	0.55		1	81700311			0	3													1	HitCase		0					0					
 81700302	旋转尖刺	2	1				0		45	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	0.55		1	81700311			0	3													1	HitCase		0					0					
 81700303	旋转尖刺	2	1				0		90	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	0.55		1	81700311			0	3													1	HitCase		0					0					
@@ -128,14 +128,14 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81700307	旋转尖刺	2	1				0		270	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	0.55		1	81700311			0	3													1	HitCase		0					0					
 81700308	旋转尖刺	2	1				0		315	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	0.55		1	81700311			0	3													1	HitCase		0					0					
 81700311	FxNpcYujing01	2	1			1.5	0		0	4		0.5			-1								-1			1					0	0	0	2	0.5		1	81700312			2	3													1	HitCase		0					0					
-81700312	旋转尖刺	2	1				100		0	4		1			-1								-1			1					0	0	0	2							2	3				817003121	801040	200005	816003			200005			1	HitCase		0					1					
-81700401	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004011	801030	816003							0	HitCase		0				1	1					
-81700402	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
-81700403	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004031	801030	816003							0	HitCase		0				1	1					
-81700404	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
-81700405	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004051	801030	816003							0	HitCase		0				1	1					
-81700406	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
-81700407	头盔激光	2	0.5			0	10			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004071	801030	816003							0	HitCase		0				1	1					
+81700312	旋转尖刺	2	1				100		0	4		1			-1		FxMb1VirginbioMd030001Attack03Shouji						-1			1					0	0	0	2							2	3				817003121	801040	200005	816003			200005			1	HitCase		0					1					
+81700401	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004011	801030	816003							0	HitCase		0				1	1					
+81700402	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
+81700403	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004031	801030	816003							0	HitCase		0				1	1					
+81700404	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
+81700405	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004051	801030	816003							0	HitCase		0				1	1					
+81700406	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3					801030	816003							0	HitCase		0				1	1					
+81700407	头盔激光	2	0.5			0	10			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	0	0	10	1	0	0	0	0							1	3				817004071	801030	816003							0	HitCase		0				1	1					
 81700601	尖刺连射	1	1	1.5		1	0		0	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													0.7	HitCase		0	1				0					
 81700602	尖刺连射	1	1	1.5		1	0		0	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													1.4	HitCase		0	1				0					
 81700603	尖刺连射	1	1	1.5		1	0		0	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													2.1	HitCase		0	1				0					
@@ -145,104 +145,104 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81700607	尖刺连射	1	1	1.5		1	0		30	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													0.7	HitCase		0	1				0					
 81700608	尖刺连射	1	1	1.5		1	0		30	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													1.4	HitCase		0	1				0					
 81700609	尖刺连射	1	1	1.5		1	0		30	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700612			0	3													2.1	HitCase		0	1				0					
-81700612	伤害子弹	2	1				100		0	4		1			-1								-1			1					0	0	0	2							2	3				817006121	801010	200005	816003			200005			1	HitCase		0					1					
+81700612	伤害子弹	2	1				100		0	4		1			-1		FxMb1VirginbioMd030001Attack03Shouji						-1			1					0	0	0	2							2	3				817006121	801010	200005	816003			200005			1	HitCase		0					1					
 81701502	P2 抛物 Loop （发起子弹）	2	1				0			4		999			-1					Bip001RFinger31			-1			1					0	0	0	0		1.5	99	81701511			0	3													0	HitCase		1		1			0					
 81701511		2	2			0	15			4		99		1	1						FxMb1VirginbioMd030001Attack14		1	3.5	FxMb1VirginbioMd030001Attack14baozha	3	-40	0	10	1	0	0	0	0	9999		1	81701512	1		1	3													2.2	HitCase		0	1		9999	1	0					
-81701512		2	2			0	0			4		0.1			-1								-1			1					0	0	0	2							2	2				817015121	801030	200003	816003			200003			0	HitCase		0					1					
+81701512		2	2			0	0			4		0.1			-1		FxMb1VirginbioMd030001Attack14Shouji						-1			1					0	0	0	2							2	2				817015121	801030	200003	816003			200003			0	HitCase		0					1					
 81701831	P2 抬手 Loop （障碍预警）	2	4				0			4		1			-1						FxMb1VirginbioMd030001Attack18Yujing		-1			1					0	0	0	3							0	3													0	HitCase		0					0					
-81701832	P2 抬手 Loop （障碍圈1S）	2	4				0			4		2			-1						FxMb1VirginbioMd030001Attack181s		-1			1					0	0	0	3							0	3													0	HitCase		0					0					
-81701833	P2 抬手 Loop （障碍圈8S）	2	4				0			4		9			-1						FxMb1VirginbioMd030001Attack188s		-1			1					0	0	0	3							0	3													0	HitCase		0					0					
+81701832	P2 抬手 Loop （障碍圈1S）FxMb1VirginbioMd030001Attack181s	2	4				0			4		2			-1								-1			1					0	0	0	3							0	3													0	HitCase		0					0					
+81701833	P2 抬手 Loop （障碍圈8S）FxMb1VirginbioMd030001Attack188s	2	4				0			4		9			-1								-1			1					0	0	0	3							0	3													0	HitCase		0					0					
 81702002	多重地刺	2	3				0			4		2			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.6		1	81702011			0	3													0	HitCase		0			0.6		0					
 81702003	多重地刺	2	3				0			4		2			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.6		1	81702011			0	3													0	HitCase		0			0.6		0					
 81702004	多重地刺	2	3				0			4		2			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.6		1	81702011			0	3													0	HitCase		0			0.6		0					
 81702005	多重地刺	2	3				0			4		2			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	1	0.6		1	81702011			0	3													0	HitCase		0			0.6		0					
-81702011	地刺伤害	2	3				0			4		0.1			-1								-1			1					0	0	0	2							0	3				817020111	801060	200003	995558			200003			0	HitCase		0					1					
-81702101	尖刺之径	1	2	12		10	0			4		0.1			-1								-1			1					0	0	0	0							0	3				817021011	801100	200003	995558			200003			0	HitCase	1	1					1					
-81702201	尖啸	2	6				0			4		2.8			-1	1			0.1		FxMb1VirginbioMd030001Attack11		-1			1					0	0	0	0							0	3					801010	200002	995210			200005			0	HitCase		1			1		1					
-81705312	旋转尖刺	2	1			1	50		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053121	801005							817053122	1	HitCase		0					0					
-81705313	旋转尖刺	2	1			1	50		45	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053131	801005							817053132	1	HitCase		0					0					
-81705314	旋转尖刺	2	1			1	50		90	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053141	801005							817053142	1	HitCase		0					0					
-81705315	旋转尖刺	2	1			1	50		135	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053151	801005							817053152	1	HitCase		0					0					
-81705316	旋转尖刺	2	1			1	50		180	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053161	801005							817053162	1	HitCase		0					0					
-81705317	旋转尖刺	2	1			1	50		225	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053171	801005							817053172	1	HitCase		0					0					
-81705318	旋转尖刺	2	1			1	50		270	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053181	801005							817053182	1	HitCase		0					0					
-81705319	旋转尖刺	2	1			1	50		315	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053191	801005							817053192	1	HitCase		0					0					
-81705412	旋转尖刺	2	1			1	50		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054121	801005							817054122	1	HitCase		0					0					
-81705413	旋转尖刺	2	1			1	50		45	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054131	801005							817054132	1	HitCase		0					0					
-81705414	旋转尖刺	2	1			1	50		90	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054141	801005							817054142	1	HitCase		0					0					
-81705415	旋转尖刺	2	1			1	50		135	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054151	801005							817054152	1	HitCase		0					0					
-81705416	旋转尖刺	2	1			1	50		180	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054161	801005							817054162	1	HitCase		0					0					
-81705417	旋转尖刺	2	1			1	50		225	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054171	801005							817054172	1	HitCase		0					0					
-81705418	旋转尖刺	2	1			1	50		270	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054181	801005							817054182	1	HitCase		0					0					
-81705419	旋转尖刺	2	1			1	50		315	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054191	801005							817054192	1	HitCase		0					0					
-81705501	抬手（地刺）	2	3		0		0			4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	1							0	3		0.2	0.1	817055011	801015								0	HitCase		0					0					
-81705601	抬手（地刺）	2	3		0		0			4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	1							0	3		0.2	0.1	817056011	801015								0	HitCase		0					0					
-81705718	抬手（地刺）	2	3		0	7	0		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057181	801015								0	HitCase		0					0					
-81705719	抬手（地刺）	2	3		0	7	0		60	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057191	801015								0	HitCase		0					0					
-81705720	抬手（地刺）	2	3		0	7	0		120	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057201	801015								0	HitCase		0					0					
-81705721	抬手（地刺）	2	3		0	7	0		180	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057211	801015								0	HitCase		0					0					
-81705722	抬手（地刺）	2	3		0	7	0		240	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057221	801015								0	HitCase		0					0					
-81705723	抬手（地刺）	2	3		0	7	0		300	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057231	801015								0	HitCase		0					0					
-81705801	尖刺之径	1	2	18		9	0			4		0.1			-1								-1			1					0	0	0	2							2	3		0.2	0.1	817058011	801015	200003	995558			200003		817058012	0	HitCase	1	0					1					
-81705802	地刺特效	1	2	18		0	0			4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0	0.05		1	81705801			1	3													0	HitCase		0					1					
+81702011	地刺伤害	2	3				0			4		0.1			-1		FxMb1VirginbioMd030001Attack02Shouji						-1			1					0	0	0	2							0	3				817020111	801060	200003	995558			200003			0	HitCase		0					1					
+81702101	尖刺之径	1	2	12		10	0			4		0.1			-1		FxMb1VirginbioMd030001Attack13Shouji						-1			1					0	0	0	0							0	3				817021011	801100	200003	995558			200003			0	HitCase	1	1					1					
+81702201	尖啸	2	6				0			4		2.8			-1	1	FxMb1VirginbioMd030001Attack11Shouji		0.1		FxMb1VirginbioMd030001Attack11		-1			1					0	0	0	0							0	3					801010	200002	995210			200005			0	HitCase		1			1		1					
+81705312	旋转尖刺	2	1			1	50		0	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053121	801005							817053122	1	HitCase		0					0					
+81705313	旋转尖刺	2	1			1	50		45	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053131	801005							817053132	1	HitCase		0					0					
+81705314	旋转尖刺	2	1			1	50		90	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053141	801005							817053142	1	HitCase		0					0					
+81705315	旋转尖刺	2	1			1	50		135	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053151	801005							817053152	1	HitCase		0					0					
+81705316	旋转尖刺	2	1			1	50		180	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053161	801005							817053162	1	HitCase		0					0					
+81705317	旋转尖刺	2	1			1	50		225	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053171	801005							817053172	1	HitCase		0					0					
+81705318	旋转尖刺	2	1			1	50		270	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053181	801005							817053182	1	HitCase		0					0					
+81705319	旋转尖刺	2	1			1	50		315	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817053191	801005							817053192	1	HitCase		0					0					
+81705412	旋转尖刺	2	1			1	50		0	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054121	801005							817054122	1	HitCase		0					0					
+81705413	旋转尖刺	2	1			1	50		45	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054131	801005							817054132	1	HitCase		0					0					
+81705414	旋转尖刺	2	1			1	50		90	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054141	801005							817054142	1	HitCase		0					0					
+81705415	旋转尖刺	2	1			1	50		135	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054151	801005							817054152	1	HitCase		0					0					
+81705416	旋转尖刺	2	1			1	50		180	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054161	801005							817054162	1	HitCase		0					0					
+81705417	旋转尖刺	2	1			1	50		225	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054171	801005							817054172	1	HitCase		0					0					
+81705418	旋转尖刺	2	1			1	50		270	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054181	801005							817054182	1	HitCase		0					0					
+81705419	旋转尖刺	2	1			1	50		315	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817054191	801005							817054192	1	HitCase		0					0					
+81705501	抬手（地刺）	2	3		0		0			4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	1							0	3		0.2	0.1	817055011	801015								0	HitCase		0					0					
+81705601	抬手（地刺）	2	3		0		0			4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	1							0	3		0.2	0.1	817056011	801015								0	HitCase		0					0					
+81705718	抬手（地刺）	2	3		0	7	0		0	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057181	801015								0	HitCase		0					0					
+81705719	抬手（地刺）	2	3		0	7	0		60	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057191	801015								0	HitCase		0					0					
+81705720	抬手（地刺）	2	3		0	7	0		120	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057201	801015								0	HitCase		0					0					
+81705721	抬手（地刺）	2	3		0	7	0		180	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057211	801015								0	HitCase		0					0					
+81705722	抬手（地刺）	2	3		0	7	0		240	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057221	801015								0	HitCase		0					0					
+81705723	抬手（地刺）	2	3		0	7	0		300	4		3			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817057231	801015								0	HitCase		0					0					
+81705801	尖刺之径	1	2	18		9	0			4		0.1			-1		FxMb1VirginbioMd030001Attack13Shouji						-1			1					0	0	0	2							2	3		0.2	0.1	817058011	801015	200003	995558			200003		817058012	0	HitCase	1	0					1					
+81705802	地刺特效	1	2	18		0	0			4		2			-1						FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0	0.05		1	81705801			1	3													0	HitCase		0					1					
 81705901	尖刺之径	1	2	18		10	0			4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817059011	801015	200003	995558			200003		817059012	0	HitCase	1	0					1					
-81705902	地刺特效	1	2	18		0	0			4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81705902	地刺特效	1	2	18		0	0			4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706003	尖刺之径	1	2	18		10	0		0	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060031	801015	200003	995558			200003		817060032	0	HitCase	1	0					1					
-81706004	地刺特效	1	2	18		0	0		0	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706004	地刺特效	1	2	18		0	0		0	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706005	尖刺之径	1	2	18		10	0		60	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060051	801015	200003	995558			200003		817060052	0	HitCase	1	0					1					
-81706006	地刺特效	1	2	18		0	0		60	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706006	地刺特效	1	2	18		0	0		60	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706007	尖刺之径	1	2	18		10	0		120	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060071	801015	200003	995558			200003		817060072	0	HitCase	1	0					1					
-81706008	地刺特效	1	2	18		0	0		120	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706008	地刺特效	1	2	18		0	0		120	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706009	尖刺之径	1	2	18		10	0		180	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060091	801015	200003	995558			200003		817060092	0	HitCase	1	0					1					
-81706010	地刺特效	1	2	18		0	0		180	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706010	地刺特效	1	2	18		0	0		180	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706011	尖刺之径	1	2	18		10	0		240	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060111	801015	200003	995558			200003		817060112	0	HitCase	1	0					1					
-81706012	地刺特效	1	2	18		0	0		240	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706012	地刺特效	1	2	18		0	0		240	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706013	尖刺之径	1	2	18		10	0		300	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817060131	801015	200003	995558			200003		817060132	0	HitCase	1	0					1					
-81706014	地刺特效	1	2	18		0	0		300	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
-81706101	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061011	801010	816003						817061012	0	HitCase		0			9999	1	1					
-81706102	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061021	801010	816003						817061022	0	HitCase		0			9999	1	1					
-81706103	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061031	801010	816003						817061032	0	HitCase		0			9999	1	1					
-81706104	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061041	801010	816003						817061042	0	HitCase		0			9999	1	1					
-81706105	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061051	801010	816003						817061052	0	HitCase		0			9999	1	1					
-81706106	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061061	801010	816003						817061062	0	HitCase		0			9999	1	1					
-81706107	头盔激光	2	2.5			0	15			4		3		1	1		FxDibingShouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061071	801010	816003						817061072	0	HitCase		0			9999	1	1					
-81706201	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062011	801010							817062012	0.7	HitCase		0	1				0					
-81706202	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062021	801010							817062022	1.4	HitCase		0	1				0					
-81706203	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062031	801010							817062032	2.1	HitCase		0	1				0					
-81706204	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062041	801010							817062042	0.7	HitCase		0	1				0					
-81706205	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062051	801010							817062052	1.4	HitCase		0	1				0					
-81706206	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062061	801010							817062062	2.1	HitCase		0	1				0					
-81706207	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062071	801010							817062072	0.7	HitCase		0	1				0					
-81706208	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062081	801010							817062082	1.4	HitCase		0	1				0					
-81706209	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062091	801010							817062092	2.1	HitCase		0	1				0					
-81706210	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062101	801010							817062102	0.7	HitCase		0	1				0					
-81706211	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062111	801010							817062112	1.4	HitCase		0	1				0					
-81706212	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062121	801010							817062122	2.1	HitCase		0	1				0					
-81706213	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062131	801010							817062132	0.7	HitCase		0	1				0					
-81706214	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062141	801010							817062142	1.4	HitCase		0	1				0					
-81706215	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062151	801010							817062152	2.1	HitCase		0	1				0					
-81706216	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062161	801010							817062162	0.7	HitCase		0	1				0					
-81706217	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062171	801010							817062172	1.4	HitCase		0	1				0					
-81706218	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062181	801010							817062182	2.1	HitCase		0	1				0					
+81706014	地刺特效	1	2	18		0	0		300	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706101	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061011	801010	816003						817061012	0	HitCase		0			9999	1	1					
+81706102	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061021	801010	816003						817061022	0	HitCase		0			9999	1	1					
+81706103	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061031	801010	816003						817061032	0	HitCase		0			9999	1	1					
+81706104	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061041	801010	816003						817061042	0	HitCase		0			9999	1	1					
+81706105	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061051	801010	816003						817061052	0	HitCase		0			9999	1	1					
+81706106	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061061	801010	816003						817061062	0	HitCase		0			9999	1	1					
+81706107	头盔激光	2	2.5			0	15			4		3		1	1		FxMb1VirginbioMd030001Attack14Shouji			Bone001	FxMb1VirginbioMd030001Attack14		1	0.9	FxMb1VirginbioMd030001Attack04Baozha	3	-60	0	10	1	0	0	0	0							1	3		0.2	0.1	817061071	801010	816003						817061072	0	HitCase		0			9999	1	1					
+81706201	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062011	801010							817062012	0.7	HitCase		0	1				0					
+81706202	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062021	801010							817062022	1.4	HitCase		0	1				0					
+81706203	尖刺连射	1	1	1.5		1	0		0	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062031	801010							817062032	2.1	HitCase		0	1				0					
+81706204	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062041	801010							817062042	0.7	HitCase		0	1				0					
+81706205	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062051	801010							817062052	1.4	HitCase		0	1				0					
+81706206	尖刺连射	1	1	1.5		1	0		-30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062061	801010							817062062	2.1	HitCase		0	1				0					
+81706207	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062071	801010							817062072	0.7	HitCase		0	1				0					
+81706208	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062081	801010							817062082	1.4	HitCase		0	1				0					
+81706209	尖刺连射	1	1	1.5		1	0		30	4		0			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0							0	3		0.2	0.1	817062091	801010							817062092	2.1	HitCase		0	1				0					
+81706210	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062101	801010							817062102	0.7	HitCase		0	1				0					
+81706211	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062111	801010							817062112	1.4	HitCase		0	1				0					
+81706212	尖刺连射	1	1	1.5		1	50		0	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062121	801010							817062122	2.1	HitCase		0	1				0					
+81706213	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062131	801010							817062132	0.7	HitCase		0	1				0					
+81706214	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062141	801010							817062142	1.4	HitCase		0	1				0					
+81706215	尖刺连射	1	1	1.5		1	50		-30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062151	801010							817062152	2.1	HitCase		0	1				0					
+81706216	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062161	801010							817062162	0.7	HitCase		0	1				0					
+81706217	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062171	801010							817062172	1.4	HitCase		0	1				0					
+81706218	尖刺连射	1	1	1.5		1	50		30	4		3			-1		FxMb1VirginbioMd030001Attack03Shouji				FxMb1VirginbioMd030001Attack03Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817062181	801010							817062182	2.1	HitCase		0	1				0					
 81706221	伤害子弹	2	1				100		0	4		1			-1								-1			1					0	0	0	2							2	3				817062211	801010	200005	816003			200005			1	HitCase		0					1					
 81706222	尖刺之径	1	2	18		10	0		0	4		0.1			-1								-1			1					0	0	0	0							0	3				817062221	801030	200003	995558			200003		817062222	0	HitCase	1	1					1					
-81706224	地刺特效	1	2	18		0	0		0	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706224	地刺特效	1	2	18		0	0		0	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706225	尖刺之径	1	2	18		10	0		30	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817062251	801030	200003	995558			200003		817062252	0	HitCase	1	1					1					
-81706226	地刺特效	1	2	18		0	0		30	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706226	地刺特效	1	2	18		0	0		30	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
 81706227	尖刺之径	1	2	18		10	0		-30	4		0.1			-1								-1			1					0	0	0	0							0	3		0.2	0.1	817062271	801030	200003	995558			200003		817062272	0	HitCase	1	1					1					
-81706228	地刺特效	1	2	18		0	0		-30	4		2			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
-81706312	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063121	801015							817063122	0	HitCase		0					0					
-81706314	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063141	801015							817063142	0	HitCase		0					0					
-81706316	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063161	801015							817063162	0	HitCase		0					0					
-81706318	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063181	801015							817063182	0	HitCase		0					0					
-81706320	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063201	801015							817063202	0	HitCase		0					0					
-81706322	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063221	801015							817063222	0	HitCase		0					0					
-81706324	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063241	801015							817063242	0	HitCase		0					0					
-81706326	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063261	801015							817063262	0	HitCase		0					0					
-81706328	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063281	801015							817063282	0	HitCase		0					0					
-81706330	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063301	801015							817063302	0	HitCase		0					0					
-81706331	球	2	3		0	0.5	0			4		1.8			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack14		-1			1					0	0	0	0							0	3		0.2	0.1										1	HitCase		1					0					
-81707002	抬手（地刺）	2	3				0			4		3			-1		FxMb1VirginbioMd030001Shouji				FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	3	0.5		1	81707303			0	3													0	HitCase		0					0					
+81706228	地刺特效	1	2	18		0	0		-30	4		2			-1		FxMb1VirginbioMd030001Attack13Shouji				FxMb1VirginbioMd030001Attack13Ch		-1			1					0	0	0	0							0	3													0	HitCase		0					1					
+81706312	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063121	801015							817063122	0	HitCase		0					0					
+81706314	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063141	801015							817063142	0	HitCase		0					0					
+81706316	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063161	801015							817063162	0	HitCase		0					0					
+81706318	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063181	801015							817063182	0	HitCase		0					0					
+81706320	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063201	801015							817063202	0	HitCase		0					0					
+81706322	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063221	801015							817063222	0	HitCase		0					0					
+81706324	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063241	801015							817063242	0	HitCase		0					0					
+81706326	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063261	801015							817063262	0	HitCase		0					0					
+81706328	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063281	801015							817063282	0	HitCase		0					0					
+81706330	抬手（地刺）	2	3		0		0			4		1			-1		FxMb1VirginbioMd030001Attack02Shouji				FxMb1VirginbioMd030001Attack02Ch		-1			1					0	0	0	0							0	3		0.2	0.1	817063301	801015							817063302	0	HitCase		0					0					
+81706331	球	2	3		0	0.5	0			4		1.8			-1		FxMb1VirginbioMd030001Attack14Shouji				FxMb1VirginbioMd030001Attack14		-1			1					0	0	0	0							0	3		0.2	0.1										1	HitCase		1					0					
+81707002	抬手（地刺）	2	3				0			4		3			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	3	0.5		1	81707303			0	3													0	HitCase		0					0					
 81707003	地火-伤害	2	3				0			4		0.1			-1								-1			1					0	0	0	2			1	81707304			0	3		0.2	0.1	817070031	801060	200003	995557						0	HitCase		0					1					
 81707004	地火-震屏	2	3				0			1		0.05			-1								-1			1					0	0	0	0							0	3					818007								0	HitCase		0					1					
 81707101	旋转尖刺	2	1				0		0	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700312			0	3													1	HitCase		0					0					
@@ -255,28 +255,28 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81707108	旋转尖刺	2	1				0		315	4		3			-1						FxMb1VirginbioMd030001Attack03		-1			1					0	0	0	0	1		1	81700312			0	3													1	HitCase		0					0					
 81707203	P2 抛物 Loop （发起子弹）	2	1				0			4		999			-1					Bip001RFinger31			-1			1					0	0	0	0		1.5	99	81701511			0	3													0	HitCase		1		1			0					
 81707302	抬手（地刺）	2	3				0			4		3			-1						FxMb1VirginbioMd030001Attack02		-1			1					0	0	0	3	0.5		1	81707303			0	3													0	HitCase		0					0					
-81707303	地火-伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2			1	81707304			0	3				817073031	801060	200003	995557						0	HitCase		0					1					
+81707303	地火-伤害	2	3				0			4		0.1			-1		FxMb1VirginbioMd030001Attack02Shouji						-1			1					0	0	0	2			1	81707304			0	3				817073031	801060	200003	995557						0	HitCase		0					1					
 81707304	地火-震屏	2	3				0			1		0.05			-1								-1			1					0	0	0	0							0	3					818007								0	HitCase		0					1					
-81800101	拍击	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818001011	801070	200005				200005			0	HitCase	1	0					1					
+81800101	拍击	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818001011	801070	200005				200005			0	HitCase	1	0					1					
 81800201	吐痰	2	3			0	20			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack02Dandao		-1	0.9		3	-30	0	10	0.8	0	0	0	0	5000		1	81800206	1		1	3													0	HitCase		0			9999	1	0					
-81800204	吐痰（毒液）	2	3				0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	2							3	3				818002041	801070								0	HitCase		0					1					
+81800204	吐痰（毒液）	2	3				0			4		0.1			-1		FxMb1SandwormMd030001Attack02Shouji						-1			1					0	0	0	2							3	3				818002041	801070								0	HitCase		0					1					
 81800206	吐痰（爆炸）	2	3				0			4		3			-1						FxMb1SandwormMd030001Attack02		-1			1					0	0	0	2	0.05		1	81800204			3	3													0	HitCase		0					0					
 81800301	空气炮	2	3			0	40			4		99		1	-1					BoneZui			-1	0.9		3	-30	0	10	0	0	0	0	0	5000		1	81800312	1		1	3													0	HitCase	1	0			9999	1	0					
-81800311	空气炮（伤害）	2	10				0			4		0.1			-1								-1			1					0	0	0	2							3	3				818003111	801080	200003	816003			200003			0	HitCase		0					1					
+81800311	空气炮（伤害）	2	10				0			4		0.1			-1		FxMb1SandwormMd030001Attack03Shouji						-1			1					0	0	0	2							3	3				818003111	801080	200003	816003			200003			0	HitCase		0					1					
 81800312	空气炮（爆炸）	2	0.1				0			4		3			-1						FxMb1SandwormMd030001Attack03Zha		-1			1					0	0	0	2	0.05		1	81800521			3	3													0	HitCase		0					0					
-81800401	疯狂拍击24	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818004011	801050	200005	816003			200005			0	HitCase	1	0					1					
-81800402	疯狂拍击40	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818004021	801050	200005	816003			200005			0	HitCase	1	0					1					
-81800403	疯狂拍击55	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818004031	801050	200005	816003			200005			0	HitCase	1	0					1					
-81800404	疯狂拍击70	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818004041	801050	200005	816003			200005			0	HitCase	1	0					1					
-81800405	疯狂拍击96	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Shouji						-1			1					0	0	0	0							0	3				818004051	801050	200005	816003			200005			0	HitCase	1	0					1					
+81800401	疯狂拍击24	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818004011	801050	200005	816003			200005			0	HitCase	1	0					1					
+81800402	疯狂拍击40	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818004021	801050	200005	816003			200005			0	HitCase	1	0					1					
+81800403	疯狂拍击55	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818004031	801050	200005	816003			200005			0	HitCase	1	0					1					
+81800404	疯狂拍击70	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818004041	801050	200005	816003			200005			0	HitCase	1	0					1					
+81800405	疯狂拍击96	1	3	12		6	0			4		0.1			-1		FxMb1SandwormMd030001Attack01Shouji						-1			1					0	0	0	0							0	3				818004051	801050	200005	816003			200005			0	HitCase	1	0					1					
 81800501	疯狂空气炮	2	3			1	40			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack05		-1	0.9	FxMb1SandwormMd030001Attack03Zha	3	-30	-2	10	0	0	0	0	0	5000		1	81800521	1		1	3													0	HitCase		0			9999	1	1					
 81800502	疯狂空气炮	2	3			1	40			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack05		-1	0.9	FxMb1SandwormMd030001Attack03Zha	3	-30	-2	10	0	0	0	0	0	5000		1	81800521	1		1	3													0	HitCase		0			9999	1	1					
 81800503	疯狂空气炮	2	3			1	40			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack05		-1	0.9	FxMb1SandwormMd030001Attack03Zha	3	-30	-2	10	0	0	0	0	0	5000		1	81800521	1		1	3													0	HitCase		0			9999	1	1					
 81800504	疯狂空气炮	2	3			1	40			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack05		-1	0.9	FxMb1SandwormMd030001Attack03Zha	3	-30	-2	10	0	0	0	0	0	5000		1	81800521	1		1	3													0	HitCase		0			9999	1	1					
 81800505	疯狂空气炮	2	3			1	40			4		99		1	-1					BoneZui	FxMb1SandwormMd030001Attack05		-1	0.9	FxMb1SandwormMd030001Attack03Zha	3	-30	-2	10	0	0	0	0	0	5000		1	81800521	1		1	3													0	HitCase		0			9999	1	1					
 81800521	空气炮（伤害）	2	10				0			4		0.1			-1								-1			1					0	0	0	2							0	3				818005211	801050	200003	816004			200003			0	HitCase		0					1					
-81800901	全屏毒雨（环形伤害子弹）	2	10				0			4		2.3			-1	1			0.3		FxMb1SandwormMd030001Attack09		-1			1					0	0	0	0							0	3					801030	815051							0	HitCase		0		1			0					
-81801201	探出	2	2			1	0			4		0.1			-1		FxMb1SandwormMd030001Shouji				FxNpcYujing01		-1			1					0	0	0	0							0	3				818012011	801100	200005				200005			0	HitCase	1	0					1					
+81800901	全屏毒雨（环形伤害子弹）	2	10				0			4		2.3			-1	1	FxMb1SandwormMd030001Attack09Shouji		0.3		FxMb1SandwormMd030001Attack09		-1			1					0	0	0	0							0	3					801030	815051							0	HitCase		0		1			0					
+81801201	探出	2	2			1	0			4		0.1			-1		FxMb1SandwormMd030001Attack12Shouji				FxNpcYujing01		-1			1					0	0	0	0							0	3				818012011	801100	200005				200005			0	HitCase	1	0					1					
 81801299	测试无限远剑风	1	2	2	-2	-5	50		0	4		20			-1		FxMb1SwordMd030002AttackShouji				FxMb1SwordMd030002Attack06Dandao		-1			1					0	0	0	3							4	3				818012991	801010	200005	816003			200005			0	HitCase		0					1					
 81801298	测试无限远剑风	1	2	2	-2	-12	50		0	4		20			-1		FxMb1SwordMd030002AttackShouji				FxMb1SwordMd030002Attack06Dandao		-1			1					0	0	0	3							4	3				818012981	801010	200005	816003			200005			0	HitCase		0					1					
 81801297	测试无限远剑风	1	2	2	-2	-19	50		0	4		20			-1		FxMb1SwordMd030002AttackShouji				FxMb1SwordMd030002Attack06Dandao		-1			1					0	0	0	3							4	3				818012971	801010	200005	816003			200005			0	HitCase		0					1					

@@ -1,17 +1,14 @@
 Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	Effect	EffectJoint	TriggerMagic	TriggerInterval	TriggerOnAdd
 9951				-1								99510					
 9952				-1								99520					
-9953				-1								99530					
-9033				-1								90330					
-9034				-1								90340					
+9044				-1								90440					
 9026				-1								90260					
-9958				-1								99580					
-9959				-1								99590					
+9033				-1								90330					
+9038				-1								90380					
 9960				-1								99600					
-9961				-1								99610					
-9962				-1								99620					
+9037				-1								90370					
+9034				-1								90340					
 9022				-1								90220					
-9963				-1								99630					
 9043				-1								90430					
 9964				-1								99640					
 9956				-1								99560					

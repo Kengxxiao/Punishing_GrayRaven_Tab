@@ -421,7 +421,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 102352	AddBuff	102352																													
 102352000	AddNpcState	27																													
 102353	AddBuff	102353																													
-102353000	ChangeAttribAdditive	32|5000|0																													
+102353000	ChangeAttribAdditive	32|7500|0																													
 102354	AddBuff	102354																													
 102355	ResetBuffDurationByKind	1023540																													
 102356	AddBuff	102356																													

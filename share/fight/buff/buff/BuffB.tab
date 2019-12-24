@@ -295,6 +295,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 821325			0	0			1	0	8213250			821325000					1
 821326			0	1.5			1	0	8213260				FxMb1BraveMd010011Attack12Laserstart				
 821327			0	-1			1	0	8213270			821327000					1
+821328			0	10			1	0	8213280			821328000					1
 821501			0	0			99	0	8215010			821501000					
 821502			0	0.05			1	0	8215020								
 821503			0	1			1	0	8215030			821503000					

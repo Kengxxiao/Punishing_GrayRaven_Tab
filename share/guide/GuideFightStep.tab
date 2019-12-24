@@ -69,21 +69,21 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 8120003	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	散开！小心追踪热弹！	
 8120004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	敌人瘫痪了！上！！	
 8210001	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	模拟战准备开始！	
-8210002	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	"注意利用""暴君""泄露在地面的能量！"	
-8210003	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	"""暴君""被泄露区强化！请拉开""暴君"""	
+8210002	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	注意利用“暴君”泄露在地面的能量！	
+8210003	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	“暴君”被泄露区强化！请拉开“暴君”	
 8210004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	在能量泄露区域中我方伤害会大幅提升。	
 8210005	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	请进入护罩躲避！	
 8210006	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	请进入护罩躲避！	
-8210007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	"""暴君""被泄露区强化！请拉开""暴君""！"	
+8210007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	“暴君”被泄露区强化！请拉开“暴君”	
 8210009	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	黄色的球形电浆体在平静时可以提升我方武器的破坏力。	
 8210010	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	电浆体开始变的不稳定了，在找到新的宿体之前它会持续追踪当前的目标。	
 8701001	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	以前被人崇拜的时候也会摆出这样的动作……好了，快点记录下来！	3
 8701002	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	送你们去废品站！	3
 8701003	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	你以为打败外面那个废铜烂铁就能挑战我了？让你们见识一下我的全部力量！	3
-8701004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	<size=50>龙 卷 风 摧 毁 停 车 场！</size>	3
+8701004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	<color=#ff5656>风暴会将你们撕碎</color>	3
 8701005	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	审 判 开 始！	3
 8701006	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	废铜烂铁！	3
-8701007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	软弱无力！	3
+8701007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	柔弱的小鸡！	3
 8701008	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	让我来帮你解脱！	3
 8701009	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	你的求生欲就是在浪费时间！	3
 8701010	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	欧西里斯	1	你会让他承受更多的痛苦！	3
@@ -126,7 +126,7 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 101010405	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	任意<color=#ffda58>【三消】</color>后，释放<color=#ff5656>【红色信号】</color>，即可触发核心技能	
 101010406	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	这些构造体士兵的意识海果然已经被感染了。	
 101010407	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	好在感染情况还不是很严重，整理之后应该可以获得比较完整的记忆片段。	
-101010421	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	【核心激光】指令：	2	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	
+101010421	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	【激光束群】指令：	2	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	
 101020101	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	给我站住……	
 101020102	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XixiNomal01.png	画家	1	嘻嘻嘻嘻！这是……你们人类……没有资格理解的……艺术……	
 101020103	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	露西亚，我从来没见过里先生这么生气的样子……	
@@ -156,10 +156,10 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 101020309	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	露西亚，我……也一起去！	
 101020310	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	找到了……	
 101020311	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	嗯，太好了……	
-101020321	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	【核心激光】指令：	2	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	
+101020321	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	【激光束群】指令：	2	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	
 101020322	0	PanelBallBox/TopThreeBalls	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	先释放一次任意<color=#ffda58>【三消】</color>	
-101020323	0	PanelBallBox/FirstBall	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	再释放一次<color=#ff5656>【红色信号】</color>就可以释放【核心激光】了。	
-101020324	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	就是这样！【核心激光】的伤害很高，一定会帮到您的！	
+101020323	0	PanelBallBox/FirstBall	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	再释放一次<color=#ff5656>【红色信号】</color>就可以释放【激光束群】了。	
+101020324	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	就是这样！【激光束群】的伤害很高，一定会帮到您的！	
 101020401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	刚才耽搁了一些时间，现在被感染体包围，只能用紧急方案了。	
 101020402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	我们需要启动电磁迷彩才能绕过感染体的防线。	
 101020403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	虽然电磁迷彩拥有暗物质涂层，可以隐藏大部分电磁相互作用，	
@@ -819,45 +819,51 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 1301091507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	调查员瑞恩	1	关于在此发生的一切，我将会如实上报，包括堡垒的突袭，说起来，你的战力真是惊人！	
 1301091508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1SS.png	七实	1	诶嘿嘿，七实可是很厉害的！唔……埃米没事吗？	
 1301091509	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	调查员瑞恩	1	那个救了我的女孩……她似乎……晕过去了？	
-1301101301	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	来人可是来救援的吗？	
-1301101302	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	这些感染体像疯了一样的攻击我们，我们快撑不住了！	
-1301101303	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	……有趣	
-1301101304	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	好，我来了！	
-1301101305	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	前方是我们必须守护的人	
-1301101306	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	朋友，职责所在，不好意思！	
-1301101307	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	警报！敌袭！击退敌人！	
-1301101308	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	死！	
-1301101321	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	十分感谢！	2
-1301101322	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	谢谢你击退了敌人！	2
-1301101323	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	伊甸与你同在！	2
-1301101324	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	对不起，我们在执行任务	2
-1301101325	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	请不要接近那个构造体	2
-1301101326	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	守护的构造体	1	我们是军人！	2
+1301101301	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	感染体	1	力量，夺取强大的力量！	
+1301101302	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	那个人是……构造体？太好了！	
+1301101303	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	我们被击落后，这些感染体就像疯了一样围了上来，我们已经快撑不住了！	
+1301101304	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	你是来帮助我们的对吧？	
+1301101305	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	……	
+1301101306	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	感染体	1	吞噬……目标构造体……	
+1301101307	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	这些杂碎……发现露西亚后，就像是闻到了血腥味的野兽……现在居然连我的路都敢阻挡……	
+1301101308	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	你们不知道这是属于露娜小姐的东西吗？	
+1301101309	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	给我退下。	
+1301101310	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	抱歉，我们正在执行的是最高级护送任务，只有任务的直接参与者能够接近护送目标。	
+1301101311	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	职责所在，朋友，请退后吧。我们不希望和你起冲突。	
+1301101312	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	你想干什么！你不是来帮助我们的吗？	
+1301101313	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	等等……这个人体内充满了帕弥什病毒！是、是敌袭！	
+1301101314	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	……	
+1301101321	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	十分感谢你的救援！	2
+1301101322	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	你的机型很旧，但身手真不错，是哪个小队的？	2
+1301101323	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	执行完这次任务，我就可以回到空中花园，远离这场战争了。	2
+1301101324	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	请不要干扰我们的任务，即便你救过我们。	2
+1301101325	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	露西亚是我们的英雄，我们必须把她护送回空中花园。	2
+1301101326	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	构造体士兵	1	我们也不知道这次护送任务的原因，但请配合我们，不要再接近露西亚了。	2
 1301101501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	我嗅到了老鼠的气味。	
-1301101502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	希望这只老鼠可以给我点乐趣。	
-1301101503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	这男人身上散发出不详的气息。	
-1301101504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	以我现在的状态不适合和他正面交锋……	
-1301101505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	看我发现了什么？一只迷路的小老鼠。	
-1301101506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	我为你准备了很好的玩具。	
-1301101507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	我会在前面等待你的感想的。	
-1301101508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	怎么，我的玩具不能让你愉悦吗？	
-1301101509	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	（事到如今，只能投入全部能量了！）	
-1301101510	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	杀！	
-1301101511	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	没想到……	
-1301101512	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	有点意思……	
+1301101502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	继续逃窜下去，只会给我增加更多的乐趣，露西亚。	
+1301101503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	以我现在的状态……无法和它正面交锋……必须先……摆脱它……	
+1301101504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	可是……我又能去往哪里……	
+1301101505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	找到你了。	
+1301101506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	我差不多开始厌倦了，乖乖跟我回去吧，露娜小姐还等着你呢。	
+1301101507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	别想迷惑我！	
+1301101508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	你要去哪儿？	
+1301101509	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	！	
+1301101510	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	不要靠近我！你这个……感染体！	
+1301101511	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	咳咳……不愧是露娜小姐的……	
+1301101512	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	看来……还要花上一番功夫……	
 1301101513	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	远处传来了战斗的声音，不知道发生了什么。	
-1301101514	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	眼前这么多守卫，看来要小心回避了。	
-1301101515	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	终于……快点离开这里吧	
-1301101701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	？？？	1	等等！有脚步声！	
-1301101702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	露西亚	1	……	
-1301101703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	？？？	1	那是……？	
-1301101704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	露西亚	1	露西亚…… 	
-1301101705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	？？？	1	居然不理会我的攻击，啧。	
-1301101706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	？？？	1	她好像只对露西亚感兴趣，可露西亚现在……	
-1301101707	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	另一个露西亚	1	我没关系……你们不要离开指挥官……	
-1301101708	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	露西亚	1	……	
-1301101709	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	露西亚	1	虽然看着你挣扎的样子很有趣……不过我的耐心也是有限的。	3
-1301101710	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	露西亚	1	差不多…… 也该让闹剧收场了。	3
+1301101514	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	只要穿过这些感染体……我应该就可以摆脱它了……	
+1301101515	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	终于……摆脱它了吗？	
+1301101516	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	可是接下来，我又应该去往何方……	
+1301101517	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	……	
+1301101518	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	露……娜……	
+1301102001	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	？？？	1	居然不理会我的攻击，啧。	
+1301102002	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	？？？	1	她好像只对露西亚感兴趣，可露西亚现在……	
+1301102003	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	另一个露西亚	1	我没关系……你们不要离开指挥官……	
+1301102004	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	露西亚	1	……	
+1301102005	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	露西亚	1	露西亚，你早该察觉到了……不是吗？	
+1301102021	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	露西亚	1	这就是你现在的实力吗，露西亚……	3
+1301102022	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	露西亚	1	闹剧该收场了！	3
 1301111401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/GanrangouzaotiNomal01.png	人类士兵	1	哇啊！	
 1301111402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	感染体已经入侵到里面了吗？！	
 1301111403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	只能硬冲出去了！	
@@ -886,6 +892,59 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 1301111618	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	西里尔	1	渡边，这是我，还有布鲁斯与你的战斗！！！	
 1301111619	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	西里尔	1	咳！果然肉身……在驾驶上无法跟构造体抗衡吗？	
 1301111620	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	西里尔	1	可惜，这台机体的隐藏模式，解放权限我已经拿到了！	
+1301121201	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	暴风雨后的孤岛，落魄无助的王子、远处传来的歌声。	
+1301121202	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	欢迎来到我的——斐迪南王子的故事。	
+1301121203	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	啊，这是何等荒凉的土地！我，那不勒斯王最自豪的儿子，竟落到了这等田地！	
+1301121204	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	那该死的、突然而至的海上暴风，实在是太过可怕，居然打翻了足有三十层楼高的宏伟战船！	
+1301121205	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	它掀飞了水桶粗的桅杆、吹破了一百位壮士也撕不烂的船帆，	
+1301121206	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	就连我英明的父王、受上天眷顾的那不勒斯国君，如今也生死未卜！	
+1301121207	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	到底是作了什么样的孽？才会令我们父子遭受这上天的苛责？	
+1301121208	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从	1	尊敬的殿下，相信您的父王决不会有事。	
+1301121209	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从	1	殿下，恐怕您的父王跟您一样，流落在了岛上其他地方。	
+1301121210	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	那么我们还在等什么？那不勒斯不能一日没有国王，忠诚的儿子不能一日没有父亲！	
+1301121211	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	来，递上我的宝剑。无论是凶险的丛林，还是野蛮的怪物，都不能阻挡我的脚步！	
+1301121212	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从&仆从	1	是的，尊敬的殿下，我们将为您战斗至死！	
+1301121213	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	你这头猪！这里是神明和仙女的栖息地，不是像你这凡胎臭皮囊该来的地方！	
+1301121214	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	……我听到了什么？莫非是我的耳膜被海水冲破了吗？	
+1301121215	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从	1	殿下，这怪物说您是猪！	
+1301121216	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从	1	殿下，这怪物说您是臭皮囊！	
+1301121217	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	你们这两个白痴！是我平日对你们的恩惠不够吗？居然合着怪物一起来骂我！	
+1301121218	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从&仆从	1	殿下饶命啊！	
+1301121219	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	看看这帮丑陋的凡人，外面顶着一张白净的皮囊，里面却尽是些肮脏玩意！	
+1301121220	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	啊……唯有那位神使大人的女儿、她才称得上是真正美丽的人！	
+1301121221	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	看来你这蠢笨的怪物害人不浅，竟连女性也绑了去！	
+1301121222	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	啊哈哈哈哈、刚才的战斗已经让我热了身，我现在就要为民除害！	
+1301121223	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	吼——！等着被我拍碎吧，豆芽秆！	
+1301121224	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	哈、哈……没想到你这蠢笨的怪物还有点本事。	
+1301121225	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	看着弱不禁风的豆芽秆，没想到耍起牙签来也有模有样。	
+1301121226	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从&仆从	1	殿下加油！打倒那怪物！	
+1301121227	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	？？？	1	住手！	
+1301121228	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	啊，这如同猎物的血液般甘甜的声音，是那美丽的天使来了！	
+1301121251	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	温馨浪漫小岛，美丽善良的公主、暴风雨后的客人。	
+1301121252	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	欢迎来到我的——米兰达公主的故事。	
+1301121253	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	暴风雨已经退去，乌云已经散开，阳光洒满大地！	
+1301121254	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	赞美女神！您的仆人永远为您歌唱！	
+1301121255	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	等等！风的精灵送来了远方的声音！	
+1301121256	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	仔细聆听，似乎是有人战斗的声音	
+1301121257	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	我好像还听到了凯列班的声音！不行！我一定要去看看！	
+1301121258	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	哈、哈……没想到你这蠢笨的怪物还有点本事。	
+1301121259	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	凯列班	1	看着弱不禁风的豆芽秆，没想到耍起牙签来也有模有样。	
+1301121260	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	仆从&仆从	1	殿下加油！打倒那怪物！	
+1301121261	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	住手！	
+1301121262	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	在思考前就已经喊了出来……接下来该说什么呢？	
+1301121263	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	凯列班是一个强大的战士，没想到还有和他平分秋色的男人！	
+1301121264	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	哦，他的面容是那么的刚毅，眼睛是那么的深邃！	
+1301121265	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	他现在在看着我！啊，我的心跳就要停止了！	
+1301121266	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	不能这样下去了！米兰达，深呼吸！深呼吸！然后平静的说——	
+1301121267	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XiunvqianzhuanNomal01.png	米兰达	1	请停下你们无谓的战斗吧！	
+1301121501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	奸臣	1	这是我的王位，给我！	
+1301121502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	奸臣想篡位，快阻止他们！	
+1301121503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	奸臣	1	啊！我的……王……位	
+1301121504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	成功阻止奸臣！	
+1301121505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	凯列班	1	公主是我的！我是幼驯染！	
+1301121506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	斐迪南	1	你滚开，是我的！	
+1301121507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	米兰达	1	凯列班，我喜欢的是王子，前一关你争不过他，这一关还是！	
+1301121508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceArchernomal.png	凯列班	1	5555，凯列班自闭了！	
 801020401	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/XiunvNomal01.png	修女	1	想念温暖的怀抱吗？来吧，在我的怀中沉眠……	3
 801020402	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/XiunvNomal01.png	修女	1	慈爱的神会救济众生。	3
 801020403	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/XiunvNomal01.png	修女	1	追光者。	3
@@ -1204,29 +1263,54 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 302040904	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	可以攻击了吗？七实想战斗！	
 302040905	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAolisuo1.png	比安卡	1	黄金之涡很快会变成炼狱，再不撤离就晚了。不能让妮特妨碍我们……	
 302040906	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	指挥官，我们和妮特做个了断。	
-313010101	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	库库，看你吃的这么胖，干脆我来帮你运动一下吧！	
-313010102	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	库库	1	库？	
-313010103	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	为了丽芙，你就认了吧，别怕，不疼的。	
-313010104	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	库库	1	库！库库！库库库！！	
-313010105	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	库库	1	库库库库库……	
-313010106	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	这么多应该够了吧，库库也变得这么小了，那就这样吧，收工！	
-313010107	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	库库	1	库……	
-313010201	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	感染体精英	1	叽——叽叽叽！	
-313010202	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	感染体	1	叽！	
-313010203	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	呜哇，坏孩子可真多呢，七实是好孩子，不想动用武力！	
-313010204	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	那就悄悄地、不要惊动他们，去砍掉更多的树吧！	
-313010205	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯嗯~出发咯！	
-313010206	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯呜，这棵看起来不错，离感染体也比较远。	
-313010207	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	要是我的声音混杂在他们砍树的声音里，应该也不会被注意吧。	
-313010208	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯嗯~开工咯！	
-313010209	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	这些家伙……就算面前只有空气，也停不下挥动的斧头吗	
-313010210	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	也太无聊了啦，七实还是带着圣诞树回去啦！拜拜！	
-313010221	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=30>一！</size>	
-313010222	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=50>二！</size>	
-313010223	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=50>三！</size>	
-313010224	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=70><color=#ffff00>上！</color></size>	
-313010225	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=80><color=#ff0000>停！</color></size>	
-30060305	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	看来只能靠近黑入那边的机械来获取一些帮助了。	3
+313010301	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	差不多该开始了。	
+313010302	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库？	
+313010303	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	不能让指挥官和丽芙久等啊。	
+313010304	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库库库库！	
+313010305	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	呼……好了，这样应该就够了。	
+313010306	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库库库库库库库呜……	
+313010307	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	……也祝你们圣诞快乐。	
+313010401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TufuNormal01.png	感染体精英	1	叽——叽叽叽！	
+313010402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TufuNormal01.png	感染体	1	叽！	
+313010403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	呜哇，坏孩子可真多呢，七实是好孩子，不想动用武力！	
+313010404	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	那就悄悄地、不要惊动他们，去砍掉更多的树吧！	
+313010405	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯嗯~出发咯！	
+313010406	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯呜，这棵看起来不错，离感染体也比较远。	
+313010407	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	要是我的声音混杂在他们砍树的声音里，应该也不会被注意吧。	
+313010408	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	嗯嗯~开工咯！	
+313010409	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	这些家伙……就算面前只有空气，也停不下挥动的斧头吗	
+313010410	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	也太无聊了啦，七实还是带着圣诞树回去啦！拜拜！	
+313010421	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=30><color=#ff0000>一！</color></size>	
+313010422	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=50><color=#ff0000>二！</color></size>	
+313010423	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=50>三！</size>	
+313010424	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=70><color=#ffff00>上！</color></size>	
+313010425	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadYongyechao1.png	七实	1	<size=80><color=#ff0000>停！</color></size>	
+313010701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	被大门拦住了去路吗。	
+313010702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	真麻烦，直接用虫子爆破吧！	
+313010703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	会引发的后果就让想出这个计划的露西亚去担心好了。	
+313010704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	趁着那些吵死人的家伙还没聚集过来以前敲响钟。	
+313010705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	等等，这口钟腐化得这么严重，根本碰一下就碎掉了啊！	
+313010706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadKalienina1.png	卡列尼娜	1	不管了，至少不让烟火迟到。	
+313010901	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	灰鸦也真不够意思的，明明一起庆祝圣诞，却偏偏忘了我！	
+313010902	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	看看我多贴心，还想着准备礼物送给他们。	
+313010903	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	看我从屋顶悄悄混进去，给他们一个惊喜——	
+313010904	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	嗯？那群感染体聚在一块儿做什么，难道也在庆祝圣诞？	
+313010905	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库库……库呜……	
+313010906	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyongganrantiNomal01.png	感染体	1	叽——	
+313010907	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	哎，这不是库罗罗吗，怎么缩水成这样了？	
+313010908	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	哇，这些家伙，敢情是在以多欺少啊！	
+313010909	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	小家伙别害怕 ，我来救你了！	
+313010910	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	好，感染体都被击退了。没事吧，小家伙？	
+313010911	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库库——库？库库，库库！！	
+313010912	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	嗯？不用谢不用谢，举手之劳而已，哈哈哈。	
+313010913	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	这是——圣诞老人的服装，你要把它送给我当做帮助你的谢礼吗？	
+313010914	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库？	
+313010915	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	太好了，帮大忙了，我正好需要这个呢！	
+313010916	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库库库？	
+313010917	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	小家伙也赶紧离开这里吧，免得再被感染体欺负了！	
+313010918	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/KuruoruoNormal01.png	库罗罗	1	库？库？库？库？库？	
+313010919	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadShenwei1.png	神威	1	谢啦！圣诞快乐！拜拜——	
+30060305	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	那是，喷涂机械？靠近看看吧。	3
 30060201	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney11.png	消防卫士	1	未授权人士正在接近本机体。	3
 30060202	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney11.png	消防卫士	1	回避模式，启动。	3
 30060203	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney11.png	消防卫士	1	纵火，纵火。	3
@@ -1374,28 +1458,28 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 30061322	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney08.png	酸液工蚁	1	酸液攻击，准备中。	3
 30061323	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney08.png	酸液工蚁	1	自卫模式已进入极限，请求升级攻击权限。	3
 30061324	0	Guide/Guide1	1	Assets/Product/Texture/Image/Role/RoleHeadMoney08.png	酸液工蚁	1	请求超时，自动进入清除模式。	3
-300701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	炸弹：携带者死亡后爆炸对小范围造成伤害	
-300702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	辐射：处于携带者周围会受到辐射伤害	
-300703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	迅捷：携带者移动速度大幅提升	
-300704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	闭环：携带者周围生成护罩，护罩外所受伤害大幅减少	
-300705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	强攻：携带者攻击力大幅提升	
-300706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	暴走：携带者攻击欲望，伤害大幅上升，防御力下降	
-300707	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	闪现：携带者可以瞬移至目标身前	
-300708	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	复苏：携带者会持续小幅恢复生命值	
-300709	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	贯穿：携带者对命中的目标附加可叠加的减防效果	
-300710	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	独狼：敌方当前场上友方单位越少，携带者越强	
-300711	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	电盾：携带者受每次受击有概率在伤害来源处落雷	
-300712	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	统领：周身范围内友方单位越多，携带者越强	
-300713	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	破甲：携带者受到所有伤害显著提升	
-300714	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	弱攻：携带者攻击力减少	
-300715	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	火焰：携带者灼烧靠近的目标，攻击几率额外灼烧目标	
-300716	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	冰冻：携带者减速靠近的目标，攻击几率减速或冻结目标	
-300717	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	暗影：携带者攻击附带暗属性伤害，几率眩晕目标	
-300718	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	冰径：携带者释放一道持续追踪目标的冰柱，触碰到冰刺会受到伤害	
-300719	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	隐身：携带者攻击完成后消失一段时间并远离目标	
-300720	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	壁垒：携带者开场带一次性护盾，击破后才会受到伤害	
-300721	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	护盾：携带者间歇性生成小型护盾，持续3秒或受到足够的伤害消失	
-300722	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	新词缀提示	1	埋雷：携带者攻击命中时概率在目标身上埋炸弹，短时间后爆炸造成伤害	
+300701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	炸弹：携带者死亡后爆炸对小范围造成伤害	
+300702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	辐射：处于携带者周围会受到辐射伤害	
+300703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	迅捷：携带者移动速度大幅提升	
+300704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	闭环：携带者周围生成护罩，护罩外所受伤害大幅减少	
+300705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	强攻：携带者攻击力大幅提升	
+300706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	暴走：携带者攻击欲望，伤害大幅上升，防御力下降	
+300707	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	闪现：携带者可以瞬移至目标身前	
+300708	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	复苏：携带者会持续小幅恢复生命值	
+300709	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	贯穿：携带者对命中的目标附加可叠加的减防效果	
+300710	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	独狼：敌方当前场上友方单位越少，携带者越强	
+300711	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	电盾：携带者受每次受击有概率在伤害来源处落雷	
+300712	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	统领：周身范围内友方单位越多，携带者越强	
+300713	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	破甲：携带者受到所有伤害显著提升	
+300714	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	弱攻：携带者攻击力减少	
+300715	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	火焰：携带者灼烧靠近的目标，攻击几率额外灼烧目标	
+300716	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	冰冻：携带者减速靠近的目标，攻击几率减速或冻结目标	
+300717	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	暗影：携带者攻击附带暗属性伤害，几率眩晕目标	
+300718	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	冰径：携带者释放一道持续追踪目标的冰柱，触碰到冰刺会受到伤害	
+300719	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	隐身：携带者攻击完成后消失一段时间并远离目标	
+300720	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	壁垒：携带者开场带一次性护盾，击破后才会受到伤害	
+300721	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	护盾：携带者间歇性生成小型护盾，持续3秒或受到足够的伤害消失	
+300722	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	新词缀提示	1	埋雷：携带者攻击命中时概率在目标身上埋炸弹，短时间后爆炸造成伤害	
 300501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	技能球掉落：攻击敌人，随机获得技能球	
 300502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	自爆虫干扰：自爆虫会干扰玩家战斗	
 300503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	1	雷阵：场地中的雷电阵会干扰玩家战斗	
@@ -1839,6 +1923,39 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 999401505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/AnbaoNomal01.png	暴君	1	寻找…艾玛…	
 999401506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/XixiNomal01.png	涂鸦艺术家	1	欢迎你~我的观众~	
 999401507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	想当升格者？呵，你还不够格！	
+311010101	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	系统	1	帕弥什中继通讯接入——	
+311010102	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	喂喂，听得到吗？——啧，果然是我还没习惯用这个东西吗？	
+311010103	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	喂？……	
+311010104	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	……	
+311010105	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	说话。	
+311010106	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	原来你在听啊……好吧。对待同僚就不能再热心一点嘛？	
+311010107	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	没有更重要的事情就先挂了，我现在很忙。	
+311010108	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	是露娜小姐让我来问的——与其说是我们的事情……	
+311010109	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	你现在可是已经在穿越白令海峡了。	
+311010110	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	是吗。	
+311010111	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	你自己不知道吗？我们注意到最近一周的时间，你的坐标都在太平洋上飘着……	
+311010112	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	所以，你现在到底是什么情况？	
+311010113	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	我在一条机械角鲸的背上。	
+311010114	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	呃，你说什么……？	
+311010115	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	它的浮潜模块已经被我控制，大概还需要三天左右……	
+311010116	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	三天左右就怎样？	
+311010117	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	被我驯服，成为我的宠物。	
+311010118	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	……	
+311010119	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	我记得……你的出发地是南美洲沿岸，你是在那里看上它的？	
+311010120	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	嗯。	
+311010121	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	你还真是容易对这种奇怪的事情执着……	
+311010122	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	它很可能有高度贴近人类思维模型的意识，很有趣。	
+311010123	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	会被感染体攻击，证明了这点。	
+311010124	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	对了……	
+311010125	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	嗯？	
+311010126	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	那边的风景，很不错。	
+311010127	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	……	
+311010128	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	我要专心对付干扰我控制这条角鲸的的感染体了。	
+311010129	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	趁这段时间——帮我查一下更多关于它的资料。	
+311010130	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuolanNomal01.png	罗兰	1	完全把我当做使唤对象了啊……好吧。	
+311010131	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	它和远处的信号联系中断了……抵抗病毒感染以及通讯……	
+311010132	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	这根长角——有着和构造体逆元装置类似的功能……	
+311010133	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	那么和它联系的对象，一定也是某个构造体……有趣。	
 311010201	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	丽芙……它们有什么问题？	
 311010202	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	防御终端中止运转，造成一大串防御指令丢失……	
 311010203	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	没有指令，它们什么都做不了。	
@@ -1847,41 +1964,90 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 311010206	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	注意！防御机械装备了大杀伤性武器，可是机甲很薄。	
 311010207	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	那些市民，正监视着我们。	
 311010208	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	别分心，按原计划战斗，保护防御机械。	
-311010401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	选择进攻前，先掂量自己的能耐，构造体。	
-311010402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	你可能没明白，那条角鲸是我的家人。	
-311010403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	袭击姐妹会的家人，我必须对你施以制裁。	
-311010404	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	既然这是你的选择……	
-311010405	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	放马过来。	
-311010501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	不管你们有什么自以为聪明的计划，最好打消一切念头，扭头离开。	
-311010502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	我可以牵制她，你们去中断角鲸的感染。	
-311010503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	正面和她对攻，是行不通的。	
-311010504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	我知道该怎么做。	
-311010505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	非要逼我动手……	
-311010506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	还在执迷不悟？	
-311010507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	里先生失败了……	
-311010508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	出了港口就可以到角鲸身上，露西亚，你继续执行任务！我留下！	
-311010509	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	不要对我提这种要求。	
-311010510	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	没有一只灰鸦能逃出这片港口。	
-311010511	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	不行！仅靠我们，不足以对抗她的实力。	
-311010512	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	指挥官，请批准我使用……	
-311010513	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	注意了，海港下方，有东西。	
-311010514	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	正在调取监控数据……那些是……？！	
-311010515	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	……狂潮进港时间，提前了不少。	
-311010516	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	我不能耗在岸上，角鲸有危险。	
-311010701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	我听说过你的新形态，果然战斗力有所提升。	
-311010702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	战斗一开始，你就不断拉开作战距离。	
-311010703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	原来升格者也有畏惧的时候……	
-311010704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	大言不惭，不是你的作风。你在隐藏什么……	
-311010705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	……	
-311010706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	你的行为和心理，全都暴露在我的眼皮底下。	
-311010707	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	当我决定进攻时，你也无处可躲。	
-311010801	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	不是你选择了我……！！	
-311010802	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	也不是帕弥什选择了我……！！	
-311010803	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	你完全弄反了……！！	
-311010804	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	接入升格网络，势必要付出相应的代价。只是……	
-311010805	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	你的信念不够强大。	
-311010806	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	支配、臣服。你的现状，无疑是后者。	
-311010807	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	总是一副俯瞰世人的样子……	
-311010808	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	你已经臣服在升格网络之下，罗塞塔……	
-311010809	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	α	1	升格，失败。	
-311010810	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1SS.png	罗塞塔	1	可悲的升格者……！！献出你的机体！！	
+311010301	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown02.png	？？？	1	——▄——▆▁——▃	
+311010302	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	非常坚定的意志……很好……	
+311010401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	既然你已经有实力让我的刀出鞘。	
+311010402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	那么便无需多言。	
+311010403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	向我展示你的力量吧。	
+311010501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	丽芙、里，抱歉，这里能交给你们吗？	
+311010502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	我想要直接突破进去。	
+311010503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	那个白发的升格者……我不能错过这次机会。	
+311010504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	了解。我们会尽可能帮你拖住。	
+311010505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	我会尽快赶回来支援……！	
+311010506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuosaitaNormal01.png	罗塞塔	1	……休想过去。	
+311010507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	不，你的对手是我们！	
+311010508	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	不行……只靠我们的话……根本不行……！	
+311010509	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	等等……！海水里的那些是……什么？！	
+311010510	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuosaitaNormal01.png	罗塞塔	1	海里的……？狂潮吗！	
+311010511	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/LuosaitaNormal01.png	罗塞塔	1	……德雷克！	
+311010601	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	灰鸦小队，感谢你们的帮助……	
+311010602	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	请务必在感染体的冲击下坚持住！	
+311010603	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	全体人员，防守港口！	
+311010604	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	纳斯佳！	
+311010605	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	守林人开始出现损失了！	
+311010701	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	我们的战斗不是还没结束吗？	
+311010702	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	如果你管那些叫战斗的话。	
+311010703	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	你的实力还没有她的一半强。	
+311010704	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	你知道你刚才所做的行为的后果吗……	
+311010705	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	你是我的敌人，我要击败你，这一点不会改变！	
+311010706	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	……真是没有长进。	
+311010707	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	让她成为升格者，正是为了拯救她。	
+311010708	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	而现在，因为你的缘故……	
+311010709	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	她只会成为一具被帕弥什控制的行尸走肉。	
+311010710	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	呃……！	
+311010711	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	那又如何……无论感染体，还是所谓的升格者，都是人类的敌人。	
+311010712	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	是吗……罢了。	
+311010713	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	你就好好看着，我和你的差距吧。	
+311010714	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1S.png	露西亚	1	为什么……我会对她的身影……	
+311010801	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	哼，就算是成为了行尸走肉……	
+311010802	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	也还是懂的识别强者的味道……	
+311010803	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	α	1	那么，就做个了结吧。	
+309010101	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	我已经很久没来过这里了。	
+309010102	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	狄安娜，这里是……？	
+309010103	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	帕弥什爆发初期，摩尔曼斯克凭借地理优势蓬勃发展过一段时期。	
+309010104	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	当时它吞并了许多内陆城市，形成联合体。这里就是东北联合体的一部分。	
+309010105	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	同时也是守林人的诞生地之一。	
+309010106	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	回忆什么的就到此为止……我们被盯上了。	
+309010107	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	是猎物的气息……	
+309010108	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	守林人继续向前追踪，不可以让追踪目标走远……	
+309010109	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	由灰鸦负责断后，驱逐阴影中的敌人！	
+309010201	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	目标就在前方，但是你没有命令守林人追上去，为什么。	
+309010202	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	你们之前说过，只能徒步逃跑的伊凡，不可能摆脱感染体。	
+309010203	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	可是当我们锁定追踪目标，却看不到伊凡……	
+309010204	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	事情不太对。	
+309010205	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	追踪目标正在逃跑！	
+309010206	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	犹豫不决只会导致任务失败，出击！截住它！	
+309010301	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	伊凡不可能凭空消失！	
+309010302	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	附近一定还有其他线索，守林人！散开！	
+309010303	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	不要放过任何一处可疑的地方！	
+309010304	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	发现一块5厘米长的钛合金板，碎裂状……	
+309010305	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	请给我看一下！	
+309010306	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	……嗯！切口上有人类皮脂和毛发。	
+309010307	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	我们得到第一个线索！这个方向是对的！	
+309010308	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	搜集线索固然没错，不过我们滞留的时间越长，越容易成为其他东西的目标……	
+309010309	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	里先生，你是说树林中游荡的感染体吗？	
+309010310	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	不只是树林，积雪岩层、河床也是它们的藏身地。	
+309010311	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	指挥官！请保持警惕！	
+309010312	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	我要开始处理零部件上的人体信息素了……	
+309010313	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	狄安娜，请把伊凡的自卫武器交给我，我要采集武器上的信息素。	
+309010314	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	两种信息素完美匹配！伊凡确实来过这里！我可以制作信息素嗅探器了。	
+309010315	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	那是……？	
+309010316	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	只要伊凡还可以呼吸，我们就能探测到他呼出的各种信息素。	
+309010317	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	找到他了！！	
+309010318	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	他被困在感染体的外壳上，难道……？感染体想用他来自保吗？	
+309010319	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	立刻调整应敌手段！我们只允许使用近战武器，不能误伤人类！	
+309010401	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	我暂时没有办法在不伤及救援对象的前提下，切断这些金属骨骼。	
+309010402	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	战略转移是唯一的选择，带它回到守林人据点，再想办法。	
+309010403	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	里……他的身体状况……	
+309010404	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	放心，他没被感染。不过有一点低温症。	
+309010405	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	大家！周围探测到强烈帕弥什反应！	
+309010406	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	那些感染体还没放弃屠戮生者。	
+309010407	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	狄安娜，请与我们共同构筑防线。	
+309010408	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadluxiya1.png	露西亚	1	决不允许感染体伤害人类。	
+309010501	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	守林人认可丽芙的战略眼光。	
+309010502	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	我和姐妹们会全力协助灰鸦执行营救计划。	
+309010503	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	计算完毕，敌人的构造弱点是支撑足。	
+309010504	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/IceguideNormal01.png	狄安娜	1	姐妹们！集中火力破坏敌人的支撑足！	
+309010505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	等一下，里先生没有把伊凡算进去……	
+309010506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	有些支撑足十分接近伊凡被困的位置。	
+309010507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	请大家一定要顾及伊凡的安全。	

@@ -1,4 +1,6 @@
 Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	Level[9]	Level[10]	Level[11]	Level[12]	Level[13]	Level[14]	Level[15]	Level[16]	Level[17]	Level[18]	Level[19]	Level[20]	Level[21]	Level[22]	Level[23]	Level[24]	Level[25]	Level[26]	Level[27]	Level[28]	Level[29]	Level[30]
+832000	AddBuff	832000																													
+832000000	PlayCameraTrackOnAllClients	CTMb1LuosaitaMd010001Born|0|1.5																													
 832001	ShakeCamera	7|00.2|-1|10|00.2|30																													
 832002	ChangeTimeScale	00.1|12|0|0																													
 832003	ChangeTimeScale	00.1|2|0|0																													
@@ -12,12 +14,14 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 832021	AddBuff	832021																													
 832022	AddBuff	832022																													
 832022000	AddBehavior	832022																													
+832023	AddBuff	832023																													
+832023000	PlaySound	832039|0																													
 832200	AddBuff	832200																													
 832200000	PlayCameraTrackOnAllClients	CTMb1LuosaitaMd010002Born1|0|1.5																													
 832201	AddBuff	832201																													
 832201000	HideJoint	ModelCase																													
 832202	AddBuff	832202																													
-832202000	HideJoint	Mb1LuosaitaMd010002Weapon1																													
+832202000	HideJoint	Mb1LuosaitaMd010001Weapon1																													
 832203	AddBuff	832203																													
 832203000	HideJoint	Mb1LuosaitaMd010002Weapon2																													
 832204	AddBuff	832204																													
@@ -44,3 +48,5 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 832234	AddBuff	832234																													
 832235	AddBuff	832235																													
 832236	AddBuff	832236																													
+832237	AddBuff	832237																													
+832237000	PlaySound	832243|0																													

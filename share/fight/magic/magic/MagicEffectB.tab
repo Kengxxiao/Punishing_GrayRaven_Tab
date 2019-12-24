@@ -478,6 +478,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 821326	AddBuff	821326																													
 821327	AddBuff	821327																													
 821327000	ChangeAttribValue	25|2500|0																													
+821328	AddBuff	821328																													
+821328000	PlaySound	821539|																													
 821501	AddBuff	821501																													
 821501000	Damage	0|0|5400|0|0|||																													
 821502	AddBuff	821502																													

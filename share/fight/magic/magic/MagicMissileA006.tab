@@ -56,7 +56,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 102220032	ShakeCamera	4|00.15|-1|10|00.15|0																													
 102220042	ShakeCamera	4|00.15|-1|10|00.15|1																													
 102220052	ShakeCamera	4|00.15|-1|10|00.15|2																													
-102220202	ShakeCamera	2|00.2|-1|10|00.2|6																													
+102220202	ShakeCamera	2|00.5|-1|10|00.25|6																													
 102223042	ShakeCamera	2|00.3|-1|10|00.15|0																													
 102223052	ShakeCamera	3|00.3|-1|10|00.15|1																													
 102223062	ShakeCamera	3|00.3|-1|10|00.15|2																													

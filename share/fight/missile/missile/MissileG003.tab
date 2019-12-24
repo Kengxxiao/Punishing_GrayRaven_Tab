@@ -121,7 +121,7 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 99230402	重构镇暴兵-预警	1	2	20		6	0			4		2			-1						FxNpcYujing02		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
 90350101	铁罐（实验级）-普攻-红茶-伤害	1	3	3		1.5	0			4		0.1			-1		FxMe1BioMd004040Attack06Shouji						-1			1					0	0	0	0							0	1				903501011	903512	903524							0	HitCase	1	0		1			1					
 90350104	铁罐（实验级）-普攻-红茶-范围	1	3	3		1.5	0			4		0.5			-1								-1	3		1	0				0	0	0	0							0	1													0	HitCase	1	0		0			0					
-90350105	铁罐（实验级）-普攻-红茶-特效	2	0.1				0			4		1.5			-1						FxMe1BioMd004040Attack05		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
+90350105	铁罐（实验级）-普攻-红茶-特效	2	0.1			3	0			4		1.5			-1						FxMe1BioMd004040Attack05a		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
 90350603	铁罐（实验级）-摇摇乐-技红-预警	2	4				0			4		2			-1						FxYujing1M05S		-1			1	0				0	0	0	1							0	1													0	HitCase	1	0		1			0					
 90350604	铁罐（实验级）-摇摇乐-技红-飞桶	2	0				10			4		5		1	-1		FxMe1BioMd004040Attack02Shouji			Me1BioMd004040Part	FxMe1BioMd004040Attack02Dandao		-1	2	FxMe1BioMd004040Attack0201	3	-50	0	10	0	0	0	0	0	5000		1	90350605	1		1	1				903506041	903513	903510	903521						0	HitCase		0		0		1	1					
 90350605	铁罐（实验级）-摇摇乐-技红-圆火	2	4				0			4		25			-1	1	FxMe1BioMd004040Attack02Shouji		0.3		FxMe1BioMd004040Attack0202		-1			1	0				0	0	0	2							0	1					903514								0	HitCase		0		0			1					
@@ -140,7 +140,7 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 90350907	铁罐（实验级）-空手-炮台-范围2	1	1.5	40		0.5	0		-68	4		3.8			-1								-1			2	-90	0	0	0	0	0	0	0							0	1													0	HitCase	1	0		1			0					
 90351101	铁罐（实验级）-普攻-空手-伤害	1	3	3		1.5	0			4		0.1			-1		FxMe1BioMd004040Attack06Shouji						-1			1					0	0	0	0							0	1				903511011	903512	903524							0	HitCase	1	0		1			1					
 90351104	铁罐（实验级）-普攻-空手-范围	1	3	3		1.5	0			4		0.5			-1								-1	3		1	0				0	0	0	0							0	1													0	HitCase	1	0		0			0					
-90351105	铁罐（实验级）-普攻-空手-特效	2	0.1				0			4		1.5			-1						FxMe1BioMd004040Attack05		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
+90351105	铁罐（实验级）-普攻-空手-特效	2	0.1			3	0			4		1.5			-1						FxMe1BioMd004040Attack05		-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
 90351301	铁罐（实验级）-特殊-小自爆-预警	2	2			0	0			4		1.8			-1								-1			1	0				0	0	0	0							0	1													0	HitCase	1	0		1			0					
 90351302	铁罐（实验级）-特殊-小自爆-伤害	2	0.1			0	0			4		0.1		1	-1								-1	2	FxMe1BioMd004040Attack0201	1	0				0	0	0	0							0	1					903537								0	HitCase		0		1			0					
 20080101	新空气墙-空气墙碰撞-1	1	10	2	0	0	0			6		0.1		0	-1								-1			1	0				0	0	0	0							0	1										715036			0	HitCase		0		1			0					

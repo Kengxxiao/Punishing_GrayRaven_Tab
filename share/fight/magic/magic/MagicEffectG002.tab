@@ -303,6 +303,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 995964000	AddBehavior	995964																													
 995965	AddBuff	995965																													
 995965000	AddBehavior	995965																													
+995966	AddBuff	995966																													
+995966000	AddWeapon	2026002																													
 995903	AddBuff	995903																													
 995903000	AddBehavior	995903																													
 995904	AddBuff	995904																													
@@ -321,6 +323,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 995954	ShakeCamera	3|00.12|-00.5|10|00.1|0																													
 995955	ShakeCamera	4|00.3|-1|15|00.15|1																													
 995956	ShakeCamera	3|00.3|-00.5|15|00.25|2																													
+903801	AddBuff	903801																													
+903801000	PlaySound	903807|0																													
 902650	Damage	1|0|1500|0|0|||																													
 902651	ShakeCamera	1|00.3|-1|12|00.2|0																													
 902652	ShakeCamera	1|00.4|-1|15|00.25|1																													
@@ -547,6 +551,12 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 902288	AddBuff	902288																													
 902289	AddBuff	902289																													
 902289000	HideJoint	HitCase																													
+902291	AddBuff	902291																													
+902291000	PlaySound	902217|0																													
+904301	AddBuff	904301																													
+904301000	PlaySound	970823|0																													
+904302	AddBuff	904302																													
+904302000	PlaySound	970824|0																													
 995932	AddBuff	995932																													
 995932000	AddNpcState	28																													
 995933	AddBuff	995933																													
@@ -621,9 +631,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 902290	AddBuff	902290																													
 902290000	AddBehavior	902290																													
 996401	AddBuff	996401																													
-996401000	SetCameraRotation	90|0|0|1|1|1																													
+996401000	SetCameraRotation	25|0|0|1|1|1																													
 996402	AddBuff	996402																													
-996402000	SetCameraPosition	0|0|-20|1																													
+996402000	SetCameraPosition	0|0|-8|1																													
 996403	AddBuff	996403																													
 996403000	AddBehavior	996403																													
 999501	AddBuff	999501																													

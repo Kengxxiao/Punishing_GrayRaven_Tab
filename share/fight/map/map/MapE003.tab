@@ -11,9 +11,10 @@ Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCame
 30030603	30030603	噩梦关卡3			0.15	15	2	9	300306030								
 30030604	30030604	噩梦关卡4			0.15	15	2	9	300306040								
 30030605	30030605	噩梦关卡5			0.15	15	2	9	300306050								
-30030701	30030701	飞机测试联机1	SceneCHtest0003	Feijidazhan	2	15	29	9	99940010								
-30030702	30030702	飞机测试联机2	SceneCHtest0003	Feijidazhan	2	15	29	9	99940010								
-30030703	30030703	飞机测试联机3	SceneCHtest0003	Feijidazhan	2	15	29	9	99940010								
-30030704	30030704	飞机测试联机4	SceneCHtest0003	Feijidazhan	2	15	29	9	99940010								
-30030705	30030705	飞机测试联机5	SceneCHtest0003	Feijidazhan	2	15	29	9	99940010								
+30030701	30030701	飞机测试联机1	SceneCHtest0003	Feijidazhan	2	15	37	9	99940010								
+30030702	30030702	飞机测试联机2	SceneCHtest0003	Feijidazhan	2	15	37	9	99940010								
+30030703	30030703	飞机测试联机3	SceneCHtest0003	Feijidazhan	2	15	37	9	99940010								
+30030704	30030704	飞机测试联机4	SceneCHtest0003	Feijidazhan	2	15	37	9	99940010								
+30030705	30030705	飞机测试联机5	SceneCHtest0003	Feijidazhan	2	15	37	9	99940010								
 30030801	30030801	自控怪打怪			0.15	15	2	9	300308010								
+30031001	30031001	激流勇鲸	SceneDLC00102	Test001	0.15	15	41	9	300310010								
