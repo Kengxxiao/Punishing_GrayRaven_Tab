@@ -1,52 +1,52 @@
 Role	State	Target	TransitionDuration
-R3DubianMd010031S	AnyState	Born	0
-R3DubianMd010031S	AnyState	Stand2	0.1
-R3DubianMd010031S	AnyState	Stand1	0.1
-R3DubianMd010031S	AnyState	Stand3	0.1
-R3DubianMd010031S	AnyState	Standchange	0.1
-R3DubianMd010031S	AnyState	Run	0.1
-R3DubianMd010031S	AnyState	Walk	0.1
-R3DubianMd010031S	AnyState	Death	0.1
-R3DubianMd010031S	AnyState	Hit1	0.1
-R3DubianMd010031S	AnyState	Hit2	0.1
-R3DubianMd010031S	AnyState	Behitfly	0.1
-R3DubianMd010031S	AnyState	Hoverhit	0.1
-R3DubianMd010031S	AnyState	Falldown	0.1
-R3DubianMd010031S	AnyState	Hitdown	0.1
-R3DubianMd010031S	AnyState	Lieonfloor	0.1
-R3DubianMd010031S	AnyState	Standup	0.1
-R3DubianMd010031S	AnyState	Straight	0.1
-R3DubianMd010031S	AnyState	Stun	0.1
-R3DubianMd010031S	AnyState	TurnLeft	0.1
-R3DubianMd010031S	AnyState	TurnRight	0.1
-R3DubianMd010031S	AnyState	StraightBefore	0.1
-R3DubianMd010031S	AnyState	StraightAfter	0.1
-R3DubianMd010031S	AnyState	UiStand1	0.1
-R3DubianMd010031S	AnyState	Win	0.1
-R3DubianMd010031S	AnyState	Win2	0.1
-R3DubianMd010031S	AnyState	Runb	0.2
-R3DubianMd010031S	AnyState	Runl	0.2
-R3DubianMd010031S	AnyState	Runr	0.2
-R3DubianMd010031S	AnyState	Stop	0.1
-R3DubianMd010031S	AnyState	Walkb	0.1
-R3DubianMd010031S	AnyState	Walkl	0.1
-R3DubianMd010031S	AnyState	Walkr	0.1
-R3DubianMd010031S	AnyState	Fail	0.1
-R3DubianMd010031S	AnyState	Save	0.1
-R3DubianMd010031S	AnyState	Hit3	0.1
-R3DubianMd010031S	AnyState	Hit4	0.1
-R3DubianMd010031S	AnyState	Attack01	0.1
-R3DubianMd010031S	AnyState	Attack02	0.1
-R3DubianMd010031S	AnyState	Attack03	0.1
-R3DubianMd010031S	AnyState	Attack04	0.1
-R3DubianMd010031S	AnyState	Attack11	0.1
-R3DubianMd010031S	AnyState	Attack21	0.1
-R3DubianMd010031S	AnyState	Attack31	0.1
-R3DubianMd010031S	AnyState	Attack51	0.1
-R3DubianMd010031S	AnyState	Move1	0.1
-R3DubianMd010031S	AnyState	Move2	0.1
-R3DubianMd010031S	AnyState	Move3	0.1
-R3DubianMd010031S	AnyState	AttackQte	0.1
+R3DubianMd010031S		Born	0
+R3DubianMd010031S		Stand2	0.1
+R3DubianMd010031S		Stand1	0.1
+R3DubianMd010031S		Stand3	0.1
+R3DubianMd010031S		Standchange	0.1
+R3DubianMd010031S		Run	0.1
+R3DubianMd010031S		Walk	0.1
+R3DubianMd010031S		Death	0.1
+R3DubianMd010031S		Hit1	0.1
+R3DubianMd010031S		Hit2	0.1
+R3DubianMd010031S		Behitfly	0.1
+R3DubianMd010031S		Hoverhit	0.1
+R3DubianMd010031S		Falldown	0.1
+R3DubianMd010031S		Hitdown	0.1
+R3DubianMd010031S		Lieonfloor	0.1
+R3DubianMd010031S		Standup	0.1
+R3DubianMd010031S		Straight	0.1
+R3DubianMd010031S		Stun	0.1
+R3DubianMd010031S		TurnLeft	0.1
+R3DubianMd010031S		TurnRight	0.1
+R3DubianMd010031S		StraightBefore	0.1
+R3DubianMd010031S		StraightAfter	0.1
+R3DubianMd010031S		UiStand1	0.1
+R3DubianMd010031S		Win	0.1
+R3DubianMd010031S		Win2	0.1
+R3DubianMd010031S		Runb	0.2
+R3DubianMd010031S		Runl	0.2
+R3DubianMd010031S		Runr	0.2
+R3DubianMd010031S		Stop	0.1
+R3DubianMd010031S		Walkb	0.1
+R3DubianMd010031S		Walkl	0.1
+R3DubianMd010031S		Walkr	0.1
+R3DubianMd010031S		Fail	0.1
+R3DubianMd010031S		Save	0.1
+R3DubianMd010031S		Hit3	0.1
+R3DubianMd010031S		Hit4	0.1
+R3DubianMd010031S		Attack01	0.1
+R3DubianMd010031S		Attack02	0.1
+R3DubianMd010031S		Attack03	0.1
+R3DubianMd010031S		Attack04	0.1
+R3DubianMd010031S		Attack11	0.1
+R3DubianMd010031S		Attack21	0.1
+R3DubianMd010031S		Attack31	0.1
+R3DubianMd010031S		Attack51	0.1
+R3DubianMd010031S		Move1	0.1
+R3DubianMd010031S		Move2	0.1
+R3DubianMd010031S		Move3	0.1
+R3DubianMd010031S		AttackQte	0.1
 R3DubianMd010031S	Stand2	Standchange	0.1
 R3DubianMd010031S	Stand2	Run	0.2
 R3DubianMd010031S	Stand2	Walk	0.1

@@ -40,7 +40,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 100513	1|Effect|FxR2YongyechaoAttack04||1	2|Cast|10051302	4|Cast|10051303	6|Cast|10051304	8|Cast|10051305	14|Cast|10051306																																																																										
 100514	0|Magic|100575|0	1|Effect|FxR2YongyechaoBorn||	0|Magic|100577|0																																																																													
 100515	4|Cast|10051501	8|Cast|10051502	11|Cast|10051503	14|Cast|10051504	17|Cast|10051505	20|Cast|10051506	23|Cast|10051507	26|Cast|10051508	4|Shake|4|0.5|0.1|10|1.25|0	4|Move|6|1.25|	1|Effect|FxR2YongyechaoAttack41||1	1|Magic|100031|0	0|Magic|100538|0																																																																			
-100516	8|Cast|10051601	16|Cast|10051602	1|Effect|FxR2YongyechaoAttack13||1	1|Magic|100030|0																																																																												
+100516	8|Cast|10051601	16|Cast|10051602	1|Effect|FxR2YongyechaoAttack13||1	1|Magic|100031|0	16|Shake|5|0.5|-1|10|0.35|1																																																																											
 100517	0|Magic|100576|0	1|Effect|FxR2YongyechaoWin||	0|Magic|100578|0																																																																													
 100518																																																																																
 100519	2|Cast|10051901	4|Cast|10051902	6|Cast|10051903	9|Cast|10051904	11|Cast|10051905	14|Cast|10051906	26|Cast|10051907	26|Shake|3|0.2|-0.5|20|0.35|0	1|Effect|FxR2YongyechaoQte||	1|Cast|10051910	50|Cast|10051911	0|Magic|100091|0	55|Magic|100092|0																																																																			
@@ -90,11 +90,11 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 100814	3|Cast|10081401	1|Cast|10081402	1|Magic|100030|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0																																																																									
 100815	3|Cast|10081501	1|Cast|10081502	1|Magic|100031|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0																																																																									
 100816	0|Magic|100856|0	1|Effect|FxR2DubianBorn||	3|Magic|100877|0																																																																													
-100817	3|Cast|10081701	10|Cast|10081702	1|Effect|FxR2DubianAttack23||1	1|Magic|100031|0																																																																												
+100817	3|Cast|10081701	4|Cast|10081702	7|Cast|10081703	12|Cast|10081704	18|Cast|10081705	1|Effect|FxR2DubianAttack1301||1	1|Magic|100031|0	18|Cast|10081708	1|Effect|FxR2DubianAttack11Canying||1																																																																							
 100818	6|Cast|10081801	6|Cast|10081802	1|Effect|FxR2DubianQte||	1|Cast|10081807	25|Cast|10081808	0|Magic|100091|0	36|Magic|100092|0																																																																									
 100819	0|Magic|100090|0	1|Cast|10081902	7|Cast|10081903	1|Magic|100871|0	1|Magic|100873|0	1|Magic|100874|0	8|Magic|100872|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0	8|Magic|100094|0																																																																				
 100820	0|Magic|100090|0	1|Cast|10082002	7|Cast|10082003	1|Magic|100871|0	1|Magic|100873|0	1|Magic|100874|0	8|Magic|100872|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0	8|Magic|100094|0																																																																				
-100821	35|Cast|10082101	43|Cast|10082102	58|Cast|10082103	90|Cast|10082104	0|Magic|100091|0	114|Magic|100092|0	1|Magic|100032|0	0|Magic|100852|0	1|Effect|FxR2DubianAttack51||1	1|Effect|FxR2DubianAttack5101|WeaponCase2|1	0|Cast|10082111																																																																					
+100821	35|Cast|10082101	43|Cast|10082102	58|Cast|10082103	90|Cast|10082104	0|Magic|100091|0	100|Magic|100092|0	1|Magic|100032|0	0|Magic|100852|0	1|Effect|FxR2DubianAttack51||1	1|Effect|FxR2DubianAttack5101|WeaponCase2|1	0|Cast|10082111																																																																					
 100822	0|Magic|100850|0	1|Effect|FxR2DubianWin||	0|Magic|100878|0																																																																													
 100823																																																																																
 100824																																																																																
@@ -124,7 +124,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 101317	30|Cast|10131701|10131702|10131703|10131704	1|Cast|10131705	1|Magic|100032|0	0|Magic|100091|0	64|Magic|100092|0	0|Magic|101354|0	0|Cast|10131710																																																																									
 101318	0|Magic|101360|0	1|Effect|FxR2LifuWin||	0|Magic|101376|0																																																																													
 101319																																																																																
-101320	1|Cast|10132001	41|Cast|10132002	20|Cast|10132003	0|Magic|100091|0	46|Magic|100092|0																																																																											
+101320	1|Cast|10132001	41|Cast|10132002	0|Magic|100091|0	46|Magic|100092|0	20|Magic|101356|0																																																																											
 101321	2|Magic|100011|0	10|Magic|100015|0	2|Magic|100301|0	2|Magic|100302|0	10|Magic|100303|0	10|Magic|100304|0	2|Cast|10132109	9|Cast|10132110	0|Magic|100090|0	10|Magic|100094|0																																																																						
 101322	2|Magic|100011|0	10|Magic|100015|0	2|Magic|100301|0	2|Magic|100302|0	10|Magic|100303|0	10|Magic|100304|0	2|Cast|10132209	9|Cast|10132210	0|Magic|100090|0	10|Magic|100094|0																																																																						
 101323																																																																																

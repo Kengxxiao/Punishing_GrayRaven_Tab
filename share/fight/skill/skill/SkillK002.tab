@@ -18,11 +18,12 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 832022	受击 勒马		1.2	0	Attack23				6		0		4	
 832023	瘫痪 In		7.1	0	Attack14				6		0		4	
 832024	瘫痪 Out		1	0	Attack15				6		0		0	
+832030	出生动作		4.33	0	Born				6		0		0	
 832031	跑停 右		2.23	0	Attack31				6		0		4	
 832032	跑停 左		2.23	0	Attack32				6		0		4	
 832033	转向 左		1	0	Attack33				6		0		4	
 832034	转向 右		1	0	Attack34				6		0		4	
-832201	空中戳		2.4	0	Attack01	800171|800043			6		0		4	
+832201	空中戳		3.167	0	Attack01	800171|800043			6		0		4	
 832202	盾击突刺		3.1	0	Attack02	800171|800043			6		0		4	
 832203	快速三连		2.27	0	Attack03	800171|800043			6		0		4	
 832204	丢盾四连		2.833	0	Attack04	800171|800043			6		0		4	
@@ -42,4 +43,10 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 832223	左		0.5	0	Attack23	800171|800043			5		0		4	
 832224	右		0.5	0	Attack24	800171|800043			5		0		4	
 832225	后跳		0.5	0	Attack25	800171|800043			6		0		4	
-832226	BOSS出场		7.33	0	Attack26	800171|800043			6		0		4	
+832226	BOSS出场		7.3	0	Attack26				6		0		4	
+833301	高空喷射		2.43	0	Attack01				6		0		4	
+833311	下降		1.33	0	Attack11				6		0		4	
+833312	循环		999	0	Attack12				6		0		4	
+833313	上升		1.33	0	Attack13				6		0		4	
+833314	喷射		0.5	0	Attack14				6		0		4	
+833315	持续激光		3.9	0	Attack15				6		0		4	

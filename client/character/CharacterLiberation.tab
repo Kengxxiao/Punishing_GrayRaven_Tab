@@ -59,3 +59,7 @@ Id	CharacterId	GrowUpLevel	ModelId	EffectRootName	EffectPath
 58	1051003	2	R3YongyechaoMd010021		
 59	1051003	3	R3YongyechaoMd010031		
 60	1051003	4	R3YongyechaoMd010031	Bip001RForearm	Assets/Product/Effect/Prefab/FxR3Yongyechao/FxR3YongyechaoPinzhiGuadianBip001RForearm.prefab
+61	1021003	1	R3LuxiyaMd010011		
+62	1021003	2	R3LuxiyaMd010021		
+63	1021003	3	R3LuxiyaMd010031		
+64	1021003	4	R3LuxiyaMd010031	Bip001LForearm	Assets/Product/Effect/Prefab/FxR3Luxiya/FxR3LuxiyaPinzhiGuadianBip001LForearm.prefab

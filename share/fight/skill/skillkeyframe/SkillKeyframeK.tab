@@ -32,9 +32,9 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 812004	7|Move|100|0.2|0	0|Effect|FxMe1SwordMd002001Attack04||1																																																																														
 812005	20|Cast|81200501	2|Effect|FxMe1SwordMd002001Attack15||1																																																																														
 812006	14|Cast|81200601	0|Effect|FxMe1SwordMd002001Attack16||1																																																																														
-812007	28|Magic|970004|0																																																																															
+812007	28|Magic|970004|0	0|Magic|904301|0																																																																														
 812008																																																																																
-812009	33|Magic|970005|0																																																																															
+812009	33|Magic|970005|0	0|Magic|904302|0																																																																														
 812010	7|Move|100|0.2|0	0|Effect|FxMe1SwordMd002001Attack04||1	10|Magic|970705|0	10|Magic|970706|0	1|Magic|970708|0	1|Magic|970709|0	1|Magic|970711|0																																																																									
 812011	7|Cast|81201101	5|Cast|81201102	0|Cast|81201103																																																																													
 812012	7|Move|100|0.4|0	0|Effect|FxMe1SwordMd002001Attack04||1	5|Magic|970710|0	15|Magic|970713|0																																																																												
@@ -93,9 +93,9 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 811222	29|Cast|81122201	32|Cast|81122202	1|Effect|FxMbMsMd040011Attack04R|Bone020|1	1|Effect|FxMbMsMd040011Attack04L|Bone020mirrored|1	1|Effect|FxMbMsMd040011Attack04|Root|1	29|Cast|81122206																																																																										
 811223	21|Cast|81122301	1|Effect|FxMbMsMd040011Attack05|Root|1																																																																														
 811224	14|Cast|81122401	1|Effect|FxMbMsMd040011Attack0603|Bip001Head|1	1|Effect|FxMbMsMd040011Attack0601|Root|1	1|Effect|FxMbMsMd040011Attack0602|Root|1	14|Move|30|0.4|20																																																																											
-811225	20|Magic|811217|0	21|Magic|811229|0	22|Magic|811225|0	23|Magic|811215|0	24|Magic|811220|0	25|Magic|811223|0	26|Magic|811218|0	27|Magic|811228|0	28|Magic|811214|0	29|Magic|811219|0	30|Magic|811212|0	31|Magic|811227|0	32|Magic|811213|0	33|Magic|811222|0	34|Magic|811221|0	35|Magic|811226|0	36|Magic|811216|0	37|Magic|811224|0																																																														
+811225	20|Magic|811017|0	21|Magic|811029|0	22|Magic|811025|0	23|Magic|811015|0	24|Magic|811020|0	25|Magic|811023|0	26|Magic|811018|0	27|Magic|811028|0	28|Magic|811014|0	29|Magic|811019|0	30|Magic|811012|0	31|Magic|811027|0	32|Magic|811013|0	33|Magic|811022|0	34|Magic|811021|0	35|Magic|811026|0	36|Magic|811016|0	37|Magic|811024|0																																																														
 811226	11|Cast|81122601	0|Effect|FxMbMsMd040011Attack17|Root|1	0|Cast|81122603																																																																													
-811227	31|Magic|811241|0	42|Magic|811241|0																																																																														
+811227	31|Magic|811041|0	42|Magic|811041|0																																																																														
 811228	11|Cast|81122801|81122802	0|Effect|FxMbMsMd040011Attack24|Root|1																																																																														
 811229	11|Cast|81122901	11|Effect|FxMbMsMd040011Attack17|Root|1	0|Cast|81122903																																																																													
 811301	0|Turn|36|0.26|	5|Turn|42|0.23|	10|Turn|24|0.23|	14|Turn|70|0.3|																																																																												
@@ -109,7 +109,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 811325	23|Cast|81132501	1|Effect|FxMbMsMd040011Attack11|Root|1	11|Effect|FxYubei02|HitCase|1																																																																													
 811326																																																																																
 811327	27|Cast|81132701	0|Effect|FxMbMsMd040011Attack13|Bip001 Head|1																																																																														
-811328	22|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	24|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	26|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	28|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	30|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	32|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	34|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	36|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	38|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	22|Magic|811217|0	23|Magic|811229|0	24|Magic|811225|0	25|Magic|811215|0	26|Magic|811220|0	27|Magic|811223|0	28|Magic|811218|0	29|Magic|811228|0	30|Magic|811214|0	31|Magic|811219|0	32|Magic|811212|0	33|Magic|811227|0	34|Magic|811213|0	35|Magic|811222|0	36|Magic|811221|0	37|Magic|811226|0	38|Magic|811216|0	39|Magic|811224|0																																																					
+811328	22|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	24|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	26|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	28|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	30|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	32|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	34|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	36|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	38|Effect|FxMbMsMd040011Attack36|Bip001 Head|1	22|Magic|811017|0	23|Magic|811029|0	24|Magic|811025|0	25|Magic|811015|0	26|Magic|811020|0	27|Magic|811023|0	28|Magic|811018|0	29|Magic|811028|0	30|Magic|811014|0	31|Magic|811019|0	32|Magic|811012|0	33|Magic|811027|0	34|Magic|811013|0	35|Magic|811022|0	36|Magic|811021|0	37|Magic|811026|0	38|Magic|811016|0	39|Magic|811024|0																																																					
 811329	11|Cast|81132901	0|Effect|FxMbMsMd040011Attack17|Root|1	0|Cast|81132903																																																																													
 811331																																																																																
 811332																																																																																
@@ -129,9 +129,9 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 813013	14|Cast|81301302	41|Cast|81301303	67|Cast|81301304	0|Effect|FxMb1SwordMd030001Attack0501||1																																																																												
 813014	1|Move|20|0.4|	0|Magic|813001|0	0|Effect|FxMb1SwordMd030001Attack07Guadian||1																																																																													
 813015	1|Move|-20|0.4|	0|Magic|813001|0	0|Effect|FxMb1SwordMd030001Attack07Guadian||1																																																																													
-813016																																																																																
-813017																																																																																
-813018																																																																																
+813016	0|Magic|813032|0																																																																															
+813017	0|Magic|813033|0																																																																															
+813018	0|Magic|813034|0																																																																															
 813020																																																																																
 813021	10|Cast|81302101	15|Cast|81302102	23|Cast|81302103	10|Cast|81302104	15|Cast|81302105	23|Cast|81302106	0|Magic|813007|0	0|Turn|100|0.1|1																																																																								
 813022	3|Move|60|0.3|	3|Cast|81302202	0|Turn|100|0.15|1	3|Magic|813005|0	0|Cast|81302205																																																																											
@@ -142,21 +142,21 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 813027	8|Cast|81302701	0|Turn|100|0.4|1	0|Effect|FxMb1SwordMd030002Attack06||1																																																																													
 813033																																																																																
 813034																																																																																
-814001	0|Effect|FxMb1LadyMd10001Attack01||	10|Cast|81400102	23|Cast|81400103	42|Cast|81400104	0|Turn|100|2.1|1																																																																											
-814002	12|Cast|81400201	0|Effect|FxMb1LadyMd10001Attack02||	0|Turn|240|0.6|1																																																																													
+814001	0|Effect|FxMb1LadyMd10001Attack01||1	10|Cast|81400102	23|Cast|81400103	42|Cast|81400104	0|Turn|100|2.1|1																																																																											
+814002	12|Cast|81400201	0|Effect|FxMb1LadyMd10001Attack02||1	0|Turn|240|0.6|1																																																																													
 814003	10|Magic|814011|0	10|Magic|814012|0	10|Magic|814013|0																																																																													
 814004	23|Magic|814001|0	0|Cast|81400402|81400403																																																																														
-814005	0|Effect|FxMb1LadyMd10001Attack05||	49|Cast|81400503																																																																														
-814006	0|Effect|FxMb1LadyMd10001Attack06||	1|Move|50|0.3|	0|Magic|814003|0																																																																													
+814005	0|Effect|FxMb1LadyMd10001Attack05||1	49|Cast|81400503																																																																														
+814006	0|Effect|FxMb1LadyMd10001Attack06||1	1|Move|50|0.3|	0|Magic|814003|0																																																																													
 814007	0|Magic|814004|0																																																																															
 814008	10|Cast|81400801	0|Effect|FxMb1LadyMd10001Attack08||1																																																																														
 814009	0|Effect|FxMb1LadyMd10001Attack09||1																																																																															
-814011	0|Effect|FxMb1LadyMd10001Attack11||	4|Cast|81401102	11|Cast|81401103	21|Cast|81401104	0|Turn|100|2.1|1	0|Effect|FxMb1LadyMd10001Attack06||	0|Magic|800050|0	0|Magic|800702|0	3|Move|10|0.05|	11|Move|10|0.05|	19|Move|10|0.05|																																																																					
+814011	0|Effect|FxMb1LadyMd10001Attack11||1	4|Cast|81401102	11|Cast|81401103	21|Cast|81401104	0|Turn|100|2.1|1	0|Effect|FxMb1LadyMd10001Attack06||	0|Magic|800050|0	0|Magic|800702|0	3|Move|10|0.05|	11|Move|10|0.05|	19|Move|10|0.05|																																																																					
 814012																																																																																
-814021	0|Effect|FxMb1LadyMd10001Attack06||	1|Move|-50|0.3|	5|Magic|800049|0																																																																													
-814022	0|Effect|FxMb1LadyMd10001Attack06||	1|Move|50|0.3|	4|Magic|800050|0																																																																													
-814051	0|Effect|FxMb1LadyMd10001Attack06||	1|Move|20|0.3|	4|Magic|800050|0	0|Magic|800704|0																																																																												
-814052	0|Effect|FxMb1LadyMd10001Attack06||	1|Move|-20|0.3|	4|Magic|800050|0	0|Magic|800704|0																																																																												
+814021	0|Effect|FxMb1LadyMd10001Attack06||1	1|Move|-50|0.3|	5|Magic|800049|0																																																																													
+814022	0|Effect|FxMb1LadyMd10001Attack06||1	1|Move|50|0.3|	4|Magic|800050|0																																																																													
+814051	0|Effect|FxMb1LadyMd10001Attack06||1	1|Move|20|0.3|	4|Magic|800050|0	0|Magic|800704|0																																																																												
+814052	0|Effect|FxMb1LadyMd10001Attack06||1	1|Move|-20|0.3|	4|Magic|800050|0	0|Magic|800704|0																																																																												
 814055	10|Cast|81405501	0|Cast|81405502																																																																														
 814056	0|Effect|FxMb1LadyMd10001Attack11||1	4|Cast|81405602	12|Cast|81405603	20|Cast|81405604	0|Effect|FxMb1LadyMd10001Attack06||	0|Move|300|0.15|	0|Magic|800050|0	0|Magic|800702|0	3|Move|10|0.05|	11|Move|10|0.05|	19|Move|10|0.05|																																																																					
 814057	10|Cast|81405701	8|Move|-10|0.3|	0|Cast|81405703	10|Cast|81405704	0|Cast|81405705	10|Cast|81405706	0|Cast|81405707																																																																									

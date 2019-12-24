@@ -754,7 +754,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 12003	13	488	恒定温柔	爱抚构造体5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍			9998			
 12004	13	500	能者多劳	宿舍构造体执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍			9998			
 12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍			9998			
-12006	13	600	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006				宿舍			9998		1	
+12006	6	600	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006				宿舍			9998		1	
 14001	12	2001	宿舍指引	指引-入住1位构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14001			1	14001	14001			宿舍			9999			
 14002	12	2000	宿舍指引	指引-放置家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14002			1	14002	14002			宿舍			9999			
 14003	12	1999	宿舍指引	指引-将椅子改装1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14003			1	14003	14003			宿舍			9999			

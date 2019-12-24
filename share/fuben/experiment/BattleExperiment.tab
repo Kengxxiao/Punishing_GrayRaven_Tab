@@ -33,4 +33,5 @@ Id	CharacterID	Pic	Title	Description	NextTrialID
 32	1071003		热能系统	通过3消或大招攒热能，当前热能达到50%自动开启强化状态	33
 33	1071003		热能系统	消除蓝色信号球召唤飞行器，飞行器每次攻击增加热能	32
 34	1011003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Li01.png	常用连招	任意3消+红球释放强化红球	34
-35	1051003		核心被动	使用必杀技后，一段时间内增加移动速度且普通攻击变为火属性伤害并使目标火属性抗性降低	35
+35	1051003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Qishi01.png	核心被动	使用必杀技后，一段时间内增加移动速度且普通攻击变为火属性伤害并使目标火属性抗性降低	35
+36	1021003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Luxiyaaerfa01.png	赤渊-刀光意	3消蓝色信号再次任意3消信号球，进入刀光意，信号球转化为特殊球，消除时释放剑气	36

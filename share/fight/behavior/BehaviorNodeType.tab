@@ -261,3 +261,4 @@ DoPlaySceneObjectAnimation	2|2
 DoSetIntToIntRecord	2|2
 DoSetStringToIntRecord	0|2
 DoShowTopHp	2
+DoRecordRebootByPay	

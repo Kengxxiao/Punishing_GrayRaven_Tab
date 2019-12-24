@@ -3,8 +3,7 @@ UiActivityBase			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBase.prefab		
 UiActivityBaseChild	UiActivityBase			Bundle		Assets/Product/Ui/Prefab/UiActivityBaseChild.prefab			5000
 UiGameNotice	UiActivityBase			Bundle		Assets/Product/Ui/Prefab/UiGameNotice.prefab			5000
 UiActivityBossSingle			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingle.prefab			5000
-UiActivityBossSingleDetail			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingleDetail.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
-UiActivityBossSingleSkillInfo	UiActivityBossSingleDetail			Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingleSkillInfo.prefab			5000
+UiActivityBossSingleDetail			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingleDetail.prefab			5000
 UiActivityBranch			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBranch.prefab			5000
 UiFubenBranchStageDetail	UiActivityBranch			Bundle		Assets/Product/Ui/Prefab/UiFubenBranchStageDetail.prefab			5000
 UiActivityBranchReward			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiActivityBranchReward.prefab			5000
@@ -226,6 +225,14 @@ UiMedalUnlockTips			Popup	Bundle		Assets/Product/Ui/Prefab/UiMedalUnlockTips.pre
 UiMedalUnlock			Popup	Bundle		Assets/Product/Ui/Prefab/UiMedalUnlock.prefab			5000
 UiGuildMain			Normal	Bundle		Assets/Product/Ui/Prefab/UiGuildMain.prefab			5000
 UiFightButtonSettings			Normal	Bundle		Assets/Product/Ui/Prefab/UiFightButtonSettings.prefab			5000
+UiActivityBriefBase			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBriefBase.prefab			5000
+UiActivityBriefEntry	UiActivityBriefBase			Bundle		Assets/Product/Ui/Prefab/UiActivityBriefEntry.prefab			5000
+UiActivityBriefTask	UiActivityBriefBase			Bundle		Assets/Product/Ui/Prefab/UiActivityBriefTask.prefab			5000
+UiActivityBriefShop	UiActivityBriefBase			Bundle		Assets/Product/Ui/Prefab/UiActivityBriefShop.prefab			5000
 UiFurnitureCreate			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiFurnitureCreate.prefab			5000
 UiDrawLog			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiDrawLog.prefab			5000
 UiSystemDialog			System	Bundle		Assets/Product/Ui/Prefab/UiDialog.prefab			5000
+UiUsePackage			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiUsePackage.prefab			5000
+UiStoryChristmasStageDetail	UiFubenChristmasMainLineChapter			Bundle		Assets/Product/Ui/Prefab/UiStoryChristmasStageDetail.prefab			5000
+UiFubenChristmasStageDetail	UiFubenChristmasMainLineChapter			Bundle		Assets/Product/Ui/Prefab/UiFubenChristmasStageDetail.prefab			5000
+UiFubenChristmasMainLineChapter			Normal	Bundle		Assets/Product/Ui/Prefab/UiFubenChristmasMainLineChapter.prefab			5000

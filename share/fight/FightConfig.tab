@@ -13,13 +13,6 @@ RestStandWaitTime	fix	0
 ComboDuration	fix	3
 ComboShakeDuration	float	0.2
 ComboShakeRange	float	5
-ComboFeatureCount	string	
-ComboFeatureDuration	float	0.5
-ComboFeatureHideDelay	float	0.1
-ComboFeatureHideSpeed	float	1.5
-ComboFeatureScaleDelay	float	0.1
-ComboFeatureScaleSpeed	float	8
-ComboFeatureMaxScale	float	1
 DefaultNpcMaxHitValue	int	100
 BallMoveSpeed	int	2000
 BallWidth	int	1000

@@ -58,7 +58,7 @@ StoryPlayTimeThioToFot	float	2
 StoryPlayTimeFotoToFif	float	2
 StoryPlayAutoStopTime	float	0.5
 PlayerMinLevel	int	1
-PlayerMaxLevel	int	80
+PlayerMaxLevel	int	100
 BuyAssetCoinBase	int	9915
 BuyAssetCoinMul	int	85
 BuyAssetCoinCritProb	int	1000

@@ -6,6 +6,7 @@ CTLuolanMd010001	Assets/Product/Camera/Track/Mb1LuolanMd010001/CTLuolanMd010001.
 CTMb1LuosaitaMd010001Born	Assets/Product/Camera/Track/Mb1LuosaitaMd010001/CTMb1LuosaitaMd010001Born.prefab
 CTMb1LuosaitaMd010002Born	Assets/Product/Camera/Track/Mb1LuosaitaMd010002/CTMb1LuosaitaMd010002Born.prefab
 CTMb1LuosaitaMd010002Born1	Assets/Product/Camera/Track/Mb1LuosaitaMd010002/CTMb1LuosaitaMd010002Born1.prefab
+CTMb1Luxiya03Born	Assets/Product/Camera/Track/Mb1LuxiyaMd000003/CTMb1Luxiya03Born.prefab
 CTMb1LuxiyaAtk06	Assets/Product/Camera/Track/Mb1LuxiyaMd000003/CTMb1LuxiyaAtk06.prefab
 CTOrphanBorn	Assets/Product/Camera/Track/Mb1OrphanMd030001/CTOrphanBorn.prefab
 CTMb1Osiris01	Assets/Product/Camera/Track/Mb1OsirisMd000001/CTMb1Osiris01.prefab
@@ -14,8 +15,8 @@ CTMb1RobotarmorMd030001Born	Assets/Product/Camera/Track/Mb1RobotarmorMd030001/CT
 CTMb1SandwormMd030001Born	Assets/Product/Camera/Track/Mb1SandwormMd030001/CTMb1SandwormMd030001Born.prefab
 CTSwordMd030001Born	Assets/Product/Camera/Track/Mb1SwordMd030001/CTSwordMd030001Born.prefab
 CTSwordMd030002Born	Assets/Product/Camera/Track/Mb1SwordMd030002/CTSwordMd030002Born.prefab
-CTMb1TankarmorMd030001	Assets/Product/Camera/Track/Mb1TankarmorMd030001/CTMb1TankarmorMd030001.prefab
 CTMb1VirginbioMd030001Born	Assets/Product/Camera/Track/Mb1VirginbioMd030001/CTMb1VirginbioMd030001Born.prefab
+CTMb1VirginbioMd030001Atk05	Assets/Product/Camera/Track/Mb1VirginbioMd030001/CTMb1VirginbioMd030001Atk05.prefab
 CTMb1XiuMd010001Born	Assets/Product/Camera/Track/Mb1XiuMd010001/CTMb1XiuMd010001Born.prefab
 CTMb1XiuMd010002	Assets/Product/Camera/Track/Mb1XiuMd010002/CTMb1XiuMd010002.prefab
 CTMb1XiuWin	Assets/Product/Camera/Track/Mb1XiuMd010002/CTMb1XiuWin.prefab
@@ -70,6 +71,7 @@ CTLifu03Born	Assets/Product/Camera/Track/R3LifuMd010011/CTLifu03Born.prefab
 CTLifu03Win	Assets/Product/Camera/Track/R3LifuMd010011/CTLifu03Win.prefab
 CTLuxiya03	Assets/Product/Camera/Track/R3LuxiyaMd010011/CTLuxiya03.prefab
 CTLuxiya03Born	Assets/Product/Camera/Track/R3LuxiyaMd010011/CTLuxiya03Born.prefab
+CTLuxiya03SenceBegan	Assets/Product/Camera/Track/R3LuxiyaMd010011/CTLuxiya03SenceBegan.prefab
 CTLuxiya03Win	Assets/Product/Camera/Track/R3LuxiyaMd010011/CTLuxiya03Win.prefab
 CTShenwei03	Assets/Product/Camera/Track/R3ShenweiMd010011/CTShenwei03.prefab
 CTShenwei03Born	Assets/Product/Camera/Track/R3ShenweiMd010011/CTShenwei03Born.prefab
@@ -77,3 +79,5 @@ CTShenwei03Win	Assets/Product/Camera/Track/R3ShenweiMd010011/CTShenwei03Win.pref
 CTYongyech03Born	Assets/Product/Camera/Track/R3YongyechaoMd010011/CTYongyech03Born.prefab
 CTYyongyechao03	Assets/Product/Camera/Track/R3YongyechaoMd010011/CTYyongyechao03.prefab
 CTYyongyechao03win	Assets/Product/Camera/Track/R3YongyechaoMd010011/CTYyongyechao03win.prefab
+CTMb1TankarmorMd030001	Assets/Product/Camera/Track/Mb1TankarmorMd030001/CTMb1TankarmorMd030001.prefab
+CTMb1TankarmorMd030002	Assets/Product/Camera/Track/Mb1TankarmorMd030002/CTMb1TankarmorMd030002.prefab

@@ -1,4 +1,4 @@
-Id	Name	Description	BgPath
-1	基础战斗	必须通关前置关卡才会开启下一关。	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg01B.png
-2	进阶战斗	进阶战斗说明	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg02B.png
-3	构造体战斗	必须拥有对应构造体才可开启。	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg03B.png
+Id	Name	Description	BgPath	PracticeContentPrefab	PracticeGridPrefab
+1	基础战斗	必须通关前置关卡才会开启下一关。	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg01B.png	Assets/Product/Ui/ComponentPrefab/FubenPracticeStages/FubenPracticeStagesBasics.prefab	Assets/Product/Ui/ComponentPrefab/GridStage/GridStagePracticeRectangle.prefab
+2	进阶战斗	进阶战斗说明	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg02B.png	Assets/Product/Ui/ComponentPrefab/FubenPracticeStages/FubenPracticeStagesAdvanced.prefab	Assets/Product/Ui/ComponentPrefab/GridStage/GridStagePracticeSquare.prefab
+3	构造体战斗	必须拥有对应构造体才可开启。	Assets/Product/Texture/Image/UiFubenMainMapTab/ChapterBg03B.png	Assets/Product/Ui/ComponentPrefab/FubenPracticeStages/FubenPracticeStagesCharacter.prefab	Assets/Product/Ui/ComponentPrefab/GridStage/GridStagePracticeRectangle2.prefab

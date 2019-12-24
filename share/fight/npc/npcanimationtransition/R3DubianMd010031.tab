@@ -10,7 +10,7 @@ R3DubianMd010031		Death	0.1
 R3DubianMd010031		Hit1	0.05
 R3DubianMd010031		Hit2	0.05
 R3DubianMd010031		Behitfly	0.05
-R3DubianMd010031		Hoverhit	0
+R3DubianMd010031		Hoverhit	0.05
 R3DubianMd010031		Falldown	0.1
 R3DubianMd010031		Hitdown	0.1
 R3DubianMd010031		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R3DubianMd010031		TurnLeft	0.1
 R3DubianMd010031		TurnRight	0.1
 R3DubianMd010031		StraightBefore	0.1
 R3DubianMd010031		StraightAfter	0.1
+R3DubianMd010031		UiStand1	0.1
 R3DubianMd010031		Win	0
 R3DubianMd010031		Win2	0.1
 R3DubianMd010031		Runb	0.2
@@ -45,8 +46,6 @@ R3DubianMd010031		Attack06	0.1
 R3DubianMd010031		Attack11	0.1
 R3DubianMd010031		Attack21	0.1
 R3DubianMd010031		Attack31	0.1
-R3DubianMd010031		Attack41	0.1
-R3DubianMd010031		Attack42	0.1
 R3DubianMd010031		Attack51	0.1
 R3DubianMd010031		Move1	0.1
 R3DubianMd010031		Move2	0.1
@@ -109,5 +108,5 @@ R3DubianMd010031	Walkr	Walkb	0.1
 R3DubianMd010031	Walkr	Walkl	0.2
 R3DubianMd010031	Hit3	Stand2	0
 R3DubianMd010031	Hit4	Stand2	0
-R3DubianMd010031	RunStart	Run	0.05
+R3DubianMd010031	RunStart	Run	0
 R3DubianMd010031	RunStart	RunStartEnd01	0.1

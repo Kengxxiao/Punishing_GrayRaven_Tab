@@ -8,30 +8,30 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 903701	远程普攻		2.2	0	Attack01			10	2				4	
 903702	蓄力一击		1.3	0	Attack02			10	2				4	
 903703	会心一击		2.2	0	Attack03			10	2			1	4	
-903704	挥击		1.3	0	Attack04			10	2				4	
+903704	挥击		1.667	0	Attack04			10	2				4	
 903705	灵活反击		1.5	0	Attack05			10	2				4	
 903751	位移闪避-玩家操作		0.65	0	Attack05			10	2		0		0	
 903752	位移闪避-玩家操作		0.65	0	Attack05			10	4		0		0	
 903755	普通攻击-玩家操作		1	0.3	Attack02			10	2				4	
 903756	普通攻击-玩家操作		1	0.3	Attack02			10	2				4	
 903757	位移闪避-玩家操作		1	0.5	Attack05			10	4		0		0	
-903761	挥舞弓-玩家操作		0.6	0.7	Attack04			10	2				4	
+903761	挥舞弓-玩家操作		0.7	0.9	Attack04			10	2				4	
 903762	远程三连发-玩家操作		1.7	0.5	Attack01			10	2				4	
 903763	会心一击-玩家操作		2	0.7	Attack03			8	2			1	4	
-995301	形态切换		3	0	Attack01			10	2				4	
-995302	机枪扇形扫射		5.1	0	Attack02			10	2				4	
-995303	机枪左扫射		5.1	0	Attack03			10	2				4	
-995304	机枪右扫射		5.1	0	Attack04			10	2				4	
-995305	天空投射		4.3	0	Attack05			10	2				4	
-995306	压地冲击		4.3	0	Attack06			10	2				4	
-995307	跳跃打击		1.4	0	Attack07			10	2				4	
-995308	光球释放		3.9	0	Attack08			10	2				4	
-995309	后压		0.9	0	Attack09			10	2				4	
-995310	后压硬直		0.9	0	Attack11			10	2				4	
-995311	后压起身		1.2	0	Attack12			10	2				4	
-995312	正面机枪扫射		3.3	0	Attack13			10	2				4	
-995313	正面火炮		1.7	0	Attack14			10	2				4	
-995314	跳跃位移		1.4	0	Attack07			10	2				4	
+904401	形态切换		3	0	Attack01			10	2				4	
+904402	机枪扇形扫射		5.1	0	Attack02			10	2				4	
+904403	机枪左扫射		5.1	0	Attack03			10	2				4	
+904404	机枪右扫射		5.1	0	Attack04			10	2				4	
+904405	天空投射		4.3	0	Attack05			10	2				4	
+904406	压地冲击		4.3	0	Attack06			10	2				4	
+904407	跳跃打击		1.4	0	Attack07			10	2				4	
+904408	光球释放		3.9	0	Attack08			10	2				4	
+904409	后压		0.9	0	Attack09			10	2				4	
+904410	后压硬直		0.9	0	Attack11			10	2				4	
+904411	后压起身		1.2	0	Attack12			10	2				4	
+904412	正面机枪扫射		3.3	0	Attack13			10	2				4	
+904413	正面火炮		1.7	0	Attack14			10	2				4	
+904414	跳跃位移		1.4	0	Attack07			10	2				4	
 903301	二连抓		2.067	0	Attack01			10	1				4	
 903302	扑杀		1.633	0	Attack02			10	6				4	
 903303	蓄能爪击		2	0	Attack03			10	1				4	
@@ -79,7 +79,7 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 819025	武者之礼		1.667	0	Attack47			10	1				1	
 819026	第一章结尾用		2.5	0	Attack06			10	1				4	
 903801	打刀横挥		2.2	0	Attack21			10	4				4	
-903802	射击		1.667	0	Attack11			10	6				4	
+903802	射击		1.833	0	Attack11			10	6				4	
 903803	起身		1.03	0	Standup			10	2				0	
 903804	躺地		9999	0	Lieonfloor			10	2				0	
 903805	被击倒		1.03	0	Hitdown			10	2				0	
@@ -89,10 +89,10 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 903809	瘫倒起身		0.933	0	Attack03			10	2				0	
 903810	华丽射击		5.033	0	Attack12			10	6				4	
 903811	三连击		3.567	0	Attack22			10	1				4	
-903812	蓄力射击		3.967	0	Attack13			10	6				4	
+903812	蓄力射击		3.267	0	Attack13			10	6				4	
 903813	空斩		2.9	0	Attack23			10	1				4	
 954701	打刀横挥		2.2	0	Attack21			10	4				4	
-954702	射击		1.667	0	Attack11			10	6				4	
+954702	射击		1.833	0	Attack11			10	6				4	
 902201	十字斩		3	0	Attack01			10	4				4	
 902202	蓄力戳刺		2.27	0	Attack02			10	4				4	
 902203	冲刺横扫		3.27	0	Attack03			10	6				4	
@@ -111,8 +111,8 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 904305	横扫		2.97	0	Attack15			10	2				1	
 904306	戳刺		2.6	0	Attack16			10	2				1	
 904307	瘫痪-in		1.47	0	Attack07			10	2				1	
-904308	瘫痪-out		0.27	0	Attack08			10	2				1	
-904309	瘫痪-loop		1.74	0	Attack09			10	2				1	
+904308	瘫痪-loop		0.27	0	Attack08			10	2				1	
+904309	瘫痪-out		1.74	0	Attack09			10	2				1	
 996401	点射子弹		0	0	Stand1			10	5				0	
 996402	连射子弹		0	0	Stand1			10	5				0	
 996404	红球强化-散弹		0	0	Stand1			10	5				0	

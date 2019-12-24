@@ -4,6 +4,7 @@ Id	Name	ImgSrc	LockDescId	ConvertItemId	ConvertItemCount	Description	WorldDesc	E
 9000003	铭牌	Assets/Product/Texture/Image/RolePlayerSp/RolePlayer03.png	1	1	10000	玩家头像	默认头像之一。		50
 9010101	头像-红莲	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadluxiya5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		30
 9010102	头像-黎明	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadluxiya5S.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		29
+9010103	头像-深红之渊	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadluxiyaaerfa5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		28
 9010201	头像-蚀暗	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		28
 9010202	头像-流光	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5S.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		27
 9010203	头像-仰光	Assets/Product/Texture/Image/RolePlayerSp/RoleHeadLifu5SS.png	2	1	10000	玩家头像	经历无数战斗和成长之后，构造体完成终阶解放的姿态。		26

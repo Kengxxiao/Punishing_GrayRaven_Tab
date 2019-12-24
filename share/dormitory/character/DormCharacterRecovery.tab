@@ -74,3 +74,8 @@ Id	CharacterId	VitalityRecoveryType	VitalityRecovery	MoodRecoveryType	MoodRecove
 73	1051003	0	400	0	100	3	1	3500	0	0	0	"当所在宿舍总值达到<color=#FF4E4EFF>6500</color>点,构造体每小时恢复体力值<color=#28CFFFFF>4</color>点，心情值<color=#28CFFFFF>1</color>点"
 74	1051003	0	500	0	200	4	1	5500	2000	3500	0	"当所在宿舍达到舒适度<color=#FF4E4EFF>3500</color>点,美观度<color=#FF4E4EFF>2000</color>点,构造体每小时恢复体力值<color=#28CFFFFF>5</color>点，心情值<color=#28CFFFFF>2</color>点"
 75	1051003	0	600	0	500	5	1	10000	3500	6500	0	"当所在宿舍达到舒适度<color=#FF4E4EFF>6500</color>点,美观度<color=#FF4E4EFF>3500</color>点,构造体每小时恢复体力值<color=#28CFFFFF>6</color>点，心情值<color=#28CFFFFF>3</color>点"
+76	1021003	1	100	1	100	1	1	0	0	0	0	"当所在宿舍总值未达到<color=#FF4E4EFF>1200</color>点,构造体每小时失去体力值<color=#28CFFFFF>1</color>点，心情值<color=#28CFFFFF>1</color>点"
+77	1021003	0	300	0	50	2	1	1200	0	0	0	"当所在宿舍总值达到<color=#FF4E4EFF>1200</color>点,构造体每小时恢复体力值<color=#28CFFFFF>3</color>点，心情值<color=#28CFFFFF>0.5</color>点"
+78	1021003	0	400	0	100	3	1	3500	0	0	0	"当所在宿舍总值达到<color=#FF4E4EFF>6500</color>点,构造体每小时恢复体力值<color=#28CFFFFF>4</color>点，心情值<color=#28CFFFFF>1</color>点"
+79	1021003	0	500	0	200	4	1	5500	0	3500	2000	"当所在宿舍达到舒适度<color=#FF4E4EFF>3500</color>点,实用度<color=#FF4E4EFF>2000</color>点,构造体每小时恢复体力值<color=#28CFFFFF>5</color>点，心情值<color=#28CFFFFF>2</color>点"
+80	1021003	0	600	0	500	5	1	10000	0	6500	3500	"当所在宿舍达到舒适度<color=#FF4E4EFF>6500</color>点,实用度<color=#FF4E4EFF>3500</color>点,构造体每小时恢复体力值<color=#28CFFFFF>6</color>点，心情值<color=#28CFFFFF>3</color>点"

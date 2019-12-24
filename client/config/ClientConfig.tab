@@ -9,10 +9,6 @@ RemoveChatRecordOfDay	int	7
 WorldChatMaxSize	int	200
 RoomChatMaxSize	int	50
 AcfFile	string	External/Criware/Punishing_CRIProject.acf
-EquipDetailTipId	int	
-EquipAwakeTipId	int	
-EquipEquipReformTipId	int	
-EquipBreakThoughTipId	int	1001
 GraphicDefaultLevel	int	2
 GraphicLowFps	int	40
 GraphicHighFps	int	58
@@ -20,7 +16,11 @@ GraphicCheckFpsInterval	int	10
 GraphicDefaultMode	int	0
 BossSingleMaxRanCount	int	99
 BossSingleAnimaTime	float	2.2
-BossOnlineInvadeEffectUrl	string	Assets/Product/Effect/Prefab/FxUi/FxUiCommon/FxUiHeiying.prefab
+BossOnlineInvadeDelay	int	5500
+BossOnlineInvadeInterval	int	100
+BossOnlineInvadeWait	int	1500
+BossOnlineInvadeDescCount	int	5
+BossOnlineInvadeEffectUrl	string	Assets/Product/Ui/ComponentPrefab/UiOnlineBoss/Donghua.prefab
 PrivateChatTextLimit	int	50
 WorldChatTextLimit	int	50
 UiGridFurnitureControlLimit	int	100
@@ -133,6 +133,7 @@ TaskDailyActiveNotReach2	string	Assets/Product/Texture/Atlas/UiTask/TaskDailyAct
 TaskDailyActiveNotReach3	string	Assets/Product/Texture/Atlas/UiTask/TaskDailyActiveNotReach3.png
 TaskDailyActiveNotReach4	string	Assets/Product/Texture/Atlas/UiTask/TaskDailyActiveNotReach4.png
 TaskDailyActiveNotReach5	string	Assets/Product/Texture/Atlas/UiTask/TaskDailyActiveNotReach5.png
+GridBranchStageChallengeVertical	string	Assets/Product/Ui/ComponentPrefab/GridStage/GridBranchStageChallengeVertical.prefab
 GridBranchStageSquare	string	Assets/Product/Ui/ComponentPrefab/GridStage/GridBranchStageSquare.prefab
 GridBranchStageRectangle	string	Assets/Product/Ui/ComponentPrefab/GridStage/GridBranchStageRectangle.prefab
 GridStageSquare	string	Assets/Product/Ui/ComponentPrefab/GridStage/GridStageSquare.prefab
@@ -193,7 +194,7 @@ FavorabilitySkip3	int	4002
 FavorabilitySkip4	int	4000
 FightQualityStageId	int	10010001
 FightKeyStageId	int	10010101
-SpecialScreenOff	float	100
+SpecialScreenOff	float	50
 SelfNumSmall	int	20
 SelfNumMiddle	int	30
 SelfNumBig	int	45
@@ -208,4 +209,12 @@ UnloadNpcTime	int	10000
 UnloadWeaponTime	int	5000
 SelfNumDefault	int	100
 GameLogo	string	Assets/Product/Texture/Image/Logo/CommonGameLogo.png
-DormAttrFormat	string	<color=%s><size=30>%s%d</size></color>
+DormAttrFormat	string	<color=%s><size=30> %s%d</size></color>
+DormSuitBgmDesc	string	房间内摆放套装不同家具达<color=#0E70BDFF>%s</color>件%s解锁bgm<color=#0E70BDFF>【%s】</color>
+DormSuitBgmTitleDesc	string	<size=30><color=#0E70BDFF>套装效果</color></size>
+MaxNameLength	int	8
+MaxSignLength	int	15
+ExhibitionLevelPoint_01	int	1
+ExhibitionLevelPoint_02	int	1
+ExhibitionLevelPoint_03	int	1
+ExhibitionLevelPoint_04	int	1

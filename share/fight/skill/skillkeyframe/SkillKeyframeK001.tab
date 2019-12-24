@@ -9,9 +9,9 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 815008	20|Cast|81500801|81500802	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
 815011	0|Cast|81501101																																																																															
 815012	0|Effect|FxMb1OrphanMd030001Attack12Bip001LHand|Bip001LHand|1																																																																															
-815013																																																																																
+815013	0|Magic|815007|0																																																																															
 815014																																																																																
-815015																																																																																
+815015	0|Magic|815008|0																																																																															
 815022	11|Cast|81502201	0|Turn|1200|0.5|1																																																																														
 815026	24|Cast|81502601|81502602	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
 815027	20|Cast|81502701|81502702	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
@@ -31,7 +31,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 816002	26|Cast|81600201	29|Cast|81600202	0|Turn|120|1.2|1	0|Effect|FxMb1LuolanMd010001Attack02||1																																																																												
 816003	25|Cast|81600301	0|Turn|120|1.2|1	0|Effect|FxMb1LuolanMd010001Attack03||1																																																																													
 816004	14|Cast|81600401	0|Turn|120|0.7|1	0|Effect|FxMb1LuolanMd010001Attack04||1																																																																													
-816005	1|Move|-80|0.2|0	0|Magic|800110|0																																																																														
+816005	1|Move|-80|0.2|0	0|Magic|800110|0	0|Magic|816018|0																																																																													
 816006	21|Cast|81600601	27|Cast|81600602	37|Cast|81600603	0|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack06||1																																																																											
 816007	18|Cast|81600701	31|Cast|81600702	0|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack07||1																																																																												
 816008	16|Cast|81600801	22|Cast|81600802	0|Turn|150|0.8|1	36|Cast|81600804	0|Effect|FxMb1LuolanMd010001Attack08||1	16|Cast|81600806																																																																										
@@ -133,7 +133,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 831014	2|Cast|83101401	0|Magic|831004|0	0|Magic|800154|0	0|Effect|FxMb1XiuMd010001Attack14||1	6|Cast|83101405																																																																											
 831015	13|Cast|83101501	21|Cast|83101502	0|Turn|120|0.65|1	13|Turn|120|0.4|1	8|Move|30|0.25|2	16|Move|30|0.25|2	0|Effect|FxMb1XiuMd010001Attack15||1	0|Magic|800157|0																																																																								
 831016	0|Magic|100097|0	0|Magic|100098|0	0|Magic|800008|0	0|Magic|800009|0	0|Magic|831021|0	0|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83101607	12|Cast|83101608																																																																								
-831017	0|Magic|831563|0	0|Effect|FxMb1XiuMd010001Attack16Guozai||1																																																																														
+831017	0|Magic|831563|0	0|Effect|FxMb1XiuMd010001Attack16Guozai||1	0|Magic|831016|0																																																																													
 831018	8|Cast|83101801	0|Magic|831004|0	0|Magic|800154|0	0|Effect|FxMb1XiuMd010001Attack06||1	6|Cast|83101805																																																																											
 831019	12|Cast|83101901	14|Cast|83101902	16|Cast|83101903	18|Cast|83101904	20|Cast|83101905	12|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83101907	18|Cast|83101908																																																																								
 831051	3|Move|30|0.3|2	0|Turn|180|0.15|1	0|Effect|FxMb1XiuMd010001Attack03||1	0|Magic|831563|0																																																																												
