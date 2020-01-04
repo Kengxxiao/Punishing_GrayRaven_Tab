@@ -1020,12 +1020,6 @@ XDormManagerCreator = function()
 
     -- 房间改名
     function XDormManager.RequestDormitoryRename(dormitoryId, newName, cb)
-        local tempName = string.FilterWords(newName)
-        if not CS.XTextManager.CheckValid(tempName) then
-            XUiManager.TipCode(XCode.DormStringInvalid)
-            return
-        end
-
         XNetwork.Call(DormitoryRequest.DormRenameReq, { DormitoryId = dormitoryId, NewName = newName }, function(res)
             if res.Code ~= XCode.Success then
                 XUiManager.TipCode(res.Code)

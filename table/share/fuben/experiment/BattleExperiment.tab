@@ -6,7 +6,7 @@ Id	CharacterID	Pic	Title	Description	NextTrialID
 5	1031001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	核心激光	任意3消后，再次消除红球时，将触发核心激光，造成10段大范围物理伤害。	6
 6	1031001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu02.png	常用连招表	3消黄色信号吸引周围敌人，再消除红色信号释放“核心激光”造成高额群体伤害。	5
 7	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka01.png	翼射	消除黄色信号击中怪物可以获得额外能量，加快必杀技释放	8
-8	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka02.png	常用连招	通过3消触发3次被动“饶恕箭筒”，存储6支能量箭后释放必杀技，造成爆发物理伤害。	9
+8	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka02.png	常用连招	通过3消触发3次被动“饶恕箭筒”，存储3支能量箭后释放必杀技，造成爆发物理伤害。	9
 9	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka03.png	常用连招	通过3消蓝色信号为武器附加最高等级伤害，后持续使用普攻造成大量伤害。	7
 10	1051001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi01.png	EX-切割风暴	任意3消后，再次消除黄球时，将释放EX-切割风暴，对周围的敌人持续攻击8次，造成大量物理伤害。	11
 11	1051001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi02.png	常用连招表	"3消红色信号快速冲刺至目标怪物位置，再消除黄色信号释放""EX-切割风暴""造成大量物理伤害。"	12

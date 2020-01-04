@@ -120,6 +120,7 @@ function XUiEquipAwarenessReplace:OnNotify(evt, ...)
         self:UpdateViewData()
         if self.LastViewPattern == ViewPattern.Quick then
             local suitId = XDataCenter.EquipManager.GetSuitId(equipId)
+            self:UpdateSuitDrdOptionList()
             self:UpdateDrdSuitValue(suitId)
         end
         self:OnSelectSortType(self.DrdSort.value)
@@ -132,6 +133,7 @@ function XUiEquipAwarenessReplace:OnNotify(evt, ...)
         for _,equipId in pairs(equipIds) do
             if self.LastViewPattern == ViewPattern.Quick then
                 local suitId = XDataCenter.EquipManager.GetSuitId(equipId)
+                self:UpdateSuitDrdOptionList()
                 self:UpdateDrdSuitValue(suitId)
             end
             local equipSite = XDataCenter.EquipManager.GetEquipSite(equipId)
@@ -425,6 +427,11 @@ function XUiEquipAwarenessReplace:OnSelectEquipSite(equipSite)
         self.LastSelectCurGrid:SetSelected(true)
     end
 
+    if self.LastViewPattern == ViewPattern.Quick then
+        self:UpdateSuitDrdOptionList()
+        self:OnDrdSuitValueChanged()
+    end
+    
     self:OnSelectSortType(self.DrdSort.value)
     self:PlayAnimation("EquipScrollQieHuan")
 end
@@ -489,14 +496,25 @@ function XUiEquipAwarenessReplace:OnSelectDrdSuit(suitId)
 end
 
 function XUiEquipAwarenessReplace:UpdateDrdSuitValue(suitId)
+    local findSuitInDrd = false
     for k, v in pairs(self.StarToSiteToSuitIdsDic[self.SelectedSuitStar][self.SelectedEquipSite]) do
         if v == suitId then
             self.DrdSuit.value = k - 1
+            findSuitInDrd = true
+            break
         end
     end
 
     -- 如果当前位置没有对应套装ID，那么也调用调度函数刷到下个套装显示
-    self:OnDrdSuitValueChanged()
+    if not findSuitInDrd then
+        if self.DrdSuit.value == 0 then
+            self:OnDrdSuitValueChanged()
+        else
+            self.DrdSuit.value = 0
+        end
+    else
+        self:OnDrdSuitValueChanged()
+    end
 end
 
 function XUiEquipAwarenessReplace:UpdateScroll(doNotResetSelect)
@@ -570,7 +588,6 @@ function XUiEquipAwarenessReplace:AutoAddListener()
     self:RegisterClickEvent(self.BtnOrder, self.OnBtnOrderClick)
     self:RegisterClickEvent(self.BtnToDetail, self.OnBtnToDetailClick)
     self:RegisterClickEvent(self.BtnToSimple, self.OnBtnToSimpleClick)
-    self:RegisterClickEvent(self.DrdSuit, self.OnDrdSuitClick)
     self:RegisterClickEvent(self.BtnClosePopup, self.OnBtnClosePopupClick)
     self:RegisterClickEvent(self.BtnPos1, self.OnBtnPos1Click)
     self:RegisterClickEvent(self.BtnPos2, self.OnBtnPos2Click)

@@ -245,13 +245,6 @@ local DoChangeResultError = function(code, nextCanChangeTime)
 end
 
 function Player.ChangeName(name, cb)
-    local tmepName = string.FilterWords(name)
-    local res = CS.XTextManager.CheckValid(tmepName)
-    if not res then
-        DoChangeResultError(XCode.PlayerDataManagerChangeNameInvalid)
-        return
-    end
-
     if NextChangeNameTime > XTime.Now() then
         DoChangeResultError(XCode.PlayerDataManagerChangeNameTimeLimit, NextChangeNameTime)
         return
@@ -334,13 +327,6 @@ end
 
 
 function Player.ChangeSign(msg, cb)
-    local tmepMsg = string.FilterWords(msg)
-    local res = CS.XTextManager.CheckValid(tmepMsg)
-    if not res then
-        XUiManager.TipCode(XCode.PlayerDataManagerChangeSignInvalid)
-        return
-    end
-
     XNetwork.Call(METHOD_NAME.ChangePlayerSign, { Msg = msg },
     function(response)
         if response.Code ~= XCode.Success then

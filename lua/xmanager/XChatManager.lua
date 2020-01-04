@@ -526,16 +526,6 @@ XChatManagerCreator = function()
 
     --发送聊天
     function XChatManager.SendChat(chatData, cb, needReplace)
-        if needReplace then
-            chatData.Content = CS.XTextManager.ReplaceSensitiveWords(chatData.Content, NotAllowedStr)
-        end
-
-        local tempContent = string.FilterWords(chatData.Content)
-        if not CS.XTextManager.CheckValid(tempContent) then
-            XUiManager.TipCode(XCode.ChatManagerSendMsgNotAllowed)
-            return
-        end
-
         XNetwork.Call(MethodName.SendChat, { ChatData = chatData, TargetIdList = chatData.TargetIds }, function(response)
             LastChatCoolTime = response.RefreshTime
             if response.Code ~= XCode.Success then

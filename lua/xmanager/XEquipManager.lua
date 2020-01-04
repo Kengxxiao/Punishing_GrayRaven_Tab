@@ -310,7 +310,7 @@ XEquipManagerCreator = function()
         local starToSuitIdsDic = {}
 
         local doNotRepeatSuitIds = {}
-        local equipIds = XEquipManager.GetAwarenessIds()
+        local equipIds = XEquipManager.GetNotWearingAwarenessIds()
         for _, equipId in pairs(equipIds) do
             local templateId = GetEquipTemplateId(equipId)
 

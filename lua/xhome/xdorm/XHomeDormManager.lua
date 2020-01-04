@@ -210,9 +210,6 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
         XDataCenter.DormManager.RequestDormitoryData(cb)
     else
         XDataCenter.DormManager.RequestDormitoryData()
-
-        local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
-        XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
     end
 end
 
@@ -543,6 +540,7 @@ function XHomeDormManager.SetSelectedRoom(roomId, isSelected, isvistor, onFinish
 
     if CurSelectedRoom then
         if CurSelectedRoom.Data.Id == room.Data.Id then
+            CurSelectedRoom:SetCharacterExit()
             CurSelectedRoom:SetSelected(isSelected, true, onFinishEnterRoom)
             if not isvistor then
                 CurSelectedRoom = nil
@@ -558,6 +556,14 @@ function XHomeDormManager.SetSelectedRoom(roomId, isSelected, isvistor, onFinish
     if isSelected then
         CurSelectedRoom = room
     end
+end
+
+function XHomeDormManager.CharacterExit(roomId)
+    local room = RoomDic[roomId]
+    if not room then
+        return 
+    end
+    room:SetCharacterExit()
 end
 
 -- 显示或隐藏指定房间的外部景物

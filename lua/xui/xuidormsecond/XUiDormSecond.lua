@@ -749,6 +749,7 @@ function XUiDormSecond:OnBtnLeftClick()
         self.CurIndex = #self.HostelNameDataList
         d = self.HostelNameDataList[self.CurIndex]
         self:UpdateData(self.CurDisplayState, d[2])
+        XHomeDormManager.CharacterExit(self.CurDormId)
         XHomeDormManager.SetSelectedRoom(self.CurDormId, true)
         return
     end
@@ -759,6 +760,7 @@ function XUiDormSecond:OnBtnLeftClick()
 
     self.CurIndex = self.CurIndex - 1
     self:UpdateData(self.CurDisplayState, d[2])
+    XHomeDormManager.CharacterExit(self.CurDormId)
     XHomeDormManager.SetSelectedRoom(self.CurDormId, true)
 end
 
