@@ -1,0 +1,240 @@
+Id	NextStep	Mask	ConditionType	ConditionParam	CompleteType	CompleteParam	Effect	Arrow	UiName	IsFlow[1]	ListIndex[1]	FlowParam[1]	Target[1]	IsFlow[2]	ListIndex[2]	FlowParam[2]	Target[2]	IsFlow[3]	ListIndex[3]	FlowParam[3]	Target[3]	IsFlow[4]	ListIndex[4]	FlowParam[4]	Target[4]	RewardId	Record	IconPos	Icon	Name	Text
+10101	10102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	终于跟你接上了！别的来不及解释，我带你了解一下连接员的基本操作。
+10102	10103	1	3	10101	1	UiTask			UiMain	0			SafeAreaContentPane/BgView/Background/BtnLegion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	从这里查看伊甸给各部队的任务。
+10103		1	6	PanelTaskStoryList	0				UiTask	1	98	Id	PanelTaskStoryList	0			BtnFinish										1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选取已完成的任务。
+10201	10202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	你已经提交了完成报告。现在来为队员更换一下【意识】装备。
+10202	10203	1	3	10201	1	UiCharacter			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10203	10204	1	3	10202	1	UiEquipAwarenessReplace			UiCharacter	0			BtnAwarenessReplace1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10204	10205	1	6	PanelEquipScroll	1	UiEquipAwarenessPopup			UiEquipAwarenessReplace	1	3012001		PanelEquipScroll	0			@										0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10205		1	3	10204	0				UiEquipAwarenessPopup	0			BtnPutOn	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10301	10302	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	【意识】装备也可以进行强化。
+10302	10303	1	3	10301	1	UiCharacter			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10303	10304	1	3	10302	1	UiEquipAwarenessReplace			UiCharacter	0			PanelAwareness1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10304	10305	1	3	10205|10303	1	UiEquipAwarenessPopup			UiEquipAwarenessReplace	0			PanelPos1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选择需要强化的【意识】装备。
+10305	10306	1	3	10304	1	UiEquipDetail			UiEquipAwarenessPopup	0			BtnStrengthen	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10306	10307	1	3	10305	1	UiEquipStrengthen			UiEquipDetail	0			BtnStrengthen	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10307	10308	1	6	PanelEquipScroll	0				UiEquipStrengthen	1	3912001		PanelEquipScroll	0			@										0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10308	10309	1	3	10307	0				UiEquipStrengthen				BtnStrengthen														1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10309		1	3	10308	0				UiEquipStrengthen	0			BtnMain	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10401	10402	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	准备工作已经完成，你的小队可以继续进行作战。
+10402	10403	1	3	10401	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10403	10404	1	6	PanelChapterList	5				UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10404	10405	1	3	10403	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0			10010101	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10405	10406	1	3	10404	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+10406		1	3	10405	0				UiNewRoomSingle	0			BtnEnterFight	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20101	20102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	现在来尝试一下新装备吧。
+20102	20103	1	3	20101	1	UiCharacter			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20103	20104	1	3	20102	1	UiEquipAwarenessReplace			UiCharacter	0			PanelAwareness4	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20104	20105	1	3	20103	0				UiEquipAwarenessReplace	0			Tog4	0													0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	【意识】根据不同位置会有不同属性加成。
+20105	20106	1	6	PanelEquipScroll	1	UiEquipAwarenessPopup			UiEquipAwarenessReplace	1	3042001		PanelEquipScroll	0			@										0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	装备的同名的【意识】，可触发套装效果。
+20106	20107	1	3	20105	0				UiEquipAwarenessPopup	0			BtnPutOn	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20107	20108	1	3	20106	0				UiEquipAwarenessReplace	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	两件同名【意识】即可触发二件套效果。
+20108		1	3	20107	0				UiEquipAwarenessReplace	0			BtnMain	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20201	20202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	一切就绪，准备前往作战地点。
+20202	20203	1	3	20201	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20203	20204	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20204	20205	1	3	20203	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0	10010102		PanelStageContent	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20205	20206	1	3	20204	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+20206		1	3	20205	0				UiNewRoomSingle	0			BtnEnterFight	0													1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+30101	30102	1	1	UiFubenMainLineChapter	0				UiFubenMainLineChapter	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	副本通关后可以获取装备奖励。
+30102		1	3	30101	0				UiFubenMainLineChapter	0				0													1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	继续挑战接下来的副本吧。
+40101	40102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	让我们来领取一下任务奖励。
+40102	40103	1	3	40101	1	UiTask			UiMain	0			SafeAreaContentPane/BgView/Background/BtnLegion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40103		1	3	40102	0				UiTask	0	10010103		PanelCourseContainer	0			BtnClick										1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	留意下方，领取【主线任务奖励】。
+40201	40202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	新的构造体已苏醒，请做好必要的战前准备。
+40202	40203	1	3	40201	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入【成员】选择新的构造体。
+40203	40204	1	3	40202	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40204	40205	1	3	40203	0				UiCharacter	1	1031001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40205	40206	1	3	40204	0				UiCharacter	0			BtnLevelUp	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40206	40207	1	3	40205	0	UiCharacter|PanelCharLevel			UiCharacter	0			BtnLevelUpButton	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40207	40208	1	6	30011	0	UiCharacter|PanelSelectLevelItems			UiCharacter	0			30011	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选取足够的【经验材料】。
+40208		1	3	40207	0				UiCharacter	0			BtnUpgrade	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40301	40302	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	一切就绪，准备前往作战地点。
+40302	40303	1	3	40301	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40303	40304	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40304	40305	1	3	40303	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0	10010104		PanelStageContent	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40305	40306	1	3	40304	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40306	40307	1	3	40305	0				UiNewRoomSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	将新成员编入作战队伍。
+40307	40308	1	3	40306	1	UiMainLineRoomCharacter			UiNewRoomSingle	0			BtnChar1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40308	40309	1	3	40307	0				UiMainLineRoomCharacter	0	1031001		PanelRoleContent	0			@										1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40309	40310	1	3	40308	0				UiMainLineRoomCharacter	0			BtnJoinTeam	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+40310		1	1	UiNewRoomSingle	0				UiNewRoomSingle	0			BtnEnterFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50101	50102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	提升构造体的技能等级，可以让他们更加强大。
+50102	50103	1	3	50101	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入成员选择一个构造体。
+50103	50104	1	3	50102	0				UiCharacter	1	1031001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50104	50105	1	3	50103	0				UiCharacter	0			BtnLevelUp	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50105	50106	1	3	50104	0				UiCharacter	0			TogSkill	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50106	50107	1	3	50105	5				UiCharacter	0			GridSkillItem4/RImgSkillIcon	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入【技能】的配置分页。
+50107	50108	1	3	50106	0				UiCharacter	0			103118/BtnSubSkillIconBg	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选中需要升级的【技能】。
+50108		1	3	50107	0				UiCharacter	0			BtnUpgradeButtonOn	0													1	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50201	50202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	前往作战地点。
+50202	50203	1	3	50201	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50203	50204	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50204	50205	1	3	50203	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0	10010201		PanelStageContent	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50205	50206	1	3	50204	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+50206	50207	1	3	50205	0				UiNewRoomSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	当前丽芙安排在<color=#00EEEE>【蓝色位置】</color>。
+50207	50208	1	3	50206	0				UiNewRoomSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	使用其他角色触发<color=#00EEEE>蓝球3消</color>即可让丽芙使出【援护攻击】。
+50208		1	3	50207	0				UiNewRoomSingle	0			BtnEnterFight	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+70101	70102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	对于新任连接员，有大量的【新手目标】等待达成。
+70102	70103	1	3	70101	0				UiMain	0			BtnTarget	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入进行查看。
+70103		1	6	SViewTask	0				UiNewPlayerTask	1	7100	Id	SViewTask	0			BtnCollect										1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+90101	90102	1	1	UiMain	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	当前已满足构造体【晋升】条件，请进入成员界面。
+90102	90103	1	3	90101	0				UiCharacter	1	1021001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+90103	90104	1	3	90102	0				UiCharacter	0			BtnLevelUp	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+90104	90105	1	3	90103	0				UiCharacter	0			TogGrade	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+90105	90106	1	3	90104	0				UiCharacter	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	构造体晋升后能有效提高作战能力。
+90106	90107	1	3	90105	0				UiCharacter	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	留意晋升所需的条件。
+90107		1	3	90106	0				UiCharacter	0			BtnWisdom	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+110101	110102	1	1	UiMain	1	UiSocial			UiMain	0			BtnSocial	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入好友界面，尝试添加其他指挥官。
+110102	110103	1	3	110101	0				UiSocial	0			BtnMainAddContact	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+110103		1	3	110102	0				UiSocial	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	尝试添加联络人。
+120101	120102	1	1	UiMain	0				UiMain	0			BtnRole	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+120102	120103	1	3	120101	1	UiFavorability			UiMain	0			PanelLayout	0			BtnInteractive										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+120103	120104	1	3	120102	0				UiFavorability	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	点击可以切换看板，或查看更多构造体的资料。
+120104	120105	1	3	120103	0				UiFavorability	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	点击偶遇可以与构造体进行小游戏，提升构造体好感度。
+130001	130002	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	研发可以获取新的【构造体】、【武器】和【意识】。
+130002	130003	1	3	130001	0				UiMain	0				0												1300	1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	作为特例，给你一些【研发券】吧。
+130003		1	2	UiObtain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	好了，以后记得还我哟。
+130101	130102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	来尝试一下研发。
+130102	130103	1	3	130101|130003	1	UiDrawMain			UiMain	0			BtnReward	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130103	130104	1	6	UiDrawMain	0				UiDrawMain	0			1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130104	130105	1	6		1	UiDraw			UiDrawMain	0			DrawStandardPt01	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130105		1	3	130104	0				UiDraw	0			BtnDraw1	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130201	130202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	新的【构造体】已苏醒，请做好必要的战前准备。
+130202	130203	1	3	130201	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	进入【成员】选择新的构造体。
+130203	130204	1	3	130202	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130204	130205	1	3	130203	0				UiCharacter	1	1051001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130205	130206	1	3	130204	0				UiCharacter	0			BtnLevelUp	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130206	130207	1	3	130205	0	UiCharacter|PanelCharLevel			UiCharacter	0			BtnLevelUpButton	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130207	130208	1	6	30012	0				UiCharacter	0			30012	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选取足够的【经验材料】。
+130208	130209	1	3	130207	0				UiCharacter	0			BtnUpgrade	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130209		1	2	UiCharacter|PanelLevelUpgrade	0				UiCharacter	0			BtnMainUi	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130301	130302	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	一切就绪，准备前往作战地点。
+130302	130303	1	3	130301	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130303	130304	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130304	130305	1	3	130303	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0	10010401		PanelStageContent	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130305	130306	1	3	130304	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130306	130307	1	3	130305	0				UiNewRoomSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	编入新队员进行作战。
+130307	130308	1	3	130306	1	UiMainLineRoomCharacter			UiNewRoomSingle	0			BtnChar3	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130308	130309	1	3	130307	0				UiMainLineRoomCharacter	0	1051001		PanelRoleContent	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130309	130310	1	3	130308	0				UiMainLineRoomCharacter	0			BtnJoinTeam	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+130310		1	1	UiNewRoomSingle	0				UiNewRoomSingle	0			BtnEnterFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150101	150102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	活动任务已开启，前往领取任务奖励。
+150102	150103	1	3	150101	1	UiTask			UiMain	0			BtnLegion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150103	150104	1	3	150102	0				UiTask	0			TogActivity	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150104		1	6	PanelTaskActivityList	0				UiTask	1	5107	Id	PanelTaskActivityList	0			BtnFinish										1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	选取已完成的任务。
+170101	170102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	日常任务已开启，前往领取任务奖励。
+170102	170103	1	3	170101	1	UiTask			UiMain	0			BtnLegion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+170103	170104	1	3	170102	0				UiTask	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+170104	170105	1	3	170103	0				UiTask	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	指挥官通过完成日常任务可以获得相应的【经验值】。
+170105		1	3	170104	0				UiTask	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	记得每日清理任务哦！
+180101	180102	1	1	UiNewRoomSingle	0				UiNewRoomSingle	0			BtnAssistToggle	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	点击此处发射【支援信号】。
+180102		1	3	180101	0				UiNewRoomSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	如果附近的小队接收到信号，将会前来支援。
+210101	210102	1	1	UiMain	1	UiPlayer			UiMain	0			BtnRoleInfo	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	接下来我们查看一下成就吧。
+210102	210103	1	3	210101	0				UiPlayer	0			TogAchv	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+210103		1	3	210102	0				UiPlayer	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	在该界面领取成就奖励。
+220101	220102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	对了，研发中的【狙击模式】可以提高部分装备的概率。
+220102	220103	1	3	220101	1	UiDrawMain			UiMain	0			BtnReward	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+220103	220104	1	6	UiDrawMain	0				UiDrawMain	0			2	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+220104	220105	1	3	220103	1	UiDraw			UiDrawMain	0			DrawStandardJj02	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+220105		1	3	220104	0				UiDraw	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	在下方使用【装备选择】，可以自选一组想要提高概率的装备组合。
+230101	230102	1	1	UiMain	1	UiShop			UiMain	0			BtnStore	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	有需要的话，可以进入商店选购需要的物资。
+230102		1	6	1	0				UiShop	0			1	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+250101	250102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	训练已经准备好了，请准备进入意识海。
+250102	250103	1	3	250101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+250103	250104	1	3	250102	1	UiFubenDailyBanner			UiFuben	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换为日常分页。
+250104	250105	1	6	PanelChapterList	1	UiFubenChallengeMap			UiFubenDailyBanner	1	1		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+250105		1	3	250104	0				UiFubenChallengeMap	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战完成后可获得丰富的【构造体经验】。
+260101	260102	1	1	UiMain	1	UiMission			UiMain	0			BtnDispatch	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	嘟嘟嘟，听到吗，你有一则派遣任务通知。
+260102		1	3	260101	0				UiMission	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	选择派遣任务，添加人员，完成任务获取奖励。
+270101	270102	1	1	UiMain	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	阿！忘记说了，构造体可以改变涂装！
+270102	270103	1	3	270101	0				UiCharacter	1	1021001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+270103	270104	1	3	270102	1	UiFashion			UiCharacter	0			BtnFashion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+270104		1	3	270103	0				UiFashion	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	获取的涂装可以在这个界面查看。
+1010101	1010102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	困难模式中，会产出大量的【武器】和【意识】，对于装备的获取和提升是一个有效的途径。
+1010102	1010103	1	3	1010101	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1010103	1010104	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1010104	1010105	1	3	1010103	0				UiFubenMainLineChapter	0			BtnNormal	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1010105	1010106	1	3	1010104	5				UiFubenMainLineChapter	0			BtnHard	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	选择困难模式。
+1010106	1010107	1	3	1010105	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0			11010101	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1010107	1010108	1	3	1010106	1	UiNewRoomSingle			UiFubenMainLineDetail	0			BtnEnter	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1010108		1	3	1010107	0				UiNewRoomSingle	0			BtnEnterFight	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020101	1020102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	获得对应的构造体碎片后，可以激活【进化】系统。
+1020102	1020103	1	3	1020101	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020103	1020104	1	3	1020102	0				UiCharacter	1	1021001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020104	1020105	1	3	1020103	0				UiCharacter	0			BtnLevelUp	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020105	1020106	1	3	1020104	0				UiCharacter	0			TogQuality	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020106	1020107	1	3	1020105	0				UiCharacter	0			BtnActive	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	点击激活。
+1020107		1	3	1020106	0				UiCharacter	0			BtnMainUi	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020201	1020202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	一切就绪，准备前往作战地点。
+1020202	1020203	1	3	1020201	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020203	1020204	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020204	1020205	1	3	1020203	0				UiFubenMainLineChapter	0			BtnNormal	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020205	1020206	1	3	1020204	5				UiFubenMainLineChapter	0			BtnHard	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020206	1020207	1	3	1020205	1	UiFubenMainLineDetail			UiFubenMainLineChapter	0			11010101	0			0										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1020207	1020208	1	3	1020206	1	UiAutoFightDialog			UiFubenMainLineDetail	0			BtnAutoFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	自动作战，可模拟上1次作战记录进行作战。
+1020208		1	3	1020207	0				UiAutoFightDialog	0			BtnStart	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	每个战场首次通关后可以使用，减少连接员的操作压力。
+1030101	1030102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	一起来，进行资源回收！
+1030102	1030103	1	3	1030101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1030103	1030104	1	3	1030102	1	UiFubenDailyBanner			UiFuben	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换为日常分页。
+1030104	1030105	1	6	PanelChapterList	1	UiFubenCoinSkill			UiFubenDailyBanner	1	4		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1030105		1	3	1030104	0				UiFubenCoinSkill	0			PanelTab2	0													0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战等级会根据当前指挥官的等级而变动，同时奖励会更丰富。
+1070101	1070102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	来了！赏金任务已开放。
+1070102	1070103	1	3	1070101	1	UiTask			UiMain	0			SafeAreaContentPane/BgView/Background/BtnLegion	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1070103		1	3	1070102	1	UiMoneyReward			UiTask	0			BtnMoneyReward	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	从此处进入赏金任务。
+1090101	1090102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	让我们去看一下收集螺母的战场。
+1090102	1090103	1	3	1090101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1090103	1090104	1	3	1090102	1	UiFubenDailyBanner			UiFuben	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换为日常分页。
+1090104	1090105	1	6	PanelChapterList	1	UiFubenCoinSkill			UiFubenDailyBanner	1	4		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1090105		1	3	1090104	0				UiFubenCoinSkill	0			PanelTab1	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战等级会根据当前指挥官的等级而变动，同时奖励会更丰富。
+340101	340102	1	1	UiMain	1	UiCharacter			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+340102		1	3	340101	0				UiCharacter	0			BtnOwnedDetail	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	这里可以查看构造体的详情。
+450101	450102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	继续进行作战。
+450102	450103	1	3	450101	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+450103	450104	1	6	PanelChapterList	1	UiFubenMainLineChapter			UiFubenMainLineBanner	1	1001	Id	PanelChapterList	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+450104	450105	1	3	450103	0				UiFubenMainLineChapter	0			BtnNormal	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+450105	450106	1	3	450104	0				UiFubenMainLineChapter	0			BtnNightmare	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	选择据点模式
+450106		1	3	450105	0				UiFubenMainLineChapter	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	据点模式通过后，可提高【派遣收益】。
+2430101	2430102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	幻痛囚笼已开放，准备好了吗。
+2430102	2430103	1	3	2430101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+2430103	2430104	1	3	2430102	1	UiFubenChallengeBanner			UiFuben	0			TogChallenge	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换为挑战分页。
+2430104	2430105	1	6	PanelChapterList	1	UiFubenChallengeMapBossSingle			UiFubenChallengeBanner	1	3		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+2430105		1	3	2430104	0				UiFubenChallengeMapBossSingle	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	只要击败boss，即可获取【专属货币】进行物资兑换。
+1050101	1050102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	一切就绪，准备前往作战地点。
+1050102	1050103	1	3	1050101	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1050103	1050104	1	3	1050102	0				UiFubenMainLineBanner	0			TogTabDz	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1050104	1050105	1	6		1	UiPrequel			UiFubenMainLineBanner	1	1001	CoverId	FullScreenBackground/MainLineChapter3d/PanelChapterDz/PanelChapterDz	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1050105		1	3	1050104	0				UiPrequel	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	想更多的了解构造体的，可以尝试一下哦。
+1060101	1060102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	一切就绪，准备前往作战地点。
+1060102	1060103	1	3	1060101	1	UiFubenMainLineBanner			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1060103	1060104	1	3	1060102	0				UiFubenMainLineBanner	0			TogTabDz	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1060104	1060105	1	6		1	UiPrequel			UiFubenMainLineBanner	1	1001	CoverId	FullScreenBackground/MainLineChapter3d/PanelChapterDz/PanelChapterDz	0			@										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1060105	1060106	1	3	1060104	0				UiPrequel	0			BtnSwitch2Fight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1060106		1	3	1060105	0				UiPrequel	0				0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	通过挑战后，有机会获得相应的构造体碎片。
+1040101	1040102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	意识营救战已开启。
+1040102	1040103	1	3	1040101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1040103	1040104	1	3	1040102	1	UiFubenChallengeBanner			UiFuben	0			TogChallenge	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换至挑战分页。
+1040104	1040105	1	6	PanelChapterList	1	UiTrial			UiFubenChallengeBanner	1	1		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1040105		1	3	1040104	0				UiTrial	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战副本，赢取【装备奖励】。
+2370101	2370102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	立刻前往，纷争战区！
+2370102	2370103	1	3	2370101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+2370103	2370104	1	3	2370102	1	UiFubenChallengeBanner			UiFuben	0			TogChallenge	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换至挑战分页。
+2370104	2370105	1	6	PanelChapterList	1	UiArena			UiFubenChallengeBanner	1	2		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+2370105		1	3	2370104	0				UiArena	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战完成后，有丰富【黑卡奖励】。
+150201	150202	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	让我们穿戴刚获取的装备。
+150202	150203	1	3	150201	5	SViewCharacterList			UiMain	0			BtnConstructor	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150203	150204	1	3	150202	0				UiCharacter	1	1021001	Id	SViewCharacterList	0			BtnCharacter										0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150204	150205	1	3	150203	1	UiEquipReplaceNew			UiCharacter	0			BtnWeaponReplace	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150205	150206	1	6		0				UiEquipReplaceNew	1	2023001		PanelEquipScroll	0			@										0	1	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150206	150207	1	3	150205	0				UiEquipReplaceNew	0			BtnTakeOn	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	
+150207		1	3	150206	0				UiEquipReplaceNew	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	谜之少女	需要更换装备时，吞噬原有装备的【经验值】会100%返还，请放心强化。
+1100101	1100102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	请前往【界限突破】。
+1100102	1100103	1	3	1100101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1100103	1100104	1	3	1100102	1	UiFubenDailyBanner			UiFuben	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换至日常分页。
+1100104	1100105	1	6	PanelChapterList	1	UiFubenChallengeMap			UiFubenDailyBanner	1	2		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1100105		1	3	1100104	0				UiFubenChallengeMap	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	装备突破后会进行【等级重置】，但升级【属性成长】会大大提高。
+1080101	1080102	1	1	UiMain	0				UiMain	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	请前往【EXEM行动】。
+1080102	1080103	1	3	1080101	1	UiFuben			UiMain	0			BtnFight	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1080103	1080104	1	3	1080102	1	UiFubenDailyBanner			UiFuben	0			TogDaily	0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	切换至日常分页。
+1080104	1080105	1	6	PanelChapterList	1	UiFubenChallengeMap			UiFubenDailyBanner	1	3		PanelChapterList	0													1	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	
+1080105		1	3	1080104	0				UiFubenChallengeMap	0				0													0	0	Assets/Product/Texture/Image/RoleCharacter/SailikaNomal01.png	赛利卡	挑战完成后有机会获得【高级装备】。

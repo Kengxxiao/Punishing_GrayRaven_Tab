@@ -1,0 +1,4 @@
+LevelType	MinRank	MaxRank	RankId	Icon	LevelName	ReserveSecond	BaseRankNum
+1	1	54	1501	Assets/Product/Texture/Image/IconType/IconRank1.png	初级区	604800	10000
+2	55	69	1502	Assets/Product/Texture/Image/IconType/IconRank2.png	中级区	604800	10000
+3	70	100	1503	Assets/Product/Texture/Image/IconType/IconRank3.png	高级区	604800	10000

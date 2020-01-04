@@ -1,0 +1,2 @@
+Id	Type	Name	NameEn	Desc	SimpleDesc	DetailDesc	Icon	IsClose	ResetType	ResetTime	ResetInterval	ShopId
+1301	5	幻痛囚笼	EnglishName	单机BOSS	幻痛囚笼	可挑战游戏中各大boss，初级区每周刷新2只boss，中级、高级区每次随机刷新3只boss。\n击杀boss可获取讨伐值，当讨伐值达到一定值后，自动领取讨伐值奖励。\n每周一5:00玩法刷新。\n每周一结算排名奖励，根据当前的排名情况发送奖励。\n当角色耐力为0时，无法挑战未通关关卡，角色耐力每次重置时恢复。\n每日仅可挑战boss4次。	Assets/Product/Texture/Image/UiFubenChallengeBanner/UiFubenChallengeChapter02.png		3	3#0|0#0	18000	301

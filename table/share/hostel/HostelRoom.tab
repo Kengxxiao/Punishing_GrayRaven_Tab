@@ -1,0 +1,4 @@
+Id	Floor	Name	CostId	CostCount	ConditionId[1]	ConditionId[2]	ConditionId[3]
+1	1	楼大厅			30001		
+2	2	楼大厅	30100	10	30002		
+3	3	楼大厅	30100	50	30003		

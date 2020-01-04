@@ -1,7 +1,0 @@
-Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCamera	CameraId	Terrains[1]	Terrains[2]	Terrains[3]	Position[1]	Position[2]	Position[3]	Rotation[1]	Rotation[2]	Rotation[3]
-11050101	11050101	丽芙进入意识海 ~			0.15	15	19	9	110501010								
-11050102	11050102	拯救遗忘者 ~			0.15	15	18	10	110501020								
-11050103	11050103	意识体-B ~			0.15	15	18	9	110501030								
-11050104	11050104	意识体-B追击 ~			0.15	15	19	9	110501040								
-11050105	11050105	逃离意识体追捕 ~			0.15	15	1	9	110501050								
-11050106	11050106	对战丽芙仰光 ~			0.15	15	2	9	110501060								

@@ -1,0 +1,26 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+900399		2										5			-1					Root	FxMo1BraveMd010031Death		-1			1																																1										
+900999		2										5			-1					Root	Mo1BraveMd030011Death		-1			1																																1										
+901099		2										5			-1					Root	FxMoCaMd030010AttackDeath		-1			1																																1										
+901199		2										5			-1					Root	FxMe1BioMd030061Death		-1			1																																1										
+901299		2										5			-1					Root	FxMoActMd010010Death		-1			1																																1										
+901399		2										5			-1					Root	FxMe1BraveMd020021Death		-1			1																																1										
+901599		2										5			-1					Root	FxMo1BraveMd010031Death		-1			1																																1										
+901699		2										5			-1					Root	FxMo1BioMd030051Death		-1			1																																1										
+901799		2										5			-1					Root	FxMo1BioMd010141Death		-1			1																																1										
+901899		2										5			-1					Root	FxMo1BioMd010121Death		-1			1																																1										
+901999		2										5			-1					Root	FxMo1ArmorMd010071Death		-1			1																																1										
+902099		2										5			-1					Root	FxMo1BraveMd010131Death		-1			1																																1										
+902199		2										5			-1					Root	FxMe1ArmorMd010091Death		-1			1																																1										
+902599		2										5			-1					Root	FxMo1SsjkMd000004Death		-1			1																																1										
+903699		2										5			-1					Root	FxMe1BioMd004030Death		-1			1																																1										
+904299		2										5			-1					Root	FxMe1RocketMd002002Death		-1			1																																1										
+960199		2										5			-1						FxDeath01		-1			1																																1										
+960499		2										5			-1						FxDeath01		-1			1																																1										
+960599		2										5			-1						FxDeath01		-1			1																																1										
+960699		2										5			-1						FxDeath01		-1			1																																1										
+960799		2										5			-1						FxDeath01		-1			1																																1										
+960899		2										5			-1						FxDeath01		-1			1																																1										
+961099		2										5			-1						FxDeath01		-1			1																																1										
+961499		2										5			-1						FxDeath01		-1			1																																1										
+961599		2										5			-1						FxDeath01		-1			1																																1										

@@ -1,0 +1,17 @@
+Id	ChapterId	UnlockEvent[1]	UnlockEvent[2]	GainDesc[1]	GainDesc[2]	Icon	BuffName	Explain	EventId
+1	1	302010101		探索M-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj1.png	加速	增加移动速度20%	302010101
+2	1	302010301		探索B II-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj2.png	助战	当血量低于50%且受到伤害，会出现援助，持续10秒	302010301
+3	1	302010701		探索B III-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj3.png	削弱	面对苦刑之女时，削弱其一半生命值	302010701
+4	1	302011101		探索B I-5		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj4.png	攻击提升	全部伤害增加20%	302011101
+5	2	302020101		探索M 1-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj5.png	伤害减少	受到的全部伤害减低15%	302020101
+6	2	302020401		探索M I-7		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj6.png	助跑	战斗外持续移动可进入加速状态	302020401
+7	2	302020701		探索B-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj7.png	狂化	击中敌方时增加3%全伤害，持续7秒，最多叠加10层	302020701
+8	2	302020801		探索M II-6		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj8.png	援助	在和时间猎人的战斗中，大幅提升友方构造体性能	302020801
+9	3	302030201		探索M l-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj9.png	铸能	增加1000生命上限	302030201
+10	3	302030301		探索M l-3		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj10.png	动能	连续移动3秒增加伤害	302030301
+11	3	302030401		探索B l-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj11.png	强殖臂	增伤10%，增加负重能力	302030401
+12	3	302030701		探索M l-8		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj12.png	幸运	15%概率闪避伤害	302030701
+13	4	302040201		探索M-3		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj13.png	洞察	增加15%暴击	302040201
+14	4	302040301		探索B ll-2		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj14.png	铁壁	防御力翻倍，增加对机械理解	302040301
+15	4	302040401		探索M-6		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj15.png	奔雷	移速增加30%，攻击概率造成雷伤	302040401
+16	4	302040501		探索B lll-1		Assets/Product/Texture/Image/UiExplore/UiExploreIconDj16.png	不屈	增伤10%，血量越低伤害越高	302040501

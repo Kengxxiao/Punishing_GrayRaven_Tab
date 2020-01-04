@@ -1,0 +1,15 @@
+Id	RoomType	Scene	Name	Desc	Path	OpenUI
+1	1	RoomDomitory	主电脑		GroupBase/Plant001/Bind/Device	UiHostelDeviceDetail
+2	2	RoomDomitory	粒子发生器		GroupBase/Plant002/Bind/Device	UiHostelDeviceDetail
+3	3	RoomDomitory	工厂		GroupBase/Plant003/Bind/Device	UiHostelDeviceDetail
+4	4	RoomDomitory	基地装备		GroupBase/Plant004/Bind/Equip	UiBaseEquip
+5	4	RoomDomitory	基地商店		GroupBase/Plant004/Bind/Shop	UiShop
+201	2	RoomDomitory	发电槽1		GroupBase/Plant002/Bind/Slot1	UiHostelCharacterWork
+202	2	RoomDomitory	发电槽2		GroupBase/Plant002/Bind/Slot2	UiHostelCharacterWork
+203	2	RoomDomitory	发电槽3		GroupBase/Plant002/Bind/Slot3	UiHostelCharacterWork
+301	3	RoomDomitory	工厂槽位1		GroupBase/Plant003/Bind/Slot1	UiHostelCharacterWork
+302	3	RoomDomitory	工厂槽位2		GroupBase/Plant003/Bind/Slot2	UiHostelCharacterWork
+303	3	RoomDomitory	工厂槽位3		GroupBase/Plant003/Bind/Slot3	UiHostelCharacterWork
+304	3	RoomDomitory	工厂槽位4		GroupBase/Plant003/Bind/Slot4	UiHostelCharacterWork
+305	3	RoomDomitory	工厂槽位5		GroupBase/Plant003/Bind/Slot5	UiHostelCharacterWork
+306	3	RoomDomitory	工厂槽位6		GroupBase/Plant003/Bind/Slot6	UiHostelCharacterWork

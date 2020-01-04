@@ -1,0 +1,9 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+870199		2										5			-1						FxMb1OsirisMd000001Death		-1			1																																1										
+870299		2										5			-1						FxMb1OsirisMd000002Death		-1			1																																1										
+870399		2										5			-1						FxMb1OsirisMd000003Death		-1			1																																1										
+870599		2										5			-1						FxMb1OsirisMd000001Attack07DandaoExit		-1			1																																1										
+871099		2										5			-1						FxMb1OsirisMd000001Death		-1			1																																1										
+873199		2										5			-1					HitCase	FxMb1LuosaitaMd010001DeathLJ		-1			1																																1										
+873299		2										5			-1								-1			1																																1										
+873399		2										5			-1					HitCase	FxMb1LuosaitaMd010001DeathLJ		-1			1																																1										

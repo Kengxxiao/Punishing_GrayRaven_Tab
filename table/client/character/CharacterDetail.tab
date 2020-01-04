@@ -1,0 +1,17 @@
+Id	BigImgPath	ObtainElementList[1]	ObtainElementList[2]	ObtainElementList[3]	ObtainElementValueList[1]	ObtainElementValueList[2]	ObtainElementValueList[3]	ObtainSpeicalTitle[1]	ObtainSpeicalTitle[2]	ObtainSpeicalTitle[3]	ObtainSpeicalDes[1]	ObtainSpeicalDes[2]	ObtainSpeicalDes[3]	AttribGraphNum[1]	AttribGraphNum[2]	AttribGraphNum[3]	AttribGraphNum[4]	AttribGraphNum[5]	AttribGraphNum[6]	DetailDes	Career	CareerIcon
+1011002	RoleStory.LiangNomal01	1	2		60	40		连击	混合伤害		极易打出高段数的伤害	可造成物理伤害和属性伤害		75	60	40	65	65	75	灰鸦小队队员，表面上有些冷漠，擅长程序与机械，负责灰鸦小队的硬件升级与解决技术难题。	1	RoleStory.LiangNomal01
+1021001	RoleStory.LuxiyaNormal01	1	2		80	20		单挑	双刀术		强大的单体攻击能力	技能增幅自身攻击伤害		70	65	40	55	50	75	灰鸦小队队长，具有强大的勇气与牺牲精神，意志坚定地遵守命令在各个战区和感染体作战。	1	RoleStory.LuxiyaNormal01
+1031001	RoleStory.LifuNormal01	1			100			混战	治疗		强大的群体攻击能力	拥有治疗友方的技能		45	60	80	60	60	55	灰鸦小队队员，富有同情心的她作为最新辅助型构造体，为团队提供着可靠的支援力量，是团队最坚实的后盾。	3	RoleStory.LifuNormal01
+1041002	RoleStory.OlisuoNomal01	1			100			单挑	能量增加		强大的单体攻击能力	较快的必杀技释放频率		85	55	30	40	75	80	清理部队队长，优雅而冷酷的构造体，能够很好的安排并且处理好总部派来的清理命令。	1	RoleStory.OlisuoNomal01
+1051001	RoleStory.Yongyechaonormal01	1			100			减伤	屏蔽伤害		减少自身受到的伤害	必杀技范围内屏蔽一切伤害		55	80	60	65	55	60	行踪时常捉摸不定的神秘构造体，活泼热闹却几乎无人知晓她的真实身份，最大的爱好是观察人类和恶作剧。	2	RoleStory.Yongyechaonormal01
+1061002	RoleStory.ShenweiNormal01	1			100			格挡	护盾		拥有格挡伤害的技能	释放护盾保护自身		65	80	60	75	80	60	突击鹰小队的队员，擅长单独行动，天性乐观并且乐于助人，但脱线的性格也经常让他惹出不少麻烦。	2	RoleStory.ShenweiNormal01
+1071002	RoleStory.KalieninaNomal01	1	2		80	20		混合伤害	形态切换		可造成物理伤害和属性伤害	必杀技可切换攻击模式		65	65	35	80	80	70	工程部队的成员，出身自寰宇技师工会，目前长期作为清理部队的外援行动，生性暴躁单纯，比起谋略更倾向用爆炸解决问题。	1	RoleStory.KalieninaNomal01
+1081002	RoleStory.DubianNomal01	1			100			单挑	背刺		强大的单体攻击能力	背后攻击造成额外伤害		85	65	25	50	90	80	遗忘者们的领袖，曾经选择了离开空中花园，与那些被世界遗忘的战友们共同安守住一方绿洲。	1	RoleStory.DubianNomal01
+1021002	RoleStory.R2LuxiyaNormal01	1	4		40	60		单挑	混合伤害		强大的单体攻击能力	可造成物理伤害和属性伤害		80	70	40	65	70	65	露西亚的标志性机体，其强大而绚丽的身姿在战场上鼓舞着无数同伴，因被视作希望的象征而被冠以“黎明”之名。	1	RoleStory.R2LuxiyaNormal01
+1031002	RoleStory.R2LifuNormal01	1	4		20	80		治疗	混合伤害		拥有治疗友方的技能	可造成物理伤害和属性伤害		65	65	95	75	65	50	丽芙剪去了长发，以表明自身的觉悟意志，在调整为更适合战斗的姿态后，终于重新返回战场。	3	RoleStory.R2LifuNormal01
+1061003	RoleStory.R3KalieninaNormal01	1	5		50	50		混合伤害	形态切换		可造成物理伤害和属性伤害	必杀技可切换攻击模式		75	90	65	75	30	45	神威在被灌入并压制住体内澎湃的暗能后所诞生的机体形态，能够自由在两种战斗模式间切换。	2	RoleStory.R3ShenweiNormal01
+1031003	RoleStory.R3LifuNormal01	1			100			治疗	群体减伤		拥有治疗友方的技能	必杀技可减少友方受到的伤害		70	70	90	80	40	65	丽芙强大的内心中始终保存着一个单纯的梦，而这份耀眼的单纯也铸就了这台强大的机体。	3	RoleStory.R3LifuNormal01
+1011003	RoleStory.R3LiNormal01	1			100			连击	物理伤害		极易打出高段数的伤害	技能组合非常强大		75	65	40	85	50	75	突破了准则的限制，过去与现在的感情交织，构造了机体的基础。以强大的运算能力更精确地把握住弹道，里成为了战场上最精锐的攻击尖兵。	1	RoleStory.R3LiNormal01
+1071003	RoleStory.R3KalieninaNormal01	1	2		30	70		混战	混合伤害		强大的群体攻击能力	可造成物理伤害和属性伤害		65	75	40	90	55	65	解放了武器的出力限制，获得完全状态的卡列尼娜。脱去隐藏烈焰的外套，展现战斗本能，释放的高热是她燃尽一切阻碍的决心。	1	RoleStory.R3KalieninaNormal01
+1051003	RoleStory.R3Yongyechaonormal01	1	2		50	50		混合伤害	抗性削减		可造成物理伤害和属性伤害	拥有减少怪物属性抗性的能力		68	85	70	70	60	55	七实的机动强化型机体，自行加装了IR-005推进轮，拥有高速突进能力的她能在战场上自由驰骋，“只能看到我的残影吧，哼哼”。	2	RoleStory.R3Yongyechaonormal01
+1021003	RoleStory.R3LuxiyaNormal03	1			100			单挑	形态切换		强大的单体攻击能力	技能可切换攻击模式		90	60	40	75	45	90	在015号城市的行动中与灰鸦小队初次见面的神秘敌人，给人留下了强大而随性的印象。似乎对灰鸦小队，特别是露西亚，有着不同寻常的关注。	1	RoleStory.R3LuxiyaNormal03

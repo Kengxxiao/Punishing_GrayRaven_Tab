@@ -1,4 +1,0 @@
-Level	DisplayName	Enable	Blur	TextureSize	Layers[0]	Layers[1]	Layers[2]	Layers[3]	Layers[4]	BlurIteration	BlurLerp
-0	关闭	0									
-1	低清	1	1	128	0	8	9	10		1	1
-2	高清	2	1	256	0	8	9	10		3	0.5

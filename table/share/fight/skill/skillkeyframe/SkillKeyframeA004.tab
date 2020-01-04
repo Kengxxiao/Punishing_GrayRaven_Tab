@@ -1,0 +1,131 @@
+Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11]	Key[12]	Key[13]	Key[14]	Key[15]	Key[16]	Key[17]	Key[18]	Key[19]	Key[20]	Key[21]	Key[22]	Key[23]	Key[24]	Key[25]	Key[26]	Key[27]	Key[28]	Key[29]	Key[30]	Key[31]	Key[32]	Key[33]	Key[34]	Key[35]	Key[36]	Key[37]	Key[38]	Key[39]	Key[40]	Key[41]	Key[42]	Key[43]	Key[44]	Key[45]	Key[46]	Key[47]	Key[48]	Key[49]	Key[50]	Key[51]	Key[52]	Key[53]	Key[54]	Key[55]	Key[56]	Key[57]	Key[58]	Key[59]	Key[60]	Key[61]	Key[62]	Key[63]	Key[64]	Key[65]	Key[66]	Key[67]	Key[68]	Key[69]	Key[70]	Key[71]	Key[72]	Key[73]	Key[74]	Key[75]	Key[76]	Key[77]	Key[78]	Key[79]	Key[80]
+100101	2|Cast|10010101	4|Cast|10010102	6|Cast|10010103	8|Cast|10010104	10|Cast|10010105	13|Cast|10010106	16|Cast|10010107	18|Cast|10010108	20|Cast|10010109	22|Cast|10010110	24|Cast|10010111	26|Cast|10010112	28|Cast|10010113	30|Cast|10010114	33|Cast|10010115	1|Move|3|1.65|	1|Effect|FxR2LiangAttack11||1	1|Magic|100029|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100102	2|Cast|10010201	4|Cast|10010202	6|Cast|10010203	8|Cast|10010204	10|Cast|10010205	13|Cast|10010206	16|Cast|10010207	18|Cast|10010208	20|Cast|10010209	22|Cast|10010210	24|Cast|10010211	26|Cast|10010212	28|Cast|10010213	30|Cast|10010214	33|Cast|10010215	1|Move|4|1.65|	1|Effect|FxR2LiangAttack12||1	1|Magic|100030|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100103	2|Cast|10010301	4|Cast|10010302	6|Cast|10010303	8|Cast|10010304	10|Cast|10010305	13|Cast|10010306	16|Cast|10010307	18|Cast|10010308	20|Cast|10010309	22|Cast|10010310	24|Cast|10010311	26|Cast|10010312	28|Cast|10010313	30|Cast|10010314	33|Cast|10010315	1|Move|5|1.65|	1|Effect|FxR2LiangAttack13||1	1|Magic|100031|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100104	10|Cast|10010401	1|Magic|100029|0	1|Effect|FxR2LiangAttack21||1	4|Shake|2|0.03|0|20|0.4|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100105	10|Cast|10010501	1|Magic|100030|0	1|Effect|FxR2LiangAttack21||1	4|Shake|2|0.03|0|20|0.4|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100106	10|Cast|10010601	1|Magic|100031|0	1|Effect|FxR2LiangAttack23||1	4|Shake|2|0.03|0|20|0.4|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100107	10|Cast|10010701	1|Effect|FxR2LiangAttack31||1	1|Magic|100029|0	4|Shake|2|0.03|0|20|0.3|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100108	10|Cast|10010801	1|Effect|FxR2LiangAttack31||1	1|Magic|100030|0	4|Shake|2|0.03|0|20|0.3|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100109	10|Cast|10010901	1|Effect|FxR2LiangAttack33||1	1|Magic|100031|0	4|Shake|2|0.03|0|20|0.3|0	10|Shake|4|0.2|-0.5|20|0.2|1																																																																											
+100110	36|Cast|10011001	60|Cast|10011002	85|Cast|10011003	85|Cast|10011004	38|Move|3|2.4|	0|Cast|10011006	1|Magic|100032|0	0|Magic|100091|0	97|Magic|100092|0	0|Magic|100160|0	1|Effect|FxR2LiangAttack5101||1	85|Shake|2|0.4|-0.5|10|0.8|0																																																																				
+100111	0|Magic|100172|0	1|Effect|FxR2LiangBorn||	4|Magic|100175|0																																																																													
+100112	2|Cast|10011201	4|Cast|10011202	6|Cast|10011203	8|Cast|10011204	10|Cast|10011205	13|Cast|10011206	16|Cast|10011207	18|Cast|10011208	20|Cast|10011209	22|Cast|10011210	24|Cast|10011211	26|Cast|10011212	28|Cast|10011213	30|Cast|10011214	33|Cast|10011215	1|Move|3|1.65|	1|Effect|FxR2LiangAttack11Ex||1	1|Magic|100029|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100113	2|Cast|10011301	4|Cast|10011302	6|Cast|10011303	8|Cast|10011304	10|Cast|10011305	13|Cast|10011306	16|Cast|10011307	18|Cast|10011308	20|Cast|10011309	22|Cast|10011310	24|Cast|10011311	26|Cast|10011312	28|Cast|10011313	30|Cast|10011314	33|Cast|10011315	1|Move|4|1.65|	1|Effect|FxR2LiangAttack12Ex||1	1|Magic|100030|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100114	2|Cast|10011401	4|Cast|10011402	6|Cast|10011403	8|Cast|10011404	10|Cast|10011405	13|Cast|10011406	16|Cast|10011407	18|Cast|10011408	20|Cast|10011409	22|Cast|10011410	24|Cast|10011411	26|Cast|10011412	28|Cast|10011413	30|Cast|10011414	33|Cast|10011415	1|Move|5|1.65|	1|Effect|FxR2LiangAttack13Ex||1	1|Magic|100031|0	2|Shake|1|0.04|0|20|1.5|0	1|Turn|90|1.65|1																																																												
+100115	10|Cast|10011501	1|Effect|FxR2LiangAttack33||1	1|Magic|100129|0	1|Magic|100031|0	4|Shake|2|0.03|0|20|0.3|0	10|Shake|6|0.2|-0.5|20|0.2|1	1|Cast|10011509																																																																									
+100116	0|Magic|100170|0	1|Effect|FxR2LiangWin||	0|Magic|100176|0																																																																													
+100117																																																																																
+100118	9|Cast|10011801	1|Effect|FxR2LiangQte||1	0|Magic|100091|0	54|Magic|100092|0	1|Cast|10011805	49|Cast|10011806																																																																										
+100119	0|Magic|100090|0	8|Magic|100094|0	2|Magic|100173|0	8|Magic|100174|0																																																																												
+100120	0|Magic|100090|0	8|Magic|100094|0	1|Magic|100173|0	8|Magic|100174|0																																																																												
+100121	6|Cast|10012101	1|Effect|FxR2LiangAttack01||1	6|Shake|2|0.15|-0.5|7|0.15|0																																																																													
+100122	4|Cast|10012201	6|Cast|10012202	8|Cast|10012203	10|Cast|10012204	1|Effect|FxR2LiangAttack02||1	4|Shake|5|0.18|0|7|0.35|0																																																																										
+100123	1|Cast|10012301	4|Cast|10012302	9|Cast|10012303|10012304|10012305|10012306	9|Cast|10012307	1|Effect|FxR2LiangAttack03||1	1|Shake|6|0.2|0|7|0.1|0	4|Shake|6|0.2|0|7|0.1|1	9|Shake|2|0.2|-0.5|10|0.3|2																																																																								
+100124	1|Cast|10012401	2|Cast|10012402	5|Cast|10012403	7|Cast|10012404	11|Cast|10012405	1|Effect|FxR2LiangAttack04||1	1|Effect|FxR2LiangAttack04Wuqi|WeaponCase1|1	1|Effect|FxR2LiangAttack04Wuqi|WeaponCase2|1	1|Shake|4|0.18|0|10|0.5|0																																																																							
+100125	6|Cast|10012501	1|Effect|FxR2LiangAttack05||1	6|Shake|3|0.35|-0.5|7|0.15|0																																																																													
+100126	0|Effect|FxR2LiangSave||1																																																																															
+100501	8|Cast|10050101	16|Cast|10050102	1|Effect|FxR2YongyechaoAttack11||1	1|Magic|100029|0	16|Shake|5|0.5|-1|10|0.35|1																																																																											
+100502	8|Cast|10050201	16|Cast|10050202	1|Effect|FxR2YongyechaoAttack11||1	1|Magic|100030|0	16|Shake|5|0.5|-1|10|0.35|1																																																																											
+100503	8|Cast|10050301	16|Cast|10050302	1|Effect|FxR2YongyechaoAttack13||1	1|Magic|100031|0	16|Shake|5|0.5|-1|10|0.35|1																																																																											
+100504	6|Magic|100521|0	6|Magic|100524|0	1|Cast|10050403	2|Cast|10050404	1|Magic|100029|0	2|Shake|3|0.15|-0.5|10|0.25|0																																																																										
+100505	6|Magic|100522|0	6|Magic|100525|0	1|Cast|10050503	2|Cast|10050504	1|Magic|100030|0	2|Shake|3|0.17|-0.5|10|0.25|0																																																																										
+100506	6|Magic|100523|0	6|Magic|100526|0	1|Cast|10050603	2|Cast|10050604	1|Magic|100031|0	2|Shake|3|0.2|-0.5|10|0.25|0																																																																										
+100507	4|Cast|10050701	9|Cast|10050702	4|Shake|4|0.4|0|10|0.45|0	4|Move|5|0.4|	1|Effect|FxR2YongyechaoAttack31||1	1|Magic|100029|0																																																																										
+100508	4|Cast|10050801	8|Cast|10050802	12|Cast|10050803	15|Cast|10050804	4|Shake|4|0.4|0|10|0.65|0	4|Move|5|0.7|	1|Effect|FxR2YongyechaoAttack32||1	1|Magic|100030|0																																																																								
+100509	4|Cast|10050901	8|Cast|10050902	11|Cast|10050903	14|Cast|10050904	17|Cast|10050905	20|Cast|10050906	4|Shake|4|0.4|0|10|0.95|0	4|Move|5|0.95|	1|Effect|FxR2YongyechaoAttack33||1	1|Magic|100031|0																																																																						
+100510	1|Effect|FxR2YongyechaoAttack01||1	7|Cast|10051002																																																																														
+100511	1|Effect|FxR2YongyechaoAttack02||1	3|Cast|10051102																																																																														
+100512	1|Effect|FxR2YongyechaoAttack03||1	5|Cast|10051202																																																																														
+100513	1|Effect|FxR2YongyechaoAttack04||1	2|Cast|10051302	4|Cast|10051303	6|Cast|10051304	8|Cast|10051305	14|Cast|10051306																																																																										
+100514	0|Magic|100575|0	1|Effect|FxR2YongyechaoBorn||	0|Magic|100577|0																																																																													
+100515	4|Cast|10051501	8|Cast|10051502	11|Cast|10051503	14|Cast|10051504	17|Cast|10051505	20|Cast|10051506	23|Cast|10051507	26|Cast|10051508	4|Shake|4|0.5|0.1|10|1.25|0	4|Move|6|1.25|	1|Effect|FxR2YongyechaoAttack41||1	1|Magic|100031|0	0|Magic|100538|0																																																																			
+100516	8|Cast|10051601	16|Cast|10051602	1|Effect|FxR2YongyechaoAttack13||1	1|Magic|100031|0	16|Shake|5|0.5|-1|10|0.35|1																																																																											
+100517	0|Magic|100576|0	1|Effect|FxR2YongyechaoWin||	0|Magic|100578|0																																																																													
+100518																																																																																
+100519	2|Cast|10051901	4|Cast|10051902	6|Cast|10051903	9|Cast|10051904	11|Cast|10051905	14|Cast|10051906	26|Cast|10051907	26|Shake|3|0.2|-0.5|20|0.35|0	1|Effect|FxR2YongyechaoQte||	1|Cast|10051910	50|Cast|10051911	0|Magic|100091|0	55|Magic|100092|0																																																																			
+100520	20|Cast|10052001|10052002	1|Cast|10052004	1|Magic|100552|0	20|Magic|100550|0	1|Magic|100032|0	0|Magic|100555|0	0|Cast|10052009	20|Shake|5|0.6|-0.5|10|0.35|0																																																																								
+100521	1|Effect|FxR2YongyechaoMove||	0|Magic|100090|0	10|Magic|100094|0																																																																													
+100522	1|Effect|FxR2YongyechaoMove||	0|Magic|100090|0	10|Magic|100094|0																																																																													
+100523																																																																																
+100524	1|Effect|FxR2YongyechaoAttack01||1	7|Cast|10052402	5|Move|25|0.1|0																																																																													
+100701	1|Effect|FxR2KalieninaAttack01||1	4|Cast|10070102																																																																														
+100702	1|Effect|FxR2KalieninaAttack02||1	5|Cast|10070202	9|Cast|10070203																																																																													
+100703	1|Effect|FxR2KalieninaAttack03||1	5|Cast|10070302	10|Cast|10070303																																																																													
+100704	2|Shake|2|0.12|-0.75|5|0.15|0	11|Cast|10070402	11|Cast|10070403	11|Shake|3|0.4|-0.5|10|0.4|0	0|Effect|FxR2KalieninaAttack04||1																																																																											
+100705	9|Cast|10070501|10070502|10070503|10070504	9|Cast|10070505|10070506	1|Effect|FxR2KalieninaAttack11||1	1|Magic|100029|0	9|Shake|5|0.8|-2|20|0.3|0	9|Cast|10070510																																																																										
+100706	9|Cast|10070601|10070602|10070603|10070604	9|Cast|10070605|10070606	1|Effect|FxR2KalieninaAttack11||1	1|Magic|100030|0	9|Shake|5|0.8|-2|20|0.3|0	9|Cast|10070610																																																																										
+100707	9|Cast|10070701|10070702|10070703|10070704	9|Cast|10070705|10070706	1|Effect|FxR2KalieninaAttack11||1	1|Magic|100031|0	9|Shake|5|0.8|-2|20|0.3|0	9|Cast|10070710																																																																										
+100708	9|Cast|10070801	9|Cast|10070802	1|Magic|100029|0	9|Shake|3|0.35|-1|10|0.3|0	1|Effect|FxR2KalieninaAttack21||1																																																																											
+100709	9|Cast|10070901	9|Cast|10070902	1|Magic|100030|0	9|Shake|3|0.35|-1|10|0.3|0	1|Effect|FxR2KalieninaAttack21||1																																																																											
+100710	9|Cast|10071001	9|Cast|10071002	1|Magic|100031|0	9|Shake|3|0.35|-1|10|0.3|0	1|Effect|FxR2KalieninaAttack21||1																																																																											
+100711	1|Effect|FxR2KalieninaAttack31||1	9|Cast|10071102	1|Magic|100029|0	9|Shake|2|0.25|-0.5|20|0.3|0	9|Cast|10071105																																																																											
+100712	1|Effect|FxR2KalieninaAttack31||1	9|Cast|10071202	1|Magic|100030|0	9|Shake|2|0.25|-0.5|20|0.3|0	9|Cast|10071205																																																																											
+100713	1|Effect|FxR2KalieninaAttack31||1	9|Cast|10071302	1|Magic|100031|0	9|Shake|2|0.25|-0.5|20|0.3|0	9|Cast|10071305																																																																											
+100714	0|Magic|100783|0	1|Effect|FxR2KalieninaBorn||	0|Magic|100788|0																																																																													
+100715	1|Effect|FxR2KalieninaAttack31||1	9|Cast|10071502	1|Magic|100031|0	9|Shake|2|0.25|-0.5|20|0.3|0	9|Cast|10071505																																																																											
+100716	50|Magic|100750|0	50|Cast|10071604	1|Effect|FxR2KalieninaAttack51||1	0|Magic|100091|0	74|Magic|100092|0	1|Magic|100032|0	1|Magic|100752|0	0|Cast|10071610																																																																								
+100717	0|Magic|100753|0	1|Effect|FxR2KalieninaWin||	10|Magic|100789|0																																																																													
+100718																																																																																
+100719	15|Cast|10071901	15|Cast|10071902	15|Shake|3|0.35|-1|10|0.3|0	7|Effect|FxR2KalieninaAttack21||1	1|Cast|10071907	39|Cast|10071908	0|Magic|100091|0	46|Magic|100092|0																																																																								
+100720	0|Magic|100090|0	1|Effect|FxR2KalieninaMove1||	8|Magic|100094|0																																																																													
+100721	0|Magic|100090|0	1|Effect|FxR2KalieninaMove2||	8|Magic|100094|0																																																																													
+100722	1|Cast|10072203	0|Magic|100754|0	0|Magic|100785|0	12|Shake|5|0.5|-0.5|20|0.1|0	0|Magic|100780|0	0|Magic|100781|0	12|Cast|10072209|10072210|10072211|10072212	12|Cast|10072213	0|Magic|100786|0																																																																							
+100723	1|Effect|FxR2KalieninaAttack42||1	0|Magic|100754|0	0|Magic|100786|0	2|Shake|5|0.5|-0.5|20|0.1|0	0|Magic|100780|0	0|Magic|100781|0	2|Cast|10072309|10072310|10072311|10072312	2|Cast|10072313																																																																								
+100724																																																																																
+100725	1|Effect|FxR2KalieninaAttack01||1	4|Cast|10072502	2|Move|20|0.1|0																																																																													
+100801	3|Cast|10080101	1|Effect|FxR2DubianAttack01||1																																																																														
+100802	2|Cast|10080201	7|Cast|10080202	1|Effect|FxR2DubianAttack02||																																																																													
+100803	2|Cast|10080301	1|Effect|FxR2DubianAttack03||1																																																																														
+100804	4|Cast|10080401	1|Effect|FxR2DubianAttack04||																																																																														
+100805	3|Cast|10080501	14|Cast|10080502	1|Effect|FxR2DubianAttack05||1	1|Effect|FxR2DubianAttack0501|WeaponCase1|1	1|Effect|FxR2DubianAttack0501|WeaponCase2|1																																																																											
+100806	3|Cast|10080601	1|Effect|FxR2DubianAttack01||1	1|Move|25|0.1|0																																																																													
+100807	3|Cast|10080701	4|Cast|10080702	7|Cast|10080703	12|Cast|10080704	1|Effect|FxR2DubianAttack11||1	1|Magic|100029|0	1|Effect|FxR2DubianAttack11Canying||1																																																																									
+100808	3|Cast|10080801	4|Cast|10080802	7|Cast|10080803	12|Cast|10080804	1|Effect|FxR2DubianAttack11||1	1|Magic|100030|0	1|Effect|FxR2DubianAttack11Canying||1																																																																									
+100809	3|Cast|10080901	4|Cast|10080902	7|Cast|10080903	12|Cast|10080904	18|Cast|10080905	1|Effect|FxR2DubianAttack1301||1	1|Magic|100031|0	18|Cast|10080908	1|Effect|FxR2DubianAttack11Canying||1																																																																							
+100810	3|Cast|10081001	10|Cast|10081002	1|Effect|FxR2DubianAttack21||1	1|Magic|100029|0																																																																												
+100811	3|Cast|10081101	10|Cast|10081102	1|Effect|FxR2DubianAttack21||1	1|Magic|100030|0																																																																												
+100812	3|Cast|10081201	10|Cast|10081202	1|Effect|FxR2DubianAttack23||1	1|Magic|100031|0																																																																												
+100813	3|Cast|10081301	1|Cast|10081302	1|Magic|100029|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0																																																																									
+100814	3|Cast|10081401	1|Cast|10081402	1|Magic|100030|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0																																																																									
+100815	3|Cast|10081501	1|Cast|10081502	1|Magic|100031|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0																																																																									
+100816	0|Magic|100856|0	1|Effect|FxR2DubianBorn||	3|Magic|100877|0																																																																													
+100817	3|Cast|10081701	4|Cast|10081702	7|Cast|10081703	12|Cast|10081704	18|Cast|10081705	1|Effect|FxR2DubianAttack1301||1	1|Magic|100031|0	18|Cast|10081708	1|Effect|FxR2DubianAttack11Canying||1																																																																							
+100818	6|Cast|10081801	6|Cast|10081802	1|Effect|FxR2DubianQte||	1|Cast|10081807	25|Cast|10081808	0|Magic|100091|0	36|Magic|100092|0																																																																									
+100819	0|Magic|100090|0	1|Cast|10081902	7|Cast|10081903	1|Magic|100871|0	1|Magic|100873|0	1|Magic|100874|0	8|Magic|100872|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0	8|Magic|100094|0																																																																				
+100820	0|Magic|100090|0	1|Cast|10082002	7|Cast|10082003	1|Magic|100871|0	1|Magic|100873|0	1|Magic|100874|0	8|Magic|100872|0	1|Magic|100833|0	7|Magic|100834|0	1|Magic|100836|0	8|Magic|100837|0	8|Magic|100094|0																																																																				
+100821	35|Cast|10082101	43|Cast|10082102	58|Cast|10082103	90|Cast|10082104	0|Magic|100091|0	100|Magic|100092|0	1|Magic|100032|0	0|Magic|100852|0	1|Effect|FxR2DubianAttack51||1	1|Effect|FxR2DubianAttack5101|WeaponCase2|1	0|Cast|10082111																																																																					
+100822	0|Magic|100850|0	1|Effect|FxR2DubianWin||	0|Magic|100878|0																																																																													
+100823																																																																																
+100824																																																																																
+100825	3|Cast|10082501	1|Effect|FxR2DubianAttack01||1	8|Cast|10082504	3|Cast|10082505																																																																												
+100826	2|Cast|10082601	7|Cast|10082602	1|Effect|FxR2DubianAttack02||	6|Cast|10082604	2|Cast|10082605																																																																											
+100827	2|Cast|10082701	1|Effect|FxR2DubianAttack03||1	4|Cast|10082703	1|Cast|10082704																																																																												
+100828	5|Cast|10082801	1|Effect|FxR2DubianAttack04||	7|Cast|10082803	3|Cast|10082804																																																																												
+100829	3|Cast|10082901	14|Cast|10082902	1|Effect|FxR2DubianAttack05||1	1|Effect|FxR2DubianAttack0501|WeaponCase1|1	1|Effect|FxR2DubianAttack0501|WeaponCase2|1	17|Cast|10082906	15|Cast|10082907																																																																									
+100830																																																																																
+100831	3|Cast|10083101	1|Effect|FxR2DubianAttack01||1	1|Move|25|0.1|0	8|Cast|10083104	3|Cast|10083105																																																																											
+101301	5|Cast|10130101	1|Cast|10130102	5|Shake|5|0.35|-1.5|7|0.15|0																																																																													
+101302	6|Cast|10130201	1|Cast|10130202	6|Shake|5|0.35|-1.5|7|0.15|0																																																																													
+101303	8|Cast|10130301	9|Cast|10130302	1|Effect|FxR2LifuAttack03||	8|Cast|10130304	8|Shake|2|0.35|-0.5|15|0.2|0																																																																											
+101304	6|Cast|10130401	1|Cast|10130402	6|Shake|4|0.5|-1|7|0.15|0																																																																													
+101305	9|Cast|10130501	1|Effect|FxR2LifuAttack05||	9|Cast|10130503	9|Shake|2|0.45|-0.5|15|0.25|0																																																																												
+101306	1|Effect|FxR2LifuAttack11||	1|Magic|100029|0	4|Cast|10130603	4|Shake|4|0.3|-0.5|10|0.15|0																																																																												
+101307	1|Effect|FxR2LifuAttack11||	1|Magic|100030|0	4|Cast|10130703	4|Shake|4|0.3|-0.5|10|0.15|0																																																																												
+101308	1|Effect|FxR2LifuAttack13||	1|Magic|100031|0	4|Cast|10130803	4|Shake|4|0.3|-0.5|10|0.15|0																																																																												
+101309	1|Effect|FxR2LifuAttack21||	5|Cast|10130902	1|Magic|100029|0	5|Cast|10130904|10130905	5|Shake|6|0.25|-0.4|10|0.25|0																																																																											
+101310	1|Effect|FxR2LifuAttack21||	5|Cast|10131002	1|Magic|100030|0	5|Cast|10131004|10131005	5|Shake|6|0.25|-0.4|10|0.25|0																																																																											
+101311	1|Effect|FxR2LifuAttack21||	5|Cast|10131102	1|Magic|100031|0	5|Cast|10131104|10131105	5|Shake|6|0.25|-0.5|10|0.25|0																																																																											
+101312	1|Effect|FxR2LifuAttack31||	5|Cast|10131202	1|Magic|100029|0	5|Cast|10131204|10131206	5|Shake|2|0.25|-0.5|10|0.2|0	0|Cast|10131208																																																																										
+101313	1|Effect|FxR2LifuAttack31||	6|Cast|10131302	1|Magic|100030|0	6|Cast|10131304|10131306	6|Shake|2|0.25|-0.5|10|0.2|0	0|Cast|10131308																																																																										
+101314	1|Effect|FxR2LifuAttack31||	6|Cast|10131402	1|Magic|100031|0	6|Cast|10131404|10131406	6|Shake|2|0.25|-0.5|10|0.2|0	0|Cast|10131408																																																																										
+101315	0|Magic|101365|0	1|Effect|FxR2LifuBorn||	4|Magic|101375|0																																																																													
+101316	1|Effect|FxR2LifuAttack31||	6|Cast|10131602	6|Cast|10131603|10131605	6|Shake|2|0.25|-0.5|10|0.2|0	1|Magic|100031|0																																																																											
+101317	30|Cast|10131701|10131702|10131703|10131704	1|Cast|10131705	1|Magic|100032|0	0|Magic|100091|0	64|Magic|100092|0	0|Magic|101354|0	0|Cast|10131710																																																																									
+101318	0|Magic|101360|0	1|Effect|FxR2LifuWin||	0|Magic|101376|0																																																																													
+101319																																																																																
+101320	1|Cast|10132001	41|Cast|10132002	0|Magic|100091|0	46|Magic|100092|0	20|Magic|101356|0																																																																											
+101321	2|Magic|100011|0	10|Magic|100015|0	2|Magic|100301|0	2|Magic|100302|0	10|Magic|100303|0	10|Magic|100304|0	2|Cast|10132109	9|Cast|10132110	0|Magic|100090|0	10|Magic|100094|0																																																																						
+101322	2|Magic|100011|0	10|Magic|100015|0	2|Magic|100301|0	2|Magic|100302|0	10|Magic|100303|0	10|Magic|100304|0	2|Cast|10132209	9|Cast|10132210	0|Magic|100090|0	10|Magic|100094|0																																																																						
+101323																																																																																
+101324																																																																																

@@ -1,0 +1,271 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+90020001	库贝 弹飞	2	2				100			4	1	1			-1						FxYujing1M06S		-1			1					0	0	0	1	0.6		1	90020002			0	1													0	HitCase	1	0					0					
+90020002	库贝 弹飞	2	2				0			4		0.05		1	-1								-1		FxMo1KuroMd1001Attack01	1					0	0	0	2							0	1				900200021									0	HitCase		0					1					
+90040001	激光柱子弹	2	1				0			4		0.2			-1		FxMb1BraveMd010011ShouJi						-1			1					0	0	0	0							0	1				900400011	801010								0.5	HitCase	1	0					1					
+90005006	剑圣-Skill-02-剑风	2	3				0			4		60	60		-1						FxYujingRing		-1			1					0	0	0	0							0	1													1	HitCase	1	1					0					
+90005000	酸液喷射者-Skill-04-轰炸	2	1				10			4		3			-1		FxDibingShouji						-1			3	-20	0	10	0	0	0	0	0							1	1					970104								0	HitCase		0			9999	1	1					
+90005001	关卡用—小受击	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	1							1	1				900050011									0	HitCase	1	0					0					
+90005002	关卡用—大受击	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	1							1	1				900050021									0	HitCase	1	0					0					
+90005003	关卡用—击飞	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	1							1	1				900050031									0	HitCase	1	0					0					
+90005004	关卡用—击倒	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	1							1	1				900050041									0	HitCase	1	0					0					
+90005005	关卡用—击倒	2	2				0			4		1			-1						FxNpcYujing01		-1			1	0				0	0	0	1							1	1				900050051									0	HitCase	1	0					0					
+90005007	测试移动速度	2	1				1.5			4		60			-1						FxNpcYujing01		-1			1					0	0	0	0							1	1													0	HitCase	1	0					0					
+90005011	能量包	2	0.3				8			4		999		1	-1						FxDropPower		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005012	1		4	1													1	HitCase		0			999	1	0					
+90005012	·····	2	0.3				0			4		999		1	1						FxDropPower		1		FxDropPowerBeHit	1					0	0	0	2							2	1					800071								0	HitCase		0					0					
+90005013	生命值包	2	0.3				8			4		999		1	-1						FxDropCure		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005014	1		4	1													1	HitCase		0			999	1	0					
+90005014	·····	2	0.3				0			4		999		1	1						FxDropCure		1		FxDropCureBeHit	1					0	0	0	2							2	1					800072								0	HitCase		0					0					
+90005015	攻击力包	2	0.3				8			4		999		1	-1						FxDropAttack		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005016	1		4	1													1	HitCase		0			999	1	0					
+90005016	·····	2	0.3				0			4		999		1	1						FxDropAttack		1		FxDropAttackBeHit	1					0	0	0	2							2	1					800073								0	HitCase		0					0					
+90005017	防御包	2	0.3				8			4		999		1	-1						FxDropDefense		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005018	1		4	1													1	HitCase		0			999	1	0					
+90005018	·····	2	0.3				0			4		999		1	1						FxDropDefense		1		FxDropDefenseBeHit	1					0	0	0	2							2	1					800074								0	HitCase		0					0					
+90005019	速度包	2	0.3				8			4		999		1	-1						FxDropSpeed		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005020	1		4	1													1	HitCase		0			999	1	0					
+90005020	·····	2	0.3				0			4		999		1	1						FxDropSpeed		1		FxDropSpeedBeHit	1					0	0	0	2							2	1					800075								0	HitCase		0					0					
+90005021	暴击包	2	0.3				8			4		999		1	-1						FxDropViolent		-1			3	-80	0.1	10	0	0	0	0	3	999		1	90005022	1		4	1													1	HitCase		0			999	1	0					
+90005022	·····	2	0.3				0			4		999		1	1						FxDropViolent		1		FxDropViolentBeHit	1					0	0	0	2							2	1					800076								0	HitCase		0					0					
+90230101	360°环形激光	1	1	20		11.5	0			4		999			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1					801010								0	HitCase	1	1		1			1					
+90230201	直线激光-3秒闪断	1	1	20		10	0			4		2.5			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1					801010								0	HitCase	1	1		1			1					
+90230202	直线激光-3秒闪断（特效）	1	1	20			0			4		2.5			-1	1			0.1		FxMo1JgrcMd000002Attack0103		-1			1					0	0	0	0							0	1													0	HitCase		1		1			1					
+90230203	直线激光-3秒闪断（特效）	1	1	20			0			4		0.4			-1						FxMo1JgrcMd000002Attack0103		-1			1					0	0	0	0							0	1													0	HitCase		1		1			1					
+90230204	直线激光-3秒闪断（特效）	1	1	20			0			4		0.4			-1						FxYujingXian02		-1			1					0	0	0	0							0	1													0	HitCase		1		1			1					
+90230301	360°环形激光	1	1	20		11.5	0			4		999			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1					801010								0	HitCase	1	1		1			1					
+90230401	360°旋转 （双向）	1	1	20			0			4		999			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1					801010								0	HitCase	1	1		1			1					
+90230403	360°旋转 （双向）（特效）	1	1	20		-10	0			4		999			-1						FxMo1JgrcMd000002Attack0103		-1			1					0	0	0	0							0	1													0	HitCase		1		1			1					
+90240101	飞行远程怪的技能1-1	2	0.1				30			4		1.5			1		FxDibingShouji			Rhand	FxNpcYujing02		1			1					0	0	0	0							0	1													0	HitCase	1	0					1					
+90240201	飞行远程怪的技能2-1爆炸伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+97060101	小坦克-Skill-01-激光射线	1	4	20		10	0			4		2			-1	1	FxDibingShouji		0.3		FxNpcYujing02		-1			1					0	0	0	0							0	1													0	HitCase	1	0					1					
+97060201	小坦克-Skill-01-炮击	2	2			6	50			4		5		1	-1		FxDibingShouji			EffectCase1	FxMe1DestroyerMd001001Attack02Dandao		-1		FxMe1DestroyerMd001001Attack02Zha	3	0	1	10	0	0	0	0	0							0	1													0	HitCase		0				1	1					
+97060301	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxDibingShouji				FxNpcYujing01		-1			1					0	0	0	0							0	1													0	HitCase	1	0					1					
+97070101	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				970701011	801100								0	HitCase		0					1					
+97070102	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				970701021	801100								0	HitCase		0					0					
+97070103	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				970701031	801100								0	HitCase		0					0					
+97070104	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				970701041	801100								0	HitCase		0					0					
+97070105	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				970701051	801100								0	HitCase		0					0					
+97070201	剑圣-Skill-02-剑风	2	1.5				45			4		1.5			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				970702011	801100	970702							0	HitCase		0					1					
+97070301	剑圣-Skill-03-重劈斩	1	3	4		2	0			4		0.1			-1		FxMe1SwordMd002001Attack03Shouji						-1			1					0	0	0	0							0	3				970703011	801100	200006				200006			0	HitCase	1	0					1					
+97070501	剑圣-Skill-05-横扫	3	3	270		2	0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	3				970705011	801100	200006				200006			0	HitCase	1	0					1					
+97070601	剑圣-Skill-06-戳刺	1	3	5		2	0			4		0.1			-1		FxMe1SwordMd002001Attack06Shouji						-1			1					0	0	0	0							0	3				970706011	801100	200006				200006			0	HitCase	1	0					1					
+81200101	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				812001011	801024	812013							0	HitCase		0					1					
+81200102	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				812001021	801024	812013							0	HitCase		0					0					
+81200103	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				812001031	801024	812013							0	HitCase		0					0					
+81200104	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				812001041	801024	812013							0	HitCase		0					0					
+81200105	剑圣-Skill-01-旋风斩	2	4				0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	1				812001051	801024	812013							0	HitCase		0					0					
+81200108	剑圣-Skill-02-剑风	2	2				75		0	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001081	801050	812014							0	HitCase		0					1					
+81200109	剑圣-Skill-02-剑风	2	2				75		90	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001091	801050	812014							0	HitCase		0					1					
+81200110	剑圣-Skill-02-剑风	2	2				75		180	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001101	801050	812014							0	HitCase		0					1					
+81200111	剑圣-Skill-02-剑风	2	2				75		270	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001111	801050	812014							0	HitCase		0					1					
+81200112	剑圣-Skill-02-剑风	2	2				75		-18	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001121	801050	812014							0	HitCase		0					1					
+81200113	剑圣-Skill-02-剑风	2	2				75		72	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001131	801050	812014							0	HitCase		0					1					
+81200114	剑圣-Skill-02-剑风	2	2				75		162	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001141	801050	812014							0	HitCase		0					1					
+81200115	剑圣-Skill-02-剑风	2	2				75		252	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001151	801050	812014							0	HitCase		0					1					
+81200116	剑圣-Skill-02-剑风	2	2				75		-36	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001161	801050	812014							0	HitCase		0					1					
+81200117	剑圣-Skill-02-剑风	2	2				75		54	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001171	801050	812014							0	HitCase		0					1					
+81200118	剑圣-Skill-02-剑风	2	2				75		144	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001181	801050	812014							0	HitCase		0					1					
+81200119	剑圣-Skill-02-剑风	2	2				75		234	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001191	801050	812014							0	HitCase		0					1					
+81200120	剑圣-Skill-02-剑风	2	2				75		-54	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001201	801050	812014							0	HitCase		0					1					
+81200121	剑圣-Skill-02-剑风	2	2				75		36	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001211	801050	812014							0	HitCase		0					1					
+81200122	剑圣-Skill-02-剑风	2	2				75		126	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001221	801050	812014							0	HitCase		0					1					
+81200123	剑圣-Skill-02-剑风	2	2				75		216	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001231	801050	812014							0	HitCase		0					1					
+81200124	剑圣-Skill-02-剑风	2	2				75		-72	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001241	801050	812014							0	HitCase		0					1					
+81200125	剑圣-Skill-02-剑风	2	2				75		18	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001251	801050	812014							0	HitCase		0					1					
+81200126	剑圣-Skill-02-剑风	2	2				75		108	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001261	801050	812014							0	HitCase		0					1					
+81200127	剑圣-Skill-02-剑风	2	2				75		198	4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812001271	801050	812014							0	HitCase		0					1					
+81200201	剑圣-Skill-02-剑风	2	2				75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	3				812002011	801080	812014	970702						0	HitCase		0					1					
+81200301	剑圣-Skill-03-重劈斩	1	3	6		2.7	0			4		0.1			-1		FxMe1SwordMd002001Attack03Shouji						-1			1					0	0	0	0							0	3				812003011	801080	200103				200103			0	HitCase		0					1					
+81200501	剑圣-Skill-05-横扫	1	5	4		2.5	0			4		0.1			-1		FxMe1SwordMd002001Attack01Shouji						-1			1					0	0	0	0							0	3				812005011	801080	200103	812016			200103			0	HitCase		0					1					
+81200601	剑圣-Skill-06-戳刺	1	3	6		2.5	0			4		0.1			-1		FxMe1SwordMd002001Attack06Shouji						-1			1					0	0	0	0							0	3				812006011	801070	200103	812017			200103			0	HitCase		0					1					
+81201101	剑圣-Skill-11-隐身剑风	2	2				75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	1				812011011	801100								0	HitCase		0					1					
+81201102	剑圣-Skill-11-隐身剑风	1	2	90		45	0			4		0.6			-1						FxNpcYujing02		-1			1					0	0	0	0							0	1													0	HitCase	1	0					0					
+81201103	剑圣-Skill-11-隐身剑风	1	2	90			0			4		3			-1								-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201301	剑圣-Skill-11-隐身剑风	2	2				75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	1				812013011	801100								0	HitCase		0					1					
+81201302	剑圣-Skill-11-隐身剑风	1	2	90			0			4		3			-1								-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201303	剑圣-Skill-11-隐身剑风	2	2		-3		75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	1				812013031	801100								0	HitCase		0					1					
+81201304	剑圣-Skill-11-隐身剑风	1	2	90	-3		0			4		3			-1								-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201305	剑圣-Skill-11-隐身剑风	2	2		3		75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	0							0	1				812013051	801100								0	HitCase		0					1					
+81201306	剑圣-Skill-11-隐身剑风	1	2	90	3		0			4		3			-1								-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201405	剑圣-Skill-11-隐身剑风	1	2	90	-3		0			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201406	剑圣-Skill-11-隐身剑风	1	2	90	-3		0			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201407	剑圣-Skill-11-隐身剑风	1	2	90	3		0			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201408	剑圣-Skill-11-隐身剑风	1	2	90	3		0			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	0							0	1													0	HitCase		1					0					
+81201501	行为树用-瞬移特效	2	2				20			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	3							4	1													0	HitCase		0					0					
+81201502	行为树用-瞬移特效	2	2		-3		20			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	3							4	1													0	HitCase		0					0					
+81201503	行为树用-瞬移特效	2	2		3		20			4		3			-1						FxMe1SwordMd002001Attack1403		-1			1					0	0	0	3							4	1													0	HitCase		0					0					
+81201511	行为树用-剑风	2	2				75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	3							4	1				812015111	801040								0	HitCase		0					1					
+81201512	行为树用-剑风	2	2		-3		75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	3							4	1				812015121	801040								0	HitCase		0					1					
+81201513	行为树用-剑风	2	2		3		75			4		1			-1		FxMe1SwordMd002001Attack02Shouji02	FxMe1SwordMd002001Attack02Shouji01			FxMe1SwordMd002001Attack02Dandao		-1			1					0	0	0	3							4	1				812015131	801040								0	HitCase		0					1					
+81101101	L-01-左爪打中间	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811011011	801050	811042							0	HitCase		0					1					
+81101103	L-01-左爪打中间	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81101201	L-02-左爪打左边	2	3		-4	4	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811012011	801050	811042							0	HitCase		0					1					
+81100101	R-01-右爪打中间	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811001011	801050	811042							0	HitCase		0					1					
+81100103	R-01-右爪打中间	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81100201	R-02-右爪打右边	2	3		4	4	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811002011	801050	811042							0	HitCase		0					1					
+81102101	M-01-前方挥砍	1	10	5		5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811021011	801075	811046							0	HitCase		0					1					
+81102201	M-02-机枪扫射	3	10.5	55			0			4		1.75			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1				811022011	801012	811044							0	HitCase	1	0					1					
+81102202	M-02-机枪扫射	3	10.5	55			0			4		1.75			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1				811022021	801012	811044							0	HitCase	1	0					1					
+81102206	M-02-机枪扫射	2	5			6	0			4		5			-1						FxMbMsMd040011Attack0401		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81102301	M-03-怒吼	2	15			0	0			4		0.3			-1		FxDibingShouji		0.1				-1			1					0	0	0	0							0	1				811023011	801050	811046							0	HitCase		0					1					
+81102401	M-04-跳跃	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81102601	M-06-爆裂导弹（全员标记）811011	2	99				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81102603	预警特效	2	2				150			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81102611			0	1													0	HitCase		0	1	1			0					
+81102611	M-06-爆裂导弹（导弹特效）	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	2	0.1		1	81102612			0	1													0	HitCase		0					0					
+81102612	M-06-爆裂导弹（导弹伤害）	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2							0	1				811026121	801065	811043							0	HitCase		0					1					
+81102621	M-06-目标标记-阶段1	2	6.5				0			4		3			-1								-1			1					0	0	0	1			1	81102611			0	1													0	HitCase	1	0					0					
+81102622	M-06-位置标记-阶段1	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	3	81102611			0	1													0	HitCase		0					0					
+81102631	M-06-目标标记-阶段2	2	6.5				0			4		3			-1								-1			1					0	0	0	1		0.15	3	81102611			0	1													0	HitCase	1	0					0					
+81102632	FxMbMsMd040011Attack17Yujing14M3S	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	5	81102611			0	1													0	HitCase		0					0					
+81102801	M-08-瞬间炮击	2	0.5		0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0	5000		1	81102804	1		1	1				811028011	801025	811045							0.4	HitCase		0				1	1					
+81102802	M-08-瞬间炮击	2	0.5		-0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020mirrored	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0	5000		1	81102804	1		1	1				811028021	801025	811045							0.4	HitCase		0				1	1					
+81102804	M-08-瞬间炮击-烈焰区域	2	2.5				0			4		5			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801005								0	HitCase		0					0					
+81102901	M-09-地狱火-给1个目标添加标记 812002	2	99				0			4		0.1			1								1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81102903	预警特效	2	2				100			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81102906			0	1													0	HitCase		0	1				0					
+81102904	M-09-地狱火-导弹伤害	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2	0		1	81102905			0	1					801030								0	HitCase		0					1					
+81102905	M-09-地狱火-烈焰区域	2	2.5				0			4		15			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801007								0	HitCase		0					0					
+81102906	M-09-地狱火-导弹特效 11	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	1	0.1		1	81102904			0	1													0	HitCase		0					0					
+81112101	无畏战车（二阶段）的技能1-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81112201	无畏战车（二阶段）的技能2-1	2	5			5	0			4		2			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81112203	无畏战车（二阶段）的技能2-3	2	5			5	0			4		3			-1						FxMbMsMd040011Attack0801		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81112301	无畏战车（二阶段）的技能3-1	2	2			3	15			4		0.5			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81112302	无畏战车（二阶段）的技能3-1	2	2			12	23			4		0.4			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81112303	无畏战车（二阶段）的技能3-1	1	2	20		31	0			4		0.2			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81112304	无畏战车（二阶段）的技能3-1	2	2			3	23			4		0.9			-1						FxMbMsMd040011Attack0901		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81112401	无畏战车（二阶段）的技能4-1	1	3	40		20	0		0	4		5.5			-1	1	FxDibingShouji		0.05				-1			1					0	0	0	0							0	1					801100								0	HitCase		1					1					
+81112501	无畏战车（二阶段）的技能5-1	2	9			0	0			4		1.5			-1	1	FxDibingShouji		0.5				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81112701	M-06-爆裂导弹（全员标记）	2	99				0			4		0.1			-1								-1			1					0	0	0	0							0	1					801065								0	HitCase		0					0					
+81112901	M-09-地狱火-给1个目标添加标记	2	99				0			4		0.1			-1								1			1					0	0	0	0							0	1					811102								0	HitCase		0					0					
+81112903	预警特效	2	2				100			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81112904			0	1													0	HitCase		0	1				0					
+81112904	M-09-地狱火-导弹特效	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	1	0.1		1	81112905			0	1													0	HitCase		0					0					
+81112905	M-09-地狱火-导弹伤害	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2	0		1	81112906			0	1					801040								0	HitCase		0					1					
+81112906	M-09-地狱火-烈焰区域	2	2.5				0			4		60			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801012								0	HitCase		0					0					
+81121101	L-01-左爪打中间	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811211011	801050	811042							0	HitCase		0					1					
+81121103	L-01-左爪打中间	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81121201	L-02-左爪打左边	2	3		-4	4	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811212011	801050	811042							0	HitCase		0					1					
+81120101	R-01-右爪打中间	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811201011	801050	811042							0	HitCase		0					1					
+81120103	R-01-右爪打中间	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81120201	R-02-右爪打右边	2	3		4	4	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811202011	801050	811042							0	HitCase		0					1					
+81122101	M-01-前方挥砍	1	10	5		5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1				811221011	801075	811046							0	HitCase		0					1					
+81122201	M-02-机枪扫射	3	10.5	55			0			4		1.75			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1				811222011	801012	811044							0	HitCase	1	0					1					
+81122202	M-02-机枪扫射	3	10.5	55			0			4		1.75			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1				811222021	801012	811044							0	HitCase	1	0					1					
+81122206	M-02-机枪扫射	2	5			6	0			4		5			-1						FxMbMsMd040011Attack0401		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81122301	M-03-怒吼	2	15			0	0			4		0.3			-1		FxDibingShouji		0.1				-1			1					0	0	0	0							0	1				811223011	801050	811046							0	HitCase		0					1					
+81122401	M-04-跳跃	2	3			5	0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81122601	M-06-爆裂导弹（全员标记）811211	2	99				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81122603	预警特效	2	2				150			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81122611			0	1													0	HitCase		0	1	1			0					
+81122611	M-06-爆裂导弹（导弹特效）	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	2	0.1		1	81122612			0	1													0	HitCase		0					0					
+81122612	M-06-爆裂导弹（导弹伤害）	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2							0	1				811226121	801065	811043							0	HitCase		0					1					
+81122621	M-06-目标标记-阶段1	2	6.5				0			4		3			-1								-1			1					0	0	0	1			1	81122611			0	1													0	HitCase	1	0					0					
+81122622	M-06-位置标记-阶段1	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	3	81122611			0	1													0	HitCase		0					0					
+81122631	M-06-目标标记-阶段2	2	6.5				0			4		3			-1								-1			1					0	0	0	1		0.15	3	81122611			0	1													0	HitCase	1	0					0					
+81122632	FxMbMsMd040011Attack17Yujing14M3S	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	5	81122611			0	1													0	HitCase		0					0					
+81122801	M-08-瞬间炮击	2	0.5		0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0							1	1				811228011	801025	811045							0.4	HitCase		0				1	1					
+81122802	M-08-瞬间炮击	2	0.5		-0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020mirrored	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0							1	1				811228021	801025	811045							0.4	HitCase		0				1	1					
+81122804	M-08-瞬间炮击-烈焰区域	2	2.5				0			4		5			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801005								0	HitCase		0					0					
+81122901	M-09-地狱火-给1个目标添加标记 812002	2	99				0			4		0.1			1								1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81122903	预警特效	2	2				100			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81122906			0	1													0	HitCase		0	1				0					
+81122904	M-09-地狱火-导弹伤害	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2	0		1	81122905			0	1					801030								0	HitCase		0					1					
+81122905	M-09-地狱火-烈焰区域	2	2.5				0			4		15			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801007								0	HitCase		0					0					
+81122906	M-09-地狱火-导弹特效 11	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	1	0.1		1	81122904			0	1													0	HitCase		0					0					
+81132101	无畏战车（二阶段）的技能1-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81132201	无畏战车（二阶段）的技能2-1	2	5			5	0			4		2			-1	1	FxDibingShouji		0.3				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81132203	无畏战车（二阶段）的技能2-3	2	5			5	0			4		3			-1						FxMbMsMd040011Attack0801		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81132301	无畏战车（二阶段）的技能3-1	2	2			3	15			4		0.5			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81132302	无畏战车（二阶段）的技能3-1	2	2			12	23			4		0.4			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81132303	无畏战车（二阶段）的技能3-1	1	2	20		31	0			4		0.2			-1	1	FxDibingShouji		0.1				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81132304	无畏战车（二阶段）的技能3-1	2	2			3	23			4		0.9			-1						FxMbMsMd040011Attack0901		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81132401	无畏战车（二阶段）的技能4-1	1	3	40		20	0		0	4		5.5			-1	1	FxDibingShouji		0.05				-1			1					0	0	0	0							0	1					801100								0	HitCase		1					1					
+81132501	无畏战车（二阶段）的技能5-1	2	9			0	0			4		1.5			-1	1	FxDibingShouji		0.5				-1			1					0	0	0	0							0	1													0	HitCase		0					1					
+81132701	M-06-爆裂导弹（全员标记）	2	99				0			4		0.1			-1								-1			1					0	0	0	0							0	1					801065								0	HitCase		0					0					
+81132901	M-09-地狱火-给1个目标添加标记	2	99				0			4		0.1			-1								1			1					0	0	0	0							0	1					811102								0	HitCase		0					0					
+81132903	预警特效	2	2				100			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81132904			0	1													0	HitCase		0	1				0					
+81132904	M-09-地狱火-导弹特效	2	6.5				0			4		0.6			-1						FxMbMsMd040011Attack17Dandao14M		-1			1					0	0	0	1	0.1		1	81132905			0	1													0	HitCase		0					0					
+81132905	M-09-地狱火-导弹伤害	2	6.5				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2	0		1	81132906			0	1					801040								0	HitCase		0					1					
+81132906	M-09-地狱火-烈焰区域	2	2.5				0			4		60			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801012								0	HitCase		0					0					
+81300101	物理三段式-1	1	2	3		1.5	0			4		0.1			-1		FxMb1SwordMd030001Attack0101Shouji						-1			1					0	0	0	0							0	1				813001011	801017								0	HitCase	1	0					1					
+81300102	物理三段式-2	1	2	3		1.5	0			4		0.1			-1		FxMb1SwordMd030001Attack0102Shouji						-1			1					0	0	0	0							0	1				813001021	801017								0	HitCase	1	0					1					
+81300103	物理三段式-3	1	2	3		1.5	0			4		0.1			-1		FxMb1SwordMd030001Attack0103Shouji						-1			1					0	0	0	0							0	1				813001031	801017								0	HitCase	1	0					1					
+81300104	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030001Attack0101		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300105	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030001Attack0102		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300106	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030001Attack0103		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300202	一闪-伤害	1	1	2		1	0			4		0.4			-1		FxMb1SwordMd030001Attack06R1Shouji						-1			1					0	0	0	0							0	1				813002021	801025								0	HitCase	1	1					1					
+81300205	一闪-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030001Attack06R1		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300301	玫瑰之吻 伤害	2	5				0			4		0.1			-1		FxMb1SwordMd030001Attack03Shouji						-1			1					0	0	0	2							0	2				813003011	801060	995537	200005			200005			0	HitCase		0					1					
+81300302	玫瑰之吻 特效	2	5			-1	0			4		1			-1						FxMb1SwordMd030001Attack0302		-1			1					0	0	0	1	0.55		1	81300301			0	1													0	HitCase		0					0					
+81300401	影袭	1	1.8	2			100		0	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004011	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300402	影袭	1	1.8	2			100		30	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004021	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300403	影袭	1	1.8	2			100		60	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004031	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300404	影袭	1	1.8	2			100		90	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004041	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300405	影袭	1	1.8	2			100		120	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004051	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300406	影袭	1	1.8	2			100		150	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004061	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300407	影袭	1	1.8	2			100		180	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004071	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300408	影袭	1	1.8	2			100		210	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004081	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300409	影袭	1	1.8	2			100		240	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004091	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300410	影袭	1	1.8	2			100		270	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004101	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300411	影袭	1	1.8	2			100		300	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004111	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300412	影袭	1	1.8	2			100		330	4		0.1			-1		FxMb1SwordMd030001Attack04Shouji						-1			1					0	0	0	0							0	1				813004121	811008	995537	200005			200005			0	HitCase	1	0					1					
+81300413	影袭-特效	1	1.5	2			0		0	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300414	影袭-特效	1	1.5	2			0		30	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300415	影袭-特效	1	1.5	2			0		60	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300416	影袭-特效	1	1.5	2			0		90	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300417	影袭-特效	1	1.5	2			0		120	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300418	影袭-特效	1	1.5	2			0		150	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300419	影袭-特效	1	1.5	2			0		180	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300420	影袭-特效	1	1.5	2			0		210	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300421	影袭-特效	1	1.5	2			0		240	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300422	影袭-特效	1	1.5	2			0		270	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300423	影袭-特效	1	1.5	2			0		300	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81300424	影袭-特效	1	1.5	2			0		330	4		4			-1						FxMb1SwordMd030001Attack0402		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81301101	烈焰三段式-1	3	10	180			0			4		0.1			-1		FxMb1SwordMd030001Attack02Shouji						-1			1					0	0	0	0							0	1				813011011	801030	995559	200003			200003			0	HitCase	1	0					1					
+81301102	烈焰三段式-2	3	10	180			0			4		0.1			-1		FxMb1SwordMd030001Attack02Shouji						-1			1					0	0	0	0							0	1				813011021	801030	995549	200003			200003			0	HitCase	1	0					1					
+81301103	烈焰三段式-3	2	10				0			4		0.1			-1		FxMb1SwordMd030001Attack02Shouji						-1			1					0	0	0	0							0	1				813011031	801060	813058	200005			200005			0	HitCase	1	0					1					
+81301202	一闪-伤害	1	1	2		1	0			4		0.4			-1		FxMb1SwordMd030001Attack06R2Shouji						-1			1					0	0	0	0							0	1				813012021	801025								0	HitCase	1	1					1					
+81301205	一闪-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030001Attack06R2		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81301301	地火-伤害	2	3				0			4		0.1			-1		FxMb1SwordMd030001Attack05Shouji						-1			1					0	0	0	2							0	1				813013011	801100	995537							0	HitCase		0					1					
+81301302	地火-特效1	2	3				0			4		1			-1						FxMb1SwordMd030001Attack0502		-1			1					0	0	0	1	0.5		1	81301301			0	1													0	HitCase		0					0					
+81301303	地火-特效2	2	3				0			4		1			-1						FxMb1SwordMd030001Attack0502		-1			1					0	0	0	1	0.5		1	81301301			0	1													0	HitCase		0					0					
+81301304	地火-特效3	2	3				0			4		1			-1						FxMb1SwordMd030001Attack0502		-1			1					0	0	0	1	0.5		1	81301301			0	1													0	HitCase		0					0					
+81302101	黑暗三段式-1	1	1	3		1.5	0			4		0.1			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1				813021011	801020	816004							0	HitCase		0					1					
+81302102	黑暗三段式-2	1	1	3		1.5	0			4		0.1			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1				813021021	801020	816004							0	HitCase		0					1					
+81302103	黑暗三段式-3	1	1	3		1.5	0			4		0.1			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1				813021031	801050	200006	816003			200006			0	HitCase		0					1					
+81302104	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030002Attack0101		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81302105	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030002Attack0102		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81302106	物理三段式-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030002Attack0103		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81302202	一闪-伤害	1	1	2		1	0			4		0.4			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1				813022021	801027								0	HitCase	1	1					1					
+81302205	一闪-特效	2	3	3			0			4		2			-1						FxMb1SwordMd030002Attack03		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81302307	遁入黑暗 特效	2	3	3			0			4		2			-1					Bip001	FxMb1SwordMd030002Attack02Bip001		-1			1					0	0	0	0							0	1													0	HitCase		0					0					
+81302402	黑暗突袭	1	2	1.5		1	0			4		0.15			1		FxMb1SwordMd030002Attack04Shouji						1			1					0	0	0	0							0	1				813024021	801100	200008	995537			200008			0	HitCase	1	1					1					
+81302701	黑暗剑风	2	2				100		0	4		1			-1		FxMb1SwordMd030002AttackShouji				FxMb1SwordMd030002Attack06Dandao		-1			1					0	0	0	0							0	1				813027011	801030	995552							0	HitCase		0					1					
+81400102	普攻	1	4	3.3		2	0			4		0.1			-1		FxMb1LadyMd10001Attack01Shouji						-1			1					0	0	0	0							0	1				814001021	801005								0	HitCase	1	0		1			1					
+81400103	普攻	1	4	3.3		2	0			4		0.1			-1		FxMb1LadyMd10001Attack01Shouji						-1			1					0	0	0	0							0	1				814001031	801005								0	HitCase	1	0		1			1					
+81400104	普攻	1	4	3.3		2	0			4		0.1			-1		FxMb1LadyMd10001Attack01Shouji						-1			1					0	0	0	0							0	1				814001041	801020								0	HitCase	1	0		1			1					
+81400201	直线光束	1	2	30		15	0			4		0.1			-1		FxMb1LadyMd10001Attack02Shouji						-1			1					0	0	0	0							0	1				814002011	801040								0	HitCase	1	0		1			1					
+81400311	垂直光束	2	2.5				0			4		0.1			-1		FxMb1LadyMd10001Attack03Shouji						-1			1					0	0	0	2							0	1				814003111	801045								0	HitCase		0					1					
+81400312	垂直光束FxYujing1M07S	2	2.5				0			4		3			-1						FxMb1LadyMd10001Attack0305m		-1			1					0	0	0	1	0.65		1	81400311			0	1													0	HitCase		0					0					
+81400402	毒圈	4	2	5			0			4		0.1			-1		FxMb1LadyMd10001Attack04Shouji						-1			1					0	0	0	0							0	1					801020								0	HitCase	1	0					0					
+81400403	毒圈	2	5				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0					0					
+81400502	大爆炸	2	35				0			4		0.1			-1		FxMb1LadyMd10001Attack05Shouji						-1			1					0	0	0	2							0	2				814005021	801100								0	HitCase	1	0		1			1					
+81400503	大爆炸	2	35			5.5	0			4		3			-1						FxMb1LadyMd10001Attack05Zha70m		-1			1					0	0	0	0	0.1		1	81400502			0	1													0	HitCase		0		1			0					
+81400801	全屏毒雨（环形伤害子弹）	4	7.5	50			0			4		0.1			-1	1	FxMb1LadyMd10001Attack08Shouji		0.3				-1			1					0	0	0	0							0	1					801010								0	HitCase		0		1			0					
+81400803	大爆炸	2	7.5				0			4		0.1			-1		FxMb1LadyMd10001Attack08Shouji						-1			1					0	0	0	2							0	2				814008031	801025								0	HitCase		0					1					
+81400804	大爆炸	2	3.7				0			4		3	0.8		-1						FxMb1LadyMd10001Attack08Zha		-1			1					0	0	0	1	0.8		1	81400803			0	1													0	HitCase		0					0					
+81400805	垂直光束	2	2.5				0			4		0.1			-1		FxMb1LadyMd10001Attack08Shouji						-1			1					0	0	0	2							0	1				814008051	801045								0	HitCase		0					1					
+81400806	垂直光束FxYujing1M07S	2	2.5				0			4		3			-1						FxMb1LadyMd10001Attack0305m		-1			1					0	0	0	1	0.65		1	81400311			0	1													0	HitCase		0					0					
+81401102	普攻	1	4	3.7		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1				814011021	801005								0	HitCase	1	0		1			1					
+81401103	普攻	1	4	3.6		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1				814011031	801005								0	HitCase	1	0		1			1					
+81401104	普攻	1	4	3.7		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1				814011041	801020								0	HitCase	1	0		1			1					
+81405501	直线光束	1	3	30		15	0			4		0.3			-1	1	FxMb1LadyMd10001Attack12Shouji		0.05				-1			1					0	0	0	0							0	1		0.2	0.1	814055011	801002	200002				200002		814055012	0	HitCase	1	0		1			1					
+81405502	普攻	2	0.1				0			4		3			-1						FxMb1LadyMd10001Attack12		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+81405602	普攻	1	4	4		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1		0.2	0.1	814056021	801005	200002				200002		814056022	0	HitCase	1	0		1			1					
+81405603	普攻	1	4	4		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1		0.2	0.1	814056031	801005	200002				200002		814056032	0	HitCase	1	0		1			1					
+81405604	普攻	1	4	4		2	0			4		0.1			-1		FxMb1LadyMd10001Attack11Shouji						-1			1					0	0	0	0							0	1		0.2	0.1	814056041	801010	200002				200002		814056042	0	HitCase	1	0		1			1					
+81405701	直线光束	1	3	30		15	0			4		0.3			-1	1	FxMb1LadyMd10001Attack02Shouji		0.05				-1			1					0	0	0	0							0	1		0.2	0.1	814057011	801002	200002				200002		814057012	0	HitCase	1	1		1			1					
+81405703	普攻	2	0.1				0			4		3			-1						FxMb1LadyMd10001Attack12		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+81405704	直线光束	1	3	30	-3	15	0			4		0.3			-1	1	FxMb1LadyMd10001Attack02Shouji		0.05				-1			1					0	0	0	0							0	1		0.2	0.1	814057041	801002	200002				200002		814057042	0	HitCase	1	1		1			1					
+81405705	普攻	2	0.1		-3		0			4		3			-1						FxMb1LadyMd10001Attack12		-1			1					0	0	0	0							0	1													0	HitCase		1		1			0					
+81405706	直线光束	1	3	30	3	15	0			4		0.3			-1	1	FxMb1LadyMd10001Attack02Shouji		0.05				-1			1					0	0	0	0							0	1		0.2	0.1	814057061	801002	200002				200002		814057062	0	HitCase	1	1		1			1					
+81405707	普攻	2	0.1		3		0			4		3			-1						FxMb1LadyMd10001Attack12		-1			1					0	0	0	0							0	1													0	HitCase		1		1			0					
+81406101	垂直光束	2	2.5				0			4		3			-1						FxMb1LadyMd10001Attack0305m		-1			1					0	0	0	1	0.7		1	81406111			0	1		0.2	0.1										0	HitCase		0					0					
+81406111	垂直光束	2	2.5				0			4		0.1			-1		FxMb1LadyMd10001Attack03Shouji						-1			1					0	0	0	2							0	1		0.2	0.1	814061111	801010	200002				200002		814061112	0	HitCase		0					1					
+81406202	毒圈	4	2	5			0			4		0.1			-1		FxMb1LadyMd10001Attack04Shouji						-1			1					0	0	0	0							0	1		0.2	0.1		801005								0	HitCase	1	0					0					
+81406203	毒圈	2	5				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0					0					
+81406302	大爆炸	2	35				0			4		0.1			-1		FxMb1LadyMd10001Attack05Shouji						-1			1					0	0	0	2							0	1		0.2	0.1	814063021	801080	200004				200004			0	HitCase	1	0					1					
+81406303	大爆炸	2	35			5.5	0			4		3			-1						FxMb1LadyMd10001Attack05Zha70m		-1			1					0	0	0	0	0.1		1	81400502			0	1		0.2	0.1										0	HitCase		0					0					
+81410102	一闪-伤害	2	1.1				0			6		999			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1				814101021	801100								0	HitCase	1	1		1			1					
+81410104	一闪-伤害	2	1.1				0			2		999			-1		FxMb1SwordMd030002AttackShouji						-1			1					0	0	0	0							0	1										814101			0	HitCase	1	1		1			1					

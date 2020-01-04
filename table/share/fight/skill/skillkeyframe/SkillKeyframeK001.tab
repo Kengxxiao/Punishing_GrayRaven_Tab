@@ -1,0 +1,173 @@
+Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11]	Key[12]	Key[13]	Key[14]	Key[15]	Key[16]	Key[17]	Key[18]	Key[19]	Key[20]	Key[21]	Key[22]	Key[23]	Key[24]	Key[25]	Key[26]	Key[27]	Key[28]	Key[29]	Key[30]	Key[31]	Key[32]	Key[33]	Key[34]	Key[35]	Key[36]	Key[37]	Key[38]	Key[39]	Key[40]	Key[41]	Key[42]	Key[43]	Key[44]	Key[45]	Key[46]	Key[47]	Key[48]	Key[49]	Key[50]	Key[51]	Key[52]	Key[53]	Key[54]	Key[55]	Key[56]	Key[57]	Key[58]	Key[59]	Key[60]	Key[61]	Key[62]	Key[63]	Key[64]	Key[65]	Key[66]	Key[67]	Key[68]	Key[69]	Key[70]	Key[71]	Key[72]	Key[73]	Key[74]	Key[75]	Key[76]	Key[77]	Key[78]	Key[79]	Key[80]
+815001	16|Cast|81500101	0|Turn|120|0.7|1	1|Effect|FxMb1OrphanMd030001Attack01||1																																																																													
+815002	11|Cast|81500201	0|Turn|1200|0.5|1																																																																														
+815003	14|Cast|81500301|81500303	0|Turn|120|0.6|1																																																																														
+815004	0|Cast|81500401	5|Move|30|0.4|0	0|Magic|800108|0																																																																													
+815005	0|Cast|81500501	5|Move|30|0.5|0	0|Magic|800108|0																																																																													
+815006	24|Cast|81500601|81500602	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
+815007	20|Cast|81500701|81500702	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
+815008	20|Cast|81500801|81500802	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
+815011	0|Cast|81501101																																																																															
+815012	0|Effect|FxMb1OrphanMd030001Attack12Bip001LHand|Bip001LHand|1																																																																															
+815013	0|Magic|815007|0																																																																															
+815014																																																																																
+815015	0|Magic|815008|0																																																																															
+815022	11|Cast|81502201	0|Turn|1200|0.5|1																																																																														
+815026	24|Cast|81502601|81502602	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
+815027	20|Cast|81502701|81502702	0|Effect|FxMb1OrphanMd030001Attack06Dummy001|Dummy001|1																																																																														
+815028	5|Magic|815053|0																																																																															
+815029	5|Move|-20|0.4|0																																																																															
+815030	11|Cast|81503001|81503005	0|Turn|1200|0.5|1																																																																														
+815031	3|Magic|815005|0																																																																															
+815051	14|Cast|81505101	5|Move|20|0.4|0	0|Magic|800108|0	14|Shake|3|0.3|-0.8|10|0.2|0																																																																												
+815052	14|Cast|81505201	5|Move|-20|0.4|0	0|Magic|800108|0	14|Shake|3|0.3|-0.8|10|0.2|0																																																																												
+815055	14|Cast|81505501	0|Turn|120|0.7|1	1|Effect|FxMb1OrphanMd030001Attack01||1																																																																													
+815056	14|Cast|81505601|81505603	0|Turn|120|0.6|1	14|Shake|3|0.4|-0.8|13|0.2|0																																																																													
+815057	14|Cast|81505701	5|Move|30|0.4|0	14|Magic|800108|0	14|Shake|3|0.4|-1|12|0.3|0																																																																												
+815061	10|Cast|81506101	0|Turn|1200|0.5|1	11|Cast|81506105	0|Turn|1200|0.5|1	12|Cast|81506109	0|Turn|1200|0.5|1																																																																										
+815062	0|Magic|815101|0																																																																															
+815063	15|Cast|81506301	15|Shake|3|0.5|-1|12|0.3|0	4|Move|30|0.2|0																																																																													
+816001	33|Cast|81600101	40|Cast|81600102	0|Turn|120|1.5|1	0|Effect|FxMb1LuolanMd010001Attack01||1	30|Cast|81600105																																																																											
+816002	26|Cast|81600201	29|Cast|81600202	0|Turn|120|1.2|1	0|Effect|FxMb1LuolanMd010001Attack02||1																																																																												
+816003	25|Cast|81600301	0|Turn|120|1.2|1	0|Effect|FxMb1LuolanMd010001Attack03||1																																																																													
+816004	14|Cast|81600401	0|Turn|120|0.7|1	0|Effect|FxMb1LuolanMd010001Attack04||1																																																																													
+816005	1|Move|-80|0.2|0	0|Magic|800110|0	0|Magic|816018|0																																																																													
+816006	21|Cast|81600601	27|Cast|81600602	37|Cast|81600603	0|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack06||1																																																																											
+816007	18|Cast|81600701	31|Cast|81600702	0|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack07||1																																																																												
+816008	16|Cast|81600801	22|Cast|81600802	0|Turn|150|0.8|1	36|Cast|81600804	0|Effect|FxMb1LuolanMd010001Attack08||1	16|Cast|81600806																																																																										
+816009	0|Effect|FxMb1LuolanMd010001Attack09||1																																																																															
+816011	14|Cast|81601101	27|Cast|81601102	0|Turn|120|0.7|1	16|Turn|120|0.4|1	0|Effect|FxMb1LuolanMd010001Attack11||1																																																																											
+816012	0|Turn|240|1|1	0|Cast|81601202	0|Effect|FxMb1LuolanMd010001Attack1201||1	11|Cast|81601205																																																																												
+816013	1|Move|150|0.2|0	7|Cast|81601302	12|Move|20|0.05|0	13|Cast|81601304	0|Magic|800120|0	0|Effect|FxMb1LuolanMd010001Attack13||1	12|Effect|FxMb1LuolanMd010001Attack13Dilie||1																																																																									
+816014	16|Cast|81601401	22|Cast|81601402	32|Cast|81601403	0|Turn|120|0.8|1																																																																												
+816015	16|Cast|81601501	28|Cast|81601502	0|Turn|120|0.8|1																																																																													
+816016	13|Cast|81601601	18|Cast|81601602	0|Turn|150|0.8|1	33|Cast|81601604																																																																												
+816017	0|Effect|FxMb1LuolanMd010001Attack17Dummy005|Dummy005|1	0|Effect|FxMb1LuolanMd010001Attack17||1	27|Cast|81601703																																																																													
+816018																																																																																
+816019	1|Magic|800120|0	7|Cast|81601902	0|Effect|FxMb1LuolanMd010001Attack19|HitCase|1	7|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	11|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	15|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	19|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	23|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	27|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1																																																																							
+816020	1|Move|-80|0.1|0	0|Magic|800110|0																																																																														
+816051	1|Move|15|0.43|0	0|Magic|800110|0	0|Turn|1800|0.1|1	0|Magic|800707|0																																																																												
+816052	1|Move|-15|0.43|0	0|Magic|800110|0	0|Turn|1800|0.1|1	0|Magic|800707|0																																																																												
+816055	14|Cast|81605501	0|Effect|FxMb1LuolanMd010001Attack04||1	14|Shake|5|0.5|-0.5|10|0.1|0																																																																													
+816056	13|Cast|81605601	27|Cast|81605602	11|Turn|3600|0.1|1	0|Effect|FxMb1LuolanMd010001Attack11||1	4|Move|100|0.4|0	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	11|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	12|Magic|800043|0	12|Magic|800050|0																																																																	
+816057	0|Turn|240|1|1	0|Cast|81605702	0|Effect|FxMb1LuolanMd010001Attack1201||1	11|Cast|81605705																																																																												
+816058	1|Move|150|0.2|0	6|Cast|81605802	12|Move|20|0.05|0	13|Cast|81605804	0|Magic|800120|0	0|Effect|FxMb1LuolanMd010001Attack13||1	12|Effect|FxMb1LuolanMd010001Attack13Dilie||1																																																																									
+816060																																																																																
+816061	0|Effect|FxMb1LuolanMd010001Attack17Dummy005|Dummy005|1	0|Effect|FxMb1LuolanMd010001Attack17||1	26|Cast|81606103	0|Turn|900|0.2|1	26|Shake|3|0.4|-0.6|15|0.3|0																																																																											
+816062	1|Magic|800120|0	7|Cast|81606202	0|Effect|FxMb1LuolanMd010001Attack19|HitCase|1	7|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	11|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	15|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	19|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	23|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	27|Effect|FxMb1LuolanMd010001Attack19Qiangkou|Bip001 Prop2|1	7|Shake|3|0.3|-1|11|0.2|1	11|Shake|3|0.3|-1|11|0.2|2	15|Shake|3|0.3|-1|11|0.2|3	19|Shake|3|0.3|-1|11|0.2|4	23|Shake|3|0.3|-1|11|0.2|5	27|Shake|3|0.3|-1|11|0.2|6																																																																	
+816063	16|Cast|81606301	22|Cast|81606302	0|Turn|150|0.8|1	36|Cast|81606304	0|Effect|FxMb1LuolanMd010001Attack08||1	16|Cast|81606306																																																																										
+816070	16|Cast|81607001	21|Cast|81607002	32|Cast|81607003	5|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack14||1	0|Turn|900|0.2|1																																																																										
+816071	16|Cast|81607101	28|Cast|81607102	5|Turn|120|0.8|1	0|Effect|FxMb1LuolanMd010001Attack15||1	0|Turn|900|0.2|1																																																																											
+816072	14|Cast|81607201	20|Cast|81607202	5|Turn|150|0.8|1	34|Cast|81607204	0|Effect|FxMb1LuolanMd010001Attack16||1	14|Cast|81607206	0|Turn|900|0.2|1																																																																									
+816073	0|Effect|FxMb1LuolanMd010001Attack17Dummy005|Dummy005|1	0|Effect|FxMb1LuolanMd010001Attack17||1	26|Cast|81607303	0|Turn|900|0.2|1																																																																												
+817001	4|Move|20|0.3|0	17|Cast|81700102	0|Effect|FxYubei02|Bip001Head|1																																																																													
+817002	4|Move|-20|0.3|0	17|Cast|81700202	0|Effect|FxYubei02|Bip001Head|1																																																																													
+817003	19|Cast|81700301|81700302|81700303|81700304	19|Cast|81700305|81700306|81700307|81700308	27|Effect|FxYubei02|Bip001Head|1																																																																													
+817004	20|Cast|81700401	24|Cast|81700402	28|Cast|81700403	32|Cast|81700404	36|Cast|81700405	40|Cast|81700406	44|Cast|81700407	7|Effect|FxYubei02|Bip001Head|1	0|Turn|180|2.2|1	0|Move|-10|1|5																																																																						
+817006	0|Cast|81700601|81700602|81700603|81700604	0|Cast|81700605|81700606|81700607|81700608	0|Cast|81700609	0|Effect|FxYubei02|Bip001Head|1	0|Turn|180|1.5|1																																																																											
+817007	4|Move|-20|0.3|0																																																																															
+817008	4|Move|20|0.3|0																																																																															
+817009	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	9|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	10|Magic|800043|0	10|Magic|800050|0																																																																						
+817010	0|Magic|800050|0	5|Magic|800043|0	0|Effect|FxMb1LuxiyaMd000003Shanbi||1																																																																													
+817005	30|Magic|817001|0																																																																															
+817011																																																																																
+817012																																																																																
+817013																																																																																
+817014	0|Turn|120|999|1	0|Effect|FxYubei02|Bip001Head|1																																																																														
+817015	0|Turn|120|999|1	6|Cast|81701502																																																																														
+817016	0|Turn|120|999|1																																																																															
+817017	0|Turn|120|999|1	0|Effect|FxYubei02|Bip001Head|1																																																																														
+817018	0|Turn|120|999|1	5|Magic|817002|0	35|Magic|817002|0	65|Magic|817002|0	95|Magic|817002|0	16|Move|-40|0.15|0	46|Move|-40|0.15|0	76|Move|-40|0.15|0	106|Move|-40|0.15|0	15|Magic|800102|0	45|Magic|800102|0	75|Magic|800102|0	105|Magic|800102|0																																																																			
+817019	0|Turn|120|999|1																																																																															
+817020	0|Turn|120|999|1	0|Cast|81702002	30|Cast|81702003	60|Cast|81702004	90|Cast|81702005																																																																											
+817021	29|Cast|81702101	0|Turn|120|0.45|1	8|Cast|81702103	0|Effect|FxYubei02|Bip001Head|1																																																																												
+817022	0|Cast|81702201	0|Effect|FxYubei02|Bip001Head|1																																																																														
+817023																																																																																
+817024																																																																																
+817051	4|Move|20|0.3|0	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	9|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	10|Magic|800043|0	10|Magic|800050|0																																																																					
+817052	4|Move|-20|0.3|0	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	9|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	10|Magic|800043|0	10|Magic|800050|0																																																																					
+817053	4|Move|20|0.3|0	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	9|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	10|Magic|800043|0	10|Magic|800050|0	10|Cast|81705312|81705313|81705314|81705315	10|Cast|81705316|81705317|81705318|81705319																																																																			
+817054	4|Move|-20|0.3|0	0|Magic|817059|0	4|Magic|800041|0	4|Magic|800044|0	4|Magic|800045|0	4|Magic|800046|0	4|Magic|800047|0	2|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	9|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	10|Magic|800043|0	10|Magic|800050|0	10|Cast|81705412|81705413|81705414|81705415	10|Cast|81705416|81705417|81705418|81705419																																																																			
+817055	0|Cast|81705501	5|Turn|30|1.5|1	0|Turn|720|0.2|1	0|Move|15|0.3|	0|Shake|2|0.2|-0.5|10|0.1|0																																																																											
+817056	0|Cast|81705601	5|Turn|30|1.5|1	0|Turn|720|0.2|1	0|Move|15|0.3|	0|Shake|2|0.2|-0.5|10|0.1|0																																																																											
+817057	2|Move|10|0.4|0	2|Cast|81705718	4|Cast|81705719	6|Cast|81705720	8|Cast|81705721	10|Cast|81705722	12|Cast|81705723	2|Shake|2|0.2|-0.5|10|0.1|0	4|Shake|2|0.2|-0.5|10|0.1|0	6|Shake|2|0.2|-0.5|10|0.1|0	8|Shake|2|0.2|-0.5|10|0.1|0	10|Shake|2|0.2|-0.5|10|0.1|0	12|Shake|2|0.2|-0.5|10|0.1|0																																																																			
+817058	0|Cast|81705802	0|Move|15|0.3|																																																																														
+817059	1|Cast|81705901	0|Cast|81705902	0|Move|-15|0.3|																																																																													
+817060	0|Move|15|0.3|	0|Turn|120|0.45|1	1|Cast|81706003	0|Cast|81706004	3|Cast|81706005	2|Cast|81706006	5|Cast|81706007	3|Cast|81706008	7|Cast|81706009	5|Cast|81706010	8|Cast|81706011	7|Cast|81706012	9|Cast|81706013|81706014																																																																			
+817061	0|Cast|81706101	3|Cast|81706102	6|Cast|81706103	9|Cast|81706104	12|Cast|81706105	15|Cast|81706106	18|Cast|81706107	0|Move|5|1|																																																																								
+817062	0|Cast|81706201|81706202|81706203|81706204	0|Cast|81706205|81706206|81706207|81706208	0|Cast|81706209|81706210|81706211|81706212	0|Cast|81706213|81706214|81706215|81706216	0|Cast|81706217|81706218	0|Turn|180|1.5|1	6|Cast|81706222	0|Turn|120|0.45|1	5|Cast|81706224	6|Cast|81706225	5|Cast|81706226	6|Cast|81706227	5|Cast|81706228																																																																			
+817063	0|Magic|817059|0	2|Magic|800041|0	2|Magic|800044|0	2|Magic|800045|0	2|Magic|800046|0	2|Magic|800047|0	0|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	38|Effect|FxMb1LuxiyaMd000003Shanbi|HitCase|1	39|Magic|800043|0	39|Magic|800050|0	0|Move|9|2|	2|Cast|81706312	6|Cast|81706314	10|Cast|81706316	14|Cast|81706318	18|Cast|81706320	22|Cast|81706322	26|Cast|81706324	30|Cast|81706326	34|Cast|81706328	38|Cast|81706330	2|Cast|81706331																																																										
+817070	10|Magic|817101|0																																																																															
+817071	13|Cast|81707101|81707102|81707103|81707104	13|Cast|81707105|81707106|81707107|81707108																																																																														
+817072	0|Turn|720|0.2|1	4|Turn|120|999|1	6|Cast|81707203	0|Move|2.5|999|0																																																																												
+817073	10|Magic|817101|0																																																																															
+818001	17|Cast|81800101	0|Turn|120|0.75|1	0|Effect|FxMb1SandwormMd030001Attack01||1	17|Magic|818007|0																																																																												
+818002	17|Cast|81800201	0|Turn|120|0.75|1	17|Effect|FxMb1SandwormMd030001Attack02BoneZui|BoneZui|1																																																																													
+818003	36|Cast|81800301	0|Turn|120|1.6|1	0|Effect|FxMb1SandwormMd030001Attack03||1																																																																													
+818004	18|Cast|81800401	33|Cast|81800402	50|Cast|81800403	68|Cast|81800404	90|Cast|81800405	0|Turn|120|0.85|1	20|Turn|120|0.6|1	35|Turn|120|0.7|1	52|Turn|120|0.75|1	70|Turn|120|0.95|1	0|Effect|FxMb1SandwormMd030001Attack01||1	16|Effect|FxMb1SandwormMd030001Attack01||1	34|Effect|FxMb1SandwormMd030001Attack01||1	51|Effect|FxMb1SandwormMd030001Attack01||1	74|Effect|FxMb1SandwormMd030001Attack01||1	18|Magic|818007|0	33|Magic|818007|0	50|Magic|818007|0	68|Magic|818007|0	90|Magic|818007|0																																																												
+818005	64|Cast|81800501	88|Cast|81800502	115|Cast|81800503	137|Cast|81800504	172|Cast|81800505	0|Turn|120|3.15|1	66|Turn|120|1.2|1	93|Turn|120|1.3|1	122|Turn|120|1.35|1	152|Turn|120|1.3|1																																																																						
+818006	0|Effect|FxMb1SandwormMd030001Attack06||1	25|Magic|818007|0																																																																														
+818007																																																																																
+818008	0|Effect|FxMb1SandwormMd030001Attack08Head||1																																																																															
+818009	0|Cast|81800901																																																																															
+818011	62|Magic|800041|0	62|Magic|818005|0	62|Magic|800044|0	62|Magic|800045|0	62|Magic|800046|0	62|Magic|800047|0	0|Effect|FxMb1SandwormMd030001Attack11||1																																																																									
+818012	1|Cast|81801201	0|Magic|800050|0	5|Magic|800043|0	0|Effect|FxMb1SandwormMd030001Attack12||1	0|Effect|FxMb1SandwormMd030001Attack12Head|BoneHead|1	1|Magic|818007|0																																																																										
+818013	40|Magic|800041|0	39|Magic|818005|0	39|Magic|800044|0	39|Magic|800045|0	39|Magic|800046|0	39|Magic|800047|0																																																																										
+819001	0|Magic|819002|0	0|Magic|819003|0	0|Magic|819007|0																																																																													
+819002	0|Move|-30|0.2|2	0|Magic|819041|0	2|Magic|819042|0	2|Magic|819043|0	2|Magic|819044|0	2|Magic|819045|0	2|Magic|819046|0	2|Cast|81900208	12|Cast|81900209	0|Magic|995598|0																																																																						
+819003	1|Move|50|0.2|2	0|Magic|819008|0																																																																														
+819004																																																																																
+819005																																																																																
+831001	16|Cast|83100101	23|Cast|83100102	37|Cast|83100103	50|Cast|83100104	62|Cast|83100105	0|Turn|180|0.8|1	14|Turn|120|0.35|1	22|Turn|120|0.7|1	36|Turn|120|0.65|1	48|Turn|120|0.6|1	61|Magic|818007|0	0|Effect|FxMb1XiuMd010001Attack01||1	61|Cast|83100113	61|Cast|83100114																																																																		
+831002	17|Cast|83100201	20|Cast|83100202	26|Cast|83100203	32|Cast|83100204	40|Cast|83100205	0|Turn|180|0.85|1	16|Turn|80|0.15|1	19|Turn|80|0.3|1	25|Turn|80|0.3|1	30|Turn|80|0.4|1	0|Magic|800157|0	16|Magic|800151|0	19|Magic|800154|0	25|Magic|800153|0	30|Magic|800156|0	13|Move|30|0.15|	17|Move|20|0.1|	23|Move|20|0.1|	28|Move|20|0.1|	35|Move|20|0.1|	0|Effect|FxMb1XiuMd010001Attack02||1	38|Cast|83100222																																																										
+831003	3|Move|30|0.3|2	0|Turn|180|0.15|1	0|Effect|FxMb1XiuMd010001Attack03||1	0|Magic|831563|0																																																																												
+831004	6|Cast|83100401	20|Cast|83100402	0|Turn|80|0.3|1	5|Turn|80|0.7|1	0|Effect|FxMb1XiuMd010001Attack04||1	6|Cast|83100406																																																																										
+831005	9|Cast|83100501	17|Cast|83100502	25|Cast|83100503	32|Cast|83100504	0|Turn|120|0.45|1	8|Turn|120|0.4|1	16|Turn|120|0.4|1	24|Turn|120|0.35|1	5|Move|20|0.2|2	13|Move|20|0.2|2	0|Effect|FxMb1XiuMd010001Attack05||1	6|Cast|83100512																																																																				
+831006	8|Cast|83100601	0|Magic|831004|0	0|Magic|800154|0	0|Effect|FxMb1XiuMd010001Attack06||1	6|Cast|83100605																																																																											
+831007	13|Cast|83100701	0|Effect|FxMb1XiuMd010001Attack07||1																																																																														
+831008	0|Cast|83100801	0|Magic|800157|0																																																																														
+831009	0|Magic|100097|0	0|Magic|100098|0	0|Magic|800008|0	0|Magic|800009|0	0|Magic|831021|0	0|Effect|FxMb1XiuMd010001Attack09||1																																																																										
+831011	0|Magic|831002|0																																																																															
+831012	1|Move|50|0.15|	0|Magic|831563|0	0|Magic|831007|0																																																																													
+831013	0|Magic|800710|0	0|Effect|FxMb1XiuMd010001Attack13||1	13|Cast|83101303	12|Cast|83101304																																																																												
+831014	2|Cast|83101401	0|Magic|831004|0	0|Magic|800154|0	0|Effect|FxMb1XiuMd010001Attack14||1	6|Cast|83101405																																																																											
+831015	13|Cast|83101501	21|Cast|83101502	0|Turn|120|0.65|1	13|Turn|120|0.4|1	8|Move|30|0.25|2	16|Move|30|0.25|2	0|Effect|FxMb1XiuMd010001Attack15||1	0|Magic|800157|0																																																																								
+831016	0|Magic|100097|0	0|Magic|100098|0	0|Magic|800008|0	0|Magic|800009|0	0|Magic|831021|0	0|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83101607	12|Cast|83101608																																																																								
+831017	0|Magic|831563|0	0|Effect|FxMb1XiuMd010001Attack16Guozai||1	0|Magic|831016|0																																																																													
+831018	8|Cast|83101801	0|Magic|831004|0	0|Magic|800154|0	0|Effect|FxMb1XiuMd010001Attack06||1	6|Cast|83101805																																																																											
+831019	12|Cast|83101901	14|Cast|83101902	16|Cast|83101903	18|Cast|83101904	20|Cast|83101905	12|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83101907	18|Cast|83101908																																																																								
+831051	3|Move|30|0.3|2	0|Turn|180|0.15|1	0|Effect|FxMb1XiuMd010001Attack03||1	0|Magic|831563|0																																																																												
+831060	5|Cast|83106001	19|Cast|83106002	0|Turn|80|0.25|1	5|Turn|80|0.7|1	0|Effect|FxMb1XiuMd010001Attack04||1	6|Cast|83106006																																																																										
+831061	16|Cast|83106101	19|Cast|83106102	25|Cast|83106103	30|Cast|83106104	38|Cast|83106105	0|Turn|180|0.8|1	16|Turn|80|0.15|1	19|Turn|80|0.3|1	25|Turn|80|0.25|1	30|Turn|80|0.4|1	0|Magic|800157|0	16|Magic|800151|0	19|Magic|800154|0	25|Magic|800153|0	30|Magic|800156|0	13|Move|30|0.15|	17|Move|20|0.1|	23|Move|20|0.1|	28|Move|20|0.1|	35|Move|20|0.1|	0|Effect|FxMb1XiuMd010001Attack02||1	38|Cast|83106122																																																										
+831062	12|Cast|83106201	14|Cast|83106202	16|Cast|83106203	18|Cast|83106204	20|Cast|83106205	12|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83106207	18|Cast|83106208																																																																								
+831063	0|Cast|83106301	0|Magic|800157|0																																																																														
+831101																																																																																
+831102	0|Turn|120|0.1|1	2|Move|5|0.4|	10|Turn|360|0.25|1	12|Move|30|0.15|	15|Cast|83110205	0|Magic|800153|0	0|Cast|83110207	0|Effect|FxMb1XiuMd010002Attack02Bip001RFoot|Bip001 R Foot|1	15|Cast|83110209																																																																							
+831103	2|Move|100|0.2|	0|Effect|FxMb1XiuMd010002Attack03||1																																																																														
+831104	4|Cast|83110401	2|Move|80|0.1|	0|Turn|360|0.1|1	0|Magic|800153|0	0|Effect|FxMb1XiuMd010002Attack04||1																																																																											
+831105	3|Cast|83110501	12|Cast|83110502	1|Move|80|0.1|	0|Turn|360|0.05|1	10|Turn|360|0.1|1	0|Magic|800153|0	0|Effect|FxMb1XiuMd010002Attack05||1																																																																									
+831106	8|Cast|83110601	6|Move|60|0.1|	4|Turn|360|1|1	0|Magic|800155|0	0|Effect|FxMb1XiuMd010002Attack06||1	0|Effect|FxMb1XiuMd010002Attack06Bip001LFoot|Bip001 L Foot|1																																																																										
+831107	6|Cast|83110701	15|Cast|83110702	4|Move|60|0.1|	2|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack07||1	6|Cast|83110707																																																																									
+831108	7|Cast|83110801	5|Move|60|0.1|	3|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack08||1	6|Cast|83110806																																																																										
+831109	7|Cast|83110901	12|Cast|83110902	5|Move|40|0.1|	3|Turn|360|1|1	10|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack09||1																																																																									
+831111	7|Cast|83111101	5|Move|20|0.1|	3|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack11||1																																																																											
+831112	4|Cast|83111201	12|Cast|83111202	2|Move|40|0.1|	0|Turn|360|1|1	0|Magic|800153|0	0|Effect|FxMb1XiuMd010002Attack12||1																																																																										
+831113	6|Cast|83111301	11|Cast|83111302	19|Cast|83111303	24|Cast|83111304	4|Move|60|0.1|	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack13||1	6|Cast|83111308																																																																								
+831114	7|Cast|83111401	16|Cast|83111402	20|Cast|83111403	28|Cast|83111404	39|Cast|83111405	5|Move|40|0.1|	3|Turn|360|1|1	0|Magic|800155|0	0|Effect|FxMb1XiuMd010002Attack14||1	0|Effect|FxMb1XiuMd010002Attack14Bip001RHand|Bip001 R Hand|1	7|Cast|83111411	38|Cast|83111412																																																																				
+831115	7|Cast|83111501	5|Move|40|0.1|	3|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack15||1																																																																											
+831116	6|Cast|83111601	4|Move|40|0.1|	2|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack16||1																																																																											
+831117	8|Cast|83111701	0|Cast|83111702	0|Magic|800155|0																																																																													
+831118	7|Cast|83111801	0|Cast|83111802	0|Magic|800155|0	0|Effect|FxMb1XiuMd010002Attack18||1																																																																												
+831119	4|Cast|83111901	8|Cast|83111902	12|Cast|83111903	15|Cast|83111904	20|Cast|83111905	26|Cast|83111906	29|Cast|83111907	34|Cast|83111908	39|Cast|83111909	45|Cast|83111910	52|Cast|83111911	61|Cast|83111912	2|Move|80|0.1|	6|Move|30|0.1|	10|Move|30|0.1|	13|Move|30|0.1|	18|Move|30|0.1|	24|Move|30|0.1|	27|Move|30|0.1|	32|Move|30|0.1|	37|Move|30|0.1|	43|Move|50|0.1|	50|Move|50|0.1|	61|Move|30|0.1|	0|Turn|360|0.1|1	4|Turn|120|0.05|1	8|Turn|120|0.05|1	11|Turn|120|0.05|1	16|Turn|120|0.05|1	22|Turn|120|0.05|1	25|Turn|120|0.05|1	30|Turn|120|0.05|1	35|Turn|120|0.05|1	41|Turn|120|0.05|1	48|Turn|120|0.05|1	60|Turn|120|0.05|1	56|Magic|831041|0	56|Magic|831042|0	56|Magic|831043|0	56|Magic|831044|0	56|Magic|831045|0	56|Cast|83111942	61|Cast|83111943	0|Magic|800153|0	0|Effect|FxMb1XiuMd010002Attack19||1																																			
+831121	8|Cast|83112101	4|Move|-20|0.2|	0|Turn|180|0.2|1	0|Magic|800153|0	0|Effect|FxMb1XiuMd010002Attack21||1																																																																											
+831122	0|Magic|800712|0	2|Move|20|0.25|																																																																														
+831123	0|Magic|800710|0	2|Move|-20|0.25|																																																																														
+831124	0|Magic|800710|0	2|Move|20|0.25|																																																																														
+831125	0|Magic|800710|0	2|Move|20|0.25|																																																																														
+831126	1|Move|50|0.15|	0|Magic|800703|0																																																																														
+831127	6|Cast|83112701	14|Cast|83112702	4|Move|40|0.1|	2|Turn|360|1|1	0|Magic|800154|0	0|Effect|FxMb1XiuMd010002Attack27||1																																																																										
+831128	0|Magic|800710|0	0|Effect|FxMb1XiuMd010001Attack13||1	12|Cast|83112803	12|Cast|83112804																																																																												
+831129																																																																																
+831131																																																																																
+831132																																																																																
+831141	0|Move|5|1|10	20|Move|15|1|15	40|Move|30|1|20	60|Move|50|1|-50	0|Cast|83114105																																																																											

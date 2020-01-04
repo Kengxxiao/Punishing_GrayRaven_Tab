@@ -1,0 +1,111 @@
+Role	State	Target	TransitionDuration
+R2BiankaMd019071		Born	0
+R2BiankaMd019071		Stand2	0.1
+R2BiankaMd019071		Stand1	0.1
+R2BiankaMd019071		Stand3	0.1
+R2BiankaMd019071		Standchange	0.1
+R2BiankaMd019071		Run	0.1
+R2BiankaMd019071		Walk	0.1
+R2BiankaMd019071		Death	0.1
+R2BiankaMd019071		Hit1	0.05
+R2BiankaMd019071		Hit2	0.05
+R2BiankaMd019071		Behitfly	0.05
+R2BiankaMd019071		Hoverhit	0
+R2BiankaMd019071		Falldown	0.1
+R2BiankaMd019071		Hitdown	0.1
+R2BiankaMd019071		Lieonfloor	0.1
+R2BiankaMd019071		Standup	0.1
+R2BiankaMd019071		Straight	0.1
+R2BiankaMd019071		Stun	0.1
+R2BiankaMd019071		TurnLeft	0.1
+R2BiankaMd019071		TurnRight	0.1
+R2BiankaMd019071		StraightBefore	0.1
+R2BiankaMd019071		StraightAfter	0.1
+R2BiankaMd019071		Win	0
+R2BiankaMd019071		Win2	0.1
+R2BiankaMd019071		Runb	0.2
+R2BiankaMd019071		Runl	0.2
+R2BiankaMd019071		Runr	0.2
+R2BiankaMd019071		Stop	0.1
+R2BiankaMd019071		Walkb	0.1
+R2BiankaMd019071		Walkl	0.1
+R2BiankaMd019071		Walkr	0.1
+R2BiankaMd019071		Fail	0.1
+R2BiankaMd019071		Save	0.1
+R2BiankaMd019071		Hit3	0.05
+R2BiankaMd019071		Hit4	0.05
+R2BiankaMd019071		RunStart	0.1
+R2BiankaMd019071		RunStartEnd01	0.1
+R2BiankaMd019071		Attack01	0.1
+R2BiankaMd019071		Attack02	0.1
+R2BiankaMd019071		Attack03	0.1
+R2BiankaMd019071		Attack04	0.1
+R2BiankaMd019071		Attack11	0.1
+R2BiankaMd019071		Attack12	0.1
+R2BiankaMd019071		Attack13	0.1
+R2BiankaMd019071		Attack21	0.1
+R2BiankaMd019071		Attack31	0.1
+R2BiankaMd019071		Attack51	0.1
+R2BiankaMd019071		Move1	0.1
+R2BiankaMd019071		Move2	0.1
+R2BiankaMd019071		Move3	0.1
+R2BiankaMd019071		AttackQte	0
+R2BiankaMd019071	Stand2	Standchange	0.1
+R2BiankaMd019071	Stand2	Run	0.2
+R2BiankaMd019071	Stand2	Walk	0.3
+R2BiankaMd019071	Stand2	Walkb	0.3
+R2BiankaMd019071	Stand2	Walkl	0.3
+R2BiankaMd019071	Stand2	Walkr	0.3
+R2BiankaMd019071	Stand1	Run	0.2
+R2BiankaMd019071	Stand1	Walk	0.1
+R2BiankaMd019071	Standchange	Stand1	0.1
+R2BiankaMd019071	Standchange	Run	0.1
+R2BiankaMd019071	Standchange	Walk	0.1
+R2BiankaMd019071	Run	Stop	0.2
+R2BiankaMd019071	Run	Stand2	0.2
+R2BiankaMd019071	Run	Runb	0.2
+R2BiankaMd019071	Run	Runl	0.2
+R2BiankaMd019071	Run	Runr	0.2
+R2BiankaMd019071	Walk	Stand2	0.1
+R2BiankaMd019071	Hit1	Stand2	0
+R2BiankaMd019071	Hit2	Stand2	0
+R2BiankaMd019071	Behitfly	Hoverhit	0.1
+R2BiankaMd019071	Behitfly	Falldown	0.1
+R2BiankaMd019071	Hoverhit	Falldown	0.1
+R2BiankaMd019071	Falldown	Lieonfloor	0.1
+R2BiankaMd019071	Hitdown	Lieonfloor	0.1
+R2BiankaMd019071	Standup	Stand2	0.1
+R2BiankaMd019071	Straight	Stand2	0.1
+R2BiankaMd019071	Stun	Stand2	0.1
+R2BiankaMd019071	TurnLeft	Stand2	0.1
+R2BiankaMd019071	TurnRight	Stand2	0.1
+R2BiankaMd019071	Win	Win2	0.1
+R2BiankaMd019071	Runb	Stand2	0.2
+R2BiankaMd019071	Runb	Run	0.2
+R2BiankaMd019071	Runb	Runl	0.2
+R2BiankaMd019071	Runb	Runr	0.2
+R2BiankaMd019071	Runl	Stand2	0.2
+R2BiankaMd019071	Runl	Run	0.2
+R2BiankaMd019071	Runl	Runb	0.2
+R2BiankaMd019071	Runl	Runr	0.2
+R2BiankaMd019071	Runr	Stand2	0.2
+R2BiankaMd019071	Runr	Run	0.2
+R2BiankaMd019071	Runr	Runb	0.2
+R2BiankaMd019071	Runr	Runl	0.2
+R2BiankaMd019071	Stop	Stand2	0.1
+R2BiankaMd019071	Walkb	Stand2	0.1
+R2BiankaMd019071	Walkb	Walk	0.2
+R2BiankaMd019071	Walkb	Walkl	0.1
+R2BiankaMd019071	Walkb	Walkr	0.1
+R2BiankaMd019071	Walkl	Stand2	0.1
+R2BiankaMd019071	Walkl	Walk	0.1
+R2BiankaMd019071	Walkl	Walkb	0.1
+R2BiankaMd019071	Walkl	Walkr	0.2
+R2BiankaMd019071	Walkr	Stand2	0.1
+R2BiankaMd019071	Walkr	Walk	0.1
+R2BiankaMd019071	Walkr	Walkb	0.1
+R2BiankaMd019071	Walkr	Walkl	0.2
+R2BiankaMd019071	Hit3	Stand2	0
+R2BiankaMd019071	Hit4	Stand2	0
+R2BiankaMd019071	RunStart	Run	0.05
+R2BiankaMd019071	RunStart	RunStartEnd01	0.1

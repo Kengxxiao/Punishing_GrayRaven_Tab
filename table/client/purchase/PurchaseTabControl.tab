@@ -1,0 +1,7 @@
+Id	Name	GroupId	GroupName	GroupIcon	GroupOrder	UiType	IsOpen
+1	兑换	4	黑卡兑换	UiChange	5	3	1
+2	限购补给包	2	补给包	UiPurchase	1	5	1
+3	日常补给包	2	补给包	UiPurchase	2	6	1
+4	皮肤补给包	2	补给包	UiPurchase	3	7	1
+5	月卡	3	月卡	UICard	4	2	1
+6	充值	1	充值	UiPay	6	1	1

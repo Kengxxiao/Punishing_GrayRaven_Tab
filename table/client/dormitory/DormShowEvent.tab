@@ -1,0 +1,9 @@
+Id	ShowType	Description[1]	Description[2]	State
+101	0			
+102	0			
+103	0			
+104	0			
+105	0	<color=red>体力恢复速度郑家{0}点</color>	<color=#4071C1FF>发呆的小鸟</color>	BORING
+106	0	<color=red>体力恢复速度减少{0}点</color>	<color=#FF4545FF>愤怒的小鸟</color>	LAZY
+107	0	<color=red>心情恢复速度郑家{0}点</color>	<color=#59C345FF>平静的小鸟</color>	LOVE
+108	0	<color=red>心情恢复速度减少{0}点</color>	<color=#C1B840FF>急躁的小鸟</color>	REWAWRD

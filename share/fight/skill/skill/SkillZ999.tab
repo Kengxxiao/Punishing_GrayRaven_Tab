@@ -1,5 +1,0 @@
-Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	SkillMoveType	DistAbort	SkillMoveTrackDistance	MissileLockTarget	SkillFaceType	DodgeLimitTime
-950101	激光射线		3.2	0	Attack01			10	5		2	0	0	
-950102	炮弹		1.4	0	Attack01			10	5		2	0	0	
-950103	震荡波		0.95	0	Attack03			10	2		2	0	0	
-950104	炮弹		0.8	0	Attack01			10	5		2	0	0	

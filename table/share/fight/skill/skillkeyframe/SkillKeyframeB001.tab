@@ -1,0 +1,63 @@
+Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11]	Key[12]	Key[13]	Key[14]	Key[15]	Key[16]	Key[17]	Key[18]	Key[19]	Key[20]	Key[21]	Key[22]	Key[23]	Key[24]	Key[25]	Key[26]	Key[27]	Key[28]	Key[29]	Key[30]	Key[31]	Key[32]	Key[33]	Key[34]	Key[35]	Key[36]	Key[37]	Key[38]	Key[39]	Key[40]	Key[41]	Key[42]	Key[43]	Key[44]	Key[45]	Key[46]	Key[47]	Key[48]	Key[49]	Key[50]	Key[51]	Key[52]	Key[53]	Key[54]	Key[55]	Key[56]	Key[57]	Key[58]	Key[59]	Key[60]	Key[61]	Key[62]	Key[63]	Key[64]	Key[65]	Key[66]	Key[67]	Key[68]	Key[69]	Key[70]	Key[71]	Key[72]	Key[73]	Key[74]	Key[75]	Key[76]	Key[77]	Key[78]	Key[79]	Key[80]
+870101	11|Cast|87010101	13|Cast|87010102	12|Cast|87010103	0|Turn|550|0.65|1	0|Effect|FxMb1OsirisMd000001Attack01||1																																																																											
+870102	13|Cast|87010201	14|Cast|87010202	13|Cast|87010203	0|Turn|550|0.65|1	0|Effect|FxMb1OsirisMd000001Attack02||1																																																																											
+870103	11|Cast|87010301	18|Cast|87010302	36|Cast|87010303	13|Cast|87010304	37|Cast|87010305	0|Effect|FxMb1OsirisMd000001Attack03||1																																																																										
+870104	7|Cast|87010401	18|Cast|87010402	7|Cast|87010403	0|Turn|550|0.35|1	0|Effect|FxMb1OsirisMd000001Attack05||1																																																																											
+870105	19|Cast|87010501	26|Cast|87010502	19|Magic|870309|0	0|Turn|500|0.5|1	0|Cast|87010505																																																																											
+870106	24|Cast|87010601	32|Cast|87010602	24|Cast|87010603	1|Effect|FxMb1OsirisMd000001Attack07||1																																																																												
+870107	3|Cast|87010701	7|Cast|87010702	15|Cast|87010703	27|Cast|87010704	47|Cast|87010705	53|Cast|87010706	89|Cast|87010707	92|Cast|87010708	102|Cast|87010709	113|Cast|87010710	17|Magic|870111|0	23|Magic|870114|0	24|Magic|870115|0	0|Effect|FxMb1OsirisMd000001Attack08||1	0|Effect|FxMb1OsirisMd000001Attack08Bone121|Bone121|	0|Magic|870247|0	0|Cast|87010717	55|Cast|87010718	110|Magic|870252|0	53|Magic|870327|0																																																												
+870108	23|Cast|87010801	22|Magic|870253|0	22|Magic|870141|0	0|Magic|870143|0																																																																												
+870109	22|Cast|87010901																																																																															
+870110	0|Cast|87011001																																																																															
+870111	5|Cast|87011101	13|Cast|87011102	14|Cast|87011103	5|Move|30|0.4|10	0|Effect|FxMb1OsirisMd000001Attack1301||1	0|Effect|FxMb1OsirisMd000001Attack1302||1																																																																										
+870112	18|Cast|87011201	30|Cast|87011202	2|Effect|FxMb1OsirisMd000001Attack14Bip001LHand|Bip001LHand|1																																																																													
+870201	10|Cast|87020101|87020102|87020103	0|Effect|FxMb1OsirisMd000002Attack101YBaofa||1	10|Magic|870254|0	10|Magic|870264|0	10|Effect|FxMb1OsirisMd000002Attack101Y||1																																																																											
+870202	10|Cast|87020201|87020202|87020203	0|Effect|FxMb1OsirisMd000002Attack101RBaofa||1	10|Magic|870254|0																																																																													
+870203																																																																																
+870204																																																																																
+870205																																																																																
+870301	0|Cast|87030101	0|Turn|24|1.35|0																																																																														
+870302	0|Cast|87030201	0|Turn|36|1.35|0																																																																														
+870303	0|Cast|87030301	0|Turn|24|1.35|0																																																																														
+870304	0|Cast|87030401	0|Turn|||																																																																														
+870305																																																																																
+873101	22|Cast|87310104	8|Turn|120|0.4|1	0|Effect|FxMb1LuosaitaMd010001Attack01||1																																																																													
+873102	0|Effect|FxMb1LuosaitaMd010001Attack02||1	20|Cast|87310203	30|Move|-5|0.15|0																																																																													
+873103	3|Effect|FxMb1LuosaitaMd010001Attack03||1	9|Cast|87310302	17|Cast|87310306	27|Cast|87310310	24|Magic|832004|0	38|Move|-1|0.2|0	46|Move|-1|0.2|0																																																																									
+873104	4|Move|20|0.4|5	0|Turn|360|0.1|1	4|Magic|873101|0	4|Magic|873102|0																																																																												
+873105	0|Turn|120|0.1|1	18|Turn|360|0.15|1	13|Move|40|0.05|	19|Move|50|0.05|	0|Effect|FxMb1LuosaitaMd010001Attack06||1	14|Cast|87310506	21|Cast|87310508																																																																									
+873106	34|Magic|873104|0																																																																															
+873107	0|Effect|FxMb1LuosaitaMd010001Attack09LJ||1	0|Magic|873107|0	10|Cast|87310705																																																																													
+873108	0|Move|13|1.35|0	7|Cast|87310802	20|Cast|87310804	0|Turn|180|1.35|1	0|Cast|87310808	0|Magic|873113|0	0|Effect|FxMb1LuosaitaMd010001Attack17LJ||1																																																																									
+873109	0|Turn|360|0.1|1	6|Turn|180|0.8|1	24|Move|50|0.1|	29|Cast|87310906	0|Effect|FxMb1LuosaitaMd010001Attack18||1																																																																											
+873110	0|Cast|87311001	7|Cast|87311002	15|Cast|87311004	41|Cast|87311005	0|Turn|360|0.1|1	0|Effect|FxMb1LuosaitaMd010001Attack19||1																																																																										
+873113	0|Turn|400|0.15|1	3|Move|12|0.4|0	19|Cast|87311304	0|Effect|FxMb1LuosaitaMd010001Attack16||1																																																																												
+873114	5|Move|-30|0.4|	5|Turn|360|0.4|1	0|Effect|FxMb1LuosaitaMd010001Attack12||1																																																																													
+873115	2|Turn|360|0.5|1																																																																															
+873116	2|Turn|360|0.5|1																																																																															
+873117	9|Turn|300|0.3|1	15|Turn|360|0.2|1	19|Turn|180|0.3|1	0|Move|19.5|0.35|	7|Move|19.5|0.7|-20.8	21|Move|4.81|0.5|-3.9	31|Move|1.56|0.65|-1.3																																																																									
+873118	9|Turn|300|0.3|1	15|Turn|360|0.2|1	19|Turn|180|0.3|1	0|Move|19.5|0.35|	7|Move|19.5|0.7|-20.8	21|Move|4.81|0.5|-3.9	31|Move|1.56|0.65|-1.3																																																																									
+873119	2|Turn|360|0.5|1																																																																															
+873120	2|Turn|360|0.5|1																																																																															
+873121	0|Magic|873324|0	0|Magic|873323|0																																																																														
+873301	0|Cast|87330101	2|Magic|800047|0	2|Magic|800045|0	2|Magic|800046|0	24|Magic|800043|0	24|Cast|87330106	35|Cast|87330107	36|Magic|800047|0	36|Magic|800045|0	36|Magic|800046|0	46|Magic|800043|0	63|Cast|87330112	0|Effect|FxMb1LuosaitaMd010002Attack01||1	3|Turn|720|0.85|1	28|Turn|1200|0.35|1	21|Turn|1800|0.2|1																																																																
+873302	14|Cast|87330201	28|Cast|87330202	10|Move|30|0.2|	10|Turn|180|0.2|1	0|Turn|720|0.2|1	0|Magic|800158|0	28|Magic|800047|0	0|Effect|FxMb1LuosaitaMd010002Attack02||1	53|Magic|800043|0																																																																							
+873303	11|Cast|87330301	19|Cast|87330302	29|Cast|87330303	0|Turn|720|0.2|1	6|Turn|180|0.2|1	14|Turn|180|0.2|1	23|Turn|180|0.2|1	0|Magic|800156|0	0|Effect|FxMb1LuosaitaMd010002Attack03||1																																																																							
+873304	9|Cast|87330401	18|Cast|87330402	25|Cast|87330403	37|Cast|87330404	33|Cast|87330405	28|Cast|87330406	0|Turn|720|0.2|1	4|Turn|180|0.2|1	14|Turn|180|0.2|1	21|Turn|180|0.2|1	32|Turn|180|0.2|1	0|Magic|800155|0	0|Effect|FxMb1LuosaitaMd010002Attack04||1	0|Effect|FxMb1LuosaitaMd010002Attack04GuadianDummy005|Dummy005|1																																																																		
+873305	17|Cast|87330501	31|Cast|87330502	32|Cast|87330503	33|Cast|87330504	34|Cast|87330505	0|Turn|120|0.6|1	12|Turn|360|0.2|1	26|Turn|180|0.2|1	0|Magic|800159|0	0|Effect|FxMb1LuosaitaMd010002Attack05||1																																																																						
+873306	12|Magic|800045|0	12|Magic|800046|0	12|Magic|800047|0	16|Magic|873124|0	16|Magic|873117|0	16|Magic|873120|0	16|Magic|800044|0	0|Magic|800170|0	0|Effect|FxMb1LuosaitaMd010002Attack06GuadianBip001|Bip001|1	0|Effect|FxMb1LuosaitaMd010002Attack06||1	16|Magic|873170|0																																																																					
+873307	0|Magic|873123|0	6|Magic|800043|0	0|Move|500|0.2|	12|Move|10|0.6|	5|Cast|87330705	12|Cast|87330706	0|Magic|800170|0	0|Effect|FxMb1LuosaitaMd010002Attack07||1	0|Turn|3600|0.1|1																																																																							
+873308																																																																																
+873309																																																																																
+873311	17|Cast|87331101	0|Turn|720|0.2|1	5|Turn|180|0.8|1	0|Move|-10|1|																																																																												
+873312	14|Cast|87331201	20|Cast|87331202	28|Cast|87331203	34|Cast|87331204	44|Cast|87331205	0|Turn|180|2.2|1	0|Magic|800170|0	14|Effect|FxMb1LuosaitaMd010002Attack12|1|	20|Effect|FxMb1LuosaitaMd010002Attack12|1|	28|Effect|FxMb1LuosaitaMd010002Attack12|1|	34|Effect|FxMb1LuosaitaMd010002Attack12|1|	44|Effect|FxMb1LuosaitaMd010002Attack12|1|																																																																				
+873313																																																																																
+873314																																																																																
+873315	14|Cast|87331501	26|Cast|87331502	44|Cast|87331503	0|Turn|360|2.2|1	26|Move|10|0.9|	26|Magic|832223|0	0|Magic|800158|0	0|Effect|FxMb1LuosaitaMd010002Attack15||1																																																																								
+873316	15|Cast|87331601|87331602|87331603	0|Turn|900|0.1|1	9|Turn|180|0.3|1	999|Effect|FxMb1LuosaitaMd010001Attack16||	0|Magic|800158|0																																																																											
+873321	0|Move|25|0.1|	2|Move|25|0.35|-50	1|Turn|720|0.3|1	0|Magic|800155|0	0|Magic|832207|0	0|Magic|832207|0	0|Magic|832207|0																																																																									
+873322	0|Move|-25|0.1|	2|Move|-25|0.35|50	1|Turn|720|0.3|1	0|Magic|800155|0	0|Magic|832207|0	0|Magic|832207|0	0|Magic|832207|0																																																																									
+873323	0|Move|50|0.1|	2|Move|50|0.35|-100	99|Turn|720|0.3|1	0|Magic|800155|0	0|Magic|832207|0	0|Magic|832207|0	0|Magic|832207|0																																																																									
+873324	0|Move|50|0.1|	2|Move|50|0.35|-100	99|Turn|720|0.3|1	0|Magic|800155|0	0|Magic|832207|0	0|Magic|832207|0	0|Magic|832207|0																																																																									
+873325																																																																																
+873326																																																																																

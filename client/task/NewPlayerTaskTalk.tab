@@ -1,8 +1,0 @@
-Id	Title	StoryId	ShowCharId	SpellName	RoleHalfIcon	GetCount[1]	TalkContent[1]	GetCount[2]	TalkContent[2]	GetCount[3]	TalkContent[3]	GetCount[4]	TalkContent[4]	GetCount[5]	TalkContent[5]
-1	丽芙的考验	300001	1031001		Assets/Product/Texture/Image/RoleStory/LifuNormal01.png	0	指挥官，我们有时会与您进行意识连接，即从您的脑神经进入我们的意识海。为了构建对彼此的信任，请倾听大家的需要并达成他们的请求。	1	这是个好的开始，指挥官，请继续加油。	27	指挥官果然很厉害……	41	指挥官总是能给人带来惊喜呢~	54	对于你能完成所有难题这一点，我深信不疑。
-2	露西亚的考验	300002	1021001		Assets/Product/Texture/Image/RoleStory/LuxiyaNormal01.png	0	不好意思，这个时间来打搅您。希望没有耽误您……遇到了几个棘手的事情，以我的能力还不足以单独解决它，我需要指挥官的帮忙。	1	再接再厉，你可以的。	25	做得很不错了，不用着急，慢慢来。	37	你每次都不会让我失望，指挥官。	49	指挥官果然是个强大又美好的人类，谢谢你。
-3	里的考验	300003	1011002		Assets/Product/Texture/Image/RoleStory/LiangNomal01.png	0	我本不想麻烦你。可是这几个数据我确实没办法再弄到……露西亚说如果是你的话一定能解决……	1	这一点完成度可是不够的。	21	似乎是小看了你呢。	32	有一点出乎意料，你确实很厉害。	42	我承认，你确实是很有实力的指挥官，谢谢你解决了我的难题。
-4	神威的考验	300006	1061002		Assets/Product/Texture/Image/RoleStory/R3ShenweiNormal01.png	0	啊指挥官~不好意思，我这里有点儿事一个人解决不了……哎呀我要是能自己处理我还用得着找你嘛——拜托拜托？	1	继续继续~别停下来呀！	7	完成得挺好的嘛！	11	我就知道找指挥官是最有用的！	14	不愧是指挥官！就让我用更加强大的战斗力来回馈你吧！
-5	七实的考验	300005	1051001		Assets/Product/Texture/Image/RoleStory/Yongyechaonormal01.png	0	指挥官指挥官~不好意思~今天是我来打扰你啦！你能帮帮七实吗？毕竟你是七实最信任的人类啦！	1	哗~感觉还不赖哦！	3	唔姆，一下子就解决了三个难题呢！	5	哇啊~指挥官超厉害——！	7	这么厉害的指挥官，可以一辈子都当我们的指挥官吗？
-6	比安卡的考验	300004	1041002		Assets/Product/Texture/Image/RoleStory/OlisuoNomal01.png	0	打扰了，指挥官。有几个不情之请，需要您的帮助。无法独立完成真是万分惭愧。	1	希望接下的问题也可以这么顺利的解决。	8	嗯，您果然不会让人失望。	12	您确实值得实力过人这个评价。	16	能成为您的构造体，让我感到荣幸。
-7	卡列尼娜的考验	300007	1071002		Assets/Product/Texture/Image/RoleStory/KalieninaNomal01.png	0	我虽然并不想来找你，但是丽芙和露西亚都说一定要让你知道。这些问题我不是解决不了，只是我暂时拿他们没辙而已。哼……	1	这种程度我也能做到啦！	6	嗯……等我更厉害了我也能……	9	居然解决了这么多……好吧，我承认你还是有两下子的。	12	你要负责把我也训练得像你一样厉害！这样我一定能超过露西亚！

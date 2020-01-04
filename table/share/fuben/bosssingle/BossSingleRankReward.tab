@@ -1,0 +1,16 @@
+Id	LevelType	MinRank	MaxRank	MailID	RankIcon
+1	1	0	0.01	11000	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo1.png
+2	1	0.01	0.05	11001	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo2.png
+3	1	0.05	0.1	11002	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo3.png
+4	1	0.1	0.3	11003	
+5	1	0.3	0.95	11004	
+12	2	0	0.01	12000	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo1.png
+13	2	0.01	0.05	12001	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo2.png
+14	2	0.05	0.1	12002	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo3.png
+15	2	0.1	0.3	12003	
+16	2	0.3	0.95	12004	
+23	3	0	0.01	13000	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo1.png
+24	3	0.01	0.05	13001	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo2.png
+25	3	0.05	0.1	13002	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleNo3.png
+26	3	0.1	0.3	13003	
+27	3	0.3	0.95	13004	

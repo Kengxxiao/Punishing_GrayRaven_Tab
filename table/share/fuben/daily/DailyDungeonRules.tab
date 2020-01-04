@@ -1,0 +1,7 @@
+Id	Type	Title	Describe	Remark	SpecialConditionId[1]	SpecialConditionId[2]	Priority	Icon	OpenDayOfWeek[1]	OpenDayOfWeek[2]	OpenDayOfWeek[3]	OpenDayOfWeek[4]	OpenDayOfWeek[5]	OpenDayOfWeek[6]	OpenDayOfWeek[7]	DungeonOfWeek[1]	DungeonOfWeek[2]	DungeonOfWeek[3]	DungeonOfWeek[4]	DungeonOfWeek[5]	DungeonOfWeek[6]	DungeonOfWeek[7]
+1000	15	构造体特训	构造体经验	构造体经验		2002	4	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily08.png	1	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	1000
+1001	16	作战补给	稀有意识掉落	稀有意识		2002	1	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily10.png	1	1	1	1	1	1	1	1001	1001	1001	1001	1001	1001	1001
+1002	17	军备突破	装备突破材料	装备突破材料		2002	3	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily06.png	1	1	1	1	1	1	1	1002	1002	1002	1002	1002	1002	1002
+1003	18	后勤保养	装备经验材料	装备经验材料		2002	2	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily11.png	1	1	1	1	1	1	1	1003	1003	1003	1003	1003	1003	1003
+1004	19	螺母大作战	大量螺母	螺母		2002	5	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily09.png	1	1	1	1	1	1	1	1004	1004	1004	1004	1004	1004	1004
+1005	20	战技演习	技能点掉落	技能点		2002	6	Assets/Product/Texture/Image/UiFubenDailyBanner/UiFubenChapterDaily07.png	1	1	1	1	1	1	1	1005	1005	1005	1005	1005	1005	1005

@@ -1,0 +1,4 @@
+Type	Icon	IconTranspose	Des	Name
+1	Assets/Product/Texture/Image/IconType/IconCharacter3.png	Assets/Product/Texture/Image/IconType/IconCharacter3Transpose.png	专注进攻的类型，拥有多变的进攻能力和辅助攻击技能	进攻型
+2	Assets/Product/Texture/Image/IconType/IconCharacter1.png	Assets/Product/Texture/Image/IconType/IconCharacter1Transpose.png	擅长破甲的类型，拥有吸引敌人和强悍的生存能力	装甲型
+3	Assets/Product/Texture/Image/IconType/IconCharacter2.png	Assets/Product/Texture/Image/IconType/IconCharacter2Transpose.png	擅长支援的类型，拥有进行即场修复或战斗补强的能力	辅助型

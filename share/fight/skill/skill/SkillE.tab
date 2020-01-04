@@ -1,7 +1,0 @@
-Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	SkillMoveType	DistAbort	SkillMoveTrackDistance	MissileLockTarget	SkillFaceType	DodgeLimitTime
-996001	躺倒		9999	0	Lieonfloor			10	2		2	0	0	
-996002	躺倒		9999	0	Lieonfloor			10	2		2	0	0	
-996003	躺倒		9999	0	Lieonfloor			10	2		2	0	0	
-996004	死亡		9999	0	Death			10	2		2	0	0	
-199901	到底	11	999	0	Hitdwon			10	2		2	0	0	
-199902	起立	11	0.5	0	Standup			10	2		2	0	0	

@@ -1,6 +1,0 @@
-Level	DisplayName	ShadowType	SoftShadow	TextureSize	Range	Layers[0]	Layers[1]	Layers[2]	Layers[3]	Layers[4]	LightCameraDistance
-0	关闭	0									
-1	面片	1									
-2	网格	2									
-3	模糊阴影(标清)	3	0	512	2	9	12				3
-4	模糊音影(高清)	3	1	1024	2	9	12				3

@@ -1,6 +1,0 @@
-Level	Capacity	PositionNum[1]	PositionNum[2]	PositionNum[3]	Build	Contribution	EmergencyMaintenance	EmergencyDay
-1	100	1	1	10	100	100	100	1
-2	100	1	1	20	200	200	200	2
-3	100	1	1	30	300	300	300	3
-4	100	1	1	40	400	400	400	4
-5	100	1	1	50	500	500	500	5

@@ -1,0 +1,37 @@
+Id	CharacterID	Pic	Title	Description	NextTrialID
+1	1011002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Li01.png	控弹	消除黄色信号后，下次红色信号额外附加爆炎效果，造成额外小范围火属性伤害。	2
+2	1011002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Li03.png	常用连招	3消蓝色信后使怪物触发“感电”效果，再依次消除黄、红信号，造成高额物理伤害及附加火属性伤害。	1
+3	1021001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1luxiya01.png	红莲-双刀术	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击	4
+4	1021001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1luxiya02.png	常用连招表	3消蓝色信号后攻击附加火属性伤害，再配合消除红色信号进入”红莲-双刀术“，瞬间打出爆发伤害	3
+5	1031001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	核心激光	任意3消后，再次消除红球时，将触发核心激光，造成10段大范围物理伤害。	6
+6	1031001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu02.png	常用连招表	3消黄色信号吸引周围敌人，再消除红色信号释放“核心激光”造成高额群体伤害。	5
+7	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka01.png	翼射	消除黄色信号击中怪物可以获得额外能量，加快必杀技释放	8
+8	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka02.png	常用连招	通过3消触发3次被动“饶恕箭筒”，存储6支能量箭后释放必杀技，造成爆发物理伤害。	9
+9	1041002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka03.png	常用连招	通过3消蓝色信号为武器附加最高等级伤害，后持续使用普攻造成大量伤害。	7
+10	1051001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi01.png	EX-切割风暴	任意3消后，再次消除黄球时，将释放EX-切割风暴，对周围的敌人持续攻击8次，造成大量物理伤害。	11
+11	1051001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi02.png	常用连招表	"3消红色信号快速冲刺至目标怪物位置，再消除黄色信号释放""EX-切割风暴""造成大量物理伤害。"	12
+12	1051001	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi03.png	常用连招表	"3消蓝色信号将周围怪物拉扯至身边，再消除黄色信号释放""EX-切割风暴""造成大范围物理伤害。"	10
+13	1061002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Shenwei02.png	攻防律动	成功格挡伤害将立即反击并发射剑气，对敌人造成物理伤害，且能增加自身攻击力。	14
+14	1061002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Shenwei03.png	大切断	3消红色信号时，重劈将释放额外1次伤害。	13
+15	1071002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Kalie01.png	炮斗战术	3次3消或释放必杀技后，卡列尼娜进入爆发状态，下次普通攻击将用远程炮击攻击，持续3秒。	16
+16	1071002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Kalie02.png	炮斗战术	3次3消或释放必杀技后，卡列尼娜进入爆发状态，下次普通攻击将用远程炮击攻击，持续3秒。	17
+17	1071002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Kalie03.png	常用连招	消除蓝色信号将怪物聚集，再释放必杀技造成范围伤害并触发被动爆裂模式打出高额伤害。	18
+18	1071002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Kalie04.png	常用连招	通过3消黄色信号标记怪物并进入爆裂模式，通过爆裂模式快速触发标记爆炸，造成物理及火属性伤害。	15
+19	1081002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Dubian01.png	疾驰幻影	任意3消标记的敌人，再次3消攻击被标记的敌人时，将释放能量分身，每次普通攻击时，分身攻击一次。	20
+20	1081002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Dubian02.png	偷袭	消除黄色信号快速穿至怪物后方，攻击目标后背触发“偷袭”效果，增加伤害。	21
+21	1081002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Dubian03.png	常用连招	消除黄色信号至怪物后方，消除蓝球色号攻击怪物后方时必定触发暴击。	19
+22	1021002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Luxiya01.png	红莲-引雷舞	消除蓝色信号或黄色信号会标记敌人，攻击被露西亚标记的敌人时，有概率引发落雷攻击目标，造成雷属性伤害。	23
+23	1021002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Luxiya02.png	常用连招	消除黄色信号释放雷电区域，然后3消红色信号增加额外攻击次数造成大量物理及雷属性伤害。	22
+24	1031002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Lifu01.png	逆白鹭领域	普通攻击和红球攻击标记的敌人，有概率召唤引雷。第5次将召唤EX引雷，造成雷属性伤害并治疗区域内友方单位。	25
+25	1031002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Lifu02.png	常用连招	3消红色信号，必定触发引雷	26
+26	1031002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Lifu03.png	常用连招	消除黄色信号将怪物吸引后消除蓝色信号标记怪物，再通过普攻触发引雷被动。	24
+27	1061003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Shenwei01.png	战意	3消额外获得10点能量。一体双心状态下，受到物理和暗影伤害减少。	28
+28	1061003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Shenwei02.png	常用连招	必杀技状态下，使用任意3消快速回复能量，增加必杀技状态持续时间。	27
+29	1031003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Lifu01.png	女神连接系统	强化武器，增加普通攻击段数与伤害。	30
+30	1031003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Lifu02.png	常用连招	消除蓝色信号吸引怪物，通过消除黄色信号搭配普通攻击，增加攻击频率来增加触发被动“光罚”概率。	31
+31	1031003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Lifu03.png	常用连招	任意3消，叠加被动层数，恢复血量。	29
+32	1071003		热能系统	通过3消或大招攒热能，当前热能达到50%自动开启强化状态	33
+33	1071003		热能系统	消除蓝色信号球召唤飞行器，飞行器每次攻击增加热能	32
+34	1011003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Li01.png	常用连招	任意3消+红球释放强化红球	34
+35	1051003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Qishi01.png	核心被动	使用必杀技后，一段时间内增加移动速度且普通攻击变为火属性伤害并使目标火属性抗性降低	35
+36	1021003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Luxiyaaerfa01.png	赤渊-刀光意	3消蓝色信号再次任意3消信号球，进入刀光意，信号球转化为特殊球，消除时释放剑气	36

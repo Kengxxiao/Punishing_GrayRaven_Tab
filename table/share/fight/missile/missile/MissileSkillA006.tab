@@ -1,0 +1,17 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+10221001		2	0.3				0			4		10			999						FxR3LuxiyaAttack21		-1			1															0																											
+10221101		2	0.3				0			4		10			999						FxR3LuxiyaAttack21		-1			1															0																											
+10221201		2	0.3				0			4		10			999						FxR3LuxiyaAttack21		-1			1															0																											
+10221605		2	0.3				0			4		10			999						FxR3LuxiyaAttack51Eye		-1			1															0																											
+10222801		2	0.3				0			4		10			999						FxR3LuxiyaAttack03Dilie		-1			1															0																											
+10150417		2	0.3				0			4		10			999						FxR3YongyechaoAttack0402		-1			1															0																											
+10151103		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie01		-1			1															0																											
+10151104		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie01		-1			1															0																											
+10151203		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie01		-1			1															0																											
+10151204		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie01		-1			1															0																											
+10151303		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie01		-1			1															0																											
+10151304		2	0.3				0			4		10			999						FxR3YongyechaoAttack31Dilie02		-1			1															0																											
+10151312		2	0.3				0			4		10			999						FxR3YongyechaoAttack3102		-1			1															0																											
+10151414		2	0.3				0			4		10			999						FxR3YongyechaoAttack51		-1			1															0																											
+10152110		2	0.3			2	0			4		10			999						FxR3YongyechaoQte		-1			1															0																											
+10152617		2	0.3				0			4		10			999						FxR3YongyechaoAttack0402Ex		-1			1															0																											

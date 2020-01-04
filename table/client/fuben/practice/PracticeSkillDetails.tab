@@ -1,0 +1,30 @@
+StageId	Title	Description	Icon	PhaseDescription
+30100101	闪避训练	基础战斗说明	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	闪避教学
+30100102	进阶战斗	进阶战斗说明	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	
+30100103	构造体战斗	构造体战斗说明	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	
+30100801	红莲-双刀术	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1luxiya01.png	角色教学
+30100802	激光束群	任意3消后下次红球技能将释放激光束群。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	角色教学
+30100803	EX切割风暴	任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成一定的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi01.png	角色教学
+30100804	控弹	消除黄球后，下次红球子弹额外附加爆炎效果。爆炎：子弹命中敌人时发生爆炸，爆炸对范围内的敌人造成火属性伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Li01.png	角色教学
+30100805	爆裂模式	3次3消后，卡列尼娜进入爆发状态，下次普通攻击将用远程炮击攻击，持续3秒，每发炮弹造成一定数量的物理伤害	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Kalie01.png	角色教学
+30100806	饶恕箭筒	每次3消将会储存1支能量箭矢，最多储存3次，下次释放必杀时将储存的能量箭一齐发出，每支能量箭造成一定量的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Bianka02.png	角色教学
+30100807	疾驰幻影	每次3消技能的最后一击击中的敌人将被标记，再次3消时技能的最后一击击中被标记的敌人时，将释放5个能量分身攻击，之后分身将持续存在5秒，每次普通攻击时，都将命令能量分身攻击一次，每次分身攻击造成一定数量的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Dubian01.png	角色教学
+30100808	攻防律动	成功格挡伤害将立即反击，对敌人造成物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Shenwei02.png	角色教学
+30100809	红莲引雷舞	引雷：雷属性攻击被露西亚标记的敌人时，根据敌人被标记的层数，概率引发落雷攻击目标，造成一定的雷属性伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Luxiya01.png	角色教学
+30100810	逆白鹭领域	普通攻击标记的敌人，有一定概率召唤引雷，造成雷属性伤害。红球有30%、60%、100%的概率触发引雷。触发4次引雷后，下次引雷将召唤EX引雷，对敌人造成100%雷属性伤害，并治疗区域内友方单位，回复其一定数量的生命值。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Lifu01.png	角色教学
+30100811	战意	3消技能可以恢复10点能量。暗影状态下，受到物理和暗影伤害将会减少。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Shenwei01.png	角色教学
+30100812	女神连接系统	攻击被标记的敌人时，有20%的概率触发光罚，造成物理伤害。3消或触发5次光罚后，为自身周围的友方单位回复其一定数量的生命值。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Lifu02.png	角色教学
+30100813	空间领主	任意三消后，释放红色信号球，会额外追加连续炮击，每发炮弹会造成一定数量的物理伤害	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Li01.png	角色教学
+30100814	热能武装	卡列尼娜三消或是释放大招后会获得热能，在热能达到50%后进入强化状态并获得一定数量的火属性伤害加成。在强化状态下，热能每秒减少5%。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Kalie01.png	角色教学
+30100815	超频共振	七实普攻与消球会积攒能量，能量积攒至一定程度可释放必杀技，最多可释放3次。释放必杀技后，七实进入超频状态，其普通攻击将转化为火属性伤害，并使命中的目标降低一定的火属性抗性	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Qishi01.png	角色教学
+30100816	赤渊-刀光意	露西亚三消蓝色信号球时会积攒剑意，再次进行任意一次三消即可触发一次后撤闪避，并进入带有霸体的剑意状态。在该状态中，所有信号球都可以转化为剑意，在原有信号球数量基础上会额外获得两个信号球。点击剑意球可释放剑风。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Luxiyaaerfa02.png	角色教学
+30100155	激光束群	任意3消后下次红球技能将释放激光束群。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	角色教学
+30100156	EX切割风暴	任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成一定的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi01.png	角色教学
+30100157	超算空间中单个技能球可算三消，红球触发被动	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1luxiya01.png	角色教学
+30100171	蓝球QTE说明	三消蓝色信号球，可激活蓝色位置的队友，点击可触发该位置角色QTE技能	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue04A.png	QTE教学
+30100172	黄球QTE说明	三消黄色信号球，可激活黄色位置的队友，点击可触发该位置角色QTE技能	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue04B.png	QTE教学
+30100173	消球小技巧	玩家在拥有四个相同颜色的技能球时，点击最外的一个技能球，这样可以在只消除一颗球的情况下保留一个三消技能。如果是在超算空间中，则可以利用此技巧使用连续两次三消技能	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue05.png	消球教学
+30100303	超算空间中单个技能球可算三消，红球触发被动	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue02A.png	角色教学
+30100304	超算空间中单个技能球可算三消，红球触发被动	任意3消后下次红球技能将释放激光束群。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue03A.png	角色教学
+30100305	超算空间中单个技能球可算三消，黄球触发被动	任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成一定的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue03B.png	角色教学
+30100306	超算空间中单个技能球可算三消，红球触发被动	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxue02A.png	角色教学

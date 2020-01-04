@@ -1,0 +1,125 @@
+Id	CueSheetName	CueAwb	HasAwb
+1	External/Criware/b_char.acb		0
+2	External/Criware/c_nornal_step.acb		0
+3	External/Criware/g_amb.acb		0
+4	External/Criware/g_amb_story.acb	External/Criware/g_amb_story.awb	1
+5	External/Criware/g_ui.acb		0
+6	External/Criware/e_signal.acb		0
+7	External/Criware/g_story.acb		0
+8	External/Criware/m_avg_beforebattle.acb	External/Criware/m_avg_beforebattle.awb	1
+9	External/Criware/m_avg_daily.acb	External/Criware/m_avg_daily.awb	1
+10	External/Criware/m_avg_funny.acb	External/Criware/m_avg_funny.awb	1
+11	External/Criware/m_avg_general.acb	External/Criware/m_avg_general.awb	1
+12	External/Criware/m_avg_joyofvictory.acb	External/Criware/m_avg_joyofvictory.awb	1
+13	External/Criware/m_avg_memory.acb	External/Criware/m_avg_memory.awb	1
+14	External/Criware/m_avg_missionstable.acb	External/Criware/m_avg_missionstable.awb	1
+15	External/Criware/m_avg_mysterious.acb	External/Criware/m_avg_mysterious.awb	1
+16	External/Criware/m_avg_overlook.acb	External/Criware/m_avg_overlook.awb	1
+17	External/Criware/m_avg_sad.acb	External/Criware/m_avg_sad.awb	1
+18	External/Criware/m_avg_spaceship.acb	External/Criware/m_avg_spaceship.awb	1
+19	External/Criware/m_sys_title.acb	External/Criware/m_sys_title.awb	1
+20	External/Criware/m_sys_loginin.acb	External/Criware/m_sys_loginin.awb	1
+21	External/Criware/m_nbat_victory.acb	External/Criware/m_nbat_victory.awb	1
+22	External/Criware/m_nbat_failed.acb	External/Criware/m_nbat_failed.awb	1
+23	External/Criware/m_sys_dorm.acb	External/Criware/m_sys_dorm.awb	1
+24	External/Criware/m_nbat_nfighting.acb	External/Criware/m_nbat_nfighting.awb	1
+25	External/Criware/m_nbat_nsneaking.acb	External/Criware/m_nbat_nsneaking.awb	1
+26	External/Criware/m_nbat_tower.acb	External/Criware/m_nbat_tower.awb	1
+27	External/Criware/m_bbat_normal.acb	External/Criware/m_bbat_normal.awb	1
+28	External/Criware/m_bbat_lastfight.acb	External/Criware/m_bbat_lastfight.awb	1
+29	External/Criware/m_sys_christmas.acb	External/Criware/m_sys_christmas.awb	1
+30	External/Criware/m_nbat_nightmare.acb	External/Criware/m_nbat_nightmare.awb	1
+31	External/Criware/me_step.acb		0
+32	External/Criware/g_ingame.acb		0
+33	External/Criware/me_jiaojing.acb		0
+34	External/Criware/m_ev1_intro.acb	External/Criware/m_ev1_intro.awb	1
+35	External/Criware/m_ev1_normalbattle.acb	External/Criware/m_ev1_normalbattle.awb	1
+36	External/Criware/m_ev1_bossbattle.acb	External/Criware/m_ev1_bossbattle.awb	1
+101	External/Criware/c_liRK2.acb		0
+111	External/Criware/c_liRK3.acb		0
+102	External/Criware/c_lucia.acb		0
+112	External/Criware/c_luciaRK2.acb		0
+122	External/Criware/c_luciaRK3.acb		0
+103	External/Criware/c_liv.acb		0
+113	External/Criware/c_livRK2.acb		0
+123	External/Criware/c_livRK3.acb		0
+104	External/Criware/c_biancaRK2.acb		0
+105	External/Criware/c_imper9t.acb		0
+115	External/Criware/c_imper9tRK3.acb		0
+106	External/Criware/c_kamuiRK2.acb		0
+116	External/Criware/c_kamuiRK3.acb		0
+107	External/Criware/c_karenRK2.acb		0
+117	External/Criware/c_karenRK3.acb		0
+108	External/Criware/c_watanabeRK2.acb		0
+202	External/Criware/ja/v_lucia.acb	External/Criware/ja/v_lucia.awb	1
+203	External/Criware/ja/v_liv.acb	External/Criware/ja/v_liv.awb	1
+201	External/Criware/ja/v_li.acb	External/Criware/ja/v_li.awb	1
+206	External/Criware/ja/v_kamui.acb	External/Criware/ja/v_kamui.awb	1
+205	External/Criware/ja/v_imper9t.acb	External/Criware/ja/v_imper9t.awb	1
+204	External/Criware/ja/v_bianca.acb	External/Criware/ja/v_bianca.awb	1
+208	External/Criware/ja/v_watanabe.acb	External/Criware/ja/v_watanabe.awb	1
+207	External/Criware/ja/v_karen.acb	External/Criware/ja/v_karen.awb	1
+302	External/Criware/zh/v_lucia.acb	External/Criware/zh/v_lucia.awb	1
+303	External/Criware/zh/v_liv.acb	External/Criware/zh/v_liv.awb	1
+301	External/Criware/zh/v_li.acb	External/Criware/zh/v_li.awb	1
+306	External/Criware/zh/v_kamui.acb	External/Criware/zh/v_kamui.awb	1
+305	External/Criware/zh/v_imper9t.acb	External/Criware/zh/v_imper9t.awb	1
+304	External/Criware/zh/v_bianca.acb	External/Criware/zh/v_bianca.awb	1
+308	External/Criware/zh/v_watanabe.acb	External/Criware/zh/v_watanabe.awb	1
+307	External/Criware/zh/v_karen.acb	External/Criware/zh/v_karen.awb	1
+402	External/Criware/ca/v_lucia.acb	External/Criware/ca/v_lucia.awb	1
+403	External/Criware/ca/v_liv.acb	External/Criware/ca/v_liv.awb	1
+401	External/Criware/ca/v_li.acb	External/Criware/ca/v_li.awb	1
+406	External/Criware/ca/v_kamui.acb	External/Criware/ca/v_kamui.awb	1
+405	External/Criware/ca/v_imper9t.acb	External/Criware/ca/v_imper9t.awb	1
+404	External/Criware/ca/v_bianca.acb	External/Criware/ca/v_bianca.awb	1
+408	External/Criware/ca/v_watanabe.acb	External/Criware/ca/v_watanabe.awb	1
+407	External/Criware/ca/v_karen.acb	External/Criware/ca/v_karen.awb	1
+9708	External/Criware/me_sword.acb		0
+8130	External/Criware/mb_sword.acb		0
+8140	External/Criware/mb_lady.acb		0
+8170	External/Criware/mb_virginbio.acb		0
+8310	External/Criware/mb_xiurk1.acb		0
+8311	External/Criware/mb_xiurk2.acb		0
+9034	External/Criware/me_prisoner.acb		0
+9033	External/Criware/me_paw.acb		0
+9037	External/Criware/me_arrowsoldier.acb		0
+9026	External/Criware/mo_jgrc.acb		0
+9711	External/Criware/me_camouflage.acb		0
+9035	External/Criware/me_bio.acb		0
+8215	External/Criware/mb_brave.acb		0
+8701	External/Criware/mb_osirisrk1.acb		0
+8702	External/Criware/mb_osirisrk2.acb		0
+8703	External/Criware/mb_osirisrk3.acb		0
+9716	External/Criware/me_cattle.acb		0
+9714	External/Criware/me_rocket.acb		0
+9701	External/Criware/me_spider.acb		0
+9013	External/Criware/me_rider.acb		0
+9019	External/Criware/mo_armor.acb		0
+9018	External/Criware/mo_hunter.acb		0
+9017	External/Criware/mo_actor.acb		0
+9003	External/Criware/mo_spanner.acb		0
+9014	External/Criware/mo_thunderbug.acb		0
+9020	External/Criware/mo_blackspider.acb		0
+9025	External/Criware/mo_ssjk.acb		0
+9012	External/Criware/mo_crawler.acb		0
+9009	External/Criware/mo_act.acb		0
+9011	External/Criware/mo_shooter.acb		0
+9015	External/Criware/mo_tracer.acb		0
+9016	External/Criware/mo_security.acb		0
+9010	External/Criware/mo_ca.acb		0
+9036	External/Criware/me_backsaw.acb		0
+9021	External/Criware/me_armorsp.acb		0
+8150	External/Criware/mb_orphan.acb		0
+8160	External/Criware/mb_luolan.acb		0
+8180	External/Criware/mb_sandworm.acb		0
+9022	External/Criware/me_bio_0.acb		0
+9038	External/Criware/me_gouzaoti.acb		0
+8210	External/Criware/mb_robotarmor.acb		0
+8110	External/Criware/mb_tankarmor.acb		0
+8190	External/Criware/mb_luciaRK3.acb		0
+9045	External/Criware/me_jidijibing.acb		0
+9046	External/Criware/me_jijuxie.acb		0
+8320	External/Criware/me_luosaita_ma.acb		0
+8322	External/Criware/me_luosaita_ren.acb		0
+9002	External/Criware/mo_kuro.acb		0

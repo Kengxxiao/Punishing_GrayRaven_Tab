@@ -1,7 +1,0 @@
-Key	GoodsId	Amount	MoneyCard	Name	Desc	Icon	PayId
-Pay6	com.kurogame.haru.pay6	6	6	6虹卡	充值6元获得6虹卡	Pay6	1
-Pay30	com.kurogame.haru.pay30	30	30	30虹卡	充值30元获得30虹卡	Pay30	2
-Pay68	com.kurogame.haru.pay68	68	68	68虹卡	充值68元获得68虹卡	Pay68	3
-Pay128	com.kurogame.haru.pay128	128	128	128虹卡	充值128元获得128虹卡	Pay128	4
-Pay328	com.kurogame.haru.pay328	328	328	328虹卡	充值328元获得328虹卡	Pay328	5
-Pay648	com.kurogame.haru.pay648	648	648	648虹卡	充值648元获得648虹卡	Pay648	6

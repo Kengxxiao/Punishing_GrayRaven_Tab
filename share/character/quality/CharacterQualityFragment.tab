@@ -1,7 +1,0 @@
-Quality	DecomposeCount	ComposeCount	StarUseCount[1]	StarUseCount[2]	StarUseCount[3]	StarUseCount[4]	StarUseCount[5]	StarUseCount[6]	StarUseCount[7]	StarUseCount[8]	StarUseCount[9]	StarUseCount[10]	PromoteItemId	PromoteUseCoin
-1	6	10	1	1	1	1	1	1	1	1	1	1	1	20000
-2	18	30	2	2	2	2	2	2	2	2	2	2	1	40000
-3	30	50	3	3	3	3	3	3	3	3	3	3	1	60000
-4		80	9	9	9	9	9	9	9	9	9	9	1	80000
-5		170	18	18	18	18	18	18	18	18	18	18	1	100000
-6		250												

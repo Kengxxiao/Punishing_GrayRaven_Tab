@@ -1,0 +1,15 @@
+Id	UiName	ModelName	PositionX	PositionY	PositionZ	RotationX	RotationY	RotationZ	ScaleX	ScaleY	ScaleZ
+1	UiPanelBossDetail	Mb1LuolanMd010001	0	0	0	0	0	0	1	1	1
+2	UiPanelBossDetail	Me1SwordMd002001	0	0	0	0	0	0	0.65	0.65	0.65
+3	UiPanelBossDetail	Mb1OrphanMd030001	0	0	0	0	0	0	0.42	0.42	0.42
+4	UiPanelBossDetail	Mb1SandwormMd030001	0	0	0	0	0	0	0.3	0.3	0.3
+5	UiPanelBossDetail	R3LuxiyaMd010011	0	0	0	0	0	0	1	1	1
+6	UiPanelBossDetail	Mb1SwordMd030001	0	0	0	0	0	0	0.89	0.89	0.89
+7	UiPanelBossDetail	Mb1BraveMd010011	0	0.27	0	0	0	0	0.4	0.4	0.4
+8	UiPanelBossDetail	Mb1VirginbioMd030001	0	0	0	0	0	0	0.72	0.72	0.72
+9	UiPanelBossDetail	Mb1XiuMd010001	0	0	0	0	0	0	1	1	1
+10	UiOnlineBoss	Mb1LuosaitaMd010001	3	1	-42	0	175.5	0	5	5	5
+11	UiOnlineBoss	Mb1TankarmorMd030001	0	0	-13	0	0	0	1.4	1.4	1.4
+12	UiOnlineBoss	Mb1LuosaitaMd010002	3	1	-42	0	175.5	0	5	5	5
+13	UiOnlineBoss	Mb1LadyMd10001	0	0	0	0	0	0	2	2	2
+14	UiOnlineBoss	Mb1OsirisMd000001	0	0	-3.5	0	0	0	2.5	2.5	2.5
