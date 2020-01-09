@@ -1,8 +1,8 @@
 local next = next
 local tableInsert = table.insert
 
+local HtmlMap = {}
 local TagTextPrefix = "NoticeTag"
-local HtmlContent = {}
 local XUiGameNotice = XLuaUiManager.Register(XLuaUi, "UiGameNotice")
 
 function XUiGameNotice:OnStart(rootUi, selectIdx, type)
@@ -10,6 +10,7 @@ function XUiGameNotice:OnStart(rootUi, selectIdx, type)
     self.HttpTextures = {}
     self.HtmlIndexDic = {}
     self.TabBtns = {}
+    self.RequestMap = {}
     self.Type = type
 end
 
@@ -171,17 +172,24 @@ function XUiGameNotice:OnSelectedTog(index)
 end
 
 function XUiGameNotice:ShowHtml(html)
-    if self.WebViewPanel then
-        CS.UnityEngine.Object.DestroyImmediate(self.WebViewPanel.gameObject)
-        self.WebViewPanel = nil
-    end
+    CS.XTool.WaitNativeCoroutine(CS.UnityEngine.WaitForEndOfFrame(), function()
+        if self.WebViewPanel then
+            CS.UnityEngine.Object.DestroyImmediate(self.WebViewPanel.gameObject)
+            self.WebViewPanel = nil
+        end
 
-    if XTool.UObjIsNil(self.PanelWebView) then
-        return
-    end
+        if XTool.UObjIsNil(self.PanelWebView) then
+            return
+        end
 
-    self.WebViewPanel = CS.UnityEngine.Object.Instantiate(self.PanelWebView, self.PanelWebView.parent)
-    CS.XWebView.LoadByHtml(self.WebViewPanel.gameObject, html)
+        local html = HtmlMap[self.CurUrl]
+        if not html then
+            return
+        end
+
+        self.WebViewPanel = CS.UnityEngine.Object.Instantiate(self.PanelWebView, self.PanelWebView.parent)
+        CS.XWebView.LoadByHtml(self.WebViewPanel.gameObject, html)
+    end)
 end
 
 function XUiGameNotice:UpdateWebView(url, urlSlave)
@@ -190,28 +198,24 @@ function XUiGameNotice:UpdateWebView(url, urlSlave)
     end
     self.CurUrl = url
 
-    local htmlCache = HtmlContent[self.CurUrl]
-
-    if htmlCache then
-        self:ShowHtml(htmlCache)
+    if HtmlMap[url] then
+        self:ShowHtml()
         return
     end
 
     local request = CS.XUriPrefixRequest.Get(self.CurUrl)
+    self.RequestMap[request] = url
+    
     CS.XTool.WaitCoroutine(request:SendWebRequest(), function()
         if request.isNetworkError or request.isHttpError then
             return
         end
 
-        local html = request.downloadHandler.text
-        if not self.CurUrl or not HtmlContent then
-            return
-        end
-        
-        HtmlContent[self.CurUrl] = html
-        CS.XTool.WaitNativeCoroutine(CS.UnityEngine.WaitForEndOfFrame(), function()
-            self:ShowHtml(html)
-            request:Dispose()
-        end)
+        local requestUrl = self.RequestMap[request]
+        HtmlMap[requestUrl] = request.downloadHandler.text
+        self:ShowHtml()
+
+        self.RequestMap[request] = nil
+        request:Dispose()
     end)
 end

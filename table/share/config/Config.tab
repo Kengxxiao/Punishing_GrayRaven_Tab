@@ -179,7 +179,7 @@ ArenaTeamRankSortTime	int	1800
 BaseEquipMaxCount	int	30
 DormWorkMaxCount	int	8
 DormReNameLen	int	6
-ReportInterval	int	60
+ReportInterval	int	30
 ArenaWeekBeginTime	int	585000
 DormRecommendedCacheMaxCount	int	200
 DormEventRefreshTime	int	5400

@@ -210,6 +210,8 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
         XDataCenter.DormManager.RequestDormitoryData(cb)
     else
         XDataCenter.DormManager.RequestDormitoryData()
+        local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
+        XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
     end
 end
 

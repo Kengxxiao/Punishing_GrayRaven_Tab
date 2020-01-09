@@ -221,6 +221,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 813058000	ShakeCamera	7|00.35|-00.2|10|00.3|0																													
 813059	AddBuff	813059																													
 813059000	AddAttribValue	1|0|-10000																													
+813060	AddBuff	813060																													
+813060000	AddNpcState	26																													
 995201	AddBuff	995201																													
 995201000	AddBehavior	995201																													
 995202	AddBuff	995202																													
