@@ -98,7 +98,7 @@ function XUiPlayerUp:InitText()
     local differenceGrade = self.NewLevel - self.OldLevel
     local num = 0
     for i = 1, differenceGrade do
-        num = num + XPlayerManager.GetFreeActionPoint(self.OldLevel + i)
+        num = num + XPlayerManager.GetFreeActionPoint(self.OldLevel + i - 1)
     end
 
     self.Txt1.text = num

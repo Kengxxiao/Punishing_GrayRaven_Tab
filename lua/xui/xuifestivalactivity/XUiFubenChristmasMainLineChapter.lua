@@ -17,6 +17,8 @@ function XUiFubenChristmasMainLineChapter:OnEnable()
 
     if self.ChapterId == XFestivalActivityConfig.ActivityId.MainLine then
         XSoundManager.PlaySoundDoNotInterrupt(XSoundManager.UiBasicsMusic.UiActivity_Jidi_BGM)
+    elseif self.ChapterId == XFestivalActivityConfig.ActivityId.NewYear then
+        XSoundManager.PlaySoundDoNotInterrupt(XSoundManager.UiBasicsMusic.UiActivity_NewYear_BGM)
     end
 end
 

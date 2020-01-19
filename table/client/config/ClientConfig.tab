@@ -115,7 +115,9 @@ CommonBagRed	string	Assets/Product/Texture/Atlas/Common/CommonBagRed.png
 UiMainPitchOn	string	Assets/Product/Texture/Image/UiMain/MainPoint1.png
 UiMainPitchOff	string	Assets/Product/Texture/Image/UiMain/MainPoint2.png
 UiBagItemRed	string	Assets/Product/Texture/Atlas/UiBag/BagTag5Days.png
+UiBagItemYellow	string	Assets/Product/Texture/Atlas/UiBag/BagTagHangse.png
 UiBagItemBlue	string	Assets/Product/Texture/Atlas/UiBag/BagTagHuishou.png
+UiBagItemGreen	string	Assets/Product/Texture/Atlas/UiBag/BagTagMax.png
 DefaultPortraitImagePath	string	Assets/Product/Texture/Image/RoleCharacter/TongyonggouzaotiUnknown01.png
 RoomDefaultSoPath	string	Assets/Product/Scene/SuShe/IlluminationSO/GlobalIllumSOsushe003DormDefault.asset
 MissionQuality1	string	Assets/Product/Texture/Atlas/IconMissionQuality/MissionQuality1.png
@@ -218,3 +220,6 @@ ExhibitionLevelPoint_01	int	1
 ExhibitionLevelPoint_02	int	1
 ExhibitionLevelPoint_03	int	1
 ExhibitionLevelPoint_04	int	1
+TipBatteryLeftTime	int	259200
+TipTimeLimitItemsLeftTime	int	1728000
+ActivityBriefEntryIcon	string	Assets/Product/Texture/Atlas/UiFubenActivity/UiFANYA.png

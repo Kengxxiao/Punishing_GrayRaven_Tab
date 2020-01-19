@@ -1,8 +1,3 @@
-local TAG_BG_PATH = {
-    Red = CS.XGame.ClientConfig:GetString("UiBagItemRed"),
-    Blue = CS.XGame.ClientConfig:GetString("UiBagItemBlue"),
-}
-
 XUiBagItem = XClass()
 
 -- 初始化
@@ -31,29 +26,29 @@ end
 function XUiBagItem:InitUi()
     -- 基础信息 -----------------------------------------------------------------------------
     -- 图标
-    self.RImgIcon         = XUiHelper.TryGetComponent(self.Transform, "RImgIcon",        "RawImage")
+    self.RImgIcon        = XUiHelper.TryGetComponent(self.Transform, "RImgIcon",        "RawImage")
     -- 图标背景图
     self.ImgIconBg        = XUiHelper.TryGetComponent(self.Transform, "ImgIconBg",        "Image")
     -- 图标品质底图
-    self.ImgIconQuality   = XUiHelper.TryGetComponent(self.Transform, "ImgIconQuality",   "Image")
+    self.ImgIconQuality = XUiHelper.TryGetComponent(self.Transform, "ImgIconQuality", "Image")
     -- 物品数量
-    self.TxtCount         = XUiHelper.TryGetComponent(self.Transform, "TxtCount",        "Text")
+    self.TxtCount        = XUiHelper.TryGetComponent(self.Transform, "TxtCount",        "Text")
     -- 物品名字
-    self.TxtName          = XUiHelper.TryGetComponent(self.Transform, "TxtName",        "Text")
+    self.TxtName        = XUiHelper.TryGetComponent(self.Transform, "TxtName",        "Text")
     -- 物品描述
-    self.TxtDescription   = XUiHelper.TryGetComponent(self.Transform, "TxtDescription", "Text")
+    self.TxtDescription = XUiHelper.TryGetComponent(self.Transform, "TxtDescription", "Text")
     -- 物品经验是否加倍
     self.TxtEx            = XUiHelper.TryGetComponent(self.Transform, "TxtEx",            "Text")
     -- 世界观描述
-    self.TxtWorldDesc     = XUiHelper.TryGetComponent(self.Transform, "TxtWorldDesc",    "Text")
+    self.TxtWorldDesc    = XUiHelper.TryGetComponent(self.Transform, "TxtWorldDesc",    "Text")
 
     -- 自定义回调 -----------------------------------------------------------------------------
     -- 自定义回调Button
-    self.Btn              = XUiHelper.TryGetComponent(self.Transform, "Btn",            "Button")
+    self.Btn            = XUiHelper.TryGetComponent(self.Transform, "Btn",            "Button")
     -- 自定义回调Button2
-    self.Btn2             = XUiHelper.TryGetComponent(self.Transform, "Btn2",            "Button")
+    self.Btn2            = XUiHelper.TryGetComponent(self.Transform, "Btn2",            "Button")
     -- 自定义Widget
-    self.WgtBtn           = XUiHelper.TryGetComponent(self.Transform, "Btn",            "XUiPointer")
+    self.WgtBtn        = XUiHelper.TryGetComponent(self.Transform, "Btn",            "XUiPointer")
 
     -- 选择相关 -----------------------------------------------------------------------------
     -- 选中Image
@@ -98,7 +93,7 @@ function XUiBagItem:InitUi()
     -- 状态相关 -----------------------------------------------------------------------------
     -- 状态图片
     self.ImgState        = XUiHelper.TryGetComponent(self.Transform, "ImgState",        "Image")
-    self.TxtState        = XUiHelper.TryGetComponent(self.Transform, "ImgState/TxtState",  "Text")
+    self.TxtState        = XUiHelper.TryGetComponent(self.Transform, "ImgState/TxtState", "Text")
     -- 可使用
     self.ImgCanUse        = XUiHelper.TryGetComponent(self.Transform, "ImgCanUse",        "Image")
     -- 物品使用等级
@@ -555,11 +550,11 @@ function XUiBagItem:RefreshSelf(NeedDefulatQulity, isSmallIcon, notCommonBg)
         local text = ""
 
         if XDataCenter.ItemManager.IsCanConvert(self.TemplateId) then
-            sprite = TAG_BG_PATH.Blue
+            sprite = XUiHelper.TagBgPath.Blue
             text = CS.XTextManager.GetText("ItemCanConvert")
         elseif XDataCenter.ItemManager.IsTimeLimit(self.TemplateId) then
-            sprite = TAG_BG_PATH.Red
-            text = CS.XTextManager.GetText("ItemTimeLimit")
+            local leftTime = self.RecycleBatch and self.RecycleBatch.RecycleTime - XTime.Now() or XDataCenter.ItemManager.GetRecycleLeftTime(self.Data.Id)
+            text, sprite = XUiHelper.GetBagTimeLimitTimeStrAndBg(leftTime)
         end
 
         if sprite then

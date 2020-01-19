@@ -103,13 +103,12 @@ XFubenFestivalActivityManagerCreator = function()
         if stageCfg.RequireLevel > 0 and XPlayer.Level < stageCfg.RequireLevel then
             return false, CS.XTextManager.GetText("TeamLevelToOpen", stageCfg.RequireLevel)
         end
-
-        for _, conditionId in pairs(stageCfg.ForceConditionId or {}) do
-            local ret, desc = XConditionManager.CheckCondition(conditionId)
-            if not ret then
-                return false, desc
-            end
-        end
+        -- for _, conditionId in pairs(stageCfg.ForceConditionId or {}) do
+        --     local ret, desc = XConditionManager.CheckCondition(conditionId)
+        --     if not ret then
+        --         return false, desc
+        --     end
+        -- end
 
         -- 如果是彩蛋关
         if XFubenFestivalActivityManager.IsEgg(stageId) then
@@ -223,7 +222,7 @@ XFubenFestivalActivityManagerCreator = function()
 
             local beginTimeSecond = CS.XDate.GetTime(v.BeginTimeStr)
             local endTimeSecond = CS.XDate.GetTime(v.EndTimeStr)
-            if (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FestivalActivity)) and now > beginTimeSecond and endTimeSecond > now then
+            if (not XFunctionManager.CheckFunctionFitter(v.FunctionOpenId)) and now > beginTimeSecond and endTimeSecond > now then
                 table.insert(activityList, {
                     Id = v.Id,
                     Type = v.ChapterType,

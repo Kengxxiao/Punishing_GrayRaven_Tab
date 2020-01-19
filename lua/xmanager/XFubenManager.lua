@@ -45,6 +45,8 @@ XFubenManagerCreator = function()
         JNQH = 20, --日常技能强化
         Christmas = 21, --节日活动-圣诞节
         BriefDarkStream = 22, --活动-极地暗流
+        ActivityBabelTower = 23,    --巴别塔计划
+        FestivalNewYear = 24,       --新年活动
     }
 
     XFubenManager.ModeType = {

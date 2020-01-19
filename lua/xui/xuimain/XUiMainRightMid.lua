@@ -14,6 +14,8 @@ function XUiMainRightMid:Ctor(rootUi)
     self.BtnReward.CallBack = function() self:OnBtnReward() end
     self.BtnSkipTask.CallBack = function() self:OnBtnSkipTask() end
     self.BtnActivityBrief.CallBack = function() self:OnBtnActivityBrief() end
+    self.BtnActivityEntry.CallBack = function() self:OnBtnActivityEntry() end
+    self.BtnActivityEntry:SetSprite(XDataCenter.ActivityBriefManager.GetActivityEntryIcon())
 
     --RedPoint
     XRedPointManager.AddRedPointEvent(self.BtnTask.ReddotObj, self.OnCheckTaskNews, self, { XRedPointConditions.Types.CONDITION_MAIN_TASK })
@@ -30,6 +32,7 @@ function XUiMainRightMid:OnEnable()
     self:RefreshFubenProgress()
     self:UpdateStoryTaskBtn()
     self:UpdateBtnActivityBrief()
+    self:UpdateBtnActivityEntry()
     self:CheakDrawTag()
     --初始化是否锁定
     self.BtnBuilding:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.LivingQuarters))
@@ -296,7 +299,17 @@ function XUiMainRightMid:OnBtnActivityBrief(eventData)
     XLuaUiManager.Open("UiActivityBriefBase")
 end
 -------------活动简介 End-------------------
+-------------活动入口 Begin-------------------
+function XUiMainRightMid:UpdateBtnActivityEntry()
+    local isOpen = XDataCenter.ActivityBriefManager.CheckActivityEntryOpen()
+    self.BtnActivityEntry.gameObject:SetActiveEx(isOpen)
+end
 
+function XUiMainRightMid:OnBtnActivityEntry(eventData)
+    local skipId = XDataCenter.ActivityBriefManager.GetActivityEntrySkipId()
+    XFunctionManager.SkipInterface(skipId)
+end
+-------------活动入口 End-------------------
 --任务红点
 function XUiMainRightMid:OnCheckTaskNews(count)
     self.BtnTask:ShowReddot(count >= 0)

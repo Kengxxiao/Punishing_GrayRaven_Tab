@@ -3,7 +3,6 @@ local GoodsId = 1
 local RewardIndex = 2
 local FoEver = 0
 local UnFoEver = 1
-local CSXDateGetTime = CS.XDate.GetTime
 local FoEverText = CS.XTextManager.GetText("Forever")
 local OverdueText = CS.XTextManager.GetText("TaskStateOverdue")
 function XUiBattery:Ctor(ui)
@@ -77,29 +76,28 @@ function XUiBattery:UpdateGrid(bagItem, parent)
 end
 
 function XUiBattery:SetTime()
-    self.TimeTagHigh.gameObject:SetActiveEx(false)
-    self.TimeTagMid.gameObject:SetActiveEx(false)
-    self.TimeTagLow.gameObject:SetActiveEx(false)
+    local sprite = XUiHelper.TagBgPath.Green
     if not self.BagItem.Data.Template.TimelinessType or
     self.BagItem.Data.Template.TimelinessType == FoEver then
-        self.TxtTimeHigh.text = FoEverText
-        self.TimeTagHigh.gameObject:SetActiveEx(true)
+        self.TxtTime.text = FoEverText
+        sprite = XUiHelper.TagBgPath.Green
         self.IsCantUse = false
     else
         local LifeTime = self.BagItem.RecycleBatch and self.BagItem.RecycleBatch.RecycleTime - XTime.Now() or XDataCenter.ItemManager.GetRecycleLeftTime(self.BagItem.Data.Id)
         if LifeTime and LifeTime > 0 then
-            local tmpTime = XUiHelper.GetTime(LifeTime, XUiHelper.TimeFormatType.MAINBATTERY)
-            self.TxtTimeLow.text = tmpTime
-            self.TxtTimeMid.text = tmpTime
-            if LifeTime > CS.XDate.ONE_DAY_SECOND then
-                self.TimeTagMid.gameObject:SetActiveEx(true)
+            local tmpTime = XUiHelper.GetTime(LifeTime,XUiHelper.TimeFormatType.MAINBATTERY)
+            self.TxtTime.text = tmpTime
+            if LifeTime > CS.XDate.ONE_DAY_SECOND * 7 then
+                sprite = XUiHelper.TagBgPath.Green
+            elseif LifeTime > CS.XDate.ONE_DAY_SECOND then
+                sprite = XUiHelper.TagBgPath.Yellow
             else
-                self.TimeTagLow.gameObject:SetActiveEx(true)
+                sprite = XUiHelper.TagBgPath.Red
             end
             self.IsCantUse = false
         else
-            self.TxtTimeLow.text = OverdueText
-            self.TimeTagLow.gameObject:SetActiveEx(true)
+            self.TxtTime.text = OverdueText
+            sprite = XUiHelper.TagBgPath.Red
             self.IsCantUse = true
             if self.Base.SelectItem.Data.Id == self.BagItem.Data.Id and self.Base.SelectItem.GridIndex == self.BagItem.GridIndex then
                 self.Base.SelectItem = nil
@@ -107,6 +105,7 @@ function XUiBattery:SetTime()
             end
         end
     end
+    self.Base:SetUiSprite(self.TimeTag, sprite)
 end
 
 function XUiBattery:SetSelectShow(parent)
@@ -117,7 +116,7 @@ function XUiBattery:SetSelectShow(parent)
     else
         self:ShowSelect(false)
     end
-    if not self.Base.OldSelectGrig then
+    if not self.Base.OldSelectGrig then 
         self.Base.OldSelectGrig = self
     end
 end

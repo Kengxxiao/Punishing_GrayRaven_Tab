@@ -40,6 +40,13 @@ XUiHelper.TimeFormatType = {
     MAINBATTERY = 11, -- 主界面血清剩余时间
 }
 
+XUiHelper.TagBgPath = {
+    Red = CS.XGame.ClientConfig:GetString("UiBagItemRed"),
+    Yellow = CS.XGame.ClientConfig:GetString("UiBagItemYellow"),
+    Blue = CS.XGame.ClientConfig:GetString("UiBagItemBlue"),
+    Green = CS.XGame.ClientConfig:GetString("UiBagItemGreen"),
+}
+
 function XUiHelper.CreateTemplates(rootUi, pool, datas, ctor, template, parent, onCreate)
     for i = 1, #datas do
         local data = datas[i]
@@ -139,30 +146,34 @@ function XUiHelper.GetTime(second, timeFormatType)
 
     if timeFormatType == XUiHelper.TimeFormatType.DEFAULT then
         if month >= 1 then
-            return month .. STR_MONTH
+            return stringFormat("%d%s", month, STR_MONTH)
         end
         if weeks >= 1 then
-            return weeks .. STR_WEEK
+            return stringFormat("%d%s", weeks, STR_WEEK)
         end
         if days >= 1 then
-            return days .. STR_DAY
+            return stringFormat("%d%s", days, STR_DAY)
         end
         return stringFormat("%02d:%02d:%02d", hours, minutes, seconds)
     end
 
     if timeFormatType == XUiHelper.TimeFormatType.MAINBATTERY then
         if month >= 1 then
-            return month .. STR_MONTH
+            return stringFormat("%d%s", month, STR_MONTH)
         end
         if weeks >= 1 then
-            return weeks .. STR_WEEK
+            return stringFormat("%d%s", weeks, STR_WEEK)
         end
         if days >= 1 then
-            return days .. STR_DAY
+            return stringFormat("%d%s", days, STR_DAY)
         end
-        return hours .. STR_HOUR
+        if hours >= 1 then
+            return stringFormat("%d%s", hours, STR_HOUR)
+        end
+        local notZeroMin = minutes > 0 and minutes or 1
+        return stringFormat("%d%s", notZeroMin, STR_MINUTE)
     end
-    
+
     if timeFormatType == XUiHelper.TimeFormatType.ACTIVITY then
         local totalDays = mathFloor(second / D)
         if totalDays >= 1 then
@@ -172,7 +183,7 @@ function XUiHelper.GetTime(second, timeFormatType)
             return stringFormat("%d%s", hours, STR_HOUR)
         end
         if minutes >= 1 then
-            return stringFormat("%d%s", minutes, STR_MINUTE)    
+            return stringFormat("%d%s", minutes, STR_MINUTE)
         end
         return stringFormat("%d%s", seconds, STR_SECOND)
     end
@@ -187,13 +198,13 @@ function XUiHelper.GetTime(second, timeFormatType)
 
     if timeFormatType == XUiHelper.TimeFormatType.CHALLENGE or timeFormatType == XUiHelper.TimeFormatType.HOSTEL or timeFormatType == XUiHelper.TimeFormatType.PURCHASELB then
         if month >= 1 then
-            return month .. STR_MONTH
+            return stringFormat("%d%s", month, STR_MONTH)
         end
         if weeks >= 1 then
-            return weeks .. STR_WEEK
+            return stringFormat("%d%s", weeks, STR_WEEK)
         end
         if days >= 1 then
-            return days .. STR_DAY .. hours .. STR_HOUR
+            return stringFormat("%d%s%d%s", days, STR_DAY, hours, STR_HOUR)
         end
         return stringFormat("%02d:%02d:%02d", hours, minutes, seconds)
     end
@@ -201,13 +212,13 @@ function XUiHelper.GetTime(second, timeFormatType)
     if timeFormatType == XUiHelper.TimeFormatType.DRAW then
         local sumDas = mathFloor(second / D)
         if sumDas >= 1 then
-            return sumDas .. STR_DAY
+            return stringFormat("%d%s", sumDas, STR_DAY)
         end
         if hours >= 1 then
-            return hours .. STR_HOUR
+            return stringFormat("%d%s", hours, STR_HOUR)
         end
         if minutes >= 1 then
-            return minutes .. STR_MINUTE
+            return stringFormat("%d%s", minutes, STR_MINUTE)
         end
         return stringFormat("%02d:%02d:%02d", hours, minutes, seconds)
     end
@@ -219,13 +230,39 @@ function XUiHelper.GetTime(second, timeFormatType)
     if timeFormatType == XUiHelper.TimeFormatType.ONLINE_BOSS then
         local sumDas = mathFloor(second / D)
         if sumDas >= 1 then
-            return sumDas .. STR_DAY
+            return stringFormat("%d%s", sumDas, STR_DAY)
         end
         if hours >= 1 then
-            return hours .. STR_HOUR
+            return stringFormat("%d%s", hours, STR_HOUR)
         end
         return stringFormat("%02d:%02d", minutes, seconds)
     end
+end
+
+--背包限时道具时间样式
+function XUiHelper.GetBagTimeLimitTimeStrAndBg(second)
+    local timeStr, bgPath = "", ""
+
+    local weeks = mathFloor((second % M) / W)
+    local days = mathFloor((second % W) / D)
+    local hours = mathFloor((second % D) / H)
+    local minutes = mathFloor((second % H) / S)
+    if weeks >= 1 then
+        timeStr = stringFormat("%d%s", weeks, STR_WEEK)
+        bgPath = XUiHelper.TagBgPath.Green
+    elseif days >= 1 then
+        timeStr = stringFormat("%d%s", days, STR_DAY)
+        bgPath = XUiHelper.TagBgPath.Yellow
+    elseif hours >= 1 then
+        timeStr = stringFormat("%d%s", hours, STR_HOUR)
+        bgPath = XUiHelper.TagBgPath.Red
+    else
+        local notZeroMin = minutes > 0 and minutes or 1
+        timeStr = stringFormat("%d%s", notZeroMin, STR_MINUTE)
+        bgPath = XUiHelper.TagBgPath.Red
+    end
+
+    return timeStr, bgPath
 end
 
 --  length为可选参数，为要显示的长度，例如3601,1为1小时，3601,2为1小时1秒,

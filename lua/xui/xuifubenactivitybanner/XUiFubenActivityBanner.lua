@@ -76,7 +76,9 @@ function XUiFubenActivityBanner:ClickChapterGrid(chapter)
         self.ParentUi:PushUi(function()
             XLuaUiManager.Open("UiActivityBossSingle", chapter.Id)
         end)
-    elseif chapter.Type == XDataCenter.FubenManager.ChapterType.Christmas or chapter.Type == XDataCenter.FubenManager.ChapterType.BriefDarkStream then
+    elseif chapter.Type == XDataCenter.FubenManager.ChapterType.Christmas or 
+            chapter.Type == XDataCenter.FubenManager.ChapterType.BriefDarkStream or 
+            chapter.Type == XDataCenter.FubenManager.ChapterType.FestivalNewYear then
         self:OnClickFestivalActivity(chapter.Id)
         
     end

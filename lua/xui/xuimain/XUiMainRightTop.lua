@@ -1,6 +1,7 @@
 local CSXTextManagerGetText = CS.XTextManager.GetText
 
-local TipBatteryLeftTime = 3600 * 24 * 3    -- 限时血清道具提示时间
+local TipTimeLimitItemsLeftTime = CS.XGame.ClientConfig:GetInt("TipTimeLimitItemsLeftTime")    -- 限时道具提示时间
+local TipBatteryLeftTime = CS.XGame.ClientConfig:GetInt("TipBatteryLeftTime")    -- 限时血清道具提示时间
 local TipBatteryRefreshGap = 30     -- 限时血清道具刷新间隔
 
 XUiMainRightTop = XClass()
@@ -9,11 +10,11 @@ function XUiMainRightTop:Ctor(rootUi)
     self.LastTipBatteryRefreshTime = 0
     self.Transform = rootUi.PanelRightTop.gameObject.transform
     XTool.InitUiObject(self)
-    self:UpdateBatteryLeftTimeTimer()
+    self:UpdateTimeLimitItemTipTimer()
     self:UpdateNowTimeTimer() -- 先更新一次时间和电量
     self.BatteryTimeSchedule = CS.XScheduleManager.Schedule(function()
         self:UpdateNowTimeTimer()
-        self:UpdateBatteryLeftTimeTimer()
+        self:UpdateTimeLimitItemTipTimer()
     end, 1000, 0)
     XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
     --ClickEvent
@@ -21,11 +22,18 @@ function XUiMainRightTop:Ctor(rootUi)
     self.BtnMail.CallBack = function() self:OnBtnMail() end
     --RedPoint
     XRedPointManager.AddRedPointEvent(self.BtnMail.ReddotObj, self.OnCheckMailNews, self, { XRedPointConditions.Types.CONDITION_MAIN_MAIL })
+
+    XEventManager.AddEventListener(XEventId.EVENT_TIMELIMIT_ITEM_USE, function()
+        self.LastTipBatteryRefreshTime = 0
+    end)
+end
+
+function XUiMainRightTop:OnEnable()
+    self.LastTipBatteryRefreshTime = 0
 end
 
 function XUiMainRightTop:OnDestroy()
     CS.XScheduleManager.UnSchedule(self.BatteryTimeSchedule)
-    self.LastTipBatteryRefreshTime = 0
 end
 
 --设置入口
@@ -47,22 +55,35 @@ function XUiMainRightTop:UpdateNowTimeTimer()
     self.TxtPhoneTime.text = os.date("%H:%M");
 end
 
--- 限时血清道具提示
-function XUiMainRightTop:UpdateBatteryLeftTimeTimer()
-    if XTool.UObjIsNil(self.TxtBatteryLeftTime) then return end
-
+-- 限时道具提示
+function XUiMainRightTop:UpdateTimeLimitItemTipTimer()
     local nowTime = XTime.Now()
     if nowTime - self.LastTipBatteryRefreshTime < TipBatteryRefreshGap then
         return
     end
     self.LastTipBatteryRefreshTime = nowTime
 
-    local leftTime = XDataCenter.ItemManager.GetBatteryMinLeftTime()
-    if leftTime > 0 and leftTime <= TipBatteryLeftTime then
-        self.TxtBatteryLeftTime.text = CSXTextManagerGetText("BatteryLeftTime", XUiHelper.GetTime(leftTime, XUiHelper.TimeFormatType.MAINBATTERY))
-        self.TxtBatteryLeftTime.gameObject:SetActiveEx(true)
-    else
-        self.TxtBatteryLeftTime.gameObject:SetActiveEx(false)
+    -- 血清道具
+    if not XTool.UObjIsNil(self.TxtBatteryLeftTime) then
+        local leftTime = XDataCenter.ItemManager.GetBatteryMinLeftTime()
+        if leftTime > 0 and leftTime <= TipBatteryLeftTime then
+            self.TxtBatteryLeftTime.text = CSXTextManagerGetText("BatteryLeftTime", XUiHelper.GetTime(leftTime, XUiHelper.TimeFormatType.MAINBATTERY))
+            self.TxtBatteryLeftTime.gameObject:SetActiveEx(true)
+        else
+            self.TxtBatteryLeftTime.gameObject:SetActiveEx(false)
+        end
+    end
+
+    --背包道具
+    if not XTool.UObjIsNil(self.TxtItemLeftTime) then
+        local leftTime = XDataCenter.ItemManager.GetTimeLimitItemsMinLeftTime()
+        if leftTime > 0 and leftTime <= TipTimeLimitItemsLeftTime then
+            local timeStr = XUiHelper.GetBagTimeLimitTimeStrAndBg(leftTime)
+            self.TxtItemLeftTime.text = CSXTextManagerGetText("TimeLimitItemLeftTime", timeStr)
+            self.TxtItemLeftTime.gameObject:SetActiveEx(true)
+        else
+            self.TxtItemLeftTime.gameObject:SetActiveEx(false)
+        end
     end
 end
 

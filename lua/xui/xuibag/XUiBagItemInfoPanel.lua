@@ -169,8 +169,12 @@ function XUiBagItemInfoPanel:OnBtnUseClick()
         XUiManager.TipMsg(CS.XTextManager.GetText("OverLimitCanNotUse"))
         return
     end
+
+    local itemId = self.ItemData.Id
     local callback = function(rewardGoodsList)
-        XUiManager.OpenUiObtain(rewardGoodsList, CS.XTextManager.GetText("CongratulationsToObtain"))
+        if not XDataCenter.ItemManager.IsRedEnvelope(itemId) then
+            XUiManager.OpenUiObtain(rewardGoodsList, CS.XTextManager.GetText("CongratulationsToObtain"))
+        end
     end
 
     XDataCenter.ItemManager.Use(self.ItemData.Id, self.RecycleBatch and self.RecycleBatch.RecycleTime, self.SelectCount, callback)

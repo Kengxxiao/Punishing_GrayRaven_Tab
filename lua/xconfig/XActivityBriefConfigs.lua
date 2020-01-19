@@ -26,6 +26,11 @@ function XActivityBriefConfigs.GetActivityConfig()
     return ActivityTemplates[1]
 end
 
+-- kkkttt 临时配置，因为热更不能改表
+function XActivityBriefConfigs.GetActivityEntryConfigTemp()
+    return ActivityTemplates[2]
+end
+
 function XActivityBriefConfigs.GetActivityGroupConfig(groupId)
     local groupConfig = ActivityGroupTemplates[groupId]
     if not groupConfig then

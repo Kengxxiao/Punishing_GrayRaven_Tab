@@ -14,6 +14,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 50008	2	UiPurchase	1	充值界面		1	0	0						
 50009	6	UiSign		首充界面		3	0	0						 
 50010	2	UiSignBanner	5	圣诞节签到										
+50012	2	UiSignBanner	7	春节签到										
 500	1	UiMedalUnlock		进入徽章解锁										
 11	2	UiDrawGroup	1	研发系统										
 21	4		2	回到主界面										
@@ -959,6 +960,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 10026	8	SkipDormWork		宿舍执勤	902									
 10027	8	SkipDormTask		宿舍任务	902	2								
 10028	8	SkipDormMain		宿舍事件	902									
+10029	6	UiBag		前往使用	301	3	0	0						
 20000	1	UiFuben		活动副本										
 20001	7	OnOpenUiActivityBossSingle		格式塔										
 20002	7	OnOpenUiOnlineBoss		协同作战	10302									
@@ -973,6 +975,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 20011	6	UiPurchase		新涂装	3	2	0	3						
 20012	6	UiFubenChristmasMainLineChapter		圣诞	10306	1	0	0						
 20013	6	UiActivityBriefBase		前往极地商店	10306	3	0	0						
+20016	7	OnOpenFestivalActivity		前往春节挑战	10306	3								
 11010101	3	UiFuben	11010101	困难1-1										
 11010102	3	UiFuben	11010102	困难1-2										
 11010103	3	UiFuben	11010103	困难1-3										

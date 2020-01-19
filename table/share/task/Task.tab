@@ -1011,3 +1011,17 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 11043	6	8510	温柔的驯服Ⅰ	收集1号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11043			1	11043	11043			收集						
 11044	6	8500	温柔的驯服Ⅱ	收集2号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11044			1	11044	11044			收集						
 11045	6	8490	温柔的驯服Ⅲ	收集3号位圣诞丽芙·驯鹿	Assets/Product/Texture/Image/IconTask/TaskIconChallenge03.png					11045			1	11045	11045			收集						
+11101	11	9880	里·恭贺新春	里累积获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11101			688888	11101	10029			收集						
+11102	11	9900	丽芙·恭贺新春	丽芙累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11102			688888	11102	10029			收集						
+11103	11	9920	神威·恭贺新春	神威累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11103			688888	11103	10029			收集						
+11104	11	9940	露西亚·恭贺新春	露西亚累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11104			688888	11104	10029			收集						
+11105	11	9960	七实·恭贺新春	七实累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11105			688888	11105	10029			收集						
+11106	11	9980	赛利卡·恭贺新春	赛利卡累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11106			688888	11106	10029			收集						
+11107	11	10000	卡列尼娜·恭贺新春	卡列尼娜累计获得螺母	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11107			688888	11107	10029			收集						
+11108	11	9860	一帆风顺	累计使用6个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11108			6	11108	10029			收集						
+11109	11	9840	四季平安	累计使用16个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11109			16	11109	10029			收集						
+11110	11	9820	五福临门	累计使用26个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11110			26	11110	10029			收集						
+11111	11	9800	财源滚滚	累计使用36个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11111			36	11111	10029			收集						
+11112	11	9780	六六大顺	累计使用46个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11112			46	11112	10029			收集						
+11113	11	9760	八方来财	累计使用56个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11113			56	11113	10029			收集						
+11114	11	9740	十全十美	累计使用66个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11114			66	11114	10029			收集						

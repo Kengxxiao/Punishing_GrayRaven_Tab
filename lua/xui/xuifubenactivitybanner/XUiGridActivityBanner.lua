@@ -111,7 +111,9 @@ function XUiGridActivityBanner:Refresh(chapter, uiRoot)
         local activityEndTime = XDataCenter.FubenActivityBossSingleManager.GetActivityEndTime()
         self:CreateActivityTimer(fightEndTime,activityEndTime,XDataCenter.FubenActivityBossSingleManager.OnActivityEnd)
 
-    elseif chapter.Type == XDataCenter.FubenManager.ChapterType.Christmas or chapter.Type == XDataCenter.FubenManager.ChapterType.BriefDarkStream then
+    elseif chapter.Type == XDataCenter.FubenManager.ChapterType.Christmas or 
+            chapter.Type == XDataCenter.FubenManager.ChapterType.BriefDarkStream or 
+            chapter.Type == XDataCenter.FubenManager.ChapterType.FestivalNewYear then
         local sectionId = chapter.Id
         local sectionCfg = XFestivalActivityConfig.GetFestivalById(sectionId)
         

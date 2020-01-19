@@ -13,6 +13,7 @@ XItemManagerCreator = function()
     local BuyAssetDailyLimit = {}                   -- 购买资源每日限制
     local ItemTemplates = {}
     local ItemFirstGetCheckTable = {}
+    local RedEnvelopeInfos = {}                      -- 红包道具使用记录
 
     local BuyAssetCoinBase    = 0
     local BuyAssetCoinMul    = 0
@@ -59,7 +60,8 @@ XItemManagerCreator = function()
     XItemManager.GiftItemUseType = {
         Reward = 1,
         Drop = 2,
-        OptionalReward = 3
+        OptionalReward = 3,
+        RedEnvelope = 4,
     }
 
     --特殊补给道具
@@ -282,6 +284,20 @@ XItemManagerCreator = function()
         end
 
         return config
+    end
+
+    function XItemManager.GetRedEnvelopeCertainNpcItemCount(activityId, npcId, itemId)
+        local count = 0
+
+        local redEnvelope = RedEnvelopeInfos[activityId]
+        if not redEnvelope then
+            return count
+        end
+
+        local reward = redEnvelope[npcId]
+        count = reward and reward[itemId] or count
+
+        return count
     end
 
     function XItemManager.GetItem(id)
@@ -517,6 +533,13 @@ XItemManagerCreator = function()
         return template.GiftType == XItemManager.GiftItemUseType.OptionalReward
     end
 
+    -- 红包
+    function XItemManager.IsRedEnvelope(id)
+        if not XItemManager.IsUseable(id) then return false end
+        local template = XItemManager.GetItemTemplate(id)
+        return template.GiftType == XItemManager.GiftItemUseType.RedEnvelope
+    end
+
     -- 检查数据
     function XItemManager.CheckItemCount(item, count)
         return item and item:GetCount() >= count
@@ -634,7 +657,10 @@ XItemManagerCreator = function()
                 callback(res.RewardGoodsList)
             end
 
-            CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_USE, id, subId)
+            if XItemManager.IsTimeLimit(id) then
+                XEventManager.DispatchEvent(XEventId.EVENT_TIMELIMIT_ITEM_USE, id)
+            end
+            CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_USE, id)
         end)
     end
 
@@ -750,16 +776,52 @@ XItemManagerCreator = function()
         local batterys = XItemManager.GetBatterys()
         for _, v in pairs(batterys) do
             local itemId = v.Data.Id
-            if v.Data:GetCount() > 0 and XItemManager.IsTimeLimit(itemId) then
+            if XItemManager.IsTimeLimit(itemId) then
                 local recycleBatch = v.RecycleBatch
                 if recycleBatch then
-                    local leftTime = recycleBatch.RecycleTime - nowTime
-                    leftTime = leftTime > 0 and leftTime or 0
-                    if minLeftTime == 0 or minLeftTime > leftTime then
-                        minLeftTime = leftTime
+                    if recycleBatch.RecycleCount > 0 then
+                        local leftTime = recycleBatch.RecycleTime - nowTime
+                        leftTime = leftTime > 0 and leftTime or 0
+                        if minLeftTime == 0 or minLeftTime > leftTime then
+                            minLeftTime = leftTime
+                        end
                     end
                 else
-                    if XItemManager.IsTimeLimit(itemId) and not XItemManager.IsTimeOver(itemId) then
+                    if v.Data:GetCount() > 0 and not XItemManager.IsTimeOver(itemId) then
+                        local leftTime = XItemManager.GetRecycleLeftTime(itemId)
+                        if leftTime then
+                            if minLeftTime == 0 or minLeftTime > leftTime then
+                                minLeftTime = leftTime
+                            end
+                        end
+                    end
+                end
+            end
+        end
+
+        return minLeftTime
+    end
+
+    function XItemManager.GetTimeLimitItemsMinLeftTime()
+        local minLeftTime = 0
+
+        local nowTime = XTime.Now()
+        for _, v in pairs(Items) do
+            local itemId = v.Id
+            if XItemManager.IsTimeLimit(itemId) then
+                local itemRecycleList = v.ItemRecycleList
+                if itemRecycleList then
+                    for _, recycleBatch in pairs(itemRecycleList) do
+                        if recycleBatch.RecycleCount > 0 then
+                            local leftTime = recycleBatch.RecycleTime - nowTime
+                            leftTime = leftTime > 0 and leftTime or 0
+                            if minLeftTime == 0 or minLeftTime > leftTime then
+                                minLeftTime = leftTime
+                            end
+                        end
+                    end
+                else
+                    if v:GetCount() > 0 and not XItemManager.IsTimeOver(itemId) then
                         local leftTime = XItemManager.GetRecycleLeftTime(itemId)
                         if leftTime then
                             if minLeftTime == 0 or minLeftTime > leftTime then
@@ -1034,11 +1096,51 @@ XItemManagerCreator = function()
             end
         end
 
-        for _, v in pairs(data.RewardGoodsList) do
-            tableInsert(RecycleItemList.RewardGoodsList, v)
+        CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
+    end
+
+    function XItemManager.NotifyAllRedEnvelope(data)
+        if not next(data.Envelopes) then return end
+
+        RedEnvelopeInfos = {}
+        for _, envelope in pairs(data.Envelopes) do
+            local activityId = envelope.ActivityId
+            RedEnvelopeInfos[activityId] = RedEnvelopeInfos[activityId] or {}
+
+            local npcId = envelope.NpcId
+            RedEnvelopeInfos[activityId][npcId] = RedEnvelopeInfos[activityId][npcId] or {}
+
+            local rewards = envelope.Rewards
+            for _, reward in pairs(rewards) do
+                local itemId = reward.ItemId
+                local itemCount = reward.ItemCount
+                local oldCount = RedEnvelopeInfos[activityId][npcId][itemId] or 0
+                RedEnvelopeInfos[activityId][npcId][itemId] = oldCount + itemCount
+            end
+        end
+    end
+
+    function XItemManager.NotifyRedEnvelopeUse(data)
+        local envelopeId = data.EnvelopeId
+        if not envelopeId or not XItemManager.IsRedEnvelope(envelopeId) then return end
+
+        local envelopes = data.Envelopes
+        if not next(envelopes) then return end
+
+        for _, envelope in pairs(envelopes) do
+            local activityId = envelope.ActivityId
+            RedEnvelopeInfos[activityId] = RedEnvelopeInfos[activityId] or {}
+
+            local npcId = envelope.NpcId
+            RedEnvelopeInfos[activityId][npcId] = RedEnvelopeInfos[activityId][npcId] or {}
+
+            local itemId = envelope.ItemId
+            local itemCount = envelope.ItemCount
+            local oldCount = RedEnvelopeInfos[activityId][npcId][itemId] or 0
+            RedEnvelopeInfos[activityId][npcId][itemId] = oldCount + itemCount
         end
 
-        CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
+        XLuaUiManager.Open("UiRedEnvelope", envelopeId, envelopes)
     end
     -------------------------道具事件相关-------------------------
     XItemManager.Init()
@@ -1059,4 +1161,12 @@ end
 
 XRpc.NotifyBatchItemRecycle = function(data)
     XDataCenter.ItemManager.NotifyBatchItemRecycle(data)
+end
+
+XRpc.NotifyAllRedEnvelope = function(data)
+    XDataCenter.ItemManager.NotifyAllRedEnvelope(data)
+end
+
+XRpc.NotifyRedEnvelopeUse = function(data)
+    XDataCenter.ItemManager.NotifyRedEnvelopeUse(data)
 end

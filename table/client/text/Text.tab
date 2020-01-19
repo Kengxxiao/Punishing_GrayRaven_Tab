@@ -1058,3 +1058,4 @@ DormScoreAttrBDes	<size=28><color=#D58216FF>{0}</color></size>
 DormScoreAttrCDes	<size=28><color=#0A77b9FF>{0}</color></size>
 FestivalNotInActivity	活动已结束
 BatteryLeftTime	血清组剩余时间：{0}
+TimeLimitItemLeftTime	(物品过期：{0})

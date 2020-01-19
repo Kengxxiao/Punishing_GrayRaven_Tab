@@ -65,6 +65,7 @@ XSoundManager.UiBasicsMusic = {
 
     UiActivityBranch_SwitchBg = 1102, --极地副本切换背景图 
     UiActivity_Jidi_BGM = 6, --极地暗流版本BGM
+    UiActivity_NewYear_BGM = 11, --新年活动BGM
 
     --时装/仓库
     UiFashion_Click = 1060, -- 点击不同时装音效

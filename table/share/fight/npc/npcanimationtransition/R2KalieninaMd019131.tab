@@ -1,0 +1,111 @@
+Role	State	Target	TransitionDuration
+R2KalieninaMd019131		Born	0
+R2KalieninaMd019131		Stand2	0.1
+R2KalieninaMd019131		Stand1	0.1
+R2KalieninaMd019131		Stand3	0.1
+R2KalieninaMd019131		Standchange	0.1
+R2KalieninaMd019131		Run	0.1
+R2KalieninaMd019131		Walk	0.1
+R2KalieninaMd019131		Death	0.1
+R2KalieninaMd019131		Hit1	0.05
+R2KalieninaMd019131		Hit2	0.05
+R2KalieninaMd019131		Behitfly	0.05
+R2KalieninaMd019131		Hoverhit	0
+R2KalieninaMd019131		Falldown	0.1
+R2KalieninaMd019131		Hitdown	0.1
+R2KalieninaMd019131		Lieonfloor	0.1
+R2KalieninaMd019131		Standup	0.1
+R2KalieninaMd019131		Straight	0.1
+R2KalieninaMd019131		Stun	0.1
+R2KalieninaMd019131		TurnLeft	0.1
+R2KalieninaMd019131		TurnRight	0.1
+R2KalieninaMd019131		StraightBefore	0.1
+R2KalieninaMd019131		StraightAfter	0.1
+R2KalieninaMd019131		Win	0
+R2KalieninaMd019131		Win2	0.1
+R2KalieninaMd019131		Runb	0.2
+R2KalieninaMd019131		Runl	0.2
+R2KalieninaMd019131		Runr	0.2
+R2KalieninaMd019131		Stop	0.1
+R2KalieninaMd019131		Walkb	0.1
+R2KalieninaMd019131		Walkl	0.1
+R2KalieninaMd019131		Walkr	0.1
+R2KalieninaMd019131		Fail	0.1
+R2KalieninaMd019131		Save	0.1
+R2KalieninaMd019131		Hit3	0.05
+R2KalieninaMd019131		Hit4	0.05
+R2KalieninaMd019131		RunStart	0.1
+R2KalieninaMd019131		RunStartEnd01	0.1
+R2KalieninaMd019131		Attack01	0.1
+R2KalieninaMd019131		Attack02	0.1
+R2KalieninaMd019131		Attack03	0.1
+R2KalieninaMd019131		Attack04	0.1
+R2KalieninaMd019131		Attack11	0.1
+R2KalieninaMd019131		Attack21	0.1
+R2KalieninaMd019131		Attack31	0.1
+R2KalieninaMd019131		Attack41	0.1
+R2KalieninaMd019131		Attack42	0.1
+R2KalieninaMd019131		Attack51	0.1
+R2KalieninaMd019131		Move1	0.1
+R2KalieninaMd019131		Move2	0.1
+R2KalieninaMd019131		Move3	0.1
+R2KalieninaMd019131		AttackQte	0
+R2KalieninaMd019131	Stand2	Standchange	0.1
+R2KalieninaMd019131	Stand2	Run	0.2
+R2KalieninaMd019131	Stand2	Walk	0.3
+R2KalieninaMd019131	Stand2	Walkb	0.3
+R2KalieninaMd019131	Stand2	Walkl	0.3
+R2KalieninaMd019131	Stand2	Walkr	0.3
+R2KalieninaMd019131	Stand1	Run	0.2
+R2KalieninaMd019131	Stand1	Walk	0.1
+R2KalieninaMd019131	Standchange	Stand1	0.1
+R2KalieninaMd019131	Standchange	Run	0.1
+R2KalieninaMd019131	Standchange	Walk	0.1
+R2KalieninaMd019131	Run	Stop	0.2
+R2KalieninaMd019131	Run	Stand2	0.2
+R2KalieninaMd019131	Run	Runb	0.2
+R2KalieninaMd019131	Run	Runl	0.2
+R2KalieninaMd019131	Run	Runr	0.2
+R2KalieninaMd019131	Walk	Stand2	0.1
+R2KalieninaMd019131	Hit1	Stand2	0
+R2KalieninaMd019131	Hit2	Stand2	0
+R2KalieninaMd019131	Behitfly	Hoverhit	0.1
+R2KalieninaMd019131	Behitfly	Falldown	0.1
+R2KalieninaMd019131	Hoverhit	Falldown	0.1
+R2KalieninaMd019131	Falldown	Lieonfloor	0.1
+R2KalieninaMd019131	Hitdown	Lieonfloor	0.1
+R2KalieninaMd019131	Standup	Stand2	0.1
+R2KalieninaMd019131	Straight	Stand2	0.1
+R2KalieninaMd019131	Stun	Stand2	0.1
+R2KalieninaMd019131	TurnLeft	Stand2	0.1
+R2KalieninaMd019131	TurnRight	Stand2	0.1
+R2KalieninaMd019131	Win	Win2	0.1
+R2KalieninaMd019131	Runb	Stand2	0.2
+R2KalieninaMd019131	Runb	Run	0.2
+R2KalieninaMd019131	Runb	Runl	0.2
+R2KalieninaMd019131	Runb	Runr	0.2
+R2KalieninaMd019131	Runl	Stand2	0.2
+R2KalieninaMd019131	Runl	Run	0.2
+R2KalieninaMd019131	Runl	Runb	0.2
+R2KalieninaMd019131	Runl	Runr	0.2
+R2KalieninaMd019131	Runr	Stand2	0.2
+R2KalieninaMd019131	Runr	Run	0.2
+R2KalieninaMd019131	Runr	Runb	0.2
+R2KalieninaMd019131	Runr	Runl	0.2
+R2KalieninaMd019131	Stop	Stand2	0.1
+R2KalieninaMd019131	Walkb	Stand2	0.1
+R2KalieninaMd019131	Walkb	Walk	0.2
+R2KalieninaMd019131	Walkb	Walkl	0.1
+R2KalieninaMd019131	Walkb	Walkr	0.1
+R2KalieninaMd019131	Walkl	Stand2	0.1
+R2KalieninaMd019131	Walkl	Walk	0.1
+R2KalieninaMd019131	Walkl	Walkb	0.1
+R2KalieninaMd019131	Walkl	Walkr	0.2
+R2KalieninaMd019131	Walkr	Stand2	0.1
+R2KalieninaMd019131	Walkr	Walk	0.1
+R2KalieninaMd019131	Walkr	Walkb	0.1
+R2KalieninaMd019131	Walkr	Walkl	0.2
+R2KalieninaMd019131	Hit3	Stand2	0
+R2KalieninaMd019131	Hit4	Stand2	0
+R2KalieninaMd019131	RunStart	Run	0.05
+R2KalieninaMd019131	RunStart	RunStartEnd01	0.1

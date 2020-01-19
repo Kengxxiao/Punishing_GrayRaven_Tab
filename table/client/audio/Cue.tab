@@ -7,6 +7,7 @@ Id	CueSheetId	CueName	Is1pOr3p
 6	34	m_ev1_intro	1
 7	35	m_ev1_normalbattle	1
 8	36	m_ev1_bossbattle	1
+11	58	m_sys_newyear	1
 101	24	m_nbat_nfighting	1
 102	25	m_nbat_nsneaking	1
 103	26	m_nbat_tower	1
@@ -149,6 +150,8 @@ Id	CueSheetId	CueName	Is1pOr3p
 644	32	g_ingame_swordmd_born	3
 645	32	g_ingame_swordmd_death	3
 646	32	g_ingame_swordmd_move	3
+663	32	g_ingame_hongbaochuxian	3
+664	32	g_ingame_baozhu	3
 501	5	g_ui_default	1
 502	1	b_empty	1
 503	1	b_empty	1

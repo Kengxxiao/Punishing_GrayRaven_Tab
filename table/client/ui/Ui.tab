@@ -178,6 +178,7 @@ UiPlayerUp			Dialog	Bundle		Assets/Product/Ui/Prefab/UiPlayerUp.prefab			5000
 UiPrequel			Normal	Bundle		Assets/Product/Ui/Prefab/UiPrequel.prefab			5000
 UiPrequelLineDetail	UiPrequel	1		Bundle		Assets/Product/Ui/Prefab/UiPrequelLineDetail.prefab			5000
 UiPurchase			Normal	Bundle		Assets/Product/Ui/Prefab/UiPurchase.prefab			5000
+UiRedEnvelope			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiRedEnvelope.prefab			5000
 UiRegister			Popup	Bundle		Assets/Product/Ui/Prefab/UiRegister.prefab			5000
 UiReport			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiReport.prefab			5000
 UiRoomCharacter			Normal	Bundle		Assets/Product/Ui/Prefab/UiRoomCharacter.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000

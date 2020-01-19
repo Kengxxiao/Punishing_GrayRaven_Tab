@@ -209,9 +209,10 @@ function XConfigCenter.Init()
     festivalProfiler:Stop()
 
     XActivityConfigs.Init()
-
     XPurchaseConfigs.Init()
     XActivityBriefConfigs.Init()
     XSetConfigs.Init()
+    XRedEnvelopeConfigs.Init()
+
     configCenterProfiler:Stop()
 end

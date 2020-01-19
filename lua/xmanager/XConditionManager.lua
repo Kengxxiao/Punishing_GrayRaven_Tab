@@ -114,6 +114,14 @@ local PlayerCondition = {
     [21102] = function(condition) -- 查询玩家是否未领取首充奖励
         return not XDataCenter.PayManager.GetFirstRechargeReward(), condition.Desc
     end,
+    [22001] = function(condition) -- 红包活动ID下指定NPC累计获得的物品数量
+        local count = condition.Params[1]
+        local itemId = condition.Params[2]
+        local activityId = condition.Params[3]
+        local npcId = condition.Params[4]
+        local total = XDataCenter.ItemManager.GetRedEnvelopeCertainNpcItemCount(activityId, npcId, itemId)
+        return total >= count, condition.Desc
+    end,
 }
 
 local CharacterCondition = {
@@ -202,39 +210,33 @@ local CharacterCondition = {
         return false, condition.Desc
     end,
 
-    [13109] = function(condition, characterId) --查询角色是否拥有共鸣技能
+    [13109] = function(condition, characterId) --查询角色是否佩戴共鸣技能
         local starLimit = condition.Params[1]
         local limitSkillNum = condition.Params[2]
         local allSkillNum = 0
 
-        local weaponData = XDataCenter.EquipManager.GetCanUseWeaponIds(characterId)
-        for _, equipId in pairs(weaponData) do
-            if XDataCenter.EquipManager.IsWearing(equipId) then
-                local equipInfo = XDataCenter.EquipManager.GetEquip(equipId)
-                local star = XDataCenter.EquipManager.GetEquipStar(equipInfo.TemplateId)
-                if star >= starLimit then
-                    if equipInfo.ResonanceInfo ~= nil then
-                        for _, info in pairs(equipInfo.ResonanceInfo) do
-                            if info.CharacterId == characterId then
-                                allSkillNum = allSkillNum + 1
-                            end
-                        end
+        local weaponData = XDataCenter.EquipManager.GetCharacterWearingWeaponId(characterId)
+        local equipInfo = XDataCenter.EquipManager.GetEquip(weaponData)
+        local star = XDataCenter.EquipManager.GetEquipStar(equipInfo.TemplateId)
+        if star >= starLimit then
+            if equipInfo.ResonanceInfo ~= nil then
+                for _, info in pairs(equipInfo.ResonanceInfo) do
+                    if info.CharacterId == characterId then
+                        allSkillNum = allSkillNum + 1
                     end
                 end
             end
         end
 
-        local awarenessData = XDataCenter.EquipManager.GetAwarenessIds()
+        local awarenessData = XDataCenter.EquipManager.GetCharacterWearingAwarenessIds(characterId)
         for _, equipId in pairs(awarenessData) do
-            if XDataCenter.EquipManager.IsWearing(equipId) then
-                local equipInfo = XDataCenter.EquipManager.GetEquip(equipId)
-                local star = XDataCenter.EquipManager.GetEquipStar(equipInfo.TemplateId)
-                if star >= starLimit then
-                    if equipInfo.ResonanceInfo ~= nil then
-                        for _, info in pairs(equipInfo.ResonanceInfo) do
-                            if info.CharacterId == characterId then
-                                allSkillNum = allSkillNum + 1
-                            end
+            local equipInfo = XDataCenter.EquipManager.GetEquip(equipId)
+            local star = XDataCenter.EquipManager.GetEquipStar(equipInfo.TemplateId)
+            if star >= starLimit then
+                if equipInfo.ResonanceInfo ~= nil then
+                    for _, info in pairs(equipInfo.ResonanceInfo) do
+                        if info.CharacterId == characterId then
+                            allSkillNum = allSkillNum + 1
                         end
                     end
                 end
@@ -252,21 +254,17 @@ local CharacterCondition = {
         if not condition.Params or #condition.Params ~= 2 then
             return false, condition.Desc
         end
-        local weaponData = XDataCenter.EquipManager.GetCanUseWeaponIds(characterId)
         local resonanceCount = 0
-        for _, equipId in pairs(weaponData) do    
-            if XDataCenter.EquipManager.IsWearing(equipId) then
-                local equipInfo = XDataCenter.EquipManager.GetEquip(equipId)
-                if equipInfo.ResonanceInfo ~= nil then
-                    for _, info in pairs(equipInfo.ResonanceInfo) do
-                        local quality = XDataCenter.EquipManager.GetEquipQuality(equipInfo.TemplateId)
-                        if info.CharacterId == characterId and quality >= condition.Params[1] then
-                            resonanceCount = resonanceCount + 1
-                        end
-                        if resonanceCount > condition.Params[2] then
-                            return true, condition.Desc
-                        end
-                    end
+        local weaponData = XDataCenter.EquipManager.GetCharacterWearingWeaponId(characterId)
+        local equipInfo = XDataCenter.EquipManager.GetEquip(weaponData)
+        if equipInfo.ResonanceInfo ~= nil then
+            for _, info in pairs(equipInfo.ResonanceInfo) do
+                local quality = XDataCenter.EquipManager.GetEquipQuality(equipInfo.TemplateId)
+                if info.CharacterId == characterId and quality >= condition.Params[1] then
+                    resonanceCount = resonanceCount + 1
+                end
+                if resonanceCount > condition.Params[2] then
+                    return true, condition.Desc
                 end
             end
         end
@@ -279,7 +277,7 @@ local CharacterCondition = {
         end
         local weaponData = XDataCenter.EquipManager.GetCharacterWearingAwarenessIds(characterId)
         local resonanceCount = 0
-        for _, equipId in pairs(weaponData) do    
+        for _, equipId in pairs(weaponData) do
             local equipInfo = XDataCenter.EquipManager.GetEquip(equipId)
             if equipInfo.ResonanceInfo ~= nil then
                 for _, info in pairs(equipInfo.ResonanceInfo) do

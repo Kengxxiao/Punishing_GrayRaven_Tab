@@ -182,6 +182,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 507204			0	4	101		1	0	5072040|101|100|6	5072040		507204000	FxTongyongJiagong	HitCase			
 507205			0	4	101		1	0	5072050|101|100|6	5072050		507205000	FxTongyongJiagong	HitCase			
 507206			0	4	101		1	0	5072060|101|100|6	5072060		507206000	FxTongyongJiagong	HitCase			
+507207			0	-1			1	0	5072070			507207000					
 507301			0	-1			1	0	5073010			507301000					
 507302			0	-1			1	0	5073020|101|100|6			507302000					
 507303			0	5	101		1	0	5073030|101|100|6	5073030		507303000	FxTongyongJiagong	HitCase			
@@ -438,6 +439,12 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 620907			0	0.7			1	0	6209070				FxEquipChristmasBox05	Root			
 620908			0	0.7			1	0	6209080				FxEquipChristmasBox06	Root			
 620909			0	5	101		1	0	6209090|101|100|6			620909000	FxTongyongJiagong	HitCase			
+621001			0	-1			1	0	6210010			621001000					
+621002			0	-1			1	0	6210020			621002000					
+621003			0	-1			1	0	6210030			621003000					
+621004			0	-1			1	0	6210040			621004000					
+621005			0	-1			1	0	6210050			621005000					
+621006			0	-1			1	0	6210060			621006000					
 630101			0	-1			1	0	6301010			630101000					
 630102			0	-1			3	0	6301020|104|100|6			630102000					
 630103			0	5	101		1	0	6301030|101|100|6	6301030		630103000	FxTongyongJiagong	HitCase			

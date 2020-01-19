@@ -1,0 +1,112 @@
+Role	State	Target	TransitionDuration
+R1LifuMd019151		Born	0
+R1LifuMd019151		Stand2	0.1
+R1LifuMd019151		Stand1	0.1
+R1LifuMd019151		Stand3	0.1
+R1LifuMd019151		Standchange	0.1
+R1LifuMd019151		Run	0.1
+R1LifuMd019151		Walk	0.1
+R1LifuMd019151		Death	0.1
+R1LifuMd019151		Hit1	0.05
+R1LifuMd019151		Hit2	0.05
+R1LifuMd019151		Behitfly	0.05
+R1LifuMd019151		Hoverhit	0
+R1LifuMd019151		Falldown	0.1
+R1LifuMd019151		Hitdown	0.1
+R1LifuMd019151		Lieonfloor	0.1
+R1LifuMd019151		Standup	0.1
+R1LifuMd019151		Straight	0.1
+R1LifuMd019151		Stun	0.1
+R1LifuMd019151		TurnLeft	0.1
+R1LifuMd019151		TurnRight	0.1
+R1LifuMd019151		StraightBefore	0.1
+R1LifuMd019151		StraightAfter	0.1
+R1LifuMd019151		Win	0
+R1LifuMd019151		Win2	0.1
+R1LifuMd019151		Runb	0.2
+R1LifuMd019151		Runl	0.2
+R1LifuMd019151		Runr	0.2
+R1LifuMd019151		Stop	0.1
+R1LifuMd019151		Walkb	0.1
+R1LifuMd019151		Walkl	0.1
+R1LifuMd019151		Walkr	0.1
+R1LifuMd019151		Fail	0.1
+R1LifuMd019151		Save	0.1
+R1LifuMd019151		Hit3	0.05
+R1LifuMd019151		Hit4	0.05
+R1LifuMd019151		RunStart	0.1
+R1LifuMd019151		RunStartEnd01	0.1
+R1LifuMd019151		Attack01	0.1
+R1LifuMd019151		Attack02	0.1
+R1LifuMd019151		Attack03	0.1
+R1LifuMd019151		Attack04	0.1
+R1LifuMd019151		Attack05	0.1
+R1LifuMd019151		Attack11	0.1
+R1LifuMd019151		Attack21	0.1
+R1LifuMd019151		Attack31	0.1
+R1LifuMd019151		Attack33	0.1
+R1LifuMd019151		Attack41	0.1
+R1LifuMd019151		Attack51	0.1
+R1LifuMd019151		Move1	0.1
+R1LifuMd019151		Move2	0.1
+R1LifuMd019151		Move3	0.1
+R1LifuMd019151		AttackQte	0
+R1LifuMd019151	Stand2	Standchange	0.1
+R1LifuMd019151	Stand2	Run	0.2
+R1LifuMd019151	Stand2	Walk	0.3
+R1LifuMd019151	Stand2	Walkb	0.3
+R1LifuMd019151	Stand2	Walkl	0.3
+R1LifuMd019151	Stand2	Walkr	0.3
+R1LifuMd019151	Stand1	Run	0.2
+R1LifuMd019151	Stand1	Walk	0.1
+R1LifuMd019151	Standchange	Stand1	0.1
+R1LifuMd019151	Standchange	Run	0.1
+R1LifuMd019151	Standchange	Walk	0.1
+R1LifuMd019151	Run	Stop	0.2
+R1LifuMd019151	Run	Stand2	0.2
+R1LifuMd019151	Run	Runb	0.2
+R1LifuMd019151	Run	Runl	0.2
+R1LifuMd019151	Run	Runr	0.2
+R1LifuMd019151	Walk	Stand2	0.1
+R1LifuMd019151	Hit1	Stand2	0
+R1LifuMd019151	Hit2	Stand2	0
+R1LifuMd019151	Behitfly	Hoverhit	0.1
+R1LifuMd019151	Behitfly	Falldown	0.1
+R1LifuMd019151	Hoverhit	Falldown	0.1
+R1LifuMd019151	Falldown	Lieonfloor	0.1
+R1LifuMd019151	Hitdown	Lieonfloor	0.1
+R1LifuMd019151	Standup	Stand2	0.1
+R1LifuMd019151	Straight	Stand2	0.1
+R1LifuMd019151	Stun	Stand2	0.1
+R1LifuMd019151	TurnLeft	Stand2	0.1
+R1LifuMd019151	TurnRight	Stand2	0.1
+R1LifuMd019151	Win	Win2	0.1
+R1LifuMd019151	Runb	Stand2	0.2
+R1LifuMd019151	Runb	Run	0.2
+R1LifuMd019151	Runb	Runl	0.2
+R1LifuMd019151	Runb	Runr	0.2
+R1LifuMd019151	Runl	Stand2	0.2
+R1LifuMd019151	Runl	Run	0.2
+R1LifuMd019151	Runl	Runb	0.2
+R1LifuMd019151	Runl	Runr	0.2
+R1LifuMd019151	Runr	Stand2	0.2
+R1LifuMd019151	Runr	Run	0.2
+R1LifuMd019151	Runr	Runb	0.2
+R1LifuMd019151	Runr	Runl	0.2
+R1LifuMd019151	Stop	Stand2	0.1
+R1LifuMd019151	Walkb	Stand2	0.1
+R1LifuMd019151	Walkb	Walk	0.2
+R1LifuMd019151	Walkb	Walkl	0.1
+R1LifuMd019151	Walkb	Walkr	0.1
+R1LifuMd019151	Walkl	Stand2	0.1
+R1LifuMd019151	Walkl	Walk	0.1
+R1LifuMd019151	Walkl	Walkb	0.1
+R1LifuMd019151	Walkl	Walkr	0.2
+R1LifuMd019151	Walkr	Stand2	0.1
+R1LifuMd019151	Walkr	Walk	0.1
+R1LifuMd019151	Walkr	Walkb	0.1
+R1LifuMd019151	Walkr	Walkl	0.2
+R1LifuMd019151	Hit3	Stand2	0
+R1LifuMd019151	Hit4	Stand2	0
+R1LifuMd019151	RunStart	Run	0.05
+R1LifuMd019151	RunStart	RunStartEnd01	0.1

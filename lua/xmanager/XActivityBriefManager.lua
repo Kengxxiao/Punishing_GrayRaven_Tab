@@ -4,6 +4,8 @@ XActivityBriefManagerCreator = function()
     local CSUnityEnginePlayerPrefs = CS.UnityEngine.PlayerPrefs
 
     local ActivityConfig = XActivityBriefConfigs.GetActivityConfig()
+    local ActivityEntryConfigTemp = XActivityBriefConfigs.GetActivityEntryConfigTemp()
+    local ActivityEntryIcon = CS.XGame.ClientConfig:GetString("ActivityBriefEntryIcon")
     local FirstOpenUi = true
     local CookieInited = false
 
@@ -97,5 +99,21 @@ XActivityBriefManagerCreator = function()
         return CSUnityEnginePlayerPrefs.HasKey(XActivityBriefManager.GetCookieKeyStr())
     end
 
+    -- 临时活动入口 begin 
+    function XActivityBriefManager:CheckActivityEntryOpen()
+        local nowTime = XTime.Now()
+        local startTime = CSXDateGetTime(ActivityEntryConfigTemp.StartTimeStr)
+        local endTime = CSXDateGetTime(ActivityEntryConfigTemp.EndTimeStr)
+        return startTime and endTime and startTime <= nowTime and nowTime < endTime
+    end
+
+    function XActivityBriefManager.GetActivityEntrySkipId()
+        return ActivityEntryConfigTemp.ShopId
+    end
+
+    function XActivityBriefManager.GetActivityEntryIcon()
+        return ActivityEntryIcon
+    end
+    -- 临时活动入口 end 
     return XActivityBriefManager
 end

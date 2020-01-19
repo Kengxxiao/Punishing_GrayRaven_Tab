@@ -9,6 +9,7 @@ local ShareFestival = {}
 XFestivalActivityConfig.ActivityId = {
     Christmas = 1,
     MainLine = 2,
+    NewYear = 3,
 }
 
 function XFestivalActivityConfig.Init()
