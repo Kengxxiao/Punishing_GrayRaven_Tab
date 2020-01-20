@@ -29,6 +29,14 @@ XItemConfigs.ItemType = {
     FurnitureItem = 1 << 14 | 1 << 2, -- 家具图纸
 }
 
+-- 背包显示的材料
+XItemConfigs.Materials = {
+    XItemConfigs.ItemType.Gift,
+    XItemConfigs.ItemType.CardExp,
+    XItemConfigs.ItemType.EquipExp,
+    XItemConfigs.ItemType.Material
+}
+
 function XItemConfigs.Init()
     local itemTable = XTableManager.ReadByIntKey(TABLE_ITEM_PATH, XTable.XTableItem, "Id")
     for k, item in pairs(itemTable) do

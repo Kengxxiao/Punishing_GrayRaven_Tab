@@ -78,12 +78,7 @@ end
 
 function XUiBag:Init()
     self.ItemPageToTypes = {
-        [XUiBag.PageType.Material] = {
-            XItemConfigs.ItemType.Gift,
-            XItemConfigs.ItemType.CardExp,
-            XItemConfigs.ItemType.EquipExp,
-            XItemConfigs.ItemType.Material
-        },
+        [XUiBag.PageType.Material] = XItemConfigs.Materials,
         [XUiBag.PageType.Fragment] = { XItemConfigs.ItemType.Fragment },
     }
 

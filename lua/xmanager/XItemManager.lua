@@ -514,6 +514,16 @@ XItemManagerCreator = function()
         return charcter and XDataCenter.CharacterManager.IsMaxQuality(charcter)
     end
 
+    -- 背包材料
+    function XItemManager.IsBagMaterial(id)
+        local template = XItemManager.GetItemTemplate(id)
+        local itemType = template.ItemType
+        for _, materialType in pairs(XItemConfigs.Materials) do
+            if itemType == materialType then return true end
+        end
+        return false
+    end
+
     -- 时效性道具
     function XItemManager.IsTimeLimit(id)
         local template = XItemManager.GetItemTemplate(id)
@@ -808,7 +818,7 @@ XItemManagerCreator = function()
         local nowTime = XTime.Now()
         for _, v in pairs(Items) do
             local itemId = v.Id
-            if XItemManager.IsTimeLimit(itemId) then
+            if XItemManager.IsTimeLimit(itemId) and v:GetCount() > 0 and XItemManager.IsBagMaterial(itemId) then
                 local itemRecycleList = v.ItemRecycleList
                 if itemRecycleList then
                     for _, recycleBatch in pairs(itemRecycleList) do
@@ -821,7 +831,7 @@ XItemManagerCreator = function()
                         end
                     end
                 else
-                    if v:GetCount() > 0 and not XItemManager.IsTimeOver(itemId) then
+                    if not XItemManager.IsTimeOver(itemId) then
                         local leftTime = XItemManager.GetRecycleLeftTime(itemId)
                         if leftTime then
                             if minLeftTime == 0 or minLeftTime > leftTime then
