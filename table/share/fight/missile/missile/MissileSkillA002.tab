@@ -1,93 +1,93 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-10040505		2	0.1				0			4		10			999						FxR2BiankaAttack11dilie		-1			1															0																											
-10040607		2	0.1				0			4		10			999						FxR2BiankaAttack12dilie		-1			1															0																											
-10040709		2	0.1				0			4		10			999						FxR2BiankaAttack13dilie		-1			1															0																											
-10041114		2	0.1				0			4		10			999						FxR2BiankaAttack31dilie		-1			1															0																											
-10041209		2	0.1				0			4		10			999						FxR2BiankaAttack31dilie		-1			1															0																											
-10041311		2	0.1				0			4		10			999						FxR2BiankaAttack34dilie		-1			1															0																											
-10041709		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10041710		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10160204		2	0.1				0			4		10			999						FxR3ShenweiAttack02Dilie		-1			1															0																											
-10160304		2	0.1				0			4		10			999						FxR3ShenweiAttack03Dilie		-1			1															0																											
-10160402		2	0.1				0			4		10			999						FxR3ShenweiAttack04Dilie		-1			1															0																											
-10160504		2	0.1				0			4		10			999						FxR3ShenweiAttack05Dilie		-1			1															0																											
-10160604		2	0.1				0			4		10			999						FxR3ShenweiAttack13Dilie		-1			1															0																											
-10160705		2	0.1				0			4		10			999						FxR3ShenweiAttack11Dilie		-1			1															0																											
-10160805		2	0.1				0			4		10			999						FxR3ShenweiAttack12Dilie		-1			1															0																											
-10160905		2	0.1				0			4		10			999						FxR3ShenweiAttack13Dilie		-1			1															0																											
-10161005		2	0.1				0			4		10			999						FxR3ShenweiAttack21Dilie		-1			1															0																											
-10161105		2	0.1				0			4		10			999						FxR3ShenweiAttack21Dilie		-1			1															0																											
-10161205		2	0.1				0			4		10			999						FxR3ShenweiAttack23Dilie		-1			1															0																											
-10161613		2	0.1				0			4		10			999						FxR3ShenweiQteDilie		-1			1															0																											
-10161615		2	0.1				0			4		10			999						FxR3ShenweiQteDilie02		-1			1															0																											
-10162403		2	0.1				0			4		10			999						FxR3ShenweiAttackB02Dilie		-1			1															0																											
-10162505		2	0.1				0			4		10			999						FxR3ShenweiAttackB03Dilie01		-1			1															0																											
-10162506		2	0.1				0			4		10			999						FxR3ShenweiAttackB03Dilie02		-1			1															0																											
-10162603		2	0.1				0			4		10			999						FxR3ShenweiAttackB04Dilie		-1			1															0																											
-10162710		2	0.1				0			4		10			999						FxR3ShenweiAttackB05Dilie		-1			1															0																											
-10162807		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1															0																											
-10162808		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1															0																											
-10162809		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1															0																											
-10162810		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1															0																											
-10162907		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1															0																											
-10162908		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1															0																											
-10162909		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1															0																											
-10162910		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1															0																											
-10163007		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1															0																											
-10163008		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1															0																											
-10163009		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1															0																											
-10163010		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1															0																											
-10163105		2	0.1				0			4		10			999						FxR3ShenweiAttackB21Dilie		-1			1															0																											
-10163205		2	0.1				0			4		10			999						FxR3ShenweiAttackB22Dilie		-1			1															0																											
-10163305		2	0.1				0			4		10			999						FxR3ShenweiAttackB23Dilie		-1			1															0																											
-10163412		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1															0																											
-10163512		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1															0																											
-10163612		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1															0																											
-10230104		2	0.1				0			4		10			999						FxR3LifuAttack01		-1			1															0																											
-10230204		2	0.1				0			4		10			999						FxR3LifuAttack02		-1			1															0																											
-10230304		2	0.1				0			4		10			999						FxR3LifuAttack03		-1			1															0																											
-10230411		2	0.1				0			4		10			999						FxR3LifuAttack04Dandao		-1			1								1							0																											
-10230605		2	0.1				0			4		10			999						FxR3LifuAttack11Dandao		-1			1								1							0																											
-10230705		2	0.1				0			4		10			999						FxR3LifuAttack12Dandao		-1			1								1							0																											
-10230805		2	0.1				0			4		10			999						FxR3LifuAttack13Dandao		-1			1								1							0																											
-10230907		2	0.1				0			4		4			999						FxR3LifuAttack21Dandao		-1			1								1							0																											
-10231007		2	0.1				0			4		7			999						FxR3LifuAttack22Dandao		-1			1								1							0																											
-10231107		2	0.1				0			4		10			999						FxR3LifuAttack23Dandao		-1			1								1							0																											
-10231704		2	0.1				0			4		10			999						FxR3LifuAttack13Dandao		-1			1								1							0																											
-10231803		2	0.1				0			4		10			999						FxR3LifuAttackBeidongHuixue		-1			1															0																											
-10231807		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10231906		2	0.1				0			4		10			999						FxR3LifuMove01Start		-1			1															0																											
-10231907		2	0.1				0			4		10			999						FxR3LifuMove01End		-1			1															0																											
-10232006		2	0.1				0			4		10			999						FxR3LifuMove02Start		-1			1															0																											
-10232007		2	0.1				0			4		10			999						FxR3LifuMove02End		-1			1															0																											
-10170504		2	0.1				0			4		10			999						FxR3KalieninaAttack11Dilie		-1			1															0																											
-10170604		2	0.1				0			4		10			999						FxR3KalieninaAttack11Dilie		-1			1															0																											
-10170704		2	0.1				0			4		10			999						FxR3KalieninaAttack13Dilie		-1			1															0																											
-10170806		2	0.1				0			4		10			999						FxR3KalieninaAttack21Dandao		-1			1															0																											
-10170905		2	0.1				0			4		10			999						FxR3KalieninaAttack21Dandao		-1			1															0																											
-10171005		2	0.1				0			4		10			999						FxR3KalieninaAttack23Dandao		-1			1															0																											
-10171111		2	0.1				0			4		10			999						FxR3KalieninaAttack31		-1			1															0																											
-10171211		2	0.1				0			4		10			999						FxR3KalieninaAttack31		-1			1															0																											
-10171311		2	0.1				0			4		10			999						FxR3KalieninaAttack33		-1			1															0																											
-10171504		2	0.1				0			4		10			999						FxR3KalieninaAttack13Dilie		-1			1															0																											
-10171616		2	0.1				0			4		10			999						FxR3KalieninaAttack51		-1			1															0																											
-10171911		2	0.1				0			4		10			999						FxR3KalieninaAttackQte		-1			1															0																											
-10171915		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10172003		2	0.1				0			4		10			999						FxR3KalieninaMove01		-1			1															0																											
-10172004		2	0.1				0			4		10			999						FxR3KalieninaMove02		-1			1															0																											
-10172103		2	0.1				0			4		10			999						FxR3KalieninaMove01		-1			1															0																											
-10172104		2	0.1				0			4		10			999						FxR3KalieninaMove02		-1			1															0																											
-10172704		2	0.1				0			4		10			999						FxR3KalieninaAttack11ExDilie		-1			1															0																											
-10172804		2	0.1				0			4		10			999						FxR3KalieninaAttack11ExDilie		-1			1															0																											
-10172904		2	0.1				0			4		10			999						FxR3KalieninaAttack13ExDilie		-1			1															0																											
-10173011		2	0.1				0			4		10			999						FxR3KalieninaAttack31Ex		-1			1															0																											
-10173111		2	0.1				0			4		10			999						FxR3KalieninaAttack31Ex		-1			1															0																											
-10173211		2	0.1				0			4		10			999						FxR3KalieninaAttack33Ex		-1			1															0																											
-11170102		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-11170202		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-11170302		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-11170802		2	0.1				0			4		10			999						FxR3KalieninaFlyDeath		-1			1															0																											
-11170902		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-11171002		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-11171102		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1															0																											
-13170601		2	0.1				0			4		10			999						FxRE2SwordMd120111Death		-1			1															0																											
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+10040505		2	0.1				0			4		10			999						FxR2BiankaAttack11dilie		-1			1																						0																											
+10040607		2	0.1				0			4		10			999						FxR2BiankaAttack12dilie		-1			1																						0																											
+10040709		2	0.1				0			4		10			999						FxR2BiankaAttack13dilie		-1			1																						0																											
+10041114		2	0.1				0			4		10			999						FxR2BiankaAttack31dilie		-1			1																						0																											
+10041209		2	0.1				0			4		10			999						FxR2BiankaAttack31dilie		-1			1																						0																											
+10041311		2	0.1				0			4		10			999						FxR2BiankaAttack34dilie		-1			1																						0																											
+10041709		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10041710		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10160204		2	0.1				0			4		10			999						FxR3ShenweiAttack02Dilie		-1			1																						0																											
+10160304		2	0.1				0			4		10			999						FxR3ShenweiAttack03Dilie		-1			1																						0																											
+10160402		2	0.1				0			4		10			999						FxR3ShenweiAttack04Dilie		-1			1																						0																											
+10160504		2	0.1				0			4		10			999						FxR3ShenweiAttack05Dilie		-1			1																						0																											
+10160604		2	0.1				0			4		10			999						FxR3ShenweiAttack13Dilie		-1			1																						0																											
+10160705		2	0.1				0			4		10			999						FxR3ShenweiAttack11Dilie		-1			1																						0																											
+10160805		2	0.1				0			4		10			999						FxR3ShenweiAttack12Dilie		-1			1																						0																											
+10160905		2	0.1				0			4		10			999						FxR3ShenweiAttack13Dilie		-1			1																						0																											
+10161005		2	0.1				0			4		10			999						FxR3ShenweiAttack21Dilie		-1			1																						0																											
+10161105		2	0.1				0			4		10			999						FxR3ShenweiAttack21Dilie		-1			1																						0																											
+10161205		2	0.1				0			4		10			999						FxR3ShenweiAttack23Dilie		-1			1																						0																											
+10161613		2	0.1				0			4		10			999						FxR3ShenweiQteDilie		-1			1																						0																											
+10161615		2	0.1				0			4		10			999						FxR3ShenweiQteDilie02		-1			1																						0																											
+10162403		2	0.1				0			4		10			999						FxR3ShenweiAttackB02Dilie		-1			1																						0																											
+10162505		2	0.1				0			4		10			999						FxR3ShenweiAttackB03Dilie01		-1			1																						0																											
+10162506		2	0.1				0			4		10			999						FxR3ShenweiAttackB03Dilie02		-1			1																						0																											
+10162603		2	0.1				0			4		10			999						FxR3ShenweiAttackB04Dilie		-1			1																						0																											
+10162710		2	0.1				0			4		10			999						FxR3ShenweiAttackB05Dilie		-1			1																						0																											
+10162807		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1																						0																											
+10162808		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1																						0																											
+10162809		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1																						0																											
+10162810		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1																						0																											
+10162907		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1																						0																											
+10162908		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1																						0																											
+10162909		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1																						0																											
+10162910		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1																						0																											
+10163007		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie01		-1			1																						0																											
+10163008		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie02		-1			1																						0																											
+10163009		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie03		-1			1																						0																											
+10163010		2	0.1				0			4		10			999						FxR3ShenweiAttackB11Dilie04		-1			1																						0																											
+10163105		2	0.1				0			4		10			999						FxR3ShenweiAttackB21Dilie		-1			1																						0																											
+10163205		2	0.1				0			4		10			999						FxR3ShenweiAttackB22Dilie		-1			1																						0																											
+10163305		2	0.1				0			4		10			999						FxR3ShenweiAttackB23Dilie		-1			1																						0																											
+10163412		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1																						0																											
+10163512		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1																						0																											
+10163612		2	0.1				0			4		10			999						FxR3ShenweiAttackB31Dilie		-1			1																						0																											
+10230104		2	0.1				0			4		10			999						FxR3LifuAttack01		-1			1																						0																											
+10230204		2	0.1				0			4		10			999						FxR3LifuAttack02		-1			1																						0																											
+10230304		2	0.1				0			4		10			999						FxR3LifuAttack03		-1			1																						0																											
+10230411		2	0.1				0			4		10			999						FxR3LifuAttack04Dandao		-1			1															1							0																											
+10230605		2	0.1				0			4		10			999						FxR3LifuAttack11Dandao		-1			1															1							0																											
+10230705		2	0.1				0			4		10			999						FxR3LifuAttack12Dandao		-1			1															1							0																											
+10230805		2	0.1				0			4		10			999						FxR3LifuAttack13Dandao		-1			1															1							0																											
+10230907		2	0.1				0			4		4			999						FxR3LifuAttack21Dandao		-1			1															1							0																											
+10231007		2	0.1				0			4		7			999						FxR3LifuAttack22Dandao		-1			1															1							0																											
+10231107		2	0.1				0			4		10			999						FxR3LifuAttack23Dandao		-1			1															1							0																											
+10231704		2	0.1				0			4		10			999						FxR3LifuAttack13Dandao		-1			1															1							0																											
+10231803		2	0.1				0			4		10			999						FxR3LifuAttackBeidongHuixue		-1			1																						0																											
+10231807		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10231906		2	0.1				0			4		10			999						FxR3LifuMove01Start		-1			1																						0																											
+10231907		2	0.1				0			4		10			999						FxR3LifuMove01End		-1			1																						0																											
+10232006		2	0.1				0			4		10			999						FxR3LifuMove02Start		-1			1																						0																											
+10232007		2	0.1				0			4		10			999						FxR3LifuMove02End		-1			1																						0																											
+10170504		2	0.1				0			4		10			999						FxR3KalieninaAttack11Dilie		-1			1																						0																											
+10170604		2	0.1				0			4		10			999						FxR3KalieninaAttack11Dilie		-1			1																						0																											
+10170704		2	0.1				0			4		10			999						FxR3KalieninaAttack13Dilie		-1			1																						0																											
+10170806		2	0.1				0			4		10			999						FxR3KalieninaAttack21Dandao		-1			1																						0																											
+10170905		2	0.1				0			4		10			999						FxR3KalieninaAttack21Dandao		-1			1																						0																											
+10171005		2	0.1				0			4		10			999						FxR3KalieninaAttack23Dandao		-1			1																						0																											
+10171111		2	0.1				0			4		10			999						FxR3KalieninaAttack31		-1			1																						0																											
+10171211		2	0.1				0			4		10			999						FxR3KalieninaAttack31		-1			1																						0																											
+10171311		2	0.1				0			4		10			999						FxR3KalieninaAttack33		-1			1																						0																											
+10171504		2	0.1				0			4		10			999						FxR3KalieninaAttack13Dilie		-1			1																						0																											
+10171616		2	0.1				0			4		10			999						FxR3KalieninaAttack51		-1			1																						0																											
+10171911		2	0.1				0			4		10			999						FxR3KalieninaAttackQte		-1			1																						0																											
+10171915		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10172003		2	0.1				0			4		10			999						FxR3KalieninaMove01		-1			1																						0																											
+10172004		2	0.1				0			4		10			999						FxR3KalieninaMove02		-1			1																						0																											
+10172103		2	0.1				0			4		10			999						FxR3KalieninaMove01		-1			1																						0																											
+10172104		2	0.1				0			4		10			999						FxR3KalieninaMove02		-1			1																						0																											
+10172704		2	0.1				0			4		10			999						FxR3KalieninaAttack11ExDilie		-1			1																						0																											
+10172804		2	0.1				0			4		10			999						FxR3KalieninaAttack11ExDilie		-1			1																						0																											
+10172904		2	0.1				0			4		10			999						FxR3KalieninaAttack13ExDilie		-1			1																						0																											
+10173011		2	0.1				0			4		10			999						FxR3KalieninaAttack31Ex		-1			1																						0																											
+10173111		2	0.1				0			4		10			999						FxR3KalieninaAttack31Ex		-1			1																						0																											
+10173211		2	0.1				0			4		10			999						FxR3KalieninaAttack33Ex		-1			1																						0																											
+11170102		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+11170202		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+11170302		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+11170802		2	0.1				0			4		10			999						FxR3KalieninaFlyDeath		-1			1																						0																											
+11170902		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+11171002		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+11171102		2	0.1				0			4		10			999						FxR3KalieninaFlyAttack01		-1			1																						0																											
+13170601		2	0.1				0			4		10			999						FxRE2SwordMd120111Death		-1			1																						0																											

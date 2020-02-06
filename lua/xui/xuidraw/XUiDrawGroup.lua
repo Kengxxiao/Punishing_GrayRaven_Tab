@@ -21,13 +21,13 @@ function XUiDrawGroup:InitAutoScript()
 end
 
 function XUiDrawGroup:AutoInitUi()
-    self.PanelTab = self.Transform:Find("SafeAreaContentPane/PanelTab")
-    self.SViewBanners = self.Transform:Find("SafeAreaContentPane/PanelTab/SViewBanners"):GetComponent("ScrollRect")
-    self.PanelContentTabBtns = self.Transform:Find("SafeAreaContentPane/PanelTab/SViewBanners/Viewport/PanelContentTabBtns")
-    self.PanelCharTopButton = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.PanelTab = self.Transform:Find("SafeAreaContentPane/PanelTab")
+    -- self.SViewBanners = self.Transform:Find("SafeAreaContentPane/PanelTab/SViewBanners"):GetComponent("ScrollRect")
+    -- self.PanelContentTabBtns = self.Transform:Find("SafeAreaContentPane/PanelTab/SViewBanners/Viewport/PanelContentTabBtns")
+    -- self.PanelCharTopButton = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
 end
 
 function XUiDrawGroup:GetAutoKey(uiNode, eventName)
@@ -65,8 +65,8 @@ end
 function XUiDrawGroup:AutoAddListener()
     self.AutoCreateListeners = {}
     self:RegisterListener(self.SViewBanners, "onValueChanged", self.OnSViewBannersValueChanged)
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
 end
 -- auto
 function XUiDrawGroup:OnSViewBannersValueChanged(...)
@@ -99,7 +99,7 @@ function XUiDrawGroup:InitBanners()
                 gridTab[info.Id].Transform:SetParent(self.PanelContentTabBtns, false)
             end
         end
-        XUiHelper.PlayAnimation(self, "DrawGroupBegin")
+        --XUiHelper.PlayAnimation(self, "DrawGroupBegin")
     end
 
     local createBanners = function()
@@ -124,7 +124,7 @@ function XUiDrawGroup:InitBanners()
     end
 
     local init = function()
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         for _, info in pairs(infoList) do
             XDataCenter.DrawManager.GetDrawInfoList(info.Id, function()
                 local drawInfoList = XDataCenter.DrawManager.GetDrawInfoListByGroupId(info.Id)

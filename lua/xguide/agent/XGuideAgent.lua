@@ -79,14 +79,14 @@ end
 
 ---显示遮罩
 function XGuideAgent:ShowMask(isShowMask, isBlockRaycast)
-    local uiGuide = self:GetUiGuide()   
+    local uiGuide = self:GetUiGuide()
     uiGuide:ShowMark(isShowMask, isBlockRaycast)
 end
 
 --ui是否显示中
 function XGuideAgent:IsUiActive(uiName, panel)
     local target = self:FindTransformInUi(uiName, panel)
-    
+
     if not target then
         return false
     end
@@ -150,3 +150,17 @@ function XGuideAgent:FindTransformInUi(uiName,panel)
     return target
 end
 
+--跳转关卡
+function XGuideAgent:FubenJunmToStage(stageId)
+
+    local uiFubenMainLineChapter = CsXUiManager.Instance:FindTopUi("UiFubenMainLineChapter")
+    local proxy = nil
+    if uiFubenMainLineChapter then
+        proxy = uiFubenMainLineChapter.UiProxy.UiLuaTable
+    end
+
+    if proxy then
+        proxy:GoToStage(stageId)
+    end
+
+end

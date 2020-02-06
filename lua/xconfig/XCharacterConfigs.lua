@@ -517,7 +517,6 @@ function XCharacterConfigs.GetCharElment(templateId)
         XLog.Error("XCharacterConfigs.GetCharElment error: can not found template, templateId = " .. templateId)
         return
     end
-
     return template
 end
 
@@ -666,6 +665,10 @@ end
 
 function XCharacterConfigs.GetCharacterCodeStr(templateId)
     return CharacterTemplates[templateId].Code
+end
+
+function XCharacterConfigs.GetCharacterIsomer(templateId)
+    return CharacterTemplates[templateId].Isomer
 end
 
 --首次获得弹窗
@@ -1051,12 +1054,18 @@ function XCharacterConfigs.GetCaptainSkillInfo(characterId, skillLevel)
     return config
 end
 
-function XCharacterConfigs.GetCharSkillLevel(subSkillId)
-    return CharSkillLevelDict[subSkillId]
-end
+function XCharacterConfigs.GetSkillGradeConfig(subSkillId, subSkillLevel)
+    local skillLevelDict = CharSkillLevelDict[subSkillId]
+    if not skillLevelDict then
+        return
+    end
 
-function XCharacterConfigs.GetSkillGradeConfig(id)
-    return SkillGradeConfig[id]
+    local tabId = skillLevelDict[subSkillLevel]
+    if not tabId then
+        return
+    end
+
+    return SkillGradeConfig[tabId]
 end
 
 function XCharacterConfigs.GetCharcterIdByFragmentItemId(itemId)

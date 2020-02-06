@@ -80,7 +80,7 @@ XVoteManagerCreator = function()
                 return true
             end
 
-            local remainTime = groupMo.TimeToClose - XTime.Now()
+            local remainTime = groupMo.TimeToClose - XTime.GetServerNowTimestamp()
             if remainTime > 0 then
                 return false
             else

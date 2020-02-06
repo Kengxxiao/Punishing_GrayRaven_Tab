@@ -49,7 +49,7 @@ XMailManagerCreator = function()
             return false
         end
 
-        return XTime.Now() > mail.ExpireTime
+        return XTime.GetServerNowTimestamp() > mail.ExpireTime
     end
 
     --==============================--
@@ -260,7 +260,7 @@ XMailManagerCreator = function()
                 end
             end
 
-            XEventManager.DispatchEvent(XEventId.EVENT_MAIL_DELETE, mailId)
+            XEventManager.DispatchEvent(XEventId.EVENT_MAIL_DELETE)
             cb()
         end)
     end
@@ -297,6 +297,16 @@ XMailManagerCreator = function()
         return list
     end
 
+    function XMailManager.GetMailCount()
+        local list = {}
+        for k, mail in pairs(MailCache) do
+            if not CheckMailExpire(k) then
+                tableInsert(list, mail)
+            end
+        end
+        return #list
+    end
+    
     function XMailManager.GetMailCache(mailId)
         return MailCache[mailId]
     end
@@ -368,7 +378,7 @@ XMailManagerCreator = function()
     end
 
     function XMailManager.NotifyMails(data)
-        lastSyncServerTime = XTime.Now()
+        lastSyncServerTime = XTime.GetServerNowTimestamp()
         DealMailDatas(data.NewMailList, data.ExpireIdList)
     end
     
@@ -377,4 +387,5 @@ end
 
 XRpc.NotifyMails = function(data)
     XDataCenter.MailManager.NotifyMails(data)
+    CsXGameEventManager.Instance:Notify(XEventId.EVENT_MAIL_COUNT_CHEAK)
 end

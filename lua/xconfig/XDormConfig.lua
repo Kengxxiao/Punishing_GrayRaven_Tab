@@ -19,6 +19,12 @@ XDormConfig.DORM_BAG_PANEL_INDEX = {
     DRAFT = 3, -- 图纸
 }
 
+-- 仓库住户Toggle
+XDormConfig.DORM_CHAR_INDEX = {
+    CHARACTER = 1, -- 构造体
+    EMNEY = 2, -- 感染体
+}
+
 -- 跳转类型
 XDormConfig.VisitDisplaySetType = {
     MySelf = 1,
@@ -102,6 +108,27 @@ XDormConfig.DormSecondEnter = {
     Person = 8, --人员
 }
 
+XDormConfig.DormAttDesIndex = {
+    [1] = "DormScoreAttrADes",
+    [2] = "DormScoreAttrBDes",
+    [3] = "DormScoreAttrCDes",
+}
+
+-- 宿舍人物类型
+XDormConfig.DormSex = {
+    Man = 1,
+    Woman = 2,
+    Infect = 3,
+    Other = 4,
+}
+
+-- 构造体入住枚举
+XDormConfig.DormIntakeType = {
+    All = 0,
+    Architecture = 1,
+    Infection  = 2,
+}
+
 XDormConfig.DORM_VITALITY_MAX_VALUE = math.floor(CS.XGame.Config:GetInt("DormVitalityMaxValue") / 100)
 XDormConfig.DORM_MOOD_MAX_VALUE = math.floor(CS.XGame.Config:GetInt("DormMoodMaxValue") / 100)
 XDormConfig.DORM_DRAFT_SHOP_ID = CS.XGame.ClientConfig:GetInt("DormDraftShopId")
@@ -122,7 +149,7 @@ local TABLE_DORMCHARACTERWORK_PATH = "Share/Dormitory/Character/DormCharacterWor
 local TABLE_DORM_CHARACTER_RECOVERY_PATH = "Share/Dormitory/Character/DormCharacterRecovery.tab"
 local TABLE_DORM_CHARACTER_FONDLE_PATH = "Share/Dormitory/Character/DormCharacterFondle.tab"
 local TABLE_CHARACTER_STYLE_PATH = "Share/Dormitory/Character/DormCharacterStyle.tab"
-
+local TABLE_CHARACTER_REWARD_PATH = "Share/Dormitory/Character/DormCharacterReward.tab"
 local TABLE_DORM_BGM_PATH = "Share/Dormitory/DormBgm.tab"
 
 
@@ -147,6 +174,9 @@ local MoodEffectTemplate = {}       --构造体表情特效配置表
 local CharacterFondleTemplate = {}       -- 爱抚配置表
 local ChaarcterShowEventTemplate = {}       -- 事件客户端表现配置表
 local DormTaskGuideCfg = {}       -- 宿舍指引任务
+local DormCharacterRewardCfg = {}
+local AllEnmeyCount = 0           -- 可获得感染体总数
+local AllCharcterCount = 0           -- 可获得构造体总数
 
 local CharacterActionTemplate = {} --动作
 local CharacterInteractiveTemplate = {} --动作
@@ -194,6 +224,7 @@ function XDormConfig.Init()
     DormBgmTemplate = XTableManager.ReadByIntKey(TABLE_DORM_BGM_PATH, XTable.XTableDormBgm, "Id")
 
     DormTaskGuideCfg = XTableManager.ReadByIntKey(TABLE_DORM_GUIDE_TASK_PATH, XTable.XTableDormGuideTask, "Id")
+    DormCharacterRewardCfg = XTableManager.ReadByIntKey(TABLE_CHARACTER_REWARD_PATH, XTable.XTableDormCharacterReward, "Id")
     InitDormCharacterRecovery()
 
     CharacterBehaviorStateIndex = {}
@@ -221,9 +252,99 @@ function XDormConfig.Init()
         CharacterInteractiveIndex[cha1][cha2] = v
     end
 
+    for k, v in pairs(CharacterStyleTemplate) do
+        if v.Type == XDormConfig.DormSex.Infect then
+            AllEnmeyCount = AllEnmeyCount + 1
+        else
+            AllCharcterCount = AllCharcterCount + 1
+        end
+    end
+
     XDormConfig.DormAnimationMoveTime = CS.XGame.ClientConfig:GetInt("DormMainAnimationMoveTime") or 0
     XDormConfig.DormAnimationStaicTime = CS.XGame.ClientConfig:GetInt("DormMainAnimationStaicTime") or 0
     XDormConfig.DormSecondAnimationDelayTime = CS.XGame.ClientConfig:GetInt("DormSecondAnimationDelayTime") or 0
+end
+
+-- 获取构造体奖励名字
+function XDormConfig.GetDormCharacterRewardNameById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.Name then
+        XLog.Error("XDormConfig.GetDormCharacterRewardNameById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.Name
+end
+
+-- 获取构造体奖励品质
+function XDormConfig.GetDormCharacterRewardQualityById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.Quality then
+        XLog.Error("XDormConfig.GetDormCharacterRewardQualityById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.Quality
+end
+
+-- 获取构造体奖励Icon
+function XDormConfig.GetDormCharacterRewardIconById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.Icon then
+        XLog.Error("XDormConfig.GetDormCharacterRewardIconById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.Icon
+end
+
+-- 获取构造体奖励SmallIcon
+function XDormConfig.GetDormCharacterRewardSmallIconById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.SmallIcon then
+        XLog.Error("XDormConfig.GetDormCharacterRewardSmallIconById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.SmallIcon
+end
+
+-- 获取构造体奖励CharacterId
+function XDormConfig.GetDormCharacterRewardCharIdById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.CharacterId then
+        XLog.Error("XDormConfig.GetDormCharacterRewardCharacterIdById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.CharacterId
+end
+
+-- 获取构造体奖励Description
+function XDormConfig.GetDormDescriptionRewardCharIdById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.Description then
+        XLog.Error("XDormConfig.GetDormDescriptionRewardCharIdById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.Description
+end
+
+-- 获取构造体奖励WorldDescription
+function XDormConfig.GetDormWorldDescriptionRewardCharIdById(id)
+    local data = XDormConfig.GetDormCharacterRewardData(id)
+    if not data or not data.WorldDescription then
+        XLog.Error("XDormConfig.GetDormWorldDescriptionRewardCharIdById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return data.WorldDescription
+end
+
+function XDormConfig.GetDormCharacterRewardData(id)
+    local data = DormCharacterRewardCfg[id]
+    return data
 end
 
 -- 宿舍指引任务Dic
@@ -243,6 +364,16 @@ end
 function XDormConfig.GetTotalDormitoryCfg()
     local t = DormitoryTemplate
     return t
+end
+
+-- 获取可获得感染体总数
+function XDormConfig.GetEnmeyTemplatesCount()
+    return AllEnmeyCount
+end
+
+-- 获取可获得构造体总数
+function XDormConfig.GetCharacterTemplatesCount()
+    return AllCharcterCount
 end
 
 -- 配置的宿舍总数
@@ -439,6 +570,27 @@ function XDormConfig.GetCharacterStyleConfigQSIconById(id)
     end
 
     return t.HeadIcon
+end
+
+-- 获取构造体性别类型
+function XDormConfig.GetCharacterStyleConfigSexById(id)
+    local t = CharacterStyleTemplate[id]
+    if not t or not t.Type then
+        XLog.Error("XDormConfig.GetCharacterStyleConfigSexById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return t.Type
+end
+
+function XDormConfig.GetCharacterNameConfigById(id)
+    local t = CharacterStyleTemplate[id]
+    if not t then
+        XLog.Error("XDormConfig.GetCharacterStyleConfigById error:id is not found, id = " .. tostring(id))
+        return nil
+    end
+
+    return t.Name
 end
 
 -- 获取构造体爱抚配置表

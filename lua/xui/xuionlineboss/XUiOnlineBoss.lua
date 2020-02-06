@@ -24,7 +24,7 @@ end
 
 function XUiOnlineBoss:OnStart(selectIdx, isFirst)
     self.ScenePool = {}
-    self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
+    self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
     self.MatchPanel = XUiPanelMatch.New(self.PanelMatch, self)
     self.BossInfoPanel = XUiPanelBossInfo.New(self.PanelBossInfo)
 
@@ -128,10 +128,6 @@ function XUiOnlineBoss:OnEnable()
             self.EnterEnable:PlayTimelineAnimation()
         end
     end
-
-    if XDataCenter.FubenBossOnlineManager.GetIsActivity() then
-        CS.XAudioManager.PlayMusic(XSoundManager.UiBasicsMusic.UiActivity_Jidi_BGM)
-    end
 end
 
 function XUiOnlineBoss:OnDestroy()
@@ -171,7 +167,7 @@ function XUiOnlineBoss:RefreshName()
 end
 
 function XUiOnlineBoss:OnUpdateRefreshTime()
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local nextTime = XDataCenter.FubenBossOnlineManager.GetOnlineBossUpdateTime()
 
     if not self.GameObject or not self.GameObject:Exist() then

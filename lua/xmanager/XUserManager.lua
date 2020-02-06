@@ -104,12 +104,12 @@ function XUserManager.SetToken(token)
 end
 
 local DoRunLogin = function()
-    CS.Movie.XMovieManager.Instance:Clear()
-    CsXUiManager.Instance:Clear()
-    XHomeSceneManager.LeaveScene()
     if CS.XFight.Instance ~= nil then
         CS.XFight.ClearFight()
     end
+    CS.Movie.XMovieManager.Instance:Clear()
+    CsXUiManager.Instance:Clear()
+    XHomeSceneManager.LeaveScene()
     CsXUiManager.Instance:Open("UiLogin")
 end
 

@@ -35,17 +35,15 @@ function XUiNoticeTips:RefreshNoticeContent()
 end
 
 function XUiNoticeTips:OnNotify(evt, ...)
-    if evt == XEventId.EVENT_NOTICE_STATUS_CHANGE then
-        if not XDataCenter.NoticeManager.CheckTextNoticeInvalid() then
-            self:Close()
-        end
-    elseif evt == XEventId.EVENT_USER_LOGOUT then
+    if evt == XEventId.EVENT_USER_LOGOUT then
+        self:Close()
+    elseif evt == XEventId.EVENT_NOTICE_CLOSE_TEXT_NOTICE then
         self:Close()
     end
 end
 
 function XUiNoticeTips:OnGetEvents()
-    return {XEventId.EVENT_NOTICE_STATUS_CHANGE, XEventId.EVENT_USER_LOGOUT}
+    return {XEventId.EVENT_NOTICE_CLOSE_TEXT_NOTICE, XEventId.EVENT_USER_LOGOUT}
 end
 
 function XUiNoticeTips:GetEndPos()

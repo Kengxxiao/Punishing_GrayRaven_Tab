@@ -16,7 +16,8 @@ local ViewTipsTypeCfg = {
 }
 
 function XUiTrial:OnAwake()
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
+    self:AddListener()
     self:InitUiAfterAuto()
 end
 
@@ -67,7 +68,8 @@ end
 
 -- 处理后段终结
 function XUiTrial:HandleBackFinishTips()
-    XUiHelper.PlayAnimation(self, "AniTrialGet")
+    self:PlayAnimation("AniTrialGet")
+    --XUiHelper.PlayAnimation(self, "AniTrialGet")
     local cfg = XTrialConfigs.GetTrialTypeCfg(XDataCenter.TrialManager.TrialTypeCfg.TrialBackEnd)
     if cfg then
         self.TrialGet:SetBg(cfg.BigIcon)
@@ -101,7 +103,7 @@ end
 
 -- 处理前段完成的Tips弹出
 function XUiTrial:HandleForTrialFinish()
-    XUiHelper.PlayAnimation(self, "AniTrialGet")
+    self:PlayAnimation("AniTrialGet")
     local cfg = XTrialConfigs.GetTrialTypeCfg(XDataCenter.TrialManager.TrialTypeCfg.TrialFor)
     if cfg then
         self.TrialGet:SetBg(cfg.BigIcon)
@@ -211,30 +213,10 @@ function XUiTrial:ReturnPreTrialBg()
     end
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiTrial:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiTrial:AutoInitUi()
-    self.PanelTrialMain = self.Transform:Find("SafeAreaContentPane/PanelTrialMain")
-    self.PanelTrialSelect = self.Transform:Find("SafeAreaContentPane/PanelTrialSelect")
-    self.PanelTrialTips = self.Transform:Find("SafeAreaContentPane/PanelTrialTips")
-    self.PanelTrialGet = self.Transform:Find("SafeAreaContentPane/PanelTrialGet")
-    self.BtnHelp = self.Transform:Find("SafeAreaContentPane/BtnHelp"):GetComponent("Button")
-    self.BtnMainUI = self.Transform:Find("SafeAreaContentPane/BtnMainUI"):GetComponent("Button")
-    self.BtnReturn = self.Transform:Find("SafeAreaContentPane/BtnReturn"):GetComponent("Button")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
-    self.RImgForePartBg = self.Transform:Find("FullScreenBackground/RImgForePartBg"):GetComponent("RawImage")
-    self.RImgBackEndBg = self.Transform:Find("FullScreenBackground/RImgBackEndBg"):GetComponent("RawImage")
-end
-
-function XUiTrial:AutoAddListener()
-    self:RegisterClickEvent(self.BtnMainUI, self.OnBtnMainUIClick)
-    self:RegisterClickEvent(self.BtnReturn, self.OnBtnReturnClick)
-    self:RegisterClickEvent(self.BtnHelp, self.OnBtnHelpClick)
+function XUiTrial:AddListener()
+    self.BtnMainUI.CallBack = function()self:OnBtnMainUIClick()end
+    self.BtnReturn.CallBack = function()self:OnBtnReturnClick()end
+    self.BtnHelp.CallBack = function()self:OnBtnHelpClick()end
 end
 -- auto
 function XUiTrial:OnBtnMainUIClick(eventData)

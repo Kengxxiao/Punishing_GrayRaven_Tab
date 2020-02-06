@@ -57,8 +57,8 @@ end
 
 function XUiPanelFashionInfo:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnGet, "onClick", self.OnBtnGetClick)
-    self:RegisterListener(self.BtnBlock, "onClick", self.OnBtnBlockClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnGet, self.OnBtnGetClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBlock, self.OnBtnBlockClick)
 end
 -- auto
 

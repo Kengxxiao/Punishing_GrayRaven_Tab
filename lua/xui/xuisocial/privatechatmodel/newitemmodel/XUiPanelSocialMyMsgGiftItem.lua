@@ -3,6 +3,7 @@ XUiPanelSocialMyMsgGiftItem = XClass()
 function XUiPanelSocialMyMsgGiftItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -15,17 +16,17 @@ function XUiPanelSocialMyMsgGiftItem:InitAutoScript()
 end
 
 function XUiPanelSocialMyMsgGiftItem:AutoInitUi()
-    self.PanelRole = self.Transform:Find("PanelRole")
-    self.RImgHead = self.Transform:Find("PanelRole/RImgHead"):GetComponent("RawImage")
-    self.HeadIconEffect = self.Transform:Find("PanelRole/RImgHead/Effect"):GetComponent("XUiEffectLayer")
-    self.BtnView = self.Transform:Find("PanelRole/BtnView"):GetComponent("Button")
-    self.PanelMsg = self.Transform:Find("PanelMsg")
-    self.TxtName = self.Transform:Find("PanelMsg/TxtName"):GetComponent("Text")
-    self.RImgIcon = self.Transform:Find("PanelMsg/Content/RImgIcon"):GetComponent("RawImage")
-    self.BtnClick = self.Transform:Find("PanelMsg/Content/BtnClick"):GetComponent("Button")
-    self.ImgGet = self.Transform:Find("PanelMsg/Content/ImgGet"):GetComponent("Image")
-    self.ImgNoGet = self.Transform:Find("PanelMsg/Content/ImgNoGet"):GetComponent("Image")
-    self.ImgFetch = self.Transform:Find("PanelMsg/Content/ImgFetch"):GetComponent("Image")
+    -- self.PanelRole = self.Transform:Find("PanelRole")
+    -- self.RImgHead = self.Transform:Find("PanelRole/RImgHead"):GetComponent("RawImage")
+    -- self.HeadIconEffect = self.Transform:Find("PanelRole/RImgHead/Effect"):GetComponent("XUiEffectLayer")
+    -- self.BtnView = self.Transform:Find("PanelRole/BtnView"):GetComponent("Button")
+    -- self.PanelMsg = self.Transform:Find("PanelMsg")
+    -- self.TxtName = self.Transform:Find("PanelMsg/TxtName"):GetComponent("Text")
+    -- self.RImgIcon = self.Transform:Find("PanelMsg/Content/RImgIcon"):GetComponent("RawImage")
+    -- self.BtnClick = self.Transform:Find("PanelMsg/Content/BtnClick"):GetComponent("Button")
+    -- self.ImgGet = self.Transform:Find("PanelMsg/Content/ImgGet"):GetComponent("Image")
+    -- self.ImgNoGet = self.Transform:Find("PanelMsg/Content/ImgNoGet"):GetComponent("Image")
+    -- self.ImgFetch = self.Transform:Find("PanelMsg/Content/ImgFetch"):GetComponent("Image")
 end
 
 function XUiPanelSocialMyMsgGiftItem:GetAutoKey(uiNode, eventName)
@@ -58,8 +59,8 @@ end
 
 function XUiPanelSocialMyMsgGiftItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnClick, self.OnBtnClickClick)
 end
 -- auto
 function XUiPanelSocialMyMsgGiftItem:OnBtnViewClick(...)--查看个人信息

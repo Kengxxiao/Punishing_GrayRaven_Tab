@@ -72,9 +72,9 @@ end
 
 function XUiPanelAsset:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBuyJump3, "onClick", self.OnBtnBuyJump3Click)
-    self:RegisterListener(self.BtnBuyJump2, "onClick", self.OnBtnBuyJump2Click)
-    self:RegisterListener(self.BtnBuyJump1, "onClick", self.OnBtnBuyJump1Click)
+    XUiHelper.RegisterClickEvent(self, self.BtnBuyJump3, self.OnBtnBuyJump3Click)
+    XUiHelper.RegisterClickEvent(self, self.BtnBuyJump2, self.OnBtnBuyJump2Click)
+    XUiHelper.RegisterClickEvent(self, self.BtnBuyJump1, self.OnBtnBuyJump1Click)
 end
 -- auto
 

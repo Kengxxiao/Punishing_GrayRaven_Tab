@@ -170,7 +170,7 @@ XSocialManagerCreator = function()
     function XSocialManager.InitCheckWaitPassLocalMap()
         local key = string.format("%s_WaitPass", tostring(XPlayer.Id))
         local cache = CS.UnityEngine.PlayerPrefs.GetString(key)
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if not string.IsNilOrEmpty(cache) then
             local cacheTable = Json.decode(cache)
             for playerId, overTime in pairs(cacheTable or {}) do
@@ -185,7 +185,7 @@ XSocialManagerCreator = function()
     -- 点击等待通过-保存已经点了的数据-清除过期数据
     function XSocialManager.ResetWaitPassLocalMap()
         local key = string.format("%s_WaitPass", tostring(XPlayer.Id))
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         WaitPassLocalMap = {}
         for k, v in pairs(WaitPassMap or {}) do
             local overTime = v.CreateTime + A_WEEK
@@ -201,7 +201,7 @@ XSocialManagerCreator = function()
     -- 红点检查
     function XSocialManager.HasFriendApplyWaitPass()
         local key = string.format("%s_WaitPass", tostring(XPlayer.Id))
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         for playerId, playerData in pairs(WaitPassMap or {}) do
             local overTime = playerData.CreateTime + A_WEEK
             if not WaitPassLocalMap[tostring(playerId)] and now < overTime then
@@ -213,7 +213,7 @@ XSocialManagerCreator = function()
 
     function XSocialManager.RefreshRecommendData(dataList)
         if dataList then
-            LastRecommendTime = XTime.Now()
+            LastRecommendTime = XTime.GetServerNowTimestamp()
             RecommendList = {}
             XTool.LoopCollection(dataList, function(item)
                 local friend = XFriend.New(0, 0, 0)
@@ -358,7 +358,7 @@ XSocialManagerCreator = function()
             if response.Code ~= XCode.FriendManagerApplySuccess then
                 local interval = XSocialManager:HandleErrorCode(response.Code)
                 if interval ~= nil then
-                    local curTime = XTime.Now()
+                    local curTime = XTime.GetServerNowTimestamp()
                     local timeDifference = (response.OperationTime + interval - curTime) / 3600
                     XUiManager.TipError(CS.XTextManager.GetText("ApplyForTip", math.ceil(timeDifference)))
                 end
@@ -432,7 +432,7 @@ XSocialManagerCreator = function()
             return
         end
 
-        if not playerCache.UpdateTime or XTime.Now() - playerCache.UpdateTime > SocialDataTimeInterval then
+        if not playerCache.UpdateTime or XTime.GetServerNowTimestamp() - playerCache.UpdateTime > SocialDataTimeInterval then
             return
         end
 
@@ -454,7 +454,7 @@ XSocialManagerCreator = function()
     function XSocialManager.UpdatePlayerCache(playerInfoList)
         for _, playerData in pairs(playerInfoList) do
             SocialPlayerCache[playerData.Id] = playerData
-            SocialPlayerCache[playerData.Id].UpdateTime = XTime.Now()
+            SocialPlayerCache[playerData.Id].UpdateTime = XTime.GetServerNowTimestamp()
         end
     end
 

@@ -137,9 +137,8 @@ function XUiPanelAd:OnPointerClick()
     end
 
     if tonumber(data.JumpType) == JumpType.Web then
-        local url = XDataCenter.NoticeManager.UrlDecode(jumpAddr)
-        if url and #url > 0 then
-            CS.UnityEngine.Application.OpenURL(url)
+        if jumpAddr and #jumpAddr > 0 then
+            CS.UnityEngine.Application.OpenURL(jumpAddr)
         end    
     elseif tonumber(data.JumpType) == JumpType.Game then
         XFunctionManager.SkipInterface(tonumber(jumpAddr))
@@ -209,7 +208,7 @@ function XUiPanelAd:LoadWebTexture(index, isBackUp)
         picAddr = self.AdList[index].PicAddr
     end
 
-    XDataCenter.NoticeManager.LoadPic(picAddr, function(texture)
+    XDataCenter.NoticeManager.LoadPicFromLocal(picAddr, function(texture)
         if XTool.UObjIsNil(self.AdPrefab[index]) then
             return
         end

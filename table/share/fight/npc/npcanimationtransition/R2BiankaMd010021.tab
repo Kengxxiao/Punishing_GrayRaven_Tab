@@ -10,7 +10,7 @@ R2BiankaMd010021		Death	0.1
 R2BiankaMd010021		Hit1	0.05
 R2BiankaMd010021		Hit2	0.05
 R2BiankaMd010021		Behitfly	0.05
-R2BiankaMd010021		Hoverhit	0
+R2BiankaMd010021		Hoverhit	0.05
 R2BiankaMd010021		Falldown	0.1
 R2BiankaMd010021		Hitdown	0.1
 R2BiankaMd010021		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R2BiankaMd010021		TurnLeft	0.1
 R2BiankaMd010021		TurnRight	0.1
 R2BiankaMd010021		StraightBefore	0.1
 R2BiankaMd010021		StraightAfter	0.1
+R2BiankaMd010021		UiStand1	0.1
 R2BiankaMd010021		Win	0
 R2BiankaMd010021		Win2	0.1
 R2BiankaMd010021		Runb	0.2
@@ -107,5 +108,5 @@ R2BiankaMd010021	Walkr	Walkb	0.1
 R2BiankaMd010021	Walkr	Walkl	0.2
 R2BiankaMd010021	Hit3	Stand2	0
 R2BiankaMd010021	Hit4	Stand2	0
-R2BiankaMd010021	RunStart	Run	0.05
+R2BiankaMd010021	RunStart	Run	0
 R2BiankaMd010021	RunStart	RunStartEnd01	0.1

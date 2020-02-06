@@ -58,7 +58,7 @@ end
 
 function XUiEmojiItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnEmoji, "onClick", self.OnBtnEmojiClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnEmoji, self.OnBtnEmojiClick)
 end
 -- auto
 function XUiEmojiItem:OnBtnEmojiClick()--发送表情

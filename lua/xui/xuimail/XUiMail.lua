@@ -102,7 +102,7 @@ end
 function XUiMail:UpdateMailList()
 
     self.PanelUnGet.gameObject:SetActive(false)
-    self.TxtMailCount.text = CSGetText("MailCountText", #self.PageDatas, MailMaxCount)
+    self.TxtMailCount.text = CSGetText("MailCountText",#self.PageDatas,MailMaxCount)
     if #self.PageDatas == 0 then
         self.PanelUnGet.gameObject:SetActive(true)
         return
@@ -123,7 +123,7 @@ function XUiMail:ShowMailInfo(mailInfo)
     end
 
     local refreshFunc
-    local restTime = mailInfo.ExpireTime - XTime.Now()
+    local restTime = mailInfo.ExpireTime - XTime.GetServerNowTimestamp()
     if restTime and restTime > 0 then
         refreshFunc = function ()
             local dataTime = XUiHelper.GetTime(restTime)

@@ -5,6 +5,7 @@ function XUiPanelWaitForPassView:Ctor(ui,parent)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.Parent = parent
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 
     self.GameObject:SetActive(false)
@@ -27,11 +28,11 @@ function XUiPanelWaitForPassView:InitAutoScript()
 end
 
 function XUiPanelWaitForPassView:AutoInitUi()
-    self.GridWaitPassPlayer = self.Transform:Find("Viewport/WaitPassList/GridWaitPassPlayer")
-    self.TxtChargeDay = self.Transform:Find("WaitPassPanelOther/TxtChargeDay"):GetComponent("Text")
-    self.TxtFriendCountA = self.Transform:Find("WaitPassPanelOther/TxtFriendCount"):GetComponent("Text")
-    self.BtnAdd = self.Transform:Find("Tips/BtnAdd"):GetComponent("Button")
-    self.Tips = self.Transform:Find("Tips")
+    -- self.GridWaitPassPlayer = self.Transform:Find("Viewport/WaitPassList/GridWaitPassPlayer")
+    -- self.TxtChargeDay = self.Transform:Find("WaitPassPanelOther/TxtChargeDay"):GetComponent("Text")
+    -- self.TxtFriendCountA = self.Transform:Find("WaitPassPanelOther/TxtFriendCount"):GetComponent("Text")
+    -- self.BtnAdd = self.Transform:Find("Tips/BtnAdd"):GetComponent("Button")
+    -- self.Tips = self.Transform:Find("Tips")
 end
 
 function XUiPanelWaitForPassView:GetAutoKey(uiNode,eventName)
@@ -64,7 +65,7 @@ end
 
 function XUiPanelWaitForPassView:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
 end
 
 

@@ -225,7 +225,7 @@ XHostelManagerCreator = function()
             return XHostelManager.DeviceUpgradeState.Unknown
         end
         local endUpgradTime = deveice.UpgradeBeginTime + nextConfig.CostTime
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         if curTime >= endUpgradTime then
             return XHostelManager.DeviceUpgradeState.Complete
         else
@@ -408,7 +408,7 @@ XHostelManagerCreator = function()
             return XHostelManager.WorkSlotState.Idle
         end
         if workChar.BeginTime > 0 then
-            local curTime = XTime.Now()
+            local curTime = XTime.GetServerNowTimestamp()
             local workTime = workChar.BeginTime + XHostelManager.GetWorkSlotWorkTime(slot)
             if workTime <= curTime then
                 if slotCfg.BelongType == XHostelManager.FunctionDeviceType.PowerStation then

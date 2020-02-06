@@ -45,22 +45,27 @@ function XUiPanelGroupInfo:ShowBossGroupInfo(groupId)
         grid.gameObject:SetActiveEx(false)
     end
 
+    local now = XTime.GetServerNowTimestamp()
     for i = 1, #groupInfo.SectionId do
-        local grid = self.GridBosList[i]
-        if not grid then
-            grid = CS.UnityEngine.Object.Instantiate(self.GridBoss)
-            grid.transform:SetParent(self.PanelScoreContent, false)
-            self.GridBosList[i] = grid
-        end
-        
-        local headIcon = XUiHelper.TryGetComponent(grid.transform, "RImgBossIcon", "RawImage")
-        local nickname = XUiHelper.TryGetComponent(grid.transform, "TxtBoosName", "Text")
         local sectionCfg = XDataCenter.FubenBossSingleManager.GetBossSectionCfg(groupInfo.SectionId[i])
-        local sossStageCfg = XDataCenter.FubenBossSingleManager.GetBossStageCfg(sectionCfg.StageId[1])
-        headIcon:SetRawImage(sectionCfg.BossHeadIcon)
-        nickname.text = sossStageCfg.BossName
+        -- 判断关闭时间
+        local closeTime = XTime.ParseToTimestamp(sectionCfg.ClosedTime)
+        if not closeTime or now < closeTime then
+            local grid = self.GridBosList[i]
+            if not grid then
+                grid = CS.UnityEngine.Object.Instantiate(self.GridBoss)
+                grid.transform:SetParent(self.PanelScoreContent, false)
+                self.GridBosList[i] = grid
+            end
+            
+            local headIcon = XUiHelper.TryGetComponent(grid.transform, "RImgBossIcon", "RawImage")
+            local nickname = XUiHelper.TryGetComponent(grid.transform, "TxtBoosName", "Text")
+            local sossStageCfg = XDataCenter.FubenBossSingleManager.GetBossStageCfg(sectionCfg.StageId[1])
+            headIcon:SetRawImage(sectionCfg.BossHeadIcon)
+            nickname.text = sossStageCfg.BossName
 
-        grid.gameObject:SetActiveEx(true)
+            grid.gameObject:SetActiveEx(true)
+        end
     end
 
     self.GameObject:SetActiveEx(true)

@@ -253,8 +253,15 @@ function XUiPanelBossDetail:RefreshInfo()
    
     self.BtnAuto.gameObject:SetActive(self.CurBossStageCfg.AutoFight)
     local autoFightData = XDataCenter.FubenBossSingleManager.CheckAtuoFight(self.CurBossStageCfg.StageId)
+
+    
     if autoFightData then
-        self.BtnAuto:SetButtonState(CS.UiButtonState.Normal)
+        local autoScore = math.floor(XFubenBossSingleConfigs.AUTO_FIGHT_REBATE * autoFightData.Score / 100)
+        if curScore >= autoScore then
+            self.BtnAuto:SetButtonState(CS.UiButtonState.Disable)
+        else
+            self.BtnAuto:SetButtonState(CS.UiButtonState.Normal)
+        end
     else
         self.BtnAuto:SetButtonState(CS.UiButtonState.Disable)
     end
@@ -289,6 +296,14 @@ function XUiPanelBossDetail:OnBtnAutoClick(...)
     local autoFightData = XDataCenter.FubenBossSingleManager.CheckAtuoFight(self.CurBossStageCfg.StageId)
     if not autoFightData then
         XUiManager.TipText("BossSingleAutoFightDesc1")
+        return
+    end
+
+    local stageData = XDataCenter.FubenManager.GetStageData(self.CurBossStageCfg.StageId)
+    local curScore = stageData and stageData.Score or 0
+    local autoScore = math.floor(XFubenBossSingleConfigs.AUTO_FIGHT_REBATE * autoFightData.Score / 100)
+    if curScore >= autoScore then
+        XUiManager.TipText("BossSingleAutoFightDesc12")
         return
     end
 

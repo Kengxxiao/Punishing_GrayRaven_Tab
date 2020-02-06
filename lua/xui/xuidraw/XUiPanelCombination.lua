@@ -4,6 +4,7 @@ local XUiGridSuitDetail = require("XUi/XUiEquipAwarenessReplace/XUiGridSuitDetai
 function XUiPanelCombination:Ctor(ui, parent, index)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.Parent = parent
     self.Index = index
@@ -80,14 +81,14 @@ function XUiPanelCombination:InitAutoScript()
 end
 
 function XUiPanelCombination:AutoInitUi()
-    self.PanelCompositions = self.Transform:Find("PanelCompositions")
-    self.PanelNormal = self.Transform:Find("PanelCompositions/PanelNormal")
-    self.PanelSuit = self.Transform:Find("PanelCompositions/PanelSuit")
-    self.PanelComposition = self.Transform:Find("PanelCompositions/PanelNormal/PanelComposition")
-    self.PanelSuitCommon = self.Transform:Find("PanelCompositions/PanelSuit/PanelSuitCommon")
-    self.TxtCombination = self.Transform:Find("PanelSelect/TxtCombination"):GetComponent("Text")
-    self.BtnSelect = self.Transform:Find("PanelSelect/BtnSelect"):GetComponent("XUiButton")
-    self.TxtSelected = self.Transform:Find("PanelSelect/TxtSelected")
+    -- self.PanelCompositions = self.Transform:Find("PanelCompositions")
+    -- self.PanelNormal = self.Transform:Find("PanelCompositions/PanelNormal")
+    -- self.PanelSuit = self.Transform:Find("PanelCompositions/PanelSuit")
+    -- self.PanelComposition = self.Transform:Find("PanelCompositions/PanelNormal/PanelComposition")
+    -- self.PanelSuitCommon = self.Transform:Find("PanelCompositions/PanelSuit/PanelSuitCommon")
+    -- self.TxtCombination = self.Transform:Find("PanelSelect/TxtCombination"):GetComponent("Text")
+    -- self.BtnSelect = self.Transform:Find("PanelSelect/BtnSelect"):GetComponent("XUiButton")
+    -- self.TxtSelected = self.Transform:Find("PanelSelect/TxtSelected")
 end
 
 function XUiPanelCombination:GetAutoKey(uiNode, eventName)

@@ -47,18 +47,18 @@ function XUiBattery:UpdateGrid(bagItem, parent)
     if self.TxtCount and count then
         self.TxtCount.text = CS.XTextManager.GetText("ShopGridCommonCount", count)
     end
-
+    
     -- 图标
     if self.RImgIcon then
-        local icon = self.GoodsShowParams.Icon
+        local icon = self.GoodsShowParams.Icon 
         if icon and #icon > 0 then
             self.RImgIcon:SetRawImage(icon)
         end
     end
-
+    
     if self.ImgQuality and self.GoodsShowParams.Quality then
         local qualityIcon = self.GoodsShowParams.QualityIcon
-
+        
         if qualityIcon then
             parent:SetUiSprite(self.ImgQuality, qualityIcon)
         else
@@ -70,7 +70,7 @@ function XUiBattery:UpdateGrid(bagItem, parent)
     self.BagItem.Data.Template.TimelinessType ~= FoEver then
         self.Timers = CS.XScheduleManager.ScheduleForever(function() self:SetTime() end, CS.XScheduleManager.SECOND)
     end
-
+    
     self:SetTime()
     self:SetSelectShow(parent)
 end
@@ -83,13 +83,13 @@ function XUiBattery:SetTime()
         sprite = XUiHelper.TagBgPath.Green
         self.IsCantUse = false
     else
-        local LifeTime = self.BagItem.RecycleBatch and self.BagItem.RecycleBatch.RecycleTime - XTime.Now() or XDataCenter.ItemManager.GetRecycleLeftTime(self.BagItem.Data.Id)
+        local LifeTime = self.BagItem.RecycleBatch and self.BagItem.RecycleBatch.RecycleTime - XTime.GetServerNowTimestamp() or XDataCenter.ItemManager.GetRecycleLeftTime(self.BagItem.Data.Id)
         if LifeTime and LifeTime > 0 then
             local tmpTime = XUiHelper.GetTime(LifeTime,XUiHelper.TimeFormatType.MAINBATTERY)
             self.TxtTime.text = tmpTime
-            if LifeTime > CS.XDate.ONE_DAY_SECOND * 7 then
+            if LifeTime > CS.XDateUtil.ONE_DAY_SECOND * 7 then
                 sprite = XUiHelper.TagBgPath.Green
-            elseif LifeTime > CS.XDate.ONE_DAY_SECOND then
+            elseif LifeTime > CS.XDateUtil.ONE_DAY_SECOND then
                 sprite = XUiHelper.TagBgPath.Yellow
             else
                 sprite = XUiHelper.TagBgPath.Red

@@ -1,7 +1,6 @@
 XTaskManagerCreator = function()
     local tableInsert = table.insert
     local tableSort = table.sort
-    local CSXDateGetTime = CS.XDate.GetTime
 
     local Json = require("XCommon/Json")
     local WeekTaskRefreshId = 10001
@@ -37,6 +36,7 @@ XTaskManagerCreator = function()
         TimeLimit = 11,
         DormNormal = 12, --宿舍普通
         DormDaily = 13, --宿舍日常
+        BabelTower = 15, --巴别塔任务
     }
 
     XTaskManager.AchvType = {
@@ -87,11 +87,14 @@ XTaskManagerCreator = function()
 
     local StoryGroupTaskData = {}
     local DormStoryGroupTaskData = {}
+    local DormDailyGroupTaskData = {}
     local FinishedTasks = {}
 
     -- 宿舍任务
     local DormNormalTaskData = {}
     local DormDailyTaskData = {}
+
+    local BabelTowerTaskData = {}
 
     local NewbieActivenessRecord = {}
     XTaskManager.NewPlayerLastSelectTab = "NewPlayerHint_LastSelectTab"
@@ -160,6 +163,8 @@ XTaskManagerCreator = function()
                 DormNormalTaskData[k] = v
             elseif taskTemplate[k].Type == XTaskManager.TaskType.DormDaily then
                 DormDailyTaskData[k] = v
+            elseif taskTemplate[k].Type == XTaskManager.TaskType.BabelTower then
+                BabelTowerTaskData[k] = v
             end
         end
         XEventManager.DispatchEvent(XEventId.EVENT_TASK_SYNC)
@@ -419,11 +424,11 @@ XTaskManagerCreator = function()
         
         -- startTime限制
         if template.StartTime ~= nil and template.StartTime ~= "" then
-            local now = XTime.Now()
-            local startTime = CS.XDate.GetTime(template.StartTime)
-            if startTime > now then return false end
+            local now = XTime.GetServerNowTimestamp()
+            local startTime = XTime.ParseToTimestamp(template.StartTime)
+            if startTime and startTime > now then return false end
         end
-        
+
         local preId = template and template.ShowAfterTaskId or -1
         if preId > 0 then
             local preTask = TotalTaskData[preId]
@@ -618,6 +623,8 @@ XTaskManagerCreator = function()
             taskList = XTaskManager.GetDormDailyTaskList()
         elseif taskType == XTaskManager.TaskType.DormNormal then
             taskList = XTaskManager.GetDormNormalTaskList()
+        elseif taskType == XTaskManager.TaskType.BabelTower then
+            taskList = XTaskManager.GetBabelTowerTaskList()
         end
         if taskList == nil then
             return false
@@ -719,17 +726,23 @@ XTaskManagerCreator = function()
         return GetTaskList(XTaskManager.GetTaskDataByTaskType(XTaskManager.TaskType.DormDaily))
     end
 
+    function XTaskManager.GetBabelTowerTaskList()
+        return GetTaskList(XTaskManager.GetTaskDataByTaskType(XTaskManager.TaskType.BabelTower))
+    end
+
     function XTaskManager.GetTimeLimitTaskListByGroupId(taskGroupId)
         local taskDatas = {}
 
         local timeLimitTaskCfg = taskGroupId ~= 0 and XTaskConfig.GetTimeLimitTaskCfg(taskGroupId)
         if not timeLimitTaskCfg then return taskDatas end
 
-        local nowTime = XTime.Now()
-        local beginTime = CSXDateGetTime(timeLimitTaskCfg.StartTimeStr)
-        local endTime = CSXDateGetTime(timeLimitTaskCfg.EndTimeStr)
-        if nowTime < beginTime or nowTime >= endTime then
-            return taskDatas
+        local nowTime = XTime.GetServerNowTimestamp()
+        local beginTime = XTime.ParseToTimestamp(timeLimitTaskCfg.StartTimeStr)
+        local endTime = XTime.ParseToTimestamp(timeLimitTaskCfg.EndTimeStr)
+        if beginTime and endTime then
+            if nowTime < beginTime or nowTime >= endTime then
+                return taskDatas
+            end
         end
 
         for _, taskId in ipairs(timeLimitTaskCfg.TaskId) do
@@ -808,6 +821,8 @@ XTaskManagerCreator = function()
             datas = DormDailyTaskData
         elseif tasktype == XTaskManager.TaskType.DormNormal then
             datas = DormNormalTaskData
+        elseif tasktype == XTaskManager.TaskType.BabelTower then
+            datas = BabelTowerTaskData
         end
         local result = {}
         for k, v in pairs(datas) do
@@ -875,6 +890,54 @@ XTaskManagerCreator = function()
             v.UnfinishCount = 0
         end
     end
+
+    function XTaskManager.ResetDormDailyGroupTaskData()
+        for k, v in pairs(DormDailyGroupTaskData) do
+            v.UnfinishCount = 0
+        end
+    end
+
+    function XTaskManager.GetCurrentDormDailyTaskGroupId()
+        XTaskManager.ResetDormDailyGroupTaskData()
+
+        local headGroupId = 1
+        for k, v in pairs(DormDailyTaskData) do
+            local templates = XTaskManager.GetTaskTemplate(v.Id)
+            if templates.GroupId > 0 then
+                if templates.ShowAfterGroup <= 0 then
+                    headGroupId = templates.GroupId
+                end
+                local groupDatas = DormDailyGroupTaskData[templates.GroupId]
+                if groupDatas == nil then
+                    DormDailyGroupTaskData[templates.GroupId] = {}
+                    groupDatas = DormDailyGroupTaskData[templates.GroupId]
+                    groupDatas.GroupId = templates.GroupId
+                    groupDatas.ShowAfterGroup = templates.ShowAfterGroup
+                    groupDatas.UnfinishCount = 0
+                end
+
+                if v.State ~= XTaskManager.TaskState.Finish and v.State ~= XTaskManager.TaskState.Invalid then
+                    groupDatas.UnfinishCount = groupDatas.UnfinishCount + 1
+                end
+            end
+        end
+
+        for groupId, groupDatas in pairs(DormDailyGroupTaskData) do
+            if groupDatas.ShowAfterGroup > 0 then
+                DormDailyGroupTaskData[groupDatas.ShowAfterGroup].NextGroupId = groupDatas.GroupId
+            end
+        end
+
+        local currentGoupId = headGroupId
+        local currentGroupDatas = DormDailyGroupTaskData[currentGoupId]
+        while currentGroupDatas and currentGroupDatas.UnfinishCount <= 0 do
+            currentGoupId = currentGroupDatas.NextGroupId
+            if currentGoupId == nil then break end
+            currentGroupDatas = DormDailyGroupTaskData[currentGoupId]
+        end
+        return currentGoupId
+    end
+
     function XTaskManager.GetCurrentDormStoryTaskGroupId()
         XTaskManager.ResetDormStoryGroupTaskData()
 
@@ -979,6 +1042,8 @@ XTaskManagerCreator = function()
                 DormDailyTaskData[value.Id] = value
             elseif tasktype == XTaskManager.TaskType.DormNormal then
                 DormNormalTaskData[value.Id] = value
+            elseif tasktype == XTaskManager.TaskType.BabelTower then
+                BabelTowerTaskData[value.Id] = value
             end
         end)
         XEventManager.DispatchEvent(XEventId.EVENT_TASK_SYNC)
@@ -1001,6 +1066,8 @@ XTaskManagerCreator = function()
             taskList = DormDailyTaskData
         elseif taskType == XTaskManager.TaskType.DormNormal then
             taskList = DormNormalTaskData
+        elseif taskType == XTaskManager.TaskType.BabelTower then
+            taskList = BabelTowerTaskData
         end
 
         if taskList == nil then
@@ -1372,14 +1439,27 @@ XTaskManagerCreator = function()
         end)
     end
 
-
-    function XTaskManager.GetTaskStoryListData()
-        return XTaskManager.SortTaskByGroup(XTaskManager.GetDormNormalTaskList()) or {}
+    function XTaskManager.GetDormTaskDailyListData()
+        return XTaskManager.SortDormDailyTaskByGroup(XTaskManager.GetDormDailyTaskList()) or {}
     end
 
-    function XTaskManager.SortTaskByGroup(tasks)
+    function XTaskManager.GetDormTaskStoryListData()
+        return XTaskManager.SortDormStoryTaskByGroup(XTaskManager.GetDormNormalTaskList()) or {}
+    end
+
+    function XTaskManager.SortDormStoryTaskByGroup(tasks)
         local currTaskGroupId = XDataCenter.TaskManager.GetCurrentDormStoryTaskGroupId()
         if currTaskGroupId == nil or currTaskGroupId <= 0 then return tasks end
+        return XTaskManager.SortDormTask(tasks,currTaskGroupId)
+    end
+
+    function XTaskManager.SortDormDailyTaskByGroup(tasks)
+        local currTaskGroupId = XDataCenter.TaskManager.GetCurrentDormDailyTaskGroupId()
+        if currTaskGroupId == nil or currTaskGroupId <= 0 then return tasks end
+        return XTaskManager.SortDormTask(tasks,currTaskGroupId)
+    end
+
+    function XTaskManager.SortDormTask(tasks,currTaskGroupId)
         local sortedTasks = {}
         -- 过滤，留下组id相同，没有组id的任务
         for k, v in pairs(tasks) do
@@ -1410,7 +1490,7 @@ XTaskManagerCreator = function()
 
     --宿舍主界面，任务提示。（可领奖励或未完成的）
     function XTaskManager.GetDormTaskTips()
-        local storytasks = XTaskManager.GetTaskStoryListData()
+        local storytasks = XTaskManager.GetDormTaskStoryListData()
         local taskguideids = XDormConfig.GetDormitoryGuideTaskCfg()
         if _G.next(storytasks) then
             for _, data in pairs(storytasks) do

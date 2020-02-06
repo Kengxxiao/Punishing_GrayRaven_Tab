@@ -8,7 +8,8 @@ function XUiMissionChapter:OnStart()
     self:Init()
     self:SetupChapter()
 
-    XUiHelper.PlayAnimation(self, "AniMissionChapterBegin")
+    self:PlayAnimation("AniMissionChapterBegin")
+    --XUiHelper.PlayAnimation(self, "AniMissionChapterBegin")
 
 end
 
@@ -49,11 +50,11 @@ function XUiMissionChapter:InitAutoScript()
 end
 
 function XUiMissionChapter:AutoInitUi()
-    self.PanelChapter = self.Transform:Find("SafeAreaContentPane/PanelChapter")
-    self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent")
-    self.PanelScroll = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent/PanelScroll")
-    self.PanelMissionChapterGird = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent/PanelScroll/Viewport/PanelMissionChapterGird")
-    self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
+    -- self.PanelChapter = self.Transform:Find("SafeAreaContentPane/PanelChapter")
+    -- self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent")
+    -- self.PanelScroll = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent/PanelScroll")
+    -- self.PanelMissionChapterGird = self.Transform:Find("SafeAreaContentPane/PanelChapter/PanelContent/PanelScroll/Viewport/PanelMissionChapterGird")
+    -- self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
 end
 
 function XUiMissionChapter:GetAutoKey(uiNode, eventName)
@@ -90,13 +91,17 @@ end
 
 function XUiMissionChapter:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
 end
 -- auto
 
 function XUiMissionChapter:OnBtnBgClick(...)
-    XUiHelper.PlayAnimation(self, "AniMissionChapterEnd", nil, function()
+    self:PlayAnimation("AniMissionChapterEnd", function()
         --CS.XUiManager.ViewManager:Pop()
         self:Close()
     end)
+    -- XUiHelper.PlayAnimation(self, "AniMissionChapterEnd", nil, function()
+    --     --CS.XUiManager.ViewManager:Pop()
+    --     self:Close()
+    -- end)
 end

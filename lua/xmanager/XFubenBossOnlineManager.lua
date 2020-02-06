@@ -181,6 +181,21 @@ XFubenBossOnlineManagerCreator = function()
             XLog.Error("XFubenBossOnlineManager.CheckBossDataCorrect error, BossDataList is nil")
             return false
         end
+
+        for _, diff in pairs(XFubenBossOnlineManager.OnlineBossDifficultLevel) do
+            local correct = false
+            for _, bossInfo in pairs(BossDataList) do
+                if bossInfo.DifficultyType == diff then
+                    correct = true
+                    break
+                end
+            end
+            if not correct then
+                XLog.Error("XFubenBossOnlineManager.CheckBossDataCorrect error, boss not found by diff:" .. diff)
+                return false
+            end
+        end
+
         for k, v in pairs(BossDataList) do
             if not OnlineBossSectionTemplates[v.BossId] then
                 XLog.Error("XFubenBossOnlineManager.CheckBossDataCorrect error, section id not found:" .. v.BossId)
@@ -194,7 +209,7 @@ XFubenBossOnlineManagerCreator = function()
         local oldBeginTime = OnlineBeginTime
         IsActivity = data.Activity == 1
         OnlineBeginTime = data.BeginTime
-        OnlineLelfTime = data.LeftTime + XTime.Now()
+        OnlineLelfTime = data.LeftTime + XTime.GetServerNowTimestamp()
         BossDataList = data.BossDataList
         if oldBeginTime == OnlineBeginTime then
             XEventManager.DispatchEvent(XEventId.EVENT_ONLINEBOSS_UPDATE)
@@ -205,7 +220,7 @@ XFubenBossOnlineManagerCreator = function()
 
     -- 获取联机BOSS信息
     function XFubenBossOnlineManager.RequsetGetBossDataList(cb)
-        LastRequestTime = XTime.Now()
+        LastRequestTime = XTime.GetServerNowTimestamp()
         XNetwork.Call(METHOD_NAME.GetActivityBossDataRequest, nil, function(reply)
             if reply.Code ~= XCode.Success then
                 XUiManager.TipCode(reply.Code)
@@ -221,7 +236,7 @@ XFubenBossOnlineManagerCreator = function()
     function XFubenBossOnlineManager.RefreshBossData(cb)
         if not XFubenBossOnlineManager.BossDataList or
         XFubenBossOnlineManager.CheckOnlineBossTimeOut() or
-        XTime.Now() - LastRequestTime > RequestInterval then
+        XTime.GetServerNowTimestamp() - LastRequestTime > RequestInterval then
             XFubenBossOnlineManager.RequsetGetBossDataList(cb)
         else
             if cb then
@@ -239,7 +254,7 @@ XFubenBossOnlineManagerCreator = function()
         if OnlineLelfTime == nil then
             return false
         end
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         local offset = OnlineLelfTime - curTime
         return offset <= 0
     end
@@ -289,6 +304,7 @@ XFubenBossOnlineManagerCreator = function()
     function XFubenBossOnlineManager.OpenBossOnlineUi(selectIdx)
         XFubenBossOnlineManager.RefreshBossData(function()
             if not XDataCenter.FubenBossOnlineManager.CheckBossDataCorrect() then
+                CsXUiManager.Instance:RunMain()
                 return
             end
             local isActivity = XFubenBossOnlineManager.GetIsActivity()
@@ -298,6 +314,15 @@ XFubenBossOnlineManagerCreator = function()
                 XLuaUiManager.Open("UiOnlineBoss", selectIdx)
             end
         end)
+    end
+
+    function XFubenBossOnlineManager.OpenBossOnlineUiWithoutCheck(selectIdx)
+        local isActivity = XFubenBossOnlineManager.GetIsActivity()
+        if isActivity and XFubenBossOnlineManager.CheckIsInvade() then
+            XLuaUiManager.Open("UiOnlineBossActivity", selectIdx)
+        else
+            XLuaUiManager.Open("UiOnlineBoss", selectIdx)
+        end
     end
 
     function XFubenBossOnlineManager.OnActivityEnd()

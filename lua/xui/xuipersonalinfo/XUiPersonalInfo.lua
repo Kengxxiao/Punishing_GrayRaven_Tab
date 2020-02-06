@@ -92,7 +92,7 @@ end
 
 function XUiPersonalInfo:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
     self:RegisterListener(self.TogMsgBoard, "onValueChanged", self.OnTogMsgBoardValueChanged)
     self:RegisterListener(self.TogInfo, "onValueChanged", self.OnTogInfoValueChanged)
 end

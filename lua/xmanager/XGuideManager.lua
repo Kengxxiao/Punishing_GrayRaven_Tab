@@ -105,15 +105,17 @@ XGuideManagerCreator = function()
     local GuideTrigger = 1           --引导开关 0 屏蔽引导
     local IsGuiding = false
 
+    local WaitingGuideList = {}
+
     function XGuideManager.Init()
         XEventManager.AddEventListener(XEventId.EVENT_USER_LOGOUT, XGuideManager.HandleSignOut)
-
+ 
         CsXGameEventManager.Instance:RegisterEvent(CS.XEventId.EVENT_UI_ALLOWOPERATE, function(evt, ui, ...)
             XGuideManager.HandleUIOpen(ui[0].UiData.UiName)
         end)
 
         --引导开启
-        XEventManager.AddEventListener(XEventId.EVENT_GUIDE_START,XGuideManager.OnGuideStart )
+        XEventManager.AddEventListener(XEventId.EVENT_GUIDE_START, XGuideManager.OnGuideStart)
 
         --引导结束
         XEventManager.AddEventListener(XEventId.EVENT_GUIDE_END, XGuideManager.OnGuideEnd)
@@ -123,11 +125,12 @@ XGuideManagerCreator = function()
     --初始化
     function XGuideManager.InitGuideData(datas)
         ActiveGuide = nil -- 当前引导
-        WaitingGuide = nil
+        WaitingGuideList = {}
         GuideTrigger = 1
         for k, v in pairs(datas) do
             GuideData[v] = v
         end
+
         XGuideManager.CheckGuideTrigger()
 
     end
@@ -151,18 +154,30 @@ XGuideManagerCreator = function()
         end
 
         if ActiveGuide and IsGuiding then
-            return false
+            return true
         end
 
-        WaitingGuide = nil
 
         XGuideManager.FindActiveGuide()
 
-        if (WaitingGuide and WaitingGuide.GuideType == XGuideManager.GuideType.Default) then
-            return XGuideManager.TryActiveGuide()
+        local result = false
+        local removeIndex = -1
+        for i, v in ipairs(WaitingGuideList) do
+            local waitingGuide = v
+            if (waitingGuide and waitingGuide.GuideType == XGuideManager.GuideType.Default) then
+                if XGuideManager.TryActiveGuide(waitingGuide) then
+                    removeIndex = i
+                    result = true
+                    break
+                end
+            end
         end
 
-        return false
+        if removeIndex > 0 then
+            table.remove(WaitingGuideList, removeIndex)
+        end
+
+        return result
     end
 
     --创建引导主体
@@ -221,44 +236,62 @@ XGuideManagerCreator = function()
             end
         end
 
-        WaitingGuide = nil
         ActiveGuide = nil -- 当前引导
         XLuaUiManager.Close("UiGuide")
     end
 
     function XGuideManager.HandleUIOpen(UiName)
-        if IsGuiding or not WaitingGuide then
+        if IsGuiding then
             return
         end
 
         local bActive = false
 
-        local activeUis = string.Split(WaitingGuide.ActiveUi, '|')
-        for i, v in ipairs(activeUis) do
-            if v == UiName then
-                bActive = true
-                break
+
+
+        local removeIndex = -1
+        for i, v in ipairs(WaitingGuideList) do
+
+            local activeUis = string.Split(v.ActiveUi, '|')
+            for i, v in ipairs(activeUis) do
+                if v == UiName then
+                    bActive = true
+                    break
+                end
             end
+
+            if bActive then
+                if XGuideManager.TryActiveGuide(v) then
+                    removeIndex = i
+                    break
+                end
+            end
+            
+            bActive = false
         end
 
-        if bActive then
-            XGuideManager.TryActiveGuide()
+        if removeIndex > 0 then
+            table.remove(WaitingGuideList, removeIndex)
         end
     end
 
     --尝试开启引导
-    function XGuideManager.TryActiveGuide()
-        if WaitingGuide == nil then
+    function XGuideManager.TryActiveGuide(guide)
+        if guide == nil then
             return false
         end
 
-        if WaitingGuide.GuideType ~= XGuideManager.GuideType.Default then
+        if not XLoginManager.IsStartGuide() then
+            return
+        end
+
+        if guide.GuideType ~= XGuideManager.GuideType.Default then
             return false
         end
 
         local bActive = false
 
-        local activeUis = string.Split(WaitingGuide.ActiveUi, '|')
+        local activeUis = string.Split(guide.ActiveUi, '|')
         for i, v in ipairs(activeUis) do
             if CsXUiManager.Instance:IsUiShow(v) and CsXUiManager.Instance:FindTopUi(v) then
                 bActive = true
@@ -270,29 +303,32 @@ XGuideManagerCreator = function()
             return false
         end
 
-        ActiveGuide = WaitingGuide
-        WaitingGuide = nil
+        ActiveGuide = guide
         XGuideManager:PlayGuide(ActiveGuide.Id)
         return true
     end
 
     ---查找激活的引导
     function XGuideManager.FindActiveGuide()
-        local IsOpen = true
+        local IsOpen = false
         local decs = {}
+
+        WaitingGuideList = {}
         local guideGroupTemplates = XGuideConfig.GetGuideGroupTemplates()
         for _, temp in pairs(guideGroupTemplates) do
             if not XGuideManager.CheckIsGuide(temp.Id) and temp.Ignore == 0 then
-                for k,v in pairs(temp.ConditionId) do
+                for k, v in pairs(temp.ConditionId) do
                     if v and v ~= 0 then
-                        IsOpen,decs = XConditionManager.CheckCondition(v)
+                        IsOpen, decs = XConditionManager.CheckCondition(v)
                         if not IsOpen then
                             break
                         end
                     end
                 end
+
                 if IsOpen then
                     XGuideManager.SetActiveGuide(temp)
+                    IsOpen = false
                 end
             end
         end
@@ -301,15 +337,32 @@ XGuideManagerCreator = function()
     --激活引导
     function XGuideManager.SetActiveGuide(guide)
 
+        WaitingGuideList = WaitingGuideList or {}
+        local insetIndex = -1
+        if #WaitingGuideList <= 0 then
+            insetIndex = 1
+        end
 
-        if (WaitingGuide == nil) then
-            WaitingGuide = guide
-        else
-            if (guide.Priority < WaitingGuide.Priority) then
-                WaitingGuide = guide
+        for i, v in ipairs(WaitingGuideList) do
+            if guide.Priority < v.Priority then
+                insetIndex = i
+                break
             end
         end
 
+        if insetIndex <= 0 then
+            table.insert(WaitingGuideList, guide)
+        else
+            table.insert(WaitingGuideList, insetIndex, guide)
+        end
+
+        -- if (WaitingGuide == nil) then
+        --     WaitingGuide = guide
+        -- else
+        --     if (guide.Priority < WaitingGuide.Priority) then
+        --         WaitingGuide = guide
+        --     end
+        -- end
     end
 
     --完成引导
@@ -345,27 +398,32 @@ XGuideManagerCreator = function()
     -- 查询相关end --
     -- 获取下一场新手战斗
     function XGuideManager.GetNextGuideFight()
-        -- if GuideTrigger == 0 then
-        --     return false
-        -- end
 
         if ActiveGuide and IsGuiding then
             return false
         end
 
-        WaitingGuide = nil
-
         XGuideManager.FindActiveGuide()
 
-        if WaitingGuide and WaitingGuide.GuideType == XGuideManager.GuideType.Fight then
-            ActiveGuide = WaitingGuide
-            WaitingGuide = nil
-            return XGuideConfig.GetGuideFightTemplatesById(ActiveGuide.Id)
+        local result = nil
+        local removeIndex = -1
+        for i, v in ipairs(WaitingGuideList) do
+            local waitingGuide = v
+            if (waitingGuide and waitingGuide.GuideType == XGuideManager.GuideType.Fight) then
+                local cfg = XGuideConfig.GetGuideFightTemplatesById(waitingGuide.Id)
+                if cfg then
+                    removeIndex = i
+                    result = cfg
+                    break
+                end
+            end
         end
 
-        WaitingGuide = nil
+        if removeIndex > 0 then
+            ActiveGuide = table.remove(WaitingGuideList, removeIndex)
+        end
 
-        return nil
+        return result
     end
 
     --是否是战斗引导
@@ -479,6 +537,7 @@ XGuideManagerCreator = function()
     end
     -- 消息相关end --
     XGuideManager.Init()
+
     return XGuideManager
 end
 

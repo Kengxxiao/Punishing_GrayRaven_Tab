@@ -15,7 +15,7 @@ function XUiPlayerInfoBase:Ctor(ui, rootUi)
     else
         self.BtnFriendLevel.gameObject:SetActive(true)
     end
-    
+    self.BtnExhibition.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterExhibition))
     self:UpdateInfo()
     self:CreateMedalList() 
 end
@@ -87,7 +87,7 @@ function XUiPlayerInfoBase:UpdateTeam()
     self.RImgSupportHead:SetRawImage(charIcon)
     self.TxtSupportLevel.text = data.AssistCharacterDetail.Level
     self.TxtSupportName.text = XCharacterConfigs.GetCharacterName(data.AssistCharacterDetail.Id)
-    self.RImgSupportQuality:SetRawImage(XCharacterConfigs.GetCharQualityIcon(data.AssistCharacterDetail.Quality))
+    self.RImgSupportQuality:SetRawImage(XCharacterConfigs.GetCharacterQualityIcon(data.AssistCharacterDetail.Quality))
     --构造体展示
     if data.AppearanceShowType == XUiAppearanceShowType.ToAll then
         for i = 1, #data.CharacterShow do
@@ -153,9 +153,17 @@ function XUiPlayerInfoBase:OnBtnDorm()
         XUiManager.TipError(CS.XTextManager.GetText("InTeamCantLookDorm"))
         return
     end
-    
+
     local data = self.RootUi.Data
-    XHomeDormManager.EnterDorm(data.Id, data.DormDetail.DormitoryId, true)
+    if data and data.Id and data.DormDetail and data.DormDetail.DormitoryId then
+        if XLuaUiManager.IsUiLoad("UiDormSecond") then
+            XLuaUiManager.CloseWithCallback("UiPlayerInfo",function()
+                XEventManager.DispatchEvent(XEventId.EVENT_DORM_VISTOR_SKIP,data.Id, data.DormDetail.DormitoryId)
+            end)    
+            return
+        end
+        XHomeDormManager.EnterDorm(data.Id, data.DormDetail.DormitoryId, true)
+    end
 end
 
 function XUiPlayerInfoBase:OnBtnExhibition()

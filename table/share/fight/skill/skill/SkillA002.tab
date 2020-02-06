@@ -75,7 +75,7 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 102312	黄球1消	31	0.6	0.9	Attack31			10	5		2	0	0	
 102313	黄球2消	32	0.6	0.9	Attack31			10	5		2	0	0	
 102314	黄球3消	33	0.6	0.9	Attack31			10	5		2	0	0	
-102315	大招	2	6.3	1	Attack51	102352		10	5		2	0	0	
+102315	大招	2	6.3	1	Attack51	102358		10	5		2	0	0	
 102316	出生动作	4	0	3.4	Born			10	2		2	0	0	
 102317	出场技	3	0.6	0.8	Attack11			10	5		2	0	0	
 102318	Qte技能	7	2.25	0	AttackQte			10	2		2	0	0	

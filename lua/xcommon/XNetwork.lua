@@ -66,7 +66,7 @@ function XNetwork.ConnectGateServer(args)
                         local waitTimer = CS.XScheduleManager.Schedule(function(...)
                             request_func()
                         end, 1000, 1)
-
+                        
                     elseif res.Code ~= XCode.Success then
                         if CS.XNetwork.IsShowNetLog then
                             XLog.Debug("服务器返回断线重连失败。" .. tostring(res.Code))
@@ -99,14 +99,15 @@ function XNetwork.ConnectGateServer(args)
 
                 if response.Code ~= XCode.Success then
                     local msgTab = {}
-                    msgTab["error_code"] = tostring(response.Code)
-                    local jsonStr = Json.encode(msgTab)
-                    CS.XRecord.Record("24019", "HandshakeRequest",jsonStr)
+                    msgTab.error_code = response.Code
+                    CS.XRecord.Record(msgTab, "24019", "HandshakeRequest")
                     if response.Code == XCode.GateServerNotOpen then
-                        local context = CS.XTextManager.GetCodeText(response.Code) .. os.date("%Y-%m-%d %H:%M", response.UtcOpenTime)
+                        local context = CS.XTextManager.GetCodeText(response.Code) .. XTime.TimestampToLocalDateTimeString(response.UtcOpenTime, "yyyy-MM-dd HH:mm(G'M'T z)")
                         XUiManager.SystemDialogTip("", context, XUiManager.DialogType.OnlySure)
                     elseif response.Code == XCode.LoginApplicationVersionError then
                         CS.XTool.WaitCoroutine(CS.XApplication.CoDialog(CS.XApplication.GetText("Tip"), CS.XStringEx.Format(CS.XApplication.GetText("UpdateApplication"), CS.XInfo.Version) .. "？", nil, function() CS.XTool.WaitCoroutine(CS.XApplication.GoToUpdateURL(), nil) end))
+                    else
+                        XUiManager.DialogTip("", CS.XTextManager.GetCodeText(response.Code), XUiManager.DialogType.OnlySure)
                     end
 
                     if response.Code == XCode.LoginMd5Error then

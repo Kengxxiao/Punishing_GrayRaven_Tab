@@ -1,0 +1,6 @@
+Id	BaseScore	BaseSupportPoint	PreStageScore	BeginTimeStr	EndTimeStr	StageGuideId[1]	StageGuideId[2]	StageGuideId[3]	StageGuideId[4]	SupportConditionId[1]	SupportConditionId[2]	BaseBuffId[1]	BaseBuffId[2]	ChallengeBuffGroup[1]	ChallengeBuffGroup[2]	ChallengeBuffGroup[3]	ChallengeBuffGroup[4]	ChallengeBuffGroup[5]	ChallengeBuffGroup[6]	ChallengeBuffGroup[7]	ChallengeBuffGroup[8]	ChallengeBuffGroup[9]	ChallengeBuffGroup[10]	ChallengeBuffGroup[11]	ChallengeBuffGroup[12]	ChallengeBuffGroup[13]	ChallengeBuffGroup[14]	SupportBuffGroup[1]	SupportBuffGroup[2]
+30090421	0	0		2020/2/6 5:00	2020/3/12 5:00	1	2	3	4	1	4	12151		1104	1105	1100	1205	1307	3200	3201	3203	3204	3208	3209	3210	3300	3303	2101	2126
+30090422	0	0		2020/2/6 5:00	2020/3/12 5:00	5	6	7	8	2		32071	13081	1001	1100	1104	1213	1215	1307	3203	3217	3212	3216	3303				2205	
+30090423	0	0		2020/2/6 5:00	2020/3/12 5:00	9	10	11	12	3		11061	13081	1002	1104	1114	1213	1215	3203	3204	3206	3208	3211	3214	3303			2126	
+30090424	0	0		2020/2/6 5:00	2020/3/12 5:00	13	14	15	16	5		11131	13081	1104	1213	1215	1305	3107	3200	3202	3203	3204	3211	3215	3300	3309		2207	
+30090425	0	0		2020/2/6 5:00	2020/3/12 5:00	17	18	19	20	7	6	11031	13081	1100	1104	1205	1213	1215	1305	3200	3203	3206	3208	3216	3300	3309		2209	2126

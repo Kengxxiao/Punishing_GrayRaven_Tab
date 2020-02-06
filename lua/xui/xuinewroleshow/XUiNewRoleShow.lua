@@ -53,7 +53,7 @@ function XUiNewRoleShow:PlayBegan()
     local onFinish = function()
         self.PanelEffect.gameObject:SetActive(true)
     end
-    XUiHelper.PlayAnimation(self, "Began", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Began", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayDetail()
@@ -64,7 +64,7 @@ function XUiNewRoleShow:PlayDetail()
     local onFinish = function()
         self.PanelEffect.gameObject:SetActive(true)
     end
-    XUiHelper.PlayAnimation(self, "Detail", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Detail", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayName()
@@ -75,7 +75,7 @@ function XUiNewRoleShow:PlayName()
     local onFinish = function()
         XUiHelper.ShowCharByTypeAnimation(self.TxtRace, self.RoleConfig.Name, 100)
     end
-    XUiHelper.PlayAnimation(self, "Name", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Name", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayLu()
@@ -99,7 +99,7 @@ function XUiNewRoleShow:PlayLu()
         end)
         --XUiHelper.ShowCharByTypeAnimation(self.TxtBWH,self.RoleConfig.BWH,100)
     end
-    XUiHelper.PlayAnimation(self, "Lu", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Lu", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayRu()
@@ -128,7 +128,7 @@ function XUiNewRoleShow:PlayRu()
                 end
         )
     end
-    XUiHelper.PlayAnimation(self, "Ru", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Ru", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayLd()
@@ -141,7 +141,7 @@ function XUiNewRoleShow:PlayLd()
         XUiHelper.ShowCharByTypeAnimation(self.TxtAwareness, self.RoleConfig.Awareness, 100)
         XUiHelper.ShowCharByTypeAnimation(self.TxtActionStandard, self.RoleConfig.ActionStandard, 100)
     end
-    XUiHelper.PlayAnimation(self, "Ld", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Ld", onStart, onFinish)
 end
 
 function XUiNewRoleShow:PlayRd()
@@ -154,7 +154,7 @@ function XUiNewRoleShow:PlayRd()
             self.CanClick = true
         end)
     end
-    XUiHelper.PlayAnimation(self, "Rd", onStart, onFinish)
+    --XUiHelper.PlayAnimation(self, "Rd", onStart, onFinish)
 end
 
 -- auto
@@ -224,7 +224,7 @@ end
 
 function XUiNewRoleShow:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
+    self:RegisterClickEvent(self.BtnClick, self.OnBtnClickClick)
 end
 -- auto
 

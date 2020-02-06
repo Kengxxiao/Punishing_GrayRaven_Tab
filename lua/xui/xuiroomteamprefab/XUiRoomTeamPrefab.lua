@@ -4,7 +4,8 @@ function XUiRoomTeamPrefab:OnAwake()
     self:InitAutoScript()
 end
 
-function XUiRoomTeamPrefab:OnStart()
+function XUiRoomTeamPrefab:OnStart(captainPos)
+    self.CaptainPos = captainPos
     self.TeamPrefabs = {}
     self:RefreshTeamList()
     XEventManager.AddEventListener(XEventId.EVENT_TEAM_PREFAB_CHANGE, self.OnTeamPrefabChange, self)
@@ -56,11 +57,10 @@ function XUiRoomTeamPrefab:UpdateTeam(curPos, teamData, isDelete, index, exchage
 end
 
 function XUiRoomTeamPrefab:GetSimpleTeamData(index)
-    local captainPos = XDataCenter.TeamManager.GetCaptainPos()
     local maxPos = XDataCenter.TeamManager.GetMaxPos()
     local teamData = {}
     teamData.TeamId = index
-    teamData.CaptainPos = captainPos
+    teamData.CaptainPos = self.CaptainPos or XDataCenter.TeamManager.GetCaptainPos()
     teamData.TeamData = {}
     for index = 1, maxPos do
         teamData.TeamData[index] = 0

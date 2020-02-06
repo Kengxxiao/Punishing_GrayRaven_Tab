@@ -5,9 +5,12 @@ function XUiMoneyRewardFightTipFind:OnAwake()
 end
 
 function XUiMoneyRewardFightTipFind:OnStart()
-    XUiHelper.PlayAnimation(self, "FindBegan", nil, function()
+    self:PlayAnimation("FindBegan", function()
         self:TryExitFight()
     end)
+    -- XUiHelper.PlayAnimation(self, "FindBegan", nil, function()
+    --     self:TryExitFight()
+    -- end)
 end
 
 function XUiMoneyRewardFightTipFind:TryExitFight()

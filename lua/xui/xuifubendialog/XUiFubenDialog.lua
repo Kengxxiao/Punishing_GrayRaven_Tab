@@ -74,8 +74,8 @@ end
 
 function XUiFubenDialog:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnConfirm, "onClick", self.OnBtnConfirmClick)
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnConfirm, self.OnBtnConfirmClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 

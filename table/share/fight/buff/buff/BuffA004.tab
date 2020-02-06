@@ -37,8 +37,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100174			0	0			1	0	1001740	1001730							
 100175			0	10			1	0	1001750			100175000					
 100176			0	10			1	0	1001760			100176000					
-100177			0	-1			1	0	1001770			100177000	FxR2LiangPinzhiGuadianBip001LForearm	Bip001LForearm			
-100178			0	1.5			1	0	1001780				FxTongyongGuanghuanKuosan	Root			
+100177			0	-1			1	0	1001770|411			100177000	FxR2LiangPinzhiGuadianBip001LForearm	Bip001LForearm			
 100180			0	1			-1	0	1001800	1001800			FxR2LiangAttack3103	Root			
 100181			0	1			-1	0	1001810	1001810			FxR2LiangAttack3103	Root			
 100182			0	1			-1	0	1001820	1001820			FxR2LiangAttack3103	Root			
@@ -80,8 +79,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100576			0	-1			1	0	1005760|403			100576000					1
 100577			0	10			1	0	1005770			100577000					
 100578			0	10			1	0	1005780			100578000					
-100579			0	-1			1	0	1005790			100579000	FxR2YongyechaoPinzhiGuadianBip001LForearm	Bip001LForearm			
-100580			0	1.5			1	0	1005800				FxTongyongGuanghuanKuosan	Root			
+100579			0	-1			1	0	1005790|411			100579000	FxR2YongyechaoPinzhiGuadianBip001LForearm	Bip001LForearm			
 100590			0	-1			1	0	1005900			100590000					
 100592			0	-1			1	0	1005920			100592000					
 100593			0	2.5			1	0	1005930			100593000					1
@@ -133,8 +131,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100790			0	-1			1	0	1007900			100790000					
 100792			0	-1			1	0	1007920			100792000					
 100794			0	-1			1	0	1007940			100794000					
-100796			0	-1			1	0	1007960			100796000	FxR2KalieninaPinzhiGuadianBip001RUpperArm	Bip001RUpperArm			
-100797			0	1.5			1	0	1007970				FxTongyongGuanghuanKuosan	Root			
+100796			0	-1			1	0	1007960|411			100796000	FxR2KalieninaPinzhiGuadianBip001RUpperArm	Bip001RUpperArm			
 100806			0	0			1	0	1008060			100806000					1
 100807			0	0			1	0	1008070			100807000					1
 100814			0	0			1	0	1008140			100814000					1
@@ -166,18 +163,17 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100876			0	-1			1	0	1008760			100876000					
 100877			0	10			1	0	1008770			100877000					
 100878			0	10			1	0	1008780			100878000					
-100879			0	-1			1	0	1008790			100879000	FxR2DubianPinzhiGuadianBip001RForearm	Bip001RForearm			
-100880			0	1.5			1	0	1008800				FxTongyongGuanghuanKuosan	Root			
+100879			0	-1			1	0	1008790|411			100879000	FxR2DubianPinzhiGuadianBip001RForearm	Bip001RForearm			
 100890			0	-1			1	0	1008900			100890000					
 100892			0	-1			1	0	1008920			100892000					
 100894			0	-1			1	0	1008940			100894000					
 100895			0	10			1	0	1008950			100895000					
 101323			0	0.5	203		1	0	1013230|15|203|1013230|5|200|5			101323000	FxTongyongJiansu	Root			
-101324			0	0.5	203		1	0	1013240|15|203|1013230|5|200|5	1013230		101324000	FxTongyongJiansu	Root			
-101325			0	0.5	203		1	0	1013250|15|203|1013230|5|200|5	1013230|1013240		101325000	FxTongyongJiansu	Root			
-101326			0	5			1	0	1013260|1013230				FxR2LifuAttack21Shouji	HitCase			
-101327			0	5			1	0	1013270|1013230	1013260			FxR2LifuAttack21Shouji	HitCase			
-101328			0	5			1	0	1013280|1013230	1013260|1013270			FxR2LifuAttack21Shouji	HitCase			
+101324			0	0.5	203		1	0	1013240|15|203|1013230|5|200|5			101324000	FxTongyongJiansu	Root			
+101325			0	0.5	203		1	0	1013250|15|203|1013230|5|200|5			101325000	FxTongyongJiansu	Root			
+101326			0	8			1	0	1013260|1013230				FxR2LifuAttack21Shouji	HitCase			
+101327			0	8			1	0	1013270|1013230				FxR2LifuAttack21Shouji	HitCase			
+101328			0	8			1	0	1013280|1013230				FxR2LifuAttack21Shouji	HitCase			
 101336			0	0.15			1	0	1013360|1			101336000					
 101339			0	5	202		1	0	1013390|202|200|5	1013390		101339000	FxTongyongJianfang	HitCase			
 101340			0	-1			1	0	1013400			101340000					
@@ -209,8 +205,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101374			0	0.5			1	0	1013740			101374000	FxR2LifuAttack51Buff	Root			
 101375			0	10			1	0	1013750			101375000					
 101376			0	10			1	0	1013760			101376000					
-101377			0	-1			1	0	1013770			101377000	FxR2LifuPinzhiGuadianBip001RForearm	Bip001RForearm			
-101378			0	1.5			1	0	1013780				FxTongyongGuanghuanKuosan	Root			
+101377			0	-1			1	0	1013770|411			101377000	FxR2LifuPinzhiGuadianBip001RForearm	Bip001RForearm			
 101380			0	3.2			1	0	1013800|1	1013800		101380000					
 101390			0	-1			1	0	1013900								
 101391			0	1.3	101		1	0	1013910|101|100|6	1013910		101391000	FxTongyongJiagong	HitCase			

@@ -58,7 +58,7 @@ end
 function XUiPanelAutoFight:BindTimer()
     local stageId = self.StageId
     if not self.AutoFightRecord then return end
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local leftTime = self.AutoFightRecord.CompleteTime - now
     if leftTime < 0 then
         leftTime = 0

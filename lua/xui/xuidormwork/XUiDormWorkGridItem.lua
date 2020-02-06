@@ -19,6 +19,7 @@ function XUiDormWorkGridItem:InitText()
     self.TextDormWorking = TextManager.GetText("DormWorking")
     self.TextDormReward = TextManager.GetText("DormRewardText")
     self.TextDormNoRewardGet = TextManager.GetText("DormWorkNoRewardTips")
+    self.TextDormNoMood = TextManager.GetText("DormWorkNoMoodTips")
 end
 
 function XUiDormWorkGridItem:InitFun()
@@ -33,7 +34,7 @@ function XUiDormWorkGridItem:OnBtnClick()
         return
     end
 
-    if self.CurState == WorkPosState.Working or self.CurState == WorkPosState.RewardEd then
+    if self.CurState == WorkPosState.RewardEd then
         XUiManager.TipMsg(self.TextDormNoRewardGet)
         return
     end
@@ -42,6 +43,21 @@ function XUiDormWorkGridItem:OnBtnClick()
         self.UiRoot:OpenMemeberList()
     elseif self.CurState == WorkPosState.Worked then
         self.UiRoot:OnBtnTotalGet()
+    elseif self.CurState == WorkPosState.Working then
+        if self.CurDaigonState == XUiButtonState.Disable then
+            XUiManager.TipMsg(self.TextDormNoMood)
+        else
+            local d = {}
+            d.DaiGongData = self.DaiGongData
+            d.WorkPos = self.ItemData.WorkPos
+            d.CurIconpath = XDormConfig.GetCharacterStyleConfigQIconById(self.ItemData.CharacterId)
+            self.UiRoot:OpenOneChildUi("UiDormFoundryDetail",self.UiRoot,{d})
+            if not self.FundryDetail then
+                self.FundryDetail = self.UiRoot:FindChildUiObj("UiDormFoundryDetail")
+            end
+            self.FundryDetail:OnRefreshData({d})
+            self.UiRoot.PanelWork.gameObject:SetActiveEx(false)
+        end
     else
         XUiManager.TipText("DormWorkPosUnLockTips")
     end
@@ -80,6 +96,7 @@ function XUiDormWorkGridItem:OnRefresh(itemData,index)
     self.ContainerLock.gameObject:SetActive(false)
     
     local iconpath = XDormConfig.GetCharacterStyleConfigQSIconById(itemData.CharacterId)
+    self.CurIconpath = iconpath
     if iconpath then
         self.UiRoot:SetUiSprite(self.ImgIcon,iconpath)
     end
@@ -96,7 +113,7 @@ function XUiDormWorkGridItem:OnRefresh(itemData,index)
         return
     end
     
-    self.RetimeSec = workendtime - XTime.Now()
+    self.RetimeSec = workendtime - XTime.GetServerNowTimestamp()
     if self.RetimeSec <= 0 then
         self.TxtState.text = self.TextDormWorked
         self.CurState = WorkPosState.Worked
@@ -105,15 +122,35 @@ function XUiDormWorkGridItem:OnRefresh(itemData,index)
         self.ContainerFinish.gameObject:SetActive(true)
         self.ContainerFinishEd.gameObject:SetActive(false)
         self.ContainerItem.gameObject:SetActive(false)
+        self.MoodFinsihTxtValues.text = DormManager.GetMoodById(itemData.CharacterId)
+        local mood = DormManager.GetMoodById(itemData.CharacterId)
+        local moodConfig = XDormConfig.GetMoodStateByMoodValue(mood)
+        self.UiRoot:SetUiSprite(self.MoodFinishIcon, moodConfig.Icon)
     else
         self.TxtTimer.text = XUiHelper.GetTime(self.RetimeSec,XUiHelper.TimeFormatType.HOSTEL)
         self.TxtState.text = self.TextDormWorking
         self.CurState = WorkPosState.Working
         self.UiRoot:RegisterWorkTimer(self.TimerFunCb,itemData.WorkPos)
-        self.TxtItemCount.text = index--itemData.WorkPos
+        self.TxtItemCount.text = index
         self.ContainerItem.gameObject:SetActive(true)
         self.ContainerFinish.gameObject:SetActive(false)
         self.ContainerFinishEd.gameObject:SetActive(false)
+        local count = DormManager.GetDormitoryCount()
+        self.DaiGongData = XDormConfig.GetDormCharacterWorkById(count)
+        local mood = DormManager.GetMoodById(itemData.CharacterId)
+        if self.DaiGongData and self.DaiGongData.Mood then
+            local v = math.floor(self.DaiGongData.Mood / 100) 
+            if v <= mood then
+                self.CurDaigonState = XUiButtonState.Normal
+                self.BtnDaigong:SetButtonState(XUiButtonState.Normal)
+            else
+                self.CurDaigonState = XUiButtonState.Disable
+                self.BtnDaigong:SetButtonState(XUiButtonState.Disable)
+            end
+        end
+        self.MoodTxtValues.text = mood
+        local moodConfig = XDormConfig.GetMoodStateByMoodValue(mood)
+        self.UiRoot:SetUiSprite(self.MoodIcon, moodConfig.Icon)
     end
 end
 
@@ -126,8 +163,13 @@ function XUiDormWorkGridItem:UpdataTimer()
         self.ContainerFinish.gameObject:SetActive(true)
         self.ContainerFinishEd.gameObject:SetActive(false)
         self.ContainerItem.gameObject:SetActive(false)
-        self.UiRoot:RemoveWorkTimer(self.ItemData.WorkPos)
         self.TxtFinishCount.text = self.CurIndex
+        if self.ItemData and self.ItemData.WorkPos then
+            self.UiRoot:RemoveWorkTimer(self.ItemData.WorkPos)
+            local mood = DormManager.GetMoodById(self.ItemData.CharacterId)
+            local moodConfig = XDormConfig.GetMoodStateByMoodValue(mood)
+            self.UiRoot:SetUiSprite(self.MoodFinishIcon, moodConfig.Icon)        
+        end
         return
     end
     

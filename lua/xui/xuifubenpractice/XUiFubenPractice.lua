@@ -147,7 +147,7 @@ end
 
 function XUiFubenPractice:CloseStageDetail()
     if XLuaUiManager.IsUiShow(ChildDetailUi) then
-        self:FindChildUiObj(ChildDetailUi):Close()
+        self:FindChildUiObj(ChildDetailUi):CloseWithAnimation()
         self:OnPracticeDetailClose()
         self:SetAssetPanelActive(true)
     end

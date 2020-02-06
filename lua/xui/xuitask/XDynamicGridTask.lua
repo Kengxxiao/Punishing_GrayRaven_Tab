@@ -127,7 +127,7 @@ function XDynamicGridTask:AutoAddListener()
 
     local clickXUiBtn = self.BtnClick:GetComponent("XUiButton")
     if not clickXUiBtn then
-        self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnClick, self.OnBtnClickClick)
     else
         self.BtnClick = clickXUiBtn
         self.BtnClick.CallBack = function() self:OnBtnClickClick() end
@@ -135,7 +135,7 @@ function XDynamicGridTask:AutoAddListener()
 
     local finishXUiBtn = self.BtnFinish:GetComponent("XUiButton")
     if not finishXUiBtn then
-        self:RegisterListener(self.BtnFinish, "onClick", self.OnBtnFinishClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnFinish, self.OnBtnFinishClick)
     else
         self.BtnFinish = finishXUiBtn
         self.BtnFinish.CallBack = function() self:OnBtnFinishClick() end
@@ -143,7 +143,7 @@ function XDynamicGridTask:AutoAddListener()
 
     local skipXUiBtn = self.BtnSkip:GetComponent("XUiButton")
     if not skipXUiBtn then
-        self:RegisterListener(self.BtnSkip, "onClick", self.OnBtnSkipClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnSkip, self.OnBtnSkipClick)
     else
         self.BtnSkip = skipXUiBtn
         self.BtnSkip.CallBack = function() self:OnBtnSkipClick() end

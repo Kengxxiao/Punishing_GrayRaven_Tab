@@ -4,9 +4,8 @@ CollisionEffectInterval	float	1
 RebootContaminationColor	string	ff3f3fff
 RebootRescuingColor	string	34aff9ff
 RebootRecontaminationTransitionTime	float	0.3
-TopHpTransitionDuration	float	0.8
-EndureTransitionDuration	float	0.2
-TopHpShakeDuration	float	0.2
-TopHpShakeRange	float	3
-HpTransitionDuration	float	0.3
-HpDynamicTransitionDuration	float	1
+HpTransitionDuration	float	0.8
+EnergyTransitionDuration	float	0.3
+HpShakeDuration	float	0.2
+HpShakeRange	float	3
+BallTemplate	string	Assets/Product/Ui/UiFightPrefab/BallTemplate.prefab

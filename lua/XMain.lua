@@ -167,7 +167,6 @@ XMain.Step7 = function ()
 end
 
 XMain.Step8 = function ()
-    import("XUi/XUiRoomSingle")
     import("XUi/XUiRoomTeamPrefab")
     import("XUi/XUiSet")
     import("XUi/XUiSettleLose")

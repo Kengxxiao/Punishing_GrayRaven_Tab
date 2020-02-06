@@ -183,7 +183,6 @@ function XHomeRoomObj:SetIllumination()
         soPath = ROOM_DEFAULT_SO_PATH
     end
     XHomeSceneManager.SetGlobalIllumSO(soPath)
-    XHomeSceneManager.SetGlobalPointLight(self.Ceiling.Cfg.PointLight, self.Ceiling.Transform)
 end
 
 -- 重置房间摆设,增加参数，重置完再刷数据
@@ -196,12 +195,13 @@ end
 
 -- 收起房间家具，增加参数，收起完再刷数据，如果有构造体需要回收利用。
 function XHomeRoomObj:CleanRoom()
-    if self.GroundFurnitureList then
-        for _, furniture in pairs(self.GroundFurnitureList) do
-            furniture:Storage(false)
-        end
-    end
+    self:CleanGroudFurinture()
+    self:CleanWallFurniture()
+    CsXGameEventManager.Instance:Notify(XEventId.EVENT_FURNITURE_CLEANROOM)
+end
 
+
+function XHomeRoomObj:CleanWallFurniture()
     if self.WallFurnitureList then
         for _, v in pairs(self.WallFurnitureList) do
             for i, furniture in pairs(v) do
@@ -210,10 +210,16 @@ function XHomeRoomObj:CleanRoom()
         end
     end
     self.WallFurnitureList = {}
-    self.GroundFurnitureList ={}
-    CsXGameEventManager.Instance:Notify(XEventId.EVENT_FURNITURE_CLEANROOM)
 end
 
+function XHomeRoomObj:CleanGroudFurinture()
+    if self.GroundFurnitureList then
+        for _, furniture in pairs(self.GroundFurnitureList) do
+            furniture:Storage(false)
+        end
+    end
+    self.GroundFurnitureList ={}
+end
 
 function XHomeRoomObj:CleanCharacter()
     self:SetCharacterExit()
@@ -525,7 +531,7 @@ function XHomeRoomObj:SetCharacterBorn()
     for i, data in ipairs(characterList) do
         if data and data.CharacterId then
             if (not self.Data:IsSelfData()) or (not XDataCenter.DormManager.IsWorking(data.CharacterId)) then
-                local charObj = XHomeCharManager.SpawnHomeCharacter(data.CharacterId)
+                local charObj = XHomeCharManager.SpawnHomeCharacter(data.CharacterId, self.CharacterRoot)
                 charObj:SetData(data,self.Data:IsSelfData())
                 charObj:Born(self.RoomMap, self)
                 table.insert(self.CharacterList, charObj)
@@ -553,7 +559,7 @@ function XHomeRoomObj:AddCharacter(dormtoryId, characterId)
 
     local data = self.Data:GetCharacterById(characterId)
     if (not self.Data:IsSelfData()) or (not XDataCenter.DormManager.IsWorking(data.CharacterId)) then
-        local charObj = XHomeCharManager.SpawnHomeCharacter(characterId)
+        local charObj = XHomeCharManager.SpawnHomeCharacter(characterId, self.CharacterRoot)
         charObj:SetData(data,self.Data:IsSelfData())
 
         if self.IsSelected then
@@ -741,7 +747,7 @@ function XHomeRoomObj:UpdateWallDither(lastWall, curWall)
 end
 
 function XHomeRoomObj:RemoveLastWallEffectDither(wall)
-    if wall then return end
+    if not wall then return end
     for i=1, WallNum do
         local ditherKey = tostring(i - 1)
 

@@ -1,0 +1,103 @@
+Role	State	Target	TransitionDuration
+Mo1BioMd010042		Born	0
+Mo1BioMd010042		Stand2	0.1
+Mo1BioMd010042		Stand1	0.1
+Mo1BioMd010042		Stand3	0.1
+Mo1BioMd010042		Standchange	0.1
+Mo1BioMd010042		Run	0.1
+Mo1BioMd010042		Walk	0.1
+Mo1BioMd010042		Death	0.1
+Mo1BioMd010042		Hit1	0.05
+Mo1BioMd010042		Hit2	0.05
+Mo1BioMd010042		Behitfly	0.05
+Mo1BioMd010042		Hoverhit	0
+Mo1BioMd010042		Falldown	0.1
+Mo1BioMd010042		Hitdown	0.1
+Mo1BioMd010042		Lieonfloor	0.1
+Mo1BioMd010042		Standup	0.1
+Mo1BioMd010042		Straight	0.1
+Mo1BioMd010042		Stun	0.1
+Mo1BioMd010042		TurnLeft	0.1
+Mo1BioMd010042		TurnRight	0.1
+Mo1BioMd010042		StraightBefore	0.1
+Mo1BioMd010042		StraightAfter	0.1
+Mo1BioMd010042		Win	0
+Mo1BioMd010042		Win2	0.1
+Mo1BioMd010042		Runb	0.2
+Mo1BioMd010042		Runl	0.2
+Mo1BioMd010042		Runr	0.2
+Mo1BioMd010042		Stop	0.1
+Mo1BioMd010042		Walkb	0.1
+Mo1BioMd010042		Walkl	0.1
+Mo1BioMd010042		Walkr	0.1
+Mo1BioMd010042		Fail	0.1
+Mo1BioMd010042		Save	0.1
+Mo1BioMd010042		Hit3	0.05
+Mo1BioMd010042		Hit4	0.05
+Mo1BioMd010042		RunStart	0.1
+Mo1BioMd010042		RunStartEnd01	0.1
+Mo1BioMd010042		Attack01	0.1
+Mo1BioMd010042		Attack02	0.1
+Mo1BioMd010042		Attack03	0.1
+Mo1BioMd010042		Move1	0.1
+Mo1BioMd010042		Move2	0.1
+Mo1BioMd010042		Move3	0.1
+Mo1BioMd010042	Stand2	Standchange	0.1
+Mo1BioMd010042	Stand2	Run	0.2
+Mo1BioMd010042	Stand2	Walk	0.3
+Mo1BioMd010042	Stand2	Walkb	0.3
+Mo1BioMd010042	Stand2	Walkl	0.3
+Mo1BioMd010042	Stand2	Walkr	0.3
+Mo1BioMd010042	Stand1	Run	0.2
+Mo1BioMd010042	Stand1	Walk	0.1
+Mo1BioMd010042	Standchange	Stand1	0.1
+Mo1BioMd010042	Standchange	Run	0.1
+Mo1BioMd010042	Standchange	Walk	0.1
+Mo1BioMd010042	Run	Stop	0.2
+Mo1BioMd010042	Run	Stand2	0.2
+Mo1BioMd010042	Run	Runb	0.2
+Mo1BioMd010042	Run	Runl	0.2
+Mo1BioMd010042	Run	Runr	0.2
+Mo1BioMd010042	Walk	Stand2	0.1
+Mo1BioMd010042	Hit1	Stand2	0
+Mo1BioMd010042	Hit2	Stand2	0
+Mo1BioMd010042	Behitfly	Hoverhit	0.1
+Mo1BioMd010042	Behitfly	Falldown	0.1
+Mo1BioMd010042	Hoverhit	Falldown	0.1
+Mo1BioMd010042	Falldown	Lieonfloor	0.1
+Mo1BioMd010042	Hitdown	Lieonfloor	0.1
+Mo1BioMd010042	Standup	Stand2	0.1
+Mo1BioMd010042	Straight	Stand2	0.1
+Mo1BioMd010042	Stun	Stand2	0.1
+Mo1BioMd010042	TurnLeft	Stand2	0.1
+Mo1BioMd010042	TurnRight	Stand2	0.1
+Mo1BioMd010042	Win	Win2	0.1
+Mo1BioMd010042	Runb	Stand2	0.2
+Mo1BioMd010042	Runb	Run	0.2
+Mo1BioMd010042	Runb	Runl	0.2
+Mo1BioMd010042	Runb	Runr	0.2
+Mo1BioMd010042	Runl	Stand2	0.2
+Mo1BioMd010042	Runl	Run	0.2
+Mo1BioMd010042	Runl	Runb	0.2
+Mo1BioMd010042	Runl	Runr	0.2
+Mo1BioMd010042	Runr	Stand2	0.2
+Mo1BioMd010042	Runr	Run	0.2
+Mo1BioMd010042	Runr	Runb	0.2
+Mo1BioMd010042	Runr	Runl	0.2
+Mo1BioMd010042	Stop	Stand2	0.1
+Mo1BioMd010042	Walkb	Stand2	0.1
+Mo1BioMd010042	Walkb	Walk	0.2
+Mo1BioMd010042	Walkb	Walkl	0.1
+Mo1BioMd010042	Walkb	Walkr	0.1
+Mo1BioMd010042	Walkl	Stand2	0.1
+Mo1BioMd010042	Walkl	Walk	0.1
+Mo1BioMd010042	Walkl	Walkb	0.1
+Mo1BioMd010042	Walkl	Walkr	0.2
+Mo1BioMd010042	Walkr	Stand2	0.1
+Mo1BioMd010042	Walkr	Walk	0.1
+Mo1BioMd010042	Walkr	Walkb	0.1
+Mo1BioMd010042	Walkr	Walkl	0.2
+Mo1BioMd010042	Hit3	Stand2	0
+Mo1BioMd010042	Hit4	Stand2	0
+Mo1BioMd010042	RunStart	Run	0.05
+Mo1BioMd010042	RunStart	RunStartEnd01	0.1

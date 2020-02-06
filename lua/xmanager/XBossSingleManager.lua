@@ -271,13 +271,13 @@ XFubenBossSingleManagerCreator = function()
             end
         end
 
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         local tagTmepIcon = nil
         for i = 1, #sectionCfg.ActivityBeginTime do
-           local stratTime = CS.XDate.GetTime(sectionCfg.ActivityBeginTime[i])
-           local endTime = CS.XDate.GetTime(sectionCfg.ActivityEndTime[i])
+           local stratTime = XTime.ParseToTimestamp(sectionCfg.ActivityBeginTime[i])
+           local endTime = XTime.ParseToTimestamp(sectionCfg.ActivityEndTime[i])
 
-           if now >= stratTime and now < endTime then
+           if stratTime and endTime and  now >= stratTime and now < endTime then
                 tagTmepIcon = sectionCfg.ActivityTag[i]
                 break
            end
@@ -392,7 +392,7 @@ XFubenBossSingleManagerCreator = function()
     end
 
     function XFubenBossSingleManager.GetRankData(cb, levelType)
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if LastSyncServerTimes[levelType]
         and LastSyncServerTimes[levelType] + SYNC_SERVER_BOSS_SECOND >= now then
             if cb then

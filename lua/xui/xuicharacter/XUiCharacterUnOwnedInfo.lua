@@ -9,7 +9,6 @@ end
 
 function XUiCharacterUnOwnedInfo:OnStart(characterId)
     self.CharacterId = characterId
-    self:RegisterRedPointEvent()
 end
 
 function XUiCharacterUnOwnedInfo:OnEnable()
@@ -18,14 +17,6 @@ end
 
 function XUiCharacterUnOwnedInfo:PreSetCharacterId(characterId)
     self.CharacterId = characterId
-end
-
-function XUiCharacterUnOwnedInfo:RegisterRedPointEvent()
-    self.RedPointId = XRedPointManager.AddRedPointEvent(self.ImgRedPointUnlock, self.OnCheckCharacterUnlockRedPoint, self, { XRedPointConditions.Types.CONDITION_CHARACTER_UNLOCK }, self.CharacterId)
-end
-
-function XUiCharacterUnOwnedInfo:OnCheckCharacterRedPoint(count, args)
-    self.ImgRedPoint.gameObject:SetActive(count >= 0)
 end
 
 function XUiCharacterUnOwnedInfo:UpdateView(characterId)

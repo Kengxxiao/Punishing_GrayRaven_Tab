@@ -16,7 +16,7 @@ XPlayerInfoManagerCreator = function()
     function XPlayerInfoManager.RequestPlayerInfoData(playerId, cb)
         --检查缓存
         if PlayerInfoCache[playerId] ~= nil then
-            if XTime.Now() - PlayerInfoCacheTime[playerId] < GET_PLAYER_INFO_INTERVAL then
+            if XTime.GetServerNowTimestamp() - PlayerInfoCacheTime[playerId] < GET_PLAYER_INFO_INTERVAL then
                 if cb then
                     cb(PlayerInfoCache[playerId])
                 end
@@ -31,7 +31,7 @@ XPlayerInfoManagerCreator = function()
             end
             --res.data(XPersonalInfoAttribute)
             PlayerInfoCache[playerId] = res.Detail
-            PlayerInfoCacheTime[playerId] = XTime.Now()
+            PlayerInfoCacheTime[playerId] = XTime.GetServerNowTimestamp()
 
             --XEventManager.DispatchEvent(XEventId.EVENT_REQUEST_PLAYER_INFO_BACK, playerId, PlayerInfoCache[playerId])
 

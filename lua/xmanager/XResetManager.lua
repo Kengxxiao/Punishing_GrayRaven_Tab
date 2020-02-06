@@ -3,9 +3,7 @@ XResetManager = XResetManager or {}
 local floor = math.floor
 local insert = table.insert
 
-local DailyResetTimestamp = 0
-local UtcDailyResetTimestamp = 0
-local DayOfWeeklyReset = 0
+local DailyResetSpan = 0
 local ResetCfg = {}
 local TABLE_RESET = "Share/Reset/SystemResetConfig.tab"
 
@@ -14,21 +12,19 @@ XResetManager.ResetType = {
     Interval = 1, -- 间隔一段时间
     Daily = 2, -- 每天
     Weekly = 3, -- 每周
-    Monthly = 4                     -- 每月
+    Monthly = 4   -- 每月
 }
 
 function XResetManager.Init()
-    DailyResetTimestamp = CS.XGame.Config:GetInt("DailyResetTimestamp")
-    DayOfWeeklyReset = CS.XGame.Config:GetInt("DayOfWeeklyReset")
+    DailyResetSpan = CS.XGame.Config:GetInt("DailyResetTimestamp")
 
-    UtcDailyResetTimestamp = CS.XDate.GetUtcTimeSecond(DailyResetTimestamp)
     ResetCfg = XTableManager.ReadByIntKey(TABLE_RESET, XTable.XTableSystemReset, "ResetKey")
 end
 
 function XResetManager.GetTodayRemainTime(checkTime)
-    checkTime = checkTime or XTime.Now()
-    local targetTime = CS.XDate.GetTimeOnToday(UtcDailyResetTimestamp)
-    targetTime = checkTime > targetTime and (targetTime + CS.XDate.ONE_DAY_SECOND) or checkTime
+    checkTime = checkTime or XTime.GetServerNowTimestamp()
+    local targetTime = CS.XDateUtil.GetGameDateTime(checkTime).Date:AddSeconds(DailyResetSpan):ToTimestamp()
+    targetTime = checkTime > targetTime and (targetTime + CS.XDateUtil.ONE_DAY_SECOND) or targetTime
     return targetTime - checkTime
 end
 
@@ -46,7 +42,7 @@ function XResetManager.GetResetTimeByString(resetType, timeStr)
                 insert(seconds, dayAndSecond[2])
             elseif #dayAndSecond > 0 then
                 insert(days, dayAndSecond[1])
-                insert(seconds, DailyResetTimestamp)
+                insert(seconds, DailyResetSpan)
             end
         end
     end
@@ -55,9 +51,9 @@ function XResetManager.GetResetTimeByString(resetType, timeStr)
 end
 
 function XResetManager.GetResetTodayDayOfWeek()
-    local day = CS.XDate.GetNowDayOfWeek()
-    local now = XTime.Now()
-    local stamp = CS.XDate.GetTimeOnToday(UtcDailyResetTimestamp)
+    local day = XTime.DayOfWeekToInt(CS.XDateUtil.GetGameNow().DayOfWeek)
+    local now = XTime.GetServerNowTimestamp()
+    local stamp = CS.XDateUtil.GetGameDateTime(checkTime).Date:AddSeconds(DailyResetSpan):ToTimestamp()
 
     if now >= stamp then -- 超过属于后面的一天
         day = (day + 1) % 7
@@ -73,7 +69,7 @@ function XResetManager.GetRemainTime(resetCfg, lastTime)
     local resetType = resetCfg.ResetType
     local recTime = resetCfg.ResetTime
     local seconds, days = XResetManager.GetResetTimeByString(resetType, recTime)
-    return CS.XReset.GetNextResetTime(resetType, lastTime, seconds, days) - XTime.Now()
+    return CS.XReset.GetNextResetTime(resetType, lastTime, seconds, days) - XTime.GetServerNowTimestamp()
 end
 
 function XResetManager.GetResetCfg(reseTimeId)

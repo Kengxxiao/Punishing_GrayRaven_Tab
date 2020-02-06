@@ -45,44 +45,48 @@ XMedalManagerCreator = function()
     end
     
     function XMedalManager.CheakMedalStoryIsPlayed()
-        if XSaveTool.GetData(XPlayer.Id.."MedalStoryIsPlayed") then
+        if XSaveTool.GetData(string.format("%d%s", XPlayer.Id, "MedalStoryIsPlayed")) then
             return true
         end
         return false 
     end
     
     function XMedalManager.MarkMedalStory()
-        if not XSaveTool.GetData(XPlayer.Id.."MedalStoryIsPlayed") then
-            XSaveTool.SaveData(XPlayer.Id.."MedalStoryIsPlayed","MedalStoryIsPlayed")
+        if not XSaveTool.GetData(string.format("%d%s", XPlayer.Id, "MedalStoryIsPlayed")) then
+            XSaveTool.SaveData(string.format("%d%s", XPlayer.Id, "MedalStoryIsPlayed"),"MedalStoryIsPlayed")
         end
     end
     
     function XMedalManager.CheakHaveNewMedal()
         local meadals = XMedalConfigs.GetMeadalConfigs()
-        for k,v in pairs(meadals) do
-            if XSaveTool.GetData(XPlayer.Id.."NewMeadal"..v.Id) then
-                return true
+        if not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Medal) then
+            if XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.Medal) then
+                for k,v in pairs(meadals) do
+                    if XSaveTool.GetData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",v.Id)) then
+                        return true
+                    end
+                end
             end
-        end
+        end 
         return false 
     end
     
     function XMedalManager.CheakIsNewMedalById(Id)
-        if XSaveTool.GetData(XPlayer.Id.."NewMeadal"..Id) then
+        if XSaveTool.GetData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",Id)) then
             return true
         end
         return false 
     end
     
     function XMedalManager.SetMedalForOld(Id)
-        if XSaveTool.GetData(XPlayer.Id.."NewMeadal"..Id) then
-            XSaveTool.RemoveData(XPlayer.Id.."NewMeadal"..Id)
+        if XSaveTool.GetData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",Id)) then
+            XSaveTool.RemoveData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",Id))
         end
     end
     
     function XMedalManager.AddNewMedal(Id)
-        if not XSaveTool.GetData(XPlayer.Id.."NewMeadal"..Id) then
-            XSaveTool.SaveData(XPlayer.Id.."NewMeadal"..Id,Id)
+        if not XSaveTool.GetData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",Id)) then
+            XSaveTool.SaveData(string.format("%d%s%d", XPlayer.Id, "NewMeadal",Id),Id)
         end
     end
     

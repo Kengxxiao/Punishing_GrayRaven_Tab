@@ -55,6 +55,7 @@ end
 
 --处理事件监听
 function XUiBag:OnNotify(evt, ...)
+
     if evt == XEventId.EVENT_ITEM_USE then
         self:UpdateDynamicTable()
     elseif evt == XEventId.EVENT_ITEM_RECYCLE then
@@ -176,8 +177,8 @@ function XUiBag:OnDynamicTableEvent(event, index, grid)
             grid:SetupCommon(data, self.PageRecord, self.Operation, gridSize)
             grid:SetSelectedCommon(self.SelectList[data.GridIndex] and self.SelectList[data.GridIndex] == data.Data.Id)
         end
-        self.GridCount = self.GridCount + 1
-    elseif event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_RELOAD_COMPLETED then
+        self.GridCount =  self.GridCount + 1
+    elseif event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_RELOAD_COMPLETED then   
         local grids = self.DynamicTable:GetGrids()
         self.GridIndex = 1
         self.CurAnimationTimerId = CS.XScheduleManager.Schedule(function()
@@ -209,7 +210,6 @@ function XUiBag:UpdatePanels()
     self.TxtNowCapacity.gameObject:SetActive(self.PageRecord == XUiBag.PageType.Equip or self.PageRecord == XUiBag.PageType.Awareness or self.PageRecord == XUiBag.PageType.SuitCover)
     self.TxtMaxCapacity.gameObject:SetActive(self.PageRecord == XUiBag.PageType.Equip or (self.PageRecord == XUiBag.PageType.Awareness and self.SelectSuitId == XEquipConfig.DEFAULT_SUIT_ID) or self.PageRecord == XUiBag.PageType.SuitCover)
     self.SidePopUpPanel:Refresh()
-
     --操作按钮
     if self.PageRecord == XUiBag.PageType.Equip or self.PageRecord == XUiBag.PageType.Awareness then
         self.PanelDecomposionBtn.gameObject:SetActive(true)
@@ -322,7 +322,7 @@ end
 function XUiBag:SelectGrid(data, grid)
     if self.Operation == XUiBag.OperationType.Decomposion then
         local cancelStar
-
+        
         if self.SelectList[data] then
             self.SelectList[data] = nil
             grid:SetSelected(false)
@@ -332,8 +332,16 @@ function XUiBag:SelectGrid(data, grid)
         else
             self.SelectList[data] = data
             grid:SetSelected(true)
+            
+            --if XDataCenter.EquipManager.CheakBoxOverLimitOfDecomposion(self.SelectList,true) then
+            --    self.SelectList[data] = nil
+            --    grid:SetSelected(false)
+            --    local equip = XDataCenter.EquipManager.GetEquip(data)
+            --    cancelStar = XDataCenter.EquipManager.GetEquipStar(equip.TemplateId)
+            --end
         end
         self.SidePopUpPanel:RefreshDecomposionPreView(self.SelectList, cancelStar)
+        
     elseif self.Operation == XUiBag.OperationType.Sell or self.Operation == XUiBag.OperationType.Convert then
         if self.SelectList[data.GridIndex] and self.SelectList[data.GridIndex] == data.Data.Id then return end
 
@@ -357,11 +365,19 @@ function XUiBag:SelectByStar(star, state)
     for index, equipId in ipairs(self.PageDatas) do
         local equip = XDataCenter.EquipManager.GetEquip(equipId)
         local equipStar = XDataCenter.EquipManager.GetEquipStar(equip.TemplateId)
-
+        local tmpState = state
         if equipStar == star then
-            if state then
+            if tmpState then
+                --不选中预设中的装备
+
                 if not self.SelectList[equipId] then
                     self.SelectList[equipId] = equipId
+                          
+                    --if XDataCenter.EquipManager.CheakBoxOverLimitOfDecomposion(self.SelectList,false) then
+                    --    self.SelectList[equipId] = nil
+                    --   tmpState = false
+                    --end
+                    
                 end
             else
                 if self.SelectList[equipId] then
@@ -371,42 +387,13 @@ function XUiBag:SelectByStar(star, state)
 
             local grid = self.DynamicTable:GetGridByIndex(index)
             if grid then
-                grid:SetSelectedEquip(state)
+                grid:SetSelectedEquip(tmpState)
             end
         end
+        
     end
 
     self.SidePopUpPanel:RefreshDecomposionPreView(self.SelectList)
-end
-
-function XUiBag:OnSell()
-    local items = {}
-    local dataCount = 0
-    for index, item in pairs(self.SelectList) do
-        local selectCount = item.Count
-        if selectCount > 0 then
-            local data = {}
-            data.Id = item.Id
-            data.Count = selectCount
-            if items[data.Id] then
-                items[data.Id] = items[data.Id] + data.Count
-            else
-                items[data.Id] = data.Count
-                dataCount = dataCount + 1
-            end
-        end
-    end
-
-    if dataCount == 0 then
-        return
-    end
-
-    local callback = function(money)
-        XUiManager.TipMsg(CS.XTextManager.GetText("CharacterUpgradeSkillConsumeCoin") .. "+" .. money)
-        self:OperationTurn(XUiBag.OperationType.Common)
-    end
-
-    XDataCenter.ItemManager.Sell(items, dataCount, callback)
 end
 
 function XUiBag:AutoAddListener()
@@ -421,7 +408,7 @@ function XUiBag:AutoAddListener()
     self:RegisterClickEvent(self.BtnDecomposion, self.OnBtnDecomposionClick)
     self:RegisterClickEvent(self.BtnConvert, self.OnBtnConvertClick)
 end
--- auto
+
 function XUiBag:OnBtnMainUiClick(...)
     XLuaUiManager.RunMain()
 end
@@ -480,14 +467,14 @@ end
 --切换页签
 function XUiBag:PageTurn(page)
     if self.PageRecord == page then
-        return
+        return 
     end
 
     if self.CurAnimationTimerId then
         CS.XScheduleManager.UnSchedule(self.CurAnimationTimerId)
         self.CurAnimationTimerId = nil
     end
-
+    
     self.IsFirstAnimation = false
     self.PageRecord = page
     self:Refresh(true)

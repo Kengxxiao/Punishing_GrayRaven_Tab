@@ -18,7 +18,8 @@ function XUiMission:OnEnable()
         self.DynamicTable:ReloadDataASync()
     end
 
-    XUiHelper.PlayAnimation(self, "AniMissionBegin")
+    self:PlayAnimation("AniMissionBegin")
+    --XUiHelper.PlayAnimation(self, "AniMissionBegin")
 end
 
 function XUiMission:Init()
@@ -147,7 +148,7 @@ function XUiMission:SetupRefresh()
     self.BtnRefresh.gameObject:SetActive(leftTimes <= 0)
     -- self.TxtResetCount.text = tostring(leftTimes)
     local nextRefreshTime = XDataCenter.TaskForceManager.GetNextRefreshTime()
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
 
     self:UpdateTime()
     if nextRefreshTime > curTime then
@@ -175,7 +176,7 @@ end
 
 function XUiMission:UpdateTime()
 
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local nextRefreshTime = XDataCenter.TaskForceManager.GetNextRefreshTime()
 
     if not self.TxtTimeRefresh:Exist() then
@@ -184,7 +185,7 @@ function XUiMission:UpdateTime()
 
     local offset = nextRefreshTime - curTime
     if offset > 0 then
-        self.TxtTimeRefresh.text = CS.XDate.GetTimeString(math.ceil(offset))
+        self.TxtTimeRefresh.text = CS.XDateUtil.SecondsToTimeString(math.ceil(offset))
     else
         self.TxtTimeRefresh.text = "00:00:00"
         self:StopTimer()
@@ -229,30 +230,30 @@ function XUiMission:InitAutoScript()
 end
 
 function XUiMission:AutoInitUi()
-    self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
-    self.PanelTask = self.Transform:Find("SafeAreaContentPane/PanelTask")
-    self.PanelTaskList = self.Transform:Find("SafeAreaContentPane/PanelTask/PanelTaskList")
-    self.PanelTop = self.Transform:Find("SafeAreaContentPane/PanelTop")
-    self.PanelTimeRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelTimeRefresh")
-    self.TxtTimeRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelTimeRefresh/TxtTimeRefresh"):GetComponent("Text")
-    self.PanelResetCount = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelResetCount")
-    self.TxtResetCount = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelResetCount/TxtResetCount"):GetComponent("Text")
-    self.PanelSending = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending")
-    self.ImgRedTag = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/ImgRedTag"):GetComponent("Image")
-    self.TxtSending = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/TxtSending"):GetComponent("Text")
-    self.BtnTips = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/BtnTips"):GetComponent("Button")
-    self.BtnRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh"):GetComponent("Button")
-    self.PanelRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh")
-    self.RImgCostIcon = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh/RImgCostIcon"):GetComponent("RawImage")
-    self.TxtCost = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh/TxtCost"):GetComponent("Text")
-    self.BtnRefreshFree = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefreshFree"):GetComponent("Button")
-    self.PanelDown = self.Transform:Find("SafeAreaContentPane/PanelDown")
-    self.PanelPreview = self.Transform:Find("SafeAreaContentPane/PanelDown/PanelPreview")
-    self.PanelArea = self.Transform:Find("SafeAreaContentPane/PanelDown/PanelPreview/PanelArea")
-    self.BtnPreview = self.Transform:Find("SafeAreaContentPane/PanelDown/BtnPreview"):GetComponent("Button")
+    -- self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.PanelTask = self.Transform:Find("SafeAreaContentPane/PanelTask")
+    -- self.PanelTaskList = self.Transform:Find("SafeAreaContentPane/PanelTask/PanelTaskList")
+    -- self.PanelTop = self.Transform:Find("SafeAreaContentPane/PanelTop")
+    -- self.PanelTimeRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelTimeRefresh")
+    -- self.TxtTimeRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelTimeRefresh/TxtTimeRefresh"):GetComponent("Text")
+    -- self.PanelResetCount = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelResetCount")
+    -- self.TxtResetCount = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelResetCount/TxtResetCount"):GetComponent("Text")
+    -- self.PanelSending = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending")
+    -- self.ImgRedTag = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/ImgRedTag"):GetComponent("Image")
+    -- self.TxtSending = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/TxtSending"):GetComponent("Text")
+    -- self.BtnTips = self.Transform:Find("SafeAreaContentPane/PanelTop/PanelSending/BtnTips"):GetComponent("Button")
+    -- self.BtnRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh"):GetComponent("Button")
+    -- self.PanelRefresh = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh")
+    -- self.RImgCostIcon = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh/RImgCostIcon"):GetComponent("RawImage")
+    -- self.TxtCost = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefresh/PanelRefresh/TxtCost"):GetComponent("Text")
+    -- self.BtnRefreshFree = self.Transform:Find("SafeAreaContentPane/PanelTop/BtnRefreshFree"):GetComponent("Button")
+    -- self.PanelDown = self.Transform:Find("SafeAreaContentPane/PanelDown")
+    -- self.PanelPreview = self.Transform:Find("SafeAreaContentPane/PanelDown/PanelPreview")
+    -- self.PanelArea = self.Transform:Find("SafeAreaContentPane/PanelDown/PanelPreview/PanelArea")
+    -- self.BtnPreview = self.Transform:Find("SafeAreaContentPane/PanelDown/BtnPreview"):GetComponent("Button")
 end
 
 function XUiMission:GetAutoKey(uiNode, eventName)
@@ -289,12 +290,12 @@ end
 
 function XUiMission:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnTips, "onClick", self.OnBtnTipsClick)
-    self:RegisterListener(self.BtnRefresh, "onClick", self.OnBtnRefreshClick)
-    self:RegisterListener(self.BtnRefreshFree, "onClick", self.OnBtnRefreshFreeClick)
-    self:RegisterListener(self.BtnPreview, "onClick", self.OnBtnPreviewClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnTips, self.OnBtnTipsClick)
+    self:RegisterClickEvent(self.BtnRefresh, self.OnBtnRefreshClick)
+    self:RegisterClickEvent(self.BtnRefreshFree, self.OnBtnRefreshFreeClick)
+    self:RegisterClickEvent(self.BtnPreview, self.OnBtnPreviewClick)
 end
 -- auto
 function XUiMission:OnBtnRefreshFreeClick(...)
@@ -320,7 +321,8 @@ function XUiMission:OnBtnRefreshClick(...)
     XUiManager.DialogTip(CS.XTextManager.GetText("MissionTeamCountTipTile"), string.format(CS.XTextManager.GetText("MissionRefreshTaskContent"), self.RefeshCfg.ItemCount, itemName), XUiManager.DialogType.Normal, nil, function()
         if XDataCenter.TaskForceManager.CheckCanRefresh(self.RefeshCfg.ItemId, self.RefeshCfg.ItemCount) then
             XDataCenter.TaskForceManager.TaskForceRefreshRequest(function()
-                XUiHelper.PlayAnimation(self, "AniMissionTaskRefresh")
+                self:PlayAnimation("AniMissionTaskRefresh")
+                --XUiHelper.PlayAnimation(self, "AniMissionTaskRefresh")
             end)
         end
     end)

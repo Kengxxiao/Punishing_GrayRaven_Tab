@@ -1,20 +1,18 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-10140606		2	0.3				0			4		10			999						FxR3BiankaAttack11Dandao		-1			1															0																											
-10140706		2	0.3				0			4		10			999						FxR3BiankaAttack11Dandao		-1			1															0																											
-10140806		2	0.3				0			4		10			999						FxR3BiankaAttack13Dandao		-1			1															0																											
-10140904		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1															0																											
-10141004		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1															0																											
-10141104		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1															0																											
-10141207		2	0.3				0			4		10			999						FxR3BiankaAttack31Dimian		-1			1															0																											
-10141209		2	0.3				0			4		10			999						FxR3BiankaAttack31Baozha		-1			1															0																											
-10141307		2	0.3				0			4		10			999						FxR3BiankaAttack31Dimian		-1			1															0																											
-10141309		2	0.3				0			4		10			999						FxR3BiankaAttack31Baozha		-1			1															0																											
-10141407		2	0.3				0			4		10			999						FxR3BiankaAttack33Dimian		-1			1															0																											
-10141409		2	0.3				0			4		10			999						FxR3BiankaAttack33Baozha		-1			1															0																											
-10141510		2	0.3				0			4		10			999						FxQte		-1			1															0																											
-10141511		2	0.3				0			4		10			999						FxQte		-1			1															0																											
-10141802		2	0.3				0			4		10			999						FxR3BiankaAttack51Dandao		-1			1								1							0																											
-10141808		2	0.3				0			4		10			999						FxR3BiankaAttack51BlackHole		-1			1								1							0																											
-10142205		2	0.3				0			4		10			999						FxR3BiankaAttack41Dandao		-1			1															0																											
-10142305		2	0.3				0			4		10			999						FxR3BiankaAttack42Dandao		-1			1															0																											
-10142505		2	0.3				0			4		10			999						FxR3BiankaAttack13Dandao		-1			1															0																											
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+10140606		2	0.3				0			4		10			999						FxR3BiankaAttack11Dandao		-1			1																						0																											
+10140706		2	0.3				0			4		10			999						FxR3BiankaAttack11Dandao		-1			1																						0																											
+10140806		2	0.3				0			4		10			999						FxR3BiankaAttack13Dandao		-1			1																						0																											
+10140904		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1																						0																											
+10141004		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1																						0																											
+10141104		2	0.3				0			4		10			999						FxR3BiankaAttack21		-1			1																						0																											
+10141205		2	0.3				0			4		10			999						FxR3BiankaAttack31Dimian		-1			1																						0																											
+10141206		2	0.3				0			4		10			999						FxR3BiankaAttack31Baozha		-1			1																						0																											
+10141305		2	0.3				0			4		10			999						FxR3BiankaAttack32Dimian		-1			1																						0																											
+10141306		2	0.3				0			4		10			999						FxR3BiankaAttack31Baozha		-1			1																						0																											
+10141405		2	0.3				0			4		10			999						FxR3BiankaAttack33Dimian		-1			1																						0																											
+10141406		2	0.3				0			4		10			999						FxR3BiankaAttack33Baozha		-1			1																						0																											
+10141510		2	0.3				0			4		10			999						FxQte		-1			1																						0																											
+10141511		2	0.3				0			4		10			999						FxQte		-1			1																						0																											
+10141802		2	0.3				0			4		10			999						FxR3BiankaAttack51Dandao		-1			1															1							0																											
+10141808		2	0.3				0			4		10			999						FxR3BiankaAttack51BlackHole		-1			1															1							0																											
+10142505		2	0.3				0			4		10			999						FxR3BiankaAttack13Dandao		-1			1																						0																											

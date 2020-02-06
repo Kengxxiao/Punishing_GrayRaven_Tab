@@ -24,6 +24,7 @@ XModelManager.MODEL_UINAME = {
     XUiFurnitureDetail = "UiDormFurnitureDetail",
     XUiFavorabilityLineRoomCharacter = "UiFavorabilityLineRoomCharacter",
     XUiDrawShow = "UiDrawShow",
+    XUiBabelTowerRoomCharacter = "XUiBabelTowerRoomCharacter",
 }
 
 local RoleModelPool = {} --保存模型
@@ -189,7 +190,7 @@ function XModelManager.SetRoleTransform(name, target, uiName)
     setModeTransform(target, config)
 end
 
-function XModelManager.LoadWeaponModel(name, target, config, cb)
+function XModelManager.LoadWeaponModel(name, target, config, cb, characterId, equipId, hideEffect)
     if not name or XTool.UObjIsNil(target) then
         return
     end
@@ -204,11 +205,26 @@ function XModelManager.LoadWeaponModel(name, target, config, cb)
         setModeTransform(model, config)
     end
 
+    if not hideEffect and characterId and equipId then
+        XModelManager.LoadWeaponEffect(model, characterId, equipId)
+    end
 
     if cb then
         cb(model)
     end
+end
 
+-- 武器共鸣特效
+function XModelManager.LoadWeaponEffect(model, characterId, equipId)
+    if XTool.UObjIsNil(model) then return end
+
+    local target = model.transform:FindTransform("WeaponCenter")
+    if XTool.UObjIsNil(target) then return end
+
+    local effectPath = XDataCenter.EquipManager.GetWeaponResonanceEffectPath(characterId, equipId)
+    if not effectPath then return end
+
+    target:LoadPrefab(effectPath, false)
 end
 
 --==============================--
@@ -216,7 +232,7 @@ end
 --@roleModel: 角色模型
 --@weaponNameList: 武器模型名字列表
 --==============================--
-function XModelManager.LoadRoleWeaponModel(roleModel, weaponNameList, refName, cb)
+function XModelManager.LoadRoleWeaponModel(roleModel, weaponNameList, refName, cb, charaterId, hideEffect)
     if not roleModel then
         return
     end
@@ -228,7 +244,8 @@ function XModelManager.LoadRoleWeaponModel(roleModel, weaponNameList, refName, c
             if not weaponCase then
                 XLog.Warning("XModelManager.LoadRoleWeaponModel warning, " .. "WeaponCase" .. i .. " not found")
             else
-                XModelManager.LoadWeaponModel(name, weaponCase, nil, cb)
+                local equipId = XDataCenter.EquipManager.GetCharacterWearingWeaponId(charaterId)
+                XModelManager.LoadWeaponModel(name, weaponCase, nil, cb, charaterId, equipId, hideEffect)
             end
         end
     end

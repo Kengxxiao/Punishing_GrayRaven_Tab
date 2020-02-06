@@ -9,7 +9,8 @@ function XUiPanelSidePopUp:Ctor(ui, parent)
     self.Parent = parent
     self.SelectCount = 0
 
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
+    self:AutoAddListener()
     self:InitDynamicTable()
 
     self.GridCommonPopUp.gameObject:SetActive(false)
@@ -133,7 +134,7 @@ function XUiPanelSidePopUp:RefreshSellPreView(selectItemId, count, selectGrid)
         self.BtnConvertPopUp.gameObject:SetActive(not cantSell)
         self.ImgCantConvertPopUp.gameObject:SetActive(cantSell)
     end
-    self.TxtNumA.text = self.SelectCount
+    self.TxtNum.text = self.SelectCount
 
     local showSub = self.SelectCount ~= 0
     self.BtnSub.gameObject:SetActive(showSub)
@@ -156,45 +157,6 @@ function XUiPanelSidePopUp:RefreshSellPreView(selectItemId, count, selectGrid)
         self.SingleItemGrid.GameObject:SetActive(true)
     end
     self.PanelDynamicTablePopUp.gameObject:SetActive(false)
-end
-
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelSidePopUp:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelSidePopUp:AutoInitUi()
-    self.GridCommonPopUp = self.Transform:Find("GridCommonPopUp")
-    self.RImgIconC = self.Transform:Find("GridCommonPopUp/RImgIcon"):GetComponent("RawImage")
-    self.PanelDynamicTablePopUp = self.Transform:Find("PanelDynamicTablePopUp")
-    self.PanelFilterPopUp = self.Transform:Find("PanelFilterPopUp")
-    self.TogStar1PopUp = self.Transform:Find("PanelFilterPopUp/TogStar1PopUp"):GetComponent("Toggle")
-    self.TogStar2PopUp = self.Transform:Find("PanelFilterPopUp/TogStar2PopUp"):GetComponent("Toggle")
-    self.TogStar3PopUp = self.Transform:Find("PanelFilterPopUp/TogStar3PopUp"):GetComponent("Toggle")
-    self.TogStar4PopUp = self.Transform:Find("PanelFilterPopUp/TogStar4PopUp"):GetComponent("Toggle")
-    self.PanelNumBtn = self.Transform:Find("PanelNumBtn")
-    self.BtnSub = self.Transform:Find("PanelNumBtn/BtnSub"):GetComponent("Button")
-    self.TxtNumA = self.Transform:Find("PanelNumBtn/TxtNum"):GetComponent("Text")
-    self.BtnAdd = self.Transform:Find("PanelNumBtn/BtnAdd"):GetComponent("Button")
-    self.BtnMax = self.Transform:Find("PanelNumBtn/BtnMax"):GetComponent("Button")
-    self.ImgCantSub = self.Transform:Find("PanelNumBtn/ImgCantSub"):GetComponent("Image")
-    self.ImgCantAdd = self.Transform:Find("PanelNumBtn/ImgCantAdd"):GetComponent("Image")
-    self.PanelSelectNum = self.Transform:Find("PanelSelectNum")
-    self.TxtDes = self.Transform:Find("PanelSelectNum/TxtDes"):GetComponent("Text")
-    self.TxtSelectNum = self.Transform:Find("PanelSelectNum/TxtSelectNum"):GetComponent("Text")
-    self.PanelSellPopUp = self.Transform:Find("BottomBtns/PanelSellPopUp")
-    self.BtnSellPopUp = self.Transform:Find("BottomBtns/PanelSellPopUp/BtnSellPopUp"):GetComponent("Button")
-    self.ImgCantSellPopUp = self.Transform:Find("BottomBtns/PanelSellPopUp/ImgCantSellPopUp"):GetComponent("Image")
-    self.TxtTitle = self.Transform:Find("TxtTitle"):GetComponent("Text")
-    self.PanelDecomposionPopUp = self.Transform:Find("BottomBtns/PanelDecomposionPopUp")
-    self.BtnDecomposionPopUp = self.Transform:Find("BottomBtns/PanelDecomposionPopUp/BtnDecomposionPopUp"):GetComponent("Button")
-    self.ImgCantDecomposionPopUp = self.Transform:Find("BottomBtns/PanelDecomposionPopUp/ImgCantDecomposionPopUp"):GetComponent("Image")
-    self.PanelConvertPopUp = self.Transform:Find("BottomBtns/PanelConvertPopUp")
-    self.ImgCantConvertPopUp = self.Transform:Find("BottomBtns/PanelConvertPopUp/ImgCantConvertPopUp"):GetComponent("Image")
-    self.BtnConvertPopUp = self.Transform:Find("BottomBtns/PanelConvertPopUp/BtnConvertPopUp"):GetComponent("Button")
-    self.BtnCha = self.Transform:Find("BottomBtns/BtnCha"):GetComponent("Button")
 end
 
 function XUiPanelSidePopUp:RegisterClickEvent(uiNode, func)
@@ -227,7 +189,7 @@ function XUiPanelSidePopUp:AutoAddListener()
     self:RegisterClickEvent(self.BtnConvertPopUp, self.OnBtnConvertPopUpClick)
     self:RegisterClickEvent(self.BtnCha, self.OnBtnChaClick)
 end
--- auto
+
 function XUiPanelSidePopUp:OnBtnSubClick(eventData)
     self:RefreshSellPreView(self.SelectItemId, self.SelectCount - 1)
 end

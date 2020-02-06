@@ -59,7 +59,7 @@ end
 
 function XUiPanelJieduan:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnJieduanGift, "onClick", self.OnBtnJieduanGiftClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnJieduanGift, self.OnBtnJieduanGiftClick)
 end
 -- auto
 

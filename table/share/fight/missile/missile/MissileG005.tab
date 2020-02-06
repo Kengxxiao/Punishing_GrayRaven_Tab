@@ -1,0 +1,35 @@
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+99810101	华韬的技能1-一次性伤害帧	3	1.5	100			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998101011	811008								0	HitCase	1	0					1					
+99810201	华韬的技能2-一次性伤害帧	3	2	150			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998102011	811008								0	HitCase	1	0					1					
+99810202	华韬的技能2-一次性伤害帧	3	2.2	150			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998102021	811008								0	HitCase	1	0					1					
+99810301	华韬的技能3-一次性伤害帧	3	2.2	140			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998103011	811008								0	HitCase	1	0					1					
+99810401	华韬的技能4-一次性伤害帧	3	1.8	160			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998104011	811008								0	HitCase	1	0					1					
+99820101	野猪骑士的技能1-戳刺	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998201011	811008								0	HitCase	1	0					1					
+99820201	野猪骑士的技能2-冲刺到162	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998202011	811008								0	HitCase	1	0					1					
+99820202	野猪骑士的技能2-顶撞	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998202021	811008								0	HitCase	1	0					1					
+99820301	野猪骑士的技能3-跑动到241	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998203011	811008								0	HitCase	1	0					1					
+99820302	野猪骑士的技能3-右劈砍	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998203021	811008								0	HitCase	1	0					1					
+99820303	野猪骑士的技能3-左劈砍	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998203031	811008								0	HitCase	1	0					1					
+99820401	野猪骑士的技能4-后退	3	3	180			0			4	0	0.1			-1		FxDibingShouji				FxYujingRing		-1			1					0	0	0								0							0	1				998204011	811008								0	HitCase	1	0					1					
+99830101	孤儿-伤害帧	1	3	3		1.5	0			4	0	0.1			-1		FxMb1OrphanMd030001Attack01Shouji						-1			1					0	0	0								0							0	1				998301011	801040	200003	815056				200003		0	HitCase	1	0					1					
+99830201	孤儿-抛物线投掷	2	2.5				15			4	1	3		1	1					Bip001LHand	FxMb1OrphanMd030001Attack02Dandao		-1		FxMb1OrphanMd030001Attack02Bao	3	-50	0	12	0.75	0	0	0								0	5000	0	1	81500203	1		0	1				998302011									0	HitCase	0	0			9999	1	1					
+99830203	孤儿-投掷物伤害	2	2.5				0			4	-1	0.2			-1		FxMb1OrphanMd030001Attack02Shouji						-1			1					0	0	0								2	0.1	0	1	81500204	1		3	2				998302031	801040	815057							0	HitCase		0					0					
+99830204	孤儿-持续冰冻区域（buff）	2	2.5				0			4	-1	5			-1	1			0.1				-1			1	0				0	0	0								2							0	1					815002	815003							0	HitCase		0					0					
+81520101	三段普攻-一次性伤害帧	1	3	3		1.5	0			4	0	0.1			-1		FxMb1OrphanMd030001Attack0101Shouji				FxMb1OrphanMd030001Attack0101		-1			1					0	0	0								0							0	1				815201011	801040	200003	815056				200003		0	HitCase	1	0					1					
+81520106	三段普攻-二段伤害	1	4	8	1.2	2	100	0		4	0	0.4			-1		FxMb1OrphanMd030001Attack0102Shouji				FxMb1OrphanMd030001Attack0102Dandao		-1			1					0	0	0								0							1	1				815201061	801040	200003	815056				200003		0.5	HitCase	1	0					1					
+81520108	三段普攻-三段伤害	1	4	8	1.2	2	100	0		4	0	0.4			-1		FxMb1OrphanMd030001Attack0102Shouji				FxMb1OrphanMd030001Attack0102Dandao		-1			1					0	0	0								0							0	1				815201081	801040	200003	815056				200003		0.5	HitCase	1	0					1					
+81520201	踩地-一次性伤害帧	2	8			1.5	0			4	0	0.1			-1		FxMb1OrphanMd030001Attack01Shouji						-1			1					0	0	0								0							0	1				815202011	801040	200003	815056				200003		0	HitCase	1	0					1					
+81520202	踩地-预警特效	2	8			1.5	0			4	0	1.5	1.5		-1						FxYujing1M15S		-1			1					0	0	0								0							0	1													0	HitCase	1	0					1					
+81520301	正义降临-升	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0					0					
+81520308	正义降临-升-预警	2	5				0			4	1	1			-1						FxYujing1M05S		-1			1					0	0	0								1							0	1													0	HitCase	1	0					0					
+81520401	正义降临-落	2	5				0			4	-1	0.1			-1								-1			1					0	0	0								0							0	1				815204011	904528	801090							0	HitCase	1	0					1					
+81520501	扔罐子-下坠物	2	2				0			4		2			-1						FxMb1OrphanMd030002Attack05Dilie04		-1			1					0	0	0								1	0.1		1	81520503			0	1													0.2	HitCase		0					0					
+81520503	扔罐子-空袭爆炸和特效	2	2				0			4		0.1			-1		FxMb1OrphanMd030002Attack05Shouji						-1			1					0	0	0								2							2	1				815205031	801066	815219							0	HitCase	1	0					1					
+81520504	扔罐子-预警	2	2				150			4	1	2			-1						FxYujing1M10S		-1			1					0	0	0								1							0	1													0	HitCase	1	0	1	1			0					
+81520701	循环冲锋-伤害子弹	1	1	1.5		1	0	0		4		3			-1		FxMb1OrphanMd030001Attack07Shouji		1		FxMb1OrphanMd030001Attack07		-1	0.6		1					0	0	0								0							0	3				815207011	801037					815213			0	HitCase	1	1		1			1					
+81520801	没冲到-标志	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+81520802	没冲到-	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0					0					
+81521303	喷涂机械-循环冲锋-冲锋到玩家	1	4	1.5		1	0	0		4		10			-1		FxMb1OrphanMd030001Attack07Shouji		1		FxMb1OrphanMd030001Attack07		-1	0.6		1					0	0	0								0							0	3				815213031	801037					815222			0	HitCase	1	1		1			1					
+83400102	轨道异形者-左爪下砸伤害帧	2	5				0			4	-1	0.1			-1						FxMb1TrackalienMd010001Attack0102		-1			1					0	0	0								1							0	3				834001021	801037								0	HitCase	1	0					1					
+83400109	轨道异形者-左爪下砸预警	2	5				150			4	-1	2			-1						FxYujing1M10S		-1			1					0	0	0								1							0	1													0	HitCase	1	0	1	1			0					
+83400901	轨道异形者-激光预备锁定帧	1	2	150			0			4	-1	6			-1					Tongkong1	FxYujingJu01		-1			1					0	0	0								0							5	3				834009011	801037								0	HitCase	1	1					1					

@@ -8,6 +8,7 @@ XUiSocial.BtnTabIndex = {
 }
 
 function XUiSocial:OnAwake()
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -117,20 +118,20 @@ function XUiSocial:InitAutoScript()
 end
 
 function XUiSocial:AutoInitUi()
-    self.PanelAddContactView = self.Transform:Find("SafeAreaContentPane/PanelAddContactView")
-    self.PanelContactView = self.Transform:Find("SafeAreaContentPane/PanelContactView")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
-    self.PanelWaitForPassView = self.Transform:Find("SafeAreaContentPane/PanelWaitForPassView")
-    self.PanelBg3d = self.Transform:Find("FullScreenBackground/PanelBg3d")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
-    self.PanelAllChatView = self.Transform:Find("SafeAreaContentPane/PanelAllChatView")
-    self.PanelPrivateChatView = self.Transform:Find("SafeAreaContentPane/PanelPrivateChatView")
-    self.PanelEmoji = self.Transform:Find("SafeAreaContentPane/PanelEmoji")
-    self.GridEmoji = self.Transform:Find("SafeAreaContentPane/PanelEmoji/EmojiList/GridEmoji")
-    self.PanelDaily = self.Transform:Find("SafeAreaContentPane/PanelDaily")
-    self.BtnDaily = self.Transform:Find("SafeAreaContentPane/PanelButtons/BtnDaily"):GetComponent("Button")
-    self.PanelButtons = self.Transform:Find("SafeAreaContentPane/PanelButtons"):GetComponent("XUiButtonGroup")
+    -- self.PanelAddContactView = self.Transform:Find("SafeAreaContentPane/PanelAddContactView")
+    -- self.PanelContactView = self.Transform:Find("SafeAreaContentPane/PanelContactView")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
+    -- self.PanelWaitForPassView = self.Transform:Find("SafeAreaContentPane/PanelWaitForPassView")
+    -- self.PanelBg3d = self.Transform:Find("FullScreenBackground/PanelBg3d")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.PanelAllChatView = self.Transform:Find("SafeAreaContentPane/PanelAllChatView")
+    -- self.PanelPrivateChatView = self.Transform:Find("SafeAreaContentPane/PanelPrivateChatView")
+    -- self.PanelEmoji = self.Transform:Find("SafeAreaContentPane/PanelEmoji")
+    -- self.GridEmoji = self.Transform:Find("SafeAreaContentPane/PanelEmoji/EmojiList/GridEmoji")
+    -- self.PanelDaily = self.Transform:Find("SafeAreaContentPane/PanelDaily")
+    -- self.BtnDaily = self.Transform:Find("SafeAreaContentPane/PanelButtons/BtnDaily"):GetComponent("Button")
+    -- self.PanelButtons = self.Transform:Find("SafeAreaContentPane/PanelButtons"):GetComponent("XUiButtonGroup")
 end
 
 function XUiSocial:GetAutoKey(uiNode, eventName)
@@ -167,9 +168,9 @@ end
 
 function XUiSocial:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnDaily, "onClick", self.OnBtnBtnDailyClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnDaily, self.OnBtnBtnDailyClick)
 end
 -- auto
 
@@ -191,11 +192,16 @@ function XUiSocial:OnBtnMainUiClick(...)
 end
 
 function XUiSocial:OnBtnBtnDailyClick(...)
-    XUiHelper.PlayAnimation(self.GameObject, "DailyIn", function(...)
-        self.XUiPanelDaily:SetIsShow(true)
+    self:PlayAnimation("DailyIn", function(...)
+        
     end, function(...)
-
+            self.XUiPanelDaily:SetIsShow(true)
     end)
+    -- XUiHelper.PlayAnimation(self.GameObject, "DailyIn", function(...)
+    --     self.XUiPanelDaily:SetIsShow(true)
+    -- end, function(...)
+
+    -- end)
 end
 
 function XUiSocial:OpenPrivateChatView(friendId)

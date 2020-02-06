@@ -116,7 +116,6 @@ function XUiEquipAwarenessReplace:OnNotify(evt, ...)
 
     if evt == XEventId.EVENT_EQUIP_PUTON_NOTYFY then
         local equipId = args[1]
-        local equipSite = XDataCenter.EquipManager.GetEquipSite(equipId)
         self:UpdateViewData()
         if self.LastViewPattern == ViewPattern.Quick then
             local suitId = XDataCenter.EquipManager.GetSuitId(equipId)
@@ -124,6 +123,8 @@ function XUiEquipAwarenessReplace:OnNotify(evt, ...)
             self:UpdateDrdSuitValue(suitId)
         end
         self:OnSelectSortType(self.DrdSort.value)
+        
+        local equipSite = XDataCenter.EquipManager.GetEquipSite(equipId)
         self:UpdateCurEquipGrid(equipSite)
         self.EquipBtnGroup:SelectIndex(self.SelectShowProperty)
         self:PlayActiveEffect(equipId)
@@ -166,7 +167,7 @@ function XUiEquipAwarenessReplace:UpdateViewData()
     self.SiteToEquipIdsDic = XDataCenter.EquipManager.ConstructAwarenessSiteToEquipIdsDic()
     self.StarToSiteToSuitIdsDic = XDataCenter.EquipManager.ConstructAwarenessStarToSiteToSuitIdsDic()
     self.SuitIdToEquipIdsDic = XDataCenter.EquipManager.ConstructAwarenessSuitIdToEquipIdsDic()
-end
+end 
 
 function XUiEquipAwarenessReplace:UpdateSuitDrdOptionList()
     self.DrdSuit:ClearOptions()
@@ -221,7 +222,7 @@ function XUiEquipAwarenessReplace:InitCurEquipGrids()
 
     self.CurEquipGirds = {}
     for _, equipSite in pairs(XEquipConfig.EquipSite.Awareness) do
-        local item = CS.UnityEngine.Object.Instantiate(self.GridCurAwareness)  -- 复制一个item
+        local item = CS.UnityEngine.Object.Instantiate(self.GridCurAwareness)
         self.CurEquipGirds[equipSite] = XUiGridEquip.New(item, clickCb)
         self.CurEquipGirds[equipSite]:InitRootUi(self)
         self.CurEquipGirds[equipSite].Transform:SetParent(self["PanelPos" .. equipSite], false)
@@ -267,7 +268,7 @@ end
 
 function XUiEquipAwarenessReplace:UpdateCurEquipSkill()
     local skillCount = 0
-    local activeSkillDesInfoList = XDataCenter.EquipManager.GetSuitMergeActiveSkillDesInfoList(self.CharacterId)
+    local activeSkillDesInfoList = XDataCenter.EquipManager.GetCharacterWearingSuitMergeActiveSkillDesInfoList(self.CharacterId)
 
     for i = 1, XEquipConfig.MAX_SUIT_SKILL_COUNT do
         if not activeSkillDesInfoList[i] then
@@ -411,12 +412,12 @@ function XUiEquipAwarenessReplace:OnSelectEquipSite(equipSite)
 
     if self.LastSelectPos then
         local go = self["ImgSelect" .. self.LastSelectPos]
-        local set = go and go.gameObject:SetActive(false)
+        local set = go and go.gameObject:SetActive(false) 
     end
     self.LastSelectPos = equipSite
     if self.LastSelectPos then
         local go = self["ImgSelect" .. self.LastSelectPos]
-        local set = go and go.gameObject:SetActive(true)
+        local set = go and go.gameObject:SetActive(true) 
     end
 
     if self.LastSelectCurGrid then
@@ -429,7 +430,7 @@ function XUiEquipAwarenessReplace:OnSelectEquipSite(equipSite)
 
     if self.LastViewPattern == ViewPattern.Quick then
         self:UpdateSuitDrdOptionList()
-        self:OnDrdSuitValueChanged()
+        self:UpdateDrdSuitValue(self.QuickLastSelectSuitId)
     end
     
     self:OnSelectSortType(self.DrdSort.value)
@@ -483,7 +484,7 @@ function XUiEquipAwarenessReplace:OnSelectShowProperty(selectShowProperty)
         self.PanelResonanceSkill.gameObject:SetActive(true)
     end
 
-    self:CloseChildUi()
+    XLuaUiManager.Close("UiEquipAwarenessPopup")
 end
 
 function XUiEquipAwarenessReplace:OnSelectDrdSuit(suitId)
@@ -545,8 +546,8 @@ function XUiEquipAwarenessReplace:UpdateScroll(doNotResetSelect)
 
     if scroll then
         self:SetSortBtnEnabled(false)
-        self:CloseChildUi()
-
+        XLuaUiManager.Close("UiEquipAwarenessPopup")
+        
         --NEVER DELETE ME!
         CS.UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(self.PanelAdapter)
         CS.XScheduleManager.ScheduleOnce(function(...)
@@ -596,27 +597,22 @@ function XUiEquipAwarenessReplace:AutoAddListener()
     self:RegisterClickEvent(self.BtnPos5, self.OnBtnPos5Click)
     self:RegisterClickEvent(self.BtnPos6, self.OnBtnPos6Click)
     self:RegisterClickEvent(self.BtnAutoTakeOff, self.OnBtnAutoTakeOffClick)
+    self:RegisterClickEvent(self.BtnAwarenessSuitPrefab, self.OnBtnAwarenessSuitPrefabClick)
     self:RegisterClickEvent(self.PanelEquipScroll, self.OnPanelEquipScrollClick)
 end
 
 function XUiEquipAwarenessReplace:OpenChildUi()
-    self:CloseChildUi()
-    self:OpenOneChildUi("UiEquipAwarenessPopup", self, self.NotShowStrengthenBtn)
-end
-
-function XUiEquipAwarenessReplace:CloseChildUi()
-    if XLuaUiManager.IsUiShow("UiEquipAwarenessPopup") then
-        self:FindChildUiObj("UiEquipAwarenessPopup"):Close()
-    end
+    XLuaUiManager.Close("UiEquipAwarenessPopup")
+    XLuaUiManager.Open("UiEquipAwarenessPopup", self, self.NotShowStrengthenBtn)
 end
 
 function XUiEquipAwarenessReplace:OnPanelEquipScrollClick()
-    self:CloseChildUi()
+    XLuaUiManager.Close("UiEquipAwarenessPopup")
 end
 
 function XUiEquipAwarenessReplace:OnBtnClosePopupClick(eventData)
     self.EquipScroll:ResetSelectGrid()
-    self:CloseChildUi()
+    XLuaUiManager.Close("UiEquipAwarenessPopup")
 end
 
 function XUiEquipAwarenessReplace:OnBtnPos1Click(eventData)
@@ -644,6 +640,7 @@ function XUiEquipAwarenessReplace:OnBtnPos6Click(eventData)
 end
 
 function XUiEquipAwarenessReplace:OnBtnBackClick(eventData)
+    XLuaUiManager.Close("UiEquipAwarenessPopup")
     if self.LastViewPattern == ViewPattern.Quick then
         self.PanelTabBtns:SelectIndex(ViewPattern.Suit)
     else
@@ -660,7 +657,9 @@ function XUiEquipAwarenessReplace:OnDrdSortValueChanged()
 end
 
 function XUiEquipAwarenessReplace:OnDrdSuitValueChanged()
-    self:OnSelectDrdSuit(self.StarToSiteToSuitIdsDic[self.SelectedSuitStar][self.SelectedEquipSite][self.DrdSuit.value + 1]) --value从0开始多睿智哦
+    local suitId = self.StarToSiteToSuitIdsDic[self.SelectedSuitStar][self.SelectedEquipSite][self.DrdSuit.value + 1]
+    self.QuickLastSelectSuitId = suitId
+    self:OnSelectDrdSuit(suitId)
 end
 
 function XUiEquipAwarenessReplace:OnBtnOrderClick(eventData)
@@ -696,4 +695,8 @@ function XUiEquipAwarenessReplace:OnBtnAutoTakeOffClick(eventData)
         return
     end
     XDataCenter.EquipManager.TakeOff(wearingEquipIds)
+end
+
+function XUiEquipAwarenessReplace:OnBtnAwarenessSuitPrefabClick(eventData)
+    XLuaUiManager.Open("UiEquipAwarenessSuitPrefab", self.CharacterId)
 end

@@ -7,7 +7,10 @@ function XUiMainLeftTop:Ctor(rootUi)
     --ClickEvent
     self.BtnRoleInfo.CallBack = function() self:OnBtnRoleInfo() end
     --RedPoint
-    XRedPointManager.AddRedPointEvent(self.BtnRoleInfo.ReddotObj, self.OnCheckRoleNews, self, { XRedPointConditions.Types.CONDITION_PLAYER_ACHIEVE, XRedPointConditions.Types.CONDITION_PLAYER_SETNAME, XRedPointConditions.Types.CONDITION_EXHIBITION_NEW,XRedPointConditions.Types.CONDITION_HEADPORTRAIT_RED,XRedPointConditions.Types.CONDITION_MEDAL_RED,})
+    XRedPointManager.AddRedPointEvent(self.BtnRoleInfo.ReddotObj, self.OnCheckRoleNews, self, { XRedPointConditions.Types.CONDITION_PLAYER_ACHIEVE, XRedPointConditions.Types.CONDITION_PLAYER_SETNAME, XRedPointConditions.Types.CONDITION_EXHIBITION_NEW, XRedPointConditions.Types.CONDITION_HEADPORTRAIT_RED, XRedPointConditions.Types.CONDITION_MEDAL_RED,})
+
+    --Filter
+    self:CheckFilterFunctions()
 end
 
 function XUiMainLeftTop:OnEnable()
@@ -17,6 +20,10 @@ end
 
 function XUiMainLeftTop:OnDisable()
     XEventManager.RemoveEventListener(XEventId.EVENT_PLAYER_LEVEL_CHANGE, self.UpdateInfo, self)
+end
+
+function XUiMainLeftTop:CheckFilterFunctions()
+    self.BtnRoleInfo.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Player))
 end
 
 --个人详情入口

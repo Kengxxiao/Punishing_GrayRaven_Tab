@@ -178,6 +178,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 814024000	AddBehavior	814024																													
 814025	AddBuff	814025																													
 814025000	ChangeAttribValue	1|0|-1000																													
+814026	AddBuff	814026																													
+814026000	PlaySound	814017|0																													
 814100	AddBuff	814100																													
 814100000	AddBehavior	814100																													
 814101	AddBuff	814101																													

@@ -68,17 +68,17 @@ function XUiFunitureDetail:OnBtnRecoveryClick(...)
     XLuaUiManager.Open("UiFurnitureRecycleObtain", funitureRecycleList, function()
         XDataCenter.FurnitureManager.DecomposeFurniture(funitureRecycleList, function(rewardItems, successIds)
             -- 打开回收界面
-            XLuaUiManager.Open("UiDormBagRecycle", successIds, rewardItems)
+            XLuaUiManager.Open("UiDormBagRecycle", successIds, rewardItems, function()
+                 -- 将分解成功的家具从缓存中移除
+                for _, id in ipairs(successIds) do
+                    XDataCenter.FurnitureManager.RemoveFurniture(id)
+                end
 
-            -- 将分解成功的家具从缓存中移除
-            for _, id in ipairs(successIds) do
-                XDataCenter.FurnitureManager.RemoveFurniture(id)
-            end
-
-            -- 回收回调
-            if self.RecycleCallBack then
-                self.RecycleCallBack()
-            end
+                -- 回收回调
+                if self.RecycleCallBack then
+                    self.RecycleCallBack()
+                end
+            end)
         end)
     end)
 end

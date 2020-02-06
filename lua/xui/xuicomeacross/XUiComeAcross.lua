@@ -16,7 +16,7 @@ end
 function XUiComeAcross:OnStart(...)
     self:SetupContent()
 
-    XUiHelper.PlayAnimation(self, "AniComeAcrossBegin")
+    --XUiHelper.PlayAnimation(self, "AniComeAcrossBegin")
 end
 
 function XUiComeAcross:SetupContent()

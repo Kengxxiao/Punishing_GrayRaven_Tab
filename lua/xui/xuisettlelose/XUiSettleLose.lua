@@ -71,7 +71,7 @@ end
 
 function XUiSettleLose:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnLose, "onClick", self.OnBtnLoseClick)
+    self:RegisterClickEvent(self.BtnLose, self.OnBtnLoseClick)
 end
 -- auto
 function XUiSettleLose:OnBtnLoseClick()

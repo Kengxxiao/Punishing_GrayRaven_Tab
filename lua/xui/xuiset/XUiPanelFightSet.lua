@@ -63,6 +63,8 @@ function XUiPanelFightSet:Ctor(ui, set)
     if self.Update then
         behaviour.LuaUpdate = function() self:Update() end
     end
+
+    self.CustomUi.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CustomUi))
 end
 
 function XUiPanelFightSet:InitButtons()

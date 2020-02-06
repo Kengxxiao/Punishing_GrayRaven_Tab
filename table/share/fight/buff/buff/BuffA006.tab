@@ -17,8 +17,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 102256			0	5.9			1	0	1022560	1022560		102256000					
 102257			0	0			1	0	1022570	1022570		102257000					
 102258			0	0			1	0	1022580	1022580		102258000					
-102259			0	3.7			1	0	1022590			102259000					1
-102260			0	-1			1	0	1022600			102260000					1
+102259			0	3.7			1	0	1022590|401			102259000					1
+102260			0	-1			1	0	1022600|403			102260000					1
 102261			0	-1			1	0	1022610			102261000					
 102262			0	6.1			1	0	1022620			102262000					
 102263			0	1			1	0	1022630			102263000					
@@ -52,8 +52,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 102295			0	-1			1	0	1022950			102295000					
 102296			0	0			1	0	1022960	1022960		102296000					1
 102297			0	0			1	0	1022970	1022970							1
-102298			0	-1			1	0	1022980			102298000	FxR3LuxiyaPinzhiGuadianBip001LForearm	Bip001LForearm			
-102299			0	1.5			1	0	1022990	1022980	1022980		FxTongyongGuanghuanKuosan	Root			
+102298			0	-1			1	0	1022980|411			102298000	FxR3LuxiyaPinzhiGuadianBip001LForearm	Bip001LForearm			
 101514			0	0.4			1	0	1015140|8		10|15	101514000					
 101515			0	0			1	0	1015150	1015140							
 101516			0	0			1	0	1015160			101516000					1
@@ -64,8 +63,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101527			0	0			1	0	1015270	1015260							
 101528			0	-1			1	0	1015280			101528000					
 101533			0	0			1	0	1015330			101533000					1
-101535			0	-1			1	0	1015350			101535000	FxR3YongyechaoPinzhiGuadianBip001RForearm	Bip001RForearm			
-101536			0	1.5			1	0	1015360	1015350	1015350		FxTongyongGuanghuanKuosan	Root			
+101535			0	-1			1	0	1015350|411			101535000	FxR3YongyechaoPinzhiGuadianBip001RForearm	Bip001RForearm			
 101537			0	10			1	0	1015370			101537000					
 101538			0	10			1	0	1015380			101538000					
 101542			0	-1			1	0	1015420			101542000					
@@ -110,5 +108,5 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101595			0	-1			1	0	1015950			101595000					
 101596			0	6.9			1	0	1015960	1015960		101596000					
 101597			0	-1			1	0	1015970			101597000					
-101598			0	4.9			1	0	1015980	1015980		101598000					
-101599			0	4.9			1	0	1015990	1015990		101599000					
+101598			0	5			1	0	1015980	1015980		101598000					
+101599			0	5			1	0	1015990	1015990		101599000					

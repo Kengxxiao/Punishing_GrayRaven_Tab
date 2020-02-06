@@ -155,8 +155,8 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 81122622	M-06-位置标记-阶段1	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	3	81122611			0	1													0	HitCase		0					0					
 81122631	M-06-目标标记-阶段2	2	6.5				0			4		3			-1								-1			1					0	0	0	1		0.15	3	81122611			0	1													0	HitCase	1	0					0					
 81122632	FxMbMsMd040011Attack17Yujing14M3S	2	6.5				0			4		4	3		-1						FxMbMsMd040011Attack17Yujing14M3S		-1			1					0	0	0	1	3	0.15	5	81122611			0	1													0	HitCase		0					0					
-81122801	M-08-瞬间炮击	2	0.5		0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0							1	1				811228011	801025	811045							0.4	HitCase		0				1	1					
-81122802	M-08-瞬间炮击	2	0.5		-0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020mirrored	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0							1	1				811228021	801025	811045							0.4	HitCase		0				1	1					
+81122801	M-08-瞬间炮击	2	0.5		0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0	5000		1	81122804	1		1	1				811228011	801025	811045							0.4	HitCase		0				1	1					
+81122802	M-08-瞬间炮击	2	0.5		-0.8	2	10			4	1	3		1	1		FxDibingShouji			Bone020mirrored	FxMbMsMd040011Attack24Dandao		1	0.9	FxMbMsMd040011Attack2406M	1					0	0	0	0	5000		1	81122804	1		1	1				811228021	801025	811045							0.4	HitCase		0				1	1					
 81122804	M-08-瞬间炮击-烈焰区域	2	2.5				0			4		5			-1	1			0.3		FxMbMsMd040011Attack240106M		-1			1	0				0	0	0	2							0	1					801005								0	HitCase		0					0					
 81122901	M-09-地狱火-给1个目标添加标记 812002	2	99				0			4		0.1			1								1			1					0	0	0	0							0	1													0	HitCase		0					0					
 81122903	预警特效	2	2				100			4	1	3			-1						FxMbMsMd040011Attack17Yujing4M3S		-1			1					0	0	0	1	3		1	81122906			0	1													0	HitCase		0	1				0					

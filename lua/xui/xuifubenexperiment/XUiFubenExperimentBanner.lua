@@ -17,8 +17,8 @@ end
 function XUiFubenExperimentBanner:InitUiObjects()
     XTool.InitUiObject(self)
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnModelSwitch, "onClick", self.OnBtnModelSwitchClick)
-    self:RegisterListener(self.BtnEnter, "onClick", self.OnBtnEnter)
+    XUiHelper.RegisterClickEvent(self, self.BtnModelSwitch, self.OnBtnModelSwitchClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnEnter, self.OnBtnEnter)
 end
 
 function XUiFubenExperimentBanner:RegisterListener(uiNode, eventName, func)

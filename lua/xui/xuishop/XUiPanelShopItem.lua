@@ -1,9 +1,7 @@
 XUiPanelShopItem = XClass()
 
 local MAX_COUNT = CS.XGame.Config:GetInt("ShopBuyGoodsCountLimit")
-
 function XUiPanelShopItem:Ctor(ui, parent, rootUi)
-    self.IsFinishShowPanel = false
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.Parent = parent
@@ -15,6 +13,13 @@ function XUiPanelShopItem:Ctor(ui, parent, rootUi)
     table.insert(self.Price, self.PanelCostItem1)
     table.insert(self.Price, self.PanelCostItem2)
     table.insert(self.Price, self.PanelCostItem3)
+    
+    self.WgtBtnAddSelect = self.BtnAddSelect.gameObject:GetComponent("XUiPointer")
+    self.WgtBtnMinusSelect = self.BtnMinusSelect.gameObject:GetComponent("XUiPointer")
+    
+    XUiButtonLongClick.New(self.WgtBtnAddSelect, 100, self, nil, self.BtnAddSelectLongClickCallback, nil, true)
+    XUiButtonLongClick.New(self.WgtBtnMinusSelect, 100, self, nil, self.BtnMinusSelectLongClickCallback, nil, true)
+    
     self.MinCount = 1
 end
 
@@ -65,17 +70,17 @@ function XUiPanelShopItem:RegisterListener(uiNode, eventName, func)
     if listener ~= nil then
         uiNode[eventName]:RemoveListener(listener)
     end
-    
+
     if func ~= nil then
         if type(func) ~= "function" then
             XLog.Error("XUiPanelShopItem:RegisterListener: func is not a function")
         end
-        
+
         listener = function(...)
             XSoundManager.PlayBtnMusic(self.SpecialSoundMap[key], eventName)
             func(self, ...)
         end
-        
+
         uiNode[eventName]:AddListener(listener)
         self.AutoCreateListeners[key] = listener
     end
@@ -83,35 +88,35 @@ end
 
 function XUiPanelShopItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBlock, "onClick", self.OnBtnBlockClick)
-    self:RegisterListener(self.BtnMax, "onClick", self.OnBtnMaxClick)
-    
+    XUiHelper.RegisterClickEvent(self, self.BtnBlock, self.OnBtnBlockClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnMax, self.OnBtnMaxClick)
+
     if self.BtnUse then
         self.BtnUse.CallBack =  function ()
             self:OnBtnUseClick()
         end
     end
-    
+
     if self.BtnAddSelect then
         self.BtnAddSelect.CallBack =  function ()
             self:OnBtnAddSelectClick()
         end
     end
-    
+
     if self.BtnMinusSelect then
         self.BtnMinusSelect.CallBack =  function ()
             self:OnBtnMinusSelectClick()
         end
     end
-    
+
     self.TxtSelect.onValueChanged:AddListener(function()
             self:OnSelectTextChange()
         end)
-    
+
     self.TxtSelect.onEndEdit:AddListener(function()
             self:OnSelectTextInputEnd()
-        end)
-    
+    end)
+
     if self.BtnTanchuangClose then
         self.BtnTanchuangClose.CallBack =  function ()
             self:OnBtnBlockClick()
@@ -124,12 +129,14 @@ function XUiPanelShopItem:SetSelectTextData()
     self.TxtSelect.contentType = CS.UnityEngine.UI.InputField.ContentType.IntegerNumber
 end
 
+-- auto
 function XUiPanelShopItem:OnBtnBlockClick(...)
     self.GameObject:SetActiveEx(false)
 end
 
 function XUiPanelShopItem:OnBtnAddSelectClick(...)
     if self.Count + 1 > self.MaxCount then
+        XDataCenter.EquipManager.ShowBoxOverLimitText()
         return
     end
     self.Count = self.Count + 1
@@ -150,6 +157,41 @@ function XUiPanelShopItem:OnBtnMinusSelectClick(...)
     self:SetCanAddOrMinusBtn()
 end
 
+function XUiPanelShopItem:BtnAddSelectLongClickCallback(time)
+    if self.Count + 1 > self.MaxCount then
+        XDataCenter.EquipManager.ShowBoxOverLimitText()
+        return
+    end
+    
+    local delta = math.max(0, math.floor(time / 150))
+    self.Count = self.Count + delta
+    if self.MaxCount and self.Count >= self.MaxCount then
+        self.Count = self.MaxCount
+    end
+    
+    self:RefreshConsumes()
+    self:JudgeBuy()
+    self.TxtSelect.text = self.Count
+    self:SetCanAddOrMinusBtn()
+end
+
+function XUiPanelShopItem:BtnMinusSelectLongClickCallback(time)
+    if self.Count - 1 < self.MinCount then
+        return
+    end
+    local delta = math.max(0, math.floor(time / 150))
+    self.Count = self.Count - delta
+    if self.Count <= 0 then
+        self.Count = 0
+    end
+    self:RefreshConsumes()
+    self:JudgeBuy()
+    self.TxtSelect.text = self.Count
+    self:SetCanAddOrMinusBtn()
+end
+
+
+
 function XUiPanelShopItem:OnBtnMaxClick(...)
     if self.Count == self.MaxCount then
         return
@@ -162,40 +204,30 @@ function XUiPanelShopItem:OnBtnMaxClick(...)
 end
 
 function XUiPanelShopItem:OnSelectTextChange()
-    if self.IsFinishShowPanel then
-        if self.TxtSelect.text == nil or self.TxtSelect.text == "" then
-            return
-        end
-        if self.TxtSelect.text == "0" then
-            self.TxtSelect.text = 1
-        end  
-        local tmp = tonumber(self.TxtSelect.text)
-        local tmpMax
-        if self.MaxCount then
-            tmpMax = math.min(MAX_COUNT, self.MaxCount)
-        else
-            tmpMax = MAX_COUNT
-        end
-        
-        if tmp > tmpMax then
-            tmp = tmpMax
-            self.TxtSelect.text = tmp
-        end
-        self.Count = tmp
-        self:RefreshConsumes()
-        self:JudgeBuy()
+    if self.TxtSelect.text == nil or self.TxtSelect.text == "" then
+        return
     end
+    if self.TxtSelect.text == "0" then
+        self.TxtSelect.text = 1
+    end
+    local tmp = tonumber(self.TxtSelect.text)
+    local tmpMax = math.max(math.min(MAX_COUNT, self.MaxCount), 1)
+    if tmp > tmpMax then
+        tmp = tmpMax
+        self.TxtSelect.text = tmp
+    end
+    self.Count = tmp
+    self:RefreshConsumes()
+    self:JudgeBuy()
 end
 
 function XUiPanelShopItem:OnSelectTextInputEnd()
-    if self.IsFinishShowPanel then
-        if self.TxtSelect.text == nil or self.TxtSelect.text == "" then
-            self.TxtSelect.text = 1
-            local tmp = tonumber(self.TxtSelect.text)
-            self.Count = tmp
-            self:RefreshConsumes()
-            self:JudgeBuy()
-        end
+    if self.TxtSelect.text == nil or self.TxtSelect.text == "" then
+        self.TxtSelect.text = 1
+        local tmp = tonumber(self.TxtSelect.text)
+        self.Count = tmp
+        self:RefreshConsumes()
+        self:JudgeBuy()
     end
 end
 
@@ -210,21 +242,23 @@ end
 
 function XUiPanelShopItem:OnBtnUseClick(...)
     if self.HaveNotBuyCount then
-        XUiManager.TipText("ShopHaveNotBuyCount")
+        if not XDataCenter.EquipManager.ShowBoxOverLimitText() then
+            XUiManager.TipText("ShopHaveNotBuyCount")
+        end
         return
     end
-    
+
     for k,v in pairs(self.NotEnough or {}) do
         if not XDataCenter.ItemManager.DoNotEnoughBuyAsset(v.ItemId,
                 v.UseItemCount,
                 1,
-                function() 
-                    self:OnBtnUseClick() 
+                function()
+                    self:OnBtnUseClick()
                     end,
                 "BuyNeedItemInsufficient") then
             return
         end
-        self.NotEnough[k] = nil 
+        self.NotEnough[k] = nil
     end
 
     local func = function()
@@ -242,16 +276,15 @@ function XUiPanelShopItem:ShowPanel(data, cb)
     else
         return
     end
-    
+
     if cb then
         self.Cb = cb
     end
-    
+
     self.Count = 1
-    self.TxtSelect.text = self.Count
     self.Consumes = {}
     self.BuyConsumes = {}
-    
+
     XTool.LoopMap(self.Data.ConsumeList, function(k, consume)
         local buyitem = {}
         buyitem.Id = consume.Id
@@ -262,7 +295,7 @@ function XUiPanelShopItem:ShowPanel(data, cb)
         consumes.Count = 0
         table.insert(self.BuyConsumes, consumes)
     end)
-    
+
     self:RefreshCommon()
     self:RefreshPrice()
     self:GetSalesInfo()
@@ -274,7 +307,6 @@ function XUiPanelShopItem:ShowPanel(data, cb)
     self:SetCanAddOrMinusBtn()
     self.GameObject:SetActiveEx(true)
     self.TxtSelect.text = self.Count
-    self.IsFinishShowPanel = true
 end
 
 function XUiPanelShopItem:HaveItem()
@@ -284,12 +316,12 @@ function XUiPanelShopItem:HaveItem()
         local count = XGoodsCommonManager.GetGoodsCurrentCount(self.Data.RewardGoods.TemplateId)
         self.TxtOwnCount.text = CS.XTextManager.GetText("CurrentlyHas", count)
         self.TxtOwnCount.gameObject:SetActiveEx(true)
-    end    
+    end
 end
 
 function XUiPanelShopItem:RefreshCommon()
     self.RImgType.gameObject:SetActiveEx(false)
-    
+
     local rewardGoods = self.Data.RewardGoods
     self.Grid:Refresh(rewardGoods, nil, true)
     self.Grid:ShowCount(true)
@@ -344,7 +376,9 @@ function XUiPanelShopItem:RefreshConsumes()
 end
 
 function XUiPanelShopItem:HidePanel()
-    self.GameObject:SetActiveEx(false)
+    if not XTool.UObjIsNil(self.GameObject) then
+        self.GameObject:SetActiveEx(false)
+    end
 end
 
 
@@ -362,9 +396,9 @@ function XUiPanelShopItem:GetMaxCount()
         table.insert(sortedKeys, k)
     end
     table.sort(sortedKeys)
-    
+
     local leftSalesGoods = MAX_COUNT
-    
+
     for i = 1, #sortedKeys do
         if self.Data.TotalBuyTimes >= sortedKeys[i] - 1 then
             self.Sales = self.OnSales[sortedKeys[i]]
@@ -373,19 +407,19 @@ function XUiPanelShopItem:GetMaxCount()
             break
         end
     end
-    
+
     local leftShopTimes = XShopManager.GetShopLeftBuyTimes(self.Parent:GetCurShopId())
     if not leftShopTimes then
         leftShopTimes = MAX_COUNT
     end
-    
+
     local leftGoodsTimes = MAX_COUNT
     if self.Data.BuyTimesLimit and self.Data.BuyTimesLimit > 0 then
         local buyCount = self.Data.TotalBuyTimes and self.Data.TotalBuyTimes or 0
         leftGoodsTimes = self.Data.BuyTimesLimit - buyCount
     end
-    
     self.MaxCount = math.min(leftGoodsTimes, math.min(leftShopTimes, leftSalesGoods))
+    self.MaxCount = XDataCenter.EquipManager.GetMaxCountOfBoxOverLimit(self.Data.RewardGoods.TemplateId,self.MaxCount,self.Data.RewardGoods.Count)
 end
 
 function XUiPanelShopItem:SetCanBuyCount()
@@ -403,11 +437,11 @@ function XUiPanelShopItem:JudgeBuy()
     if self.HaveNotBuyCount then
         return
     end
-    
+
     local index = 1
     local enoughIndex = {}
     self.NotEnough = {}
-    
+
     for k, v in pairs(self.BuyConsumes) do
         if v.Count > XDataCenter.ItemManager.GetItem(v.Id).Count then
             self:ChangeCostColor(false, index)
@@ -419,7 +453,7 @@ function XUiPanelShopItem:JudgeBuy()
         end
         index = index + 1
     end
-    
+
     for _, v in pairs(enoughIndex) do
         self:ChangeCostColor(true, v)
     end
@@ -432,4 +466,4 @@ function XUiPanelShopItem:ChangeCostColor(bool, index)
     else
         self["TxtCostCount" .. index].color = CS.UnityEngine.Color(1, 0, 0)
     end
-end 
+end

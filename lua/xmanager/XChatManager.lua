@@ -22,7 +22,7 @@ XChatManagerCreator = function()
     local RoomChatList = {}     --保存房间聊天记录
     local LastChatCoolTime = 0
 
-    local MessageId = -1         --离线消息
+    local MessageId = -1        --离线消息
     local OfflineMessageTag = "OfflineRecordMessage_"
 
     local LastRequestChannelTime = 0
@@ -452,7 +452,7 @@ XChatManagerCreator = function()
         if time == nil then
             return false
         end
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         return curTime - time <= REMOVE_CHAT_RECORD_OF_DAY * 24 * 60 * 60
     end
 
@@ -516,7 +516,7 @@ XChatManagerCreator = function()
     end
 
     function XChatManager.CheckCd()
-        if LastChatCoolTime > 0 and LastChatCoolTime + CHAT_INTERVAL_TIME > XTime.Now() then
+        if LastChatCoolTime > 0 and LastChatCoolTime + CHAT_INTERVAL_TIME > XTime.GetServerNowTimestamp() then
             XUiManager.TipCode(XCode.ChatManagerRefreshTimeCooling)
             return false
         end
@@ -533,14 +533,14 @@ XChatManagerCreator = function()
 
                 if chatData.ChannelType  == ChatChannelType.World then
                     if cb then
-                        cb(CHAT_INTERVAL_TIME + LastChatCoolTime - XTime.Now(), response.ChatData)
+                        cb(CHAT_INTERVAL_TIME + LastChatCoolTime - XTime.GetServerNowTimestamp(), response.ChatData)
                     end
                 end
                 return
             end
 
             if cb then
-                cb(CHAT_INTERVAL_TIME + LastChatCoolTime - XTime.Now(), response.ChatData)
+                cb(CHAT_INTERVAL_TIME + LastChatCoolTime - XTime.GetServerNowTimestamp(), response.ChatData)
             end
         end)
     end

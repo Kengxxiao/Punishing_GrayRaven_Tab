@@ -56,7 +56,7 @@ end
 
 function XUiGridDeviceState:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOk, "onClick", self.OnBtnOkClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnOk, self.OnBtnOkClick)
 end
 -- auto
 

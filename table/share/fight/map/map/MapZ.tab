@@ -1,5 +1,5 @@
 Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCamera	CameraId	Terrains[1]	Terrains[2]	Terrains[3]	Position[1]	Position[2]	Position[3]	Rotation[1]	Rotation[2]	Rotation[3]
-90090001	90090001				0.15	15	1	9	900900010			0|0|0			0|0|0		
+90090001	90090001				0.15	15	2	9	900900010			0|0|0			0|0|0		
 90090002	90090002				0.15	15	1	9	900900020			0|0|0			0|0|0		
 90090004	90090004				0.15	15	1	9	900900040			0|0|0			0|0|0		
 90095462	90095462				0.15	15	1	9	900954620			0|0|0			0|0|0		

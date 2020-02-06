@@ -87,3 +87,7 @@ end
 function XServerManager.GetServerList(  )
     return ServerList
 end
+
+function XServerManager.GetCurServerName(  )
+    return XServerManager.ServerName
+end

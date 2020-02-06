@@ -61,8 +61,8 @@ end
 
 function XUiRegister:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnSignIn, "onClick", self.OnBtnSignInClick)
-    self:RegisterListener(self.BtnCancel, "onClick", self.OnBtnCancelClick)
+    self:RegisterClickEvent(self.BtnSignIn, self.OnBtnSignInClick)
+    self:RegisterClickEvent(self.BtnCancel, self.OnBtnCancelClick)
 end
 -- auto
 

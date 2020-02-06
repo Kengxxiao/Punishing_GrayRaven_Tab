@@ -24,23 +24,24 @@ function XUiUsePackage:OnDestroy()
 end
 
 function XUiUsePackage:AddBtnCallBack()
-    self.BtnCancel.CallBack = function()
+    self.BtnCancel.CallBack = function ()
         self:OnBtnCancelClick()
     end
-    self.BtnConfirm.CallBack = function()
+    self.BtnConfirm.CallBack = function ()
         self:OnBtnConfirmClick()
     end
-    self.BtnTanchuangClose.CallBack = function()
+    self.BtnTanchuangClose.CallBack = function ()
         self:OnBtnCloseClick()
     end
-    self.BtnElectricExchange.CallBack = function()
+    self.BtnElectricExchange.CallBack = function ()
         self:OnBtnShowTypeClick()
     end
 end
 -- auto
+
 function XUiUsePackage:OnBtnShowTypeClick(...)
     self:Close()
-    XLuaUiManager.Open("UiBuyAsset", self.Id, self.SuccessCallback, self.ChallegeCountData, self.BuyAmount)
+    XLuaUiManager.Open("UiBuyAsset", self.Id,self.SuccessCallback,self.ChallegeCountData,self.BuyAmount)
 end
 
 function XUiUsePackage:OnBtnCloseClick(...)
@@ -55,7 +56,7 @@ function XUiUsePackage:SetPanelType(targetId)
     self.Data = XDataCenter.ItemManager.GetBuyAssetInfo(targetId)
     self.TxtElectricDesc.gameObject:SetActiveEx(false)
     self.TxtElectricNumPackage.gameObject:SetActiveEx(true)
-
+    
     if self.Data.TargetId == XDataCenter.ItemManager.ItemId.ActionPoint then
         if not XDataCenter.ItemManager.CheakBatteryIsHave() then
             self.ImgEmpty.gameObject:SetActiveEx(true)
@@ -71,20 +72,20 @@ function XUiUsePackage:SetPanelType(targetId)
         if not self.SelectItem then
             self.TxtElectricNumPackage.text = 0
         end
-
+        
         self:SetupDynamicTable()
     end
 end
 
 function XUiUsePackage:SetRecTime()
-
+    
     local time = XDataCenter.ItemManager.GetActionPointsRefreshResidueSecond()
-    self.TxtRecoverTime.text = CS.XTextManager.GetText("RecActPoint", XUiHelper.GetTime(time, XUiHelper.TimeFormatType.ONLINE_BOSS))
+    self.TxtRecoverTime.text = CS.XTextManager.GetText("RecActPoint",XUiHelper.GetTime(time,XUiHelper.TimeFormatType.ONLINE_BOSS))
     self.TxtCurrentElectric.text = XDataCenter.ItemManager.GetActionPointsNum() .. "/" .. XDataCenter.ItemManager.GetMaxActionPoints()
     if time == 0 then
         self.TxtRecoverTime.text = ""
     end
-
+    
 end
 
 function XUiUsePackage:OnBtnConfirmClick(...)
@@ -96,12 +97,13 @@ function XUiUsePackage:OnBtnConfirmClick(...)
             end
             if self.SuccessCallback then
                 self.SuccessCallback()
-            end
+            end 
             XUiManager.OpenUiObtain(rewardGoodsList, CS.XTextManager.GetText("CongratulationsToObtain"))
-
+            
         end
         if not self:CheakActionPointOverLimit() then
-            XDataCenter.ItemManager.Use(self.SelectItem.Data.Id, self.SelectItem.RecycleBatch and self.SelectItem.RecycleBatch.RecycleTime, 1, callback)
+            local recycleTime = self.SelectItem.RecycleBatch and self.SelectItem.RecycleBatch.RecycleTime
+            XDataCenter.ItemManager.Use(self.SelectItem.Data.Id, recycleTime, 1, callback)
         else
             XUiManager.TipError(CS.XTextManager.GetText("OverLimitCanNotUse"))
         end
@@ -135,11 +137,11 @@ end
 
 function XUiUsePackage:OnDynamicTableEvent(event, index, grid)
     if event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_INIT then
-
+        
     elseif event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_ATINDEX then
-        grid:UpdateGrid(self.BatteryDatas[index], self)
+        grid:UpdateGrid(self.BatteryDatas[index],self)
     elseif event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_TOUCHED then
-
+        
     elseif event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_RECYCLE then
         grid:OnRecycle()
     end

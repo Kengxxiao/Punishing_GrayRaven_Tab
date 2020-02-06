@@ -34,7 +34,7 @@ end
 
 function XUiGridCreate:AddBtnsListeners()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnCheck, "onClick", self.OnBtnCheckClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCheck, self.OnBtnCheckClick)
 end
 
 function XUiGridCreate:RegisterListener(uiNode, eventName, func)
@@ -74,7 +74,7 @@ function XUiGridCreate:UpdateCreate()
     if not self.Cfg then return end
     local createDatas = XDataCenter.FurnitureManager.GetFurnitureCreateItemByPos(self.Cfg.Pos)
     
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
 
     if createDatas then
         --这个坑位正在创造或者已经创造完成
@@ -167,7 +167,7 @@ end
 function XUiGridCreate:GetProgress()
     if not self.Cfg then return 0 end
     local createDatas = XDataCenter.FurnitureManager.GetFurnitureCreateItemByPos(self.Cfg.Pos)
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     if not createDatas then return 0 end
     
     local configId = createDatas.Furniture.ConfigId

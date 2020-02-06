@@ -48,8 +48,6 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 900032000	AddNpcState	2																													
 900033	AddBuff	900033																													
 900033000	AddBehavior	900033																													
-900034	AddBuff	900034																													
-900034000	AddBehavior	900034																													
 900035	AddBuff	900035																													
 900050	AddBuff	900050																													
 900050000	AddBehavior	900050																													
@@ -171,6 +169,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 900706	AddBuff	900706																													
 900707	AddBuff	900707																													
 900708	AddBuff	900708																													
+900709	AddBuff	900709																													
 970001	AddBuff	970001																													
 970002	AddBuff	970002																													
 970003	AddBuff	970003																													

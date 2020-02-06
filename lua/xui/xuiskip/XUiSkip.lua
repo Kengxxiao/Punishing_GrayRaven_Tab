@@ -5,13 +5,17 @@ function XUiSkip:OnAwake()
 end
 
 function XUiSkip:OnStart(templateId, skipCb, hideSkipBtn)
+    self.TemplateId = templateId
     self.SkipCb = skipCb
     self.HideSkipBtn = hideSkipBtn
     self.GridPool = {}
     local musicKey = self:GetAutoKey(self.BtnBack, "onClick")
     self.SpecialSoundMap[musicKey] = XSoundManager.UiBasicsMusic.Return
-    self:Refresh(templateId)
-    XUiHelper.PlayAnimation(self, "AniSkip")
+    self:PlayAnimation("AniSkip")
+end
+
+function XUiSkip:OnEnable()
+    self:Refresh(self.TemplateId)
 end
 
 -- auto
@@ -55,7 +59,7 @@ end
 
 function XUiSkip:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
 end
 -- auto
 function XUiSkip:OnBtnBackClick(...)

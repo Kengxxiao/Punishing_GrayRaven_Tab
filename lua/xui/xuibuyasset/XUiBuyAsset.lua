@@ -10,16 +10,16 @@ function XUiBuyAsset:OnStart(id, successCallback, challegeCountData, buyAmount)
         self:RefreshChallegeCount(challegeCountData)
         return
     end
-    
+   
     self.Id = id
     self:Refresh(id)
     self:FreshCallBack(id)
     self:AutoAddListener()
-    
+
 end
 
 function XUiBuyAsset:OnDestroy()
-    
+
 end
 
 function XUiBuyAsset:AutoAddListener()
@@ -49,14 +49,14 @@ end
 
 function XUiBuyAsset:FreshCallBack(id)
     XDataCenter.ItemManager.AddBuyTimesUpdateListener(id, function(targetId)
-            if self.Data.LeftTimes == 0 then
-                return
-            end
-            if targetId ~= self.Data.TargetId then
-                return
-            end
-            self:Refresh(targetId)
-        end, self.PanelInfo, self.gameObject)
+        if self.Data.LeftTimes == 0 then
+            return
+        end
+        if targetId ~= self.Data.TargetId then
+            return
+        end
+        self:Refresh(targetId)
+    end, self.PanelInfo, self.gameObject)
 end
 
 function XUiBuyAsset:OnBtnCancelClick(...)
@@ -68,21 +68,21 @@ function XUiBuyAsset:OnBtnConfirmClick(...)
         self:OnBtnChallegeCountClick()
         return
     end
-    
+
     if not XDataCenter.ItemManager.CheckItemCountById(self.Data.ConsumeId, self.Data.ConsumeCount) then
         local itemName = XDataCenter.ItemManager.GetItemName(self.Data.ConsumeId)
         local text = CS.XTextManager.GetText('AssetsBuyConsumeNotEnough', itemName)
         XUiManager.TipMsg(text, XUiManager.UiTipType.Tip)
         return
     end
-    
+
     if self.Data.LeftTimes == 0 then
         local itemName = XDataCenter.ItemManager.GetItemName(self.Data.ConsumeId)
         local text = CS.XTextManager.GetText('BuyCountIsNotEnough', itemName)
         XUiManager.TipMsg(text, XUiManager.UiTipType.Tip)
         return
     end
-    
+
     local callback = function(targetId, targetCount)
         local name = XDataCenter.ItemManager.GetItemName(targetId)
         if (self.Data.ConsumeId == XDataCenter.ItemManager.ItemId.FreeGem or
@@ -134,17 +134,17 @@ function XUiBuyAsset:Refresh(targetId)
     local curStateIcon = XDataCenter.ItemManager.GetItemIcon(self.Data.ConsumeId)
     local curStateName = CS.XTextManager.GetText("AtPresent")
     local curStateCount = num
-    
+
     -- 消耗道具信息
     local consumeIcon = XDataCenter.ItemManager.GetItemIcon(self.Data.ConsumeId)
     local consumeName = XDataCenter.ItemManager.GetItemName(self.Data.ConsumeId)
     local consumeCount = self.Data.ConsumeCount * (self.BuyAmount or 1)
-    
+
     -- 获取道具信息
     local targetIcon = XDataCenter.ItemManager.GetItemIcon(self.Data.TargetId)
     local targetName = XDataCenter.ItemManager.GetItemName(self.Data.TargetId)
     local targetCount = self.Data.TargetCount* (self.BuyAmount or 1)
-    
+
     -- 修改Ui
     self.TxtCurStateName.text = curStateName
     self.TxtCurStateCount.text = curStateCount
@@ -171,24 +171,24 @@ end
 
 function XUiBuyAsset:RefreshChallegeCount(challegeCountData)
     self.ChallegeCountData = challegeCountData
-    
+
     local active = self.ChallegeCountData.BuyCount < self.ChallegeCountData.BuyChallengeCount
     self.PanelInfo.gameObject:SetActiveEx(active)
     self.PanelMax.gameObject:SetActiveEx(not active)
     self.BtnCancel.gameObject:SetActiveEx(active)
     self.BtnConfirm.gameObject:SetActiveEx(active)
-    
+
     local num = (self.ChallegeCountData.MaxChallengeNums - self.ChallegeCountData.PassTimesToday) .. " / " .. self.ChallegeCountData.MaxChallengeNums
-    
+
     local curStateName = CS.XTextManager.GetText("CanChallegeCount")
     local curStateCount = "<color=#FA774FFF>" .. num .. "</color>"
-    
+
     local consumeName = XDataCenter.ItemManager.GetItemName(XDataCenter.ItemManager.ItemId.FreeGem)
     local consumeCount = self.ChallegeCountData.BuyChallengeCost
-    
+
     local targetCount = 1
     local targetName = CS.XTextManager.GetText("BuyChallegeDesc")
-    
+
     self.TxtCurStateName.text = curStateName
     self.TxtCurStateCount.text = curStateCount
     self.TxtTimes.text = self.ChallegeCountData.BuyChallengeCount - self.ChallegeCountData.BuyCount
@@ -205,7 +205,7 @@ function XUiBuyAsset:OnBtnChallegeCountClick()
         XUiManager.TipMsg(text, XUiManager.UiTipType.Tip)
         return
     end
-    
+
     local callback = function()
         local name = CS.XTextManager.GetText("BuyChallegeDesc")
         XUiManager.TipMsg(CS.XTextManager.GetText("Buy") .. CS.XTextManager.GetText("Success") .. "," .. CS.XTextManager.GetText("Acquire") .. 1 .. name, XUiManager.UiTipType.Tip)

@@ -44,7 +44,10 @@ function XUiFuben:InitTabBtnGroup()
     self.BtnTabActivity:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.FubenActivity))
     self.BtnTabChallenge:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.FubenChallenge))
     self.BtnTabDaily:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.FubenDaily))
-
+    
+    self.BtnTabChallenge.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenChallenge))
+    self.BtnTabDaily.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenDaily))
+    
     local tabGroup = {
         self.BtnTabActivity,
         self.BtnTabChallenge,
@@ -75,7 +78,7 @@ function XUiFuben:OnClickTabCallBack(tabIndex)
         if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.FubenChallenge) then
             return
         end
-        self.BtnTrial.gameObject:SetActive(true)
+        self.BtnTrial.gameObject:SetActive(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenActivityTrial))
         self:OpenOneChildUi("UiFubenChallengeBanner", true)
     elseif tabIndex == self.BtnTabIndex.Daily then
         if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.FubenDaily) then
@@ -201,7 +204,7 @@ function XUiFuben:OnBtnBackClick(...)
     if not self.IsLoadFinish then
         return
     end
-    CsXUiManager.Instance:Pop()
+    self:Close()
 end
 
 function XUiFuben:OnBtnMainUiClick(...)

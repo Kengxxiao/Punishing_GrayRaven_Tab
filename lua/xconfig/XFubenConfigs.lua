@@ -60,7 +60,6 @@ function XFubenConfigs.GetStageTransformCfg()
     return StageTransformCfg
 end
 
-
 function XFubenConfigs.GetFlopRewardTemplates()
     return FlopRewardTemplates
 end

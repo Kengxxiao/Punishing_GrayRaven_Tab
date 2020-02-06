@@ -10,7 +10,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 970102	20|Cast|97010201	23|Cast|97010202	0|Effect|FxMe1SpiderMd000001Attack02||1	41|Magic|970102|0																																																																												
 970103	22|Cast|97010301	10|Cast|97010303	18|Cast|97010304	0|Effect|FxMe1SpiderMd000001Attack03Effectcase|EffectCase1|1																																																																												
 970104	41|Cast|97010401	46|Cast|97010402	52|Cast|97010403	58|Cast|97010404	63|Cast|97010405	0|Effect|FxMe1SpiderMd000001Attack04Effectcase|EffectCase1|1	41|Cast|97010417	46|Cast|97010418	52|Cast|97010419	58|Cast|97010420	63|Cast|97010421																																																																					
-970105	6|Cast|97010501	0|Cast|97010502	0|Effect|FxMe1SpiderMd000001Buff02Bone22|Bone22|1																																																																													
+970105	20|Cast|97010501|97010502	0|Effect|FxMe1SpiderMd000001Buff02Bone22|Bone22|1																																																																														
 970106																																																																																
 970107	22|Magic|970004|0																																																																															
 970108																																																																																

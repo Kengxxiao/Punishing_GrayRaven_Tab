@@ -46,7 +46,7 @@ end
 
 function XUiHostelDeviceUpgrading:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
 end
 -- auto
 
@@ -79,7 +79,7 @@ end
 
 function XUiHostelDeviceUpgrading:Update()
     if self.EndUpgradTime and self.EndUpgradTime > 0 then
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         local leftTime = self.EndUpgradTime - curTime
         if leftTime < 0 then
             leftTime = 0

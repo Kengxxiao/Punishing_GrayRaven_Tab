@@ -1,5 +1,5 @@
 local CSXTextManagerGetText = CS.XTextManager.GetText
-
+local DefaultTab = 1
 XUiMainRightMid = XClass()
 
 function XUiMainRightMid:Ctor(rootUi)
@@ -22,7 +22,10 @@ function XUiMainRightMid:Ctor(rootUi)
     XRedPointManager.AddRedPointEvent(self.BtnDispatch.ReddotObj, self.OnCheckDispatchNews, self, { XRedPointConditions.Types.CONDITION_MAIN_DISPATCH })
     XRedPointManager.AddRedPointEvent(self.BtnTarget.ReddotObj, self.OnCheckTargetNews, self, { XRedPointConditions.Types.CONDITION_MAIN_NEWPLAYER_TASK })
     XRedPointManager.AddRedPointEvent(self.BtnBuilding.ReddotObj, self.OnCheckBuildingNews, self, { XRedPointConditions.Types.CONDITION_DORM_RED })
+    --XRedPointManager.AddRedPointEvent(self.BtnReward.ReddotObj, self.OnCheckARewardNews, self, { XRedPointConditions.Types.CONDITION_ACTIVITYDRAW_RED })
     XRedPointManager.AddRedPointEvent(self.BtnActivityBrief, self.OnCheckActivityBriefRedPoint, self, { XRedPointConditions.Types.CONDITION_ACTIVITY_BRIRF_TASK_FINISHED })
+    --Filter
+    self:CheckFilterFunctions()
 end
 
 function XUiMainRightMid:OnEnable()
@@ -37,7 +40,7 @@ function XUiMainRightMid:OnEnable()
     --初始化是否锁定
     self.BtnBuilding:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.LivingQuarters))
     self.BtnReward:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.DrawCard))
-    if self.BtnTarget then
+    if self.BtnTarget and (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipTarget)) then
         self.BtnTarget.gameObject:SetActive(XDataCenter.TaskManager.CheckNewbieTaskAvaliable())
     end
     XDataCenter.DormManager.StartDormRedTimer()
@@ -55,6 +58,17 @@ function XUiMainRightMid:OnNotify(evt)
         --更新派遣
         self:SetupDispatch()
     end
+end
+
+function XUiMainRightMid:CheckFilterFunctions()
+    self.BtnTarget.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipTarget))
+    self.BtnTask.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Task))
+    self.BtnBuilding.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.LivingQuarters))
+    self.BtnDispatch.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Dispatch))
+    self.BtnReward.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.DrawCard))
+    self.BtnSkipTask.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskStory))
+    self.BtnActivityBrief.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.ActivityBrief))
+    self.BtnDispatch.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Dispatch))
 end
 
 --新手目标入口
@@ -125,7 +139,8 @@ function XUiMainRightMid:OnBtnReward()
     if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.DrawCard) then
         return
     end
-    XLuaUiManager.Open("UiDrawMain")
+    XDataCenter.DrawManager.MarkActivityDraw()
+    XLuaUiManager.Open("UiDrawMain", DefaultTab)
 end
 
 function XUiMainRightMid:CheakDrawTag()
@@ -268,14 +283,14 @@ end
 --         self:StopMissionTimer()
 --         return
 --     end
---     local curTime = XTime.Now()
+--     local curTime = XTime.GetServerNowTimestamp()
 --     local completeTime = self.TaskforeInfo.UtcFinishTime
 --     if not self.TxtDispatchTime:Exist() then
 --         return
 --     end
 --     local offset = completeTime - curTime
 --     if offset > 0 then
---         self.TxtDispatchTime.text = CS.XDate.GetTimeString(offset)
+--         self.TxtDispatchTime.text = CS.XDateUtil.SecondsToTimeString(offset)
 --     else
 --         self.TxtDispatchTime.text = "00:00:00"
 --         local taskforeInfo = XDataCenter.TaskForceManager.GetLatelyTaskForeInfo()
@@ -333,6 +348,11 @@ end
 --活动简介红点
 function XUiMainRightMid:OnCheckActivityBriefRedPoint(count)
     self.BtnActivityBrief:ShowReddot(count >= 0)
+end
+
+--研发红点
+function XUiMainRightMid:OnCheckARewardNews(count)
+    self.BtnReward:ShowReddot(count >= 0)
 end
 
 --研发活动标签

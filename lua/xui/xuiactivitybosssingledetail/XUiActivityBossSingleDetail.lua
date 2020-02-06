@@ -14,6 +14,7 @@ function XUiActivityBossSingleDetail:OnStart(challengeId)
     self.ChallengeId = challengeId
     self.GridList = {}
     XEventManager.AddEventListener(XEventId.EVENT_ENTER_FIGHT, self.OnBtnBackClick, self)
+    self:GetSceneRoot()
 
     self:Refresh(self.ChallengeId)
 end

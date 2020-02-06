@@ -208,6 +208,19 @@ XTeamManagerCreator = function()
         end
         return teamData
     end
+    
+    function XTeamManager.GetTeamCaptainPos(teamId)
+        if TeamTypeCfg[teamId] == nil then
+            XLog.Error("team teamid error!")
+            return
+        end
+
+        local captainPos = XTeamManager.GetCaptainPos()
+        if PlayerTeamGroupData[teamId] ~= nil then
+            captainPos = PlayerTeamGroupData[teamId].CaptainPos
+        end
+        return captainPos
+    end
 
     function XTeamManager.GetTeamCaptainId(teamId)
         if TeamTypeCfg[teamId] == nil then

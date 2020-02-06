@@ -45,9 +45,9 @@ function XChatData:Ctor(chatData)
 end
 
 function XChatData:GetSendTime()
-    local curTime = os.date("%Y/%m/%d", XTime.Now())
-    local sendTime = os.date("%Y/%m/%d", self.CreateTime)
-    local time1 = os.date("%H:%M:%S", self.CreateTime)
+    local curTime = XTime.TimestampToGameDateTimeString(XTime.GetServerNowTimestamp(), "yyyy/MM/dd")
+    local sendTime = XTime.TimestampToGameDateTimeString(self.CreateTime, "yyyy/MM/dd")
+    local time1 = XTime.TimestampToGameDateTimeString(self.CreateTime, "HH:mm:ss")
     local time = curTime == sendTime and time1 or sendTime .. '    ' .. time1
    return time1
 end

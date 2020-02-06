@@ -1,10 +1,9 @@
 local XUiNewRoomSingle = XLuaUiManager.Register(XLuaUi, "UiNewRoomSingle")
 
-local MAX_FIREND_HELP = 2
--- 当下战斗里面位置写死1号位为队长 如之后战斗里面改为队长位跟随配置表 这里顺序都改为 123
-local CHAR_POS1 = 2
-local CHAR_POS2 = 1
+local CHAR_POS1 = 1
+local CHAR_POS2 = 2
 local CHAR_POS3 = 3
+local MAX_FIREND_HELP = 2
 local MAX_CHAR_COUNT = 3
 local LONG_CLICK_TIME = 0
 local TIMER = 1
@@ -13,6 +12,7 @@ local LOAD_TIME = 10
 function XUiNewRoomSingle:OnAwake()
     self:AutoAddListener()
     self.PanelTip.gameObject:SetActive(false)
+    self.ImgRoleRepace.gameObject:SetActive(false)
 end
 
 function XUiNewRoomSingle:OnStart(stageId, suggestedConditionIds, forceConditionIds, eventIds)
@@ -25,71 +25,22 @@ function XUiNewRoomSingle:OnStart(stageId, suggestedConditionIds, forceCondition
     self.TypeIdExplore = CS.XGame.Config:GetInt("TypeIdExplore")
     self.StageCfg = XDataCenter.FubenManager.GetStageCfg(stageId)
     self.StageInfos = XDataCenter.FubenManager.GetStageInfo(stageId)
-
     self.BtnShowInfoToggle.CallBack = function(val) self:OnBtnShowInfoToggle(val) end
-
-    self.ImgAddList = {
-        self.ImgAdd2,
-        self.ImgAdd1,
-        self.ImgAdd3
-    }
     self.ChangeCharIndex = 0
-
-    self.RoleModelPanelList = {
-        XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel2"), self.Name, nil, true, nil, true, true),
-        XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel1"), self.Name, nil, true, nil, true, true),
-        XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel3"), self.Name, nil, true, nil, true, true)
-    }
-
-    self.PanelLeaderPos = {
-        CS.UnityEngine.Vector2(140, -250), -- 2
-        CS.UnityEngine.Vector2(-500, -145), -- 1
-        CS.UnityEngine.Vector2(700, -145) -- 3
-    }
-
-    self.PanelRoleEffect2 = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect2")
-    self.PanelRoleEffect1 = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect1")
-    self.PanelRoleEffect3 = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect3")
-
-    self.PanelRoleEffect = {
-        self.PanelRoleEffect2,
-        self.PanelRoleEffect1,
-        self.PanelRoleEffect3
-    }
-    self.PanelStaminaList = {
-        [1] = {
-            PanelStamina = self.PanelStaminaBar2,
-            ImgStaminaFill = self.ImgStaminaExpFill2,
-            TxtMyStamina = self.TxtMyStamina2
-        },
-        [2] = {
-            PanelStamina = self.PanelStaminaBar1,
-            ImgStaminaFill = self.ImgStaminaExpFill1,
-            TxtMyStamina = self.TxtMyStamina1
-        },
-        [3] = {
-            PanelStamina = self.PanelStaminaBar3,
-            ImgStaminaFill = self.ImgStaminaExpFill3,
-            TxtMyStamina = self.TxtMyStamina3
-        }
-    }
 
     self.PanelCharacterInfo = {
         [1] = {
-            CharacterInfo = self.CharacterInfo2,
-            TxtFight = self.TxtFight2,
-            RImgType = self.RImgType2
+            PanelRoleEffect = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect1"),
+            RoleModelPanel = XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel1"), self.Name, nil, true, nil, true, true),
         },
         [2] = {
-            CharacterInfo = self.CharacterInfo1,
-            TxtFight = self.TxtFight1,
-            RImgType = self.RImgType1
+            PanelRoleEffect = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect2"),
+            RoleModelPanel = XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel2"), self.Name, nil, true, nil, true, true),
         },
         [3] = {
-            CharacterInfo = self.CharacterInfo3,
-            TxtFight = self.TxtFight3,
-            RImgType = self.RImgType3
-        }
+            PanelRoleEffect = self:GetSceneRoot().transform:FindTransform("PanelRoleEffect3"),
+            RoleModelPanel = XUiPanelRoleModel.New(self:GetSceneRoot().transform:FindTransform("PanelRoleModel3"), self.Name, nil, true, nil, true, true),
+        },
     }
 
     -- 默认助战为关闭状态
@@ -101,11 +52,15 @@ function XUiNewRoomSingle:OnStart(stageId, suggestedConditionIds, forceCondition
     self.RectTransform = self.Transform:GetComponent("RectTransform")
     self:InitInfo()
 
-    XCameraHelper.SetUiCameraParam(self.Name)
     XEventManager.AddEventListener(XEventId.EVENT_TEAM_PREFAB_SELECT, self.UpdateTeam, self)
     XEventManager.AddEventListener(XEventId.EVENT_FIGHT_BEGIN_PLAYMOVIE, self.OnOpenLoadingOrBeginPlayMovie, self)
     XEventManager.AddEventListener(XEventId.EVENT_FIGHT_LOADINGFINISHED, self.OnOpenLoadingOrBeginPlayMovie, self)
     XEventManager.AddEventListener(XEventId.EVENT_TEAM_PREFAB_CHANGE, self.OnTeamChange, self)
+end
+
+function XUiNewRoomSingle:OnEnable()
+    self:InitFightControl()
+    self:InitCharacterInfo()
 end
 
 function XUiNewRoomSingle:OnDisable()
@@ -121,6 +76,62 @@ function XUiNewRoomSingle:OnDestroy()
     XEventManager.RemoveEventListener(XEventId.EVENT_TEAM_PREFAB_CHANGE, self.OnTeamChange, self)
 end
 
+function XUiNewRoomSingle:InitInfo()
+    self:InitTeamData()
+    self:InitPanelTeam()
+    self:SetWeakness()
+    self:InitBtnLongClicks()
+    self:SetCondition()
+    self:SetStageInfo()
+    self:InitEndurance()
+    --更新战力限制提示
+    self:InitFightControl()
+    --更新战斗信息
+    self:InitCharacterInfo()
+    self:InitCaptainTabBtns()
+
+    if self.StageInfos.HaveAssist == 1 then
+        self:ShowAssistToggle(true)
+        -- 保存玩家选择助战状态
+        local assistSwitch = CS.UnityEngine.PlayerPrefs.GetInt(XPrefs.AssistSwitch .. XPlayer.Id)
+        if assistSwitch == nil or assistSwitch == 0 then
+            self:SetAssistStatus(false)
+        else
+            self:SetAssistStatus(true)
+        end
+
+    else
+        self:ShowAssistToggle(false)
+        self:SetAssistStatus(false)
+    end
+    -- end
+end
+
+function XUiNewRoomSingle:InitCaptainTabBtns()
+    if self.HasRobot then
+        self.PanelTeamLeader.gameObject:SetActiveEx(false)
+        return        
+    end
+
+    local tabGroup = {
+        self.BtnRed,
+        self.BtnBlue,
+        self.BtnYellow,
+    }
+    self.PanelTabCaptain:Init(tabGroup, function(tabIndex) self:OnClickTabCallBack(tabIndex) end)
+    self.PanelTabCaptain:SelectIndex(self.CurTeam.CaptainPos)
+end
+
+function XUiNewRoomSingle:OnClickTabCallBack(tabIndex)
+    local captainPos = self.CurTeam.CaptainPos
+    if captainPos == tabIndex then
+        return
+    end
+    self.CurTeam.CaptainPos = tabIndex
+    XDataCenter.TeamManager.SetPlayerTeam(self.CurTeam, false)
+    self:InitPanelTeam()
+end
+
 function XUiNewRoomSingle:OnTeamChange()
     --更新战力限制提示
     self:InitFightControl()
@@ -128,11 +139,6 @@ end
 
 function XUiNewRoomSingle:OnOpenLoadingOrBeginPlayMovie()
     self:Remove()
-end
-
-function XUiNewRoomSingle:OnEnable()
-    self:InitFightControl()
-    self:InitCharacterInfo()
 end
 
 function XUiNewRoomSingle:AutoAddListener()
@@ -153,10 +159,7 @@ function XUiNewRoomSingle:OnBtnTeamPrefabClick(...)
     if self:CheckHasRobot() then
         return
     end
-    XLuaUiManager.Open("UiRoomTeamPrefab", function(resTeam)
-        self:UpdateTeam(resTeam)
-    end)
-
+    XLuaUiManager.Open("UiRoomTeamPrefab", self.CurTeam.CaptainPos)
 end
 
 function XUiNewRoomSingle:OnBtnShowInfoToggle(val)
@@ -180,38 +183,6 @@ function XUiNewRoomSingle:OnBtnAssistToggleClick(state)
     else
         self:PlayTips("FightAssistClose", false)
     end
-end
-
-function XUiNewRoomSingle:InitInfo()
-    self.ImgRoleRepace.gameObject:SetActive(false)
-    self:InitTeamData()
-    self:InitPanelTeam()
-    self:SetWeakness()
-    self:RefreshCaptainSkill()
-    self:InitBtnLongClicks()
-    self:SetCondition()
-    self:SetStageInfo()
-    self:InitEndurance()
-    --更新战力限制提示
-    self:InitFightControl()
-    --更新战斗信息
-    self:InitCharacterInfo()
-
-    if self.StageInfos.HaveAssist == 1 then
-        self:ShowAssistToggle(true)
-        -- 保存玩家选择助战状态
-        local assistSwitch = CS.UnityEngine.PlayerPrefs.GetInt(XPrefs.AssistSwitch .. XPlayer.Id)
-        if assistSwitch == nil or assistSwitch == 0 then
-            self:SetAssistStatus(false)
-        else
-            self:SetAssistStatus(true)
-        end
-
-    else
-        self:ShowAssistToggle(false)
-        self:SetAssistStatus(false)
-    end
-    -- end
 end
 
 function XUiNewRoomSingle:SetBossSingleInfo()
@@ -240,9 +211,9 @@ function XUiNewRoomSingle:OnBtnUnLockLongUp(...)
         local targetX = math.floor(self:GetPisont().x + self.RectTransform.rect.width / 2)
         local targetIndex = 0
         if targetX <= self.RectTransform.rect.width / 3 then
-            targetIndex = CHAR_POS1
-        elseif targetX > self.RectTransform.rect.width / 3 and targetX <= self.RectTransform.rect.width / 3 * 2 then
             targetIndex = CHAR_POS2
+        elseif targetX > self.RectTransform.rect.width / 3 and targetX <= self.RectTransform.rect.width / 3 * 2 then
+            targetIndex = CHAR_POS1 --UI的位置1号位是在中间的
         else
             targetIndex = CHAR_POS3
         end
@@ -299,15 +270,15 @@ function XUiNewRoomSingle:GetPisont()
 end
 
 function XUiNewRoomSingle:OnBtnUnLockLongClick1(time)
-    self:SeBtnUnLockLongClickt(2, time)
+    self:SeBtnUnLockLongClickt(CHAR_POS1, time)
 end
 
 function XUiNewRoomSingle:OnBtnUnLockLongClick2(time)
-    self:SeBtnUnLockLongClickt(1, time)
+    self:SeBtnUnLockLongClickt(CHAR_POS2, time)
 end
 
 function XUiNewRoomSingle:OnBtnUnLockLongClick3(time)
-    self:SeBtnUnLockLongClickt(3, time)
+    self:SeBtnUnLockLongClickt(CHAR_POS3, time)
 end
 
 -- 初始化 team 数据
@@ -346,7 +317,7 @@ function XUiNewRoomSingle:InitTeamData()
     for i = 1, MAX_CHAR_COUNT do
         local teamCfg = XDataCenter.TeamManager.GetTeamCfg(i)
         if teamCfg then
-            self.PanelRoleEffect[i]:LoadPrefab(teamCfg.EffectPath, false)
+            self.PanelCharacterInfo[i].PanelRoleEffect:LoadPrefab(teamCfg.EffectPath, false)
         end
     end
 end
@@ -356,6 +327,7 @@ function XUiNewRoomSingle:InitPanelTeam()
     self.BtnEnterFight.gameObject:SetActive(false)
     self.ImgEnterFightOff.gameObject:SetActive(true)
 
+    local captainPos = self.CurTeam.CaptainPos
     -- 记录是否全部加载完成
     self.LoadModelCount = 0
     for i = 1, MAX_CHAR_COUNT do
@@ -363,6 +335,8 @@ function XUiNewRoomSingle:InitPanelTeam()
         if posData and posData > 0 then
             self.LoadModelCount = self.LoadModelCount + 1
         end
+
+        self["PanelLeader" .. i].gameObject:SetActiveEx(not self.HasRobot and i == captainPos)
     end
 
     for i = 1, MAX_CHAR_COUNT do
@@ -373,15 +347,17 @@ function XUiNewRoomSingle:InitPanelTeam()
 
             local posData = self.CurTeam.TeamData[i]
             if posData and posData > 0 then
-                self:UpdateRoleModel(posData, self.RoleModelPanelList[i], i)
-                self.ImgAddList[i].gameObject:SetActive(false)
+                self:UpdateRoleModel(posData, self.PanelCharacterInfo[i].RoleModelPanel, i)
+                self["ImgAdd" .. i].gameObject:SetActive(false)
                 self:UpdateRoleStanmina(posData, i)
             else
-                self.PanelStaminaList[i].PanelStamina.gameObject:SetActive(false)
-                self.ImgAddList[i].gameObject:SetActive(true)
+                self["PanelStaminaBar" .. i].gameObject:SetActive(false)
+                self["ImgAdd" .. i].gameObject:SetActive(true)
             end
         end, i * LOAD_TIME)
     end
+
+    self:RefreshCaptainSkill()
 end
 
 function XUiNewRoomSingle:RemoveTimer()
@@ -409,7 +385,7 @@ function XUiNewRoomSingle:UpdateRoleModel(charId, roleModelPanel, pos)
     else
         roleModelPanel:UpdateCharacterModel(charId, nil, nil, nil, callback)
     end
-    
+
     roleModelPanel:ShowRoleModel()
 end
 
@@ -418,7 +394,7 @@ function XUiNewRoomSingle:UpdateRoleStanmina(charId, index)
     if self.StageInfos.Type ~= XDataCenter.FubenManager.StageType.BossSingle
     and self.StageInfos.Type ~= XDataCenter.FubenManager.StageType.Explore
     then
-        self.PanelStaminaList[index].PanelStamina.gameObject:SetActive(false)
+        self["PanelStaminaBar" .. index].gameObject:SetActive(false)
         return
     end
 
@@ -434,9 +410,9 @@ function XUiNewRoomSingle:UpdateRoleStanmina(charId, index)
     end
 
     local text = CS.XTextManager.GetText("BossSingleStamina", curStamina, maxStamina)
-    self.PanelStaminaList[index].TxtMyStamina.text = text
-    self.PanelStaminaList[index].ImgStaminaFill.fillAmount = curStamina / maxStamina
-    self.PanelStaminaList[index].PanelStamina.gameObject:SetActive(true)
+    self["TxtMyStamina" .. index].text = text
+    self["ImgStaminaExpFill" .. index].fillAmount = curStamina / maxStamina
+    self["PanelStaminaBar" .. index].gameObject:SetActive(true)
 end
 
 function XUiNewRoomSingle:SetAssistStatus(active)
@@ -572,8 +548,8 @@ function XUiNewRoomSingle:InitCharacterInfo()
     --机器人关卡不显示战斗信息
     if self.HasRobot then
         self.BtnShowInfoToggle.gameObject:SetActiveEx(false)
-        for i = 1, #self.PanelCharacterInfo do
-            self.PanelCharacterInfo[i].CharacterInfo.gameObject:SetActiveEx(false)
+        for i = 1, MAX_CHAR_COUNT do
+            self["CharacterInfo" .. i].gameObject:SetActiveEx(false)
         end
         return
     else
@@ -591,17 +567,17 @@ function XUiNewRoomSingle:InitCharacterInfo()
         for i = 1, #self.CurTeam.TeamData do
             local character = XDataCenter.CharacterManager.GetCharacter(self.CurTeam.TeamData[i])
             if character == nil then
-                self.PanelCharacterInfo[i].CharacterInfo.gameObject:SetActiveEx(false)
+                self["CharacterInfo" .. i].gameObject:SetActiveEx(false)
             else
-                self.PanelCharacterInfo[i].CharacterInfo.gameObject:SetActiveEx(true)
-                self.PanelCharacterInfo[i].TxtFight.text = math.floor(character.Ability)
-                self.PanelCharacterInfo[i].RImgType:SetRawImage(XCharacterConfigs.GetNpcTypeIcon(character.Type))
+                self["CharacterInfo" .. i].gameObject:SetActiveEx(true)
+                self["TxtFight" .. i].text = math.floor(character.Ability)
+                self["RImgType" .. i]:SetRawImage(XCharacterConfigs.GetNpcTypeIcon(character.Type))
             end
         end
     else
         self.BtnShowInfoToggle:SetButtonState(XUiButtonState.Normal)
-        for i = 1, #self.PanelCharacterInfo do
-            self.PanelCharacterInfo[i].CharacterInfo.gameObject:SetActiveEx(false)
+        for i = 1, MAX_CHAR_COUNT do
+            self["CharacterInfo" .. i].gameObject:SetActiveEx(false)
         end
     end
 end
@@ -676,13 +652,12 @@ function XUiNewRoomSingle:UpdateTeam(teamData)
         local oldCharId = self.CurTeam.TeamData[posId]
         if oldCharId > 0 and oldCharId ~= val then
             -- 检查被替换的位置是否有角色，并且不相同
-            self.RoleModelPanelList[posId]:HideRoleModel()
+            self.PanelCharacterInfo[posId].RoleModelPanel:HideRoleModel()
         end
     end
 
     self.CurTeam.TeamData = teamData
     self:InitPanelTeam() -- 更新当前队伍显示状态
-    self:RefreshCaptainSkill()
     XDataCenter.TeamManager.SetPlayerTeam(self.CurTeam, false) -- 保存数据
 
     --更新角色信息面板

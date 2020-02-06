@@ -1,7 +1,7 @@
 XFubenActivityBossSingleManagerCreator = function()
     local pairs = pairs
     local tableInsert = table.insert
-    local CSXDateGetTime = CS.XDate.GetTime
+    local ParseToTimestamp = XTime.ParseToTimestamp
 
     local ActivityId = 0
     local SectionId = 0 --根据等极段开放的活动章节
@@ -17,9 +17,9 @@ XFubenActivityBossSingleManagerCreator = function()
         if activityId == 0 then return end  --未拿到配置Id
         local config = XFubenActivityBossSingleConfigs.GetActivityConfig(activityId)
         ActivityId = activityId
-        BeginTime = CSXDateGetTime(config.BeginTimeStr)
-        FightEndTime = CSXDateGetTime(config.FightEndTimeStr)
-        EndTime = CSXDateGetTime(config.EndTimeStr)
+        BeginTime = ParseToTimestamp(config.BeginTimeStr)
+        FightEndTime = ParseToTimestamp(config.FightEndTimeStr)
+        EndTime = ParseToTimestamp(config.EndTimeStr)
     end
 
     function XFubenActivityBossSingleManager.GetActivitySections()
@@ -85,12 +85,12 @@ XFubenActivityBossSingleManagerCreator = function()
     end
 
     function XFubenActivityBossSingleManager.IsOpen()
-        local nowTime = XTime.Now()
+        local nowTime = XTime.GetServerNowTimestamp()
         return BeginTime <= nowTime and nowTime < EndTime and SectionId ~= 0
     end
 
     function XFubenActivityBossSingleManager.IsStatusEqualFightEnd()
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         return FightEndTime <= now and now < EndTime
     end
 

@@ -58,8 +58,8 @@ function XUiGridDormCharacter:Refresh(characterId)
         XDataCenter.FurnitureManager.AddNewHint(ids)
     end
 
-    self.TxtLove.text = CS.XTextManager.GetText("DormHight", loveTypeConfig.Color, loveTypeConfig.TypeName)
-    self.TxtLike.text = CS.XTextManager.GetText("DormMiddle", likeTypeConfig.Color, likeTypeConfig.TypeName)
+    self.TxtLove.text = CS.XTextManager.GetText("DormHightDescription")
+    self.TxtLike.text = CS.XTextManager.GetText("DormMiddleDescription")
 
     local inRoomNumber = XDataCenter.DormManager.GetCharacterRoomNumber(characterId)
     self.PanelInRoom.gameObject:SetActiveEx(inRoomNumber > 0)

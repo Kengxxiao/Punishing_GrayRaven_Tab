@@ -1,12 +1,12 @@
-Id	Desc	BossHeadIcon	Priority	StageId[1]	StageId[2]	StageId[3]	StageId[4]	StageId[5]	ActivityBeginTime[1]	ActivityEndTime[1]	ActivityTag[1]	ActivityBeginTime[2]	ActivityEndTime[2]	ActivityTag[2]	ActivityBeginTime[3]	ActivityEndTime[3]	ActivityTag[3]
-101	作为高级城市警卫，与人类相处密切的武藏玖型，与帕弥什病毒奋战至撤离的最后一刻。最终以感染体的身姿屹立于无人废墟之上时，不知为何，仍然保留着善良民众为其进行的笨拙包扎。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab10.png	20	30000101	30000102	30000103	30000104	30000105									
-102	用于大型喷绘领域的喷涂机械，能够将颜料在体内混合成需要的材质，被感染后使用充满“创意”的攻击手段来驱赶妨碍艺术创作的敌人。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab9.png	30	30000201	30000202	30000203	30000204	30000205									
-103	升格者之一的构造体，擅长使用短枪和可变的链刀来扰乱战场，以轻松悠闲的态度进行每一场战斗。能够让他认真起来面对的敌人，最终都有着残酷的结局。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab14.png	10	30000301	30000302	30000303	30000304	30000305									
-104	在机械复原风潮下，针对沙漠中失落文化的守护者进行机械复原的产物，特殊的身体结构让他们能够在沙地中移动自如，会撕碎未经许可就闯入沙漠的所有生物。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab13.png	30	30000601	30000602	30000603	30000604	30000605									
-105	不知来历的构造体，和露西亚一样使用太刀作为武器，但其经验和技术比露西亚要高上不少，所挥的每一刀都能给人切裂空间般的震撼感。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab16.png	20	30000501	30000502	30000503	30000504	30000505									
-106	过去上流社会所使用的管家型机器人，忠诚地执行主人的一切命令，作战方式优雅从容，虽然武装只有手中的一把刺剑，但能够灵活应对各种距离的对手。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab7.png	20	30000701	30000702	30000703	30000704	30000705									
-107	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000901	30000902	30000903	30000904	30000905									
-108	从构造体改造而来的感染体，固定于身体上的尖刺装甲，不仅用于防御和攻击，同时也是破坏内部构造体身体，加深病毒感染，增幅其力量的刑具。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab5.png	10	30000401	30000402	30000403	30000404	30000405									
-109	某位构造体部分意识的化身，攻击方式粗暴且迅捷，在你注意到他思考着他的来历时也许就已经被他的大剑一分为二。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab3.png	30	30000801	30000802	30000803	30000804	30000805									
-201	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000906	30000907	30000908	30000909	30000910									
-202	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000911	30000912	30000913	30000914	30000915									
+Id	Desc	BossHeadIcon	Priority	StageId[1]	StageId[2]	StageId[3]	StageId[4]	StageId[5]	ActivityBeginTime[1]	ActivityEndTime[1]	ActivityTag[1]	ActivityBeginTime[2]	ActivityEndTime[2]	ActivityTag[2]	ActivityBeginTime[3]	ActivityEndTime[3]	ActivityTag[3]	ClosedTime
+101	作为高级城市警卫，与人类相处密切的武藏玖型，与帕弥什病毒奋战至撤离的最后一刻。最终以感染体的身姿屹立于无人废墟之上时，不知为何，仍然保留着善良民众为其进行的笨拙包扎。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab10.png	20	30000101	30000102	30000103	30000104	30000105										
+102	用于大型喷绘领域的喷涂机械，能够将颜料在体内混合成需要的材质，被感染后使用充满“创意”的攻击手段来驱赶妨碍艺术创作的敌人。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab9.png	30	30000201	30000202	30000203	30000204	30000205										
+103	升格者之一的构造体，擅长使用短枪和可变的链刀来扰乱战场，以轻松悠闲的态度进行每一场战斗。能够让他认真起来面对的敌人，最终都有着残酷的结局。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab14.png	10	30000301	30000302	30000303	30000304	30000305										
+104	在机械复原风潮下，针对沙漠中失落文化的守护者进行机械复原的产物，特殊的身体结构让他们能够在沙地中移动自如，会撕碎未经许可就闯入沙漠的所有生物。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab13.png	30	30000601	30000602	30000603	30000604	30000605										
+105	不知来历的构造体，和露西亚一样使用太刀作为武器，但其经验和技术比露西亚要高上不少，所挥的每一刀都能给人切裂空间般的震撼感。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab16.png	20	30000501	30000502	30000503	30000504	30000505										
+106	过去上流社会所使用的管家型机器人，忠诚地执行主人的一切命令，作战方式优雅从容，虽然武装只有手中的一把刺剑，但能够灵活应对各种距离的对手。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab7.png	20	30000701	30000702	30000703	30000704	30000705										
+107	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000901	30000902	30000903	30000904	30000905										2020/2/6 10:00
+108	从构造体改造而来的感染体，固定于身体上的尖刺装甲，不仅用于防御和攻击，同时也是破坏内部构造体身体，加深病毒感染，增幅其力量的刑具。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab5.png	10	30000401	30000402	30000403	30000404	30000405										
+109	某位构造体部分意识的化身，攻击方式粗暴且迅捷，在你注意到他思考着他的来历时也许就已经被他的大剑一分为二。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab3.png	30	30000801	30000802	30000803	30000804	30000805										
+201	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000906	30000907	30000908	30000909	30000910										2020/2/6 10:00
+202	多地形军用机器人，可变的球形外壳下有着极高的能量密度，经常被作为重型火力部署在战场中。被帕弥什病毒感染后，成为了人类的噩梦。	Assets/Product/Texture/Image/UiFubenChallengeMapBoss/BossSingleTab2.png	10	30000911	30000912	30000913	30000914	30000915										2020/2/6 10:00

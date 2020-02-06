@@ -21,6 +21,7 @@ function XTypeManager.Init()
     GetQualityFuncs[XArrangeConfigs.Types.Fashion] = XDataCenter.FashionManager.GetFashionQuality
     GetQualityFuncs[XArrangeConfigs.Types.Furniture] = XDataCenter.FurnitureManager.GetRewardFurnitureQuality
     GetQualityFuncs[XArrangeConfigs.Types.HeadPortrait] = XPlayerManager.GetHeadPortraitQuality
+    GetQualityFuncs[XArrangeConfigs.Types.DormCharacter] = XDormConfig.GetDormCharacterRewardQualityById
 end
 
 ----Public Methods----

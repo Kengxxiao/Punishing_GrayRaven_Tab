@@ -1,0 +1,104 @@
+Role	State	Target	TransitionDuration
+Mo1ArmorMd010112		Born	0
+Mo1ArmorMd010112		Stand2	0.1
+Mo1ArmorMd010112		Stand1	0.1
+Mo1ArmorMd010112		Stand3	0.1
+Mo1ArmorMd010112		Standchange	0.1
+Mo1ArmorMd010112		Run	0.1
+Mo1ArmorMd010112		Walk	0.1
+Mo1ArmorMd010112		Death	0.1
+Mo1ArmorMd010112		Hit1	0.05
+Mo1ArmorMd010112		Hit2	0.05
+Mo1ArmorMd010112		Behitfly	0.05
+Mo1ArmorMd010112		Hoverhit	0
+Mo1ArmorMd010112		Falldown	0.1
+Mo1ArmorMd010112		Hitdown	0.1
+Mo1ArmorMd010112		Lieonfloor	0.1
+Mo1ArmorMd010112		Standup	0.1
+Mo1ArmorMd010112		Straight	0.1
+Mo1ArmorMd010112		Stun	0.1
+Mo1ArmorMd010112		TurnLeft	0.1
+Mo1ArmorMd010112		TurnRight	0.1
+Mo1ArmorMd010112		StraightBefore	0.1
+Mo1ArmorMd010112		StraightAfter	0.1
+Mo1ArmorMd010112		Win	0
+Mo1ArmorMd010112		Win2	0.1
+Mo1ArmorMd010112		Runb	0.2
+Mo1ArmorMd010112		Runl	0.2
+Mo1ArmorMd010112		Runr	0.2
+Mo1ArmorMd010112		Stop	0.1
+Mo1ArmorMd010112		Walkb	0.1
+Mo1ArmorMd010112		Walkl	0.1
+Mo1ArmorMd010112		Walkr	0.1
+Mo1ArmorMd010112		Fail	0.1
+Mo1ArmorMd010112		Save	0.1
+Mo1ArmorMd010112		Hit3	0.05
+Mo1ArmorMd010112		Hit4	0.05
+Mo1ArmorMd010112		RunStart	0.1
+Mo1ArmorMd010112		RunStartEnd01	0.1
+Mo1ArmorMd010112		Attack01	0.1
+Mo1ArmorMd010112		Attack02	0.1
+Mo1ArmorMd010112		Attack04	0.1
+Mo1ArmorMd010112		Attack05	0.1
+Mo1ArmorMd010112		Move1	0.1
+Mo1ArmorMd010112		Move2	0.1
+Mo1ArmorMd010112		Move3	0.1
+Mo1ArmorMd010112	Stand2	Standchange	0.1
+Mo1ArmorMd010112	Stand2	Run	0.2
+Mo1ArmorMd010112	Stand2	Walk	0.3
+Mo1ArmorMd010112	Stand2	Walkb	0.3
+Mo1ArmorMd010112	Stand2	Walkl	0.3
+Mo1ArmorMd010112	Stand2	Walkr	0.3
+Mo1ArmorMd010112	Stand1	Run	0.2
+Mo1ArmorMd010112	Stand1	Walk	0.1
+Mo1ArmorMd010112	Standchange	Stand1	0.1
+Mo1ArmorMd010112	Standchange	Run	0.1
+Mo1ArmorMd010112	Standchange	Walk	0.1
+Mo1ArmorMd010112	Run	Stop	0.2
+Mo1ArmorMd010112	Run	Stand2	0.2
+Mo1ArmorMd010112	Run	Runb	0.2
+Mo1ArmorMd010112	Run	Runl	0.2
+Mo1ArmorMd010112	Run	Runr	0.2
+Mo1ArmorMd010112	Walk	Stand2	0.1
+Mo1ArmorMd010112	Hit1	Stand2	0
+Mo1ArmorMd010112	Hit2	Stand2	0
+Mo1ArmorMd010112	Behitfly	Hoverhit	0.1
+Mo1ArmorMd010112	Behitfly	Falldown	0.1
+Mo1ArmorMd010112	Hoverhit	Falldown	0.1
+Mo1ArmorMd010112	Falldown	Lieonfloor	0.1
+Mo1ArmorMd010112	Hitdown	Lieonfloor	0.1
+Mo1ArmorMd010112	Standup	Stand2	0.1
+Mo1ArmorMd010112	Straight	Stand2	0.1
+Mo1ArmorMd010112	Stun	Stand2	0.1
+Mo1ArmorMd010112	TurnLeft	Stand2	0.1
+Mo1ArmorMd010112	TurnRight	Stand2	0.1
+Mo1ArmorMd010112	Win	Win2	0.1
+Mo1ArmorMd010112	Runb	Stand2	0.2
+Mo1ArmorMd010112	Runb	Run	0.2
+Mo1ArmorMd010112	Runb	Runl	0.2
+Mo1ArmorMd010112	Runb	Runr	0.2
+Mo1ArmorMd010112	Runl	Stand2	0.2
+Mo1ArmorMd010112	Runl	Run	0.2
+Mo1ArmorMd010112	Runl	Runb	0.2
+Mo1ArmorMd010112	Runl	Runr	0.2
+Mo1ArmorMd010112	Runr	Stand2	0.2
+Mo1ArmorMd010112	Runr	Run	0.2
+Mo1ArmorMd010112	Runr	Runb	0.2
+Mo1ArmorMd010112	Runr	Runl	0.2
+Mo1ArmorMd010112	Stop	Stand2	0.1
+Mo1ArmorMd010112	Walkb	Stand2	0.1
+Mo1ArmorMd010112	Walkb	Walk	0.2
+Mo1ArmorMd010112	Walkb	Walkl	0.1
+Mo1ArmorMd010112	Walkb	Walkr	0.1
+Mo1ArmorMd010112	Walkl	Stand2	0.1
+Mo1ArmorMd010112	Walkl	Walk	0.1
+Mo1ArmorMd010112	Walkl	Walkb	0.1
+Mo1ArmorMd010112	Walkl	Walkr	0.2
+Mo1ArmorMd010112	Walkr	Stand2	0.1
+Mo1ArmorMd010112	Walkr	Walk	0.1
+Mo1ArmorMd010112	Walkr	Walkb	0.1
+Mo1ArmorMd010112	Walkr	Walkl	0.2
+Mo1ArmorMd010112	Hit3	Stand2	0
+Mo1ArmorMd010112	Hit4	Stand2	0
+Mo1ArmorMd010112	RunStart	Run	0.05
+Mo1ArmorMd010112	RunStart	RunStartEnd01	0.1

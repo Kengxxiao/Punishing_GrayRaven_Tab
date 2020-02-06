@@ -8,7 +8,7 @@ XReportManagerCreater = function()
         if LastReportTime < 0 then
             LastReportTime = XPlayer.ReportTime
         end
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if now - LastReportTime < ReportInterval then
             local tempTime = (ReportInterval - (now - LastReportTime))
             XUiManager.TipError(CS.XTextManager.GetText("ReportError", tostring(tempTime)))

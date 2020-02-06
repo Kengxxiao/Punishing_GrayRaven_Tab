@@ -388,7 +388,7 @@ function XUiDormSecond:UpdateData(displaytype, dormId, playerId)
     self.CurDormId = dormId
     self.CurPlayerId = playerId
     self:SetScore()
-    self:SetVisitState()    
+    self:SetVisitState()
     self:SetHostelNameClick()
     self:SetCurHostelList()
     self.CurIndex = self:GetCurIndex(dormId)
@@ -521,6 +521,9 @@ function XUiDormSecond:OnOpenedCaress(characterId)
     self.BtnRename.gameObject:SetActiveEx(false)
     self.BtnBack.gameObject:SetActiveEx(false)
     self.DormBgm.GameObject:SetActiveEx(false)
+    self.BtnHelp.gameObject:SetActiveEx(false)
+    self.TopInfos.gameObject:SetActiveEx(false)
+
     if not self.InitCaress then
         self.InitCaress = true
         self.PanelCaressUI = XUiDormCaress.New(self, self.PanelCaress)
@@ -543,6 +546,8 @@ function XUiDormSecond:OnCloseedCaress()
     self.BtnRename.gameObject:SetActiveEx(true)
     self.BtnBack.gameObject:SetActiveEx(true)
     self.DormBgm.GameObject:SetActiveEx(true)
+    self.BtnHelp.gameObject:SetActiveEx(true)
+    self.TopInfos.gameObject:SetActiveEx(true)
     self.PanelCaressUI:OnClose(self.CurDormId)
 end
 

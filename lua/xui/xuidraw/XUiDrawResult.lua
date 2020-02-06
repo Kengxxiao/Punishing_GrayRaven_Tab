@@ -30,10 +30,14 @@ function XUiDrawResult:OnStart(drawInfo, rewardList, backCb)
     self.BackCb = backCb
     self.IsFinish = false
     self.BtnBack.gameObject.transform:SetAsLastSibling()
-    XUiHelper.PlayAnimation(self, "AniResultGridGain", nil, function()
-        XUiHelper.PlayAnimation(self, "AniResultGridGainLoop")
+    self:PlayAnimation("AniResultGridGain", function()
+        self:PlayAnimation("AniResultGridGainLoop")
         self.StartShow = true
     end)
+    -- XUiHelper.PlayAnimation(self, "AniResultGridGain", nil, function()
+    --     XUiHelper.PlayAnimation(self, "AniResultGridGainLoop")
+    --     self.StartShow = true
+    -- end)
 end
 
 function XUiDrawResult:Update()
@@ -79,12 +83,12 @@ function XUiDrawResult:InitAutoScript()
 end
 
 function XUiDrawResult:AutoInitUi()
-    self.PanelGain = self.Transform:Find("SafeAreaContentPane/PanelGain")
-    self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent")
-    self.PanelGainList = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelGainList")
-    self.GridGain = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelGainList/GridGain")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/BtnBack"):GetComponent("Button")
-    self.PanelTrans = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelTrans")
+    -- self.PanelGain = self.Transform:Find("SafeAreaContentPane/PanelGain")
+    -- self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent")
+    -- self.PanelGainList = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelGainList")
+    -- self.GridGain = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelGainList/GridGain")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/BtnBack"):GetComponent("Button")
+    -- self.PanelTrans = self.Transform:Find("SafeAreaContentPane/PanelGain/PanelContent/PanelTrans")
 end
 
 function XUiDrawResult:GetAutoKey(uiNode, eventName)
@@ -121,7 +125,7 @@ end
 
 function XUiDrawResult:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
 end
 -- auto
 function XUiDrawResult:OnBtnBackClick(...)

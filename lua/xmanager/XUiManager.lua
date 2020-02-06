@@ -142,12 +142,12 @@ function XUiManager.DialogTip(title, content, dialogType, closeCallback, sureCal
         return
     end
 
+    CsXGameEventManager.Instance:Notify(XEventId.EVENT_UIDIALOG_VIEW_ENABLE)
+
     CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.Tip_Big)
 
     --CS.XUiManager.DialogManager:Push("UiDialog", true, true, title, content, dialogType, closeCallback, sureCallback)
-    CsXUiManager.Instance:OpenWithCallback("UiDialog", function()
-        XLuaUiManager.Remove("UiActivityBase")
-    end, title, content, dialogType, closeCallback, sureCallback)
+    CsXUiManager.Instance:Open("UiDialog", title, content, dialogType, closeCallback, sureCallback)
 end
 
 --弹出系统提示
@@ -162,11 +162,11 @@ function XUiManager.SystemDialogTip(title, content, dialogType, closeCallback, s
         return
     end
 
+    CsXGameEventManager.Instance:Notify(XEventId.EVENT_UIDIALOG_VIEW_ENABLE)
+
     CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.Tip_Big)
 
-    CsXUiManager.Instance:OpenWithCallback("UiSystemDialog", function()
-        XLuaUiManager.Remove("UiActivityBase")
-    end, title, content, dialogType, closeCallback, sureCallback)
+    CsXUiManager.Instance:Open("UiSystemDialog", title, content, dialogType, closeCallback, sureCallback)
 end
 
 --显示Tip

@@ -23,9 +23,14 @@ function XUiBfrtStageDetail:OnEnable()
     -- 动画
     self.IsPlaying = true
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, handler(self, function()
+
+    self:PlayAnimation(ANIMATION_OPEN, handler(self, function()
         self.IsPlaying = false
     end))
+
+    -- XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, handler(self, function()
+    --     self.IsPlaying = false
+    -- end))
 
     self.IsOpen = true
 end
@@ -224,12 +229,21 @@ function XUiBfrtStageDetail:Hide()
 
     self.IsPlaying = true
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self, ANIMATION_END, nil, handler(self, function()
+
+    self:PlayAnimation(ANIMATION_END, handler(self, function()
         if XTool.UObjIsNil(self.GameObject) then
             return
         end
         self.IsPlaying = false
         self:Close()
     end))
+    
+    -- XUiHelper.PlayAnimation(self, ANIMATION_END, nil, handler(self, function()
+    --     if XTool.UObjIsNil(self.GameObject) then
+    --         return
+    --     end
+    --     self.IsPlaying = false
+    --     self:Close()
+    -- end))
     CsXGameEventManager.Instance:Notify(XEventId.EVENT_FUBEN_CLOSE_FUBENSTAGEDETAIL)
 end

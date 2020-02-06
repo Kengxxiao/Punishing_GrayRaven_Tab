@@ -12,7 +12,8 @@ function XUiAutoFightDialog:OnAwake()
 end
 
 function XUiAutoFightDialog:OnStart(stageId)
-    XUiHelper.PlayAnimation(self, AnimBegin)
+    self:PlayAnimation(AnimBegin)
+    --XUiHelper.PlayAnimation(self, AnimBegin)
 
     self.TxtAutoFight.text = CS.XTextManager.GetText("AutoFightDialogTitle")
     self.TxtDescription.text = CS.XTextManager.GetText("AutoFightDialogDescription")

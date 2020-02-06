@@ -29,9 +29,11 @@ function XUiPanelShopPeriod:OnBtnRefreshClick(...)
 end
 
 function XUiPanelShopPeriod:HidePanel()
-    self.GameObject:SetActive(false)
     self.ShopId = nil
     self:RemoveTimer()
+    if not XTool.UObjIsNil(self.GameObject) then
+        self.GameObject:SetActiveEx(false)
+    end
 end
 
 function XUiPanelShopPeriod:RemoveTimer()

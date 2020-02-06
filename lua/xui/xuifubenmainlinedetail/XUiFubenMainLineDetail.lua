@@ -7,8 +7,9 @@ function XUiFubenMainLineDetail:OnAwake()
     self:InitStarPanels()
 end
 
-function XUiFubenMainLineDetail:OnStart()
+function XUiFubenMainLineDetail:OnStart(rootUi)
     self.GridList = {}
+    self.RootUi = rootUi
     self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
 end
 
@@ -21,6 +22,8 @@ function XUiFubenMainLineDetail:OnEnable()
 
     self:AddEventListener()
     self.IsOpen = true
+
+    self:Refresh(self.RootUi.Stage)
 end
 
 function XUiFubenMainLineDetail:OnDisable()
@@ -46,34 +49,34 @@ function XUiFubenMainLineDetail:InitAutoScript()
 end
 
 function XUiFubenMainLineDetail:AutoInitUi()
-    self.PanelDetail = self.Transform:Find("SafeAreaContentPane/PanelDetail")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelAsset")
-    self.PanelNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums")
-    self.TxtAllNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/TxtAllNums"):GetComponent("Text")
-    self.TxtLeftNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/TxtLeftNums"):GetComponent("Text")
-    self.BtnAddNum = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/BtnAddNum"):GetComponent("Button")
-    self.PanelDesc = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc")
-    self.TxtTitle = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/TxtTitle"):GetComponent("Text")
-    self.RImgNandu = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/RImgNandu"):GetComponent("RawImage")
-    self.TxtDesc = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/TxtDesc"):GetComponent("Text")
-    self.PanelNoLimitCount = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNoLimitCount")
-    self.PanelTargetList = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelTargetList")
-    self.GridStageStar = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelTargetList/GridStageStar")
-    self.PanelDropList = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList")
-    self.PanelDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop")
-    self.TxtDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtDrop"):GetComponent("Text")
-    self.TxtDropEn = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtDropEn"):GetComponent("Text")
-    self.TxtFirstDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtFirstDrop"):GetComponent("Text")
-    self.PanelDropContent = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/DropList/Viewport/PanelDropContent")
-    self.GridCommon = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/DropList/Viewport/PanelDropContent/GridCommon")
-    self.PanelBottom = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom")
-    self.TxtATNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/TxtATNums"):GetComponent("Text")
-    self.BtnEnter = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/BtnEnter"):GetComponent("Button")
-    self.PanelAutoFightButton = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton")
-    self.BtnEnterB = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnEnterB"):GetComponent("Button")
-    self.BtnAutoFight = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnAutoFight"):GetComponent("Button")
-    self.ImgAutoFighting = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/ImgAutoFighting"):GetComponent("Image")
-    self.BtnAutoFightComplete = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnAutoFightComplete"):GetComponent("Button")
+    -- self.PanelDetail = self.Transform:Find("SafeAreaContentPane/PanelDetail")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelAsset")
+    -- self.PanelNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums")
+    -- self.TxtAllNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/TxtAllNums"):GetComponent("Text")
+    -- self.TxtLeftNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/TxtLeftNums"):GetComponent("Text")
+    -- self.BtnAddNum = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNums/BtnAddNum"):GetComponent("Button")
+    -- self.PanelDesc = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc")
+    -- self.TxtTitle = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/TxtTitle"):GetComponent("Text")
+    -- self.RImgNandu = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/RImgNandu"):GetComponent("RawImage")
+    -- self.TxtDesc = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDesc/TxtDesc"):GetComponent("Text")
+    -- self.PanelNoLimitCount = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelNoLimitCount")
+    -- self.PanelTargetList = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelTargetList")
+    -- self.GridStageStar = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelTargetList/GridStageStar")
+    -- self.PanelDropList = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList")
+    -- self.PanelDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop")
+    -- self.TxtDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtDrop"):GetComponent("Text")
+    -- self.TxtDropEn = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtDropEn"):GetComponent("Text")
+    -- self.TxtFirstDrop = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/PanelDrop/TxtFirstDrop"):GetComponent("Text")
+    -- self.PanelDropContent = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/DropList/Viewport/PanelDropContent")
+    -- self.GridCommon = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelDropList/DropList/Viewport/PanelDropContent/GridCommon")
+    -- self.PanelBottom = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom")
+    -- self.TxtATNums = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/TxtATNums"):GetComponent("Text")
+    -- self.BtnEnter = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/BtnEnter"):GetComponent("Button")
+    -- self.PanelAutoFightButton = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton")
+    -- self.BtnEnterB = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnEnterB"):GetComponent("Button")
+    -- self.BtnAutoFight = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnAutoFight"):GetComponent("Button")
+    -- self.ImgAutoFighting = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/ImgAutoFighting"):GetComponent("Image")
+    -- self.BtnAutoFightComplete = self.Transform:Find("SafeAreaContentPane/PanelDetail/PanelBottom/PanelAutoFightButton/BtnAutoFightComplete"):GetComponent("Button")
 end
 
 function XUiFubenMainLineDetail:AutoAddListener()
@@ -167,7 +170,7 @@ function XUiFubenMainLineDetail:UpdateCommon()
     if stageCfg.AutoFightId > 0 then
         local record = XDataCenter.AutoFightManager.GetRecordByStageId(self.Stage.StageId)
         if record then
-            local now = XTime.Now()
+            local now = XTime.GetServerNowTimestamp()
             if now >= record.CompleteTime then
                 self:SetAutoFightState(XDataCenter.AutoFightManager.State.Complete)
             else

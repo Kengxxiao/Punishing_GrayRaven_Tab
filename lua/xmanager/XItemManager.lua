@@ -14,6 +14,12 @@ XItemManagerCreator = function()
     local ItemTemplates = {}
     local ItemFirstGetCheckTable = {}
     local RedEnvelopeInfos = {}                      -- 红包道具使用记录
+    -- 已被回收道具，在下次打开背包时弹出信息
+    local RecycleItemList = {}
+    local RecycleItemListDefault = {
+        RecycleItems = {},
+        RewardGoodsList = {},
+    }
 
     local BuyAssetCoinBase    = 0
     local BuyAssetCoinMul    = 0
@@ -173,6 +179,8 @@ XItemManagerCreator = function()
                 XLog.Error("XItemManager.InitItemData error:id is not match,id = " .. itemData.Id)
             end
         end
+
+        RecycleItemList = XSaveTool.GetData(XItemManager.GetCookieKeyStr()) or RecycleItemListDefault
 
         XItemManager.AddItemListener()
     end
@@ -616,14 +624,14 @@ XItemManagerCreator = function()
         local startTime
         local item = XItemManager.GetItem(id)
         if item.Template.TimelinessType == XItemManager.TimelinessType.FromConfig then
-            startTime = CS.XDate.GetTime(item.Template.StartTime)
+            startTime = XTime.ParseToTimestamp(item.Template.StartTime)
         elseif item.Template.TimelinessType == XItemManager.TimelinessType.AfterGet then
             startTime = item.CreateTime
         end
 
         if startTime then
             local endTime = startTime + item.Template.Duration
-            leftTime = endTime - XTime.Now()
+            leftTime = endTime - XTime.GetServerNowTimestamp()
         end
 
         return leftTime
@@ -751,7 +759,7 @@ XItemManagerCreator = function()
     function XItemManager.GetCurBatterys()
         local CurBatterys = {}
 
-        local nowTime = XTime.Now()
+        local nowTime = XTime.GetServerNowTimestamp()
         for k, v in pairs(XItemManager.GetBatterys()) do
             local item = v.Data
             if item:GetCount() > 0 then
@@ -782,7 +790,7 @@ XItemManagerCreator = function()
     function XItemManager.GetBatteryMinLeftTime()
         local minLeftTime = 0
 
-        local nowTime = XTime.Now()
+        local nowTime = XTime.GetServerNowTimestamp()
         local batterys = XItemManager.GetBatterys()
         for _, v in pairs(batterys) do
             local itemId = v.Data.Id
@@ -815,7 +823,7 @@ XItemManagerCreator = function()
     function XItemManager.GetTimeLimitItemsMinLeftTime()
         local minLeftTime = 0
 
-        local nowTime = XTime.Now()
+        local nowTime = XTime.GetServerNowTimestamp()
         for _, v in pairs(Items) do
             local itemId = v.Id
             if XItemManager.IsTimeLimit(itemId) and v:GetCount() > 0 and XItemManager.IsBagMaterial(itemId) then
@@ -883,20 +891,14 @@ XItemManagerCreator = function()
         end
         return true
     end
-
     function XItemManager.SelectBuyAssetType(useItemId, callBack, challegeCountData, buyAmount)
         if useItemId == XDataCenter.ItemManager.ItemId.ActionPoint and
         XDataCenter.ItemManager.CheakBatteryIsHave() then
-            XLuaUiManager.OpenWithCallback("UiUsePackage", function()
-                XLuaUiManager.Remove("UiActivityBase")
-            end, useItemId, callBack, challegeCountData, buyAmount)
+            XLuaUiManager.Open("UiUsePackage", useItemId, callBack, challegeCountData, buyAmount)
         else
-            XLuaUiManager.OpenWithCallback("UiBuyAsset", function()
-                XLuaUiManager.Remove("UiActivityBase")
-            end, useItemId, callBack, challegeCountData, buyAmount)
+            XLuaUiManager.Open("UiBuyAsset", useItemId, callBack, challegeCountData, buyAmount)
         end
     end
-
     function XItemManager.NotifyItemDataList(data)
         local list = data.ItemDataList
         if not list then
@@ -910,6 +912,8 @@ XItemManagerCreator = function()
             else
                 Items[id]:RefreshItem(data)
             end
+
+
 
             if not ItemFirstGetCheckTable[id] then
                 ItemFirstGetCheckTable[id] = true
@@ -1050,12 +1054,6 @@ XItemManagerCreator = function()
         end
     end
 
-    -- 已被回收道具，在下次打开背包时弹出信息
-    local RecycleItemList = {
-        RecycleItems = {},
-        RewardGoodsList = {},
-    }
-
     function XItemManager.GetRecycleItemList()
         if not next(RecycleItemList.RecycleItems) then return end
         return RecycleItemList
@@ -1066,6 +1064,12 @@ XItemManagerCreator = function()
             RecycleItems = {},
             RewardGoodsList = {},
         }
+
+        XSaveTool.RemoveData(XItemManager.GetCookieKeyStr())
+    end
+
+    function XItemManager.GetCookieKeyStr()
+        return string.format("RecycleItemList_%s", XPlayer.Id)
     end
 
     function XItemManager.NotifyItemRecycle(data)
@@ -1079,6 +1083,8 @@ XItemManagerCreator = function()
         for _, v in pairs(data.RewardGoodsList) do
             tableInsert(RecycleItemList.RewardGoodsList, v)
         end
+
+        XSaveTool.SaveData(XItemManager.GetCookieKeyStr(), RecycleItemList)
 
         CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
     end
@@ -1105,6 +1111,12 @@ XItemManagerCreator = function()
                 end
             end
         end
+
+        for _, v in pairs(data.RewardGoodsList) do
+            tableInsert(RecycleItemList.RewardGoodsList, v)
+        end
+
+        XSaveTool.SaveData(XItemManager.GetCookieKeyStr(), RecycleItemList)
 
         CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
     end

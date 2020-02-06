@@ -1,7 +1,6 @@
 local stringGsub = string.gsub
 local CsXTextManagerGetText = CS.XTextManager.GetText
 local TimeFormat = "yyyy-MM-dd"
-local CSXDateFormatTime = CS.XDate.FormatTime
 local CsXScheduleManager = CS.XScheduleManager
 local XUiGridChapter = require("XUi/XUiFubenMainLineChapter/XUiGridChapter")
 local ChildDetailUi = "UiFubenBranchStageDetail"
@@ -10,8 +9,8 @@ local XUiActivityBranch = XLuaUiManager.Register(XLuaUi, "UiActivityBranch")
 
 function XUiActivityBranch:OnAwake()
     self:InitAutoScript()
-    self.BtnActDesc.gameObject:SetActiveEx(false)
     self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
+    self.BtnActDesc.gameObject:SetActiveEx(false)
 end
 
 function XUiActivityBranch:OnStart(sectionId, difficultType, stageId)
@@ -27,7 +26,6 @@ function XUiActivityBranch:OnStart(sectionId, difficultType, stageId)
 end
 
 function XUiActivityBranch:OnEnable()
-    XSoundManager.PlaySoundDoNotInterrupt(XSoundManager.UiBasicsMusic.UiActivity_Jidi_BGM)
     self:Refresh()
 end
 
@@ -143,7 +141,7 @@ end
 function XUiActivityBranch:CreateActivityTimer()
     self:DestroyActivityTimer()
 
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local fightEndTime = XDataCenter.FubenActivityBranchManager.GetFightEndTime()
     local activityEndTime = XDataCenter.FubenActivityBranchManager.GetActivityEndTime()
     local shopStr = CsXTextManagerGetText("ActivityBranchShopLeftTime")
@@ -237,7 +235,7 @@ end
 function XUiActivityBranch:OnBtnSwitch2FightClick(eventData)
     if not XDataCenter.FubenActivityBranchManager.IsStatusEqualChallengeBegin() then
         local chanllengeBeginTime = XDataCenter.FubenActivityBranchManager.GetActivityChallengeBeginTime()
-        local timeStr = CSXDateFormatTime(chanllengeBeginTime, TimeFormat)
+        local timeStr = XTime.TimestampToGameDateTimeString(chanllengeBeginTime, TimeFormat)
         local desc = CsXTextManagerGetText("ActivityBranchChallengeBeginTime", timeStr)
         XUiManager.TipError(desc)
         return

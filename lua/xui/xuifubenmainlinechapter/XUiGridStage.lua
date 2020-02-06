@@ -60,7 +60,6 @@ function XUiGridStage:SetComponentActive(componentName, isActive, notScript, ...
     elseif isActive then
         local parent = self[componentName .. "Parent"]
         if XTool.UObjIsNil(parent) then return end
-
         local prefab = self.Obj:Instantiate(componentName, parent.gameObject)
         if XTool.UObjIsNil(prefab) then return end
 
@@ -207,10 +206,10 @@ function XUiGridStage:Refresh()
     if stageCfg.StageType == XFubenConfigs.STAGETYPE_COMMON then
         self:SetNormalStage(stageInfo, nextStageInfo, stageCfg, stageId, stageCfg.StageType)
     else
-        if self.FubenType == XFubenConfigs.FUBENTYPE_NORMAL then
+        if self.FubenType == XFubenConfigs.FUBENTYPE_NORMAL then    
             --[主线副本/据点战/支线活动]
             self:SetNormalStage(stageInfo, nextStageInfo, stageCfg, stageId, stageCfg.StageType)
-        elseif self.FubenType == XFubenConfigs.FUBENTYPE_PREQUEL then
+        elseif self.FubenType == XFubenConfigs.FUBENTYPE_PREQUEL then    
             --[前传]
             self:SetPrequelStage(stageId, stageInfo, stageCfg.StageType)
         end
@@ -293,10 +292,15 @@ function XUiGridStage:SetNormalStage(stageInfo, nextStageInfo, stageCfg, stageId
     end
 
     if stageType == XFubenConfigs.STAGETYPE_STORY or stageType == XFubenConfigs.STAGETYPE_STORYEGG then
-
-        self:SetComponentActive("PanelStoryActive", stageInfo.Unlock, nil, stageId, self.ChapterOrderId)
-        self:SetComponentActive("PanelStoryUnactive", not stageInfo.Unlock, nil, stageId, self.ChapterOrderId)
-
+        if stageInfo.Unlock then
+            self:SetStoryStageActive()
+            if (not (nextStageInfo and nextStageInfo.Unlock or stageInfo.Passed)) and not IsEgg then
+                self:SetComponentActive("PanelEffect", true, true)
+            end
+        else
+            self:SetStoryStageLock()
+        end
+        
     elseif stageType == XFubenConfigs.STAGETYPE_FIGHT or stageType == XFubenConfigs.STAGETYPE_FIGHTEGG or stageType == XFubenConfigs.STAGETYPE_COMMON then
 
         if stageInfo.Unlock then
@@ -393,6 +397,33 @@ function XUiGridStage:SetStageTypePanelActive(isActive)
         self:SetComponentActive("PanelStars", false)
         self:SetComponentActive("PanelEchelon", false)
     end
+end
+
+function XUiGridStage:SetStoryStageSelect()
+    local tmp_2 = self.Stage.StageType == XFubenConfigs.STAGETYPE_STORY or self.Stage.StageType == XFubenConfigs.STAGETYPE_STORYEGG and self.FubenType == XFubenConfigs.FUBENTYPE_NORMAL
+    if not (tmp_2) then return end
+    self:SetComponentActive("PanelStorySelected", true,nil, self.Stage.StageId, self.ChapterOrderId)
+    self:SetComponentActive("PanelStoryActive", false)
+    self:SetComponentActive("PanelStoryUnactive",false)
+    self:SetComponentActive("PanelEffect", false)
+end
+
+function XUiGridStage:SetStoryStageActive()
+    local tmp_2 = self.Stage.StageType == XFubenConfigs.STAGETYPE_STORY or self.Stage.StageType == XFubenConfigs.STAGETYPE_STORYEGG and self.FubenType == XFubenConfigs.FUBENTYPE_NORMAL
+    if not (tmp_2) then return end
+    self:SetComponentActive("PanelStoryActive", true, nil, self.Stage.StageId, self.ChapterOrderId)
+    self:SetComponentActive("PanelStoryUnactive", false)
+    self:SetComponentActive("PanelStorySelected", false)
+    self:SetComponentActive("PanelEffect", false)
+end
+
+function XUiGridStage:SetStoryStageLock()
+    local tmp_2 = self.Stage.StageType == XFubenConfigs.STAGETYPE_STORY or self.Stage.StageType == XFubenConfigs.STAGETYPE_STORYEGG and self.FubenType == XFubenConfigs.FUBENTYPE_NORMAL
+    if not (tmp_2) then return end
+    self:SetComponentActive("PanelStoryUnactive", true, nil, self.Stage.StageId, self.ChapterOrderId)
+    self:SetComponentActive("PanelStoryActive", false)
+    self:SetComponentActive("PanelStorySelected", false)
+    self:SetComponentActive("PanelEffect", false)
 end
 
 function XUiGridStage:SetStageSelect()

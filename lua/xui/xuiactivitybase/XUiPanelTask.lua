@@ -1,5 +1,5 @@
-local CSXDateGetTime = CS.XDate.GetTime
-local CSXDateFormatTime = CS.XDate.FormatTime
+local ParseToTimestamp = XTime.ParseToTimestamp
+local TimestampToGameDateTimeString = XTime.TimestampToGameDateTimeString
 
 local XUiPanelTask = XClass()
 
@@ -21,12 +21,14 @@ function XUiPanelTask:Refresh(activityCfg)
     local format = "yyyy-MM-dd HH:mm"
     local taskGroupId = activityCfg.Params[1]
     local timeLimitTaskCfg = XTaskConfig.GetTimeLimitTaskCfg(taskGroupId)
-    local beginTime = CSXDateGetTime(timeLimitTaskCfg.StartTimeStr)
-    local endTime = CSXDateGetTime(timeLimitTaskCfg.EndTimeStr)
-    local beginTimeStr = CSXDateFormatTime(beginTime, format)
-    local endTimeStr = CSXDateFormatTime(endTime, format)
-    
-    self.TxtContentTimeTask.text = beginTimeStr .. "~" .. endTimeStr
+    local beginTime = ParseToTimestamp(timeLimitTaskCfg.StartTimeStr)
+    local endTime = ParseToTimestamp(timeLimitTaskCfg.EndTimeStr)
+    if beginTime and endTime then
+        local beginTimeStr = TimestampToGameDateTimeString(beginTime, format)
+        local endTimeStr = TimestampToGameDateTimeString(endTime, format)
+        self.TxtContentTimeTask.text = beginTimeStr .. "~" .. endTimeStr
+    end
+
     self.TxtContentTitleTask.text = activityCfg.ActivityTitle
     self.TxtContentTask.text = activityCfg.ActivityDes
 

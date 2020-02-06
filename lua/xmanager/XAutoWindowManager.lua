@@ -24,18 +24,21 @@ XAutoWindowManagerCreator = function()
     local CheckAutoType = function(autoType, count, configId, openTime)
         local needSave = false
 
+        local now = XTime.GetServerNowTimestamp()
+        local dateTime = CS.XDateUtil.GetGameDateTime(now)
+
         if autoType == XAutoWindowConfigs.AutoType.EachTime then
             return true
         elseif autoType == XAutoWindowConfigs.AutoType.EachDay then
-            local dayZero = CS.XDate.GetZeroTimeOnToday()
+            local dayZero = dateTime.Date:ToTimestamp()
             local key = XPrefs.AutoWindowEach .. tostring(XPlayer.Id) .. dayZero .. configId
             needSave = SetPlayerPrefs(key, count)
         elseif autoType == XAutoWindowConfigs.AutoType.EachWeek then
-            local weekZero = CS.XDate.GetLocalZeroTimeWeek()
+            local weekZero = CS.XDateUtil.GetFirstDayOfThisWeek(dateTime):ToTimestamp()
             local key = XPrefs.AutoWindowEach .. tostring(XPlayer.Id) .. weekZero .. configId
             needSave = SetPlayerPrefs(key, count)
         elseif autoType == XAutoWindowConfigs.AutoType.EachMonth then
-            local monthZero = CS.XDate.GetLocalZeroTimeMonth()
+            local monthZero = CS.XDateUtil.GetFirstDayOfThisMonth(dateTime):ToTimestamp()
             local key = XPrefs.AutoWindowEach .. tostring(XPlayer.Id) .. monthZero .. configId
             needSave = SetPlayerPrefs(key, count)
         elseif autoType == XAutoWindowConfigs.AutoType.Period then
@@ -61,7 +64,7 @@ XAutoWindowManagerCreator = function()
         end
 
         AutoWindowIndex = 0
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         local autoWindowControllerConfig = XAutoWindowConfigs.GetAutoWindowControllerConfig()
         for _, v in pairs(autoWindowControllerConfig) do
             for _, k in pairs(AutoWindowList) do
@@ -85,7 +88,8 @@ XAutoWindowManagerCreator = function()
             if v.FunctionType == XAutoWindowConfigs.AutoFuncitonType.Sign then
                 local paramId = XFunctionManager.GetParamId(v.SkipId)
                 local subConfigId = XSignInConfigs.GetWelfareConfig(paramId).SubConfigId
-                if not XDataCenter.SignInManager.IsShowSignIn(subConfigId) then
+                if not XDataCenter.SignInManager.IsShowSignIn(subConfigId)
+                   or XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipSignIn) then
                     goto continue
                 end
                 XDataCenter.SignInManager.SetNotifySign(false)

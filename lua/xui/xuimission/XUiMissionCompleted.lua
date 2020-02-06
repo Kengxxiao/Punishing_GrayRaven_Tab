@@ -22,13 +22,19 @@ function XUiMissionCompleted:OnStart(reslut, characterId)
     end
 
     if self.MissionResult.IsBigReward then
-        XUiHelper.PlayAnimation(self, "AniMissionRewardBigBegin",nil,function()
+        self:PlayAnimation("AniMissionRewardBigBegin", function()
             self.IsAnimation = false
         end)
+        -- XUiHelper.PlayAnimation(self, "AniMissionRewardBigBegin",nil,function()
+        --     self.IsAnimation = false
+        -- end)
     else
-        XUiHelper.PlayAnimation(self, "AniMissionRewardSmallBegin",nil,function()
+        self:PlayAnimation("AniMissionRewardSmallBegin", function()
             self.IsAnimation = false
         end)
+        -- XUiHelper.PlayAnimation(self, "AniMissionRewardSmallBegin",nil,function()
+        --     self.IsAnimation = false
+        -- end)
     end
 
 
@@ -69,9 +75,9 @@ function XUiMissionCompleted:InitAutoScript()
 end
 
 function XUiMissionCompleted:AutoInitUi()
-    self.PanelRewardBig = self.Transform:Find("FullScreenBackground/PanelRewardBig")
-    self.PanelRewardSmall = self.Transform:Find("FullScreenBackground/PanelRewardSmall")
-    self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
+    -- self.PanelRewardBig = self.Transform:Find("FullScreenBackground/PanelRewardBig")
+    -- self.PanelRewardSmall = self.Transform:Find("FullScreenBackground/PanelRewardSmall")
+    -- self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
 end
 
 function XUiMissionCompleted:GetAutoKey(uiNode, eventName)
@@ -108,7 +114,7 @@ end
 
 function XUiMissionCompleted:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
 end
 -- auto
 function XUiMissionCompleted:OnBtnBgClick(...)
@@ -118,15 +124,23 @@ function XUiMissionCompleted:OnBtnBgClick(...)
     end
 
     if self.MissionResult.IsBigReward then
-        XUiHelper.PlayAnimation(self, "AniMissionRewardBigEnd", nil, function()
+        self:PlayAnimation("AniMissionRewardBigEnd", function()
             --CS.XUiManager.ViewManager:Pop()
             self:Close()
         end)
+        -- XUiHelper.PlayAnimation(self, "AniMissionRewardBigEnd", nil, function()
+        --     --CS.XUiManager.ViewManager:Pop()
+        --     self:Close()
+        -- end)
     else
-        XUiHelper.PlayAnimation(self, "AniMissionRewardSmallEnd", nil, function()
+        self:PlayAnimation("AniMissionRewardSmallEnd", function()
             --CS.XUiManager.ViewManager:Pop()
             self:Close()
         end)
+        -- XUiHelper.PlayAnimation(self, "AniMissionRewardSmallEnd", nil, function()
+        --     --CS.XUiManager.ViewManager:Pop()
+        --     self:Close()
+        -- end)
     end
 
 

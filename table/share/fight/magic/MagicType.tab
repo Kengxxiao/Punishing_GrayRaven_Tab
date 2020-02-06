@@ -27,9 +27,9 @@ RemoveBuff	2|2
 ResetBuffDurationByBuffId	2
 ResetBuffDurationByKind	2
 ResetCombo	
-SetCameraPosition	3|3|3|3
-SetCameraRotation	3|3|3|3|1|1
-SetCameraPositionOffset	3|3|3|3|1
+SetCameraPosition	3|3|3|3|3
+SetCameraRotation	3|3|3|3|3|1|1
+SetCameraPositionOffset	3|3|3|3|3|1
 SetDamage	2|2
 ShakeCamera	2|3|3|3|3|2
 ShakeAllCamera	2|3|3|3|3|2
@@ -53,3 +53,4 @@ PlayCV	2|1
 PauseCountDown	
 PauseFightTime	
 AddChain	2
+SetTimeDependency	

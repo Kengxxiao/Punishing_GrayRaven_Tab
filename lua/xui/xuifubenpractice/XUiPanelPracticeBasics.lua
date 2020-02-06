@@ -1,4 +1,5 @@
 XUiPanelPracticeBasics = XClass()
+local XUguiDragProxy = CS.XUguiDragProxy
 
 function XUiPanelPracticeBasics:Ctor(rootUi, ui)
     self.RootUi = rootUi
@@ -64,6 +65,17 @@ function XUiPanelPracticeBasics:InitViews()
         extraLine = self.BasicsContent:Find(string.format("Line%d", indexLine))
     end
 
+    local dragProxy = self.BasicsScrollRect:GetComponent(typeof(XUguiDragProxy))
+    if not dragProxy then
+        dragProxy = self.BasicsScrollRect.gameObject:AddComponent(typeof(XUguiDragProxy))
+    end
+    dragProxy:RegisterHandler(handler(self, self.OnDragProxy))
+end
+
+function XUiPanelPracticeBasics:OnDragProxy(dragType)
+    if dragType == 0 then
+        self.RootUi:CloseStageDetail()
+    end
 end
 
 function XUiPanelPracticeBasics:SetPanelActive(value)

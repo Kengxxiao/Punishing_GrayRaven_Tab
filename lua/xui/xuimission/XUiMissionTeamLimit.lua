@@ -8,7 +8,8 @@ function XUiMissionTeamLimit:OnStart(curIndex)
     self.CurIndex = curIndex
     self:Init()
     self:SetupContent()
-    XUiHelper.PlayAnimation(self, "AniMissionTeamLimitBegin")
+    self:PlayAnimation("AniMissionTeamLimitBegin")
+    --XUiHelper.PlayAnimation(self, "AniMissionTeamLimitBegin")
 
 end
 
@@ -51,10 +52,10 @@ function XUiMissionTeamLimit:InitAutoScript()
 end
 
 function XUiMissionTeamLimit:AutoInitUi()
-    self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
-    self.UiMissionTeamLimitA = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit")
-    self.PanelScrollView = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit/PanelScrollView")
-    self.GridLimit = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit/PanelScrollView/Viewport/GridLimit")
+    -- self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
+    -- self.UiMissionTeamLimitA = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit")
+    -- self.PanelScrollView = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit/PanelScrollView")
+    -- self.GridLimit = self.Transform:Find("SafeAreaContentPane/UiMissionTeamLimit/PanelScrollView/Viewport/GridLimit")
 end
 
 function XUiMissionTeamLimit:GetAutoKey(uiNode, eventName)
@@ -91,13 +92,17 @@ end
 
 function XUiMissionTeamLimit:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
 end
 -- auto
 
 function XUiMissionTeamLimit:OnBtnBgClick(...)
-    XUiHelper.PlayAnimation(self, "AniMissionTeamLimitEnd", nil, function()
+    self:PlayAnimation("AniMissionTeamLimitEnd", function()
         --CS.XUiManager.ViewManager:Pop()
         self:Close()
     end)
+    -- XUiHelper.PlayAnimation(self, "AniMissionTeamLimitEnd", nil, function()
+    --     --CS.XUiManager.ViewManager:Pop()
+    --     self:Close()
+    -- end)
 end

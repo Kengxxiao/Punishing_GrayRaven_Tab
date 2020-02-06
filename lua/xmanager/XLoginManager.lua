@@ -10,7 +10,8 @@ local FirstLoginIsBanned = 11
 local MultiLoginIsBanned = 12
 
 local NEW_PLAYER_FLAG = 1 << 0
-local OsTime = os.time
+local SinceStartupTime = function() return CS.UnityEngine.Time.realtimeSinceStartup end
+local SinceStartupMilliSeconds = function() return math.floor(CS.UnityEngine.Time.realtimeSinceStartup * 1000) end
 
 local TableLoginErrCode = "Share/Login/LoginCode.tab"
 local LoginErrCodeTemplate
@@ -96,9 +97,8 @@ local ConnectGate = function(cb, bReconnect)
             local errStr = tostring(err:ToString())
             XLog.Warning("XNetwork.ConnectGateServer error. ============ SocketError." .. errStr)
             local msgtab = {}
-            msgtab["error"] = errStr
-            local jsonstr = Json.encode(msgtab)
-            CS.XRecord.Record("24013", "ConnectGateSeverSocketError")
+            msgtab.error = errStr
+            CS.XRecord.Record(msgtab, "24013", "ConnectGateSeverSocketError")
             if LoginCb then
                 XLuaUiManager.ClearAnimationMask()
                 XUiManager.SystemDialogTip(CS.XTextManager.GetText("TipTitle"), CS.XTextManager.GetText("NetworkError"), XUiManager.DialogType.OnlySure, nil, nil)
@@ -173,18 +173,13 @@ DoDisconnect = function()
 
     XLuaUiManager.ClearAnimationMask()
     CS.XRecord.Record("24014", "SocketDisconnect");
-
-    if CS.XNetwork.IsShowNetLog then
-        XLog.Debug("DoDisconnect!!!")
-    end
-
     XUiManager.SystemDialogTip(CS.XTextManager.GetText("TipTitle"), CS.XTextManager.GetText("HeartbeatTimeout"), XUiManager.DialogType.OnlySure, nil, function()
-        CS.Movie.XMovieManager.Instance:Clear()
-        CsXUiManager.Instance:Clear()
-        XHomeSceneManager.LeaveScene()
         if CS.XFight.Instance ~= nil then
             CS.XFight.ClearFight()
         end
+        CS.Movie.XMovieManager.Instance:Clear()
+        CsXUiManager.Instance:Clear()
+        XHomeSceneManager.LeaveScene()
         CsXUiManager.Instance:Open(UI_LOGIN)
     end)
 end
@@ -197,9 +192,9 @@ DoHeartbeat = function()
     end
 
     HeartbeatTimer = CS.XScheduleManager.Schedule(function(...)
-        -- if CS.XNetwork.IsShowNetLog then
+        if CS.XNetwork.IsShowNetLog then
             XLog.Debug("tcp heartbeat time out.")
-        -- end
+        end
 
         if KcpHeartbeatTimer then
             CS.XScheduleManager.UnSchedule(KcpHeartbeatTimer)
@@ -209,12 +204,12 @@ DoHeartbeat = function()
         StartReconnect()
     end, HeartbeatTimeout, 1)
 
-    local reqTime = OsTime()
+    local reqTime = SinceStartupTime()
     if CS.XNetwork.IsShowNetLog then
         XLog.Debug("tcp heartbeat request.")
     end
     XNetwork.Call("HeartbeatRequest", nil, function(res)
-        XTime.SyncTime(res.ServerTime, reqTime, OsTime())
+        XTime.SyncTime(res.UtcServerTime, reqTime, SinceStartupTime())
         CS.XScheduleManager.UnSchedule(HeartbeatTimer)
         if CS.XNetwork.IsShowNetLog then
             XLog.Debug("tcp heartbeat response.")
@@ -227,7 +222,7 @@ end
 
 StartReconnect = function()
     CS.XRecord.Record("24033", "StartReconnect");
-    local startReconnectTime = OsTime()
+    local startReconnectTime = SinceStartupTime()
 
     if MaxReconnectTimer then
         CS.XScheduleManager.UnSchedule(MaxReconnectTimer)
@@ -235,7 +230,7 @@ StartReconnect = function()
     end
 
     MaxReconnectTimer = CS.XScheduleManager.Schedule(function(...)
-        if OsTime() - startReconnectTime > MaxDisconnectTime then
+        if SinceStartupTime() - startReconnectTime > MaxDisconnectTime then
             if CS.XNetwork.IsShowNetLog then
                 XLog.Debug("超过服务器保留最长时间")
             end
@@ -266,9 +261,9 @@ DoReconnect = function()
     end
 
     ReconnectTimer = CS.XScheduleManager.Schedule(function(...)
-        -- if CS.XNetwork.IsShowNetLog then
+        if CS.XNetwork.IsShowNetLog then
             XLog.Debug("断线重连响应超时")
-        -- end
+        end
         CS.XNetwork.Disconnect()
         DoReconnect()
     end, ReconnectInterval, 1)
@@ -280,9 +275,9 @@ DoReconnect = function()
     --重连网关
     ConnectGate(function()
         CS.XScheduleManager.UnSchedule(ReconnectTimer)
-        -- if CS.XNetwork.IsShowNetLog then
+        if CS.XNetwork.IsShowNetLog then
             XLog.Debug("reconnect, then request heart beat.")
-        -- end
+        end
         if MaxReconnectTimer then
             CS.XScheduleManager.UnSchedule(MaxReconnectTimer)
             MaxReconnectTimer = nil
@@ -319,9 +314,9 @@ DoKcpHeartbeat = function()
             return
         end
 
-        -- if CS.XNetwork.IsShowNetLog then
+        if CS.XNetwork.IsShowNetLog then
             XLog.Debug("kcp heartbeat time out.")
-        -- end
+        end
 
         if HeartbeatTimer then
             CS.XScheduleManager.UnSchedule(HeartbeatTimer)
@@ -432,12 +427,11 @@ DoLogin = function(cb)
     local request = CS.UnityEngine.Networking.UnityWebRequest.Get(loginUrl)
     request.timeout = LoginTimeOutSecond
     CS.XRecord.Record("24009", "RequestLoginHttpSever")
-    CS.XUiManager.Instance:SetAnimationMask(true)
-    XLog.Debug("login manager: request login http server to open mask.")
+    XLuaUiManager.SetAnimationMask("RequestLoginHttpSever",true)
     CS.XTool.WaitNativeCoroutine(request:SendWebRequest(), function()
         if request.isNetworkError then
             XLog.Error("login network error，url is " .. loginUrl .. ", message is " .. request.error)
-            XLuaUiManager.ClearAnimationMask()
+                XLuaUiManager.SetAnimationMask("RequestLoginHttpSever",false)
             XUiManager.SystemDialogTip("", LoginNetworkError, XUiManager.DialogType.OnlySure, nil, function()
                 if LoginCb then
                     LoginCb(XCode.Fail)
@@ -450,7 +444,7 @@ DoLogin = function(cb)
 
         if request.isHttpError then
             XLog.Error("login http error，url is " .. loginUrl .. ", message is " .. request.error)
-            XLuaUiManager.ClearAnimationMask()
+                XLuaUiManager.SetAnimationMask("RequestLoginHttpSever",false)
             XUiManager.SystemDialogTip("", LoginHttpError, XUiManager.DialogType.OnlySure, nil, function()
                 if LoginCb then
                     LoginCb(XCode.Fail)
@@ -479,7 +473,7 @@ DoLogin = function(cb)
                 end
             end
 
-            XLuaUiManager.ClearAnimationMask()
+            XLuaUiManager.SetAnimationMask("RequestLoginHttpSever",false)
             XUiManager.SystemDialogTip("", tipMsg, XUiManager.DialogType.OnlySure, nil, function()
                 if LoginCb then
                     LoginCb(XCode.Fail)
@@ -490,8 +484,7 @@ DoLogin = function(cb)
             return
         end
 
-        CS.XUiManager.Instance:SetAnimationMask(false)
-        XLog.Debug("login manager: request login http server to close mask.")
+        XLuaUiManager.SetAnimationMask("RequestLoginHttpSever",false)
         CS.XRecord.Record("24031", "RequestLoginHttpSeverLoginSuccess")
         if cb then
             cb(result.token, result.ip, result.host, result.port)
@@ -513,6 +506,7 @@ DoLoginGame = function(cb)
 
     XLog.Debug("loing platform is " .. XUserManager.Platform)
 
+    local reqTime = SinceStartupTime()
     XNetwork.Call("LoginRequest", {
         LoginType = XUserManager.Channel,
         LoginPlatform = XUserManager.Platform,
@@ -527,15 +521,13 @@ DoLoginGame = function(cb)
             if res.Code == XCode.LoginServiceRetry and RetryLoginCount < RETRY_LOGIN_MAX_COUNT then
                 RetryLoginCount = RetryLoginCount + 1
                 local msgtab = {}
-                msgtab["retry_login_count"] = tostring(RetryLoginCount)
-                local jsonStr = Json.encode(msgtab)
-                CS.XRecord.Record("24017", "DoLoginGameRequestError", jsonStr)
+                msgtab.retry_login_count = RetryLoginCount
+                CS.XRecord.Record(msgtab, "24017", "DoLoginGameRequestError")
                 DoLoginGame(cb)
             else
                 local msgtab = {}
-                msgtab["retry_login_count"] = tostring(RetryLoginCount)
-                local jsonStr = Json.encode(msgtab)
-                CS.XRecord.Record("24017", "DoLoginGameRequestError", jsonStr)
+                msgtab.retry_login_count = RetryLoginCount
+                CS.XRecord.Record(msgtab, "24017", "DoLoginGameRequestError")
                 RetryLoginCount = 0
                 XLuaUiManager.ClearAnimationMask()
                 XUiManager.SystemDialogTip("", CS.XTextManager.GetCodeText(res.Code), XUiManager.DialogType.OnlySure, nil, function()
@@ -544,6 +536,8 @@ DoLoginGame = function(cb)
             end
         else
             --BDC
+            CS.XDateUtil.SetGameTimeZone(res.UtcOffset)
+            XTime.SyncTime(res.UtcServerTime, reqTime, SinceStartupTime())
             CS.XHeroBdcAgent.BdcRoleLogin("2", CS.XTextManager.GetCodeText(res.Code))
             RetryLoginCount = 0
             XUserManager.ReconnectedToken = res.ReconnectToken
@@ -765,12 +759,12 @@ XRpc.ForceLogoutNotify = function(res)
     Disconnect(true)
     CS.XScheduleManager.UnSchedule(HeartbeatTimer)
     XUiManager.SystemDialogTip(CS.XTextManager.GetText("TipTitle"), CS.XTextManager.GetCodeText(res.Code), XUiManager.DialogType.OnlySure, nil, function()
-        CS.Movie.XMovieManager.Instance:Clear()
-        CsXUiManager.Instance:Clear()
-        XHomeSceneManager.LeaveScene()
         if CS.XFight.Instance ~= nil then
             CS.XFight.ClearFight()
         end
+        CS.Movie.XMovieManager.Instance:Clear()
+        CsXUiManager.Instance:Clear()
+        XHomeSceneManager.LeaveScene()
         --CS.XUiManager.ViewManager:Run(UI_LOGIN)
         XLuaUiManager.Open(UI_LOGIN)
     end)
@@ -801,9 +795,9 @@ function XLoginManager.Test()
     local i = test_id
     test_id = test_id + 1
 
-    local kcp_time = CS.XDate.NowMilliseconds()
+    local kcp_time = SinceStartupMilliSeconds()
     XNetwork.CallKcp("KcpPing", { UtcTime = kcp_time }, function(res)
-        local delta = CS.XDate.NowMilliseconds() - kcp_time
+        local delta = SinceStartupMilliSeconds() - kcp_time
 
         if #kcp_time_table >= 10 then
             table.remove(kcp_time_table, 1)
@@ -819,9 +813,9 @@ function XLoginManager.Test()
         XLog.Error(string.format("********************************* kcp ping. id = %d, delta = %d, average = <color=yellow>%s</color>", i, delta, tostring(average)))
     end)
 
-    local tcp_time = CS.XDate.NowMilliseconds()
+    local tcp_time = SinceStartupMilliSeconds()
     XNetwork.Call("Ping", { UtcTime = tcp_time }, function(res)
-        local delta = CS.XDate.NowMilliseconds() - tcp_time
+        local delta = SinceStartupMilliSeconds() - tcp_time
 
         if #tcp_time_table >= 10 then
             table.remove(tcp_time_table, 1)

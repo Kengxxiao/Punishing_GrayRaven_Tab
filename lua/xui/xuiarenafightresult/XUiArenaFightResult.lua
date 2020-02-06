@@ -160,7 +160,7 @@ function XUiArenaFightResult:Refresh()
         else
             self.TxtHighScore.text = highScore
         end
-    end, function ()
+    end, function()
         self:StopAudio()
     end)
 end

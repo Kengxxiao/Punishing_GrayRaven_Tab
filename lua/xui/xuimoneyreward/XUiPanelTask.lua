@@ -6,6 +6,7 @@ function XUiPanelTask:Ctor(ui, parent, index)
     self.Parent = parent
     self.Index = index
     self.GridList = {}
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.GridCommon.gameObject:SetActive(false)
 end
@@ -103,20 +104,20 @@ function XUiPanelTask:InitAutoScript()
 end
 
 function XUiPanelTask:AutoInitUi()
-    self.PanelDone = self.Transform:Find("PanelDone")
-    self.ImgDone = self.Transform:Find("PanelDone/ImgDone"):GetComponent("Image")
-    self.PanelTask = self.Transform:Find("PanelTask")
-    self.PanelHead = self.Transform:Find("PanelTask/PanelHead")
-    self.RImgPic = self.Transform:Find("PanelTask/PanelHead/RImgPic"):GetComponent("RawImage")
-    self.ImgQuality = self.Transform:Find("PanelTask/PanelHead/ImgQuality"):GetComponent("Image")
-    self.BtnClick = self.Transform:Find("PanelTask/PanelHead/BtnClick"):GetComponent("Button")
-    self.PanelReward = self.Transform:Find("PanelTask/PanelReward")
-    self.GridCommon = self.Transform:Find("PanelTask/PanelReward/GridCommon")
-    self.BtnGo = self.Transform:Find("PanelTask/BtnGo"):GetComponent("Button")
-    self.BtnGet = self.Transform:Find("PanelTask/BtnGet"):GetComponent("Button")
-    self.TxtLevel = self.Transform:Find("PanelTask/TxtLevel"):GetComponent("Text")
-    self.PanelNone = self.Transform:Find("PanelNone")
-    self.BtnSelectedTask = self.Transform:Find("PanelNone/BtnSelectedTask"):GetComponent("Button")
+    -- self.PanelDone = self.Transform:Find("PanelDone")
+    -- self.ImgDone = self.Transform:Find("PanelDone/ImgDone"):GetComponent("Image")
+    -- self.PanelTask = self.Transform:Find("PanelTask")
+    -- self.PanelHead = self.Transform:Find("PanelTask/PanelHead")
+    -- self.RImgPic = self.Transform:Find("PanelTask/PanelHead/RImgPic"):GetComponent("RawImage")
+    -- self.ImgQuality = self.Transform:Find("PanelTask/PanelHead/ImgQuality"):GetComponent("Image")
+    -- self.BtnClick = self.Transform:Find("PanelTask/PanelHead/BtnClick"):GetComponent("Button")
+    -- self.PanelReward = self.Transform:Find("PanelTask/PanelReward")
+    -- self.GridCommon = self.Transform:Find("PanelTask/PanelReward/GridCommon")
+    -- self.BtnGo = self.Transform:Find("PanelTask/BtnGo"):GetComponent("Button")
+    -- self.BtnGet = self.Transform:Find("PanelTask/BtnGet"):GetComponent("Button")
+    -- self.TxtLevel = self.Transform:Find("PanelTask/TxtLevel"):GetComponent("Text")
+    -- self.PanelNone = self.Transform:Find("PanelNone")
+    -- self.BtnSelectedTask = self.Transform:Find("PanelNone/BtnSelectedTask"):GetComponent("Button")
 end
 
 function XUiPanelTask:RegisterClickEvent(uiNode, func)

@@ -97,14 +97,15 @@ local function InitScene(go, datas,dormDataType, onFinishLoadScene)
             
         end)
     else
-        local visit = XDormConfig.VisitDisplaySetType.Stranger
-        if XDataCenter.SocialManager.CheckIsFriend(XHomeDormManager.TargetId) then
-            visit = XDormConfig.VisitDisplaySetType.MyFriend
+        if not XLuaUiManager.IsUiLoad("UiDormSecond") then
+            local visit = XDormConfig.VisitDisplaySetType.Stranger
+            if XDataCenter.SocialManager.CheckIsFriend(XHomeDormManager.TargetId) then
+                visit = XDormConfig.VisitDisplaySetType.MyFriend
+            end
+            XLuaUiManager.OpenWithCallback("UiDormSecond", function()
+                XLuaUiManager.Close("UiLoading")
+            end,visit,XHomeDormManager.DormitoryId)
         end
-
-        XLuaUiManager.OpenWithCallback("UiDormSecond", function()
-            XLuaUiManager.Close("UiLoading")
-        end,visit,XHomeDormManager.DormitoryId)
     end
 
     XHomeCharManager.Init()
@@ -183,13 +184,13 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
             InitScene(go, datas,dormDataType, onFinishLoadScene)
             
             if dormitoryId and isSele then
-                if not XLuaUiManager.IsUiLoad("UiDormSecond") then
-                    if not isSelf then
-                        XLuaUiManager.Open("UiDormSecond", XDormConfig.VisitDisplaySetType.MyFriend, dormitoryId)
-                    else
-                        XLuaUiManager.Open("UiDormSecond", XDormConfig.VisitDisplaySetType.MySelf, dormitoryId)
-                    end
-                end
+                -- if not XLuaUiManager.IsUiLoad("UiDormSecond") then
+                --     if not isSelf then
+                --         XLuaUiManager.Open("UiDormSecond", XDormConfig.VisitDisplaySetType.MyFriend, dormitoryId)
+                --     else
+                --         XLuaUiManager.Open("UiDormSecond", XDormConfig.VisitDisplaySetType.MySelf, dormitoryId)
+                --     end
+                -- end
                 XHomeDormManager.SetSelectedRoom(dormitoryId, true, nil, onFinishEnterRoom)
             end
         end
@@ -206,12 +207,17 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
 
     end
 
-    if isSelf then
-        XDataCenter.DormManager.RequestDormitoryData(cb)
+    if not XDataCenter.DormManager.IsFirstTotal then
+        if isSelf then
+            XDataCenter.DormManager.RequestDormitoryData(cb)
+        else
+            XDataCenter.DormManager.RequestDormitoryData()
+    
+            local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
+            XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
+        end
     else
-        XDataCenter.DormManager.RequestDormitoryData()
-        local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
-        XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
+        cb()
     end
 end
 
@@ -254,7 +260,7 @@ function XHomeDormManager.LoadRooms(datas, loadtype)
         local room = RoomDic[data.Id]
         if not room then
             local room_trans = RoomRoot:Find("@Room_" .. data.Id)
-            local room_trans_Putup = room_trans:Find("@Hud/DormlMainItem")
+            local room_trans_Putup = room_trans:Find("@Hud")
             if not XTool.UObjIsNil(room_trans) then
                 room = XHomeRoomObj.New(data, RoomFacade)
                 RoomDic[data.Id] = room
@@ -273,8 +279,8 @@ function XHomeDormManager.LoadRooms(datas, loadtype)
     XHomeSceneManager.ChangeView(HomeSceneViewType.OverView)
 end
 
-function XHomeDormManager.GetRoomsPutup()
-    return RecordRoomPutup
+function XHomeDormManager.GetRoomsPutup(dormid)
+    return RecordRoomPutup[dormid]
 end
 
 -- 将地图网格挂到指定房间根节点
@@ -421,6 +427,15 @@ function XHomeDormManager.RevertRoom(roomId)
     room:RevertRoom()
 end
 
+function XHomeDormManager.RevertOnWall(roomId)
+    local room = RoomDic[roomId]
+    if not room then
+        return
+    end
+
+    room:CleanWallFurniture()
+end
+
 -- 重置当前宿舍光照
 function XHomeDormManager.SetIllumination()
     if CurSelectedRoom then
@@ -544,7 +559,7 @@ function XHomeDormManager.SetSelectedRoom(roomId, isSelected, isvistor, onFinish
         if CurSelectedRoom.Data.Id == room.Data.Id then
             CurSelectedRoom:SetCharacterExit()
             CurSelectedRoom:SetSelected(isSelected, true, onFinishEnterRoom)
-            if not isvistor then
+            if isvistor then
                 CurSelectedRoom = nil
             end
             XHomeSceneManager.SetGlobalIllumSO(CS.XGame.ClientConfig:GetString("HomeSceneSoAssetUrl"))
@@ -585,10 +600,6 @@ end
 
 -- 显示构造体详情时 显示隐藏指定房间的外部景物
 function XHomeDormManager.ShowOrHideBuilding(isShowOutside)
-    if CurSelectedRoom then
-        return
-    end
-
     -- 场景上高楼
     if not XTool.UObjIsNil(TallBuilding) then
         TallBuilding.gameObject:SetActive(isShowOutside)
@@ -657,6 +668,18 @@ function XHomeDormManager.WorldPosToGroundGridPos(worldPos, roomTransform)
     local gridPos = HomeMapManager:GetGridPosByLocal(localPos, CS.XHomePlatType.Ground, 0, 1, 1)
 
     return gridPos
+end
+
+-- 检测世界坐标是否在地图边界
+function XHomeDormManager.WorldPosCheckIsInBound(worldPos, roomTransform)
+    if XTool.UObjIsNil(HomeMapManager) then
+        return false
+    end
+
+    local localPos = roomTransform.worldToLocalMatrix:MultiplyPoint(worldPos)
+    local gridPos = HomeMapManager:GetGridPosByLocal(localPos, CS.XHomePlatType.Ground, 0)
+    local valid = HomeMapManager:CheckIsInBound(CS.XHomePlatType.Ground, gridPos.x, gridPos.y, 0)
+    return valid
 end
 
 -- 获取格子坐标

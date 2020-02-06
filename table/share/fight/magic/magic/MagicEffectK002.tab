@@ -40,6 +40,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 832212000	AddBehavior	832212																													
 832213	AddBuff	832213																													
 832213000	AddBehavior	832213																													
+832214	AddBuff	832214																													
+832214000	ChangeTimeScale	0|4|0|0																													
 832223	AddBuff	832223																													
 832223000	AddBehavior	832223																													
 832231	AddBuff	832231																													

@@ -22,12 +22,6 @@ local CharacterLastInteractTime = {}
 
 --初始化
 function XHomeCharManager.Init()
-
-    --进入爱抚
-    XEventManager.AddEventListener(XEventId.EVENT_DORM_TOUCH_ENTER, function(...)
-        XHomeCharManager.OnEvent(XEventId.EVENT_DORM_TOUCH_ENTER, ...)
-    end)
-
     XEventManager.AddEventListener(XEventId.EVENT_CHARACTER_ADD_EVENT_NOTIFY, function(...)
         XHomeCharManager.OnEvent(XEventId.EVENT_CHARACTER_ADD_EVENT_NOTIFY, ...)
     end)
@@ -132,20 +126,20 @@ function XHomeCharManager.PreLoadHomeCharacterById(charId)
 end
 
 --创建构造体
-function XHomeCharManager.CreateHomeCharacter(charId)
+function XHomeCharManager.CreateHomeCharacter(charId, root)
     local charStyleConfig = XDormConfig.GetCharacterStyleConfigById(charId)
 
     local homeChar = XHomeCharObj.New()
-    homeChar:LoadModel(charStyleConfig.Model)
+    homeChar:LoadModel(charStyleConfig.Model, root)
     homeChar.GameObject:SetActive(false)
     return homeChar
 end
 
 --从池里面获取构造体模型
-function XHomeCharManager.SpawnHomeCharacter(charId)
+function XHomeCharManager.SpawnHomeCharacter(charId, root)
     local charObj = nil
 
-    charObj = XHomeCharManager.CreateHomeCharacter(charId)
+    charObj = XHomeCharManager.CreateHomeCharacter(charId, root)
     ActiveCharacter[charId] = charObj
 
     return charObj
@@ -183,7 +177,7 @@ function XHomeCharManager.GetCharacterEvent(charId, isSelf)
         return
     end
 
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local EventTemp
     for i, v in ipairs(charData.EventList) do
         if not v.EndTime or v.EndTime > curTime or v.EndTime <= 0 then
@@ -214,7 +208,7 @@ function XHomeCharManager.CheckCharacterEventExist(charId, eventId, isSelf)
         return false
     end
 
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local EventTemp
 
     for i, v in ipairs(charData.EventList) do
@@ -241,7 +235,7 @@ function XHomeCharManager.CheckCharacterEventCompleted(charId, completeType, isS
     if not charData.EventList or #charData.EventList <= 0 then
         return
     end
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local EventTemp
 
     for i, v in ipairs(charData.EventList) do
@@ -278,7 +272,7 @@ function XHomeCharManager.CheckCharacterInteracter(charId)
         return false
     end
 
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local lastTime = CharacterLastInteractTime[charId]
     if lastTime and lastTime + CHARACTER_INTERACT_CD > time then
         return
@@ -328,7 +322,7 @@ function XHomeCharManager.CheckFurnitureInteract(charId)
         return false
     end
 
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local lastTime = FurnitureLastInteractTime[charId]
     if lastTime and lastTime + FURNITURE_INTERACT_CD > time then
         return
@@ -395,7 +389,7 @@ end
 
 
 --隐藏所有
-function XHomeCharManager.ShowAllCharacter()
+function XHomeCharManager.ShowAllCharacter(isResetPosition)
     if not ActiveCharacter then
         return
     end
@@ -403,7 +397,7 @@ function XHomeCharManager.ShowAllCharacter()
     for i, v in pairs(ActiveCharacter) do
         if not XTool.UObjIsNil(v.GameObject) then
             v.GameObject:SetActive(true)
-            v:OnShow()
+            v:OnShow(isResetPosition)
 
         end
     end
@@ -441,14 +435,14 @@ end
 
 --设置上次家具交互时间
 function XHomeCharManager.SetFurnitureInteractTime(charId)
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     FurnitureLastInteractTime[charId] = time
 end
 
 
 --设置上任务交互时间
 function XHomeCharManager.SetCharacterInteractTime(charId1, charId2)
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     CharacterLastInteractTime[charId1] = time
     CharacterLastInteractTime[charId2] = time
 end

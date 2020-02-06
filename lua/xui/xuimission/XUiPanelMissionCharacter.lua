@@ -9,6 +9,7 @@ local Status = {
 function XUiPanelMissionCharacter:Ctor(ui, parent, index)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.Status = Status.Empty
     self.Parent = parent
@@ -55,15 +56,15 @@ function XUiPanelMissionCharacter:InitAutoScript()
 end
 
 function XUiPanelMissionCharacter:AutoInitUi()
-    self.PanelLock = self.Transform:Find("PanelLock")
-    self.PanelEmpty = self.Transform:Find("PanelEmpty")
-    self.PanelCha = self.Transform:Find("PanelCha")
-    self.ImgBg = self.Transform:Find("PanelCha/ImgBg"):GetComponent("Image")
-    self.PanelMask = self.Transform:Find("PanelCha/PanelMask")
-    self.RImgCharacter = self.Transform:Find("PanelCha/PanelMask/RImgCharacter"):GetComponent("RawImage")
-    self.ImgType = self.Transform:Find("PanelCha/Image/ImgType"):GetComponent("Image")
-    self.TxtLevel = self.Transform:Find("PanelCha/Image/TxtLevel"):GetComponent("Text")
-    self.BtnAdd = self.Transform:Find("BtnAdd"):GetComponent("Button")
+    -- self.PanelLock = self.Transform:Find("PanelLock")
+    -- self.PanelEmpty = self.Transform:Find("PanelEmpty")
+    -- self.PanelCha = self.Transform:Find("PanelCha")
+    -- self.ImgBg = self.Transform:Find("PanelCha/ImgBg"):GetComponent("Image")
+    -- self.PanelMask = self.Transform:Find("PanelCha/PanelMask")
+    -- self.RImgCharacter = self.Transform:Find("PanelCha/PanelMask/RImgCharacter"):GetComponent("RawImage")
+    -- self.ImgType = self.Transform:Find("PanelCha/Image/ImgType"):GetComponent("Image")
+    -- self.TxtLevel = self.Transform:Find("PanelCha/Image/TxtLevel"):GetComponent("Text")
+    -- self.BtnAdd = self.Transform:Find("BtnAdd"):GetComponent("Button")
 end
 
 function XUiPanelMissionCharacter:GetAutoKey(uiNode, eventName)
@@ -100,7 +101,7 @@ end
 
 function XUiPanelMissionCharacter:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
 end
 -- auto
 function XUiPanelMissionCharacter:OnBtnAddClick(...)

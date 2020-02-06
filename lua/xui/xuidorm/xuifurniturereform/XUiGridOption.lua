@@ -11,7 +11,7 @@ end
 
 function XUiGridOption:AddBtnsListeners()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOption, "onClick", self.OnBtnOptionClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnOption, self.OnBtnOptionClick)
 end
 
 function XUiGridOption:RegisterListener(uiNode, eventName, func)

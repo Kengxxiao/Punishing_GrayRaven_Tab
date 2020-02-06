@@ -81,8 +81,10 @@ XFubenMainLineManagerCreator = function()
                 end
                 stars = stars + stageInfo.Stars
             end
-            info.Stars = stars
-            info.TotalStars = #chapter.StageId * 3
+            
+            local treasureCfg = XDataCenter.FubenMainLineManager.GetTreasureCfg(chapter.TreasureId[#chapter.TreasureId])  
+            info.TotalStars = treasureCfg.RequireStar
+            info.Stars = stars > info.TotalStars and info.TotalStars or stars
             info.Passed = allPassed
         end
         return info
@@ -209,7 +211,7 @@ XFubenMainLineManagerCreator = function()
     -- 获取篇章星数
     function XFubenMainLineManager.GetChapterStars(chapterId)
         local info = ChapterInfos[chapterId]
-        return info.Stars, info.TotalStars
+        return info and info.Stars or 0,info and info.TotalStars or 0
     end
 
     function XFubenMainLineManager.GetChapterList(difficult)
@@ -244,10 +246,12 @@ XFubenMainLineManagerCreator = function()
                 chapterInfo = XFubenMainLineManager.GetChapterInfo(chapterId)
             end
 
-            if chapterInfo.IsActivity then
-                tableInsert(activityList, v)
-            else
-                tableInsert(list, v)
+            if chapterInfo then
+                if chapterInfo.IsActivity then
+                    tableInsert(activityList, v)
+                else
+                    tableInsert(list, v)
+                end
             end
         end
 
@@ -552,7 +556,7 @@ XFubenMainLineManagerCreator = function()
 
     ------------------------------------------------------------------ 活动主线副本抢先体验 begin -------------------------------------------------------
     function XFubenMainLineManager.NotifyMainLineActivity(data)
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         ActivityEndTime = data.EndTime
         if now < ActivityEndTime then
             --清理上次活动状态
@@ -573,7 +577,7 @@ XFubenMainLineManagerCreator = function()
     end
 
     function XFubenMainLineManager.IsMainLineActivityOpen()
-        return ActivityEndTime and ActivityEndTime > XTime.Now()
+        return ActivityEndTime and ActivityEndTime > XTime.GetServerNowTimestamp()
     end
 
     function XFubenMainLineManager.MainLineActivityStart()
@@ -585,7 +589,7 @@ XFubenMainLineManagerCreator = function()
             ActivityTimer = nil
         end
         
-        local time = XTime.Now()
+        local time = XTime.GetServerNowTimestamp()
         ActivityTimer = CS.XScheduleManager.ScheduleForever(function(...)
             time = time + 1
             if time >= ActivityEndTime then

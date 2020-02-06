@@ -46,8 +46,8 @@ function XUiGridArenaTeamRank:ResetData(rank, data, rootUi, totalRank)
         local grid = self["GridMember" .. i]
         local headIcon = XUiHelper.TryGetComponent(grid, "RImgHeadIcon", "RawImage")
         local headIconEffect = XUiHelper.TryGetComponent(grid, "RImgHeadIcon/Effect", "XUiEffectLayer")
-        local nickname = XUiHelper.TryGetComponent(grid, "TxtNickname", "Text")
-        local captainTrans = XUiHelper.TryGetComponent(grid, "ImgCaptain", nil)
+        local nickname = XUiHelper.TryGetComponent(grid, "GridName/TxtNickname", "Text")
+        local captainTrans = XUiHelper.TryGetComponent(grid, "GridName/ImgCaptain", nil)
         local btnHead = XUiHelper.TryGetComponent(grid, "BtnHead", "Button")
 
         CsXUiHelper.RegisterClickEvent(btnHead, function()

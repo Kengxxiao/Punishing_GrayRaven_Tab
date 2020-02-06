@@ -1,5 +1,7 @@
 XUiPanelChallengeChapter = XClass()
 
+local XUguiDragProxy = CS.XUguiDragProxy
+
 function XUiPanelChallengeChapter:Ctor(ui, rootUi)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
@@ -20,6 +22,11 @@ function XUiPanelChallengeChapter:AutoInitUi()
     self.GridChallengeItem = self.Transform:Find("GridChallengeItem")
     self.SViewChallange = self.Transform:Find("SViewChallange"):GetComponent("ScrollRect")
     self.UiContent = self.Transform:Find("SViewChallange/Viewport/UiContent")
+    local dragProxy = self.SViewChallange:GetComponent(typeof(XUguiDragProxy))
+    if not dragProxy then
+        dragProxy = self.SViewChallange.gameObject:AddComponent(typeof(XUguiDragProxy))
+    end
+    dragProxy:RegisterHandler(handler(self, self.OnDragProxy))
 end
 
 function XUiPanelChallengeChapter:RegisterClickEvent(uiNode, func)
@@ -114,12 +121,18 @@ end
 
 function XUiPanelChallengeChapter:Show()
     if self.GameObject.activeSelf == true then return end
-    self.GameObject:SetActive(true)
+    self.GameObject:SetActiveEx(true)
 end
 
 function XUiPanelChallengeChapter:Hide()
     if self.GameObject.activeSelf == false then return end
-    self.GameObject:SetActive(false)
+    self.GameObject:SetActiveEx(false)
+end
+
+function XUiPanelChallengeChapter:OnDragProxy(dragType)
+    if dragType == 0 then
+        self.RootUi:OnClosePrequelDetail()
+    end
 end
 
 return XUiPanelChallengeChapter

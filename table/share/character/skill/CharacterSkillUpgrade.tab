@@ -89,23 +89,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 88	101217	16	必杀-零死角	必杀技：消耗100点能量，连续朝自身周围射击，共造成<color=#FF6347>1882.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2lidazhao1.png	60116			5	24000
 89	101217	17	必杀-零死角	必杀技：消耗100点能量，连续朝自身周围射击，共造成<color=#FF6347>1941.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2lidazhao1.png	60117			5	26000
 90	101217	18	必杀-零死角	必杀技：消耗100点能量，连续朝自身周围射击，共造成<color=#FF6347>2000%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2lidazhao1.png				0	0
-91	101218	1	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>150%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>10%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-92	101218	2	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>158.82%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>10.59%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-93	101218	3	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>167.65%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>11.18%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-94	101218	4	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>176.47%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>11.76%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-95	101218	5	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>185.29%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>12.35%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-96	101218	6	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>194.12%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>12.94%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-97	101218	7	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>202.94%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>13.53%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-98	101218	8	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>211.76%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>14.12%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-99	101218	9	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>220.59%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>14.71%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-100	101218	10	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>229.41%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>15.29%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-101	101218	11	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>238.24%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>15.88%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-102	101218	12	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>247.06%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>16.47%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-103	101218	13	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>255.88%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>17.06%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-104	101218	14	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>264.71%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>17.65%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-105	101218	15	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>273.53%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>18.24%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-106	101218	16	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>282.35%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>18.82%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-107	101218	17	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>291.18%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>19.41%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+91	101218	1	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>150%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>10%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+92	101218	2	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>158.82%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>10.59%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+93	101218	3	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>167.65%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>11.18%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+94	101218	4	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>176.47%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>11.76%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+95	101218	5	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>185.29%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>12.35%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+96	101218	6	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>194.12%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>12.94%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+97	101218	7	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>202.94%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>13.53%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+98	101218	8	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>211.76%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>14.12%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+99	101218	9	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>220.59%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>14.71%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+100	101218	10	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>229.41%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>15.29%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+101	101218	11	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>238.24%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>15.88%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+102	101218	12	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>247.06%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>16.47%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+103	101218	13	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>255.88%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>17.06%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+104	101218	14	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>264.71%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>17.65%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+105	101218	15	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>273.53%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>18.24%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+106	101218	16	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>282.35%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>18.82%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+107	101218	17	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>291.18%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>19.41%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 108	101218	18	零死角-速射	QTE：里出场使用双枪朝目标射击，造成<color=#FF6347>300%</color>的物理伤害并使目标进入感电状态，使目标受到攻击时额外受到<color=#FF6347>20%</color>的物理伤害，持续5秒，持续时间内最多触发15次。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 109	101221	1	控弹	核心被动：消除黄球后，下次红球子弹额外附加<color=#FF6347>爆炎</color>效果。<color=#FF6347>爆炎</color>：子弹命中敌人时发生爆炸，爆炸对范围内的敌人造成<color=#FF6347>30%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R2lihexin1.png	60201			1	2000
 110	101221	2	控弹	核心被动：消除黄球后，下次红球子弹额外附加<color=#FF6347>爆炎</color>效果。<color=#FF6347>爆炎</color>：子弹命中敌人时发生爆炸，爆炸对范围内的敌人造成<color=#FF6347>31.76%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R2lihexin1.png	60202			1	3000
@@ -243,23 +243,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 242	102117	16	必杀-红莲乱舞	必杀技：消耗100点能量，释放红莲剑舞快速对前方敌人进行斩击，每击造成<color=#FF6347>131.76%</color>的的物理伤害，最后对敌人进行重击造成<color=#FF6347>941.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1luxiyadazhao1.png	60116			5	24000
 243	102117	17	必杀-红莲乱舞	必杀技：消耗100点能量，释放红莲剑舞快速对前方敌人进行斩击，每击造成<color=#FF6347>135.88%</color>的的物理伤害，最后对敌人进行重击造成<color=#FF6347>970.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1luxiyadazhao1.png	60117			5	26000
 244	102117	18	必杀-红莲乱舞	必杀技：消耗100点能量，释放红莲剑舞快速对前方敌人进行斩击，每击造成<color=#FF6347>140%</color>的的物理伤害，最后对敌人进行重击造成<color=#FF6347>1000%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1luxiyadazhao1.png				0	0
-245	102118	1	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>370%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-246	102118	2	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>391.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-247	102118	3	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>413.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-248	102118	4	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>435.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-249	102118	5	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>457.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-250	102118	6	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>478.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-251	102118	7	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>500.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-252	102118	8	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>522.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-253	102118	9	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>544.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-254	102118	10	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>565.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-255	102118	11	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>587.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-256	102118	12	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>609.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-257	102118	13	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>631.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-258	102118	14	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>652.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-259	102118	15	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>674.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-260	102118	16	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>696.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-261	102118	17	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>718.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+245	102118	1	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>370%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+246	102118	2	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>391.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+247	102118	3	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>413.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+248	102118	4	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>435.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+249	102118	5	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>457.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+250	102118	6	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>478.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+251	102118	7	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>500.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+252	102118	8	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>522.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+253	102118	9	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>544.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+254	102118	10	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>565.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+255	102118	11	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>587.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+256	102118	12	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>609.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+257	102118	13	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>631.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+258	102118	14	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>652.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+259	102118	15	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>674.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+260	102118	16	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>696.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+261	102118	17	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>718.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 262	102118	18	莲华快斩	QTE:露西亚出场使用双刀术攻击敌人，共造成共造成<color=#FF6347>740%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 263	102121	1	红莲-双刀术	核心被动：任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。红莲-双刀术：连续攻击敌人，共造成<color=#FF6347>460%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1luxiyahexin1.png	60201			1	2000
 264	102121	2	红莲-双刀术	核心被动：任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。红莲-双刀术：连续攻击敌人，共造成<color=#FF6347>487.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1luxiyahexin1.png	60202			1	3000
@@ -397,23 +397,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 396	103117	16	必杀-苍穹星降	必杀技：消耗100点能量，丽芙召唤大量光束连续轰击目标区域2秒，每束光束造成<color=#FF6347>65.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1lifudazhao1.png	60116			5	24000
 397	103117	17	必杀-苍穹星降	必杀技：消耗100点能量，丽芙召唤大量光束连续轰击目标区域2秒，每束光束造成<color=#FF6347>67.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1lifudazhao1.png	60117			5	26000
 398	103117	18	必杀-苍穹星降	必杀技：消耗100点能量，丽芙召唤大量光束连续轰击目标区域2秒，每束光束造成<color=#FF6347>70%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1lifudazhao1.png				0	0
-399	103118	1	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>10%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-400	103118	2	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>10.59%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-401	103118	3	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>11.18%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-402	103118	4	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>11.76%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-403	103118	5	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>12.35%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-404	103118	6	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>12.94%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-405	103118	7	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>13.53%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-406	103118	8	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>14.12%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-407	103118	9	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>14.71%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-408	103118	10	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>15.29%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-409	103118	11	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>15.88%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-410	103118	12	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>16.47%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-411	103118	13	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>17.06%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-412	103118	14	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>17.65%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-413	103118	15	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>18.24%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-414	103118	16	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>18.82%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-415	103118	17	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>19.41%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+399	103118	1	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>10%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+400	103118	2	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>10.59%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+401	103118	3	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>11.18%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+402	103118	4	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>11.76%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+403	103118	5	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>12.35%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+404	103118	6	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>12.94%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+405	103118	7	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>13.53%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+406	103118	8	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>14.12%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+407	103118	9	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>14.71%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+408	103118	10	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>15.29%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+409	103118	11	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>15.88%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+410	103118	12	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>16.47%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+411	103118	13	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>17.06%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+412	103118	14	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>17.65%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+413	103118	15	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>18.24%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+414	103118	16	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>18.82%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+415	103118	17	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>19.41%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 416	103118	18	纳米场绽放	QTE:丽芙出场发出冲击能量，为周围的友方单位回复丽芙<color=#FF6347>20%</color>的最大生命值，对周围的敌方单位造成100%的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 417	103121	1	激光束群	核心被动：任意3消后下次红球技能将释放激光束群。共造成<color=#FF6347>400%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1lifuhexin1.png	60301			1	2000
 418	103121	2	激光束群	核心被动：任意3消后下次红球技能将释放激光束群。共造成<color=#FF6347>423.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R1lifuhexin1.png	60302			1	3000
@@ -551,23 +551,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 550	104217	16	必杀-天命之雨	必杀技：消耗60点能量，朝目标区域射出箭雨，每只箭矢造成<color=#FF6347>188.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2biankadazhao1.png	60116			5	24000
 551	104217	17	必杀-天命之雨	必杀技：消耗60点能量，朝目标区域射出箭雨，每只箭矢造成<color=#FF6347>194.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2biankadazhao1.png	60117			5	26000
 552	104217	18	必杀-天命之雨	必杀技：消耗60点能量，朝目标区域射出箭雨，每只箭矢造成<color=#FF6347>200%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2biankadazhao1.png				0	0
-553	104218	1	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>30%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-554	104218	2	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>31.76%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-555	104218	3	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>33.53%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-556	104218	4	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>35.29%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-557	104218	5	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>37.06%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-558	104218	6	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>38.82%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-559	104218	7	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>40.59%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-560	104218	8	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>42.35%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-561	104218	9	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>44.12%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-562	104218	10	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>45.88%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-563	104218	11	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>47.65%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-564	104218	12	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>49.41%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-565	104218	13	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>51.18%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-566	104218	14	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>52.94%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-567	104218	15	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>54.71%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-568	104218	16	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>56.47%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-569	104218	17	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>58.24%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+553	104218	1	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>30%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+554	104218	2	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>31.76%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+555	104218	3	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>33.53%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+556	104218	4	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>35.29%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+557	104218	5	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>37.06%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+558	104218	6	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>38.82%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+559	104218	7	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>40.59%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+560	104218	8	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>42.35%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+561	104218	9	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>44.12%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+562	104218	10	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>45.88%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+563	104218	11	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>47.65%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+564	104218	12	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>49.41%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+565	104218	13	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>51.18%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+566	104218	14	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>52.94%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+567	104218	15	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>54.71%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+568	104218	16	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>56.47%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+569	104218	17	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>58.24%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 570	104218	18	猎杀之雨	QTE：比安卡出场跃入空中，朝目标连续射击5次，每次造成<color=#FF6347>60%</color>的物理伤害，并且必定暴击	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 571	104221	1	饶恕箭筒	核心被动：每次3消将会储存1支能量箭矢，最多储存3支，下次释放必杀时将储存的能量箭一齐发出，每支能量箭额外造成2次<color=#FF6347>50%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2biankahexin1.png	60201			1	2000
 572	104221	2	饶恕箭筒	核心被动：每次3消将会储存1支能量箭矢，最多储存3支，下次释放必杀时将储存的能量箭一齐发出，每支能量箭额外造成2次<color=#FF6347>52.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2biankahexin1.png	60202			1	3000
@@ -705,23 +705,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 704	105117	16	必杀-琉晶壁垒	必杀技：消耗100点能量，释放能量屏障，抵挡敌人的攻击，保护区域内的友方单位，5秒后爆炸对敌人造成<color=#FF6347>941.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2yongyechaodazhao1.png	60116			5	24000
 705	105117	17	必杀-琉晶壁垒	必杀技：消耗100点能量，释放能量屏障，抵挡敌人的攻击，保护区域内的友方单位，5秒后爆炸对敌人造成<color=#FF6347>970.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2yongyechaodazhao1.png	60117			5	26000
 706	105117	18	必杀-琉晶壁垒	必杀技：消耗100点能量，释放能量屏障，抵挡敌人的攻击，保护区域内的友方单位，5秒后爆炸对敌人造成<color=#FF6347>1000%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2yongyechaodazhao1.png				0	0
-707	105118	1	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>245%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-708	105118	2	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>259.41%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-709	105118	3	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>273.82%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-710	105118	4	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>288.24%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-711	105118	5	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>302.65%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-712	105118	6	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>317.06%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-713	105118	7	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>331.47%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-714	105118	8	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>345.88%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-715	105118	9	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>360.29%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-716	105118	10	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>374.71%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-717	105118	11	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>389.12%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-718	105118	12	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>403.53%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-719	105118	13	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>417.94%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-720	105118	14	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>432.35%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-721	105118	15	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>446.76%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-722	105118	16	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>461.18%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-723	105118	17	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>475.59%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+707	105118	1	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>245%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+708	105118	2	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>259.41%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+709	105118	3	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>273.82%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+710	105118	4	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>288.24%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+711	105118	5	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>302.65%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+712	105118	6	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>317.06%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+713	105118	7	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>331.47%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+714	105118	8	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>345.88%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+715	105118	9	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>360.29%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+716	105118	10	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>374.71%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+717	105118	11	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>389.12%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+718	105118	12	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>403.53%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+719	105118	13	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>417.94%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+720	105118	14	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>432.35%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+721	105118	15	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>446.76%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+722	105118	16	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>461.18%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+723	105118	17	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>475.59%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 724	105118	18	断！空！哔——！	QTE：七实出场旋转切割目标，共造成<color=#FF6347>490%</color>的物理伤害并击倒目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 725	105121	1	EX-切割风暴	核心被动：任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成<color=#FF6347>50%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2yongyechaohexin1.png	60201			1	2000
 726	105121	2	EX-切割风暴	核心被动：任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成<color=#FF6347>52.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2yongyechaohexin1.png	60202			1	3000
@@ -859,23 +859,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 858	106217	16	必杀-绝杀重压	必杀技：蓄力爆发能量，快速挥舞大剑攻击前方敌人，共造成<color=#FF6347>1505.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2shenweidazhao1.png	60116			5	24000
 859	106217	17	必杀-绝杀重压	必杀技：蓄力爆发能量，快速挥舞大剑攻击前方敌人，共造成<color=#FF6347>1552.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2shenweidazhao1.png	60117			5	26000
 860	106217	18	必杀-绝杀重压	必杀技：蓄力爆发能量，快速挥舞大剑攻击前方敌人，共造成<color=#FF6347>1600%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2shenweidazhao1.png				0	0
-861	106218	1	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>250%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-862	106218	2	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>264.71%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.29%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-863	106218	3	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>279.41%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.59%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-864	106218	4	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>294.12%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.88%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-865	106218	5	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>308.82%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.18%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-866	106218	6	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>323.53%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.47%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-867	106218	7	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>338.24%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.76%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-868	106218	8	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>352.94%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.06%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-869	106218	9	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>367.65%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.35%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-870	106218	10	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>382.35%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.65%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-871	106218	11	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>397.06%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.94%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-872	106218	12	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>411.76%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.24%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-873	106218	13	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>426.47%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.53%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-874	106218	14	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>441.18%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.82%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-875	106218	15	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>455.88%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.12%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-876	106218	16	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>470.59%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.41%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-877	106218	17	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>485.29%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.71%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+861	106218	1	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>250%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+862	106218	2	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>264.71%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.29%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+863	106218	3	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>279.41%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.59%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+864	106218	4	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>294.12%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>5.88%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+865	106218	5	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>308.82%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.18%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+866	106218	6	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>323.53%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.47%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+867	106218	7	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>338.24%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>6.76%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+868	106218	8	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>352.94%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.06%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+869	106218	9	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>367.65%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.35%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+870	106218	10	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>382.35%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.65%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+871	106218	11	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>397.06%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>7.94%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+872	106218	12	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>411.76%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.24%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+873	106218	13	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>426.47%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.53%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+874	106218	14	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>441.18%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>8.82%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+875	106218	15	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>455.88%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.12%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+876	106218	16	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>470.59%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.41%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+877	106218	17	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>485.29%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>9.71%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 878	106218	18	重压之风	QTE：神威出场用大剑重劈目标，造成<color=#FF6347>500%</color>的物理伤害，眩晕目标并减少目标<color=#FF6347>10%</color>的防御	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 879	106221	1	攻防律动	核心被动：任意3消后获得40点充能值，充能上限为120点。充能值大于0/40/80点时，神威获得<color=#FF6347>3%</color>/<color=#FF6347>6%</color>/<color=#FF6347>9%</color>的攻击力加成。充能状态下，每秒减少8点充能值。	Assets/Product/Texture/Image/IconSkill/R2shenweihexin1.png	60201			1	2000
 880	106221	2	攻防律动	核心被动：任意3消后获得40点充能值，充能上限为120点。充能值大于0/40/80点时，神威获得<color=#FF6347>3.18%</color>/<color=#FF6347>6.35%</color>/<color=#FF6347>9.53%</color>的攻击力加成。充能状态下，每秒减少8点充能值。	Assets/Product/Texture/Image/IconSkill/R2shenweihexin1.png	60202			1	3000
@@ -1013,23 +1013,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1012	107217	16	必杀-破碎轰鸣	必杀技：消耗100点能量，对目标区域召唤炮弹持续轰击，每发炮弹造成<color=#FF6347>94.12%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2kalieninadazhao1.png	60116			5	24000
 1013	107217	17	必杀-破碎轰鸣	必杀技：消耗100点能量，对目标区域召唤炮弹持续轰击，每发炮弹造成<color=#FF6347>97.06%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2kalieninadazhao1.png	60117			5	26000
 1014	107217	18	必杀-破碎轰鸣	必杀技：消耗100点能量，对目标区域召唤炮弹持续轰击，每发炮弹造成<color=#FF6347>100%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2kalieninadazhao1.png				0	0
-1015	107218	1	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>250%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1016	107218	2	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>264.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1017	107218	3	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>279.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1018	107218	4	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>294.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1019	107218	5	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>308.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1020	107218	6	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>323.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1021	107218	7	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>338.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1022	107218	8	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1023	107218	9	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>367.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1024	107218	10	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>382.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1025	107218	11	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>397.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1026	107218	12	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>411.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1027	107218	13	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>426.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1028	107218	14	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1029	107218	15	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>455.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1030	107218	16	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>470.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1031	107218	17	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>485.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1015	107218	1	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>250%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1016	107218	2	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>264.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1017	107218	3	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>279.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1018	107218	4	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>294.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1019	107218	5	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>308.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1020	107218	6	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>323.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1021	107218	7	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>338.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1022	107218	8	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1023	107218	9	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>367.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1024	107218	10	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>382.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1025	107218	11	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>397.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1026	107218	12	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>411.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1027	107218	13	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>426.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1028	107218	14	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1029	107218	15	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>455.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1030	107218	16	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>470.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1031	107218	17	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>485.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1032	107218	18	歼灭弹	QTE：卡列尼娜出场释放旋火弹，最多造成<color=#FF6347>500%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1033	107221	1	炮斗战术	核心被动：3次3消后或释放必杀技后，卡列尼娜进入爆发状态，下次普通攻击将用远程炮击攻击，持续3秒，每发炮弹造成<color=#FF6347>40%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2kalieninahexin1.png	60201			1	2000
 1034	107221	2	炮斗战术	核心被动：3次3消后或释放必杀技后，卡列尼娜进入爆发状态，下次普通攻击将用远程炮击攻击，持续3秒，每发炮弹造成<color=#FF6347>42.35%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2kalieninahexin1.png	60202			1	3000
@@ -1167,23 +1167,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1166	108217	16	必杀-黑夜刀锋	必杀技：消耗100点能量，操控刀刃对敌人进行攻击，共造成<color=#FF6347>2823.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2dubiandazhao1.png	60116			5	24000
 1167	108217	17	必杀-黑夜刀锋	必杀技：消耗100点能量，操控刀刃对敌人进行攻击，共造成<color=#FF6347>2911.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2dubiandazhao1.png	60117			5	26000
 1168	108217	18	必杀-黑夜刀锋	必杀技：消耗100点能量，操控刀刃对敌人进行攻击，共造成<color=#FF6347>3000%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2dubiandazhao1.png				0	0
-1169	108218	1	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>300%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1170	108218	2	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>317.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1171	108218	3	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>335.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1172	108218	4	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1173	108218	5	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>370.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1174	108218	6	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>388.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1175	108218	7	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>405.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1176	108218	8	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>423.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1177	108218	9	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1178	108218	10	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>458.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1179	108218	11	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>476.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1180	108218	12	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>494.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1181	108218	13	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>511.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1182	108218	14	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>529.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1183	108218	15	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>547.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1184	108218	16	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>564.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1185	108218	17	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>582.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1169	108218	1	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>300%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1170	108218	2	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>317.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1171	108218	3	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>335.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1172	108218	4	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1173	108218	5	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>370.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1174	108218	6	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>388.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1175	108218	7	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>405.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1176	108218	8	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>423.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1177	108218	9	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1178	108218	10	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>458.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1179	108218	11	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>476.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1180	108218	12	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>494.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1181	108218	13	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>511.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1182	108218	14	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>529.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1183	108218	15	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>547.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1184	108218	16	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>564.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1185	108218	17	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>582.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1186	108218	18	闪坠	QTE：渡边出场从空中刺下，造成<color=#FF6347>600%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1187	108221	1	疾驰幻影	核心被动：每次3消的最后一击将会把目标标记，叠加2次标记时，将释放能量分身攻击，分身将持续存在5秒，每次普通攻击时，都将命令能量分身攻击一次，每次分身攻击造成<color=#FF6347>40%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2dubianhexin1.png	60201			1	2000
 1188	108221	2	疾驰幻影	核心被动：每次3消的最后一击将会把目标标记，叠加2次标记时，将释放能量分身攻击，分身将持续存在5秒，每次普通攻击时，都将命令能量分身攻击一次，每次分身攻击造成<color=#FF6347>42.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2dubianhexin1.png	60202			1	3000
@@ -1321,23 +1321,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1320	102217	16	必杀-红莲剑	必杀技：消耗50点能量，释放普攻和技能会有额外的红莲剑辅助攻击造成<color=#FF6347>23.53%</color>的雷属性伤害，红莲剑持续15秒。	Assets/Product/Texture/Image/IconSkill/R2luxiyadazhao1.png	60116			5	24000
 1321	102217	17	必杀-红莲剑	必杀技：消耗50点能量，释放普攻和技能会有额外的红莲剑辅助攻击造成<color=#FF6347>24.26%</color>的雷属性伤害，红莲剑持续15秒。	Assets/Product/Texture/Image/IconSkill/R2luxiyadazhao1.png	60117			5	26000
 1322	102217	18	必杀-红莲剑	必杀技：消耗50点能量，释放普攻和技能会有额外的红莲剑辅助攻击造成<color=#FF6347>25%</color>的雷属性伤害，红莲剑持续15秒。	Assets/Product/Texture/Image/IconSkill/R2luxiyadazhao1.png				0	0
-1323	102218	1	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>300%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1324	102218	2	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>317.65%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1325	102218	3	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>335.29%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1326	102218	4	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>352.94%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1327	102218	5	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>370.59%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1328	102218	6	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>388.24%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1329	102218	7	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>405.88%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1330	102218	8	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>423.53%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1331	102218	9	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>441.18%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1332	102218	10	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>458.82%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1333	102218	11	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>476.47%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1334	102218	12	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>494.12%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1335	102218	13	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>511.76%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1336	102218	14	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>529.41%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1337	102218	15	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>547.06%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1338	102218	16	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>564.71%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1339	102218	17	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>582.35%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1323	102218	1	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>300%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1324	102218	2	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>317.65%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1325	102218	3	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>335.29%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1326	102218	4	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>352.94%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1327	102218	5	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>370.59%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1328	102218	6	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>388.24%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1329	102218	7	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>405.88%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1330	102218	8	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>423.53%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1331	102218	9	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>441.18%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1332	102218	10	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>458.82%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1333	102218	11	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>476.47%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1334	102218	12	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>494.12%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1335	102218	13	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>511.76%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1336	102218	14	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>529.41%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1337	102218	15	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>547.06%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1338	102218	16	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>564.71%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1339	102218	17	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>582.35%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1340	102218	18	散华	QTE：露西亚出场发动散华，对目标造成<color=#FF6347>600%</color>的伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1341	102221	1	红莲-引雷舞	核心被动：<color=#FF6347>引雷</color>：雷属性攻击被标记的敌人时，根据敌人被标记的层数，有<color=#FF6347>25%</color>/<color=#FF6347>50%</color>/<color=#FF6347>75%</color>概率引发落雷攻击目标，造成<color=#FF6347>20%</color>的雷属性伤害。	Assets/Product/Texture/Image/IconSkill/R2luxiyahexin1.png	60201			1	2000
 1342	102221	2	红莲-引雷舞	核心被动：<color=#FF6347>引雷</color>：雷属性攻击被标记的敌人时，根据敌人被标记的层数，有<color=#FF6347>25%</color>/<color=#FF6347>50%</color>/<color=#FF6347>75%</color>概率引发落雷攻击目标，造成<color=#FF6347>21.18%</color>的雷属性伤害。	Assets/Product/Texture/Image/IconSkill/R2luxiyahexin1.png	60202			1	3000
@@ -1475,23 +1475,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1474	103217	16	必杀-导电波	必杀技：消耗100点能量，召唤雷电区域，处于区域的友方单位每秒回复1个信号球，并增加<color=#FF6347>18.82%</color>的攻击力。处于区域的敌方单位将减少<color=#FF6347>50%</color>的移动速度。	Assets/Product/Texture/Image/IconSkill/R2lifudazhao1.png	60116			5	24000
 1475	103217	17	必杀-导电波	必杀技：消耗100点能量，召唤雷电区域，处于区域的友方单位每秒回复1个信号球，并增加<color=#FF6347>19.41%</color>的攻击力。处于区域的敌方单位将减少<color=#FF6347>50%</color>的移动速度。	Assets/Product/Texture/Image/IconSkill/R2lifudazhao1.png	60117			5	26000
 1476	103217	18	必杀-导电波	必杀技：消耗100点能量，召唤雷电区域，处于区域的友方单位每秒回复1个信号球，并增加<color=#FF6347>20%</color>的攻击力。处于区域的敌方单位将减少<color=#FF6347>50%</color>的移动速度。	Assets/Product/Texture/Image/IconSkill/R2lifudazhao1.png				0	0
-1477	103218	1	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>100%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>12.5%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1478	103218	2	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>105.88%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>13.24%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1479	103218	3	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>111.76%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>13.97%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1480	103218	4	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>117.65%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>14.71%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1481	103218	5	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>123.53%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>15.44%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1482	103218	6	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>129.41%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>16.18%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1483	103218	7	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>135.29%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>16.91%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1484	103218	8	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>141.18%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>17.65%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1485	103218	9	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>147.06%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>18.38%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1486	103218	10	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>152.94%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>19.12%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1487	103218	11	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>158.82%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>19.85%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1488	103218	12	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>164.71%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>20.59%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1489	103218	13	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>170.59%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>21.32%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1490	103218	14	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>176.47%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>22.06%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1491	103218	15	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>182.35%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>22.79%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1492	103218	16	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>188.24%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>23.53%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1493	103218	17	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>194.12%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>24.26%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1477	103218	1	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>100%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>12.5%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1478	103218	2	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>105.88%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>13.24%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1479	103218	3	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>111.76%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>13.97%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1480	103218	4	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>117.65%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>14.71%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1481	103218	5	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>123.53%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>15.44%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1482	103218	6	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>129.41%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>16.18%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1483	103218	7	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>135.29%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>16.91%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1484	103218	8	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>141.18%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>17.65%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1485	103218	9	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>147.06%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>18.38%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1486	103218	10	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>152.94%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>19.12%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1487	103218	11	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>158.82%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>19.85%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1488	103218	12	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>164.71%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>20.59%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1489	103218	13	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>170.59%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>21.32%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1490	103218	14	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>176.47%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>22.06%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1491	103218	15	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>182.35%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>22.79%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1492	103218	16	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>188.24%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>23.53%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1493	103218	17	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>194.12%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>24.26%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1494	103218	18	新式纳米绽放	QTE：丽芙出场召唤一个<color=#FF6347>EX引雷</color>，轰击范围内的敌人造成<color=#FF6347>200%</color>的雷属性伤害，并留下离子区域，治疗区域内友方单位，每秒回复其<color=#FF6347>25%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1495	103221	1	逆白鹭领域	核心被动：普通攻击标记的敌人，有<color=#FF6347>30%</color>的概率召唤<color=#FF6347>引雷</color>，造成<color=#FF6347>30%</color>的雷属性伤害。红球有<color=#FF6347>30%</color>/<color=#FF6347>60%</color>/<color=#FF6347>100%</color>的概率触发<color=#FF6347>引雷</color>。触发4次<color=#FF6347>引雷</color>后，下次<color=#FF6347>引雷</color>将召唤<color=#FF6347>EX引雷</color>，造成<color=#FF6347>100%</color>的雷属性伤害并治疗友方，回复其<color=#FF6347>15%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/R2lifuhexin1.png	60201			1	2000
 1496	103221	2	逆白鹭领域	核心被动：普通攻击标记的敌人，有<color=#FF6347>30%</color>的概率召唤<color=#FF6347>引雷</color>，造成<color=#FF6347>31.76%</color>的雷属性伤害。红球有<color=#FF6347>30%</color>/<color=#FF6347>60%</color>/<color=#FF6347>100%</color>的概率触发<color=#FF6347>引雷</color>。触发4次<color=#FF6347>引雷</color>后，下次<color=#FF6347>引雷</color>将召唤<color=#FF6347>EX引雷</color>，造成<color=#FF6347>105.88%</color>的雷属性伤害并治疗友方，回复其<color=#FF6347>15.88%</color>攻击力的生命值。	Assets/Product/Texture/Image/IconSkill/R2lifuhexin1.png	60202			1	3000
@@ -1629,23 +1629,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1628	103317	16	阿卡迪亚之门	必杀技：蓄力创造一个大范围的能量区域，期间对范围内的随机敌人释放<color=#FF6347>光罚</color>，每个造成<color=#FF6347>141.18%</color>的物理伤害，范围内队友获得75%的物理伤害减免。	Assets/Product/Texture/Image/IconSkill/R3lifudazhao1.png	60116			5	24000
 1629	103317	17	阿卡迪亚之门	必杀技：蓄力创造一个大范围的能量区域，期间对范围内的随机敌人释放<color=#FF6347>光罚</color>，每个造成<color=#FF6347>145.59%</color>的物理伤害，范围内队友获得75%的物理伤害减免。	Assets/Product/Texture/Image/IconSkill/R3lifudazhao1.png	60117			5	26000
 1630	103317	18	阿卡迪亚之门	必杀技：蓄力创造一个大范围的能量区域，期间对范围内的随机敌人释放<color=#FF6347>光罚</color>，每个造成<color=#FF6347>150%</color>的物理伤害，范围内队友获得75%的物理伤害减免。	Assets/Product/Texture/Image/IconSkill/R3lifudazhao1.png				0	0
-1631	103318	1	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>50%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>50%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1632	103318	2	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>52.94%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>52.94%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1633	103318	3	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>55.88%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>55.88%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1634	103318	4	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>58.82%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>58.82%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1635	103318	5	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>61.76%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>61.76%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1636	103318	6	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>64.71%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>64.71%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1637	103318	7	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>67.65%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>67.65%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1638	103318	8	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>70.59%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>70.59%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1639	103318	9	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>73.53%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>73.53%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1640	103318	10	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>76.47%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>76.47%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1641	103318	11	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>79.41%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>79.41%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1642	103318	12	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>82.35%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>82.35%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1643	103318	13	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>85.29%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>85.29%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1644	103318	14	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>88.24%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>88.24%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1645	103318	15	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>91.18%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>91.18%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1646	103318	16	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>94.12%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>94.12%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1647	103318	17	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>97.06%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>97.06%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1631	103318	1	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>50%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>50%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1632	103318	2	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>52.94%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>52.94%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1633	103318	3	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>55.88%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>55.88%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1634	103318	4	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>58.82%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>58.82%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1635	103318	5	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>61.76%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>61.76%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1636	103318	6	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>64.71%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>64.71%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1637	103318	7	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>67.65%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>67.65%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1638	103318	8	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>70.59%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>70.59%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1639	103318	9	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>73.53%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>73.53%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1640	103318	10	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>76.47%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>76.47%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1641	103318	11	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>79.41%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>79.41%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1642	103318	12	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>82.35%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>82.35%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1643	103318	13	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>85.29%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>85.29%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1644	103318	14	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>88.24%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>88.24%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1645	103318	15	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>91.18%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>91.18%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1646	103318	16	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>94.12%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>94.12%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1647	103318	17	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>97.06%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>97.06%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1648	103318	18	英灵之舞	QTE：丽芙出场治疗附近的友方单位，回复其攻击力<color=#FF6347>100%</color>的生命值，并使友方单位获得其攻击力<color=#FF6347>100%</color>的护盾，持续2秒。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1649	103321	1	女神连接系统	核心被动：攻击被标记的敌人时，有20%的概率触发<color=#FF6347>光罚</color>，造成<color=#FF6347>75%</color>的物理伤害。3消或触发5次<color=#FF6347>光罚</color>后，为自身周围的友方单位回复其攻击力<color=#FF6347>30%</color>的生命值。	Assets/Product/Texture/Image/IconSkill/R3lifuhexin1.png	60201			1	2000
 1650	103321	2	女神连接系统	核心被动：攻击被标记的敌人时，有20%的概率触发<color=#FF6347>光罚</color>，造成<color=#FF6347>79.41%</color>的物理伤害。3消或触发5次<color=#FF6347>光罚</color>后，为自身周围的友方单位回复其攻击力<color=#FF6347>31.76%</color>的生命值。	Assets/Product/Texture/Image/IconSkill/R3lifuhexin1.png	60202			1	3000
@@ -1783,23 +1783,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1782	106317	16	必杀-一体双心	必杀技：能量大于60时可开启进入暗影状态，所有技能形态改变，并且每1秒扣除8点能量，能量耗尽时退出暗影状态。暗影状态下，暗属性伤害提升<color=#FF6347>18.82%</color>。	Assets/Product/Texture/Image/IconSkill/R3shenweidazhao1.png	60116			5	24000
 1783	106317	17	必杀-一体双心	必杀技：能量大于60时可开启进入暗影状态，所有技能形态改变，并且每1秒扣除8点能量，能量耗尽时退出暗影状态。暗影状态下，暗属性伤害提升<color=#FF6347>19.41%</color>。	Assets/Product/Texture/Image/IconSkill/R3shenweidazhao1.png	60117			5	26000
 1784	106317	18	必杀-一体双心	必杀技：能量大于60时可开启进入暗影状态，所有技能形态改变，并且每1秒扣除8点能量，能量耗尽时退出暗影状态。暗影状态下，暗属性伤害提升<color=#FF6347>20%</color>。	Assets/Product/Texture/Image/IconSkill/R3shenweidazhao1.png				0	0
-1785	106318	1	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>210%</color>的物理伤害，最后1击造成<color=#FF6347>40%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1786	106318	2	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>222.35%</color>的物理伤害，最后1击造成<color=#FF6347>42.35%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.29%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1787	106318	3	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>234.71%</color>的物理伤害，最后1击造成<color=#FF6347>44.71%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.59%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1788	106318	4	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>247.06%</color>的物理伤害，最后1击造成<color=#FF6347>47.06%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.88%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1789	106318	5	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>259.41%</color>的物理伤害，最后1击造成<color=#FF6347>49.41%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.18%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1790	106318	6	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>271.76%</color>的物理伤害，最后1击造成<color=#FF6347>51.76%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.47%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1791	106318	7	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>284.12%</color>的物理伤害，最后1击造成<color=#FF6347>54.12%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.76%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1792	106318	8	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>296.47%</color>的物理伤害，最后1击造成<color=#FF6347>56.47%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.06%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1793	106318	9	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>308.82%</color>的物理伤害，最后1击造成<color=#FF6347>58.82%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.35%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1794	106318	10	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>321.18%</color>的物理伤害，最后1击造成<color=#FF6347>61.18%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.65%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1795	106318	11	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>333.53%</color>的物理伤害，最后1击造成<color=#FF6347>63.53%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.94%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1796	106318	12	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>345.88%</color>的物理伤害，最后1击造成<color=#FF6347>65.88%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.24%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1797	106318	13	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>358.24%</color>的物理伤害，最后1击造成<color=#FF6347>68.24%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.53%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1798	106318	14	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>370.59%</color>的物理伤害，最后1击造成<color=#FF6347>70.59%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.82%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1799	106318	15	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>382.94%</color>的物理伤害，最后1击造成<color=#FF6347>72.94%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.12%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1800	106318	16	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>395.29%</color>的物理伤害，最后1击造成<color=#FF6347>75.29%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.41%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1801	106318	17	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>407.65%</color>的物理伤害，最后1击造成<color=#FF6347>77.65%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.71%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1785	106318	1	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>210%</color>的物理伤害，最后1击造成<color=#FF6347>40%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1786	106318	2	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>222.35%</color>的物理伤害，最后1击造成<color=#FF6347>42.35%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.29%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1787	106318	3	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>234.71%</color>的物理伤害，最后1击造成<color=#FF6347>44.71%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.59%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1788	106318	4	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>247.06%</color>的物理伤害，最后1击造成<color=#FF6347>47.06%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>5.88%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1789	106318	5	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>259.41%</color>的物理伤害，最后1击造成<color=#FF6347>49.41%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.18%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1790	106318	6	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>271.76%</color>的物理伤害，最后1击造成<color=#FF6347>51.76%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.47%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1791	106318	7	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>284.12%</color>的物理伤害，最后1击造成<color=#FF6347>54.12%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>6.76%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1792	106318	8	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>296.47%</color>的物理伤害，最后1击造成<color=#FF6347>56.47%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.06%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1793	106318	9	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>308.82%</color>的物理伤害，最后1击造成<color=#FF6347>58.82%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.35%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1794	106318	10	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>321.18%</color>的物理伤害，最后1击造成<color=#FF6347>61.18%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.65%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1795	106318	11	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>333.53%</color>的物理伤害，最后1击造成<color=#FF6347>63.53%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>7.94%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1796	106318	12	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>345.88%</color>的物理伤害，最后1击造成<color=#FF6347>65.88%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.24%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1797	106318	13	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>358.24%</color>的物理伤害，最后1击造成<color=#FF6347>68.24%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.53%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1798	106318	14	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>370.59%</color>的物理伤害，最后1击造成<color=#FF6347>70.59%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>8.82%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1799	106318	15	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>382.94%</color>的物理伤害，最后1击造成<color=#FF6347>72.94%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.12%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1800	106318	16	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>395.29%</color>的物理伤害，最后1击造成<color=#FF6347>75.29%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.41%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1801	106318	17	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>407.65%</color>的物理伤害，最后1击造成<color=#FF6347>77.65%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>9.71%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1802	106318	18	连锁回旋	QTE：出场旋转切割目标，共造成<color=#FF6347>420%</color>的物理伤害，最后1击造成<color=#FF6347>80%</color>的暗属性伤害并使目标暗属性抗性降低<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1803	106321	1	战意	核心被动：3消额外获得10点能量。暗影状态下，受到物理和暗属性伤害减少<color=#FF6347>15%</color>。	Assets/Product/Texture/Image/IconSkill/R3Shenweihexin1.png	60201			1	2000
 1804	106321	2	战意	核心被动：3消额外获得10点能量。暗影状态下，受到物理和暗属性伤害减少<color=#FF6347>15.88%</color>。	Assets/Product/Texture/Image/IconSkill/R3Shenweihexin1.png	60202			1	3000
@@ -1865,24 +1865,24 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1864	101301	16	连续射击	跃向空中朝向前方小范围持续射击，每发子弹根据消球数造成<color=#FF6347>21.18%</color>/<color=#FF6347>42.35%</color>/<color=#FF6347>65.88%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R3lihong1.png	60016			5	24000
 1865	101301	17	连续射击	跃向空中朝向前方小范围持续射击，每发子弹根据消球数造成<color=#FF6347>21.84%</color>/<color=#FF6347>43.68%</color>/<color=#FF6347>67.94%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R3lihong1.png	60017			5	26000
 1866	101301	18	连续射击	跃向空中朝向前方小范围持续射击，每发子弹根据消球数造成<color=#FF6347>22.5%</color>/<color=#FF6347>45%</color>/<color=#FF6347>70%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R3lihong1.png				0	0
-1867	101306	1	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>86%</color>/<color=#FF6347>196%</color>/<color=#FF6347>330%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>10%</color>/<color=#FF6347>20%</color>/<color=#FF6347>30%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60101			1	2000
-1868	101306	2	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>91.06%</color>/<color=#FF6347>207.53%</color>/<color=#FF6347>349.41%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>10.59%</color>/<color=#FF6347>21.18%</color>/<color=#FF6347>31.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60102			1	3000
-1869	101306	3	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>96.12%</color>/<color=#FF6347>219.06%</color>/<color=#FF6347>368.82%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>11.18%</color>/<color=#FF6347>22.35%</color>/<color=#FF6347>33.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60103			1	4000
-1870	101306	4	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>101.18%</color>/<color=#FF6347>230.59%</color>/<color=#FF6347>388.24%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>11.76%</color>/<color=#FF6347>23.53%</color>/<color=#FF6347>35.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60104			1	5000
-1871	101306	5	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>106.24%</color>/<color=#FF6347>242.12%</color>/<color=#FF6347>407.65%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>12.35%</color>/<color=#FF6347>24.71%</color>/<color=#FF6347>37.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60105			2	6000
-1872	101306	6	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>111.29%</color>/<color=#FF6347>253.65%</color>/<color=#FF6347>427.06%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>12.94%</color>/<color=#FF6347>25.88%</color>/<color=#FF6347>38.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60106			2	7000
-1873	101306	7	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>116.35%</color>/<color=#FF6347>265.18%</color>/<color=#FF6347>446.47%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>13.53%</color>/<color=#FF6347>27.06%</color>/<color=#FF6347>40.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60107			2	8000
-1874	101306	8	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>121.41%</color>/<color=#FF6347>276.71%</color>/<color=#FF6347>465.88%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>14.12%</color>/<color=#FF6347>28.24%</color>/<color=#FF6347>42.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60108			2	9000
-1875	101306	9	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>126.47%</color>/<color=#FF6347>288.24%</color>/<color=#FF6347>485.29%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>14.71%</color>/<color=#FF6347>29.41%</color>/<color=#FF6347>44.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60109			2	10000
-1876	101306	10	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>131.53%</color>/<color=#FF6347>299.76%</color>/<color=#FF6347>504.71%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>15.29%</color>/<color=#FF6347>30.59%</color>/<color=#FF6347>45.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60110			3	12000
-1877	101306	11	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>136.59%</color>/<color=#FF6347>311.29%</color>/<color=#FF6347>524.12%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>15.88%</color>/<color=#FF6347>31.76%</color>/<color=#FF6347>47.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60111			3	14000
-1878	101306	12	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>141.65%</color>/<color=#FF6347>322.82%</color>/<color=#FF6347>543.53%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>16.47%</color>/<color=#FF6347>32.94%</color>/<color=#FF6347>49.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60112			3	16000
-1879	101306	13	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>146.71%</color>/<color=#FF6347>334.35%</color>/<color=#FF6347>562.94%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>17.06%</color>/<color=#FF6347>34.12%</color>/<color=#FF6347>51.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60113			3	18000
-1880	101306	14	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>151.76%</color>/<color=#FF6347>345.88%</color>/<color=#FF6347>582.35%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>17.65%</color>/<color=#FF6347>35.29%</color>/<color=#FF6347>52.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60114			3	20000
-1881	101306	15	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>156.82%</color>/<color=#FF6347>357.41%</color>/<color=#FF6347>601.76%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>18.24%</color>/<color=#FF6347>36.47%</color>/<color=#FF6347>54.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60115			5	22000
-1882	101306	16	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>161.88%</color>/<color=#FF6347>368.94%</color>/<color=#FF6347>621.18%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>18.82%</color>/<color=#FF6347>37.65%</color>/<color=#FF6347>56.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60116			5	24000
-1883	101306	17	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>166.94%</color>/<color=#FF6347>380.47%</color>/<color=#FF6347>640.59%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>19.41%</color>/<color=#FF6347>38.82%</color>/<color=#FF6347>58.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60117			5	26000
-1884	101306	18	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>172%</color>/<color=#FF6347>392%</color>/<color=#FF6347>660%</color>的物理伤害。标记命中目标，持续5秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>20%</color>/<color=#FF6347>40%</color>/<color=#FF6347>60%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png				0	0
+1867	101306	1	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>86%</color>/<color=#FF6347>196%</color>/<color=#FF6347>330%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>10%</color>/<color=#FF6347>20%</color>/<color=#FF6347>30%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60101			1	2000
+1868	101306	2	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>91.06%</color>/<color=#FF6347>207.53%</color>/<color=#FF6347>349.41%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>10.59%</color>/<color=#FF6347>21.18%</color>/<color=#FF6347>31.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60102			1	3000
+1869	101306	3	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>96.12%</color>/<color=#FF6347>219.06%</color>/<color=#FF6347>368.82%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>11.18%</color>/<color=#FF6347>22.35%</color>/<color=#FF6347>33.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60103			1	4000
+1870	101306	4	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>101.18%</color>/<color=#FF6347>230.59%</color>/<color=#FF6347>388.24%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>11.76%</color>/<color=#FF6347>23.53%</color>/<color=#FF6347>35.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60104			1	5000
+1871	101306	5	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>106.24%</color>/<color=#FF6347>242.12%</color>/<color=#FF6347>407.65%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>12.35%</color>/<color=#FF6347>24.71%</color>/<color=#FF6347>37.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60105			2	6000
+1872	101306	6	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>111.29%</color>/<color=#FF6347>253.65%</color>/<color=#FF6347>427.06%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>12.94%</color>/<color=#FF6347>25.88%</color>/<color=#FF6347>38.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60106			2	7000
+1873	101306	7	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>116.35%</color>/<color=#FF6347>265.18%</color>/<color=#FF6347>446.47%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>13.53%</color>/<color=#FF6347>27.06%</color>/<color=#FF6347>40.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60107			2	8000
+1874	101306	8	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>121.41%</color>/<color=#FF6347>276.71%</color>/<color=#FF6347>465.88%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>14.12%</color>/<color=#FF6347>28.24%</color>/<color=#FF6347>42.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60108			2	9000
+1875	101306	9	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>126.47%</color>/<color=#FF6347>288.24%</color>/<color=#FF6347>485.29%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>14.71%</color>/<color=#FF6347>29.41%</color>/<color=#FF6347>44.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60109			2	10000
+1876	101306	10	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>131.53%</color>/<color=#FF6347>299.76%</color>/<color=#FF6347>504.71%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>15.29%</color>/<color=#FF6347>30.59%</color>/<color=#FF6347>45.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60110			3	12000
+1877	101306	11	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>136.59%</color>/<color=#FF6347>311.29%</color>/<color=#FF6347>524.12%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>15.88%</color>/<color=#FF6347>31.76%</color>/<color=#FF6347>47.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60111			3	14000
+1878	101306	12	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>141.65%</color>/<color=#FF6347>322.82%</color>/<color=#FF6347>543.53%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>16.47%</color>/<color=#FF6347>32.94%</color>/<color=#FF6347>49.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60112			3	16000
+1879	101306	13	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>146.71%</color>/<color=#FF6347>334.35%</color>/<color=#FF6347>562.94%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>17.06%</color>/<color=#FF6347>34.12%</color>/<color=#FF6347>51.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60113			3	18000
+1880	101306	14	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>151.76%</color>/<color=#FF6347>345.88%</color>/<color=#FF6347>582.35%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>17.65%</color>/<color=#FF6347>35.29%</color>/<color=#FF6347>52.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60114			3	20000
+1881	101306	15	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>156.82%</color>/<color=#FF6347>357.41%</color>/<color=#FF6347>601.76%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>18.24%</color>/<color=#FF6347>36.47%</color>/<color=#FF6347>54.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60115			5	22000
+1882	101306	16	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>161.88%</color>/<color=#FF6347>368.94%</color>/<color=#FF6347>621.18%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>18.82%</color>/<color=#FF6347>37.65%</color>/<color=#FF6347>56.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60116			5	24000
+1883	101306	17	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>166.94%</color>/<color=#FF6347>380.47%</color>/<color=#FF6347>640.59%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>19.41%</color>/<color=#FF6347>38.82%</color>/<color=#FF6347>58.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png	60117			5	26000
+1884	101306	18	后跳射击	踩向前方敌人并射击目标敌人，根据消球数共造成<color=#FF6347>172%</color>/<color=#FF6347>392%</color>/<color=#FF6347>660%</color>的物理伤害。标记命中目标，根据消球数持续4/6/8秒。攻击被标记的目标将额外追加一次射击，根据消球数造成<color=#FF6347>20%</color>/<color=#FF6347>40%</color>/<color=#FF6347>60%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihuang1.png				0	0
 1885	101311	1	电力感应	向前方射出一枚附能弹，根据消球数造成<color=#FF6347>50%</color>/<color=#FF6347>100%</color>/<color=#FF6347>150%</color>的物理伤害，命中或到达飞行距离后，生成能量环，对处于能量环内的敌人，根据消球数每秒造成<color=#FF6347>12%</color>/<color=#FF6347>24%</color>/<color=#FF6347>36%</color>的物理伤害，持续3秒。	Assets/Product/Texture/Image/IconSkill/R3lilan1.png	60201			1	2000
 1886	101311	2	电力感应	向前方射出一枚附能弹，根据消球数造成<color=#FF6347>52.94%</color>/<color=#FF6347>105.88%</color>/<color=#FF6347>158.82%</color>的物理伤害，命中或到达飞行距离后，生成能量环，对处于能量环内的敌人，根据消球数每秒造成<color=#FF6347>12.71%</color>/<color=#FF6347>25.41%</color>/<color=#FF6347>38.12%</color>的物理伤害，持续3秒。	Assets/Product/Texture/Image/IconSkill/R3lilan1.png	60202			1	3000
 1887	101311	3	电力感应	向前方射出一枚附能弹，根据消球数造成<color=#FF6347>55.88%</color>/<color=#FF6347>111.76%</color>/<color=#FF6347>167.65%</color>的物理伤害，命中或到达飞行距离后，生成能量环，对处于能量环内的敌人，根据消球数每秒造成<color=#FF6347>13.41%</color>/<color=#FF6347>26.82%</color>/<color=#FF6347>40.24%</color>的物理伤害，持续3秒。	Assets/Product/Texture/Image/IconSkill/R3lilan1.png	60203			1	4000
@@ -1937,23 +1937,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 1936	101317	16	必杀-轨道打击	必杀技：消耗100点能量，呼叫远程能量炮支援，每发能量炮弹造成<color=#FF6347>376.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lidazhao1.png	60116			5	24000
 1937	101317	17	必杀-轨道打击	必杀技：消耗100点能量，呼叫远程能量炮支援，每发能量炮弹造成<color=#FF6347>388.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lidazhao1.png	60117			5	26000
 1938	101317	18	必杀-轨道打击	必杀技：消耗100点能量，呼叫远程能量炮支援，每发能量炮弹造成<color=#FF6347>400%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lidazhao1.png				0	0
-1939	101318	1	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>300%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-1940	101318	2	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>317.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-1941	101318	3	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>335.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-1942	101318	4	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-1943	101318	5	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>370.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-1944	101318	6	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>388.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-1945	101318	7	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>405.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-1946	101318	8	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>423.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-1947	101318	9	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-1948	101318	10	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>458.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-1949	101318	11	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>476.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-1950	101318	12	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>494.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-1951	101318	13	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>511.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-1952	101318	14	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>529.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-1953	101318	15	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>547.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-1954	101318	16	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>564.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-1955	101318	17	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>582.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+1939	101318	1	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>300%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+1940	101318	2	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>317.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+1941	101318	3	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>335.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+1942	101318	4	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>352.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+1943	101318	5	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>370.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+1944	101318	6	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>388.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+1945	101318	7	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>405.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+1946	101318	8	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>423.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+1947	101318	9	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>441.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+1948	101318	10	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>458.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+1949	101318	11	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>476.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+1950	101318	12	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>494.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+1951	101318	13	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>511.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+1952	101318	14	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>529.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+1953	101318	15	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>547.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+1954	101318	16	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>564.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+1955	101318	17	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>582.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 1956	101318	18	死角奇袭	QTE：半空射击，对目标造成<color=#FF6347>600%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 1957	101321	1	空间领主	核心被动：任意3消后，下次释放红色信号球，额外追加连续炮击，每发炮弹造成<color=#FF6347>25%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihexin1.png	60201			1	2000
 1958	101321	2	空间领主	核心被动：任意3消后，下次释放红色信号球，额外追加连续炮击，每发炮弹造成<color=#FF6347>26.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3lihexin1.png	60202			1	3000
@@ -2091,23 +2091,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 2090	107317	16	必杀-大地伤痕	持续向地面喷射激光对目标造成<color=#FF6347>188.24%</color>的火属性伤害，并在结束后留下燃烧路径持续5秒，路径上的敌人每秒受到<color=#FF6347>188.24%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3kalieninadazhao1.png	60116			5	24000
 2091	107317	17	必杀-大地伤痕	持续向地面喷射激光对目标造成<color=#FF6347>194.12%</color>的火属性伤害，并在结束后留下燃烧路径持续5秒，路径上的敌人每秒受到<color=#FF6347>194.12%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3kalieninadazhao1.png	60117			5	26000
 2092	107317	18	必杀-大地伤痕	持续向地面喷射激光对目标造成<color=#FF6347>200%</color>的火属性伤害，并在结束后留下燃烧路径持续5秒，路径上的敌人每秒受到<color=#FF6347>200%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3kalieninadazhao1.png				0	0
-2093	107318	1	重力坠落	QTE：出场对目标造成<color=#FF6347>300%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-2094	107318	2	重力坠落	QTE：出场对目标造成<color=#FF6347>317.65%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-2095	107318	3	重力坠落	QTE：出场对目标造成<color=#FF6347>335.29%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-2096	107318	4	重力坠落	QTE：出场对目标造成<color=#FF6347>352.94%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-2097	107318	5	重力坠落	QTE：出场对目标造成<color=#FF6347>370.59%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-2098	107318	6	重力坠落	QTE：出场对目标造成<color=#FF6347>388.24%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-2099	107318	7	重力坠落	QTE：出场对目标造成<color=#FF6347>405.88%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-2100	107318	8	重力坠落	QTE：出场对目标造成<color=#FF6347>423.53%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-2101	107318	9	重力坠落	QTE：出场对目标造成<color=#FF6347>441.18%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-2102	107318	10	重力坠落	QTE：出场对目标造成<color=#FF6347>458.82%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-2103	107318	11	重力坠落	QTE：出场对目标造成<color=#FF6347>476.47%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-2104	107318	12	重力坠落	QTE：出场对目标造成<color=#FF6347>494.12%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-2105	107318	13	重力坠落	QTE：出场对目标造成<color=#FF6347>511.76%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-2106	107318	14	重力坠落	QTE：出场对目标造成<color=#FF6347>529.41%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-2107	107318	15	重力坠落	QTE：出场对目标造成<color=#FF6347>547.06%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-2108	107318	16	重力坠落	QTE：出场对目标造成<color=#FF6347>564.71%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-2109	107318	17	重力坠落	QTE：出场对目标造成<color=#FF6347>582.35%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+2093	107318	1	重力坠落	QTE：出场对目标造成<color=#FF6347>300%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+2094	107318	2	重力坠落	QTE：出场对目标造成<color=#FF6347>317.65%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+2095	107318	3	重力坠落	QTE：出场对目标造成<color=#FF6347>335.29%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+2096	107318	4	重力坠落	QTE：出场对目标造成<color=#FF6347>352.94%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+2097	107318	5	重力坠落	QTE：出场对目标造成<color=#FF6347>370.59%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+2098	107318	6	重力坠落	QTE：出场对目标造成<color=#FF6347>388.24%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+2099	107318	7	重力坠落	QTE：出场对目标造成<color=#FF6347>405.88%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+2100	107318	8	重力坠落	QTE：出场对目标造成<color=#FF6347>423.53%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+2101	107318	9	重力坠落	QTE：出场对目标造成<color=#FF6347>441.18%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+2102	107318	10	重力坠落	QTE：出场对目标造成<color=#FF6347>458.82%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+2103	107318	11	重力坠落	QTE：出场对目标造成<color=#FF6347>476.47%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+2104	107318	12	重力坠落	QTE：出场对目标造成<color=#FF6347>494.12%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+2105	107318	13	重力坠落	QTE：出场对目标造成<color=#FF6347>511.76%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+2106	107318	14	重力坠落	QTE：出场对目标造成<color=#FF6347>529.41%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+2107	107318	15	重力坠落	QTE：出场对目标造成<color=#FF6347>547.06%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+2108	107318	16	重力坠落	QTE：出场对目标造成<color=#FF6347>564.71%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+2109	107318	17	重力坠落	QTE：出场对目标造成<color=#FF6347>582.35%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 2110	107318	18	重力坠落	QTE：出场对目标造成<color=#FF6347>600%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 2111	107321	1	热能武装	核心被动：3消和必杀技将获得热能，热能达50%将进入强化状态，信号球技能及普通攻击将获得额外效果，并获得<color=#FF6347>10%</color>的火属性伤害加成。强化状态下，每秒减少5%的热能。	Assets/Product/Texture/Image/IconSkill/R3kalieninahexin1.png	60201			1	2000
 2112	107321	2	热能武装	核心被动：3消和必杀技将获得热能，热能达50%将进入强化状态，信号球技能及普通攻击将获得额外效果，并获得<color=#FF6347>10.59%</color>的火属性伤害加成。强化状态下，每秒减少5%的热能。	Assets/Product/Texture/Image/IconSkill/R3kalieninahexin1.png	60202			1	3000
@@ -2245,23 +2245,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 2244	105317	16	必杀-脉冲	必杀技：七实冲向目标，对沿途的敌人造成<color=#FF6347>517.65%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3yongyechaodazhao1.png	60116			5	24000
 2245	105317	17	必杀-脉冲	必杀技：七实冲向目标，对沿途的敌人造成<color=#FF6347>533.82%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3yongyechaodazhao1.png	60117			5	26000
 2246	105317	18	必杀-脉冲	必杀技：七实冲向目标，对沿途的敌人造成<color=#FF6347>550%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3yongyechaodazhao1.png				0	0
-2247	105318	1	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>240%</color>的火属性伤害，并减少目标<color=#FF6347>5%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-2248	105318	2	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>254.12%</color>的火属性伤害，并减少目标<color=#FF6347>5.29%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-2249	105318	3	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>268.24%</color>的火属性伤害，并减少目标<color=#FF6347>5.59%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-2250	105318	4	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>282.35%</color>的火属性伤害，并减少目标<color=#FF6347>5.88%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-2251	105318	5	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>296.47%</color>的火属性伤害，并减少目标<color=#FF6347>6.18%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-2252	105318	6	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>310.59%</color>的火属性伤害，并减少目标<color=#FF6347>6.47%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-2253	105318	7	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>324.71%</color>的火属性伤害，并减少目标<color=#FF6347>6.76%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-2254	105318	8	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>338.82%</color>的火属性伤害，并减少目标<color=#FF6347>7.06%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-2255	105318	9	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>352.94%</color>的火属性伤害，并减少目标<color=#FF6347>7.35%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-2256	105318	10	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>367.06%</color>的火属性伤害，并减少目标<color=#FF6347>7.65%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-2257	105318	11	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>381.18%</color>的火属性伤害，并减少目标<color=#FF6347>7.94%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-2258	105318	12	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>395.29%</color>的火属性伤害，并减少目标<color=#FF6347>8.24%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-2259	105318	13	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>409.41%</color>的火属性伤害，并减少目标<color=#FF6347>8.53%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-2260	105318	14	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>423.53%</color>的火属性伤害，并减少目标<color=#FF6347>8.82%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-2261	105318	15	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>437.65%</color>的火属性伤害，并减少目标<color=#FF6347>9.12%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-2262	105318	16	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>451.76%</color>的火属性伤害，并减少目标<color=#FF6347>9.41%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-2263	105318	17	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>465.88%</color>的火属性伤害，并减少目标<color=#FF6347>9.71%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+2247	105318	1	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>240%</color>的火属性伤害，并减少目标<color=#FF6347>5%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+2248	105318	2	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>254.12%</color>的火属性伤害，并减少目标<color=#FF6347>5.29%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+2249	105318	3	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>268.24%</color>的火属性伤害，并减少目标<color=#FF6347>5.59%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+2250	105318	4	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>282.35%</color>的火属性伤害，并减少目标<color=#FF6347>5.88%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+2251	105318	5	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>296.47%</color>的火属性伤害，并减少目标<color=#FF6347>6.18%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+2252	105318	6	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>310.59%</color>的火属性伤害，并减少目标<color=#FF6347>6.47%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+2253	105318	7	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>324.71%</color>的火属性伤害，并减少目标<color=#FF6347>6.76%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+2254	105318	8	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>338.82%</color>的火属性伤害，并减少目标<color=#FF6347>7.06%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+2255	105318	9	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>352.94%</color>的火属性伤害，并减少目标<color=#FF6347>7.35%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+2256	105318	10	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>367.06%</color>的火属性伤害，并减少目标<color=#FF6347>7.65%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+2257	105318	11	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>381.18%</color>的火属性伤害，并减少目标<color=#FF6347>7.94%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+2258	105318	12	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>395.29%</color>的火属性伤害，并减少目标<color=#FF6347>8.24%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+2259	105318	13	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>409.41%</color>的火属性伤害，并减少目标<color=#FF6347>8.53%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+2260	105318	14	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>423.53%</color>的火属性伤害，并减少目标<color=#FF6347>8.82%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+2261	105318	15	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>437.65%</color>的火属性伤害，并减少目标<color=#FF6347>9.12%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+2262	105318	16	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>451.76%</color>的火属性伤害，并减少目标<color=#FF6347>9.41%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+2263	105318	17	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>465.88%</color>的火属性伤害，并减少目标<color=#FF6347>9.71%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 2264	105318	18	熔火圆斩	QTE：在地面通过移动划出大范围圆形，对自身周围的目标造成<color=#FF6347>480%</color>的火属性伤害，并减少目标<color=#FF6347>10%</color>的火属性抗性。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 2265	105321	1	超频共振	核心被动：释放必杀技后，七实进入超频状态，普通攻击将转化为火属性伤害。并使命中的目标降低<color=#FF6347>7.5%</color>的火属性抗性，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaohexin1.png	60201			1	2000
 2266	105321	2	超频共振	核心被动：释放必杀技后，七实进入超频状态，普通攻击将转化为火属性伤害。并使命中的目标降低<color=#FF6347>7.94%</color>的火属性抗性，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaohexin1.png	60202			1	3000
@@ -2305,8 +2305,8 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 2304	105327	1	终阶解放	首次进入战斗时，立即获得3个信号球。	Assets/Product/Texture/Image/IconSkill/Jiefang1.png	60414				
 2305	105324	0	过载爆发	被动：核心被动火属性伤害攻击时，有30%的概率发生爆炸，额外造成<color=#FF6347>25%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoS1.png	61004			5	50000
 2306	105324	1	过载爆发	被动：核心被动火属性伤害攻击时，有30%的概率发生爆炸，额外造成<color=#FF6347>25%</color>的火属性伤害。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoS1.png	61004			5	50000
-2307	105325	0	热能增幅	被动：释放必杀技后，自身获得霸体，自身受到伤害减少<color=#FF6347>20%</color>，造成火属性伤害增加<color=#FF6347>15%</color>，持续3秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSS1.png	61005			7	75000
-2308	105325	1	热能增幅	被动：释放必杀技后，自身获得霸体，自身受到伤害减少<color=#FF6347>20%</color>，造成火属性伤害增加<color=#FF6347>15%</color>，持续3秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSS1.png	61005			7	75000
+2307	105325	0	热能增幅	被动：释放必杀技后，自身获得霸体，自身受到伤害减少<color=#FF6347>20%</color>，造成火属性伤害增加<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSS1.png	61005			7	75000
+2308	105325	1	热能增幅	被动：释放必杀技后，自身获得霸体，自身受到伤害减少<color=#FF6347>20%</color>，造成火属性伤害增加<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSS1.png	61005			7	75000
 2309	105326	0	脉冲同调	被动：释放必杀技后，自身全伤害增加<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSSS1.png	61006			10	100000
 2310	105326	1	脉冲同调	被动：释放必杀技后，自身全伤害增加<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3yongyechaoSSS1.png	61006			10	100000
 2311	102301	1	赤渊-烁华	闪身攻击正前方范围内的目标，根据消球数每次攻击造成<color=#FF6347>12.5%</color>/<color=#FF6347>25%</color>/<color=#FF6347>37.5%</color>的物理伤害，3消时最后一次攻击额外造成<color=#FF6347>37.5%</color>的物理伤害并将目标击飞，释放过程中霸体。	Assets/Product/Texture/Image/IconSkill/R3luxiyahong1.png	60000			1	2000
@@ -2399,23 +2399,23 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 2398	102317	16	必杀-渊裂之术	必杀技：释放斩击攻击前方目标，共造成<color=#FF6347>2447.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3luxiyadazhao1.png	60116			5	24000
 2399	102317	17	必杀-渊裂之术	必杀技：释放斩击攻击前方目标，共造成<color=#FF6347>2523.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3luxiyadazhao1.png	60117			5	26000
 2400	102317	18	必杀-渊裂之术	必杀技：释放斩击攻击前方目标，共造成<color=#FF6347>2600%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R3luxiyadazhao1.png				0	0
-2401	102318	1	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>300%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60301			1	2000
-2402	102318	2	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>317.65%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60302			1	3000
-2403	102318	3	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>335.29%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60303			1	4000
-2404	102318	4	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>352.94%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60304			1	5000
-2405	102318	5	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>370.59%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60305			2	6000
-2406	102318	6	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>388.24%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60306			2	7000
-2407	102318	7	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>405.88%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60307			2	8000
-2408	102318	8	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>423.53%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60308			2	9000
-2409	102318	9	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>441.18%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60309			2	10000
-2410	102318	10	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>458.82%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60310			3	12000
-2411	102318	11	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>476.47%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60311			3	14000
-2412	102318	12	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>494.12%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60312			3	16000
-2413	102318	13	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>511.76%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60313			3	18000
-2414	102318	14	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>529.41%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60314			3	20000
-2415	102318	15	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>547.06%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60315			5	22000
-2416	102318	16	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>564.71%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60316			5	24000
-2417	102318	17	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>582.35%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60317			5	26000
+2401	102318	1	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>300%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+2402	102318	2	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>317.65%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+2403	102318	3	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>335.29%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+2404	102318	4	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>352.94%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+2405	102318	5	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>370.59%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+2406	102318	6	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>388.24%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+2407	102318	7	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>405.88%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+2408	102318	8	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>423.53%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+2409	102318	9	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>441.18%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+2410	102318	10	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>458.82%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+2411	102318	11	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>476.47%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+2412	102318	12	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>494.12%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+2413	102318	13	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>511.76%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+2414	102318	14	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>529.41%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+2415	102318	15	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>547.06%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+2416	102318	16	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>564.71%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+2417	102318	17	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>582.35%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
 2418	102318	18	极渊落华	出场释放连续升龙斩，共造成<color=#FF6347>600%</color>的物理伤害，并浮空目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
 2419	102321	1	赤渊-刀光意	核心被动：3消蓝色信号球后，再次任意3消信号球时，将后撤进入<color=#FF6347>剑意</color>状态，所有信号球转化为剑意球，并额外获得2个剑意球，消除剑意球时，释放剑气攻击目标，造成<color=#FF6347>170%</color>的物理伤害，释放过程中霸体。	Assets/Product/Texture/Image/IconSkill/R3luxiyahexin1.png	60201			1	2000
 2420	102321	2	赤渊-刀光意	核心被动：3消蓝色信号球后，再次任意3消信号球时，将后撤进入<color=#FF6347>剑意</color>状态，所有信号球转化为剑意球，并额外获得2个剑意球，消除剑意球时，释放剑气攻击目标，造成<color=#FF6347>180%</color>的物理伤害，释放过程中霸体。	Assets/Product/Texture/Image/IconSkill/R3luxiyahexin1.png	60202			1	3000
@@ -2463,3 +2463,311 @@ Id	SkillId	Level	Name	Intro	Icon	ConditionId[1]	ConditionId[2]	ConditionId[3]	Us
 2462	102325	1	赤红之意	<color=#FF6347>剑意</color>状态下回到普通状态时，额外获得2个信号球。	Assets/Product/Texture/Image/IconSkill/R3luxiyaSS1.png	61005			7	75000
 2463	102326	0	深渊回响	蓝球状态下，物理伤害增加<color=#FF6347>15%</color>。	Assets/Product/Texture/Image/IconSkill/R3luxiyaSSS1.png	61006			10	100000
 2464	102326	1	深渊回响	蓝球状态下，物理伤害增加<color=#FF6347>15%</color>。	Assets/Product/Texture/Image/IconSkill/R3luxiyaSSS1.png	61006			10	100000
+2465	109201	1	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>75%</color>/<color=#FF6347>150%</color>/<color=#FF6347>375%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60000			1	2000
+2466	109201	2	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>79.41%</color>/<color=#FF6347>158.82%</color>/<color=#FF6347>397.06%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60002			1	3000
+2467	109201	3	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>83.82%</color>/<color=#FF6347>167.65%</color>/<color=#FF6347>419.12%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60003			1	4000
+2468	109201	4	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>88.24%</color>/<color=#FF6347>176.47%</color>/<color=#FF6347>441.18%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60004			1	5000
+2469	109201	5	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>92.65%</color>/<color=#FF6347>185.29%</color>/<color=#FF6347>463.24%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60005			2	6000
+2470	109201	6	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>97.06%</color>/<color=#FF6347>194.12%</color>/<color=#FF6347>485.29%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60006			2	7000
+2471	109201	7	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>101.47%</color>/<color=#FF6347>202.94%</color>/<color=#FF6347>507.35%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60007			2	8000
+2472	109201	8	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>105.88%</color>/<color=#FF6347>211.76%</color>/<color=#FF6347>529.41%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60008			2	9000
+2473	109201	9	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>110.29%</color>/<color=#FF6347>220.59%</color>/<color=#FF6347>551.47%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60009			2	10000
+2474	109201	10	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>114.71%</color>/<color=#FF6347>229.41%</color>/<color=#FF6347>573.53%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60010			3	12000
+2475	109201	11	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>119.12%</color>/<color=#FF6347>238.24%</color>/<color=#FF6347>595.59%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60011			3	14000
+2476	109201	12	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>123.53%</color>/<color=#FF6347>247.06%</color>/<color=#FF6347>617.65%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60012			3	16000
+2477	109201	13	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>127.94%</color>/<color=#FF6347>255.88%</color>/<color=#FF6347>639.71%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60013			3	18000
+2478	109201	14	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>132.35%</color>/<color=#FF6347>264.71%</color>/<color=#FF6347>661.76%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60014			3	20000
+2479	109201	15	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>136.76%</color>/<color=#FF6347>273.53%</color>/<color=#FF6347>683.82%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60015			5	22000
+2480	109201	16	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>141.18%</color>/<color=#FF6347>282.35%</color>/<color=#FF6347>705.88%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60016			5	24000
+2481	109201	17	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>145.59%</color>/<color=#FF6347>291.18%</color>/<color=#FF6347>727.94%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png	60017			5	26000
+2482	109201	18	绚烂之势	原地挥动镰刀攻击目标，根据消球数造成<color=#FF6347>150%</color>/<color=#FF6347>300%</color>/<color=#FF6347>750%</color>的物理伤害	Assets/Product/Texture/Image/IconSkill/R2ailahong1.png				0	0
+2483	109206	1	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>45%</color>/<color=#FF6347>90%</color>/<color=#FF6347>135%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>60%</color>/<color=#FF6347>120%</color>/<color=#FF6347>180%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60101			1	2000
+2484	109206	2	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>47.65%</color>/<color=#FF6347>95.29%</color>/<color=#FF6347>142.94%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>63.53%</color>/<color=#FF6347>127.06%</color>/<color=#FF6347>190.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60102			1	3000
+2485	109206	3	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>50.29%</color>/<color=#FF6347>100.59%</color>/<color=#FF6347>150.88%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>67.06%</color>/<color=#FF6347>134.12%</color>/<color=#FF6347>201.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60103			1	4000
+2486	109206	4	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>52.94%</color>/<color=#FF6347>105.88%</color>/<color=#FF6347>158.82%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>70.59%</color>/<color=#FF6347>141.18%</color>/<color=#FF6347>211.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60104			1	5000
+2487	109206	5	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>55.59%</color>/<color=#FF6347>111.18%</color>/<color=#FF6347>166.76%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>74.12%</color>/<color=#FF6347>148.24%</color>/<color=#FF6347>222.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60105			2	6000
+2488	109206	6	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>58.24%</color>/<color=#FF6347>116.47%</color>/<color=#FF6347>174.71%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>77.65%</color>/<color=#FF6347>155.29%</color>/<color=#FF6347>232.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60106			2	7000
+2489	109206	7	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>60.88%</color>/<color=#FF6347>121.76%</color>/<color=#FF6347>182.65%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>81.18%</color>/<color=#FF6347>162.35%</color>/<color=#FF6347>243.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60107			2	8000
+2490	109206	8	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>63.53%</color>/<color=#FF6347>127.06%</color>/<color=#FF6347>190.59%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>84.71%</color>/<color=#FF6347>169.41%</color>/<color=#FF6347>254.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60108			2	9000
+2491	109206	9	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>66.18%</color>/<color=#FF6347>132.35%</color>/<color=#FF6347>198.53%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>88.24%</color>/<color=#FF6347>176.47%</color>/<color=#FF6347>264.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60109			2	10000
+2492	109206	10	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>68.82%</color>/<color=#FF6347>137.65%</color>/<color=#FF6347>206.47%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>91.76%</color>/<color=#FF6347>183.53%</color>/<color=#FF6347>275.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60110			3	12000
+2493	109206	11	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>71.47%</color>/<color=#FF6347>142.94%</color>/<color=#FF6347>214.41%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>95.29%</color>/<color=#FF6347>190.59%</color>/<color=#FF6347>285.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60111			3	14000
+2494	109206	12	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>74.12%</color>/<color=#FF6347>148.24%</color>/<color=#FF6347>222.35%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>98.82%</color>/<color=#FF6347>197.65%</color>/<color=#FF6347>296.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60112			3	16000
+2495	109206	13	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>76.76%</color>/<color=#FF6347>153.53%</color>/<color=#FF6347>230.29%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>102.35%</color>/<color=#FF6347>204.71%</color>/<color=#FF6347>307.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60113			3	18000
+2496	109206	14	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>79.41%</color>/<color=#FF6347>158.82%</color>/<color=#FF6347>238.24%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>105.88%</color>/<color=#FF6347>211.76%</color>/<color=#FF6347>317.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60114			3	20000
+2497	109206	15	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>82.06%</color>/<color=#FF6347>164.12%</color>/<color=#FF6347>246.18%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>109.41%</color>/<color=#FF6347>218.82%</color>/<color=#FF6347>328.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60115			5	22000
+2498	109206	16	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>84.71%</color>/<color=#FF6347>169.41%</color>/<color=#FF6347>254.12%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>112.94%</color>/<color=#FF6347>225.88%</color>/<color=#FF6347>338.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60116			5	24000
+2499	109206	17	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>87.35%</color>/<color=#FF6347>174.71%</color>/<color=#FF6347>262.06%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>116.47%</color>/<color=#FF6347>232.94%</color>/<color=#FF6347>349.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png	60117			5	26000
+2500	109206	18	挥洒光影	向目标冲撞，根据消球数造成<color=#FF6347>90%</color>/<color=#FF6347>180%</color>/<color=#FF6347>270%</color>的物理伤害，随后用镰刀上挑，根据消球数造成<color=#FF6347>120%</color>/<color=#FF6347>240%</color>/<color=#FF6347>360%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailahuang1.png				0	0
+2501	109211	1	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>10%</color>/<color=#FF6347>20%</color>/<color=#FF6347>30%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60201			1	2000
+2502	109211	2	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>10.59%</color>/<color=#FF6347>21.18%</color>/<color=#FF6347>31.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60202			1	3000
+2503	109211	3	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>11.18%</color>/<color=#FF6347>22.35%</color>/<color=#FF6347>33.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60203			1	4000
+2504	109211	4	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>11.76%</color>/<color=#FF6347>23.53%</color>/<color=#FF6347>35.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60204			1	5000
+2505	109211	5	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>12.35%</color>/<color=#FF6347>24.71%</color>/<color=#FF6347>37.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60205			2	6000
+2506	109211	6	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>12.94%</color>/<color=#FF6347>25.88%</color>/<color=#FF6347>38.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60206			2	7000
+2507	109211	7	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>13.53%</color>/<color=#FF6347>27.06%</color>/<color=#FF6347>40.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60207			2	8000
+2508	109211	8	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>14.12%</color>/<color=#FF6347>28.24%</color>/<color=#FF6347>42.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60208			2	9000
+2509	109211	9	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>14.71%</color>/<color=#FF6347>29.41%</color>/<color=#FF6347>44.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60209			2	10000
+2510	109211	10	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>15.29%</color>/<color=#FF6347>30.59%</color>/<color=#FF6347>45.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60210			3	12000
+2511	109211	11	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>15.88%</color>/<color=#FF6347>31.76%</color>/<color=#FF6347>47.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60211			3	14000
+2512	109211	12	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>16.47%</color>/<color=#FF6347>32.94%</color>/<color=#FF6347>49.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60212			3	16000
+2513	109211	13	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>17.06%</color>/<color=#FF6347>34.12%</color>/<color=#FF6347>51.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60213			3	18000
+2514	109211	14	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>17.65%</color>/<color=#FF6347>35.29%</color>/<color=#FF6347>52.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60214			3	20000
+2515	109211	15	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>18.24%</color>/<color=#FF6347>36.47%</color>/<color=#FF6347>54.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60215			5	22000
+2516	109211	16	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>18.82%</color>/<color=#FF6347>37.65%</color>/<color=#FF6347>56.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60216			5	24000
+2517	109211	17	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>19.41%</color>/<color=#FF6347>38.82%</color>/<color=#FF6347>58.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png	60217			5	26000
+2518	109211	18	原色轮回	将手中镰刀扔出后拉回，根据消球数对沿途的目标每次造成<color=#FF6347>20%</color>/<color=#FF6347>40%</color>/<color=#FF6347>60%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/R2ailalan1.png				0	0
+2519	109216	1	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>305%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60001			1	2000
+2520	109216	2	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>322.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60002			1	3000
+2521	109216	3	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>340.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60003			1	4000
+2522	109216	4	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>358.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60004			1	5000
+2523	109216	5	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>376.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60005			2	6000
+2524	109216	6	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>394.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60006			2	7000
+2525	109216	7	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>412.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60007			2	8000
+2526	109216	8	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>430.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60008			2	9000
+2527	109216	9	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>448.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60009			2	10000
+2528	109216	10	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>466.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60010			3	12000
+2529	109216	11	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>484.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60011			3	14000
+2530	109216	12	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>502.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60012			3	16000
+2531	109216	13	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>520.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60013			3	18000
+2532	109216	14	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>538.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60014			3	20000
+2533	109216	15	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>556.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60015			5	22000
+2534	109216	16	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>574.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60016			5	24000
+2535	109216	17	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>592.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png	60017			5	26000
+2536	109216	18	绘花镰	普通攻击：挥舞镰刀对目标持续攻击，造成<color=#FF6347>610%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/ailapugong1.png				0	0
+2537	109217	1	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>60%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>300%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60101			1	2000
+2538	109217	2	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>63.53%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>317.65%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60102			1	3000
+2539	109217	3	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>67.06%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>335.29%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60103			1	4000
+2540	109217	4	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>70.59%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>352.94%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60104			1	5000
+2541	109217	5	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>74.12%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>370.59%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60105			2	6000
+2542	109217	6	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>77.65%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>388.24%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60106			2	7000
+2543	109217	7	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>81.18%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>405.88%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60107			2	8000
+2544	109217	8	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>84.71%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>423.53%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60108			2	9000
+2545	109217	9	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>88.24%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>441.18%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60109			2	10000
+2546	109217	10	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>91.76%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>458.82%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60110			3	12000
+2547	109217	11	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>95.29%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>476.47%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60111			3	14000
+2548	109217	12	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>98.82%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>494.12%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60112			3	16000
+2549	109217	13	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>102.35%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>511.76%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60113			3	18000
+2550	109217	14	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>105.88%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>529.41%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60114			3	20000
+2551	109217	15	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>109.41%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>547.06%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60115			5	22000
+2552	109217	16	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>112.94%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>564.71%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60116			5	24000
+2553	109217	17	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>116.47%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>582.35%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png	60117			5	26000
+2554	109217	18	必杀-绽放时刻	必杀技：绽放！挥动镰刀移动攻击周围目标，每段攻击造成<color=#FF6347>120%</color>的物理伤害，结束时蓄力斩击目标，造成<color=#FF6347>600%</color>的物理伤害。释放过程中可摇杆控制攻击方向。	Assets/Product/Texture/Image/IconSkill/R2ailadazhao1.png				0	0
+2555	109218	1	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>250%</color>的物理伤害，并使目标防御降低<color=#FF6347>5%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+2556	109218	2	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>264.71%</color>的物理伤害，并使目标防御降低<color=#FF6347>5.29%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+2557	109218	3	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>279.41%</color>的物理伤害，并使目标防御降低<color=#FF6347>5.59%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+2558	109218	4	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>294.12%</color>的物理伤害，并使目标防御降低<color=#FF6347>5.88%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+2559	109218	5	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>308.82%</color>的物理伤害，并使目标防御降低<color=#FF6347>6.18%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+2560	109218	6	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>323.53%</color>的物理伤害，并使目标防御降低<color=#FF6347>6.47%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+2561	109218	7	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>338.24%</color>的物理伤害，并使目标防御降低<color=#FF6347>6.76%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+2562	109218	8	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>352.94%</color>的物理伤害，并使目标防御降低<color=#FF6347>7.06%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+2563	109218	9	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>367.65%</color>的物理伤害，并使目标防御降低<color=#FF6347>7.35%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+2564	109218	10	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>382.35%</color>的物理伤害，并使目标防御降低<color=#FF6347>7.65%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+2565	109218	11	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>397.06%</color>的物理伤害，并使目标防御降低<color=#FF6347>7.94%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+2566	109218	12	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>411.76%</color>的物理伤害，并使目标防御降低<color=#FF6347>8.24%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+2567	109218	13	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>426.47%</color>的物理伤害，并使目标防御降低<color=#FF6347>8.53%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+2568	109218	14	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>441.18%</color>的物理伤害，并使目标防御降低<color=#FF6347>8.82%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+2569	109218	15	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>455.88%</color>的物理伤害，并使目标防御降低<color=#FF6347>9.12%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+2570	109218	16	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>470.59%</color>的物理伤害，并使目标防御降低<color=#FF6347>9.41%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+2571	109218	17	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>485.29%</color>的物理伤害，并使目标防御降低<color=#FF6347>9.71%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
+2572	109218	18	螺旋线收割	QTE：出场连续攻击目标，造成<color=#FF6347>500%</color>的物理伤害，并使目标防御降低<color=#FF6347>10%</color>，持续5秒，最后一击额外击飞目标。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
+2573	109221	1	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>350%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60201			1	2000
+2574	109221	2	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>370.59%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60202			1	3000
+2575	109221	3	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>391.18%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60203			1	4000
+2576	109221	4	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>411.76%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60204			1	5000
+2577	109221	5	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>432.35%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60205			2	6000
+2578	109221	6	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>452.94%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60206			2	7000
+2579	109221	7	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>473.53%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60207			2	8000
+2580	109221	8	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>494.12%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60208			2	9000
+2581	109221	9	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>514.71%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60209			2	10000
+2582	109221	10	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>535.29%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60210			3	12000
+2583	109221	11	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>555.88%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60211			3	14000
+2584	109221	12	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>576.47%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60212			3	16000
+2585	109221	13	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>597.06%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60213			3	18000
+2586	109221	14	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>617.65%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60214			3	20000
+2587	109221	15	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>638.24%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60215			5	22000
+2588	109221	16	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>658.82%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60216			5	24000
+2589	109221	17	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>679.41%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60217			5	26000
+2590	109221	18	矢量色块	核心被动：任意3消后，再次消除蓝色信号时，原地蓄力牵引附近敌人，并使自身获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成<color=#FF6347>700%</color>的物理伤害。蓄力阶段受到伤害减少70%。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png				0	0
+2591	109222	0	队长-缪斯祝福	队长技，队伍3个职业不同时，防御增加<color=#FF6347>10%</color>，攻击<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/R2ailaA1.png	61002			3	25000
+2592	109222	1	队长-缪斯祝福	队长技，队伍3个职业不同时，防御增加<color=#FF6347>10%</color>，攻击<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/R2ailaA1.png	61002			3	25000
+2593	109223	1	装甲型	攻击使目标受到伤害增加<color=#FF6347>10%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60301	61301		1	2000
+2594	109223	2	装甲型	攻击使目标受到伤害增加<color=#FF6347>10.59%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60302	61302		1	3000
+2595	109223	3	装甲型	攻击使目标受到伤害增加<color=#FF6347>11.18%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60303	61303		1	4000
+2596	109223	4	装甲型	攻击使目标受到伤害增加<color=#FF6347>11.76%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60304	61304		1	5000
+2597	109223	5	装甲型	攻击使目标受到伤害增加<color=#FF6347>12.35%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60305	61305		2	6000
+2598	109223	6	装甲型	攻击使目标受到伤害增加<color=#FF6347>12.94%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60306	61306		2	7000
+2599	109223	7	装甲型	攻击使目标受到伤害增加<color=#FF6347>13.53%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60307	61307		2	8000
+2600	109223	8	装甲型	攻击使目标受到伤害增加<color=#FF6347>14.12%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60308	61308		2	9000
+2601	109223	9	装甲型	攻击使目标受到伤害增加<color=#FF6347>14.71%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60309	61309		2	10000
+2602	109223	10	装甲型	攻击使目标受到伤害增加<color=#FF6347>15.29%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60310	61310		3	12000
+2603	109223	11	装甲型	攻击使目标受到伤害增加<color=#FF6347>15.88%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60311	61311		3	14000
+2604	109223	12	装甲型	攻击使目标受到伤害增加<color=#FF6347>16.47%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60312	61312		3	16000
+2605	109223	13	装甲型	攻击使目标受到伤害增加<color=#FF6347>17.06%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60313	61313		3	18000
+2606	109223	14	装甲型	攻击使目标受到伤害增加<color=#FF6347>17.65%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60314	61314		3	20000
+2607	109223	15	装甲型	攻击使目标受到伤害增加<color=#FF6347>18.24%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60315	61315		5	22000
+2608	109223	16	装甲型	攻击使目标受到伤害增加<color=#FF6347>18.82%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60316	61316		5	24000
+2609	109223	17	装甲型	攻击使目标受到伤害增加<color=#FF6347>19.41%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png	60317	61317		5	26000
+2610	109223	18	装甲型	攻击使目标受到伤害增加<color=#FF6347>20%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailahexin1.png				0	0
+2611	109227	0	终阶解放	首次进入战斗时，立即获得3个信号球。	Assets/Product/Texture/Image/IconSkill/Jiefang1.png	60416				
+2612	109227	1	终阶解放	首次进入战斗时，立即获得3个信号球。	Assets/Product/Texture/Image/IconSkill/Jiefang1.png	60416				
+2613	109224	0	点睛之笔	释放黄色信号击中怪物后，自身防御、物理伤害增加<color=#FF6347>10%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailaS1.png	61004			5	50000
+2614	109224	1	点睛之笔	释放黄色信号击中怪物后，自身防御、物理伤害增加<color=#FF6347>10%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailaS1.png	61004			5	50000
+2615	109225	0	美妙灵感	核心被动命中目标后，使命中的目标防御减少<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailaSS1.png	61005			7	75000
+2616	109225	1	美妙灵感	核心被动命中目标后，使命中的目标防御减少<color=#FF6347>15%</color>，持续5秒。	Assets/Product/Texture/Image/IconSkill/R2ailaSS1.png	61005			7	75000
+2617	109226	0	尤里卡时间	释放必杀技后，自身全伤害提升<color=#FF6347>20%</color>，持续8秒。	Assets/Product/Texture/Image/IconSkill/R2ailaSSS1.png	61006			10	100000
+2618	109226	1	尤里卡时间	释放必杀技后，自身全伤害提升<color=#FF6347>20%</color>，持续8秒。	Assets/Product/Texture/Image/IconSkill/R2ailaSSS1.png	61006			10	100000
+2619	108301	1	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>100%</color>/<color=#FF6347>200%</color>/<color=#FF6347>300%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60000			1	2000
+2620	108301	2	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>105.88%</color>/<color=#FF6347>211.76%</color>/<color=#FF6347>317.65%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60002			1	3000
+2621	108301	3	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>111.76%</color>/<color=#FF6347>223.53%</color>/<color=#FF6347>335.29%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60003			1	4000
+2622	108301	4	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>117.65%</color>/<color=#FF6347>235.29%</color>/<color=#FF6347>352.94%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60004			1	5000
+2623	108301	5	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>123.53%</color>/<color=#FF6347>247.06%</color>/<color=#FF6347>370.59%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60005			2	6000
+2624	108301	6	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>129.41%</color>/<color=#FF6347>258.82%</color>/<color=#FF6347>388.24%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60006			2	7000
+2625	108301	7	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>135.29%</color>/<color=#FF6347>270.59%</color>/<color=#FF6347>405.88%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60007			2	8000
+2626	108301	8	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>141.18%</color>/<color=#FF6347>282.35%</color>/<color=#FF6347>423.53%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60008			2	9000
+2627	108301	9	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>147.06%</color>/<color=#FF6347>294.12%</color>/<color=#FF6347>441.18%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60009			2	10000
+2628	108301	10	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>152.94%</color>/<color=#FF6347>305.88%</color>/<color=#FF6347>458.82%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60010			3	12000
+2629	108301	11	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>158.82%</color>/<color=#FF6347>317.65%</color>/<color=#FF6347>476.47%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60011			3	14000
+2630	108301	12	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>164.71%</color>/<color=#FF6347>329.41%</color>/<color=#FF6347>494.12%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60012			3	16000
+2631	108301	13	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>170.59%</color>/<color=#FF6347>341.18%</color>/<color=#FF6347>511.76%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60013			3	18000
+2632	108301	14	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>176.47%</color>/<color=#FF6347>352.94%</color>/<color=#FF6347>529.41%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60014			3	20000
+2633	108301	15	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>182.35%</color>/<color=#FF6347>364.71%</color>/<color=#FF6347>547.06%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60015			5	22000
+2634	108301	16	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>188.24%</color>/<color=#FF6347>376.47%</color>/<color=#FF6347>564.71%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60016			5	24000
+2635	108301	17	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>194.12%</color>/<color=#FF6347>388.24%</color>/<color=#FF6347>582.35%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png	60017			5	26000
+2636	108301	18	彗尾散	后撤并向前方扇形投掷飞镖，根据消球数对命中的目标造成<color=#FF6347>200%</color>/<color=#FF6347>400%</color>/<color=#FF6347>600%</color>的物理伤害，消除后可立即触发<color=#FF6347>追刃</color>。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhong1.png				0	0
+2637	108306	1	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>10%</color>/<color=#FF6347>20%</color>/<color=#FF6347>30%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>20%</color>/<color=#FF6347>40%</color>/<color=#FF6347>60%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60101			1	2000
+2638	108306	2	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>10.59%</color>/<color=#FF6347>21.18%</color>/<color=#FF6347>31.76%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>21.18%</color>/<color=#FF6347>42.35%</color>/<color=#FF6347>63.53%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60102			1	3000
+2639	108306	3	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>11.18%</color>/<color=#FF6347>22.35%</color>/<color=#FF6347>33.53%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>22.35%</color>/<color=#FF6347>44.71%</color>/<color=#FF6347>67.06%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60103			1	4000
+2640	108306	4	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>11.76%</color>/<color=#FF6347>23.53%</color>/<color=#FF6347>35.29%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>23.53%</color>/<color=#FF6347>47.06%</color>/<color=#FF6347>70.59%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60104			1	5000
+2641	108306	5	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>12.35%</color>/<color=#FF6347>24.71%</color>/<color=#FF6347>37.06%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>24.71%</color>/<color=#FF6347>49.41%</color>/<color=#FF6347>74.12%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60105			2	6000
+2642	108306	6	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>12.94%</color>/<color=#FF6347>25.88%</color>/<color=#FF6347>38.82%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>25.88%</color>/<color=#FF6347>51.76%</color>/<color=#FF6347>77.65%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60106			2	7000
+2643	108306	7	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>13.53%</color>/<color=#FF6347>27.06%</color>/<color=#FF6347>40.59%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>27.06%</color>/<color=#FF6347>54.12%</color>/<color=#FF6347>81.18%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60107			2	8000
+2644	108306	8	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>14.12%</color>/<color=#FF6347>28.24%</color>/<color=#FF6347>42.35%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>28.24%</color>/<color=#FF6347>56.47%</color>/<color=#FF6347>84.71%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60108			2	9000
+2645	108306	9	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>14.71%</color>/<color=#FF6347>29.41%</color>/<color=#FF6347>44.12%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>29.41%</color>/<color=#FF6347>58.82%</color>/<color=#FF6347>88.24%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60109			2	10000
+2646	108306	10	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>15.29%</color>/<color=#FF6347>30.59%</color>/<color=#FF6347>45.88%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>30.59%</color>/<color=#FF6347>61.18%</color>/<color=#FF6347>91.76%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60110			3	12000
+2647	108306	11	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>15.88%</color>/<color=#FF6347>31.76%</color>/<color=#FF6347>47.65%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>31.76%</color>/<color=#FF6347>63.53%</color>/<color=#FF6347>95.29%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60111			3	14000
+2648	108306	12	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>16.47%</color>/<color=#FF6347>32.94%</color>/<color=#FF6347>49.41%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>32.94%</color>/<color=#FF6347>65.88%</color>/<color=#FF6347>98.82%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60112			3	16000
+2649	108306	13	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>17.06%</color>/<color=#FF6347>34.12%</color>/<color=#FF6347>51.18%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>34.12%</color>/<color=#FF6347>68.24%</color>/<color=#FF6347>102.35%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60113			3	18000
+2650	108306	14	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>17.65%</color>/<color=#FF6347>35.29%</color>/<color=#FF6347>52.94%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>35.29%</color>/<color=#FF6347>70.59%</color>/<color=#FF6347>105.88%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60114			3	20000
+2651	108306	15	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>18.24%</color>/<color=#FF6347>36.47%</color>/<color=#FF6347>54.71%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>36.47%</color>/<color=#FF6347>72.94%</color>/<color=#FF6347>109.41%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60115			5	22000
+2652	108306	16	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>18.82%</color>/<color=#FF6347>37.65%</color>/<color=#FF6347>56.47%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>37.65%</color>/<color=#FF6347>75.29%</color>/<color=#FF6347>112.94%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60116			5	24000
+2653	108306	17	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>19.41%</color>/<color=#FF6347>38.82%</color>/<color=#FF6347>58.24%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>38.82%</color>/<color=#FF6347>77.65%</color>/<color=#FF6347>116.47%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png	60117			5	26000
+2654	108306	18	天体回旋	朝前方跃起，持续旋转切割并牵引自身周围的目标，根据消球数每段造成<color=#FF6347>20%</color>/<color=#FF6347>40%</color>/<color=#FF6347>60%</color>的物理伤害，落地时重击自身周围目标，根据消球数造成<color=#FF6347>40%</color>/<color=#FF6347>80%</color>/<color=#FF6347>120%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianhuang1.png				0	0
+2655	108311	1	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>75%</color>/<color=#FF6347>150%</color>/<color=#FF6347>225%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60201			1	2000
+2656	108311	2	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>79.41%</color>/<color=#FF6347>158.82%</color>/<color=#FF6347>238.24%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60202			1	3000
+2657	108311	3	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>83.82%</color>/<color=#FF6347>167.65%</color>/<color=#FF6347>251.47%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60203			1	4000
+2658	108311	4	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>88.24%</color>/<color=#FF6347>176.47%</color>/<color=#FF6347>264.71%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60204			1	5000
+2659	108311	5	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>92.65%</color>/<color=#FF6347>185.29%</color>/<color=#FF6347>277.94%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60205			2	6000
+2660	108311	6	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>97.06%</color>/<color=#FF6347>194.12%</color>/<color=#FF6347>291.18%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60206			2	7000
+2661	108311	7	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>101.47%</color>/<color=#FF6347>202.94%</color>/<color=#FF6347>304.41%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60207			2	8000
+2662	108311	8	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>105.88%</color>/<color=#FF6347>211.76%</color>/<color=#FF6347>317.65%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60208			2	9000
+2663	108311	9	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>110.29%</color>/<color=#FF6347>220.59%</color>/<color=#FF6347>330.88%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60209			2	10000
+2664	108311	10	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>114.71%</color>/<color=#FF6347>229.41%</color>/<color=#FF6347>344.12%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60210			3	12000
+2665	108311	11	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>119.12%</color>/<color=#FF6347>238.24%</color>/<color=#FF6347>357.35%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60211			3	14000
+2666	108311	12	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>123.53%</color>/<color=#FF6347>247.06%</color>/<color=#FF6347>370.59%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60212			3	16000
+2667	108311	13	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>127.94%</color>/<color=#FF6347>255.88%</color>/<color=#FF6347>383.82%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60213			3	18000
+2668	108311	14	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>132.35%</color>/<color=#FF6347>264.71%</color>/<color=#FF6347>397.06%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60214			3	20000
+2669	108311	15	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>136.76%</color>/<color=#FF6347>273.53%</color>/<color=#FF6347>410.29%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60215			5	22000
+2670	108311	16	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>141.18%</color>/<color=#FF6347>282.35%</color>/<color=#FF6347>423.53%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60216			5	24000
+2671	108311	17	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>145.59%</color>/<color=#FF6347>291.18%</color>/<color=#FF6347>436.76%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png	60217			5	26000
+2672	108311	18	曳星袭	瞬间移动到目标身后攻击，根据消球数造成<color=#FF6347>150%</color>/<color=#FF6347>300%</color>/<color=#FF6347>450%</color>的物理伤害。3消时，造成伤害转化为暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubianlan1.png				0	0
+2673	108316	1	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>300%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>100%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60001			1	2000
+2674	108316	2	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>317.65%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>105.88%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60002			1	3000
+2675	108316	3	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>335.29%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>111.76%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60003			1	4000
+2676	108316	4	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>352.94%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>117.65%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60004			1	5000
+2677	108316	5	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>370.59%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>123.53%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60005			2	6000
+2678	108316	6	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>388.24%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>129.41%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60006			2	7000
+2679	108316	7	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>405.88%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>135.29%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60007			2	8000
+2680	108316	8	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>423.53%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>141.18%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60008			2	9000
+2681	108316	9	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>441.18%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>147.06%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60009			2	10000
+2682	108316	10	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>458.82%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>152.94%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60010			3	12000
+2683	108316	11	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>476.47%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>158.82%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60011			3	14000
+2684	108316	12	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>494.12%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>164.71%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60012			3	16000
+2685	108316	13	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>511.76%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>170.59%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60013			3	18000
+2686	108316	14	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>529.41%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>176.47%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60014			3	20000
+2687	108316	15	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>547.06%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>182.35%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60015			5	22000
+2688	108316	16	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>564.71%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>188.24%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60016			5	24000
+2689	108316	17	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>582.35%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>194.12%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png	60017			5	26000
+2690	108316	18	杀星	普通攻击：持续刺杀目标，共造成<color=#FF6347>600%</color>的物理伤害。闪避、消除红色信号球后，普通攻击可触发<color=#FF6347>追刃</color>，造成<color=#FF6347>200%</color>的物理伤害。	Assets/Product/Texture/Image/IconSkill/dubianpugong1.png				0	0
+2691	108317	1	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>300%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60101			1	2000
+2692	108317	2	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>317.65%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60102			1	3000
+2693	108317	3	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>335.29%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60103			1	4000
+2694	108317	4	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>352.94%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60104			1	5000
+2695	108317	5	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>370.59%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60105			2	6000
+2696	108317	6	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>388.24%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60106			2	7000
+2697	108317	7	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>405.88%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60107			2	8000
+2698	108317	8	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>423.53%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60108			2	9000
+2699	108317	9	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>441.18%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60109			2	10000
+2700	108317	10	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>458.82%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60110			3	12000
+2701	108317	11	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>476.47%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60111			3	14000
+2702	108317	12	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>494.12%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60112			3	16000
+2703	108317	13	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>511.76%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60113			3	18000
+2704	108317	14	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>529.41%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60114			3	20000
+2705	108317	15	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>547.06%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60115			5	22000
+2706	108317	16	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>564.71%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60116			5	24000
+2707	108317	17	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>582.35%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png	60117			5	26000
+2708	108317	18	必杀-超星爆发	必杀：化为暗影刺杀目标，每次刺杀造成<color=#FF6347>600%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/R3dubiandazhao1.png				0	0
+2709	108318	1	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>150%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60501			1	2000
+2710	108318	2	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>158.82%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60502			1	3000
+2711	108318	3	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>167.65%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60503			1	4000
+2712	108318	4	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>176.47%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60504			1	5000
+2713	108318	5	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>185.29%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60505			2	6000
+2714	108318	6	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>194.12%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60506			2	7000
+2715	108318	7	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>202.94%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60507			2	8000
+2716	108318	8	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>211.76%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60508			2	9000
+2717	108318	9	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>220.59%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60509			2	10000
+2718	108318	10	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>229.41%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60510			3	12000
+2719	108318	11	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>238.24%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60511			3	14000
+2720	108318	12	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>247.06%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60512			3	16000
+2721	108318	13	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>255.88%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60513			3	18000
+2722	108318	14	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>264.71%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60514			3	20000
+2723	108318	15	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>273.53%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60515			5	22000
+2724	108318	16	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>282.35%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60516			5	24000
+2725	108318	17	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>291.18%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png	60517			5	26000
+2726	108318	18	十字瞬影	QTE：从空中出场袭击目标，落地化为暗影分散后再次袭向目标，每次造成<color=#FF6347>300%</color>的暗属性伤害。	Assets/Product/Texture/Image/IconSkill/QTE1.png				0	0
+2727	108321	1	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>25%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>150%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>50%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60201			1	2000
+2728	108321	2	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>26.47%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>158.82%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>52.94%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60202			1	3000
+2729	108321	3	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>27.94%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>167.65%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>55.88%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60203			1	4000
+2730	108321	4	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>29.41%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>176.47%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>58.82%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60204			1	5000
+2731	108321	5	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>30.88%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>185.29%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>61.76%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60205			2	6000
+2732	108321	6	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>32.35%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>194.12%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>64.71%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60206			2	7000
+2733	108321	7	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>33.82%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>202.94%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>67.65%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60207			2	8000
+2734	108321	8	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>35.29%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>211.76%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>70.59%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60208			2	9000
+2735	108321	9	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>36.76%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>220.59%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>73.53%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60209			2	10000
+2736	108321	10	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>38.24%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>229.41%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>76.47%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60210			3	12000
+2737	108321	11	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>39.71%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>238.24%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>79.41%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60211			3	14000
+2738	108321	12	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>41.18%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>247.06%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>82.35%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60212			3	16000
+2739	108321	13	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>42.65%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>255.88%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>85.29%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60213			3	18000
+2740	108321	14	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>44.12%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>264.71%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>88.24%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60214			3	20000
+2741	108321	15	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>45.59%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>273.53%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>91.18%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60215			5	22000
+2742	108321	16	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>47.06%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>282.35%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>94.12%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60216			5	24000
+2743	108321	17	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>48.53%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>291.18%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>97.06%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60217			5	26000
+2744	108321	18	寰宇振荡	核心被动：任意3消后，再次消除红色信号时，化为暗影对前方区域持续攻击，每次造成<color=#FF6347>50%</color>的暗属性伤害，结束后进入暗影强化状态，普通攻击额外附加共<color=#FF6347>300%</color>的暗属性伤害，<color=#FF6347>追刃</color>额外附加<color=#FF6347>100%</color>的暗属性伤害，持续5秒。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png				0	0
+2745	108322	0	队长-影袭无名	全队暗属性伤害增加<color=#FF6347>10%</color>，进攻型构造体攻击力<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianA1.png	61002			3	25000
+2746	108322	1	队长-影袭无名	全队暗属性伤害增加<color=#FF6347>10%</color>，进攻型构造体攻击力<color=#FF6347>5%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianA1.png	61002			3	25000
+2747	108323	1	进攻型	伤害增加<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60301	61301		1	2000
+2748	108323	2	进攻型	伤害增加<color=#FF6347>10.59%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60302	61302		1	3000
+2749	108323	3	进攻型	伤害增加<color=#FF6347>11.18%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60303	61303		1	4000
+2750	108323	4	进攻型	伤害增加<color=#FF6347>11.76%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60304	61304		1	5000
+2751	108323	5	进攻型	伤害增加<color=#FF6347>12.35%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60305	61305		2	6000
+2752	108323	6	进攻型	伤害增加<color=#FF6347>12.94%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60306	61306		2	7000
+2753	108323	7	进攻型	伤害增加<color=#FF6347>13.53%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60307	61307		2	8000
+2754	108323	8	进攻型	伤害增加<color=#FF6347>14.12%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60308	61308		2	9000
+2755	108323	9	进攻型	伤害增加<color=#FF6347>14.71%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60309	61309		2	10000
+2756	108323	10	进攻型	伤害增加<color=#FF6347>15.29%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60310	61310		3	12000
+2757	108323	11	进攻型	伤害增加<color=#FF6347>15.88%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60311	61311		3	14000
+2758	108323	12	进攻型	伤害增加<color=#FF6347>16.47%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60312	61312		3	16000
+2759	108323	13	进攻型	伤害增加<color=#FF6347>17.06%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60313	61313		3	18000
+2760	108323	14	进攻型	伤害增加<color=#FF6347>17.65%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60314	61314		3	20000
+2761	108323	15	进攻型	伤害增加<color=#FF6347>18.24%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60315	61315		5	22000
+2762	108323	16	进攻型	伤害增加<color=#FF6347>18.82%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60316	61316		5	24000
+2763	108323	17	进攻型	伤害增加<color=#FF6347>19.41%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png	60317	61317		5	26000
+2764	108323	18	进攻型	伤害增加<color=#FF6347>20%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianhexin1.png				0	0
+2765	108327	0	终阶解放	首次进入战斗时，立即获得3个信号球。	Assets/Product/Texture/Image/IconSkill/Jiefang1.png	60417				
+2766	108327	1	终阶解放	首次进入战斗时，立即获得3个信号球。	Assets/Product/Texture/Image/IconSkill/Jiefang1.png	60417				
+2767	108324	0	杀域	蓝色信号技能命中目标后，后续4秒内对其造成的伤害增加<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianS1.png	61004			5	50000
+2768	108324	1	杀域	蓝色信号技能命中目标后，后续4秒内对其造成的伤害增加<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianS1.png	61004			5	50000
+2769	108325	0	追杀者	<color=#FF6347>追刃</color>命中目标后，后续4秒内对其造成的伤害增加<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianSS1.png	61005			7	75000
+2770	108325	1	追杀者	<color=#FF6347>追刃</color>命中目标后，后续4秒内对其造成的伤害增加<color=#FF6347>10%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianSS1.png	61005			7	75000
+2771	108326	0	黑星陨落	核心被动状态下，自身暗属性伤害提升<color=#FF6347>20%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianSSS1.png	61006			10	100000
+2772	108326	1	黑星陨落	核心被动状态下，自身暗属性伤害提升<color=#FF6347>20%</color>。	Assets/Product/Texture/Image/IconSkill/R3dubianSSS1.png	61006			10	100000

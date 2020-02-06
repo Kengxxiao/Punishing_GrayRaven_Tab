@@ -14,7 +14,8 @@ end
 
 function XUiBfrtDeploy:OnStart(groupId)
     self:InitGroupInfo(groupId)
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, nil)
+    self:PlayAnimation(ANIMATION_OPEN)
+    --XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, nil)
 end
 
 function XUiBfrtDeploy:OnDestroy()
@@ -96,8 +97,8 @@ end
 
 function XUiBfrtDeploy:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
     self.BtnAutoTeam.CallBack = function ()
         self:OnBtnAutoTeamClick()
     end

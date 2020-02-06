@@ -116,7 +116,7 @@ DefaultMusicVolume	float	0.8
 DefaultCvVolume	float	0.8
 DefaultCvType	int	1
 DefaultControl	int	1
-BossSingleChallengeNum	int	3
+BossSingleChallengeNum	int	4
 BossSingleMaxStamina	int	5
 CharacterInitStamina	int	5
 DormitoryEquipScore	float	1.5
@@ -196,3 +196,7 @@ HeadPortraitQuality	int	1
 HeartbeatTimeout	int	2000
 ReconnectInterval	int	3000
 MaxDisconnectTime	int	600
+RedEnvelopeWeightReduceValue	int	2000
+RedEnvelopeMinWeightValue	int	2000
+EquipSuitPrefabNameLength	int	8
+EquipSuitPrefabMaxNum	int	8

@@ -35,15 +35,15 @@ function XUiDrawBuyVoucher:InitAutoScript()
 end
 
 function XUiDrawBuyVoucher:AutoInitUi()
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/BtnBack"):GetComponent("Button")
-    self.PanelBuyVoucher = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher")
-    self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtName"):GetComponent("Text")
-    self.TxtTip = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtTip"):GetComponent("Text")
-    self.TxtCount = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtCount"):GetComponent("Text")
-    self.ImgIcon = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/ImgIcon"):GetComponent("RawImage")
-    self.BtnBuy = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/BtnBuy"):GetComponent("Button")
-    self.BtnCancel = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/BtnCancel"):GetComponent("Button")
-    self.ImgMask = self.Transform:Find("SafeAreaContentPane/ImgMask"):GetComponent("Image")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/BtnBack"):GetComponent("Button")
+    -- self.PanelBuyVoucher = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher")
+    -- self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtName"):GetComponent("Text")
+    -- self.TxtTip = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtTip"):GetComponent("Text")
+    -- self.TxtCount = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/TxtCount"):GetComponent("Text")
+    -- self.ImgIcon = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/ImgIcon"):GetComponent("RawImage")
+    -- self.BtnBuy = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/BtnBuy"):GetComponent("Button")
+    -- self.BtnCancel = self.Transform:Find("SafeAreaContentPane/PanelBuyVoucher/BtnCancel"):GetComponent("Button")
+    -- self.ImgMask = self.Transform:Find("SafeAreaContentPane/ImgMask"):GetComponent("Image")
 end
 
 function XUiDrawBuyVoucher:GetAutoKey(uiNode, eventName)
@@ -80,9 +80,9 @@ end
 
 function XUiDrawBuyVoucher:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnBuy, "onClick", self.OnBtnBuyClick)
-    self:RegisterListener(self.BtnCancel, "onClick", self.OnBtnCancelClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnBuy, self.OnBtnBuyClick)
+    self:RegisterClickEvent(self.BtnCancel, self.OnBtnCancelClick)
 end
 -- auto
 function XUiDrawBuyVoucher:OnBtnBackClick(...)

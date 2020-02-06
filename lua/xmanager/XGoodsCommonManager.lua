@@ -40,6 +40,10 @@ local GoodsName = {
 
     [XArrangeConfigs.Types.Furniture] = function(templateId)
         return XFurnitureConfigs.GetFurnitureNameById(templateId)
+    end,
+
+    [XArrangeConfigs.Types.DormCharacter] = function(templateId)
+        return XDormConfig.GetDormCharacterRewardNameById(templateId)
     end
 }
 
@@ -66,6 +70,10 @@ local GoodsQuality = {
 
     [XArrangeConfigs.Types.BaseEquip] = function(templateId)
         return XDataCenter.BaseEquipManager.GetBaseEquipQuality(templateId)
+    end,
+
+    [XArrangeConfigs.Types.DormCharacter] = function(templateId)
+        return XDormConfig.GetDormCharacterRewardQualityById(templateId)
     end
 }
 
@@ -96,6 +104,9 @@ local GoodsIcon = {
 
     [XArrangeConfigs.Types.Furniture] = function(templateId)
         return XFurnitureConfigs.GetFurnitureIconById(templateId)
+    end,
+    [XArrangeConfigs.Types.DormCharacter] = function(templateId)
+        return XDormConfig.GetDormCharacterRewardIconById(templateId)
     end
 }
 
@@ -127,9 +138,12 @@ local GoodsDescription = {
     [XArrangeConfigs.Types.Furniture] = function(templateId)
         return XFurnitureConfigs.GetFurnitureDescriptionById(templateId)
     end,
-    
+
     [XArrangeConfigs.Types.HeadPortrait] = function(templateId)
         return XPlayerManager.GetHeadPortraitDescriptionById(templateId)
+    end,
+    [XArrangeConfigs.Types.DormCharacter] = function(templateId)
+        return XDormConfig.GetDormDescriptionRewardCharIdById(templateId)
     end,
 }
 
@@ -137,13 +151,16 @@ local GoodsWorldDesc = {
     [XArrangeConfigs.Types.Item] = function(templateId)
         return XDataCenter.ItemManager.GetItemWorldDesc(templateId)
     end,
-    
+
     [XArrangeConfigs.Types.Fashion] = function(templateId)
         return XDataCenter.FashionManager.GetFashionWorldDescription(templateId)
     end,
-    
+
     [XArrangeConfigs.Types.HeadPortrait] = function(templateId)
         return XPlayerManager.GetHeadPortraitWorldDescById(templateId)
+    end,
+    [XArrangeConfigs.Types.DormCharacter] = function(templateId)
+        return XDormConfig.GetDormWorldDescriptionRewardCharIdById(templateId)
     end,
 }
 
@@ -284,7 +301,7 @@ GoodsShowParams[XArrangeConfigs.Types.Character] = function(templateId)
         QualityIcon = XCharacterConfigs.GetCharQualityIconGoods(quality),
         Icon = XDataCenter.CharacterManager.GetCharRoundnessHeadIcon(templateId),
         BigIcon = XDataCenter.CharacterManager.GetCharBigRoundnessHeadIcon(templateId),
-        
+
     }
 end
 
@@ -350,6 +367,17 @@ GoodsShowParams[XArrangeConfigs.Types.HeadPortrait] = function(templateId)
         Icon = XPlayerManager.GetHeadPortraitImgSrcById(templateId),
         BigIcon = XPlayerManager.GetHeadPortraitImgSrcById(templateId),
         Effect = XPlayerManager.GetHeadPortraitEffectById(templateId),
+    }
+end
+
+GoodsShowParams[XArrangeConfigs.Types.DormCharacter] = function(templateId)
+    return {
+        RewardType = XRewardManager.XRewardType.DormCharacter,
+        TemplateId = templateId,
+        Name = XDormConfig.GetDormCharacterRewardNameById(templateId),
+        Icon = XDormConfig.GetDormCharacterRewardSmallIconById(templateId),
+        BigIcon = XDormConfig.GetDormCharacterRewardIconById(templateId),
+        Quality = XDormConfig.GetDormCharacterRewardQualityById(templateId),
     }
 end
 

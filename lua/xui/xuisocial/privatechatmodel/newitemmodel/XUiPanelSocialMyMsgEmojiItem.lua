@@ -3,6 +3,7 @@ XUiPanelSocialMyMsgEmojiItem = XClass()
 function XUiPanelSocialMyMsgEmojiItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -15,13 +16,13 @@ function XUiPanelSocialMyMsgEmojiItem:InitAutoScript()
 end
 
 function XUiPanelSocialMyMsgEmojiItem:AutoInitUi()
-    self.PanelRole = self.Transform:Find("PanelRole")
-    self.RImgIcon = self.Transform:Find("PanelRole/RImgIcon"):GetComponent("RawImage")
-    self.HeadIconEffect = self.Transform:Find("PanelRole/RImgIcon/Effect"):GetComponent("XUiEffectLayer")
-    self.BtnView = self.Transform:Find("PanelRole/BtnView"):GetComponent("Button")
-    self.PanelMsg = self.Transform:Find("PanelMsg")
-    self.TxtName = self.Transform:Find("PanelMsg/TxtName"):GetComponent("Text")
-    self.RImgEmoji = self.Transform:Find("PanelMsg/Content/RImgEmoji"):GetComponent("RawImage")
+    -- self.PanelRole = self.Transform:Find("PanelRole")
+    -- self.RImgIcon = self.Transform:Find("PanelRole/RImgIcon"):GetComponent("RawImage")
+    -- self.HeadIconEffect = self.Transform:Find("PanelRole/RImgIcon/Effect"):GetComponent("XUiEffectLayer")
+    -- self.BtnView = self.Transform:Find("PanelRole/BtnView"):GetComponent("Button")
+    -- self.PanelMsg = self.Transform:Find("PanelMsg")
+    -- self.TxtName = self.Transform:Find("PanelMsg/TxtName"):GetComponent("Text")
+    -- self.RImgEmoji = self.Transform:Find("PanelMsg/Content/RImgEmoji"):GetComponent("RawImage")
 end
 
 function XUiPanelSocialMyMsgEmojiItem:GetAutoKey(uiNode,eventName)
@@ -54,7 +55,7 @@ end
 
 function XUiPanelSocialMyMsgEmojiItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
 end
 -- auto
 

@@ -4,8 +4,8 @@ function XUiPanelTrialGet:Ctor(ui,uiroot)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.UiRoot = uiroot
-    self:InitAutoScript()
-    self:InitFx()
+    XTool.InitUiObject(self)
+    self:InitScript()
 end
 
 function XUiPanelTrialGet:SetBtnCB(cb)
@@ -21,26 +21,10 @@ function XUiPanelTrialGet:SetAnimationFx()
     end,0,1,200)
 end
 
---特效节点
-function XUiPanelTrialGet:InitFx()
-    self.FxUiPanelTrialGet01 = self.Transform:Find("PanelEffectLevel/FxUiPanelTrialGet01")
-    self.FxUiPanelTrialGet02 = self.Transform:Find("PanelEffectLevel/FxUiPanelTrialGet02")
+function XUiPanelTrialGet:InitScript()
+    self:AddListener()
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelTrialGet:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelTrialGet:AutoInitUi()
-    self.TxtType = self.Transform:Find("PanelInfo/TxtType"):GetComponent("Text")
-    self.TxtName = self.Transform:Find("PanelInfo/TxtName"):GetComponent("Text")
-    self.TxtQuality = self.Transform:Find("PanelInfo/TxtQuality"):GetComponent("Text")
-    self.ImgWafer = self.Transform:Find("PanelResult/ImgWafer"):GetComponent("Image")
-    self.BtnClick = self.Transform:Find("BtnClick"):GetComponent("Button")
-end
 
 function XUiPanelTrialGet:RegisterClickEvent(uiNode, func)
     if func == nil then
@@ -59,7 +43,7 @@ function XUiPanelTrialGet:RegisterClickEvent(uiNode, func)
     CsXUiHelper.RegisterClickEvent(uiNode, listener)
 end
 
-function XUiPanelTrialGet:AutoAddListener()
+function XUiPanelTrialGet:AddListener()
     self:RegisterClickEvent(self.BtnClick, self.OnBtnClickClick)
 end
 -- auto

@@ -40,6 +40,8 @@ function XUiDormWorkMemberListItem:OnRefresh(itemData)
         self.ImgIcon:SetRawImage(icon)
     end
 
+    local eventtemp = XHomeCharManager.GetCharacterEvent(itemData,true)
+    self.Events.gameObject:SetActiveEx(eventtemp)
     self.Vitality = DormManager.GetVitalityById(self.ItemData) or 0
     self.TxtVitCount.text = TextManager.GetText("DormWorkVitTxt",self.Vitality,MaxVitality)
 end

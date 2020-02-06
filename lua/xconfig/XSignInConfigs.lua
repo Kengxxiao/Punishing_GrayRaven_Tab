@@ -74,6 +74,7 @@ function XSignInConfigs.Init()
     table.sort(SignWelfareList, function (a, b)
         return a.Sort < b.Sort
     end)
+
 end
 
 -- 获取福利配置表
@@ -91,7 +92,8 @@ function XSignInConfigs.GetWelfareConfigs()
     local welfareConfigs = {}
     for _, v in pairs(SignWelfareList) do
         if v.FunctionType == XAutoWindowConfigs.AutoFuncitonType.Sign then
-            if XDataCenter.SignInManager.IsShowSignIn(v.SubConfigId, true) then
+            if XDataCenter.SignInManager.IsShowSignIn(v.SubConfigId, true) and
+               not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipSignIn) then
                 local t = XSignInConfigs.GetSignInConfig(v.SubConfigId)
                 table.insert(welfareConfigs, setConfig(t.Id, t.Name, t.PrefabPath, v.FunctionType, v.Id))
             end
@@ -276,9 +278,14 @@ end
 function XSignInConfigs.IsShowSignIn(signInId)
     local isShowSignIn = false
     local t = XSignInConfigs.GetSignInConfig(signInId)
-    local startTime = CS.XDate.GetTime(t.StartTimeStr)
-    local closeTime = CS.XDate.GetTime(t.CloseTimeStr)
-    local now = XTime.Now()
+    local startTime = XTime.ParseToTimestamp(t.StartTimeStr)
+    local closeTime = XTime.ParseToTimestamp(t.CloseTimeStr)
+
+    if not startTime or not closeTime then
+        return false
+    end
+
+    local now = XTime.GetServerNowTimestamp()
 
     if now <= startTime and now > closeTime then
         return false

@@ -48,7 +48,7 @@ end
 
 function XUiPanelWorldChatMyMsgItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
     self:RegisterListener(self.TxtWord, "onHrefClick", self.OnBtnHrefClick)
 end
 -- auto

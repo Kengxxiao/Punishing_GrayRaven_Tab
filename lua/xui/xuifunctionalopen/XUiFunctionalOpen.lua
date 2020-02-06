@@ -87,14 +87,14 @@ end
 
 function XUiFunctionalOpen:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOpenCommunication, "onClick", self.OnBtnOpenCommunicationClick)
-    self:RegisterListener(self.BtnRefuse, "onClick", self.OnBtnRefuseClick)
-    self:RegisterListener(self.BtnOpenCommunicationOfMedal, "onClick", self.OnBtnOpenCommunicationClick)
-    self:RegisterListener(self.BtnRefuseOfMedal, "onClick", self.OnBtnRefuseClick)
-    self:RegisterListener(self.BtnDirty, "onClick", self.OnBtnDirtyClick)
-    self:RegisterListener(self.BtnClear, "onClick", self.OnBtnClearClick)
-    self:RegisterListener(self.BtnInputOn, "onClick", self.OnBtnInputOnClick)
-    self:RegisterListener(self.BtnOnAction, "onClick", self.OnBtnOnActionClick)
+    self:RegisterClickEvent(self.BtnOpenCommunication, self.OnBtnOpenCommunicationClick)
+    self:RegisterClickEvent(self.BtnRefuse, self.OnBtnRefuseClick)
+    self:RegisterClickEvent(self.BtnOpenCommunicationOfMedal, self.OnBtnOpenCommunicationClick)
+    self:RegisterClickEvent(self.BtnRefuseOfMedal, self.OnBtnRefuseClick)
+    self:RegisterClickEvent(self.BtnDirty, self.OnBtnDirtyClick)
+    self:RegisterClickEvent(self.BtnClear, self.OnBtnClearClick)
+    self:RegisterClickEvent(self.BtnInputOn, self.OnBtnInputOnClick)
+    self:RegisterClickEvent(self.BtnOnAction, self.OnBtnOnActionClick)
 end
 -- auto
 function XUiFunctionalOpen:OnBtnDirtyClick(...)
@@ -121,7 +121,9 @@ function XUiFunctionalOpen:OnBtnOnActionClick(...)
     self.BtnClear.gameObject:SetActiveEx(false)
     local onEnd = function()
         XUiHelper.StopAnimation()
-        XUiHelper.PlayAnimation(self, "TongxinLoop", nil, nil)
+
+        self:PlayAnimation("TongxinLoop")
+        --XUiHelper.PlayAnimation(self, "TongxinLoop", nil, nil)
         self.Content = self.Content - 1
         self.CurrCharTab = string.CharsConvertToCharTab(self.ActionList.Repulse)
         local interval = math.floor(self.Interval * 1000 / #self.CurrCharTab)
@@ -130,13 +132,16 @@ function XUiFunctionalOpen:OnBtnOnActionClick(...)
         end, interval, #self.CurrCharTab + 2, 0)
     end
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self, "TongxinBegan", nil, onEnd)
+
+    self:PlayAnimation("TongxinBegan", onEnd)
+    --XUiHelper.PlayAnimation(self, "TongxinBegan", nil, onEnd)
 end
 
 function XUiFunctionalOpen:OnBtnOpenCommunicationClick(...)
     local onEnd = function()
         XUiHelper.StopAnimation()
-        XUiHelper.PlayAnimation(self, "TongxinLoop", nil, nil)
+        self:PlayAnimation("TongxinLoop")
+        --XUiHelper.PlayAnimation(self, "TongxinLoop", nil, nil)
         self:HintActionInit()
     end
     self.PanelHintCommunication.gameObject:SetActiveEx(false)
@@ -145,7 +150,9 @@ function XUiFunctionalOpen:OnBtnOpenCommunicationClick(...)
     self.PanelHintAction.gameObject:SetActiveEx(true)
     self.BtnClear.gameObject:SetActiveEx(false)
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self, "TongxinBegan", nil, onEnd)
+
+    self:PlayAnimation("TongxinBegan", onEnd)
+    --XUiHelper.PlayAnimation(self, "TongxinBegan", nil, onEnd)
 
 end
 
@@ -178,9 +185,10 @@ function XUiFunctionalOpen:OnBtnClearClick(...)
     if data then
         local onEnd = function()
             self:SetupContent(data)
-         end
+        end
         self.ImgNpcHand.gameObject:SetActiveEx(false)
-        XUiHelper.PlayAnimation(self, "ComOpen", nil, onEnd)
+        self:PlayAnimation("ComOpen", onEnd)
+        --XUiHelper.PlayAnimation(self, "ComOpen", nil, onEnd)
         self:OffButton()
     else
         local onEnd = function()
@@ -203,7 +211,7 @@ function XUiFunctionalOpen:OnBtnClearClick(...)
             XDataCenter.CommunicationManager.SetCommunicating(false)
             
             self:Close()
-            
+
             if actionType ~= XDataCenter.CommunicationManager.Type.Medal then
                 XEventManager.DispatchEvent(XEventId.EVENT_FUNCTION_EVENT_COMPLETE)
             end
@@ -212,7 +220,8 @@ function XUiFunctionalOpen:OnBtnClearClick(...)
             end
 
         end
-        XUiHelper.PlayAnimation(self, "TongxinClose", nil, onEnd)
+        self:PlayAnimation("TongxinClose", onEnd)
+        --XUiHelper.PlayAnimation(self, "TongxinClose", nil, onEnd)
         self.IsEnd = true
     end
 end
@@ -291,7 +300,7 @@ function XUiFunctionalOpen:RefreshTime()
         if XTool.UObjIsNil(self.GameObject) then
             return
         end
-        self.getTime = os.date("%H:%M:%S")
+        self.getTime = XTime.TimestampToGameDateTimeString(XTime.GetServerNowTimestamp(), "HH:mm:ss")
         self.TxtTimeHand.text = self.getTime
         self.TxtTimeHalf.text = self.getTime
     end, 1000, 0)

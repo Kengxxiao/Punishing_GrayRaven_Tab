@@ -241,7 +241,8 @@ XPrequelManagerCreator = function()
         local defaultChapter = 1
         local hasDefault = false
         for index, chapterId in pairs(cover.CoverVal.ChapterId or {}) do
-            if not XPrequelManager.GetChapterLockStatus(chapterId) then
+            local chapterDescription = XPrequelManager.GetChapterUnlockDescription(chapterId)
+            if chapterDescription == nil then
                 if showChapter and showChapter == chapterId then
                     return index
                 end
@@ -294,13 +295,15 @@ XPrequelManagerCreator = function()
 
     -- [是否有章节处于活动中]
     function XPrequelManager.IsChapterInActivity(chapterId)
-        local currentTime = XTime.Now()
+        local currentTime = XTime.GetServerNowTimestamp()
         local chapterInfo = XPrequelConfigs.GetPrequelChapterById(chapterId)
         if chapterInfo.ActivityBegin and chapterInfo.ActivityEnd then
-            local activityBeginTime = CS.XDate.GetTime(chapterInfo.ActivityBegin)
-            local activityEndTime = CS.XDate.GetTime(chapterInfo.ActivityEnd)
-            if currentTime >= activityBeginTime and currentTime <= activityEndTime then
-                return true
+            local activityBeginTime = XTime.ParseToTimestamp(chapterInfo.ActivityBegin)
+            local activityEndTime = XTime.ParseToTimestamp(chapterInfo.ActivityEnd)
+            if activityBeginTime and activityEndTime then
+                if currentTime >= activityBeginTime and currentTime <= activityEndTime then
+                    return true
+                end
             end
         end
         return false
@@ -365,16 +368,18 @@ XPrequelManagerCreator = function()
         for k, chapterId in pairs(chapters or {}) do
             local chapterInfo = XPrequelConfigs.GetPrequelChapterById(chapterId)
             if chapterInfo.ActivityBegin and chapterInfo.ActivityEnd then
-                local currentTime = XTime.Now()
-                local activityBeginTime = CS.XDate.GetTime(chapterInfo.ActivityBegin)
-                local activityEndTime = CS.XDate.GetTime(chapterInfo.ActivityEnd)
-                if currentTime >= activityBeginTime and currentTime <= activityEndTime and currentPriority < chapterInfo.Priority then
-                    isActivityNotOpen = true
-                    if chapterInfo.ActivityCondition > 0 and XConditionManager.CheckCondition(chapterInfo.ActivityCondition) then
-                        currentChapter = chapterId
-                        currentPriority = chapterInfo.Priority
-                        isActivity = true
-                        isActivityNotOpen = false
+                local currentTime = XTime.GetServerNowTimestamp()
+                local activityBeginTime = XTime.ParseToTimestamp(chapterInfo.ActivityBegin)
+                local activityEndTime = XTime.ParseToTimestamp(chapterInfo.ActivityEnd)
+                if activityBeginTime and activityEndTime then
+                    if currentTime >= activityBeginTime and currentTime <= activityEndTime and currentPriority < chapterInfo.Priority then
+                        isActivityNotOpen = true
+                        if chapterInfo.ActivityCondition <= 0 or (chapterInfo.ActivityCondition > 0 and XConditionManager.CheckCondition(chapterInfo.ActivityCondition)) then
+                            currentChapter = chapterId
+                            currentPriority = chapterInfo.Priority
+                            isActivity = true
+                            isActivityNotOpen = false
+                        end
                     end
                 end
             end
@@ -395,7 +400,6 @@ XPrequelManagerCreator = function()
                 end
             end
         end
-
         -- 优先显示上一次打过的章节
         if not Cover2ChapterMap[coverId] then
             local key = string.format("%s%s", CoverPrefix, tostring(coverId))
@@ -421,7 +425,6 @@ XPrequelManagerCreator = function()
                 end
             end
         end
-
         return currentChapter, isActivity, isAllChapterLock, isActivityNotOpen
     end
 

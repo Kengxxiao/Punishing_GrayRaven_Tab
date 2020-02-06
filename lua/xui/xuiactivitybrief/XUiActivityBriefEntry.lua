@@ -1,6 +1,5 @@
 local TimeFormat = "MM/dd"
-local CSXDateGetTime = CS.XDate.GetTime
-local CSXDateFormatTime = CS.XDate.FormatTime
+local TimestampToGameDateTimeString = XTime.TimestampToGameDateTimeString
 local CSXTextManagerGetText = CS.XTextManager.GetText
 
 local XUiActivityBriefEntry = XLuaUiManager.Register(XLuaUi, "UiActivityBriefEntry")
@@ -11,12 +10,14 @@ function XUiActivityBriefEntry:OnStart(firstOpen)
     else
         self:PlayAnimation("AnimEnable2")
     end
+    --XRedPointManager.AddRedPointEvent(self.BtnActivityBabelTower, self.BaBelTowerRedDot, self, {XRedPointConditions.Types.CONDITION_TASK_TYPE}, XDataCenter.TaskManager.TaskType.BabelTower)
 end
 
 function XUiActivityBriefEntry:OnEnable()
     self:InitActivityMainLine()
     self:InitActivityPrequel()
-    self:InitActivityBossOnline()
+    --self:InitActivityBossOnline()
+    self:InitActivityBabelTower()
     self:InitActivityBranch()
     self:InitActivityBossSingle()
 end
@@ -79,10 +80,40 @@ function XUiActivityBriefEntry:InitActivityBranch()
     end
 end
 
+function XUiActivityBriefEntry:InitActivityBabelTower()
+    local curActivityNo = XDataCenter.FubenBabelTowerManager.GetCurrentActivityNo()
+    local beginTime = XDataCenter.FubenBabelTowerManager.GetActivityBeginTime(curActivityNo)
+    local fightEndTime = XDataCenter.FubenBabelTowerManager.GetFightEndTime(curActivityNo)
+    local endTime = XDataCenter.FubenBabelTowerManager.GetActivityEndTime(curActivityNo)
+    local inTime, timeStr, aheadTime = self:InitAcitivityTime(beginTime, fightEndTime, endTime)
+    
+    self.BtnActivityBabelTower:SetNameByGroup(0, timeStr)
+    
+    local functionId = XFunctionManager.FunctionName.BabelTower
+    local isOpen = XFunctionManager.JudgeCanOpen(functionId) and inTime
+    self.BtnActivityBabelTower:SetDisable(not isOpen)
+    
+    local config = XActivityBriefConfigs.GetActivityGroupConfig(XActivityBriefConfigs.ActivityGroupId.BabelTower)
+    local skipId = config.SkipId
+    self.BtnActivityBabelTower.CallBack = function()
+        if not XFunctionManager.DetectionFunction(functionId) then
+            return
+        end
+        
+        if not inTime then
+            local notInTimeStr = aheadTime and "ActivityBabelTowerNotInTime" or "ActivityBabelTowerOver"
+            XUiManager.TipText(notInTimeStr)
+            return
+        end
+        
+        XFunctionManager.SkipInterface(skipId)
+    end
+end
+
 function XUiActivityBriefEntry:InitAcitivityTime(beginTime, fightEndTime, endTime)
     local inTime, timeStr, aheadTime = false, "", false
 
-    local nowTime = XTime.Now()
+    local nowTime = XTime.GetServerNowTimestamp()
     if nowTime >= beginTime and nowTime < fightEndTime then
         inTime = true
         aheadTime = false
@@ -97,8 +128,8 @@ function XUiActivityBriefEntry:InitAcitivityTime(beginTime, fightEndTime, endTim
         aheadTime = true
     end
 
-    local beginTimeStr = CSXDateFormatTime(beginTime, TimeFormat)
-    local endTimeStr = CSXDateFormatTime(fightEndTime, TimeFormat)
+    local beginTimeStr = TimestampToGameDateTimeString(beginTime, TimeFormat)
+    local endTimeStr = TimestampToGameDateTimeString(fightEndTime, TimeFormat)
     timeStr = CSXTextManagerGetText("ActivityBriefFightTime", beginTimeStr, endTimeStr)
 
     return inTime, timeStr, aheadTime
@@ -108,8 +139,8 @@ function XUiActivityBriefEntry:InitActivityMainLine()
     local config = XActivityBriefConfigs.GetActivityGroupConfig(XActivityBriefConfigs.ActivityGroupId.MainLine)
     self.BtnActivityMainLine:SetNameByGroup(0, config.Name)
 
-    local functionId = XFunctionManager.FunctionName.FubenActivityFestival
-    local isOpen = XFunctionManager.JudgeCanOpen(functionId) and XDataCenter.FubenFestivalActivityManager.IsFestivalInActivity(XFestivalActivityConfig.ActivityId.MainLine)
+    local functionId = XFunctionManager.FunctionName.FubenActivityMainLine
+    local isOpen = XFunctionManager.JudgeCanOpen(functionId) and XDataCenter.FubenMainLineManager.IsMainLineActivityOpen()
     self.BtnActivityMainLine:SetDisable(not isOpen)
 
     local skipId = config.SkipId
@@ -150,6 +181,8 @@ function XUiActivityBriefEntry:InitActivityBossOnline()
     end
 end
 
+
+
 function XUiActivityBriefEntry:InitActivityPrequel()
     local config = XActivityBriefConfigs.GetActivityGroupConfig(XActivityBriefConfigs.ActivityGroupId.Prequel)
     self.BtnActivityPrequel:SetNameByGroup(0, config.Name)
@@ -171,4 +204,9 @@ function XUiActivityBriefEntry:InitActivityPrequel()
 
         XFunctionManager.SkipInterface(skipId)
     end
+end
+
+
+function XUiActivityBriefEntry:BaBelTowerRedDot(count)
+    self.BtnActivityBabelTower:ShowReddot(count >= 0)
 end

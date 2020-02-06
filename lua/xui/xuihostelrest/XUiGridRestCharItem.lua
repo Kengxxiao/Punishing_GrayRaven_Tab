@@ -52,7 +52,7 @@ end
 
 function XUiGridRestCharItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnItem, "onClick", self.OnBtnItemClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnItem, self.OnBtnItemClick)
 end
 -- auto
 

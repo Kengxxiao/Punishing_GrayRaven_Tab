@@ -1,5 +1,5 @@
 local XUiSet = XLuaUiManager.Register(XLuaUi, "UiSet")
-
+local LayoutRebuilder = CS.UnityEngine.UI.LayoutRebuilder
 local PANEL_INDEX = {
     Instruction = 1,
     Sound = 2,

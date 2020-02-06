@@ -10,7 +10,7 @@ XFubenUrgentEventManagerCreator = function()
     local CheckUrgentEventTime = function()
         if next(UrgentEventData) then
             for _, v in pairs(UrgentEventData) do
-                local now = XTime.Now()
+                local now = XTime.GetServerNowTimestamp()
                 local passedTime = now - v.Time
                 local urgentCfg = XFubenUrgentEventManager.GetUrgentEventCfg(v.UrgentId)
                 local remainTime = urgentCfg.Time - passedTime

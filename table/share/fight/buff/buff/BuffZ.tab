@@ -11,7 +11,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 800011			0	-1			1	0	8000110				FxJiantou02	Root			
 800012			0	-1			1	0	8000120			800012000					
 800013			0	-1			1	0	8000130			800013000					
-800014			0	-1			1	0	8000140			800014000		Root			
+800014			0	-1			1	0	8000140			800014000					
 800015			0	-1	8		1	0	8000150|8000150				FxTongyongBati	Root			
 800016			0	-1			1	0	8000160			800016000					
 800017			0	-1			1	0	8000170				FxTongyongYinshen				

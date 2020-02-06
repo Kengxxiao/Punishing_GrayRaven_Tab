@@ -91,7 +91,10 @@ function XUiTipBfrtLogisticSkill:PlayBeginAnimation()
     local endCb = function()
         self:AddCloseTimer()
     end
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, endCb)
+
+    self:PlayAnimation(ANIMATION_OPEN, endCb)
+
+    --XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, endCb)
 end
 
 function XUiTipBfrtLogisticSkill:AddCloseTimer()
@@ -110,7 +113,7 @@ function XUiTipBfrtLogisticSkill:PlayEndAnimation()
     local endCb = function()
         self:UpdateView()
     end
-    XUiHelper.PlayAnimation(self, ANIMATION_END, nil, endCb)
+    --XUiHelper.PlayAnimation(self, ANIMATION_END, nil, endCb)
 end
 
 function XUiTipBfrtLogisticSkill:UpdatePanelDes()

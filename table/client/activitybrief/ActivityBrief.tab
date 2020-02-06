@@ -1,3 +1,3 @@
-Id	StartTimeStr	EndTimeStr	TaskGroupId	ShopId
-1	2019/12/24 11:00	2020/2/4 5:00	1	1101
-2	2020/1/19 5:00	2020/2/2 5:00		20016
+Id	StartTimeStr	EndTimeStr	TaskGroupId	ShopId	GachaId	GachaUi	Gacha3DBg	ActivityPointId	MarkTaskId[0]	MarkTaskId[1]	MarkTaskId[2]	MarkTaskId[3]	MarkTaskId[4]	MarkTaskId[5]	MarkTaskId[6]	MarkTaskId[7]	MarkTaskId[8]	MarkTaskId[9]	MarkTaskId[10]
+1	2020/2/6 5:00	2020/3/16 5:00	5	1102	1	UiDrawActivity	Assets/Product/Ui/ComponentPrefab/DrawBackGround/DrawActivityBackGround01.prefab	60101	11205	11210	11215	11220	11224						
+2	2020/1/19 5:00	2020/2/2 5:00		20016			Assets/Product/Texture/Atlas/UiFubenActivity/UiFANYA.png												

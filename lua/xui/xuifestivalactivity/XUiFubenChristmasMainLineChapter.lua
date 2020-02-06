@@ -56,7 +56,7 @@ end
 
 function XUiFubenChristmasMainLineChapter:OpenDefaultStage(stageId)
     if self.FestivalStageIds and self.FestivalStages then
-        for i = 2, #self.FestivalStageIds do
+        for i=2, #self.FestivalStageIds do
             if self.FestivalStageIds[i] == stageId and self.FestivalStages[i] then
                 self.FestivalStages[i]:OnBtnStageClick()
                 break
@@ -89,10 +89,12 @@ function XUiFubenChristmasMainLineChapter:SetUiData(chapterTemplate)
     self:HandleEggStage()
     -- 界面信息
     self:SwitchFestivalBg(chapterTemplate)
-    local now = XTime.Now()
-    local endTimeSecond = CS.XDate.GetTime(chapterTemplate.EndTimeStr)
-    self.TxtDay.text = XUiHelper.GetTime(endTimeSecond - now, XUiHelper.TimeFormatType.ACTIVITY)
-    self:CreateActivityTimer(now, endTimeSecond)
+    local now = XTime.GetServerNowTimestamp()
+    local endTimeSecond = XTime.ParseToTimestamp(chapterTemplate.EndTimeStr)
+    if endTimeSecond then
+        self.TxtDay.text = XUiHelper.GetTime(endTimeSecond - now, XUiHelper.TimeFormatType.ACTIVITY)
+        self:CreateActivityTimer(now, endTimeSecond)
+    end
     self.TxtChapterName.text = chapterTemplate.Name
     self.TxtChapter.text = (self.ChapterId >= 10) and self.ChapterId or string.format("0%d", self.ChapterId)
 end
@@ -160,9 +162,9 @@ end
 function XUiFubenChristmasMainLineChapter:UpdateNodeLines()
     if not self.ChapterTemplate or not self.FestivalStageIds then return end
     local stageLength = #self.FestivalStageIds
-    for i = 2, stageLength do
+    for i=2, stageLength do
         local isOpen, description = XDataCenter.FubenFestivalActivityManager.CheckFestivalStageOpen(self.FestivalStageIds[i])
-        self:SetStageLineActive(i - 1, isOpen)
+        self:SetStageLineActive(i-1, isOpen)
     end
     self:SetStageLineActive(1, false)
     self:SetStageLineActive(stageLength, false)
@@ -178,7 +180,7 @@ function XUiFubenChristmasMainLineChapter:HandleEggStage()
     local eggStageIndex = 1
     local eggStageId = self.FestivalStageIds[eggStageIndex]
     if XDataCenter.FubenFestivalActivityManager.IsEgg(eggStageId) then
-        -- 彩蛋处理
+    -- 彩蛋处理
         local isUnlock, description = XDataCenter.FubenFestivalActivityManager.CheckFestivalStageOpen(eggStageId)
         self.FestivalStages[eggStageIndex].GameObject:SetActiveEx(isUnlock)
         local stageCfg = XDataCenter.FubenManager.GetStageCfg(eggStageId)
@@ -193,7 +195,7 @@ function XUiFubenChristmasMainLineChapter:HandleEggStage()
             end
         end
     else
-        -- 非彩蛋
+    -- 非彩蛋
         self.FestivalStages[eggStageIndex].GameObject:SetActiveEx(false)
     end
     self.FestivalStageLine[eggStageIndex].gameObject:SetActiveEx(false)
@@ -258,11 +260,11 @@ end
 function XUiFubenChristmasMainLineChapter:CloseStageDetails()
     self.IsOpenDetails = false
     if XLuaUiManager.IsUiShow(FESTIVAL_STORY_DETAIL) then
-        self:FindChildUiObj(FESTIVAL_STORY_DETAIL):Close()
+        self:FindChildUiObj(FESTIVAL_STORY_DETAIL):CloseDetailWithAnimation()
     end
 
     if XLuaUiManager.IsUiShow(FESTIVAL_FIGHT_DETAIL) then
-        self:FindChildUiObj(FESTIVAL_FIGHT_DETAIL):Close()
+        self:FindChildUiObj(FESTIVAL_FIGHT_DETAIL):CloseDetailWithAnimation()
     end
 
     self.PanelStageContentRaycast.raycastTarget = true
@@ -307,10 +309,10 @@ end
 
 -- 计时器
 function XUiFubenChristmasMainLineChapter:CreateActivityTimer(startTime, endTime)
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     self:StopActivityTimer()
     self.ActivityTimer = CS.XScheduleManager.ScheduleForever(function(...)
-        time = XTime.Now()
+        time = XTime.GetServerNowTimestamp()
         if time > endTime then
             self:Close()
             return

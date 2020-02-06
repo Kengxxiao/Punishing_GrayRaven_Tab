@@ -282,7 +282,7 @@ function XUiEquipReplaceNew:OnBtnUnlockClick(...)
 end
 
 function XUiEquipReplaceNew:OnBtnStrengthenClick(...)
-    XLuaUiManager.Open("UiEquipDetail", self.SelectEquipId)
+    XLuaUiManager.Open("UiEquipDetail", self.SelectEquipId, nil, self.CharacterId)
 end
 
 function XUiEquipReplaceNew:OnBtnTakeOnClick(...)

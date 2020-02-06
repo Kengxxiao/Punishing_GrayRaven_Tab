@@ -24,3 +24,6 @@ XPrefs.AutoWindowEach = "AUTO_WINDOW_EACH"
 
 XPrefs.AutoWindowPeriod = "AUTO_WINDOW_PERIOD"
 
+XPrefs.YKLoaclCachae = "YK_LOCAL_CACHAE"
+XPrefs.YKContinueBuy = "YK_CONTINUE_BUY"
+

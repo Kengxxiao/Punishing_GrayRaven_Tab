@@ -63,6 +63,22 @@ end
 function XUiPanelSetting:OnBtnView()
     XDataCenter.PlayerInfoManager.RequestPlayerInfoData(XPlayer.Id, function(data)
             XPlayer.SetPlayerLikes(data.Likes)
-        XLuaUiManager.Open("UiPlayerInfo", data)
+            local tmpData = {}
+            for k,v in pairs(data) do
+                tmpData[k] = v
+            end
+            tmpData.CharacterShow = {}
+            for i = 1,MAX_CHARACTER do
+                if self.CharacterList[i] then
+                    local char = XDataCenter.CharacterManager.GetCharacter(self.CharacterList[i])
+                    tmpData.CharacterShow[i] = {}
+                    tmpData.CharacterShow[i].Id = char.Id
+                    tmpData.CharacterShow[i].Level = char.Level
+                    tmpData.CharacterShow[i].Quality = char.Quality
+                else
+                    tmpData.CharacterShow[i] = nil
+                end
+            end
+        XLuaUiManager.Open("UiPlayerInfo", tmpData)
     end)
 end

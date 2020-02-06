@@ -54,7 +54,7 @@ end
 
 function XUiPanelChallengeTab:OnTabsClick()
     if not self.RootUi:IsChallengeAnimPlaying() then
-        XUiHelper.PlayAnimation(self.RootUi, "AniChallengeModeSwitch", nil, nil)
+        self.RootUi:PlayAnimation("AniChallengeModeSwitch")
     end
 end
 

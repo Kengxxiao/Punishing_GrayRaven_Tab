@@ -119,7 +119,7 @@ function XUiPanelPlotTab:OnTabsClick(index, doNotAnim)
     self:OnTabSelected(index)
 
     if not self.RootUi:IsRegionalAnimPlaying() then
-        XUiHelper.PlayAnimation(self.RootUi, ANIPREQUELREGIONALSWITCH, nil, nil)
+        self.RootUi:PlayAnimation(ANIPREQUELREGIONALSWITCH)
     end
 end
 

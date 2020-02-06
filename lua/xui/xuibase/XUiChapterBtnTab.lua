@@ -40,7 +40,7 @@ end
 
 function XUiChapterBtnTab:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.Btn, "onClick", self.OnBtnClick)
+    XUiHelper.RegisterClickEvent(self, self.Btn, self.OnBtnClick)
 end
 
 function XUiChapterBtnTab:OnBtnClick(...)

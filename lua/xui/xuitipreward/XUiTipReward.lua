@@ -63,8 +63,8 @@ end
 
 function XUiTipReward:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
-    self:RegisterListener(self.BtnDetermine, "onClick", self.OnBtnDetermineClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnDetermine, self.OnBtnDetermineClick)
 end
 -- auto
 

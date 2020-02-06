@@ -81,7 +81,7 @@ end
 
 function XUiGridCharacter:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnCharacter, "onClick", self.OnBtnCharacterClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCharacter, self.OnBtnCharacterClick)
 end
 -- auto
 function XUiGridCharacter:OnBtnCharacterClick()

@@ -44,7 +44,7 @@ function XUiPurchaseLBListItem:SetData()
     self.TxtUnShelveTime.gameObject:SetActive(false)
     self.Parent:RemoveTimerFun(self.ItemData.Id)
     self.RetimeSec = 0
-    local curtime = XTime.Now()
+    local curtime = XTime.GetServerNowTimestamp()
 
     local consumeCount = self.ItemData.ConsumeCount or 0
     if consumeCount == 0 then -- 免费的
@@ -82,7 +82,7 @@ function XUiPurchaseLBListItem:SetData()
 
     -- 上架时间
     if self.ItemData.TimeToShelve > 0 and curtime < self.ItemData.TimeToShelve then
-        self.RetimeSec = self.ItemData.TimeToShelve - XTime.Now()
+        self.RetimeSec = self.ItemData.TimeToShelve - XTime.GetServerNowTimestamp()
         if self.RetimeSec > 0 then--大于0，注册。
             self.UpdateTimerType = UpdateTimerTypeEnum.SettOn
             self.Parent:RegisterTimerFun(self.ItemData.Id, function() self:UpdataTimer() end)
@@ -117,7 +117,7 @@ function XUiPurchaseLBListItem:SetData()
     -- 失效时间
     self.TxtPutawayTime.gameObject:SetActive(false)
     if self.ItemData.TimeToInvalid and self.ItemData.TimeToInvalid > 0 then
-        self.RetimeSec = self.ItemData.TimeToInvalid - XTime.Now()
+        self.RetimeSec = self.ItemData.TimeToInvalid - XTime.GetServerNowTimestamp()
         if self.RetimeSec > 0 then--大于0，注册。
             self.UpdateTimerType = UpdateTimerTypeEnum.SettOff
             self.Parent:RegisterTimerFun(self.ItemData.Id, self.TimerUpdataCb)
@@ -135,7 +135,7 @@ function XUiPurchaseLBListItem:SetData()
     -- 下架时间
     if self.ItemData.TimeToUnShelve > 0 then
         if curtime < self.ItemData.TimeToUnShelve then
-            self.RetimeSec = self.ItemData.TimeToUnShelve - XTime.Now()
+            self.RetimeSec = self.ItemData.TimeToUnShelve - XTime.GetServerNowTimestamp()
             if self.RetimeSec > 0 then--大于0，注册。
                 self.UpdateTimerType = UpdateTimerTypeEnum.SettOff
                 self.Parent:RegisterTimerFun(self.ItemData.Id, self.TimerUpdataCb)
@@ -158,7 +158,11 @@ end
 function XUiPurchaseLBListItem:SetBuyDes()
     local clientResetInfo = self.ItemData.ClientResetInfo or {}
     if Next(clientResetInfo) == nil then
-        self.TxtQuota.text = ""
+        if self.ItemData.BuyLimitTimes > 0 then
+            self.TxtQuota.text = TextManager.GetText("PurchaseLimitBuy", self.ItemData.BuyTimes, self.ItemData.BuyLimitTimes)
+        else
+            self.TxtQuota.text = ""
+        end
         return
     end
 
@@ -185,12 +189,12 @@ function XUiPurchaseLBListItem:UpdataTimer(isrecover)
     if isrecover then
         if self.UpdateTimerType == UpdateTimerTypeEnum.SettOff then
             if self.ItemData.TimeToInvalid > 0 then
-                self.RetimeSec = self.ItemData.TimeToInvalid - XTime.Now()
+                self.RetimeSec = self.ItemData.TimeToInvalid - XTime.GetServerNowTimestamp()
             else
-                self.RetimeSec = self.ItemData.TimeToUnShelve - XTime.Now()
+                self.RetimeSec = self.ItemData.TimeToUnShelve - XTime.GetServerNowTimestamp()
             end
         else
-            self.RetimeSec = self.ItemData.TimeToShelve - XTime.Now()
+            self.RetimeSec = self.ItemData.TimeToShelve - XTime.GetServerNowTimestamp()
         end
     else
         self.RetimeSec = self.RetimeSec - 1

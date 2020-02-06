@@ -1,78 +1,78 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-10060103		2	0.1				0			4		10			999						FxR2ShenweiAttack01Dilie		-1			1															0																											
-10060204		2	0.1				0			4		10			999						FxR2ShenweiAttack02Dilie		-1			1															0																											
-10060303		2	0.1				0			4		10			999						FxR2ShenweiAttack03Dilie		-1			1															0																											
-10060403		2	0.1				0			4		10			999						FxR2ShenweiAttack04Dilie		-1			1															0																											
-10060502		2	0.1				0			4		10			999						FxR2ShenweiAttack11Dilie		-1			1															0																											
-10060602		2	0.1				0			4		10			999						FxR2ShenweiAttack11Dilie		-1			1															0																											
-10060703		2	0.1				0			4		10			999						FxR2ShenweiAttack13Dilie		-1			1															0																											
-10061107		2	0.1				0			4		10			999						FxR2ShenweiAttack21Dilie		-1			1															0																											
-10061207		2	0.1				0			4		10			999						FxR2ShenweiAttack21Dilie		-1			1															0																											
-10061307		2	0.1				0			4		10			999						FxR2ShenweiAttack23Dilie		-1			1															0																											
-10061407		2	0.1				0			4		10			999						FxR2ShenweiQteDilie		-1			1															0																											
-10062203		2	0.1				0			4		10			999						FxR2ShenweiAttack13Dilie		-1			1															0																											
-10062405		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
-10062505		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
-10062605		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1															0																											
-10063003		2	0.1				0			4		10			999						FxR2ShenweiAttack01Dilie		-1			1															0																											
-10110203		2	0.1			0.7	0			4		1.4			999						FxR3LiangAttack02Dilie		-1			1															0																											
-10110603		2	0.1				0			4		1.3			999						FxR3LiangAttack06Dilie		-1			1															0																											
-10111310		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1															0																											
-10111410		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1															0																											
-10111510		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1															0																											
-10111608		2	0.1				0			4		10			999						FxR3LiangAttack51		-1			1															0																											
-10111702		2	0.1				0			4		10			999						FxR3LiangMove01		-1			1															0																											
-10111802		2	0.1				0			4		10			999						FxR3LiangMove02		-1			1															0																											
-10112305		2	0.1			-4	0			4		2.1			999						FxR3LiangAttack11ExDandao		-1			1								2							0																											
-10030102		2	0.1				0			4		10			999						FxR1LifuAttack01		-1			1															0																											
-10030202		2	0.1				0			4		10			999						FxR1LifuAttack02		-1			1															0																											
-10030303		2	0.1				0			4		10			999						FxR1LifuAttack03Dandao		-1			1								1							0																											
-10030304		2	0.1				0			4		10			999						FxR1LifuAttack0301		-1			1															0																											
-10030402		2	0.1				0			4		10			999						FxR1LifuAttack04		-1			1															0																											
-10030505		2	0.1				0			4		10			999						FxR1LifuAttack05Dandao		-1			1								1							0																											
-10030506		2	0.1				0			4		10			999						FxR1LifuAttack0501		-1			1															0																											
-10030606		2	0.1				0			4		10			999						FxR1LifuAttack11		-1			1															0																											
-10030706		2	0.1				0			4		10			999						FxR1LifuAttack11		-1			1															0																											
-10030806		2	0.1				0			4		10			999						FxR1LifuAttack13		-1			1															0																											
-10030904		2	0.1				0			4		10			999						FxR1LifuAttack21		-1			1															0																											
-10031004		2	0.1				0			4		10			999						FxR1LifuAttack21		-1			1															0																											
-10031104		2	0.1				0			4		10			999						FxR1LifuAttack23		-1			1															0																											
-10031803		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10031804		2	0.1				0			4		10			999						FxQte		-1			1															0																											
-10031805		2	0.1				0			4		10			999						FxR1LifuQte		-1			1															0																											
-10031907		2	0.1				0			4		10			999						FxR1LifuMove01		-1			1															0																											
-10031908		2	0.1				0			4		10			999						FxR1LifuMove02		-1			1															0																											
-10032007		2	0.1				0			4		10			999						FxR1LifuMove01		-1			1															0																											
-10032008		2	0.1				0			4		10			999						FxR1LifuMove02		-1			1															0																											
-10032306		2	0.1				0			4		10			999						FxR1LifuAttack11Ex		-1			1															0																											
-10260103		2	0.1				0			4		10			999						FxR2XiuMd010011Attack01Dilie		-1			1															0																											
-10260304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack03Dilie		-1			1															0																											
-10260403		2	0.1				0			4		10			999						FxR2XiuMd010011Attack04Dilie		-1			1															0																											
-10260705		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1															0																											
-10260707		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1															0																											
-10260805		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1															0																											
-10260807		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1															0																											
-10260905		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1															0																											
-10260907		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1															0																											
-10261003		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1															0																											
-10261103		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1															0																											
-10261203		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1															0																											
-10261304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1															0																											
-10261404		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1															0																											
-10261504		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1															0																											
-10262005		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1															0																											
-10262007		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1															0																											
-10262204		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie01		-1			1															0																											
-10262205		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie02		-1			1															0																											
-10262304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie02		-1			1															0																											
-10262504		2	0.1				0			4		10			999						FxR2XiuMd010011Attack46Dilie		-1			1															0																											
-10262803		2	0.1				0			4		10			999						FxR2XiuMd010011Attack01Dilie		-1			1															0																											
-10120602		2	0.1				0			4		10			999						FxR2LuxiyaAttack06		-1			1															0																											
-10121306		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1															0																											
-10121406		2	0.1				0			4		10			999						FxR2LuxiyaAttack32Dandao		-1			1															0																											
-10121506		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1															0																											
-10121706		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1															0																											
-10123002		2	0.1				0			4		10			999						FxR2LuxiyaAttack06Ex		-1			1															0																											
-10123706		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1															0																											
-10123806		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1															0																											
-10123906		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1															0																											
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+10060103		2	0.1				0			4		10			999						FxR2ShenweiAttack01Dilie		-1			1																						0																											
+10060204		2	0.1				0			4		10			999						FxR2ShenweiAttack02Dilie		-1			1																						0																											
+10060303		2	0.1				0			4		10			999						FxR2ShenweiAttack03Dilie		-1			1																						0																											
+10060403		2	0.1				0			4		10			999						FxR2ShenweiAttack04Dilie		-1			1																						0																											
+10060502		2	0.1				0			4		10			999						FxR2ShenweiAttack11Dilie		-1			1																						0																											
+10060602		2	0.1				0			4		10			999						FxR2ShenweiAttack11Dilie		-1			1																						0																											
+10060703		2	0.1				0			4		10			999						FxR2ShenweiAttack13Dilie		-1			1																						0																											
+10061107		2	0.1				0			4		10			999						FxR2ShenweiAttack21Dilie		-1			1																						0																											
+10061207		2	0.1				0			4		10			999						FxR2ShenweiAttack21Dilie		-1			1																						0																											
+10061307		2	0.1				0			4		10			999						FxR2ShenweiAttack23Dilie		-1			1																						0																											
+10061407		2	0.1				0			4		10			999						FxR2ShenweiQteDilie		-1			1																						0																											
+10062203		2	0.1				0			4		10			999						FxR2ShenweiAttack13Dilie		-1			1																						0																											
+10062405		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1																						0																											
+10062505		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1																						0																											
+10062605		2	0.1				0			4		10			999						FxR2ShenweiAttack41Dilie		-1			1																						0																											
+10063003		2	0.1				0			4		10			999						FxR2ShenweiAttack01Dilie		-1			1																						0																											
+10110203		2	0.1			0.7	0			4		1.4			999						FxR3LiangAttack02Dilie		-1			1																						0																											
+10110603		2	0.1				0			4		1.3			999						FxR3LiangAttack06Dilie		-1			1																						0																											
+10111310		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1																						0																											
+10111410		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1																						0																											
+10111510		2	0.1			4	0			4		10			999						FxR3LiangAttack31Zha		-1			1																						0																											
+10111608		2	0.1				0			4		10			999						FxR3LiangAttack51		-1			1																						0																											
+10111702		2	0.1				0			4		10			999						FxR3LiangMove01		-1			1																						0																											
+10111802		2	0.1				0			4		10			999						FxR3LiangMove02		-1			1																						0																											
+10112305		2	0.1			-4	0			4		2.1			999						FxR3LiangAttack11ExDandao		-1			1															2							0																											
+10030102		2	0.1				0			4		10			999						FxR1LifuAttack01		-1			1																						0																											
+10030202		2	0.1				0			4		10			999						FxR1LifuAttack02		-1			1																						0																											
+10030303		2	0.1				0			4		10			999						FxR1LifuAttack03Dandao		-1			1															1							0																											
+10030304		2	0.1				0			4		10			999						FxR1LifuAttack0301		-1			1																						0																											
+10030402		2	0.1				0			4		10			999						FxR1LifuAttack04		-1			1																						0																											
+10030505		2	0.1				0			4		10			999						FxR1LifuAttack05Dandao		-1			1															1							0																											
+10030506		2	0.1				0			4		10			999						FxR1LifuAttack0501		-1			1																						0																											
+10030606		2	0.1				0			4		10			999						FxR1LifuAttack11		-1			1																						0																											
+10030706		2	0.1				0			4		10			999						FxR1LifuAttack11		-1			1																						0																											
+10030806		2	0.1				0			4		10			999						FxR1LifuAttack13		-1			1																						0																											
+10030904		2	0.1				0			4		10			999						FxR1LifuAttack21		-1			1																						0																											
+10031004		2	0.1				0			4		10			999						FxR1LifuAttack21		-1			1																						0																											
+10031104		2	0.1				0			4		10			999						FxR1LifuAttack23		-1			1																						0																											
+10031803		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10031804		2	0.1				0			4		10			999						FxQte		-1			1																						0																											
+10031805		2	0.1				0			4		10			999						FxR1LifuQte		-1			1																						0																											
+10031907		2	0.1				0			4		10			999						FxR1LifuMove01		-1			1																						0																											
+10031908		2	0.1				0			4		10			999						FxR1LifuMove02		-1			1																						0																											
+10032007		2	0.1				0			4		10			999						FxR1LifuMove01		-1			1																						0																											
+10032008		2	0.1				0			4		10			999						FxR1LifuMove02		-1			1																						0																											
+10032306		2	0.1				0			4		10			999						FxR1LifuAttack11Ex		-1			1																						0																											
+10260103		2	0.1				0			4		10			999						FxR2XiuMd010011Attack01Dilie		-1			1																						0																											
+10260304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack03Dilie		-1			1																						0																											
+10260403		2	0.1				0			4		10			999						FxR2XiuMd010011Attack04Dilie		-1			1																						0																											
+10260705		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1																						0																											
+10260707		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1																						0																											
+10260805		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1																						0																											
+10260807		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1																						0																											
+10260905		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1																						0																											
+10260907		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1																						0																											
+10261003		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1																						0																											
+10261103		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1																						0																											
+10261203		2	0.1				0			4		1			999						FxR2XiuMd010011Attack21		-1			1																						0																											
+10261304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1																						0																											
+10261404		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1																						0																											
+10261504		2	0.1				0			4		10			999						FxR2XiuMd010011Attack31Dilie		-1			1																						0																											
+10262005		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie03		-1			1																						0																											
+10262007		2	0.1				0			4		10			999						FxR2XiuMd010011Attack11Dilie04		-1			1																						0																											
+10262204		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie01		-1			1																						0																											
+10262205		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie02		-1			1																						0																											
+10262304		2	0.1				0			4		10			999						FxR2XiuMd010011Attack43Dilie02		-1			1																						0																											
+10262504		2	0.1				0			4		10			999						FxR2XiuMd010011Attack46Dilie		-1			1																						0																											
+10262803		2	0.1				0			4		10			999						FxR2XiuMd010011Attack01Dilie		-1			1																						0																											
+10120602		2	0.1				0			4		10			999						FxR2LuxiyaAttack06		-1			1																						0																											
+10121306		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1																						0																											
+10121406		2	0.1				0			4		10			999						FxR2LuxiyaAttack32Dandao		-1			1																						0																											
+10121506		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1																						0																											
+10121706		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1																						0																											
+10123002		2	0.1				0			4		10			999						FxR2LuxiyaAttack06Ex		-1			1																						0																											
+10123706		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1																						0																											
+10123806		2	0.1				0			4		10			999						FxR2LuxiyaAttack31Dandao		-1			1																						0																											
+10123906		2	0.1				0			4		10			999						FxR2LuxiyaAttack33Dandao		-1			1																						0																											

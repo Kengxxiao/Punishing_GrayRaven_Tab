@@ -33,7 +33,6 @@ function XUiFurnitureReform:OnStart(roomId)
 
     XHomeDormManager.SetClickFurnitureCallback(function(furniture) self:ShowFurnitureMenu(furniture, false, false) end)
     XHomeCharManager.HideAllCharacter()
-
     self.CameraController = XHomeSceneManager.GetSceneCameraController()
     if not XTool.UObjIsNil(self.CameraController) then
         self.OldCameraDistance = self.CameraController.Distance
@@ -695,14 +694,12 @@ function XUiFurnitureReform:OnNotify(evt, ...)
         local args = { ... }
         if not args then return end
         self:UpdateCacheFurniture(args[1], args[2])
-
         self:UpdateCountOnChanged()
         self:UpdatePanelLimit()
         self:UpdateScores()
 
     elseif evt == XEventId.EVENT_FURNITURE_REFRESH then
         self:RefreshFurntiureReform()
-
     elseif evt == XEventId.EVENT_FURNITURE_CLEANROOM then
 
         self:UpdatePanelLimit()
@@ -736,7 +733,8 @@ function XUiFurnitureReform:OnDestroy()
         delayUpdateScoresTimer = nil
     end
     XEventManager.RemoveEventListener(XEventId.EVENT_FURNITURE_ON_MODIFY, self.RefreshFurnitureList, self)
-    XHomeCharManager.ShowAllCharacter()
+    local isResetPosition = true
+    XHomeCharManager.ShowAllCharacter(isResetPosition)
 
     if not XTool.UObjIsNil(self.CameraController) then
         self.CameraController:SetTartAngle(CS.UnityEngine.Vector2(self.TargetAngleX, self.TargetAngleY))

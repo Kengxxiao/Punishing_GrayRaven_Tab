@@ -13,7 +13,7 @@ function XUiMissionAddSpeedTip:SetupContent()
     local costItemId = CS.XGame.Config:GetInt("TaskForceItemId")
     local elapseMinutes = CS.XGame.Config:GetInt("TaskForceElapseMinutes")
 
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local completeTime = self.TaskData.Task.UtcFinishTime
     local min = math.ceil((completeTime - curTime) / 60)
 
@@ -85,9 +85,9 @@ end
 
 function XUiMissionAddSpeedTip:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnSure, "onClick", self.OnBtnSureClick)
-    self:RegisterListener(self.BtnCancel, "onClick", self.OnBtnCancelClick)
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnSure, self.OnBtnSureClick)
+    self:RegisterClickEvent(self.BtnCancel, self.OnBtnCancelClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
 end
 -- auto
 

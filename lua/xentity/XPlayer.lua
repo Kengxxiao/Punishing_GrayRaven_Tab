@@ -228,7 +228,7 @@ local DoChangeResultError = function(code, nextCanChangeTime)
     if code == XCode.PlayerDataManagerChangeNameTimeLimit then
         NextChangeNameTime = nextCanChangeTime
 
-        local timeLimit = nextCanChangeTime - XTime.Now()
+        local timeLimit = nextCanChangeTime - XTime.GetServerNowTimestamp()
         local hour = mathFloor(timeLimit / 3600)
         local minute = mathCeil(timeLimit % 3600 / 60)
 
@@ -245,7 +245,7 @@ local DoChangeResultError = function(code, nextCanChangeTime)
 end
 
 function Player.ChangeName(name, cb)
-    if NextChangeNameTime > XTime.Now() then
+    if NextChangeNameTime > XTime.GetServerNowTimestamp() then
         DoChangeResultError(XCode.PlayerDataManagerChangeNameTimeLimit, NextChangeNameTime)
         return
     end

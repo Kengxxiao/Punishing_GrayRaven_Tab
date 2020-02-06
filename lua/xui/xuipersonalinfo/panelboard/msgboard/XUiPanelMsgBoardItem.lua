@@ -82,21 +82,21 @@ end
 
 function XUiPanelMsgBoardItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnContent, "onClick", self.OnBtnContentClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnContent, self.OnBtnContentClick)
     if not XTool.UObjIsNil(self.BtnLeaveMsg) then
-        self:RegisterListener(self.BtnLeaveMsg, "onClick", self.OnBtnLeaveMsgClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnLeaveMsg, self.OnBtnLeaveMsgClick)
     end
     if not XTool.UObjIsNil(self.BtnComment) then
-        self:RegisterListener(self.BtnComment, "onClick", self.OnBtnCommentClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnComment, self.OnBtnCommentClick)
     end
     if not XTool.UObjIsNil(self.BtnBan) then
         self:RegisterListener(self.BtnBan, "onValueChanged", self.OnBtnBanClick)
     end
     if not XTool.UObjIsNil(self.BtnDelete) then
-        self:RegisterListener(self.BtnDelete, "onClick", self.OnBtnDeleteClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnDelete, self.OnBtnDeleteClick)
     end
-    self:RegisterListener(self.BtnPraise, "onClick", self.OnBtnPraiseClick)
-    self:RegisterListener(self.BtnBackBrief, "onClick", self.OnBtnBackBriefClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnPraise, self.OnBtnPraiseClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBackBrief, self.OnBtnBackBriefClick)
 end
 -- auto
 function XUiPanelMsgBoardItem:OnBtnContentClick(...)
@@ -105,47 +105,47 @@ end
 
 function XUiPanelMsgBoardItem:OnBtnLeaveMsgClick(...)--打开留言
     XDataCenter.PersonalInfoManager.RefreshLeaveMsgData(self.data.Id,self.pageNum, function(...)
-        self.XUiPanelLeaveMsgDetail:Refresh(self)
-        self.BtnBackBrief.gameObject.transform.parent.gameObject:SetActive(true)
-    end)
+            self.XUiPanelLeaveMsgDetail:Refresh(self)
+            self.BtnBackBrief.gameObject.transform.parent.gameObject:SetActive(true)
+        end)
 end
 
 function XUiPanelMsgBoardItem:OnBtnCommentClick(...)
     XDataCenter.PersonalInfoManager.OpenInputView(function(content)
-        XDataCenter.PersonalInfoManager.AddLeaveMsg(self.data.PlayerId, self.data.Id, content, function(...)
-            self.data.LeaveMsgCount = self.data.LeaveMsgCount + 1
-            self.TxtLeaveMsg.text = "(" .. self.data.LeaveMsgCount .. ")"
-            self:OnBtnLeaveMsgClick()
+            XDataCenter.PersonalInfoManager.AddLeaveMsg(self.data.PlayerId, self.data.Id, content, function(...)
+                    self.data.LeaveMsgCount = self.data.LeaveMsgCount + 1
+                    self.TxtLeaveMsg.text = "(" .. self.data.LeaveMsgCount .. ")"
+                    self:OnBtnLeaveMsgClick()
+                end)
         end)
-    end)
 end
 
 function XUiPanelMsgBoardItem:OnBtnBanClick(isOn)
     if isOn then
         XDataCenter.PersonalInfoManager.BanWriteMsg(self.data.Id, function(...)
-        end)--禁止留言
+            end)--禁止留言
     end
 end
 
 function XUiPanelMsgBoardItem:OnBtnDeleteClick(...)
     local removeTip = CS.XTextManager.GetText("IsSureDelete")
     XUiManager.DialogTip("", removeTip, XUiManager.DialogType.Normal, nil, function(...)
-        XDataCenter.PersonalInfoManager.DeleteDaily(self.data.Id, function(...)
-            XDataCenter.PersonalInfoManager.RefreshDailyData(self.pageNum,
-            function( ... )
-                XDataCenter.PersonalInfoManager.PanelMsgBoard:Refresh()
-            end)
-        end)--删除日记
-    end)
+            XDataCenter.PersonalInfoManager.DeleteDaily(self.data.Id, function(...)
+                    XDataCenter.PersonalInfoManager.RefreshDailyData(self.pageNum,
+                        function( ... )
+                            XDataCenter.PersonalInfoManager.PanelMsgBoard:Refresh()
+                        end)
+                end)--删除日记
+        end)
 end
 
 function XUiPanelMsgBoardItem:OnBtnPraiseClick(...)
     if self.data ~= nil then
         XDataCenter.PersonalInfoManager.GiveALike(self.data.PlayerId, self.data.Id, function(code)
-            local text = code and tonumber(self.data.UpCount) + 1 or tonumber(self.data.UpCount) - 1
-            self.data.UpCount = text
-            self.TxtLeaveMsgA.text = "(" .. tostring(text) .. ")"
-        end)
+                local text = code and tonumber(self.data.UpCount) + 1 or tonumber(self.data.UpCount) - 1
+                self.data.UpCount = text
+                self.TxtLeaveMsgA.text = "(" .. tostring(text) .. ")"
+            end)
     end
 end
 

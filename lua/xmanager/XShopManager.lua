@@ -237,7 +237,7 @@ function XShopManager.GetShopTimeInfo(shopId)
     end
     
     local info = {}
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     
     if shop.RefreshTime and shop.RefreshTime > 0 then
         info.RefreshLeftTime = shop.RefreshTime > now and shop.RefreshTime - now or 0
@@ -251,7 +251,7 @@ function XShopManager.GetShopTimeInfo(shopId)
 end
 
 function XShopManager.GetLeftTime(endTime)
-    return endTime > 0 and endTime - XTime.Now() or endTime
+    return endTime > 0 and endTime - XTime.GetServerNowTimestamp() or endTime
 end
 
 function XShopManager.IsShopExist(shopId)
@@ -360,18 +360,18 @@ end
 
 local function SetShop(shop)
     ShopDict[shop.Id] = shop
-    LastSyncShopTimes[shop.Id] = XTime.Now()
+    LastSyncShopTimes[shop.Id] = XTime.GetServerNowTimestamp()
 end
 
 local function SetShopBaseInfoList(shopBaseInfoList)
-    LastSyncBaseInfoTime = XTime.Now()
+    LastSyncBaseInfoTime = XTime.GetServerNowTimestamp()
     for _, info in pairs(shopBaseInfoList) do
         ShopBaseInfoDict[info.Id] = info
     end
 end
 
 function XShopManager.GetShopInfo(shopId, cb, pleaseDoNotTip)
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local syscTime = LastSyncShopTimes[shopId]
     
     if syscTime and now - syscTime < SYNC_SHOP_SECOND then

@@ -108,7 +108,7 @@ function XUiPanelRegional:InitPlotTab()
         local skipDescription = XDataCenter.PrequelManager.GetChapterUnlockDescription(skipChpater)
         -- 活动内、已解锁
         if skipDescription == nil then
-            self.CurrentSelectIdx = self.CurrentSelectIdx or skipIndex or defaultIndex
+            self.CurrentSelectIdx = skipIndex or self.CurrentSelectIdx
         end
     end
     self.PlotTab:SelectIndex(self.CurrentSelectIdx, false)

@@ -4,6 +4,7 @@ function XUiPanelRewardSmall:Ctor(ui,parent)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.Parent = parent
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.GridList = {}
     self.GridMissionCommonA.gameObject:SetActive(false)
@@ -73,10 +74,10 @@ function XUiPanelRewardSmall:InitAutoScript()
 end
 
 function XUiPanelRewardSmall:AutoInitUi()
-    self.PanelRewardSmallA = self.Transform:Find("PanelRewardSmall")
-    self.ScrollViewA = self.Transform:Find("PanelRewardSmall/ScrollView"):GetComponent("Scrollbar")
-    self.PanelReward = self.Transform:Find("PanelRewardSmall/ScrollView/Viewport/PanelReward")
-    self.GridMissionCommonA = self.Transform:Find("PanelRewardSmall/ScrollView/Viewport/PanelReward/GridMissionCommon")
+    -- self.PanelRewardSmallA = self.Transform:Find("PanelRewardSmall")
+    -- self.ScrollViewA = self.Transform:Find("PanelRewardSmall/ScrollView"):GetComponent("Scrollbar")
+    -- self.PanelReward = self.Transform:Find("PanelRewardSmall/ScrollView/Viewport/PanelReward")
+    -- self.GridMissionCommonA = self.Transform:Find("PanelRewardSmall/ScrollView/Viewport/PanelReward/GridMissionCommon")
 end
 
 function XUiPanelRewardSmall:GetAutoKey(uiNode,eventName)

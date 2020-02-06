@@ -17,7 +17,7 @@ XComeAcrossManagerCreator = function()
 
     --获取偶遇小游戏列表
     function XComeAcrossManager.GetComeAcrossGames()
-        if CurComeAcrossGames == nil or XTime.Now() > LastRefreshTime + GAME_REFRESH_TIME then
+        if CurComeAcrossGames == nil or XTime.GetServerNowTimestamp() > LastRefreshTime + GAME_REFRESH_TIME then
 
             local ownsCharacter = XDataCenter.CharacterManager.GetOwnCharacterList()
             if not ownsCharacter then
@@ -37,7 +37,7 @@ XComeAcrossManagerCreator = function()
                 end
             end
 
-            LastRefreshTime = XTime.Now()
+            LastRefreshTime = XTime.GetServerNowTimestamp()
         end
 
         return CurComeAcrossGames

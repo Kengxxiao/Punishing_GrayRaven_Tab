@@ -1,0 +1,114 @@
+Role	State	Target	TransitionDuration
+Me1BioMd006010		Born	0
+Me1BioMd006010		Stand2	0.1
+Me1BioMd006010		Stand1	0.1
+Me1BioMd006010		Stand3	0.1
+Me1BioMd006010		Standchange	0.1
+Me1BioMd006010		Run	0.1
+Me1BioMd006010		Walk	0.1
+Me1BioMd006010		Death	0.1
+Me1BioMd006010		Hit1	0.05
+Me1BioMd006010		Hit2	0.05
+Me1BioMd006010		Behitfly	0.05
+Me1BioMd006010		Hoverhit	0
+Me1BioMd006010		Falldown	0.1
+Me1BioMd006010		Hitdown	0.1
+Me1BioMd006010		Lieonfloor	0.1
+Me1BioMd006010		Standup	0.1
+Me1BioMd006010		Straight	0.1
+Me1BioMd006010		Stun	0.1
+Me1BioMd006010		TurnLeft	0.1
+Me1BioMd006010		TurnRight	0.1
+Me1BioMd006010		StraightBefore	0.1
+Me1BioMd006010		StraightAfter	0.1
+Me1BioMd006010		Win	0
+Me1BioMd006010		Win2	0.1
+Me1BioMd006010		Runb	0.2
+Me1BioMd006010		Runl	0.2
+Me1BioMd006010		Runr	0.2
+Me1BioMd006010		Stop	0.1
+Me1BioMd006010		Walkb	0.1
+Me1BioMd006010		Walkl	0.1
+Me1BioMd006010		Walkr	0.1
+Me1BioMd006010		Fail	0.1
+Me1BioMd006010		Save	0.1
+Me1BioMd006010		Hit3	0.05
+Me1BioMd006010		Hit4	0.05
+Me1BioMd006010		RunStart	0.1
+Me1BioMd006010		RunStartEnd01	0.1
+Me1BioMd006010		Attack01	0.1
+Me1BioMd006010		Attack02	0.1
+Me1BioMd006010		Attack03	0.1
+Me1BioMd006010		Attack04	0.1
+Me1BioMd006010		Attack05	0.1
+Me1BioMd006010		Attack06	0.1
+Me1BioMd006010		Attack07	0.1
+Me1BioMd006010		Attack08	0.1
+Me1BioMd006010		Attack09	0.1
+Me1BioMd006010		Attack10	0.1
+Me1BioMd006010		Attack11	0.1
+Me1BioMd006010		Attack12	0.1
+Me1BioMd006010		Attack13	0.1
+Me1BioMd006010		Attack14	0.1
+Me1BioMd006010		Move1	0.1
+Me1BioMd006010		Move2	0.1
+Me1BioMd006010		Move3	0.1
+Me1BioMd006010	Stand2	Standchange	0.1
+Me1BioMd006010	Stand2	Run	0.2
+Me1BioMd006010	Stand2	Walk	0.3
+Me1BioMd006010	Stand2	Walkb	0.3
+Me1BioMd006010	Stand2	Walkl	0.3
+Me1BioMd006010	Stand2	Walkr	0.3
+Me1BioMd006010	Stand1	Run	0.2
+Me1BioMd006010	Stand1	Walk	0.1
+Me1BioMd006010	Standchange	Stand1	0.1
+Me1BioMd006010	Standchange	Run	0.1
+Me1BioMd006010	Standchange	Walk	0.1
+Me1BioMd006010	Run	Stop	0.2
+Me1BioMd006010	Run	Stand2	0.2
+Me1BioMd006010	Run	Runb	0.2
+Me1BioMd006010	Run	Runl	0.2
+Me1BioMd006010	Run	Runr	0.2
+Me1BioMd006010	Walk	Stand2	0.1
+Me1BioMd006010	Hit1	Stand2	0
+Me1BioMd006010	Hit2	Stand2	0
+Me1BioMd006010	Behitfly	Hoverhit	0.1
+Me1BioMd006010	Behitfly	Falldown	0.1
+Me1BioMd006010	Hoverhit	Falldown	0.1
+Me1BioMd006010	Falldown	Lieonfloor	0.1
+Me1BioMd006010	Hitdown	Lieonfloor	0.1
+Me1BioMd006010	Standup	Stand2	0.1
+Me1BioMd006010	Straight	Stand2	0.1
+Me1BioMd006010	Stun	Stand2	0.1
+Me1BioMd006010	TurnLeft	Stand2	0.1
+Me1BioMd006010	TurnRight	Stand2	0.1
+Me1BioMd006010	Win	Win2	0.1
+Me1BioMd006010	Runb	Stand2	0.2
+Me1BioMd006010	Runb	Run	0.2
+Me1BioMd006010	Runb	Runl	0.2
+Me1BioMd006010	Runb	Runr	0.2
+Me1BioMd006010	Runl	Stand2	0.2
+Me1BioMd006010	Runl	Run	0.2
+Me1BioMd006010	Runl	Runb	0.2
+Me1BioMd006010	Runl	Runr	0.2
+Me1BioMd006010	Runr	Stand2	0.2
+Me1BioMd006010	Runr	Run	0.2
+Me1BioMd006010	Runr	Runb	0.2
+Me1BioMd006010	Runr	Runl	0.2
+Me1BioMd006010	Stop	Stand2	0.1
+Me1BioMd006010	Walkb	Stand2	0.1
+Me1BioMd006010	Walkb	Walk	0.2
+Me1BioMd006010	Walkb	Walkl	0.1
+Me1BioMd006010	Walkb	Walkr	0.1
+Me1BioMd006010	Walkl	Stand2	0.1
+Me1BioMd006010	Walkl	Walk	0.1
+Me1BioMd006010	Walkl	Walkb	0.1
+Me1BioMd006010	Walkl	Walkr	0.2
+Me1BioMd006010	Walkr	Stand2	0.1
+Me1BioMd006010	Walkr	Walk	0.1
+Me1BioMd006010	Walkr	Walkb	0.1
+Me1BioMd006010	Walkr	Walkl	0.2
+Me1BioMd006010	Hit3	Stand2	0
+Me1BioMd006010	Hit4	Stand2	0
+Me1BioMd006010	RunStart	Run	0.05
+Me1BioMd006010	RunStart	RunStartEnd01	0.1

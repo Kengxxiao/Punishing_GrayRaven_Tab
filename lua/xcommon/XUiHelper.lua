@@ -323,7 +323,7 @@ end
 --@return 最后登录时间对应描述
 --==============================--
 function XUiHelper.CalcLatelyLoginTime(time)
-    local minute = mathFloor((XTime.Now() - time) / 60)
+    local minute = mathFloor((XTime.GetServerNowTimestamp() - time) / 60)
     local hourCount = mathFloor(minute / 60)
     local dayCount = mathFloor(hourCount / 24)
     local monthCount = mathFloor(dayCount / 30)
@@ -340,7 +340,7 @@ function XUiHelper.CalcLatelyLoginTime(time)
 end
 
 function XUiHelper.GetRemindTime(time, now)
-    now = now or XTime.Now()
+    now = now or XTime.GetServerNowTimestamp()
     local remindTime = time - now
     if remindTime > 86400 then
         local day = mathFloor(remindTime / 86400) + 1
@@ -407,18 +407,17 @@ end
 
 local AnimationPlayerMap = {}
 -- 如果是子Ui，得先定义Parent才能获取到UiAnimation组件。
+--弃用
 function XUiHelper.PlayAnimation(ui, name, onStart, onEnd)
-    
     if onStart then
-		onStart()
+        onStart()
     end
-    
-	if ui.GetType and ui:GetType():ToString() == "UnityEngine.GameObject" then
-		 ui:PlayLegacyAnimation(name,onEnd)
-	else
-        ui.GameObject:PlayLegacyAnimation(name,onEnd)
-	end
 
+    if ui.GetType and ui:GetType():ToString() == "UnityEngine.GameObject" then
+        ui:PlayLegacyAnimation(name, onEnd)
+    else
+        ui.GameObject:PlayLegacyAnimation(name, onEnd)
+    end
 end
 
 function XUiHelper.StopAnimation(ui, name)

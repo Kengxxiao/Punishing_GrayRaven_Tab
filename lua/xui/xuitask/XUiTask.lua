@@ -26,6 +26,7 @@ end
 
 function XUiTask:OnEnable()
     self:CheckTogLockStatus()
+    self:CheckFunctionalFilter()
     self:SetupBountyTask()
     self:AddRedPointEvent()
     self.TabPanelGroup:SelectIndex(self.CurToggleType)
@@ -39,6 +40,9 @@ function XUiTask:Init()
     self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
     self.BtnBack.CallBack = function() self:Close() end
     self.BtnMainUi.CallBack = function() XLuaUiManager.RunMain() end
+
+
+    self.BtnMoneyReward.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.BountyTask))
     self.BtnMoneyReward.CallBack = function() self:OnBtnMoneyRewardClick() end
 
     self.TaskStoryModule = XUiPanelTaskStory.New(self.PanelTaskStory, self)
@@ -71,6 +75,13 @@ function XUiTask:CheckTogLockStatus()
 
 end
 
+function XUiTask:CheckFunctionalFilter()
+    self.TogStory.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskStory))
+    self.TogDaily.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskDay))
+    self.TogWeekly.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskWeekly))
+    self.TogActivity.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskActivity))
+end
+
 function XUiTask:OnTaskChangeSync()
     if self.CurToggleType == PANEL_INDEX.Story then
         self.TaskStoryModule:Refresh()
@@ -85,9 +96,10 @@ end
 
 --赏金
 function XUiTask:SetupBountyTask()
+    local completeCount = XDataCenter.BountyTaskManager.GetBountyTaskCompletedCount()
     self.BtnMoneyReward.gameObject:SetActive(XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.BountyTask))
     self.ImgCompleted.gameObject:SetActive(completeCount == XDataCenter.BountyTaskManager.MAX_BOUNTY_TASK_COUNT)
-    self.ImgRedTag.gameObject:SetActive(XDataCenter.BountyTaskManager.CheckBountyTaskHasReward())
+    self.ImgRedTag.gameObject:SetActive(XDataCenter.BountyTaskManager.CheckBountyTaskHasReward() or XDataCenter.BountyTaskManager.IsFirstTimeLoginInWeek())
 end
 
 function XUiTask:OnDisable()
@@ -154,7 +166,9 @@ function XUiTask:OnBtnMoneyRewardClick(...)
     if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.BountyTask) then
         return
     end
-    XDataCenter.BountyTaskManager.SetBountyTaskLastLoginTime()
+
+    XDataCenter.BountyTaskManager.SetBountyTaskLastRefreshTime()
+    --XDataCenter.BountyTaskManager.SetBountyTaskLastLoginTime()
     XLuaUiManager.Open("UiMoneyReward")
 end
 
@@ -170,7 +184,7 @@ end
 
 function XUiTask:OnTaskPanelSelect(index)
     if self.PreToggleType == index then
-        return 
+        return
     end
 
     if self.IsFirstAnimation == nil then
@@ -178,11 +192,15 @@ function XUiTask:OnTaskPanelSelect(index)
     else
         self.IsFirstAnimation = false
     end
-   
+
     self.PreToggleType = index
     self.CurToggleType = index
     if index == PANEL_INDEX.Story then
-        
+        if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskStory) then
+            self.TaskStoryModule:HidePanel()
+            return
+        end
+
         self.TaskDailyModule:HidePanel()
         self.TaskWeeklyModule:HidePanel()
         self.TaskActivityModule:HidePanel()
@@ -192,6 +210,11 @@ function XUiTask:OnTaskPanelSelect(index)
         self:PlayAnimation("TaskStoryQieHuan")
 
     elseif index == PANEL_INDEX.Daily then
+        if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskDay) then
+            self.TaskDailyModule:HidePanel()
+            return
+        end
+
         if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.TaskDay) then
             return
         end
@@ -201,12 +224,17 @@ function XUiTask:OnTaskPanelSelect(index)
         self.TaskActivityModule:HidePanel()
         self.TaskDailyModule:ShowPanel(self.IsFirstAnimation)
         XDataCenter.TaskManager.SaveNewPlayerHint(XDataCenter.TaskManager.TaskLastSelectTab, index)
-        
+
         self:PlayAnimation("TaskDailyQieHuan", function()
             self.TaskDailyModule:UpdateActiveness()
         end)
 
     elseif index == PANEL_INDEX.Weekly then
+        if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskWeekly) then
+            self.TaskWeeklyModule:HidePanel()
+            return
+        end
+
         if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.TaskWeekly) then
             return
         end
@@ -219,6 +247,11 @@ function XUiTask:OnTaskPanelSelect(index)
         self:PlayAnimation("TaskWeeklyQieHuan")
 
     elseif index == PANEL_INDEX.Activity then
+        if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskActivity) then
+            self.TaskActivityModule:HidePanel()
+            return
+        end
+
         if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.TaskActivity) then
             return
         end

@@ -61,7 +61,7 @@ end
 -- auto
 
 function XUiPanelUnlockChallenge:OnBtnMaskClick(eventData)
-    XUiHelper.PlayAnimation(self.RootUi, "AniUnlockChallengeEnd", nil, function()
+    self.RootUi:PlayAnimation("AniUnlockChallengeEnd", function()
         self.GameObject:SetActive(false)
     end)
 end
@@ -76,9 +76,8 @@ function XUiPanelUnlockChallenge:OnBtnUnlockClick(eventData)
 end
 
 function XUiPanelUnlockChallenge:RefreshWithAnim(challengeStage)
-    XUiHelper.PlayAnimation(self.RootUi, "AniUnlockChallengeBegin", function()
-        self:RefreshDatas(challengeStage)
-    end, nil)
+    self.RootUi:PlayAnimation("AniUnlockChallengeBegin")
+    self:RefreshDatas(challengeStage)
 end
 
 function XUiPanelUnlockChallenge:RefreshDatas(challengeStage)

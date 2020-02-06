@@ -1,0 +1,53 @@
+Role	State	Target	TransitionDuration
+A		Stand1	0
+A		Stand2	0
+A		Standchange	0
+A		Run	0
+A		Walk	0
+A		Death	0
+A		Hit1	0
+A		Hit2	0
+A		Behitfly	0
+A		Hover	0
+A		Hoverhit	0
+A		Falldown	0
+A		HitDown	0
+A		Lieonfloor	0
+A		Standup	0
+A		Straight	0
+A		Stun	0
+A		TurnLeft	0
+A		TurnRight	0
+A		StraightBefore	0
+A		StraightAfter	0
+A		Attack01	0
+A		Attack02	0
+A		Attack03	0
+A		Attack11	0
+A		Attack12	0
+A		Attack21	0
+A		Attack31	0
+A		Attack32	0
+A		Attack33	0
+A		Move1	0
+A		Move2	0
+A	Stand1	Stand2	0
+A	Stand2	StandChange	0
+A	Stand2	Run	0
+A	Stand2	Walk	0
+A	Standchange	Stand1	0
+A	Run	Stand2	0
+A	Walk	Stand2	0
+A	Hit1	Stand2	0
+A	Hit2	Stand2	0
+A	Behitfly	Hover	0
+A	Hover	HoverHit	0
+A	Hover	Falldown	0
+A	Hoverhit	Hover	0
+A	Hoverhit	HoverHit	0
+A	Falldown	Lieonfloor	0
+A	HitDown	Lieonfloor	0
+A	Lieonfloor	Standup	0
+A	Standup	Stand2	0
+A	Straight	Stand2	0
+A	Stun	Stand2	0

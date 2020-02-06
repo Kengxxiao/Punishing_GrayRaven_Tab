@@ -31,6 +31,7 @@ XSetConfigs.SelfNum = "SelfNum"---自身伤害数字
 XSetConfigs.FriendNum = "FriendNum"--队友伤害数字
 XSetConfigs.FriendEffect = "FriendEffect"--队友特效
 XSetConfigs.ScreenOff = "ScreenOff"
+XSetConfigs.DefaultFocusTypeKey = "DefaultFocusType"
 XSetConfigs.SelfNumSizes = {}
 
 function XSetConfigs.Init()
@@ -40,4 +41,5 @@ function XSetConfigs.Init()
     XSetConfigs.SelfNumSizes[key1] = CS.XGame.ClientConfig:GetInt(key1) or 0
     XSetConfigs.SelfNumSizes[key2] = CS.XGame.ClientConfig:GetInt(key2) or 0
     XSetConfigs.SelfNumSizes[key3] = CS.XGame.ClientConfig:GetInt(key3) or 0
+    XSetConfigs.DefaultFocusType = CS.XGame.ClientConfig:GetInt(XSetConfigs.DefaultFocusTypeKey)
 end

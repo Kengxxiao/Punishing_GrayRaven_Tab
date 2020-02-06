@@ -11,23 +11,14 @@ local HeadPortraitQuality = CS.XGame.Config:GetInt("HeadPortraitQuality")
 XPlayerManager.PlayerChangeNameInterval = nil
 XPlayerManager.PlayerMaxLevel = 1
 
-local function InitMaxPlayerLevel()
-    for level, _ in pairs(PlayerTable) do
-        if level > XPlayerManager.PlayerMaxLevel then
-            XPlayerManager.PlayerMaxLevel = level
-        end
-    end
-end
-
 function XPlayerManager.Init()
     XPlayerManager.PlayerChangeNameInterval = CS.XGame.Config:GetInt("PlayerChangeNameInterval")
+    XPlayerManager.PlayerMaxLevel = CS.XGame.Config:GetInt("PlayerMaxLevel")
     PlayerTable = XTableManager.ReadByIntKey(TABLE_PLAYER, XTable.XTablePlayer, "Level")
     if not PlayerTable then
         XLog.Error("Load Player Table error: " .. TABLE_PLAYER)
     end
-
-    InitMaxPlayerLevel()
-
+    
     HeadPortrait = XTableManager.ReadByIntKey(TABLE_HEADPORTRAITS, XTable.XTableHeadPortrait, "Id")
 end
 

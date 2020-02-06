@@ -1,0 +1,118 @@
+Id	Name	BuffBg	Desc
+1	<color=#34aff9><size=34>buff名字1</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	敌方伤害+50%
+2	<color=#34aff9><size=34>buff名字2</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	敌方伤害+50%
+3	<color=#34aff9><size=34>buff名字3</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	敌方伤害+50%
+4	<color=#34aff9><size=34>buff名字4</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	敌方伤害+50%
+5	<color=#34aff9><size=34>buff名字5</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-火伤+50%
+6	<color=#34aff9><size=34>buff名字6</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-雷伤+50%
+7	<color=#34aff9><size=34>buff名字7</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-冰伤+50%
+8	<color=#34aff9><size=34>buff名字8</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-暗伤+50%
+9	<color=#34aff9><size=34>buff名字9</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-物理+50%
+10	<color=#34aff9><size=34>buff名字10</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-暴击伤害+50%
+11	<color=#34aff9><size=34>buff名字11</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-100连击伤害+50%
+12	<color=#34aff9><size=34>buff名字12</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-近战伤害+50%
+13	<color=#34aff9><size=34>buff名字13</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-远程伤害+50%
+14	<color=#34aff9><size=34>buff名字14</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	事件-全元素伤害+50%
+10001	<color=#34aff9><size=34>远距交火</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	只能上阵远程构造体单位
+10002	<color=#34aff9><size=34>短兵相接</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon10001.png	只能上阵近战构造体单位
+10011	<color=#34aff9><size=34>火力侵扰</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon10011.png	禁止上阵进攻类型构造体
+10021	<color=#34aff9><size=34>修复侵扰</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon10021.png	禁止上阵支援类型构造体
+10031	<color=#34aff9><size=34>防护侵扰</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon10031.png	禁止上阵防护类型构造体
+11001	<color=#34aff9><size=34>心力I </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11001.png	敌人生命值提升15%
+11002	<color=#34aff9><size=34>心力Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11002.png	敌人生命值提升30%
+11003	<color=#34aff9><size=34>心力Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11003.png	敌人生命值提升45%
+11031	<color=#34aff9><size=34>坚韧 </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11031.png	敌人受到的物理伤害减少30%
+11041	<color=#34aff9><size=34>过载Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11040.png	敌人整体作战能力提升30%
+11042	<color=#34aff9><size=34>过载Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11041.png	敌人整体作战能力提升60%
+11043	<color=#34aff9><size=34>过载Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11042.png	敌人整体作战能力提升90%
+11044	<color=#34aff9><size=34>过载Ⅳ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11043.png	敌人整体作战能力提升120%
+11045	<color=#34aff9><size=34>过载Ⅴ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11044.png	敌人整体作战能力提升150%
+11051	<color=#34aff9><size=34>疾走Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11051.png	敌人移动速度获得少量提升
+11052	<color=#34aff9><size=34>疾走Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11052.png	敌人移动速度获得中量提升
+11053	<color=#34aff9><size=34>疾走Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11053.png	敌人移动速度获得大量提升
+11061	<color=#34aff9><size=34>金刚Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11021.png	敌人拥有霸体值时，受到的全类型伤害均减少10%
+11062	<color=#34aff9><size=34>金刚Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11022.png	敌人拥有霸体值时，受到的全类型伤害均减少20%
+11063	<color=#34aff9><size=34>金刚Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11023.png	敌人拥有霸体值时，受到的全类型伤害均减少30%
+11131	<color=#34aff9><size=34>精灵</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21161.png	敌人受到的元素伤害减少30%
+11141	<color=#34aff9><size=34>金刚Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11022.png	敌人拥有霸体值时，受到的全类型伤害均减少20%
+11142	<color=#34aff9><size=34>金刚Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon11023.png	敌人拥有霸体值时，受到的全类型伤害均减少30%
+12051	<color=#34aff9><size=34>重力适应Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12051.png	构造体的移动速度将减少25%
+12052	<color=#34aff9><size=34>重力适应Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12052.png	构造体的移动速度将减少50%
+12053	<color=#34aff9><size=34>重力适应Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12053.png	构造体的移动速度将减少75%
+12131	<color=#34aff9><size=34>精密规划Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12131.png	闪避槽上限减少200
+12132	<color=#34aff9><size=34>精密规划Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12132.png	闪避槽上限减少400
+12133	<color=#34aff9><size=34>精密规划Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12133.png	闪避槽上限减少600
+12151	<color=#34aff9><size=34>主宰</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon12151.png	敌人将不再受到超算空间的限制
+13051	<color=#34aff9><size=34>支援阻隔</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon13051.png	构造体受到的治疗效果减少50%
+13052	<color=#34aff9><size=34>支援阻隔Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	构造体受到的治疗效果减少50%
+13053	<color=#34aff9><size=34>支援阻隔Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	构造体受到的治疗效果减少50%
+13071	<color=#34aff9><size=34>意识沸腾Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21061.png	上阵的全体构造体每秒受到少量伤害
+13072	<color=#34aff9><size=34>意识沸腾Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21062.png	上阵的全体构造体每秒受到一定伤害
+13073	<color=#34aff9><size=34>意识沸腾Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21063.png	上阵的全体构造体每秒受到大量伤害
+13081	<color=#34aff9><size=34>黑雾弥漫</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21071.png	在场构造体每秒受到黑雾的伤害，每过20秒，黑雾深度提升1级
+21011	<color=#78db64><size=34>武装填充</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21011.png	上阵构造体的攻击力提升10%
+21121	<color=#78db64><size=34>士气高昂</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21111.png	触发QTE后，当前在场构造体伤害提升15%，持续5S
+21261	<color=#78db64><size=34>新型装甲</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21161.png	构造体获得45%额外伤害豁免
+22051	<color=#78db64><size=34>优速愈合</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon22001.png	上阵构造体受到的治疗效果提升25%
+22061	<color=#78db64><size=34>节奏打击</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21121.png	连击数大于40/60/80时，构造体的伤害增加5%/10%/15%
+22071	<color=#78db64><size=34>额外支援</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21151.png	每间隔3秒自动增加1个信号球
+22081	<color=#78db64><size=34>厚积薄发</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon13031.png	每次消除信号球，增加在场构造体2%的全伤害，持续3秒，最多可叠加10层。
+22091	<color=#78db64><size=34>元素增幅</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon22021.png	构造体元素伤害提升15%
+22101	<color=#78db64><size=34>攻其不备</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon21101.png	构造体造成的背击伤害提升20%
+31071	<color=#34aff9><size=34>迅捷</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon31071.png	敌人增加5-40%移动速度，与目标距离越远，提升越大
+31072	<color=#34aff9><size=34>迅捷Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon31072.png	敌人增加中等移动速度，与目标距离越远，提升效果越明显
+31073	<color=#34aff9><size=34>迅捷Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon31073.png	敌人增加大量移动速度，与目标距离越远，提升效果越明显
+32001	<color=#34aff9><size=34>不动</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32001.png	敌人不再受到硬直体系的影响
+32011	<color=#34aff9><size=34>复苏Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32011.png	敌人每秒会恢复最大生命值1%
+32012	<color=#34aff9><size=34>复苏Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32012.png	敌人每秒会恢复最大生命值2%
+32013	<color=#34aff9><size=34>复苏Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32013.png	敌人每秒会恢复最大生命值3%
+32021	<color=#34aff9><size=34>护盾Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32021.png	敌人每经过10秒会生成一个最大生命值量5%护盾，持续3秒
+32022	<color=#34aff9><size=34>护盾Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32022.png	敌人每经过10秒会生成一个最大生命值量10%护盾，持续3秒
+32023	<color=#34aff9><size=34>护盾Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32023.png	敌人每经过10秒会生成一个最大生命值量15%护盾，持续3秒
+32031	<color=#34aff9><size=34>暴走Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32031.png	敌人的进攻欲望提升33%，造成伤害时，有20%概率造成33%额外伤害
+32032	<color=#34aff9><size=34>暴走Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32032.png	敌人的进攻欲望提升66%，造成伤害时，有40%概率造成33%额外伤害
+32033	<color=#34aff9><size=34>暴走Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32033.png	敌人的进攻欲望提升100%，造成伤害时，有60%概率造成33%额外伤害
+32041	<color=#34aff9><size=34>炸弹</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32041.png	敌人死亡前会产生一段爆炸对周围单位造成自身攻击力45%伤害
+32042	<color=#34aff9><size=34>炸弹Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32042.png	敌人死亡前会产生一段爆炸对周围单位造成自身攻击力45%伤害
+32043	<color=#34aff9><size=34>炸弹Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32043.png	敌人死亡前会产生一段爆炸对周围单位造成自身攻击力60%伤害
+32061	<color=#34aff9><size=34>壁垒Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32061.png	敌人将携带最大生命值15%的护盾
+32062	<color=#34aff9><size=34>壁垒Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32062.png	敌人将携带最大生命值25%的护盾
+32063	<color=#34aff9><size=34>壁垒Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32063.png	敌人将携带最大生命值35%的护盾
+32071	<color=#34aff9><size=34>辐射Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32071.png	敌人对自身周围的目标每秒造成自身攻击1%的辐射伤害
+32072	<color=#34aff9><size=34>辐射Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32072.png	敌人对自身周围的目标每秒造成自身攻击2%的辐射伤害
+32073	<color=#34aff9><size=34>辐射Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32073.png	敌人对自身周围的目标每秒造成自身攻击3%的辐射伤害
+32081	<color=#34aff9><size=34>闭环</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32081.png	敌人受到的来自4米半径外的伤害降低30%
+32082	<color=#34aff9><size=34>闭环Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32082.png	敌人受到的来自4米半径外的伤害降低30%
+32083	<color=#34aff9><size=34>闭环Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32083.png	敌人受到的来自4米半径外的伤害降低30%
+32091	<color=#34aff9><size=34>祝福 </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32091.png	敌人以自身为中心提升为范围内的其他敌人20%的伤害
+32092	<color=#34aff9><size=34>祝福Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32093	<color=#34aff9><size=34>祝福Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32101	<color=#34aff9><size=34>独斗</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32101.png	敌人自身周围同伴数量低于3时，每少一个同伴增加自身伤害10%，最高30%
+32111	<color=#34aff9><size=34>统领Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32111.png	敌人自身周围每个同伴可以增加自身全伤害5%，最多3层
+32112	<color=#34aff9><size=34>统领Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32112.png	敌人自身周围每个同伴可以增加自身全伤害10%，最多3层
+32113	<color=#34aff9><size=34>统领Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32113.png	敌人自身周围每个同伴可以增加自身全伤害15%，最多3层
+32121	<color=#34aff9><size=34>贯穿</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32121.png	敌人每次攻击将会减少玩家3%防御，持续10秒，最多叠加10层
+32122	<color=#34aff9><size=34>贯穿Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32123	<color=#34aff9><size=34>贯穿Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32131	<color=#34aff9><size=34>电盾 </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32131.png	敌人每次受击时10%概率在伤害来源处落雷，冷却时间5秒
+32132	<color=#34aff9><size=34>电盾Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32133	<color=#34aff9><size=34>电盾Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32141	<color=#34aff9><size=34>波动Ⅰ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32141.png	敌人被打倒起身时，产生一道波动把身边单位击飞，CD18秒
+32142	<color=#34aff9><size=34>波动Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32141.png	敌人被打倒起身时，产生一道波动把身边单位击飞，CD14秒
+32143	<color=#34aff9><size=34>波动Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32141.png	敌人被打倒起身时，产生一道波动把身边单位击飞，CD10秒
+32151	<color=#34aff9><size=34>埋雷 </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32151.png	敌人攻击时会在目标身上埋下爆雷，一段时间后爆炸，造成其攻击15%伤害
+32152	<color=#34aff9><size=34>埋雷Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32153	<color=#34aff9><size=34>埋雷Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32161	<color=#34aff9><size=34>隐身</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32161.png	敌人会进入隐身状态，受到伤害会显形，并在3秒内无法再次进入隐身状态
+32162	<color=#34aff9><size=34>隐身Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32163	<color=#34aff9><size=34>隐身Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon1.png	
+32171	<color=#34aff9><size=34>辐射Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32072.png	敌人对自身周围目标，每秒造成自身攻击2%的辐射伤害
+32172	<color=#34aff9><size=34>辐射Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon32073.png	敌人对自身周围目标，每秒造成自身攻击3%的辐射伤害
+33001	<color=#34aff9><size=34>闪现</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33001.png	敌人可以闪现至目标附近，冷却时间10秒
+33002	<color=#34aff9><size=34>闪现Ⅱ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33002.png	敌人可以闪现至目标附近，冷却时间10秒
+33003	<color=#34aff9><size=34>闪现Ⅲ</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33003.png	敌人可以闪现至目标附近，冷却时间10秒
+33021	<color=#34aff9><size=34>裂解</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33021.png	敌人死亡时分裂成两个新的同类型单位
+33031	<color=#34aff9><size=34>黑洞Ⅰ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33031.png	敌人可以将目标吸引至身边，冷却时间16秒
+33032	<color=#34aff9><size=34>黑洞Ⅱ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33032.png	敌人可以将目标吸引至身边，冷却时间12秒
+33033	<color=#34aff9><size=34>黑洞Ⅲ </size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33033.png	敌人可以将目标吸引至身边，冷却时间8秒
+33091	<color=#34aff9><size=34>冰径</size></color>	Assets/Product/Texture/Image/UiBabelTower/UiBabelTowerChallengeIcon33091.png	会生成一道追踪玩家的冰径，冰径命中时每秒会造成500点冰属性伤害

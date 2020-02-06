@@ -15,7 +15,7 @@ end
 
 function XRedPointConditionMainTask.Check()
 
-    if XRedPointConditionTaskCourse.Check() then
+    if XRedPointConditionTaskCourse.Check() and (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.TaskStory)) then
         return true
     end
 

@@ -152,15 +152,16 @@ end
 function XUiPanelChallengeMode:OnRefresh(coverData)
     self.CurrentCover = coverData
 
-    XUiHelper.PlayAnimation(self.RootUi, ANICHALLENGEMODEBEGIN, function()
+    self.RootUi:PlayAnimation(ANICHALLENGEMODEBEGIN, function()
+        self.RootUi:SetChallengeAnimBegin(false)
+    end,
+    function()
         self.RootUi:SetChallengeAnimBegin(true)
         self:InitChallengeTab()
         self:UpdateChallengeStages()
         self:UpdateCostItem()
         self:AddTimer()
         self:AddChallengeTimer()
-    end, function()
-        self.RootUi:SetChallengeAnimBegin(false)
     end)
     
 end
@@ -171,7 +172,7 @@ end
 
 function XUiPanelChallengeMode:AddTimer()
     local checkpointTime = XDataCenter.PrequelManager.GetNextCheckPointTime()
-    local remainTime = checkpointTime - XTime.Now()
+    local remainTime = checkpointTime - XTime.GetServerNowTimestamp()
     if remainTime > 0 then
     
         XCountDown.CreateTimer(self.GameObject.name, remainTime)

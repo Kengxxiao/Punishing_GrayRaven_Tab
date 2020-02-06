@@ -25,7 +25,7 @@ function XUiDormVisit:OnAwake()
     self.DormVistorStranger = TextManager.GetText("DormVistorStranger")
     self:InitUI()
     self:InitTypeCfg()
-    self.PreVistorReqTime = XTime.Now()
+    self.PreVistorReqTime = XTime.GetServerNowTimestamp()
 end
 
 function XUiDormVisit:InitTypeCfg()
@@ -149,7 +149,7 @@ function XUiDormVisit:OnReqFriendData()
     local sendids = {}
     local data = DormManager.GetVisFriendData()
     if Next(data) ~= nil then
-        local curtime = XTime.Now()
+        local curtime = XTime.GetServerNowTimestamp()
         for _,id in pairs(ids)do
             local v = data[id]
             if v then
@@ -183,7 +183,7 @@ function XUiDormVisit:OnReqVisitorData()
     local data = DormManager.GetDormitoryRecommendTotalData()
     self.ListData = {}
     if Next(data) ~= nil then
-        local curtime = XTime.Now()
+        local curtime = XTime.GetServerNowTimestamp()
         if curtime - self.PreVistorReqTime < timelimit then
             for _,v in pairs(data)do
                 table.insert(self.ListData,v)
@@ -193,17 +193,28 @@ function XUiDormVisit:OnReqVisitorData()
         end
     end
     
-    self.PreVistorReqTime = XTime.Now()
+    self.PreVistorReqTime = XTime.GetServerNowTimestamp()
     DormManager.RequestDormitoryRecommend(self.SetVisitorCb)
 end
 
 function XUiDormVisit:OnEnable()
+    XEventManager.AddEventListener(XEventId.EVENT_DORM_VISTOR_SKIP, self.OnVisit, self)
 end
 
 function XUiDormVisit:OnDisable()
 end
 
+function XUiDormVisit:OnVisit(playid,dormid)
+    local charId = DormManager.GetVisitorDormitoryCharacterId()
+    XLuaUiManager.CloseWithCallback("UiDormVisit",function()
+        DormManager.RequestDormitoryVisit(playid,dormid,charId,function ()
+            self:DoDormVisitor(playid,dormid)
+        end)
+    end)
+end
+
 function XUiDormVisit:OnDestroy()
+    XEventManager.RemoveEventListener(XEventId.EVENT_DORM_VISTOR_SKIP, self.OnVisit, self)
 end
 
 function XUiDormVisit:OnGetEvents()
@@ -267,13 +278,23 @@ function XUiDormVisit:OnBtnRandomVisit()
 end
 
 function XUiDormVisit:EnterDormVisitor()
-    if self.HostelSecond then
+    if self.DormData and self.DormData.PlayerId and self.DormData.DormitoryId then
+        self:DoDormVisitor(self.DormData.PlayerId,self.DormData.DormitoryId)
+    end
+end
+
+function XUiDormVisit:DoDormVisitor(playerId,dormitoryId)
+    local t = DisplaySetType.Stranger
+    if self.CuTabType == TabTypeCfg.MyFriend then
+        t = DisplaySetType.MyFriend
+    end
+    if self.HostelSecond and (not XTool.UObjIsNil(self.HostelSecond.GameObject)) then
         self.HostelSecond.GameObject:SetActive(true)
         self.HostelSecond:OnRecordSelfDormId()
-        DormManager.VisitDormitory(DisplaySetType.Stranger,self.DormData.DormitoryId)
-        self.HostelSecond:UpdateData(DisplaySetType.Stranger,self.DormData.DormitoryId,self.DormData.PlayerId)
+        DormManager.VisitDormitory(t,dormitoryId)
+        self.HostelSecond:UpdateData(t,dormitoryId,playerId)
     else
-        XLuaUiManager.Open("UiDormSecond", DisplaySetType.Stranger, self.DormData.DormitoryId,self.DormData.PlayerId)
-        DormManager.VisitDormitory(DisplaySetType.Stranger,self.DormData.DormitoryId)
+        XLuaUiManager.Open("UiDormSecond", t, dormitoryId,playerId)
+        DormManager.VisitDormitory(t,dormitoryId)
     end
 end

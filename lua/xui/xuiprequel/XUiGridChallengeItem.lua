@@ -115,7 +115,7 @@ function XUiGridChallengeItem:UpdateAutoFightStatus()
     if stageCfg.AutoFightId > 0 then
         self.AutoFightRecord = XDataCenter.AutoFightManager.GetRecordByStageId(stageId)
         if self.AutoFightRecord and self.PanelAutoFight then
-            local now = XTime.Now()
+            local now = XTime.GetServerNowTimestamp()
             local showTimes = self.AutoFightRecord.CompleteTime - now
             self.PanelAutoFight.localScale = CS.UnityEngine.Vector3.one
             if showTimes == 0 then

@@ -8,9 +8,12 @@ function XUiLeftPopupTip:OnStart(title, content, closeCb)
 end
 
 function XUiLeftPopupTip:OnEnable()
-    XUiHelper.PlayAnimation(self, "AniUnlockTip", nil, function()
+    self:PlayAnimation("AniUnlockTip", function()
         self:Close()
     end)
+    -- XUiHelper.PlayAnimation(self, "AniUnlockTip", nil, function()
+    --     self:Close()
+    -- end)
 end
 
 function XUiLeftPopupTip:OnDestroy()

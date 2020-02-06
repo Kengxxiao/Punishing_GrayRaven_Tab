@@ -1,3 +1,6 @@
+local PanleUsingWords = CS.XTextManager.GetText("EquipGridUsingWords")
+local PanleInPrefabWords = CS.XTextManager.GetText("EquipGridInPrefabWords")
+
 local XUiGridEquip = XClass()
 
 function XUiGridEquip:Ctor(ui, clickCb, rootUi)
@@ -24,7 +27,7 @@ function XUiGridEquip:Refresh(equipId)
     if not equip then
         return
     end
-    
+
     local templateId = equip.TemplateId
 
     if self.RImgIcon and self.RImgIcon:Exist() then
@@ -53,25 +56,25 @@ function XUiGridEquip:Refresh(equipId)
         local equipSite = XDataCenter.EquipManager.GetEquipSite(equipId)
         if equipSite and equipSite ~= XEquipConfig.EquipSite.Weapon then
             self.TxtSite.text = "0" .. equipSite
-            self.PanelSite.gameObject:SetActive(true)
+            self.PanelSite.gameObject:SetActiveEx(true)
         else
-            self.PanelSite.gameObject:SetActive(false)
+            self.PanelSite.gameObject:SetActiveEx(false)
         end
     end
 
     for i = 1, XEquipConfig.MAX_STAR_COUNT do
         if self["ImgGirdStar" .. i] then
             if i <= XDataCenter.EquipManager.GetEquipStar(templateId) then
-                self["ImgGirdStar" .. i].transform.parent.gameObject:SetActive(true)
+                self["ImgGirdStar" .. i].transform.parent.gameObject:SetActiveEx(true)
             else
-                self["ImgGirdStar" .. i].transform.parent.gameObject:SetActive(false)
+                self["ImgGirdStar" .. i].transform.parent.gameObject:SetActiveEx(false)
             end
         end
     end
 
     for i = 1, XEquipConfig.MAX_RESONANCE_SKILL_COUNT do
         local obj = self["ImgResonance" .. i]
-        local set = obj and obj.gameObject:SetActive(XDataCenter.EquipManager.CheckEquipPosResonanced(equipId, i))
+        local set = obj and obj.gameObject:SetActiveEx(XDataCenter.EquipManager.CheckEquipPosResonanced(equipId, i))
     end
 
     self:UpdateIsLock(equipId)
@@ -83,7 +86,7 @@ function XUiGridEquip:SetSelected(status)
     if XTool.UObjIsNil(self.ImgSelect) then
         return
     end
-    self.ImgSelect.gameObject:SetActive(status)
+    self.ImgSelect.gameObject:SetActiveEx(status)
 end
 
 function XUiGridEquip:IsSelected()
@@ -91,13 +94,22 @@ function XUiGridEquip:IsSelected()
 end
 
 function XUiGridEquip:UpdateUsing(equipId)
-    if equipId ~= self.EquipId then
-        return
+    if equipId ~= self.EquipId then return end
+    if XTool.UObjIsNil(self.PanelUsing) then return end
+
+    if XDataCenter.EquipManager.IsWearing(equipId) then
+        if not XTool.UObjIsNil(self.TxtUsingOrInSuitPrefab) then
+            self.TxtUsingOrInSuitPrefab.text = PanleUsingWords
+        end
+        self.PanelUsing.gameObject:SetActiveEx(true)
+    elseif XDataCenter.EquipManager.IsInSuitPrefab(equipId) then
+        if not XTool.UObjIsNil(self.TxtUsingOrInSuitPrefab) then
+            self.TxtUsingOrInSuitPrefab.text = PanleInPrefabWords
+        end
+        self.PanelUsing.gameObject:SetActiveEx(true)
+    else
+        self.PanelUsing.gameObject:SetActiveEx(false)
     end
-    if XTool.UObjIsNil(self.PanelUsing) then
-        return
-    end
-    self.PanelUsing.gameObject:SetActive(XDataCenter.EquipManager.IsWearing(self.EquipId))
 end
 
 function XUiGridEquip:UpdateIsLock(equipId)
@@ -107,7 +119,7 @@ function XUiGridEquip:UpdateIsLock(equipId)
     if XTool.UObjIsNil(self.ImgLock) then
         return
     end
-    self.ImgLock.gameObject:SetActive(XDataCenter.EquipManager.IsLock(self.EquipId))
+    self.ImgLock.gameObject:SetActiveEx(XDataCenter.EquipManager.IsLock(self.EquipId))
 end
 
 function XUiGridEquip:UpdateBreakthrough(equipId)
@@ -121,9 +133,9 @@ function XUiGridEquip:UpdateBreakthrough(equipId)
     local icon = XDataCenter.EquipManager.GetEquipBreakThroughSmallIcon(self.EquipId)
     if icon then
         self.RootUi:SetUiSprite(self.ImgBreakthrough, icon)
-        self.ImgBreakthrough.gameObject:SetActive(true)
+        self.ImgBreakthrough.gameObject:SetActiveEx(true)
     else
-        self.ImgBreakthrough.gameObject:SetActive(false)
+        self.ImgBreakthrough.gameObject:SetActiveEx(false)
     end
 end
 
@@ -131,6 +143,10 @@ end
 -- Automatic generation of code, forbid to edit
 function XUiGridEquip:InitAutoScript()
     XTool.InitUiObject(self)
+    if not XTool.UObjIsNil(self.PanelUsing) then
+        local textGo = self.PanelUsing:Find("TextUsing")
+        self.TxtUsingOrInSuitPrefab = textGo and textGo:GetComponent("Text")
+    end
     self:AutoAddListener()
 end
 

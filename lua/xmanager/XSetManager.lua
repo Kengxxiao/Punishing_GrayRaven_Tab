@@ -1,16 +1,34 @@
 XSetManagerCreator = function()
     local XSetManager = {}
     local SelfNumDefaultSize
+    local MaxScreenOff
+    local GlobalIllumination
+    local SceneType
     XSetManager.DynamicJoystick = CS.UnityEngine.PlayerPrefs.GetInt("DynamicJoystick", 0)
-
+    XSetManager.FocusType = CS.UnityEngine.PlayerPrefs.GetInt("FocusType", 1)
     function XSetManager.Init()
+        GlobalIllumination = CS.XGlobalIllumination
+        SceneType = CS.XSceneType
         SelfNumDefaultSize = CS.XGame.ClientConfig:GetInt("SelfNumDefault") or 0
+        MaxScreenOff = CS.XGame.ClientConfig:GetFloat("SpecialScreenOff") or 0
         XSetManager.SetDynamicJoystick(XSetManager.DynamicJoystick)
+        XSetManager.SetFocusType(XSetManager.FocusType)
+        XEventManager.AddEventListener(XEventId.EVNET_FAIL_PAY, XSetManager.SetSceneUIType)
     end
 
     function XSetManager.SetDynamicJoystick(value)
         CS.XRLFightSettings.SetDynamicJoystick(value == 1)
         XSetManager.DynamicJoystick = value
+    end
+
+    function XSetManager.SetFocusType(type)
+        if type == 0 then
+            return
+        end
+        XSetManager.FocusType = type
+        CS.XRLFightSettings.SetFocusType(type)
+        CS.UnityEngine.PlayerPrefs.SetInt("FocusType", type)
+        CS.UnityEngine.PlayerPrefs.Save()
     end
 
     function XSetManager.SetOwnFontSize(size)
@@ -115,8 +133,18 @@ XSetManagerCreator = function()
 
     function XSetManager.SetScreenOff()
         local d = XSetManager.GetScreenOff()
-        local maxOff = CS.XGame.ClientConfig:GetFloat("SpecialScreenOff") or 0
-        CS.XUiSafeAreaAdapter.SetSpecialScreenOff(d * maxOff)
+        CS.XUiSafeAreaAdapter.SetSpecialScreenOff(d * MaxScreenOff)
+    end
+
+    function XSetManager.SetUiResolutionEventFlag(flag)
+        CS.XUiSafeAreaAdapter.SetUiResolutionEventFlag(flag)
+    end
+
+    function XSetManager.SetSceneUIType()
+        -- if GlobalIllumination.SceneType ~= SceneType.Ui then
+            XSetManager.SetUiResolutionEventFlag(true)
+            GlobalIllumination.SetSceneType(SceneType.Ui,true)
+        -- end
     end
 
     function XSetManager.IsAdaptorScreen()
@@ -134,4 +162,3 @@ XSetManagerCreator = function()
     XSetManager.Init()
     return XSetManager
 end
-

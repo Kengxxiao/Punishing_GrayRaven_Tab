@@ -31,7 +31,7 @@ local SignBoardCondition = {
     --登陆
     [XSignBoardEventType.LOGIN] = function(param)
         local loginTime = XDataCenter.SignBoardManager.GetLoginTime()
-        local offset = XTime.Now() - loginTime
+        local offset = XTime.GetServerNowTimestamp() - loginTime
 
         return offset <= param
     end,
@@ -100,7 +100,7 @@ local SignBoardCondition = {
     --游戏时间
     [XSignBoardEventType.PLAY_TIME] = function(param)
         local loginTime = XDataCenter.SignBoardManager.GetLoginTime()
-        local offset = XTime.Now() - loginTime
+        local offset = XTime.GetServerNowTimestamp() - loginTime
         return offset >= param
     end,
 
@@ -153,7 +153,7 @@ XSignBoardManagerCreator = function()
         XEventManager.AddEventListener(XEventId.EVENT_LOGIN_SUCCESS, function()
             local key = tostring(XPlayer.Id) .. "_LastLoginTime"
             LastLoginTime = CS.UnityEngine.PlayerPrefs.GetInt(key, -1)
-            LoginTime = XTime.Now()
+            LoginTime = XTime.GetServerNowTimestamp()
             if LastLoginTime == -1 then
                 LastLoginTime = LoginTime
             end
@@ -211,22 +211,22 @@ XSignBoardManagerCreator = function()
 
             if isExist and info.IsWin then
                 SignBoarEvents[XSignBoardEventType.WIN] =  SignBoarEvents[XSignBoardEventType.WIN] or {}
-                SignBoarEvents[XSignBoardEventType.WIN].Time = XTime.Now()
+                SignBoarEvents[XSignBoardEventType.WIN].Time = XTime.GetServerNowTimestamp()
             elseif not isExist and info.IsWin then
                 SignBoarEvents[XSignBoardEventType.WINBUT] =  SignBoarEvents[XSignBoardEventType.WINBUT] or {}
-                SignBoarEvents[XSignBoardEventType.WINBUT].Time = XTime.Now()
+                SignBoarEvents[XSignBoardEventType.WINBUT].Time = XTime.GetServerNowTimestamp()
             elseif isExist and not info.IsWin then
                 SignBoarEvents[XSignBoardEventType.LOST] =  SignBoarEvents[XSignBoardEventType.LOST] or {}
-                SignBoarEvents[XSignBoardEventType.LOST].Time = XTime.Now()
+                SignBoarEvents[XSignBoardEventType.LOST].Time = XTime.GetServerNowTimestamp()
             elseif not isExist and not info.IsWin then
                 SignBoarEvents[XSignBoardEventType.LOSTBUT] =  SignBoarEvents[XSignBoardEventType.LOSTBUT] or {}
-                SignBoarEvents[XSignBoardEventType.LOSTBUT].Time = XTime.Now()
+                SignBoarEvents[XSignBoardEventType.LOSTBUT].Time = XTime.GetServerNowTimestamp()
             end
 
         elseif event == XEventId.EVENT_FAVORABILITY_GIFT then
             local characterId  = ...
             SignBoarEvents[XSignBoardEventType.GIVE_GIFT] =  SignBoarEvents[XSignBoardEventType.GIVE_GIFT] or {}
-            SignBoarEvents[XSignBoardEventType.GIVE_GIFT].Time = XTime.Now()
+            SignBoarEvents[XSignBoardEventType.GIVE_GIFT].Time = XTime.GetServerNowTimestamp()
             SignBoarEvents[XSignBoardEventType.GIVE_GIFT].CharacterId = characterId
 
         end
@@ -258,7 +258,7 @@ XSignBoardManagerCreator = function()
             if SignBoardCondition[tab.ConditionId] and SignBoardCondition[tab.ConditionId](tab.ConditionParam,displayCharacterId,param) then
                 local element = {}
                 element.Id = tab.Id --Id
-                element.AddTime = SignBoarEvents[tab.ConditionId] and SignBoarEvents[tab.ConditionId].Time or XTime.Now()  -- 添加事件
+                element.AddTime = SignBoarEvents[tab.ConditionId] and SignBoarEvents[tab.ConditionId].Time or XTime.GetServerNowTimestamp()  -- 添加事件
                 element.StartTime = -1 --开始播放的时间
                 element.EndTime = -1 --结束时间
                 element.Duration = tab.Duration  --播放持续时间
@@ -372,7 +372,7 @@ XSignBoardManagerCreator = function()
         local todayTime = XTime.GetTodayTime(0)
 
         local configs = {}
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         for i, v in ipairs(elements) do
             if not v.ShowTime then
                 table.insert(configs, v)

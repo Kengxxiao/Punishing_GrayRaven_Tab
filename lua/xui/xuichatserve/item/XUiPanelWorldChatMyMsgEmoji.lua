@@ -44,7 +44,7 @@ end
 
 function XUiPanelWorldChatMyMsgEmoji:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
 end
 -- auto
 

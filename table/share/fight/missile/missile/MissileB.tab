@@ -1,139 +1,140 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-0	通用:怪物攻击前全局顿帧	2	25				0			7		0.1			-1								-1			1					0	0	0	0							0	1					900002								0	HitCase		0		1			0					
-90000101	mianchaoxiang	2	10				0			4		-1			-1	1			0.05		FxNpcYujing03		-1			1					0	0	0	0							0	1					900104								0	HitCase	1	1		1			0					
-90000102	测试:3米距离	2	2	20			0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0	3							0	1													0	HitCase	1	1		1			0					
-90000103	测试:5米距离	2	5				0			4		-1			-1						FxNpcYujing04		-1			1					0	0	0	3							0	1													0	HitCase	1	1		1			0					
-90000104	测试:10米距离	2	10				0			4		-1			-1						FxNpcYujing05		-1			1					0	0	0	1							0	1													0	HitCase	1	1		1			0					
-90000105	测试:15米距离	2	15				0			4		-1			-1						FxNpcYujing06		-1			1					0	0	0	1							0	1													0	HitCase	1	1		1			0					
-90000106	测试:20米距离	2	20				0			4		-1			-1						FxNpcYujing07		-1			1					0	0	0	1							0	1													0	HitCase	1	1		1			0					
-90000107	惩罚弹道表现	2	0.1				0			4		0.7			-1						FxBossGuangzhu		-1			1					0	0	0	1	0.5		1	90000108			0	1													0	HitCase		0		1			0					
-90000108	惩罚弹道伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0	2							0	1					980004								0	HitCase		0		1			1					
-90000109	测试:1米距离	2	1				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0	3							0	1													0	HitCase	1	1		1			0					
-90000110	测试:2米距离	2	2				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0	3							0	1													0	HitCase	1	1		1			0					
-90000111	测试:40米距离	2	20				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0	3							0	1													0	HitCase	1	1		1			0					
-90000112	无限触发极限闪避弹道	2	20				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			1					
-90000113	10	3	10	10			0		10	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000114	20	3	10	10			0		20	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000115	30	3	10	10			0		30	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000116	40	3	10	10			0		40	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000117	50	3	10	10			0		50	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000118	60	3	10	10			0		60	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000119	70	3	10	10			0		70	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000120	80	3	10	10			0		80	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000121	90	3	10	10			0		90	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000122	100	3	10	10			0		100	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000123	110	3	10	10			0		110	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000124	120	3	10	10			0		120	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000125	130	3	10	10			0		130	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000126	140	3	10	10			0		140	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000127	150	3	10	10			0		150	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000128	160	3	10	10			0		160	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000129	170	3	10	10			0		170	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000130	180	3	10	10			0		180	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000131	190	3	10	10			0		190	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000132	200	3	10	10			0		200	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000133	210	3	10	10			0		210	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000134	220	3	10	10			0		220	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000135	230	3	10	10			0		230	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000136	240	3	10	10			0		240	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000137	250	3	10	10			0		250	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000138	260	3	10	10			0		260	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000139	270	3	10	10			0		270	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000140	280	3	10	10			0		280	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000141	290	3	10	10			0		290	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000142	300	3	10	10			0		300	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000143	310	3	10	10			0		310	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000144	320	3	10	10			0		320	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000145	330	3	10	10			0		330	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000146	340	3	10	10			0		340	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000147	350	3	10	10			0		350	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90000150	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900068								0	HitCase		1		1			0					
-90000151	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900086	900091							0	HitCase		1		1			0					
-90000152	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900087	900092							0	HitCase		1		1			0					
-90000153	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900088	900093							0	HitCase		1		1			0					
-90000154	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900085	900089	900094						0	HitCase		1		1			0					
-90000155	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0	1							0	1					900085	900090	900095						0	HitCase		1		1			0					
-97100001	擎天柱无动作子弹-钢铁风暴2层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971043								0	HitCase		0		1			0					
-97100002	擎天柱无动作子弹-钢铁风暴4层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971044								0	HitCase		0		1			0					
-97100003	擎天柱无动作子弹-钢铁风暴6层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971045								0	HitCase		0		1			0					
-97100004	擎天柱无动作子弹-钢铁风暴8层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971046								0	HitCase		0		1			0					
-97100005	擎天柱无动作子弹-钢铁风暴10层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971047								0	HitCase		0		1			0					
-97100006	擎天柱无动作子弹-钢铁风暴12层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971048								0	HitCase		0		1			0					
-97100007	擎天柱无动作子弹-钢铁风暴14层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971049								0	HitCase		0		1			0					
-97100008	擎天柱无动作子弹-钢铁风暴16层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971050								0	HitCase		0		1			0					
-97100009	擎天柱无动作子弹-钢铁风暴18层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0	0							0	1					971051								0	HitCase		0		1			0					
-97100010	擎天柱无动作子弹-钢铁风暴20层-两个表现BUFF一个伤害buff	2	6				0			4		-1			-1	1			0.1				-1			1					0	0	0	0							0	2				971000101									0	HitCase	1	0		1			0					
-90390101	伤害帧	1	3	7		3.5	0		13	4		0.1			-1		FxMb1RobotarmorMd030001Attack01YShouji01						-1			1					0	0	0	0							0	1				903901011	821001	821025							0	HitCase	1	0		1			1					
-90390102	收手	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90390201	伤害帧	1	7	7		3.5	0		0	4		0.1			-1		FxMb1RobotarmorMd030001Attack02YShouji01						-1			1					0	0	0	0							0	1				903902011	821001	821020							0	HitCase	1	0		1			1					
-90390202	收手	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90390301	关键帧	2	3		0.5	2	0		0	4		0.5			-1		FxMb1RobotarmorMd030001Attack16Shouji01						-1			1					0	0	0	0							0	2				903903011	821004	821023							0	HitCase	1	0		1			1					
-90390401	关键帧	1	3	4		1.5	0		0	4		0.1			-1		FxMb1RobotarmorMd030001Attack17Shouji01						-1			1					0	0	0	0							0	1				903904011	821005	821021							0	HitCase	1	0		1			1					
-90390502	落地	2	5				0			4		0.1			-1		FxMb1RobotarmorMd030001Attack03Yshouji01						-1			1					0	0	0	0							0	1				903905021	821010								0	HitCase	1	0		1			1					
-90390503	位移开始隐藏自身	2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821006	821008							0	HitCase		0		1			0					
-90390504		2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821007	821009							0	HitCase		0		1			0					
-82130001	伤害子弹第一阶段	2	1				0			4		10			-1	1			1				-1			1					0	0	0	0							0	1					821517								0	HitCase	1	0		1			0					
-82130002	第一阶段特效	2	0.1				0			4		9999			-1	1			0.6		FxMb1BraveMd010011Attack1201		-1			1					0	0	0	0							0	1				821300021	821528								0	HitCase		1		1			1					
-82130101	伤害子弹大角度	2	3				0			4		0.1			-1								-1			1					0	0	0	1							0	2				821301011	821518								0	HitCase	1	0		1			1					
-82130102	伤害子弹大角度	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130103	伤害子弹大角度	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130201	电球召唤物中角度-1	2	3				0			4		0.1			-1								-1			1					0	0	0	1							0	2				821302011	821518								0	HitCase	1	0		1			1					
-82130202	电球召唤物中角度-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130203	电球召唤物中角度-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130301	电球召唤物小角度-1	2	3				0			4		0.1			-1								-1			1					0	0	0	1							0	2				821303011	821518								0	HitCase	1	0		1			1					
-82130302	电球召唤物小角度-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130303	电球召唤物小角度-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130401	电球召唤物垂直-1	2	3				0			4		0.1			-1								-1			1					0	0	0	1							0	2				821304011	821518								0	HitCase	1	0		1			1					
-82130402	电球召唤物垂直-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130403	电球召唤物垂直-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-82130104	伤害子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-82140101	追踪子弹爆炸伤害	2	5				0			4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0	0							0	2				821401011	821501	821534							0	HitCase	1	0		1			1					
-82140102	追踪子弹爆炸地火	2	5				0			4		1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0	0							0	1					821503								0	HitCase	1	0		1			0					
-82140103	爆炸特效展示	2	5				0			4		3			-1						FxMb1BraveMd010011Attack0303		-1			1					0	0	0	0	0.2		1	82140113			0	1													0	HitCase		0		1			0					
-82140113	追踪子弹地火特效	2	5				0			4		10			-1						FxMb1BraveMd010011Attack0304		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-82140104	测试循环发射激光子弹	2	1				20			4		4.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0	3							4	1													0	HitCase	1	0		1			1					
-82140105	测试循环发射激光子弹	2	1				20			4		4.2			-1								-1			1					0	0	0	3							4	1					821324	821542							0	HitCase	1	0		1			1					
-82140106	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0	3							4	1													0	HitCase	1	0		1			0					
-82140107	测试循环发射激光子弹	2	1				50			4		4.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0	2							2	1					821320	821542							0	HitCase	1	0		1			1					
-82140108	测试循环发射激光子弹	2	1				0			4		0.4			-1								-1			1					0	0	0	3	0.4		1	82140107	1		4	1													0	HitCase	1	0		1			0					
-82140109	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0	3							4	1													0	HitCase	1	0		1			0					
-82140110	测试循环发射激光子弹	2	1				5			4		8.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0	3							4	1													0	HitCase	1	0		1			1					
-82140111	测试循环发射激光子弹	2	1				5			4		8.2			-1								-1			1					0	0	0	3							4	1					821320	821542							0	HitCase	1	0		1			1					
-82140112	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0	3							4	1													0	HitCase	1	0		1			0					
-82150001	点亮大电球	2	1			1.2	5			2		5		1	-1					EffectCase1	FxMb1BraveMd010011Attack0602		-1	1	FxMb1BraveMd010011Attack0603	3	-13	0	10	0	0	0	0	0	5		1	82150004	1		1	1													0	HitCase		0		1	0	1	0					
-82150002	自爆虫自爆伤害	2	4				0			4		0.1			-1		FxMb1BraveMd010011ShouJi						-1			1					0	0	0	0							0	2				821500021	821317	821534							0	HitCase		0		1			1					
-82150003	自爆虫爆炸特效	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack0604		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-82150004	电量抛物线命中	2	1				0			2		0.1			1								1			1	0				0	0	0	2							3	1					821315								0	HitCase		0		1			0					
-82150101	散弹枪-1	3	7	77	-2		0		-3	4		0.1			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0	0							0	1				821501011	821512	821504							0	HitCase	1	0		1			1					
-82150102	散弹枪-2	3	7	77	2		0		3	4		0.1			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0	0							0	1				821501021	821512	821504							0	HitCase	1	0		1			1					
-82150104	测试的120度扇形预警特效左	3	7	77	2		0		3	4		1.55			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-82150105	测试的120度扇形预警特效右	3	7	77	-2		0		-3	4		1.55			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-82150106	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821514	821515							0	HitCase		0		1			0					
-82150301	急速散弹-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-82150305	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821514	821515							0	HitCase		0		1			0					
-82150310	散射伤害预警	2	1		0	0	0		0	4		0.5			-1						FxNpcYujing01		-1			1					0	0	0	3	0.4		1	82150311	0		4	2													0	HitCase	1	0		1			0					
-82150311	散射特效	2	1				0			4		1			-1		FxDibingShouji				FxMb1BraveMd010011Attack0402		-1			1					0	0	0	2	0.1		1	82150312	0		2	2													0	HitCase		0		1			0					
-82150312	散射伤害	2	1		0	0	0		0	4		0.1			-1								-1			1					0	0	0	2							2	2				821503121	821511	821542							0	HitCase		0		1			1					
-82150401	喷射后退-1	3	10	60			0			4		0.1			-1		FxMb1BraveMd010011ShouJiAir						-1			1					0	0	0	0							0	1				821504011	821501	821504							0	HitCase	1	0		1			1					
-82150403	喷射后退-2	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					900060	900061							0	HitCase		1		1			0					
-82150404	喷射后退-3	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					900058	900059							0	HitCase		1		1			0					
-82150407	喷射落地震屏	2	12				0			4		0.1			-1								-1			1					0	0	0	0							0	1					821529								0	HitCase		0		1			0					
-82150408	喷射落地震屏	4	12	40			0			4		0.1			-1								-1			1					0	0	0	0							0	1					821532								0	HitCase		0		1			0					
-82150601	激光速射-1	1	3	40	0	20	0			4		0.6			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0	0							0	1				821506011	821519	821536							0	HitCase	1	0		1			1					
-82150701	跳跃隐藏模型-1	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821307	821308	821507	821526					0	HitCase		1		1			0					
-82150702	跳跃隐藏模型-2	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					900058	900059	821312	821516					0	HitCase		1		1			0					
-82150801	落地显示模型-1	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821508	900060	900061	100078					0	HitCase		1		1			0					
-82150804	落地全震屏	2	30				0			4		0.1			-1								-1			1					0	0	0	0							0	1					821529								0	HitCase		0		1			0					
-82150901	阶段切换技能弹道1	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821509	821312	821516						0	HitCase		1		1			0					
-82150902	阶段切换技能弹道2	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821510								0	HitCase		1		1			0					
-82150903	阶段切换技能弹道3	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821312								0	HitCase		1		1			0					
-82150904	阶段切换技能弹道4	2	1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821508	821530	100078						0	HitCase		1		1			0					
-82150911	砸地震屏	2	30				0			4		0.1			-1								-1			1					0	0	0	0							0	1					821529								0	HitCase		0		1			0					
-82151002	烈焰起跳-2	2	6				0			4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0	0							0	2				821510021	821520	821529							0	HitCase		0		1			1					
-82151101	开始喷火-1	1	3	10		5	0			4		10			-1	1	FxMb1BraveMd010011ShouJiFire		0.3				-1			1					0	0	0	0							0	1					821521								0	HitCase		1		1			1					
-82151204	转身小跳-3震屏	2	7				0			4		0.1			-1								-1			1					0	0	0	0							0	1					821533								0	HitCase		0		1			0					
-82151301	散弹枪-1	3	7	77	-2		0		-3	4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0	0							0	1				821513011	821522	821504							0	HitCase	1	0		1			1					
-82151302	散弹枪-2	3	7	77	2		0		3	4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0	0							0	1				821513021	821522	821504							0	HitCase	1	0		1			1					
-82151304	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					821514	821515							0	HitCase		0		1			0					
-20140101	生存测试机器人戳-一次性伤害帧	1	10	7		3	0		0	4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0	0							0	1				201401011	900210								0	HitCase	1	0		1			1					
-20140103	生存测试机器人戳-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+0	通用:怪物攻击前全局顿帧	2	25				0			7		0.1			-1								-1			1					0	0	0								0							0	1					900002								0	HitCase		0		1			0					
+90000101	mianchaoxiang	2	10				0			4		-1			-1	1			0.05		FxNpcYujing03		-1			1					0	0	0								0							0	1					900104								0	HitCase	1	1		1			0					
+90000102	测试:3米距离	2	2	20			0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0								3							0	1													0	HitCase	1	1		1			0					
+90000103	测试:5米距离	2	5				0			4		-1			-1						FxNpcYujing04		-1			1					0	0	0								3							0	1													0	HitCase	1	1		1			0					
+90000104	测试:10米距离	2	10				0			4		-1			-1						FxNpcYujing05		-1			1					0	0	0								1							0	1													0	HitCase	1	1		1			0					
+90000105	测试:15米距离	2	15				0			4		-1			-1						FxNpcYujing06		-1			1					0	0	0								1							0	1													0	HitCase	1	1		1			0					
+90000106	测试:20米距离	2	20				0			4		-1			-1						FxNpcYujing07		-1			1					0	0	0								1							0	1													0	HitCase	1	1		1			0					
+90000107	惩罚弹道表现	2	0.1				0			4		0.7			-1						FxBossGuangzhu		-1			1					0	0	0								1	0.5		1	90000108			0	1													0	HitCase		0		1			0					
+90000108	惩罚弹道伤害	2	3				0			4		0.1			-1		FxDibingShouji						-1			1					0	0	0								2							0	1					980004								0	HitCase		0		1			1					
+90000109	测试:1米距离	2	1				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0								3							0	1													0	HitCase	1	1		1			0					
+90000110	测试:2米距离	2	2				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0								3							0	1													0	HitCase	1	1		1			0					
+90000111	测试:40米距离	2	20				0			4		-1			-1						FxNpcYujing03		-1			1					0	0	0								3							0	1													0	HitCase	1	1		1			0					
+90000112	无限触发极限闪避弹道	2	20				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			1					
+90000113	10	3	10	10			0		10	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000114	20	3	10	10			0		20	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000115	30	3	10	10			0		30	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000116	40	3	10	10			0		40	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000117	50	3	10	10			0		50	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000118	60	3	10	10			0		60	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000119	70	3	10	10			0		70	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000120	80	3	10	10			0		80	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000121	90	3	10	10			0		90	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000122	100	3	10	10			0		100	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000123	110	3	10	10			0		110	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000124	120	3	10	10			0		120	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000125	130	3	10	10			0		130	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000126	140	3	10	10			0		140	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000127	150	3	10	10			0		150	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000128	160	3	10	10			0		160	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000129	170	3	10	10			0		170	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000130	180	3	10	10			0		180	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000131	190	3	10	10			0		190	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000132	200	3	10	10			0		200	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000133	210	3	10	10			0		210	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000134	220	3	10	10			0		220	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000135	230	3	10	10			0		230	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000136	240	3	10	10			0		240	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000137	250	3	10	10			0		250	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000138	260	3	10	10			0		260	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000139	270	3	10	10			0		270	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000140	280	3	10	10			0		280	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000141	290	3	10	10			0		290	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000142	300	3	10	10			0		300	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000143	310	3	10	10			0		310	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000144	320	3	10	10			0		320	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000145	330	3	10	10			0		330	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000146	340	3	10	10			0		340	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000147	350	3	10	10			0		350	4		-1			-1	1			1		FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90000150	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900068								0	HitCase		1		1			0					
+90000151	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900086	900091							0	HitCase		1		1			0					
+90000152	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900087	900092							0	HitCase		1		1			0					
+90000153	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900088	900093							0	HitCase		1		1			0					
+90000154	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900085	900089	900094						0	HitCase		1		1			0					
+90000155	怪物狂暴全局子弹	2	500				0		0	2		-1			-1	1			1				-1			1					0	0	0								1							0	1					900085	900090	900095						0	HitCase		1		1			0					
+97100001	擎天柱无动作子弹-钢铁风暴2层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971043								0	HitCase		0		1			0					
+97100002	擎天柱无动作子弹-钢铁风暴4层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971044								0	HitCase		0		1			0					
+97100003	擎天柱无动作子弹-钢铁风暴6层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971045								0	HitCase		0		1			0					
+97100004	擎天柱无动作子弹-钢铁风暴8层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971046								0	HitCase		0		1			0					
+97100005	擎天柱无动作子弹-钢铁风暴10层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971047								0	HitCase		0		1			0					
+97100006	擎天柱无动作子弹-钢铁风暴12层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971048								0	HitCase		0		1			0					
+97100007	擎天柱无动作子弹-钢铁风暴14层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971049								0	HitCase		0		1			0					
+97100008	擎天柱无动作子弹-钢铁风暴16层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971050								0	HitCase		0		1			0					
+97100009	擎天柱无动作子弹-钢铁风暴18层-两个表现BUFF一个伤害buff	2	6				0			4		0.1			-1								-1			1					0	0	0								0							0	1					971051								0	HitCase		0		1			0					
+97100010	擎天柱无动作子弹-钢铁风暴20层-两个表现BUFF一个伤害buff	2	6				0			4		-1			-1	1			0.1				-1			1					0	0	0								0							0	2				971000101									0	HitCase	1	0		1			0					
+90390101	伤害帧	1	3	7		3.5	0		13	4		0.1			-1		FxMb1RobotarmorMd030001Attack01YShouji01						-1			1					0	0	0								0							0	1				903901011	821001	821025							0	HitCase	1	0		1			1					
+90390102	收手	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90390201	伤害帧	1	7	7		3.5	0		0	4		0.1			-1		FxMb1RobotarmorMd030001Attack02YShouji01						-1			1					0	0	0								0							0	1				903902011	821001	821020							0	HitCase	1	0		1			1					
+90390202	收手	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90390301	关键帧	2	3		0.5	2	0		0	4		0.5			-1		FxMb1RobotarmorMd030001Attack16Shouji01						-1			1					0	0	0								0							0	2				903903011	821004	821023							0	HitCase	1	0		1			1					
+90390401	关键帧	1	3	4		1.5	0		0	4		0.1			-1		FxMb1RobotarmorMd030001Attack17Shouji01						-1			1					0	0	0								0							0	1				903904011	821005	821021							0	HitCase	1	0		1			1					
+90390502	落地	2	5				0			4		0.1			-1		FxMb1RobotarmorMd030001Attack03Yshouji01						-1			1					0	0	0								0							0	1				903905021	821010								0	HitCase	1	0		1			1					
+90390503	位移开始隐藏自身	2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821006	821008							0	HitCase		0		1			0					
+90390504		2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821007	821009							0	HitCase		0		1			0					
+82130001	伤害子弹第一阶段	2	1				0			4		10			-1	1			1				-1			1					0	0	0								0							0	1					821517								0	HitCase	1	0		1			0					
+82130002	第一阶段特效	2	0.1				0			4		9999			-1	1			0.6		FxMb1BraveMd010011Attack1201		-1			1					0	0	0								0							0	1				821300021	821528								0	HitCase		1		1			1					
+82130101	伤害子弹大角度	2	3				0			4		0.1			-1								-1			1					0	0	0								1							0	2				821301011	821518								0	HitCase	1	0		1			1					
+82130102	伤害子弹大角度	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130103	伤害子弹大角度	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130201	电球召唤物中角度-1	2	3				0			4		0.1			-1								-1			1					0	0	0								1							0	2				821302011	821518								0	HitCase	1	0		1			1					
+82130202	电球召唤物中角度-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130203	电球召唤物中角度-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130301	电球召唤物小角度-1	2	3				0			4		0.1			-1								-1			1					0	0	0								1							0	2				821303011	821518								0	HitCase	1	0		1			1					
+82130302	电球召唤物小角度-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130303	电球召唤物小角度-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130401	电球召唤物垂直-1	2	3				0			4		0.1			-1								-1			1					0	0	0								1							0	2				821304011	821518								0	HitCase	1	0		1			1					
+82130402	电球召唤物垂直-2	2	3				0			4		1			-1						FxMb1BraveMd010011Attack1303Yujing		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130403	电球召唤物垂直-3	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack1303		-1			1					0	0	0								1							0	1													0	HitCase		0		1			0					
+82130104	伤害子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+82140101	追踪子弹爆炸伤害	2	5				0			4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0								0							0	2				821401011	821501	821534							0	HitCase	1	0		1			1					
+82140102	追踪子弹爆炸地火	2	5				0			4		1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0								0							0	1					821503								0	HitCase	1	0		1			0					
+82140103	爆炸特效展示	2	5				0			4		3			-1						FxMb1BraveMd010011Attack0303		-1			1					0	0	0								0	0.2		1	82140113			0	1													0	HitCase		0		1			0					
+82140113	追踪子弹地火特效	2	5				0			4		10			-1						FxMb1BraveMd010011Attack0304		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+82140123	爆炸特效展示	2	5				0			4		3			-1						FxMb1BraveMd010011Attack0303		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+82140104	测试循环发射激光子弹	2	1				20			4		4.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0								3							4	1													0	HitCase	1	0		1			1					
+82140105	测试循环发射激光子弹	2	1				20			4		4.2			-1								-1			1					0	0	0								3							4	1					821324	821542							0	HitCase	1	0		1			1					
+82140106	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0								3							4	1													0	HitCase	1	0		1			0					
+82140107	测试循环发射激光子弹	2	1				50			4		4.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0								2							2	1					821320	821542							0	HitCase	1	0		1			1					
+82140108	测试循环发射激光子弹	2	1				0			4		0.4			-1								-1			1					0	0	0								3	0.4		1	82140107	1		4	1													0	HitCase	1	0		1			0					
+82140109	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0								3							4	1													0	HitCase	1	0		1			0					
+82140110	测试循环发射激光子弹	2	1				5			4		8.2			-1						FxMb1BraveMd010011Attack08Laser		-1			1					0	0	0								3							4	1													0	HitCase	1	0		1			1					
+82140111	测试循环发射激光子弹	2	1				5			4		8.2			-1								-1			1					0	0	0								3							4	1					821320	821542							0	HitCase	1	0		1			1					
+82140112	测试:40米距离	1	2	40			0			1		0.5			-1						FxMb1BraveMd010011Attack08Yujing		-1			1					0	0	0								3							4	1													0	HitCase	1	0		1			0					
+82150001	点亮大电球	2	1			1.2	5			2		5		1	-1					EffectCase1	FxMb1BraveMd010011Attack0602		-1	1	FxMb1BraveMd010011Attack0603	3	-13	0	10	0	0	0	0								0	5		1	82150004	1		1	1													0	HitCase		0		1	0	1	0					
+82150002	自爆虫自爆伤害	2	4				0			4		0.1			-1		FxMb1BraveMd010011ShouJi						-1			1					0	0	0								0							0	2				821500021	821317	821534							0	HitCase		0		1			1					
+82150003	自爆虫爆炸特效	2	0.1				0			4		2			-1						FxMb1BraveMd010011Attack0604		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+82150004	电量抛物线命中	2	1				0			2		0.1			1								1			1	0				0	0	0								2							3	1					821315								0	HitCase		0		1			0					
+82150101	散弹枪-1	3	7	77	-2		0		-3	4		0.1			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0								0							0	1				821501011	821512	821504							0	HitCase	1	0		1			1					
+82150102	散弹枪-2	3	7	77	2		0		3	4		0.1			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0								0							0	1				821501021	821512	821504							0	HitCase	1	0		1			1					
+82150104	测试的120度扇形预警特效左	3	7	77	2		0		3	4		1.55			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+82150105	测试的120度扇形预警特效右	3	7	77	-2		0		-3	4		1.55			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+82150106	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821514	821515							0	HitCase		0		1			0					
+82150301	急速散弹-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+82150305	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821514	821515							0	HitCase		0		1			0					
+82150310	散射伤害预警	2	1		0	0	0		0	4		0.5			-1						FxNpcYujing01		-1			1					0	0	0								3	0.4		1	82150311	0		4	2													0	HitCase	1	0		1			0					
+82150311	散射特效	2	1				0			4		1			-1		FxDibingShouji				FxMb1BraveMd010011Attack0402		-1			1					0	0	0								2	0.1		1	82150312	0		2	2													0	HitCase		0		1			0					
+82150312	散射伤害	2	1		0	0	0		0	4		0.1			-1								-1			1					0	0	0								2							2	2				821503121	821511	821542							0	HitCase		0		1			1					
+82150401	喷射后退-1	3	10	60			0			4		0.1			-1		FxMb1BraveMd010011ShouJiAir						-1			1					0	0	0								0							0	1				821504011	821501	821504							0	HitCase	1	0		1			1					
+82150403	喷射后退-2	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					900060	900061							0	HitCase		1		1			0					
+82150404	喷射后退-3	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					900058	900059							0	HitCase		1		1			0					
+82150407	喷射落地震屏	2	12				0			4		0.1			-1								-1			1					0	0	0								0							0	1					821529								0	HitCase		0		1			0					
+82150408	喷射落地震屏	4	12	40			0			4		0.1			-1								-1			1					0	0	0								0							0	1					821532								0	HitCase		0		1			0					
+82150601	激光速射-1	1	3	40	0	20	0			4		0.6			-1		FxMb1BraveMd010011ShouJi2						-1			1					0	0	0								0							0	1				821506011	821519	821536							0	HitCase	1	0		1			1					
+82150701	跳跃隐藏模型-1	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821307	821308	821507	821526					0	HitCase		1		1			0					
+82150702	跳跃隐藏模型-2	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					900058	900059	821312	821516					0	HitCase		1		1			0					
+82150801	落地显示模型-1	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821508	900060	900061	100078					0	HitCase		1		1			0					
+82150804	落地全震屏	2	30				0			4		0.1			-1								-1			1					0	0	0								0							0	1					821529								0	HitCase		0		1			0					
+82150901	阶段切换技能弹道1	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821509	821312	821516						0	HitCase		1		1			0					
+82150902	阶段切换技能弹道2	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821510								0	HitCase		1		1			0					
+82150903	阶段切换技能弹道3	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821312								0	HitCase		1		1			0					
+82150904	阶段切换技能弹道4	2	1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821508	821530	100078						0	HitCase		1		1			0					
+82150911	砸地震屏	2	30				0			4		0.1			-1								-1			1					0	0	0								0							0	1					821529								0	HitCase		0		1			0					
+82151002	烈焰起跳-2	2	6				0			4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0								0							0	2				821510021	821520	821529							0	HitCase		0		1			1					
+82151101	开始喷火-1	1	3	10		5	0			4		10			-1	1	FxMb1BraveMd010011ShouJiFire		0.3				-1			1					0	0	0								0							0	1					821521								0	HitCase		1		1			1					
+82151204	转身小跳-3震屏	2	7				0			4		0.1			-1								-1			1					0	0	0								0							0	1					821533								0	HitCase		0		1			0					
+82151301	散弹枪-1	3	7	77	-2		0		-3	4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0								0							0	1				821513011	821522	821504							0	HitCase	1	0		1			1					
+82151302	散弹枪-2	3	7	77	2		0		3	4		0.1			-1		FxMb1BraveMd010011ShouJiFire						-1			1					0	0	0								0							0	1				821513021	821522	821504							0	HitCase	1	0		1			1					
+82151304	枪口变红特效	2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					821514	821515							0	HitCase		0		1			0					
+20140101	生存测试机器人戳-一次性伤害帧	1	10	7		3	0		0	4		0.1			-1		FxDibingShouji				FxNpcYujing02		-1			1					0	0	0								0							0	1				201401011	900210								0	HitCase	1	0		1			1					
+20140103	生存测试机器人戳-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					

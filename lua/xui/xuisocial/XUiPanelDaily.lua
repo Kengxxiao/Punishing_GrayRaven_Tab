@@ -4,6 +4,7 @@ function XUiPanelDaily:Ctor(ui,rootUi)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.RootUi = rootUi
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.XUiPanelMsgBoard = XUiPanelMsgBoard.New(self.PanelMsgBoard,self.RootUi)
 end
@@ -17,10 +18,10 @@ function XUiPanelDaily:InitAutoScript()
 end
 
 function XUiPanelDaily:AutoInitUi()
-    self.BtnBack = self.Transform:Find("BtnBack"):GetComponent("Button")
-    self.PanelMsgBoard = self.Transform:Find("PanelMsgBoard")
-    self.PanelWrite = self.Transform:Find("PanelWrite")
-    self.BtnWriteMsg = self.Transform:Find("BtnWriteMsg"):GetComponent("Button")
+    -- self.BtnBack = self.Transform:Find("BtnBack"):GetComponent("Button")
+    -- self.PanelMsgBoard = self.Transform:Find("PanelMsgBoard")
+    -- self.PanelWrite = self.Transform:Find("PanelWrite")
+    -- self.BtnWriteMsg = self.Transform:Find("BtnWriteMsg"):GetComponent("Button")
 end
 
 function XUiPanelDaily:GetAutoKey(uiNode,eventName)
@@ -53,17 +54,22 @@ end
 
 function XUiPanelDaily:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnWriteMsg, "onClick", self.OnBtnWriteMsgClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnWriteMsg, self.OnBtnWriteMsgClick)
 end
 -- auto
 
 function XUiPanelDaily:OnBtnBackClick(...)
-    XUiHelper.PlayAnimation(self.RootUi, "DailyOut", function ( ... )
-
+    self:PlayAnimation("DailyOut", function ( ... )
+            self:SetIsShow(false)
     end, function ( ... )
-        self:SetIsShow(false)
+        
     end)
+    -- XUiHelper.PlayAnimation(self.RootUi, "DailyOut", function ( ... )
+
+    -- end, function ( ... )
+    --     self:SetIsShow(false)
+    -- end)
 end
 
 function XUiPanelDaily:OnBtnWriteMsgClick(...)

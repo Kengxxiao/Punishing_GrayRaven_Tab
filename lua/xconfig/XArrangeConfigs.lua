@@ -12,16 +12,17 @@ XArrangeConfigs = XArrangeConfigs or {}
 
 XArrangeConfigs.Types = {
     Error       = 0,
-    Item        = 1,
-    Character   = 2,
-    Weapon      = 3,
-    Wafer       = 4,
-    Medal       = 5,
+    Item        = 1,    --道具
+    Character   = 2,    --成员
+    Weapon      = 3,    --武器
+    Wafer       = 4,    --意识
+    Medal       = 5,    
     Part        = 6,
-    Fashion     = 7,
-    BaseEquip   = 8,
-    Furniture   = 9,
-    HeadPortrait = 10,
+    Fashion     = 7,    --时装
+    BaseEquip   = 8,    --基地装备
+    Furniture   = 9,    --家具
+    HeadPortrait = 10,  --头像
+    DormCharacter = 11,  --宿舍构造体
 }
 
 function XArrangeConfigs.GetType(id)

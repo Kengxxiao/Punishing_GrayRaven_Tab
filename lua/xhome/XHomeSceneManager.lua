@@ -132,18 +132,4 @@ function XHomeSceneManager.ResetToCurrentGlobalIllumination()
         CurrentScene:ResetToCurrentGlobalIllumination()
     end
 end
-
--- 设置全局点光源
-function XHomeSceneManager.SetGlobalPointLight(path, rootTrans)
-    if CurrentScene then
-        CurrentScene:SetGlobalPointLight(path, rootTrans)
-    end
-end
-
--- 重置为当前场景点光源
-function XHomeSceneManager.ResetToCurrentGlobalPointLight()
-    if CurrentScene then
-        CurrentScene:ResetToCurrentGlobalPointLight()
-    end
-end
 ----------------------------光照信息接口 end-----------------------------

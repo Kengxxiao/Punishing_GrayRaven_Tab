@@ -1,9 +1,9 @@
 Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	Level[9]	Level[10]	Level[11]	Level[12]	Level[13]	Level[14]	Level[15]	Level[16]	Level[17]	Level[18]	Level[19]	Level[20]	Level[21]	Level[22]	Level[23]	Level[24]	Level[25]	Level[26]	Level[27]	Level[28]	Level[29]	Level[30]
-99130096	AddBuff	99130096																													
-99130097	AddMissile	991399|1																													
-99130098	AddBuff	99130098																													
-99130099	HideJoint	Root																													
-99130094	AddBuff	99130094																													
-99130095	AddNpcState	21																													
-99130092	AddBuff	99130092																													
-99130093	AddNpcState	22																													
+95130096	AddBuff	95130096																													
+95130097	AddMissile	951399|1																													
+95130098	AddBuff	95130098																													
+95130099	HideJoint	Root																													
+95130094	AddBuff	95130094																													
+95130095	AddNpcState	21																													
+95130092	AddBuff	95130092																													
+95130093	AddNpcState	22																													

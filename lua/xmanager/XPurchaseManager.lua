@@ -5,13 +5,14 @@ XPurchaseManagerCreator = function()
         GetPurchaseListReq = "GetPurchaseListRequest", -- 采购列表请求
         PurchaseReq = "PurchaseRequest", -- 普通采购请求
     }
-    
+
     local Next = _G.next
     local PurchaseInfosData = {}
     local PurchaseLbRedUiTypes = {}
     local AccumulatedData = {}
     local LBExpireIdKey = "LBExpireIdKey"
     local LBExpireIdDic = nil
+    local IsYKShowConitnueBuy = false
 
     function XPurchaseManager.Init()
         XPurchaseManager.CurBuyIds = {}
@@ -49,7 +50,18 @@ XPurchaseManagerCreator = function()
     end
 
     function XPurchaseManager.ClearData()
-        PurchaseInfosData = {}
+        local uitypes = XPurchaseConfigs.GetYKUiTypes()
+        local yktype = nil
+        if uitypes and uitypes[1] then
+            yktype = uitypes[1]
+        end
+        if yktype then
+            local d = PurchaseInfosData[yktype]
+            PurchaseInfosData = {}
+            PurchaseInfosData[yktype] = d
+        else
+            PurchaseInfosData = {}
+        end
     end
 
     -- RPC
@@ -137,7 +149,7 @@ XPurchaseManagerCreator = function()
         end
 
         local LbExpireIds = XPurchaseManager.GetLbExpireIds()
-        if XPurchaseManager.HaveNewPlayerHint(id) then      
+        if XPurchaseManager.HaveNewPlayerHint(id) then
             LbExpireIds[id] = nil
             XPurchaseManager.SaveLBExpreIds(LbExpireIds)
         end
@@ -204,9 +216,13 @@ XPurchaseManagerCreator = function()
             end
 
             XPurchaseManager.GetRewardSuccess(id, res.PurchaseInfo)
+
             if cb then
                 cb()
             end
+            -- 设置月卡信息本地缓存
+            XPurchaseManager.SetYKLoaclCache()
+
             XEventManager.DispatchEvent(XEventId.EVENT_CARD_REFRESH_WELFARE_BTN)
             XUiManager.OpenUiObtain(res.RewardList)
         end)
@@ -291,11 +307,15 @@ XPurchaseManagerCreator = function()
         end
 
         -- 处理月卡红点
-        if info and info.DailyRewardInfoList and Next(info.DailyRewardInfoList) then 
+        if info and info.DailyRewardInfoList and Next(info.DailyRewardInfoList) then
             for _, v in pairs(info.DailyRewardInfoList) do
                 if v.Id == XPurchaseConfigs.PurChaseCardId then
                     XDataCenter.PurchaseManager.YKInfoDataReq(function()
                         XEventManager.DispatchEvent(XEventId.EVENT_CARD_REFRESH_WELFARE_BTN)
+
+                        -- 设置月卡信息本地缓存
+                        XDataCenter.PurchaseManager.SetYKLoaclCache()
+                        XEventManager.DispatchEvent(XEventId.EVENT_DAYLY_REFESH_RECHARGE_BTN)
                     end)
                 end
             end
@@ -321,14 +341,14 @@ XPurchaseManagerCreator = function()
                 if XPurchaseConfigs.IsLBByPassID(v0.Id) then
                     for _, data in pairs(datas) do
                         for _, v1 in pairs(data) do
-                            if v1.Id == v0.Id then                    
+                            if v1.Id == v0.Id then
                                 if v1.BuyTimes > 0 and v1.DailyRewardRemainDay > 0 then
-                                    if XPurchaseManager.HaveNewPlayerHint(v0.Id) then      
+                                    if XPurchaseManager.HaveNewPlayerHint(v0.Id) then
                                         LbExpireIds[v0.Id] = nil
                                     end
                                 else
-                                    if not XPurchaseManager.HaveNewPlayerHint(v0.Id) then                                      
-                                        LbExpireIds[v0.Id] = v0.Id                                
+                                    if not XPurchaseManager.HaveNewPlayerHint(v0.Id) then
+                                        LbExpireIds[v0.Id] = v0.Id
                                         count = count + 1
                                     end
                                 end
@@ -338,7 +358,7 @@ XPurchaseManagerCreator = function()
                 end
             end
         end
-        
+
         XPurchaseManager.SaveLBExpreIds(LbExpireIds)
         XPurchaseManager.ExpireCount = count
 
@@ -354,7 +374,7 @@ XPurchaseManagerCreator = function()
         end
 
         local ids = XPurchaseManager.GetLbExpireIds()
-        return ids[id] ~= nil 
+        return ids[id] ~= nil
     end
 
     function XPurchaseManager.SaveLBExpreIds(ids)
@@ -363,10 +383,10 @@ XPurchaseManagerCreator = function()
             for k,v in pairs(ids) do
                 if v then
                     idsstr = idsstr..v.."_"
-                end          
+                end
             end
 
-            local key = string.format( "%s_%s", tostring(XPlayer.Id), LBExpireIdKey)    
+            local key = string.format( "%s_%s", tostring(XPlayer.Id), LBExpireIdKey)
             CS.UnityEngine.PlayerPrefs.SetString(key, idsstr)
             CS.UnityEngine.PlayerPrefs.Save()
             LBExpireIdDic = nil
@@ -403,7 +423,7 @@ XPurchaseManagerCreator = function()
             for _, data in pairs(datas) do
                 for _, v in pairs(data) do
                     if v and v.ConsumeCount == 0 then
-                        local curtime = XTime.Now()
+                        local curtime = XTime.GetServerNowTimestamp()
                         if (v.BuyTimes == 0 or v.BuyTimes < v.BuyLimitTimes) and (v.TimeToShelve == 0 or v.TimeToShelve < curtime) and (v.TimeToUnShelve == 0 or v.TimeToUnShelve > curtime) then
                             f = true
                             PurchaseLbRedUiTypes[v.UiType] = v.UiType
@@ -424,7 +444,7 @@ XPurchaseManagerCreator = function()
     -- 累计充值相关
     function XPurchaseManager.NotifyAccumulatedPayData(info)
         if not info then
-            return 
+            return
         end
         AccumulatedData.PayId = info.PayId or 0--累计充值id
         AccumulatedData.PayMoney = info.PayMoney or 0--累计充值数量
@@ -437,12 +457,12 @@ XPurchaseManagerCreator = function()
     end
 
     function XPurchaseManager.IsAccumulateEnterOpen()
-        return AccumulatedData.PayId and AccumulatedData.PayId > 0 and XFunctionManager.JudgeOpen(3000)
+        return AccumulatedData.PayId and AccumulatedData.PayId > 0 and XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.PurchaseAdd) and not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.PurchaseAdd)
     end
 
     function XPurchaseManager.NotifyAccumulatedPayMoney(info)
         if not info or not info.PayMoney or info.PayMoney < 0 or AccumulatedData.PayMoney > info.PayMoney then
-            return 
+            return
         end
 
         AccumulatedData.PayMoney = info.PayMoney
@@ -457,7 +477,7 @@ XPurchaseManagerCreator = function()
     -- 领取累计充值奖励
     function XPurchaseManager.GetAccumulatePayReq(payid,rewardid,cb)
         if not payid or not rewardid then
-            return 
+            return
         end
 
         XNetwork.Call("GetAccumulatePayRequest",{ PayId = payid,RewardId = rewardid},function(res)
@@ -494,17 +514,17 @@ XPurchaseManagerCreator = function()
     end
 
     -- 累计充值奖励
-    function XPurchaseManager.GetAccumlatePayConfig()   
+    function XPurchaseManager.GetAccumlatePayConfig()
         local id = AccumulatedData.PayId
         if not id or id <0 then
-            return 
+            return
         end
 
         return XPurchaseConfigs.GetAccumlatePayConfigById(id)
     end
 
     -- 累计充值奖励红点
-    function XPurchaseManager.AccumlatePayRedPoint()   
+    function XPurchaseManager.AccumlatePayRedPoint()
         local id = AccumulatedData.PayId
         if not id or id <0 then
             return false
@@ -534,12 +554,12 @@ XPurchaseManagerCreator = function()
         if not id then
             return
         end
-    
+
         local itemData = XPurchaseConfigs.GetAccumlateRewardCofigById(id)
         if not itemData then
-            return 
+            return
         end
-    
+
         local money = itemData.Money
         local count = XPurchaseManager.GetAccumlatedPayCount()
         if count >= money then
@@ -555,6 +575,75 @@ XPurchaseManagerCreator = function()
             return XPurchaseConfigs.PurchaseRewardAddState.CanotGet
         end
     end
+
+    -- 月卡继续购买红点相关
+    function XPurchaseManager.SetYKLoaclCache()
+        local data = XPurchaseManager.GetYKInfoData()
+        if not data then
+            return
+        end
+
+        local key = XPrefs.YKLoaclCachae .. tostring(XPlayer.Id)
+        local count = 0
+        if CS.UnityEngine.PlayerPrefs.HasKey(key) then
+            count = CS.UnityEngine.PlayerPrefs.GetInt(key)
+        else
+            CS.UnityEngine.PlayerPrefs.SetInt(key, count)
+        end
+
+        if data.DailyRewardRemainDay and count ~= data.DailyRewardRemainDay then
+            local continueBuyDays = XPurchaseConfigs.PurYKContinueBuyDays
+            if data.DailyRewardRemainDay > continueBuyDays then
+                CS.UnityEngine.PlayerPrefs.SetInt(key, data.DailyRewardRemainDay)
+            end
+
+            if count > 0 and data.DailyRewardRemainDay <= continueBuyDays then
+                IsYKShowConitnueBuy = true
+            else
+                IsYKShowConitnueBuy = false
+            end
+        end
+    end
+
+    -- 检查是否显示购买月卡红点
+    function XPurchaseManager.CheckYKContinueBuy()
+        if not IsYKShowConitnueBuy then
+            return IsYKShowConitnueBuy
+        end
+
+        local key = XPrefs.YKContinueBuy.. tostring(XPlayer.Id)
+        if CS.UnityEngine.PlayerPrefs.HasKey(key) then
+            local time = CS.UnityEngine.PlayerPrefs.GetString(key)
+            local now = XTime.GetServerNowTimestamp()
+            local todayFreshTime = XTime.GetSeverTodayFreshTime()
+            local yesterdayFreshTime = XTime.GetSeverYesterdayFreshTime()
+            local tempTime = now >= todayFreshTime and todayFreshTime or yesterdayFreshTime
+            return tostring(tempTime) ~= time
+        else
+            return true
+        end
+    end
+
+    -- 设置当日购买月卡红点已读
+    function XPurchaseManager.SetYKContinueBuy()
+        local key = XPrefs.YKContinueBuy.. tostring(XPlayer.Id)
+        local now = XTime.GetServerNowTimestamp()
+        local todayFreshTime = XTime.GetSeverTodayFreshTime()
+        local yesterdayFreshTime = XTime.GetSeverYesterdayFreshTime()
+        local tempTime = now >= todayFreshTime and todayFreshTime or yesterdayFreshTime
+        CS.UnityEngine.PlayerPrefs.SetString(key, tostring(tempTime))
+
+        local data = XPurchaseManager.GetYKInfoData()
+        if not data then
+            return
+        end
+
+        local cachaeKey = XPrefs.YKLoaclCachae .. tostring(XPlayer.Id)
+        if data.DailyRewardRemainDay <= 0 then
+            CS.UnityEngine.PlayerPrefs.SetInt(cachaeKey, data.DailyRewardRemainDay)
+        end
+    end
+
     XPurchaseManager.Init()
     return XPurchaseManager
 end

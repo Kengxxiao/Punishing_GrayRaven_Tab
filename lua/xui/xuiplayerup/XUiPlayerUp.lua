@@ -13,7 +13,8 @@ function XUiPlayerUp:OnStart(oldLevel, newLevel)
     self.BtnClose.gameObject:SetActive(true)
     self.IsAnimating = true
     self.Timer = nil
-    XUiHelper.PlayAnimation(self, "AniPlayerUpBegin", nil, function()
+
+    self:PlayAnimation("AniPlayerUpBegin", function()
 
         if XTool.UObjIsNil(self.BtnClose) then
             return
@@ -33,6 +34,26 @@ function XUiPlayerUp:OnStart(oldLevel, newLevel)
             end
         end, 1000, WAIT_CLOSE_TIME)
     end)
+    -- XUiHelper.PlayAnimation(self, "AniPlayerUpBegin", nil, function()
+
+    --     if XTool.UObjIsNil(self.BtnClose) then
+    --         return
+    --     end
+
+    --     self.IsAnimating = false
+
+    --     local time = 0
+    --     self.Timer = CS.XScheduleManager.Schedule(function()
+    --         if XTool.UObjIsNil(self.BtnClose) then
+    --             return
+    --         end
+
+    --         time = time + 1
+    --         if time >= WAIT_CLOSE_TIME and self.BtnClose.gameObject.activeInHierarchy then
+    --             self:OnBtnCloseClick()
+    --         end
+    --     end, 1000, WAIT_CLOSE_TIME)
+    -- end)
 end
 
 function XUiPlayerUp:OnEnable()
@@ -90,7 +111,7 @@ end
 
 function XUiPlayerUp:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiPlayerUp:InitText()
@@ -100,7 +121,6 @@ function XUiPlayerUp:InitText()
     for i = 1, differenceGrade do
         num = num + XPlayerManager.GetFreeActionPoint(self.OldLevel + i - 1)
     end
-
     self.Txt1.text = num
     self.Txt2.text = CS.XTextManager.GetText("LevelActionPoint", XPlayerManager.GetMaxActionPoint(self.OldLevel), addActionPoint)
     self.TxtLv1.text = self.OldLevel
@@ -128,7 +148,8 @@ function XUiPlayerUp:OnBtnCloseClick()
         self:Close()
         XEventManager.DispatchEvent(XEventId.EVENT_PLAYER_LEVEL_UP_ANIMATION_END)
     end
-    XUiHelper.PlayAnimation(self, "AniPlayerUpEnd", nil, onEnd)
+    self:PlayAnimation("AniPlayerUpEnd", onEnd)
+    --XUiHelper.PlayAnimation(self, "AniPlayerUpEnd", nil, onEnd)
 end
 
 function XUiPlayerUp:OnDestroy()

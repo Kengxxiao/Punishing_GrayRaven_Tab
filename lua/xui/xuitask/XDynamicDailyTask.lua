@@ -183,7 +183,7 @@ function XDynamicDailyTask:UpdateDailyTime()
     local conditionTemplates = XTaskConfig.GetTaskCondition(taskTemplates.Condition[1])
     if not conditionTemplates then return end
 
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local today_0_oclock = XTime.GetTodayTime(0, 0, 0)
     local next_0_oclock = today_0_oclock + A_DAY
     local beginTime = today_0_oclock
@@ -253,7 +253,7 @@ function XDynamicDailyTask:UpdateWeeklyTime()
     if not taskTemplates then return end
 
     local weekOfDay, epochTime = XDataCenter.TaskManager.GetWeeklyTaskRefreshTime()
-    local needTime = XTime.GetNextWeekOfDay(weekOfDay, epochTime)
+    local needTime = XTime.GetNextWeekOfDayStartWithMon(weekOfDay, epochTime)
     if needTime > 0 then
         
         if needTime > A_DAY then

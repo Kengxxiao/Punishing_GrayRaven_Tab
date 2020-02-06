@@ -60,7 +60,7 @@ end
 
 function XUiHintFunctional:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBox, "onClick", self.OnBtnBoxClick)
+    self:RegisterClickEvent(self.BtnBox, self.OnBtnBoxClick)
 end
 -- auto
 

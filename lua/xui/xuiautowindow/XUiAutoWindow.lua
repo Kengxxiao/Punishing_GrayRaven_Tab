@@ -39,7 +39,7 @@ function XUiAutoWindow:SetInfo(configId)
     self.RImgCharacterBig:SetRawImage(self.Config.CharacterIcon)
     self.RImgBg:SetRawImage(self.Config.BgIcon)
 
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     if now > self.Config.OpenTime and now <= self.Config.CloseTime then
         self:SetOpenInfo()
     elseif now <= self.Config.OpenTime then
@@ -67,7 +67,7 @@ function XUiAutoWindow:SetCloseInfo(now)
 
     self.TxtTitle.text = self.Config.CloseTitle
     local format = "MM/dd"
-    self.TxtOpenDay.text = CS.XDate.FormatTime(self.Config.OpenTime, format)
+    self.TxtOpenDay.text = XTime.TimestampToGameDateTimeString(self.Config.OpenTime, format)
     local leftTime = self.Config.OpenTime - now
     self.TxtLeftTime.text = XUiHelper.GetTime(leftTime, XUiHelper.TimeFormatType.CHALLENGE)
 end

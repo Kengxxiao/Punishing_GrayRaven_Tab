@@ -10,7 +10,7 @@ R2KalieninaMd019131		Death	0.1
 R2KalieninaMd019131		Hit1	0.05
 R2KalieninaMd019131		Hit2	0.05
 R2KalieninaMd019131		Behitfly	0.05
-R2KalieninaMd019131		Hoverhit	0
+R2KalieninaMd019131		Hoverhit	0.05
 R2KalieninaMd019131		Falldown	0.1
 R2KalieninaMd019131		Hitdown	0.1
 R2KalieninaMd019131		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R2KalieninaMd019131		TurnLeft	0.1
 R2KalieninaMd019131		TurnRight	0.1
 R2KalieninaMd019131		StraightBefore	0.1
 R2KalieninaMd019131		StraightAfter	0.1
+R2KalieninaMd019131		UiStand1	0.1
 R2KalieninaMd019131		Win	0
 R2KalieninaMd019131		Win2	0.1
 R2KalieninaMd019131		Runb	0.2
@@ -107,5 +108,5 @@ R2KalieninaMd019131	Walkr	Walkb	0.1
 R2KalieninaMd019131	Walkr	Walkl	0.2
 R2KalieninaMd019131	Hit3	Stand2	0
 R2KalieninaMd019131	Hit4	Stand2	0
-R2KalieninaMd019131	RunStart	Run	0.05
+R2KalieninaMd019131	RunStart	Run	0
 R2KalieninaMd019131	RunStart	RunStartEnd01	0.1

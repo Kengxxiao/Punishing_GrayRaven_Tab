@@ -19,7 +19,7 @@ function XUiFubenCoinSkill:OnStart()
     self:StartCountDown()
     self:InitXUiPanelFubenTab()
     self:CheckPlayerLevelUp()
-    XUiHelper.PlayAnimation(self, "FubenCoinSkillBegin", nil, function () self.BeginAnim = true end)
+    --XUiHelper.PlayAnimation(self, "FubenCoinSkillBegin", nil, function () self.BeginAnim = true end)
 end
 
 function XUiFubenCoinSkill:OnEnable()
@@ -96,10 +96,10 @@ end
 
 function XUiFubenCoinSkill:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnClosePanelLevelUpTip, "onClick", self.OnBtnClosePanelLevelUpTipClick)
-    self:RegisterListener(self.BtnActDesc, "onClick", self.OnBtnActDescClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnClosePanelLevelUpTip, self.OnBtnClosePanelLevelUpTipClick)
+    self:RegisterClickEvent(self.BtnActDesc, self.OnBtnActDescClick)
 end
 -- auto
 --初始化ui文本
@@ -159,10 +159,10 @@ function XUiFubenCoinSkill:CheckPlayerLevelUp()
     if not lastLevel then
         return
     end
-    XUiHelper.PlayAnimation(self, "CoinSkillLevelUp", function()
-        self.TxtChallengeLevel.text = nowLevel
-        self.PanelLevelUpTip.gameObject:SetActive(true)
-    end, nil)
+    -- XUiHelper.PlayAnimation(self, "CoinSkillLevelUp", function()
+    --     self.TxtChallengeLevel.text = nowLevel
+    --     self.PanelLevelUpTip.gameObject:SetActive(true)
+    -- end, nil)
 end
 
 function XUiFubenCoinSkill:OnBtnBackClick(...)
@@ -182,13 +182,13 @@ function XUiFubenCoinSkill:OnBtnActDescClick(...)
 end
 
 function XUiFubenCoinSkill:OnBtnClosePanelLevelUpTipClick(...)
-    XUiHelper.PlayAnimation(self, "CoinSkillLevelUpEnd", nil, function()
-        if XTool.UObjIsNil(self.PanelLevelUpTip) then
-            return
-        end
+    -- XUiHelper.PlayAnimation(self, "CoinSkillLevelUpEnd", nil, function()
+    --     if XTool.UObjIsNil(self.PanelLevelUpTip) then
+    --         return
+    --     end
         
-        self.PanelLevelUpTip.gameObject:SetActive(false)
-    end)
+    --     self.PanelLevelUpTip.gameObject:SetActive(false)
+    -- end)
 end
 
 --副本按钮入口

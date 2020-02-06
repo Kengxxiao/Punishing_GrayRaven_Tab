@@ -94,6 +94,9 @@ XRedPointConditions.Conditions = {
     CONDITION_DORM_WORK_RED = "XRedPointConditionDormWork",   -- 宿舍打工
     CONDITION_DORM_MAIN_TASK_RED = "XRedPointConditionDormMainTaskRed",   -- 是否有奖励领取(宿舍主界面)
     
+    --研究红点
+    CONDITION_ACTIVITYDRAW_RED = "XRedPointActivityDrawNew",   -- 研究活动卡池红点
+    
     --头像红点
     CONDITION_HEADPORTRAIT_RED = "XRedPointConditionHeadPortraitNew",
     --勋章红点

@@ -1,175 +1,158 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-99410001	子弹发射器伤害子弹-直线	2	0.4				10			4		2		1	1		FxJiaojingAttack01Shouji				FxJiaojingAttack01		1		FxJiaojingAttack01Baozha	1					0	0	0	3							4	1				994100011	730104	801008							1	HitCase		0		1		1	0					
-99410002	角鲸导弹发射	2	1				0			4		10			-1						FxJiaojingAttack02		-1			1					0	0	0	0							0	1													-2	HitCase		0		1			0					
-99410003	角鲸导弹下落爆炸特效	2	1				0			4		10			-1						FxJiaojingAttack03		-1			1					0	0	0	3							0	1													0	HitCase		0		1			0					
-99410004	角鲸导弹预警	2	1				0			4		0.7			-1						FxNpcYujing01		-1			1					0	0	0	3							0	1													0	HitCase		0		1			0					
-99410005	角鲸导弹伤害子弹	2	1				0			1		0.1			-1		FxJiaojingAttack03Shouji						-1			1					0	0	0	3							0	1				994100051	801005								0	HitCase	1	0		1			0					
-99410006	三阶露西亚击倒子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1				994100061									0	HitCase		0		1			0					
-99410007	子弹发射器伤害子弹-阿基米德曲线	2	0.4				8			4		1.5		1	1		FxJiaojingAttack01Shouji				FxJiaojingAttack01		1		FxJiaojingAttack01Baozha	2	45	10	0	10	0	0	0	3							4	1				994100071	730104	801008							1	HitCase		0		1		1	0					
-99410008	角鲸的角受击	2	0.1				0			4		1			-1						FxJiaojingShoujiLight1		-1			1					0	0	0	0							0	1													1.5	HitCase		0		1			0					
-99410009	角鲸子弹发射器受击	2	0.1				0			4		1			-1						FxJiaojingShoujiLight2		-1			1					0	0	0	0							0	1													1.5	HitCase		0		1			0					
-99410101	激光	1	2	15		7	0			4		2.8			-1								-1			1					0	0	0	0							0	1				994101011	801005								0	HitCase	1	1		1			1					
-99410103	激光预警	1	2	15		7	0			4		1	0.7		-1						FxYujingJu01		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99410201	主线7-10远程火力-伤害子弹	2	3				0			4		0.1			-1		FxMo1BraveMd010101Attack01Shouji					1	-1			1					0	0	0	1							0	1				994102011									0	HitCase	1	0		1			1					
-99410202	主线7-10远程火力-范围预警	2	3				0			4		1			-1						FxYujing1M10S		-1			1					0	0	0	1							0	1													0	HitCase	1	0		1			0					
-99410203	主线7-10远程火力-爆炸特效	2	3				0			4		3			-1						FxHongzha	1	-1			1					0	0	0	1							0	1													0	HitCase		0		1			0					
-99410301		2	15				0			4		1.5			-1						FxYujing1M06S		-1			1	0				0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99410302		2	15				0			4		0.1			-1		FxDibingShouji						-1			1	0				0	0	0	0							0	1				994103021									0	HitCase	1	0		1			1					
-99410303		2	15				0			4		0		1	-1								-1		FxMe1BioMd004040Attack04	1	0				0	0	0	0							0	1													0	HitCase		0		1			0					
-99410401	激光	1	2	15		7	0			4		2.8			-1								-1			1					0	0	0	0							0	1				994104011	801005								0	HitCase	1	1		1			1					
-99410403	激光预警	1	2	15		7	0			4		1	0.7		-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99410501	伤害子弹	4	5	10			0			4		1			-1						FxYujingRing		-1			1					0	0	0	0							0	1				994105011									0	HitCase	1	0		1			1					
-99410502	伤害子弹	4	5	10			0			4		1.5	1.5		-1						FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99410601	伤害子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-99450001	机枪-扇形扫射伤害子弹子弹	1	0.1				85		-80	4		2			-1					hitcase	FxR2LiangAttack11Dandao		-1			1					0	0	0	0							0	1				994500011	811008								0	HitCase		0		1			1					
-99450010	构造体自爆-伤害子弹	2	3				0			6		0.1			-1		FxMo1BraveMd010101Attack01Shouji						-1			1					0	0	0	0							0	1				994500101	801075	816003							0	HitCase		0		1			1					
-99450011	构造体自爆范围预警	2	3				0			1		1			-1						FxYujing1M10S		-1			1					0	0	0	0							0	1					900023								0	HitCase	1	0		1			0					
-99450012	构造体爆炸特效1	2	3				0			1		3			-1						FxMo1BraveMd010101Attack01		-1			1					0	0	0	0							0	1													0	HitCase		0		0			0					
-99450013	爆炸范围预警2	2	3				0			1		0.1			-1						FxYujingRing		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99450015	主线7-10远程火力-伤害子弹	2	6				0			4		0.1			-1		FxMo1BraveMd010101Attack01Shouji						-1			1					0	0	0	0							0	1				994500151	700321	730072							0	HitCase		0		1			0					
-99450016	主线7-10远程火力-范围预警	2	4				0			4		1			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99450017	主线7-10远程火力-爆炸特效	2	4				0			4		3			-1						FxHongzha		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-99450101	激光	1	2	15		7	0			2		2.8			-1								-1			1					0	0	0	0							0	1				994501011	700210								0	HitCase	1	0		1			0					
-99430101	重构镇暴兵盾猛-伤害子弹	1	1.5	2		2	0			4		0.1			-1		FxMo1ArmorMd010071Attack01Shouji						-1			1					0	0	0	0							0	1				994301011	901901								0	HitCase	1	0		1			1					
-99430201	重构镇暴兵横扫-伤害子弹	3	3	210		1	0			4		0.1			-1		FxMo1ArmorMd010071Attack02Shouji						-1			1					0	0	0	0							0	1				994302011	901902								0	HitCase	1	0		1			1					
-99430401	重构镇暴兵-冲锋	1	2	2		1.5	0			4		2			-1	1	FxDibingShouji		0.6				-1			1					0	0	0	0							0	1				994304011	901903					901912			0	HitCase	1	1		1			1					
-99430402	重构镇暴兵-预警	1	2	10		6	0			4		2			-1						FxNpcYujing02		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-99430502	重构镇暴兵-刹车	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-99430602	重构镇暴兵-冲锋撞墙标记	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-99430702	重构镇暴兵-眩晕	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-99440101	重构演出者紫光阵-伤害子弹	2	3				0			4		5			-1	1			0.5			1	-1			1					0	0	0	1							0	1													0	HitCase		0		0			1					
-99440104	重构演出者紫光阵-范围提示	2	3				100			4	1	1.5			-1						FxYujing1M09S		-1			1					0	0	0	1							0	1													0	HitCase	1	0		1			0					
-99440201	重构演出者buff圈-伤害子弹	2	6				0			2		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			1					
-99440301	重构演出者伤害电球-伤害子弹	2	0.5				5			4		30			-1	1			1	BulletCase			-1			1					0	0	0	0							0	1													0	HitCase		0		0			1					
-99440401	重构演出者回复电球-伤害子弹	2	0.1				9			2		30			-1	1			1	BulletCase			1			3	-60	0	10	0	0	0	0	0							0	1					730026								0	HitCase		0		0			0					
-90400001	判定玩家战力区域	1	0.1	3	3	-2	0			4	4	0.1	0.05		-1								-1			1					0	0	0	0							0	1					904049								1	HitCase		0		1			0	0				
-90400002	判定玩家战力区域	1	3	3	-2		0			4		0.05			-1								-1			1					0	0	0	0							0	1					904052								0	HitCase	1	0		1			0					
-90400101	野牛烈焰撞击-伤害子弹	1	3	2		3	0			4		3.7			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	4				904001011	801062	904002							0	HitCase	1	1		1			1					
-90400102	野牛烈焰撞击-踩踏子弹	1	2	2			0			4		3.7			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1					904004	904005							0	HitCase	1	1		1			1					
-90400108	野牛烈焰撞击-范围提示	1	2	25		12.5	0			4		1.15			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90400112	证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400113	证明技能结束	2	0.1				0			1		0.1			-1								-1			1					0	0	0	0							0	1					904053								0	HitCase		0		1			0					
-90400201	野牛炎刃横扫-伤害子弹	1	7	5	-0.5	2	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1				904002011	801050	904014							0	HitCase	1	0		1			1					
-90400202	野牛炎刃横扫-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400203	野牛炎刃横扫-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400204	野牛炎刃横扫-范围提示	1	7	5	-0.5	2	0			4		0.9			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90400301	野牛后踢-伤害子弹	1	2	4	0	-2	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1				904003011	801040	904019	904018						0	HitCase	1	0		1			1	1				
-90400302	野牛后踢-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400303	野牛后踢-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400304	野牛后踢-范围提示	1	2	4	0	-2	0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90400305	野牛后踢-闪红提示	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400306	野牛后踢-顿帧BUFF标记	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400308	野牛后踢-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400401	野牛雪狐击-伤害子弹	2	5	0	0	0	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1				904004011	801065	904028	904023						0	HitCase	1	0		1			1					
-90400402	野牛雪狐击-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400403	野牛雪狐击-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400404	野牛雪狐击-范围提示	2	5	0	0	0	0			4		1.9			-1								-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90400407	野牛雪狐击-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400408	野牛雪狐击-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400501	野牛炎爆-伤害子弹	2	1	0	0	0	10			4		5			1		FxMe1CattleMd000002Attack05Shouji			Bone17			1			1					0	0	0	0	10		1	90400509	1		1	1				904005011	904032								1	HitCase	1	0	1	1			1					
-90400502	野牛炎爆-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400503	野牛炎爆-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400504	野牛炎爆-范围提示	1	2	30	0	15	0			4		1			-1								-1			1					0	0	0	0							1	1													0	HitCase	1	0		1			0					
-90400507	野牛炎爆-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400508	野牛炎爆-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400509	野牛炎爆-伤害子弹-爆炸子子弹	2	3				0			4		0.1			-1								-1			1					0	0	0	2	10		1	90400511	1		0	1					801052								0	HitCase		0		1			0					
-90400510	爆炸特效	2	0.1				0			4		0.1			-1						FxMe1CattleMd000002Attack05Shouji		-1			1					0	0	0	2							0	1													0	HitCase		0		1			0					
-90400511	野牛炎爆-伤害子弹	2	1	0	0	0	10			4		5			1					Bone17	FxMe1CattleMd000002Attack05Dandao		1			1					0	0	0	0							1	1													1	HitCase	1	0	1	1			0					
-90400601	野牛燃烧吧牛宝宝-伤害子弹	2	6	0	0	0	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1					801057	904046							0	HitCase	1	0		1			1					
-90400602	野牛燃烧吧牛宝宝-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400603	野牛燃烧吧牛宝宝-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400604	野牛燃烧吧牛宝宝-范围提示	2	6	0	0	0	0			4		0.8			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90400607	野牛燃烧吧牛宝宝-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400608	野牛燃烧吧牛宝宝-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400609	野牛燃烧吧牛宝宝-眩晕	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400610	野牛燃烧吧牛宝宝-减速	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400611	野牛燃烧吧牛宝宝-燃烧	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400703	卧牛前摇-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400801	卧牛中-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400802	卧牛中-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400803	卧牛中-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400902	卧牛结束-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90400903	卧牛结束-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90401101	锤断腿中-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90401102	锤断腿中-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90401103	锤断腿中-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90401203	锤断腿结束-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90401301	野牛转向-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90450101	战斧斜劈	1	5	2.5		1.75	0			4		0.1			-1		FxMe1BioMd005010Attack01Shouji01						-1			1					0	0	0	0							0	3				904501011	904522	801053							0	HitCase	1	0		1			1	1				
-90450201	战斧上挑	1	5	2.5		1.75	0			4		0.1			-1		FxMe1BioMd005010Attack02Shouji01						-1			1					0	0	0	0							0	3				904502011	904523	801060							0	HitCase	1	0		1			1	1				
-90450301	链钩发射	2	0.5				30			4		0.3			-1		FxMe1BioMd005010Attack03Shouji01						-1			1					0	0	0	0							0	1				904503011	904503	904524	801040			904501			0	HitCase	1	0		1			1					
-90450302	链钩发射	2	30				0			4		0.1			-1								-1			1					0	0	0	1							0	1					904502								0	HitCase		0		1			0					
-90450303	链钩发射	2	30				0			4		0.2			-1								-1			1					0	0	0	1							0	1					904502								0	HitCase		0		1	0.05		0					
-90450304	链钩发射	2	30				0			4		0.3			-1								-1			1					0	0	0	1							0	1					904502								0	HitCase		0		1	0.1		0					
-90450305	链钩发射	2	30				0			4		0.4			-1								-1			1					0	0	0	1							0	1					904502								0	HitCase		0		1	0.15		0					
-90450306	链钩发射	2	30				0			4		0.5			-1								-1			1					0	0	0	1							0	1					904502								0	HitCase		0		1	0.2		0					
-90450309	弹道提示-1	1	1	0		0	0			4		1.1			-1						FxYujingXian01		-1			1					0	0	0	0							0	1													1.5	HitCase		1		1			0					
-90450310	弹道激发-2	1	1	0		0	0			4		1			-1						FxYujingXian02		-1			1					0	0	0	0							0	1													1.5	HitCase		1		1			0					
-90450401	链钩回拽	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90450501	喷射准备	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90450601	喷射冲锋	2	0.5			0.8	0			4		3			-1								-1			1					0	0	0	0							0	1				904506011	801030	904506	904525						0	HitCase	1	1		1			1					
-90450604	喷射冲锋-带人撞墙子弹	2	1			1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0	0							0	1				904506041	904515	904527	801050						0	HitCase	1	1		1			0					
-90450605	吸人走	2	0.5			0.8	0			4		3			-1	1			0.05				-1			1					0	0	0	0							0	2					904508								0	HitCase	1	1		1			0					
-90450606	停下弹飞	2	1			1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0	0							0	1				904506061	904526	801020							0	HitCase	1	0		1			0					
-90450701	喷射冲锋刹车结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90450801	喷射冲锋撞墙	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90450901	正义降临-升	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451001	待机挑衅	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451101	链钩假动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451201	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451205	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451208	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12Di		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451301	喷射冲锋撞人结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451401	正义降临-落	2	5				0			4		0.1			-1								-1			1					0	0	0	0							0	1				904514011	904528	801090							0	HitCase	1	0		1			1					
-90451402	正义降临-落-预警	2	5				0			4		1			-1						FxYujing1M05S		-1			1					0	0	0	0							0	1													0	HitCase	1	0		1			0					
-90451501	喷射冲锋	1	1	1		1.5	0			4		3			-1								-1			1					0	0	0	0							0	1				904515011									0	HitCase	1	1		1			1					
-90451503	喷射冲锋-带人撞墙子弹	1	1	1		1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0	0							0	1				904515031									0	HitCase	1	1		1			0					
-90451504	吸人走	1	1	1		1.5	0			4		3			-1	1			0.05				-1			1					0	0	0	0							0	2													0	HitCase	1	1		1			0					
-90451505	停下弹飞	1	1	1		1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0	0							0	1				904515051									0	HitCase	1	0		1			0					
-90451601	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451605	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451608	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12Di		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451701	降落出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90451702	降落出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460101	蓄能炮	2	0.5		-0.7		30			4		1			-1					WeaponCase1	FxMe1BioMd005020Attack01Dandao		-1			1					0	0	0	0							0	1				904601011	904606	801045							0	HitCase		0		1			1					
-90460102	蓄能炮	2	0.5		0.7		30			4		1			-1					WeaponCase2	FxMe1BioMd005020Attack01Dandao		-1			1					0	0	0	0							0	1				904601021	904606	801045							0	HitCase		0		1			1					
-90460104	弹道提示-1	1	1	0	0.65	0	0			4		0.8			-1					WeaponCase1	FxYujingXian01		-1			1					0	0	0	0							0	1													0.8	HitCase		1		1			0					
-90460105	弹道提示-1	1	1	0	-0.65	0	0			4		0.8			-1					WeaponCase2	FxYujingXian01		-1			1					0	0	0	0							0	1													0.8	HitCase		1		1			0					
-90460106	弹道激发-2	1	1	0	0.65	0	0			4		0.2			-1					WeaponCase1	FxYujingXian02		-1			1					0	0	0	0							0	1													0	HitCase		1		1			0					
-90460107	弹道激发-2	1	1	0	-0.65	0	0			4		0.2			-1					WeaponCase2	FxYujingXian02		-1			1					0	0	0	0							0	1													0	HitCase		1		1			0					
-90460109	蓄能炮	2	0.5		-0.7		30			4		1			-1		FxMe1BioMd005020Attack01Shouji						-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460110	蓄能炮	2	0.5		0.7		30			4		1			-1		FxMe1BioMd005020Attack01Shouji						-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460201	待机挑衅	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460301	冷气喷射-准备	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460401	冷气喷射-前	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0	0							0	1					801006								0	HitCase	1	1		1			1					
-90460501	冷气喷射-后	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0	0							0	1					801006								0	HitCase	1	1		1			1					
-90460601	冷气喷射-右	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0	0							0	1					801006								0	HitCase	1	1		1			1					
-90460701	冷气喷射-左	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0	0							0	1					801006								0	HitCase	1	1		1			1					
-90460801	冷气喷射-收回	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90460901	爆炸飞跃-伤害子弹	2	4				0			4		0.1			-1								-1			1					0	0	0	0							0	2				904609011	801055	904612							0	HitCase	1	0		1			1					
-90460905	爆炸飞跃-爆炸特效	2	1				0			4		1			-1						FxMe1BioMd005020Attack09		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461001	后跳	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461101	转向	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461201	机枪扫射	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461202	机枪-左扫射伤害子弹	2	0.15				85		43	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612021	801024	904606							1	HitCase		0		1			1					
-90461203	机枪-左扫射伤害子弹	2	0.15				85		35	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612031	801024	904606							1	HitCase		0		1			1					
-90461204	机枪-左扫射伤害子弹	2	0.15				85		27	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612041	801024	904606							1	HitCase		0		1			1					
-90461205	机枪-左扫射伤害子弹	2	0.15				85		19	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612051	801024	904606							1	HitCase		0		1			1					
-90461206	机枪-左扫射伤害子弹	2	0.15				85		11	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612061	801024	904606							1	HitCase		0		1			1					
-90461207	机枪-左扫射伤害子弹	2	0.15				85		3	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612071	801024	904606							1	HitCase		0		1			1					
-90461208	机枪-左扫射伤害子弹	2	0.15				85		-5	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612081	801024	904606							1	HitCase		0		1			1					
-90461209	机枪-左扫射伤害子弹	2	0.15				85		-13	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612091	801024	904606							1	HitCase		0		1			1					
-90461210	机枪-左扫射伤害子弹	2	0.15				85		-21	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612101	801024	904606							1	HitCase		0		1			1					
-90461211	机枪-左扫射伤害子弹	2	0.15				85		-29	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612111	801024	904606							1	HitCase		0		1			1					
-90461212	机枪-左扫射伤害子弹	2	0.15				85		-37	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612121	801024	904606							1	HitCase		0		1			1					
-90461213	机枪-左扫射伤害子弹	2	0.15				85		-45	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0	0							0	1				904612131	801024	904606							1	HitCase		0		1			1					
-90461301	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461305	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461308	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461401	趴地	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461501	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461505	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461508	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461601	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461605	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
-90461608	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0	0							0	1													0	HitCase		0		1			0					
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+99410001	子弹发射器伤害子弹-直线	2	0.4				10			4		2		1	1		FxJiaojingAttack01Shouji				FxJiaojingAttack01		1			1					0	0	0								3							4	1				994100011	730104	801008							1	HitCase		0		1		1	0					
+99410002	角鲸导弹发射	2	1				0			4		10			-1						FxJiaojingAttack02		-1			1					0	0	0								0							0	1													-2	HitCase		0		1			0					
+99410003	角鲸导弹下落爆炸特效	2	1				0			4		10			-1						FxJiaojingAttack03		-1			1					0	0	0								3							0	1													0	HitCase		0		1			0					
+99410004	角鲸导弹预警	2	1				0			4		0.7			-1						FxNpcYujing01		-1			1					0	0	0								3							0	1													0	HitCase		0		1			0					
+99410005	角鲸导弹伤害子弹	2	1				0			1		0.1			-1		FxJiaojingAttack03Shouji						-1			1					0	0	0								3							0	1				994100051	801005								0	HitCase	1	0		1			0					
+99410006	三阶露西亚击倒子弹	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1				994100061									0	HitCase		0		1			0					
+99410007	子弹发射器伤害子弹-阿基米德曲线	2	0.4				8			4		1.5		1	1		FxJiaojingAttack01Shouji				FxJiaojingAttack01		1			2	45	10	0	10	0	0	0								3							4	1				994100071	730104	801008							1	HitCase		0		1		1	0					
+99410008	角鲸的角受击	2	0.1				0			4		1			-1						FxJiaojingShoujiLight1		-1			1					0	0	0								0							0	1													1.5	HitCase		0		1			0					
+99410009	角鲸子弹发射器受击	2	0.1				0			4		1			-1						FxJiaojingShoujiLight2		-1			1					0	0	0								0							0	1													1.5	HitCase		0		1			0					
+99410010	扇形预警子弹	2	0.1				0			4		0.1			-1						FxYujingShan01		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410011	环形预警子弹	2	0.1				0			4		0.1			-1						FxYujingHuan01		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410101	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410201	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410301	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410401	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410501	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99410601	技能id占用	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99450001	机枪-扇形扫射伤害子弹子弹	1	0.1				85		-80	4		2			-1					hitcase	FxR2LiangAttack11Dandao		-1			1					0	0	0								0							0	1				994500011	811008								0	HitCase		0		1			1					
+99450010	构造体自爆-伤害子弹	2	3				0			6		0.1			-1		FxMo1BraveMd010101Attack01Shouji						-1			1					0	0	0								0							0	1				994500101	801075	816003							0	HitCase		0		1			1					
+99450011	构造体自爆范围预警	2	3				0			1		1			-1						FxYujing1M10S		-1			1					0	0	0								0							0	1					900023								0	HitCase	1	0		1			0					
+99450012	构造体爆炸特效1	2	3				0			1		3			-1						FxMo1BraveMd010101Attack01		-1			1					0	0	0								0							0	1													0	HitCase		0		0			0					
+99450013	爆炸范围预警2	2	3				0			1		0.1			-1						FxYujingRing		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+99450015	主线7-10远程火力-伤害子弹	2	6				0			4		0.1			-1		FxMo1BraveMd010101Attack01Shouji						-1			1					0	0	0								0							0	1				994500151	700321	730072							0	HitCase		0		1			0					
+99450016	主线7-10远程火力-范围预警	2	4				0			4		1			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+99450017	主线7-10远程火力-爆炸特效	2	4				0			4		3			-1						FxHongzha		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+99450101	激光	1	2	15		7	0			2		2.8			-1								-1			1					0	0	0								0							0	1				994501011	700210								0	HitCase	1	0		1			0					
+90400001	判定玩家战力区域	1	0.1	3	3	-2	0			4	4	0.1	0.05		-1								-1			1					0	0	0								0							0	1					904049								1	HitCase		0		1			0	0				
+90400002	判定玩家战力区域	1	3	3	-2		0			4		0.05			-1								-1			1					0	0	0								0							0	1					904052								0	HitCase	1	0		1			0					
+90400101	野牛烈焰撞击-伤害子弹	1	3	2		3	0			4		3.7			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	4				904001011	801062	904002							0	HitCase	1	1		1			1					
+90400102	野牛烈焰撞击-踩踏子弹	1	2	2			0			4		3.7			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1					904004	904005							0	HitCase	1	1		1			1					
+90400108	野牛烈焰撞击-范围提示	1	2	25		12.5	0			4		1.15			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90400112	证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400113	证明技能结束	2	0.1				0			1		0.1			-1								-1			1					0	0	0								0							0	1					904053								0	HitCase		0		1			0					
+90400201	野牛炎刃横扫-伤害子弹	1	7	5	-0.5	2	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1				904002011	801050	904014							0	HitCase	1	0		1			1					
+90400202	野牛炎刃横扫-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400203	野牛炎刃横扫-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400204	野牛炎刃横扫-范围提示	1	7	5	-0.5	2	0			4		0.9			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90400301	野牛后踢-伤害子弹	1	2	4	0	-2	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1				904003011	801040	904019	904018						0	HitCase	1	0		1			1	1				
+90400302	野牛后踢-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400303	野牛后踢-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400304	野牛后踢-范围提示	1	2	4	0	-2	0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90400305	野牛后踢-闪红提示	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400306	野牛后踢-顿帧BUFF标记	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400308	野牛后踢-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400401	野牛雪狐击-伤害子弹	2	5	0	0	0	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1				904004011	801065	904028	904023						0	HitCase	1	0		1			1					
+90400402	野牛雪狐击-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400403	野牛雪狐击-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400404	野牛雪狐击-范围提示	2	5	0	0	0	0			4		1.9			-1								-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90400407	野牛雪狐击-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400408	野牛雪狐击-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400501	野牛炎爆-伤害子弹	2	1	0	0	0	10			4		5			1		FxMe1CattleMd000002Attack05Shouji			Bone17			1			1					0	0	0								0	10		1	90400509	1		1	1				904005011	904032								1	HitCase	1	0	1	1			1					
+90400502	野牛炎爆-伤害子弹-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400503	野牛炎爆-伤害子弹-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400504	野牛炎爆-范围提示	1	2	30	0	15	0			4		1			-1								-1			1					0	0	0								0							1	1													0	HitCase	1	0		1			0					
+90400507	野牛炎爆-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400508	野牛炎爆-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400509	野牛炎爆-伤害子弹-爆炸子子弹	2	3				0			4		0.1			-1								-1			1					0	0	0								2	10		1	90400511	1		0	1					801052								0	HitCase		0		1			0					
+90400510	爆炸特效	2	0.1				0			4		0.1			-1						FxMe1CattleMd000002Attack05Shouji		-1			1					0	0	0								2							0	1													0	HitCase		0		1			0					
+90400511	野牛炎爆-伤害子弹	2	1	0	0	0	10			4		5			1					Bone17	FxMe1CattleMd000002Attack05Dandao		1			1					0	0	0								0							1	1													1	HitCase	1	0	1	1			0					
+90400601	野牛燃烧吧牛宝宝-伤害子弹	2	6	0	0	0	0			4		0.1			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1					801057	904046							0	HitCase	1	0		1			1					
+90400602	野牛燃烧吧牛宝宝-震屏	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400603	野牛燃烧吧牛宝宝-特效	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400604	野牛燃烧吧牛宝宝-范围提示	2	6	0	0	0	0			4		0.8			-1		FxMe1CattleMd000002Shouji						-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90400607	野牛燃烧吧牛宝宝-证明技能开始	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400608	野牛燃烧吧牛宝宝-证明技能结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400609	野牛燃烧吧牛宝宝-眩晕	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400610	野牛燃烧吧牛宝宝-减速	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400611	野牛燃烧吧牛宝宝-燃烧	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400703	卧牛前摇-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400801	卧牛中-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400802	卧牛中-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400803	卧牛中-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400902	卧牛结束-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90400903	卧牛结束-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90401101	锤断腿中-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90401102	锤断腿中-2	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90401103	锤断腿中-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90401203	锤断腿结束-3	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90401301	野牛转向-1	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90450101	战斧斜劈	1	5	2.5		1.75	0			4		0.1			-1		FxMe1BioMd005010Attack01Shouji01						-1			1					0	0	0								0							0	3				904501011	904522	801053							0	HitCase	1	0		1			1	1				
+90450201	战斧上挑	1	5	2.5		1.75	0			4		0.1			-1		FxMe1BioMd005010Attack02Shouji01						-1			1					0	0	0								0							0	3				904502011	904523	801060							0	HitCase	1	0		1			1	1				
+90450301	链钩发射	2	0.5				30			4		0.3			-1		FxMe1BioMd005010Attack03Shouji01						-1			1					0	0	0								0							0	1				904503011	904503	904524	801040			904501			0	HitCase	1	0		1			1					
+90450302	链钩发射	2	30				0			4		0.1			-1								-1			1					0	0	0								1							0	1					904502								0	HitCase		0		1			0					
+90450303	链钩发射	2	30				0			4		0.2			-1								-1			1					0	0	0								1							0	1					904502								0	HitCase		0		1	0.05		0					
+90450304	链钩发射	2	30				0			4		0.3			-1								-1			1					0	0	0								1							0	1					904502								0	HitCase		0		1	0.1		0					
+90450305	链钩发射	2	30				0			4		0.4			-1								-1			1					0	0	0								1							0	1					904502								0	HitCase		0		1	0.15		0					
+90450306	链钩发射	2	30				0			4		0.5			-1								-1			1					0	0	0								1							0	1					904502								0	HitCase		0		1	0.2		0					
+90450309	弹道提示-1	1	1	0		0	0			4		1.1			-1						FxYujingXian01		-1			1					0	0	0								0							0	1													1.5	HitCase		1		1			0					
+90450310	弹道激发-2	1	1	0		0	0			4		1			-1						FxYujingXian02		-1			1					0	0	0								0							0	1													1.5	HitCase		1		1			0					
+90450401	链钩回拽	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90450501	喷射准备	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90450601	喷射冲锋	2	0.8			1	0			4		3			-1								-1			1					0	0	0								0							0	1				904506011	801030	904506	904525						0	HitCase	1	1		1			1					
+90450604	喷射冲锋-带人撞墙子弹	2	1.2			1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0								3							0	1				904506041	904515	904527	801050						0	HitCase	1	1		1			0					
+90450605	吸人走	2	0.8			1.5	0			4		3			-1	1			0.05				-1			1					0	0	0								0							0	2					904508								0	HitCase	1	1		1			0					
+90450606	停下弹飞	2	1.2			1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0								3							0	1				904506061	904526	801020							0	HitCase	1	0		1			0					
+90450701	喷射冲锋刹车结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90450801	喷射冲锋撞墙	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90450901	正义降临-升	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451001	待机挑衅	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451101	链钩假动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451201	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451205	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451208	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12Di		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451301	喷射冲锋撞人结束	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451401	正义降临-落	2	5				0			4		0.1			-1								-1			1					0	0	0								0							0	1				904514011	904528	801090							0	HitCase	1	0		1			1					
+90451402	正义降临-落-预警	2	5				0			4		1			-1						FxYujing1M05S		-1			1					0	0	0								0							0	1													0	HitCase	1	0		1			0					
+90451501	喷射冲锋	1	1	1		1.5	0			4		3			-1								-1			1					0	0	0								0							0	1				904515011									0	HitCase	1	1		1			1					
+90451503	喷射冲锋-带人撞墙子弹	1	1	1		1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0								0							0	1				904515031									0	HitCase	1	1		1			0					
+90451504	吸人走	1	1	1		1.5	0			4		3			-1	1			0.05				-1			1					0	0	0								0							0	2													0	HitCase	1	1		1			0					
+90451505	停下弹飞	1	1	1		1.5	0			4		0.1			-1		FxMe1BioMd005010Attack06Shouji01						-1			1					0	0	0								0							0	1				904515051									0	HitCase	1	0		1			0					
+90451601	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451605	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451608	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005010Attack12Di		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451701	降落出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90451702	降落出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460101	蓄能炮	2	0.5		-0.7		30			4		1			-1					WeaponCase1	FxMe1BioMd005020Attack01Dandao		-1			1					0	0	0								0							0	1				904601011	904606	801045							0	HitCase		0		1			1					
+90460102	蓄能炮	2	0.5		0.7		30			4		1			-1					WeaponCase2	FxMe1BioMd005020Attack01Dandao		-1			1					0	0	0								0							0	1				904601021	904606	801045							0	HitCase		0		1			1					
+90460104	弹道提示-1	1	1	0	0.65	0	0			4		0.8			-1					WeaponCase1	FxYujingXian01		-1			1					0	0	0								0							0	1													0.8	HitCase		1		1			0					
+90460105	弹道提示-1	1	1	0	-0.65	0	0			4		0.8			-1					WeaponCase2	FxYujingXian01		-1			1					0	0	0								0							0	1													0.8	HitCase		1		1			0					
+90460106	弹道激发-2	1	1	0	0.65	0	0			4		0.2			-1					WeaponCase1	FxYujingXian02		-1			1					0	0	0								0							0	1													0	HitCase		1		1			0					
+90460107	弹道激发-2	1	1	0	-0.65	0	0			4		0.2			-1					WeaponCase2	FxYujingXian02		-1			1					0	0	0								0							0	1													0	HitCase		1		1			0					
+90460109	蓄能炮	2	0.5		-0.7		30			4		1			-1		FxMe1BioMd005020Attack01Shouji						-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460110	蓄能炮	2	0.5		0.7		30			4		1			-1		FxMe1BioMd005020Attack01Shouji						-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460201	待机挑衅	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460301	冷气喷射-准备	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460401	冷气喷射-前	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0								0							0	1					801006								0	HitCase	1	1		1			1					
+90460501	冷气喷射-后	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0								0							0	1					801006								0	HitCase	1	1		1			1					
+90460601	冷气喷射-右	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0								0							0	1					801006								0	HitCase	1	1		1			1					
+90460701	冷气喷射-左	1	2.5	6		3.5	0			4		1.1			-1	1	FxMe1BioMd005020Attack01Shouji		0.3				-1			1					0	0	0								0							0	1					801006								0	HitCase	1	1		1			1					
+90460801	冷气喷射-收回	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90460901	爆炸飞跃-伤害子弹	2	4				0			4		0.1			-1								-1			1					0	0	0								0							0	2				904609011	801055	904612							0	HitCase	1	0		1			1					
+90460905	爆炸飞跃-爆炸特效	2	1				0			4		1			-1						FxMe1BioMd005020Attack09		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461001	后跳	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461101	转向	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461201	机枪扫射	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461202	机枪-左扫射伤害子弹	2	0.15				85		43	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612021	801024	904606							1	HitCase		0		1			1					
+90461203	机枪-左扫射伤害子弹	2	0.15				85		35	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612031	801024	904606							1	HitCase		0		1			1					
+90461204	机枪-左扫射伤害子弹	2	0.15				85		27	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612041	801024	904606							1	HitCase		0		1			1					
+90461205	机枪-左扫射伤害子弹	2	0.15				85		19	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612051	801024	904606							1	HitCase		0		1			1					
+90461206	机枪-左扫射伤害子弹	2	0.15				85		11	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612061	801024	904606							1	HitCase		0		1			1					
+90461207	机枪-左扫射伤害子弹	2	0.15				85		3	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612071	801024	904606							1	HitCase		0		1			1					
+90461208	机枪-左扫射伤害子弹	2	0.15				85		-5	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612081	801024	904606							1	HitCase		0		1			1					
+90461209	机枪-左扫射伤害子弹	2	0.15				85		-13	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612091	801024	904606							1	HitCase		0		1			1					
+90461210	机枪-左扫射伤害子弹	2	0.15				85		-21	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612101	801024	904606							1	HitCase		0		1			1					
+90461211	机枪-左扫射伤害子弹	2	0.15				85		-29	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612111	801024	904606							1	HitCase		0		1			1					
+90461212	机枪-左扫射伤害子弹	2	0.15				85		-37	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612121	801024	904606							1	HitCase		0		1			1					
+90461213	机枪-左扫射伤害子弹	2	0.15				85		-45	4		2			-1		FxMe1BioMd005020Attack12Shouji			WeaponCase	FxMe1BioMd005020Attack12Dandao		-1			1					0	0	0								0							0	1				904612131	801024	904606							1	HitCase		0		1			1					
+90461301	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461305	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461308	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461401	趴地	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461501	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461505	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461508	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461601	出生动作	2	0.1				0			4		0.1			-1								-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461605	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					
+90461608	出生动作	2	0.1				0			4		2			-1						FxMe1BioMd005020Attack13Di		-1			1					0	0	0								0							0	1													0	HitCase		0		1			0					

@@ -53,9 +53,9 @@ end
 
 function XUiObtain:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnCancel, "onClick", self.OnBtnCancelClick)
-    self:RegisterListener(self.BtnSure, "onClick", self.OnBtnSureClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnCancel, self.OnBtnCancelClick)
+    self:RegisterClickEvent(self.BtnSure, self.OnBtnSureClick)
 end
 -- auto
 --初始化音效
@@ -71,6 +71,7 @@ function XUiObtain:OnBtnCancelClick(...)
     if self.CancelCallback then
         self.CancelCallback()
     end
+    self:CheakItemOverLimit()
 end
 
 function XUiObtain:OnBtnSureClick(...)
@@ -79,6 +80,7 @@ function XUiObtain:OnBtnSureClick(...)
     if self.OkCallback then
         self.OkCallback()
     end
+    self:CheakItemOverLimit()
 end
 
 function XUiObtain:OnBtnBackClick(...)
@@ -87,6 +89,11 @@ function XUiObtain:OnBtnBackClick(...)
     if self.CancelCallback then
         self.CancelCallback()
     end
+    self:CheakItemOverLimit()
+end
+
+function XUiObtain:CheakItemOverLimit()
+    --XUiManager.TipMsg(CS.XTextManager.GetText("ItemOverLimit"))
 end
 
 function XUiObtain:OnAwake()
@@ -108,7 +115,8 @@ function XUiObtain:OnStart(rewardGoodsList, title, closecallback, surecallback)
     self:Refresh(rewardGoodsList)
     self:Layout()
 
-    XUiHelper.PlayAnimation(self, "AniObtain")
+    self:PlayAnimation("AniObtain")
+    --XUiHelper.PlayAnimation(self, "AniObtain")
 
 end
 

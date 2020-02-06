@@ -7,7 +7,7 @@ function XUiPanelTrialTaskList:Ctor(ui, uiRoot, parent)
     self.UiRoot = uiRoot
     self.Parent = parent
     self.animationunlockcb = function()self:HandleRewardTypeTips()end
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
     self:InitUiAfterAuto()
 end
 
@@ -153,39 +153,6 @@ end
 function XUiPanelTrialTaskList:OpenFxFinish(state)
     self.CurOpenFxState = state
 end
-
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelTrialTaskList:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelTrialTaskList:AutoInitUi()
-    self.SViewTaskList = self.Transform:Find("SViewTaskList"):GetComponent("ScrollRect")
-    self.PanelTrialGrid = self.Transform:Find("SViewTaskList/Viewport/PanelTrialGrid")
-end
-
-function XUiPanelTrialTaskList:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelTrialTaskList:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelTrialTaskList:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
-end
-
-function XUiPanelTrialTaskList:AutoAddListener()
-end
--- auto
 
 function XUiPanelTrialTaskList:OnSViewTaskListClick(eventData)
 end

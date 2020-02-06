@@ -11,7 +11,7 @@ function XUiTip:OnStart(data, hideSkipBtn)
     self.SpecialSoundMap[musicKey] = XSoundManager.UiBasicsMusic.Return
     self.HideSkipBtn = hideSkipBtn
     self.Data = data
-    CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.Tip_Big)
+    self:PlayAnimation("AnimStart")
 end
 
 function XUiTip:OnEnable()
@@ -60,9 +60,9 @@ end
 
 function XUiTip:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnGet, "onClick", self.OnBtnGetClick)
-    self:RegisterListener(self.BtnOk, "onClick", self.OnBtnOkClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnGet, self.OnBtnGetClick)
+    self:RegisterClickEvent(self.BtnOk, self.OnBtnOkClick)
 end
 -- auto
 function XUiTip:OnBtnBackClick(...)
@@ -115,7 +115,7 @@ function XUiTip:Refresh(data)
     else
         self.TemplateId = data.TemplateId and data.TemplateId or data.Id
     end
-
+    
     if self.TemplateId == XDataCenter.ItemManager.ItemId.AndroidHongKa or 
         self.TemplateId == XDataCenter.ItemManager.ItemId.IosHongKa then
         self.TemplateId = XDataCenter.ItemManager.ItemId.HongKa

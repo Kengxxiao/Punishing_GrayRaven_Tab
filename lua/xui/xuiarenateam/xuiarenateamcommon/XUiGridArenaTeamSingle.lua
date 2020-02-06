@@ -40,8 +40,18 @@ function XUiGridArenaTeamSingle:OnBtnHeadClick(eventData)
 end
 
 function XUiGridArenaTeamSingle:OnBtnInviteDisClick(eventData)
-    local text = CS.XTextManager.GetText("ArenaTeamInvitError")
-    XUiManager.TipError(text)
+    -- if not self.Data then
+    --     return
+    -- end
+
+    -- local text = ""
+    -- if self.Data.ChallengeId > 0 then
+    --     text = CS.XTextManager.GetText("ArenaTeamLevelError")
+    -- else
+    --     text = CS.XTextManager.GetText("ArenaTeamChallengeError")
+    -- end
+
+    -- XUiManager.TipError(text)
 end
 
 function XUiGridArenaTeamSingle:OnBtnInviteClick(eventData)
@@ -103,9 +113,19 @@ function XUiGridArenaTeamSingle:Refresh()
     if self.Data.ArenaLevel then
         self.ArenaLevel:SetActiveEx(true)
         local isSameId = self.Data.ChallengeId == XDataCenter.ArenaManager.GetCurChallengeId()
-        if self.BtnInviteDis and not XTool.UObjIsNil(self.BtnInviteDis) then
+        if self.BtnInviteDis and not XTool.UObjIsNil(self.BtnInviteDis) and (not isInvited) then
             self.BtnInviteDis.gameObject:SetActiveEx(not isSameId)
         end
+
+        if not isSameId and self.TxtInviteDis then
+            self.TxtNotInvited.gameObject:SetActiveEx(isSameId)
+            if self.Data.ChallengeId > 0 then
+                self.TxtInviteDis.text = CS.XTextManager.GetText("ArenaTeamLevelError")
+            else
+                self.TxtInviteDis.text = CS.XTextManager.GetText("ArenaTeamChallengeError")
+            end
+        end
+
         self.RImgArenaLevel.gameObject:SetActiveEx(true)
         local arenaCfg = XArenaConfigs.GetArenaLevelCfgByLevel(self.Data.ArenaLevel)
         self.RImgArenaLevel:SetRawImage(arenaCfg.Icon)

@@ -10,7 +10,7 @@ R1LuxiyaMd019031		Death	0.1
 R1LuxiyaMd019031		Hit1	0.05
 R1LuxiyaMd019031		Hit2	0.05
 R1LuxiyaMd019031		Behitfly	0.05
-R1LuxiyaMd019031		Hoverhit	0
+R1LuxiyaMd019031		Hoverhit	0.05
 R1LuxiyaMd019031		Falldown	0.1
 R1LuxiyaMd019031		Hitdown	0.1
 R1LuxiyaMd019031		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R1LuxiyaMd019031		TurnLeft	0.1
 R1LuxiyaMd019031		TurnRight	0.1
 R1LuxiyaMd019031		StraightBefore	0.1
 R1LuxiyaMd019031		StraightAfter	0.1
+R1LuxiyaMd019031		UiStand1	0.1
 R1LuxiyaMd019031		Win	0
 R1LuxiyaMd019031		Win2	0.1
 R1LuxiyaMd019031		Runb	0.2
@@ -112,5 +113,5 @@ R1LuxiyaMd019031	Walkr	Walkb	0.1
 R1LuxiyaMd019031	Walkr	Walkl	0.2
 R1LuxiyaMd019031	Hit3	Stand2	0
 R1LuxiyaMd019031	Hit4	Stand2	0
-R1LuxiyaMd019031	RunStart	Run	0.05
+R1LuxiyaMd019031	RunStart	Run	0
 R1LuxiyaMd019031	RunStart	RunStartEnd01	0.1

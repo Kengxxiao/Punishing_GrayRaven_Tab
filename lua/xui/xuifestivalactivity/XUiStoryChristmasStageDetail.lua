@@ -43,11 +43,17 @@ function XUiStoryChristmasStageDetail:OnBtnEnterClick()
 end
 
 function XUiStoryChristmasStageDetail:PlayStoryId(movieId, stageId)
-    if self.RootUi then
-        self.RootUi:ClearNodesSelect()
-    end
-    CS.Movie.XMovieManager.Instance:PlayById(movieId)
+    self.RootUi:ClearNodesSelect()
+    CS.Movie.XMovieManager.Instance:PlayById(movieId, function()
+        self.RootUi:EndScrollViewMove()
+    end)
     self:Close()
+end
+
+function XUiStoryChristmasStageDetail:CloseDetailWithAnimation()
+    self:PlayAnimation("AnimDisableEnd", function()
+        self:Close()
+    end)
 end
 
 function XUiStoryChristmasStageDetail:OnDestroy()

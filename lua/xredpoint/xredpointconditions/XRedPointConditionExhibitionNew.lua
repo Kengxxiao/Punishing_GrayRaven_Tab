@@ -12,6 +12,9 @@ function XRedPointConditionExhibitionNew.GetSubEvents()
 end
 
 function XRedPointConditionExhibitionNew.Check(characterId)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterExhibition) then
+        return false
+    end
     characterId = type(characterId) == "table" and characterId[1] or characterId
     return XDataCenter.ExhibitionManager.CheckNewCharacterReward(characterId)
 end

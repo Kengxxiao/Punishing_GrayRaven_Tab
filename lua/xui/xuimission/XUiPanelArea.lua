@@ -5,6 +5,7 @@ function XUiPanelArea:Ctor(ui,sectionData,parent)
     self.Transform = ui.transform
     self.SectionData = sectionData
     self.RootUi = parent
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self:Init()
 end
@@ -40,13 +41,13 @@ function XUiPanelArea:InitAutoScript()
 end
 
 function XUiPanelArea:AutoInitUi()
-    self.PanelLock = self.Transform:Find("PanelLock")
-    self.TxtAreaLock = self.Transform:Find("PanelLock/TxtAreaLock"):GetComponent("Text")
-    self.PanelNow = self.Transform:Find("PanelNow")
-    self.RImgChapter = self.Transform:Find("PanelNow/RImgChapter"):GetComponent("RawImage")
-    self.TxtAreaNow = self.Transform:Find("PanelNow/TxtAreaNow"):GetComponent("Text")
-    self.PanelNor = self.Transform:Find("PanelNor")
-    self.TxtAreaNor = self.Transform:Find("PanelNor/TxtAreaNor"):GetComponent("Text")
+    -- self.PanelLock = self.Transform:Find("PanelLock")
+    -- self.TxtAreaLock = self.Transform:Find("PanelLock/TxtAreaLock"):GetComponent("Text")
+    -- self.PanelNow = self.Transform:Find("PanelNow")
+    -- self.RImgChapter = self.Transform:Find("PanelNow/RImgChapter"):GetComponent("RawImage")
+    -- self.TxtAreaNow = self.Transform:Find("PanelNow/TxtAreaNow"):GetComponent("Text")
+    -- self.PanelNor = self.Transform:Find("PanelNor")
+    -- self.TxtAreaNor = self.Transform:Find("PanelNor/TxtAreaNor"):GetComponent("Text")
 end
 
 function XUiPanelArea:GetAutoKey(uiNode,eventName)

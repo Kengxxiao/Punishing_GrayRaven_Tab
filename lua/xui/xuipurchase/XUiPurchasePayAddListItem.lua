@@ -100,6 +100,10 @@ function XUiPurchasePayAddListItem:Init(uiroot,parent)
 end
 
 function XUiPurchasePayAddListItem:BtnGetClick()
+    if not self.Id or PurchaseManager.AccumlateRewardGeted(self.Id) then
+        return       
+    end
+
     local payid = PurchaseManager.GetAccumlatePayId()
     PurchaseManager.GetAccumulatePayReq(payid,self.Id,self.RewardGetedCb)
 end

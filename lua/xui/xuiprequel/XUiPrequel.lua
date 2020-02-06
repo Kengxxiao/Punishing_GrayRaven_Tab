@@ -131,7 +131,10 @@ end
 
 -- [支线剧情]
 function XUiPrequel:Switch2Regional(coverData)
-    XUiHelper.PlayAnimation(self, "AniPrequelRegionalBegin", function()
+
+    self:PlayAnimation("AniPrequelRegionalBegin", function()
+        self.IsRegionalAnimBegin = false
+    end, function()
         self.IsRegionalAnimBegin = true
         self.PanelRegional.gameObject:SetActive(true)
         self.PanelChallengeMode.gameObject:SetActive(false)
@@ -139,8 +142,6 @@ function XUiPrequel:Switch2Regional(coverData)
         self.CurrentMode = MODE_REGIONAL
         local coverDatas = XPrequelConfigs.GetPrequelCoverInfoById(coverData.CoverId)
         self:ResetBackground(coverDatas.CoverBg)
-    end, function()
-        self.IsRegionalAnimBegin = false
     end)
 end
 
@@ -181,7 +182,7 @@ end
 function XUiPrequel:Switch2RewardList(chapterId)
     self.CheckReward.GameObject:SetActive(true)
     self.CheckReward:UpdateRewardList(chapterId)
-    self:PlayAnimation("CheckRewardEnable")
+    self:PlayAnimation("AniPrequelCheckRewardBegin")
 end
 
 -- [刷新倒计时]
@@ -206,17 +207,17 @@ end
 -- [进入剧情确认框]
 function XUiPrequel:OnEnterStory(stageId, callback)
     self.FightDailog.GameObject:SetActive(true)
-    XUiHelper.PlayAnimation(self, "AniBeginPanelEnterFightDialog", function()
+    self:PlayAnimation("AniBeginPanelEnterFightDialog", nil, function()
         self.FightDailog:OnShowStoryDialog(stageId, callback)
-    end, nil)
+    end)
 end
 
 -- [进入战斗确认框]
 function XUiPrequel:OnEnterFight(stageId, callback)
     self.FightDailog.GameObject:SetActive(true)
-    XUiHelper.PlayAnimation(self, "AniBeginPanelEnterFightDialog", function()
+    self:PlayAnimation("AniBeginPanelEnterFightDialog", nil, function()
         self.FightDailog:OnShowFightDialog(stageId, callback)
-    end, nil)
+    end)
 end
 
 -- [切换背景]

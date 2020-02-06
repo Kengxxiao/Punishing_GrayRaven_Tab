@@ -18,6 +18,8 @@ StageId	Title	Description	Icon	PhaseDescription
 30100814	热能武装	卡列尼娜三消或是释放大招后会获得热能，在热能达到50%后进入强化状态并获得一定数量的火属性伤害加成。在强化状态下，热能每秒减少5%。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Kalie01.png	角色教学
 30100815	超频共振	七实普攻与消球会积攒能量，能量积攒至一定程度可释放必杀技，最多可释放3次。释放必杀技后，七实进入超频状态，其普通攻击将转化为火属性伤害，并使命中的目标降低一定的火属性抗性	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Qishi01.png	角色教学
 30100816	赤渊-刀光意	露西亚三消蓝色信号球时会积攒剑意，再次进行任意一次三消即可触发一次后撤闪避，并进入带有霸体的剑意状态。在该状态中，所有信号球都可以转化为剑意，在原有信号球数量基础上会额外获得两个信号球。点击剑意球可释放剑风。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Luxiyaaerfa02.png	角色教学
+30100817	矢量色块	任意三消后，再次消除蓝色信号球时，艾拉会原地蓄力牵引附近敌人，并使自己获得最大生命值8%的护盾，持续7秒，随后重击前方目标，造成大量的物理伤害。在艾拉蓄力过程中受到的伤害减少70%。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Aila01.png	角色教学
+30100818	寰宇振荡	任意三消后，再次消除红色信号球时，渡边会化为暗影对前方区域持续攻击，每次攻击都会造成暗影伤害，结束后进入暗影强化状态。在此状态中，普通攻击额外附加暗属性伤害，并且追刃也会额外附加暗属性伤害，持续5秒。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Dubian01.png	角色教学
 30100155	激光束群	任意3消后下次红球技能将释放激光束群。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Lifu01.png	角色教学
 30100156	EX切割风暴	任意3消后，再次消除黄球时，七实将释放EX-切割风暴，对周围的敌人持续攻击8次，每次造成一定的物理伤害。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1Qishi01.png	角色教学
 30100157	超算空间中单个技能球可算三消，红球触发被动	任意3消后，4秒内再次消除红色信号时，露西亚进入爆发状态，将使用双刀术代替普通攻击。	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR1luxiya01.png	角色教学

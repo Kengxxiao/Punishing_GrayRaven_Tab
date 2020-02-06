@@ -109,7 +109,7 @@ end
 
 function XUiPanelDetailEquipItem:OnBtnVoteClick(...)
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self.GameObject, "AniPanelEquipInfoVote")
+    --XUiHelper.PlayAnimation(self.GameObject, "AniPanelEquipInfoVote")
     XDataCenter.VoteManager.AddVote(self.VoteId)
 end
 

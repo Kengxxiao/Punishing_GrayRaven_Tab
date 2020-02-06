@@ -308,10 +308,10 @@ function XLuaUiManager.SetMask(visible)
     CsXUiManager.Instance:SetMask(visible)
 end
 
---设置animationMask，visible=true时不能操作，2秒后会展示菊花
-function XLuaUiManager.SetAnimationMask(visible)
+--设置animationMask，tag标签,visible=true时不能操作，2秒后会展示菊花
+function XLuaUiManager.SetAnimationMask(tag,visible)
     visible = visible and true or false
-    CsXUiManager.Instance:SetAnimationMask(visible)
+    CsXUiManager.Instance:SetAnimationMask(tag,visible)
 end
 
 function XLuaUiManager.ClearMask()

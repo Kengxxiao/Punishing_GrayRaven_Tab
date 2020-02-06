@@ -79,7 +79,7 @@ function XDynamicTableNormal:OnDynamicTableEvent(event, index, grid)
         return
     end
 
-    if not self.Delegate.OnDynamicTableEvent then
+    if not self.Delegate.OnDynamicTableEvent and not self.DynamicEventDelegate then
         XLog.Warning("XDynamicTableNormal Delegate func OnDynamicTableEvent is nil,Please Setup First!!")
         return
     end
@@ -103,7 +103,7 @@ function XDynamicTableNormal:OnDynamicTableEvent(event, index, grid)
 
         end
     end
-
+    
     if event == DYNAMIC_DELEGATE_EVENT.DYNAMIC_GRID_ATINDEX then
         proxy.Index = index
         proxy.DynamicGrid = grid

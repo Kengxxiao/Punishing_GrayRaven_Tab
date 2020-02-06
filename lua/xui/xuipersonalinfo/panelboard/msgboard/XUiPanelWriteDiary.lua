@@ -65,8 +65,8 @@ end
 
 function XUiPanelWriteDiary:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnConfirm, "onClick", self.OnBtnConfirmClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnConfirm, self.OnBtnConfirmClick)
 end
 -- auto
 

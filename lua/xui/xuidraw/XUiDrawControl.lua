@@ -60,12 +60,16 @@ end
 function XUiDrawControl:OnDraw(drawCount)
     local info
     local list
+    
+    if XDataCenter.EquipManager.CheakBoxOverLimitOfDraw() then
+       return 
+    end
 
     if not XDataCenter.ItemManager.DoNotEnoughBuyAsset(self.DrawInfo.UseItemId,
-    self.DrawInfo.UseItemCount,
-    drawCount,
-    function() self.UiDraw:UpdateItemCount() end,
-    "DrawNotEnoughError") then
+            self.DrawInfo.UseItemCount,
+            drawCount,
+            function() self.UiDraw:UpdateItemCount() end,
+            "DrawNotEnoughError") then
         return
     end
 
@@ -84,16 +88,16 @@ function XUiDrawControl:OnDraw(drawCount)
         characterRecord.Record()
 
         XDataCenter.DrawManager.DrawCard(self.DrawInfo.Id, drawCount, function(drawInfo, rewardList)
-            XDataCenter.AntiAddictionManager.BeginDrawCardAction()
-            if self.DrawCb then
-                self.DrawCb()
-            end
+                XDataCenter.AntiAddictionManager.BeginDrawCardAction()
+                if self.DrawCb then
+                    self.DrawCb()
+                end
 
-            self:Update(drawInfo)
-            info = drawInfo
-            list = rewardList
-            self.UiDraw:HideUiView(onAnimFinish)
-        end)
+                self:Update(drawInfo)
+                info = drawInfo
+                list = rewardList
+                self.UiDraw:HideUiView(onAnimFinish)
+            end)
     end
 end
 

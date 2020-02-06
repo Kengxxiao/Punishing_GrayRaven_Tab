@@ -162,7 +162,7 @@ function XUiDormFieldGuide:Fielguildsortfun(a, b)
 end
 
 function XUiDormFieldGuide:OnStart(suitId)
-    self.HaveFurIds = FurnitureManager.GetTotalFurnitureIds() or {}
+    self.HaveFurIds = DormManager.FurnitureUnlockList or {}
     self.FileGuideData = XFurnitureConfigs.GetFieldGuideDatas()
     self:InitEnterCfg()
     local id = suitId

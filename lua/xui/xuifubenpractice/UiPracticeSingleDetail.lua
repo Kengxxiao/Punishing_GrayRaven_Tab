@@ -58,6 +58,12 @@ function XUiPracticeSingleDetail:OnBtnEnterClick()
     end
 end
 
+function XUiPracticeSingleDetail:CloseWithAnimation()
+    self:PlayAnimation("AnimDisableEnd", function()
+        self:Close()
+    end)
+end
+
 function XUiPracticeSingleDetail:UpdateReward()
     local stageCfg = XDataCenter.FubenManager.GetStageCfg(self.StageId)
     local stageInfo = XDataCenter.FubenManager.GetStageInfo(self.StageId)

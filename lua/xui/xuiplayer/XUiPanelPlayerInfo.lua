@@ -27,6 +27,7 @@ function XUiPanelPlayerInfo:OnStart()
     XRedPointManager.AddRedPointEvent(self.ImgExhibitionNew, self.OnCheckExhibition, self, {XRedPointConditions.Types.CONDITION_EXHIBITION_NEW})
     XRedPointManager.AddRedPointEvent(self.NewHead, self.OnCheckHeadPotrait, self, {XRedPointConditions.Types.CONDITION_HEADPORTRAIT_RED})
 end
+
 -- auto
 -- Automatic generation of code, forbid to edit
 function XUiPanelPlayerInfo:InitAutoScript()
@@ -131,7 +132,6 @@ end
 function XUiPanelPlayerInfo:OnBtnRoleHeadImgClick(...)
     self.PanelSetHeadPotrait.gameObject:SetActiveEx(true)
     self.PanelSetHeadPotraitInst:ShowPreviewHeadPortrait()
-    CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.Tip_Big)
     self:PlayAnimation("SetHeadPotraitEnable")
 end
 

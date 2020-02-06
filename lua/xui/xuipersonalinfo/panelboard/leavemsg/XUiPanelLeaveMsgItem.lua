@@ -57,7 +57,7 @@ end
 function XUiPanelLeaveMsgItem:AutoAddListener()
     self.AutoCreateListeners = {}
     if not XTool.UObjIsNil(self.BtnDelete) then
-        self:RegisterListener(self.BtnDelete, "onClick", self.OnBtnBtnDeleteClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnDelete, self.OnBtnBtnDeleteClick)
     end
 end
 -- auto

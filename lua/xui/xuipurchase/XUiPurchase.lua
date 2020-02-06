@@ -10,6 +10,7 @@ local TabsConfig
 local PanelNameConfig
 local PanelExNameConfig
 local LBUitypes
+local YKUitypes
 local TabExConfig
 local UITypeCfg = {}
 local XUiPurchasePay = require("XUi/XUiPurchase/XUiPurchasePay")
@@ -27,6 +28,7 @@ function XUiPurchase:OnAwake()
     PurchaseManager = XDataCenter.PurchaseManager
     TabExConfig = XPurchaseConfigs.TabExConfig
     self:GetLBUiTypesList()
+    self:GetYKUiTypesList()
     XTool.InitUiObject(self)
     UITypeCfg = XPurchaseConfigs.GetTabControlUiTypeConfig()
     self:InitUI()
@@ -39,6 +41,14 @@ function XUiPurchase:GetLBUiTypesList()
     LBUitypes = {}
     for _,v in pairs(t)do
         LBUitypes[v] = v
+    end
+end
+
+function XUiPurchase:GetYKUiTypesList()
+    local t = XPurchaseConfigs.GetYKUiTypes()
+    YKUitypes = {}
+    for _,v in pairs(t)do
+        YKUitypes[v] = v
     end
 end
 
@@ -246,6 +256,17 @@ function XUiPurchase:IsLBUitype(cfg)
     return false
 end
 
+function XUiPurchase:IsYKUitype(cfg)
+    if Next(cfg) then
+        for _, v in pairs(cfg)do
+            if YKUitypes[v.UiType] then
+                return true
+            end
+        end
+    end
+    return false
+end
+
 function XUiPurchase:InitUI()
     self.TabBtns = {}
     self.LBtnIndex = {}
@@ -268,6 +289,8 @@ function XUiPurchase:InitUI()
         if self:IsLBUitype(v.Childs) then
             btn:ShowReddot(PurchaseManager.LBRedPoint())
             self.LBBtn = btn
+        elseif self:IsYKUitype(v.Childs) then
+            btn:ShowReddot(PurchaseManager.CheckYKContinueBuy())
         else
             btn:ShowReddot(false)
         end

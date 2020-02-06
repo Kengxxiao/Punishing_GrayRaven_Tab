@@ -9,6 +9,8 @@ function XUiMainLeftMid:Ctor(rootUi)
     self.BtnGiftExpire.CallBack = function() self:OnBtnGiftExpire() end
     self.BtnAutoFight.CallBack = function() self:OnBtnAutoFight() end
     --RedPoint
+    --Filter
+    self:CheckFilterFunctions()
 end
 
 function XUiMainLeftMid:OnEnable()
@@ -28,6 +30,10 @@ function XUiMainLeftMid:OnDisable()
     self.PanelGiftExpire.gameObject:SetActiveEx(false)
 end
 
+function XUiMainLeftMid:CheckFilterFunctions()
+    self.BtnGiftExpire.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipRecharge))
+end
+
 function XUiMainLeftMid:OnBtnGiftExpire(eventData)
     XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.LB)
 end
@@ -35,7 +41,6 @@ end
 function XUiMainLeftMid:OnBtnAutoFight(eventData)
     XLuaUiManager.Open("UiAutoFightList")
 end
-
 
 --自动战斗
 function XUiMainLeftMid:OnAutoFightStart()

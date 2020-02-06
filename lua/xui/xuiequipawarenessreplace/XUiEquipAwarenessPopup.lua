@@ -21,40 +21,47 @@ local CUR_EQUIP_CLICK_POPUP_POS = {
 }
 
 local XUiGridEquip = require("XUi/XUiEquipAwarenessReplace/XUiGridEquip")
+
 local XUiEquipAwarenessPopup = XLuaUiManager.Register(XLuaUi, "UiEquipAwarenessPopup")
 
 function XUiEquipAwarenessPopup:OnAwake()
     self:AutoAddListener()
 end
 
-function XUiEquipAwarenessPopup:OnStart(rootUi, notShowStrengthenBtn)
+function XUiEquipAwarenessPopup:OnStart(rootUi, HideStrengthenBtn, equipId, charaterId, hideAllBtns)
     self.RootUi = rootUi    --子窗口在隐藏/显示时无法再次调到onstart
-    self.NotShowStrengthenBtn = notShowStrengthenBtn or false
+    self.InitEquipId = equipId
+    self.InitCharacterId = charaterId
+    self.HideStrengthenBtn = HideStrengthenBtn
+    self.HideAllBtns = hideAllBtns
     self.PanelSelectRectTransform = self.PanelSelect:GetComponent("RectTransform")
 end
 
 function XUiEquipAwarenessPopup:OnEnable()
+    self.EquipId = self.InitEquipId or self.RootUi.SelectEquipId
+    self.CharacterId = self.InitCharacterId or self.RootUi.CharacterId
+
     self:Refresh()
     if self.RootUi.BtnClosePopup then
-        self.RootUi.BtnClosePopup.gameObject:SetActive(true)
+        self.RootUi.BtnClosePopup.gameObject:SetActiveEx(true)
     end
 end
 
 function XUiEquipAwarenessPopup:OnDisable()
     if self.RootUi.BtnClosePopup then
-        self.RootUi.BtnClosePopup.gameObject:SetActive(false)
+        self.RootUi.BtnClosePopup.gameObject:SetActiveEx(false)
     end
 end
 
 function XUiEquipAwarenessPopup:Refresh()
-    local equipSite = XDataCenter.EquipManager.GetEquipSite(self.RootUi.SelectEquipId)
-    self.UsingEquipId = XDataCenter.EquipManager.GetWearingEquipIdBySite(self.RootUi.CharacterId, equipSite)
+    local equipSite = XDataCenter.EquipManager.GetEquipSite(self.EquipId)
+    self.UsingEquipId = XDataCenter.EquipManager.GetWearingEquipIdBySite(self.CharacterId, equipSite)
     self.UsingAttrMap = XDataCenter.EquipManager.GetEquipAttrMap(self.UsingEquipId)
 
     self:UpdateSelectPanel()
     self:UpdateUsingPanel()
     self:UpdateUsingPanelBtn()
-    self:UpdateLockStatues(self.RootUi.SelectEquipId)
+    self:UpdateLockStatues(self.EquipId)
     self:UpdateLockStatues(self.UsingEquipId)
 end
 
@@ -68,25 +75,33 @@ function XUiEquipAwarenessPopup:OnNotify(evt, ...)
     if evt == XEventId.EVENT_EQUIP_PUTON_NOTYFY or evt == XEventId.EVENT_EQUIPLIST_TAKEOFF_NOTYFY then
         local equipIds = args[1]
         for _, equipId in pairs(equipIds) do
-            if equipId == self.RootUi.SelectEquipId then
+            if equipId == self.EquipId then
                 self:Close()
                 return
             end
         end
     elseif evt == XEventId.EVENT_EQUIP_LOCK_STATUS_CHANGE_NOTYFY then
         local equipId = args[1]
-        if equipId ~= self.RootUi.SelectEquipId then return end
+        if equipId ~= self.EquipId then return end
         self:UpdateLockStatues(equipId)
     end
 end
 
 function XUiEquipAwarenessPopup:UpdateLockStatues(equipId)
-    if not equipId then return end
-    local isLock = XDataCenter.EquipManager.IsLock(equipId)
+    if self.HideAllBtns then
+        self.BtnLockSelect.gameObject:SetActiveEx(false)
+        self.BtnUnlockSelect.gameObject:SetActiveEx(false)
+        self.BtnLockUsing.gameObject:SetActiveEx(false)
+        self.BtnUnlockUsing.gameObject:SetActiveEx(false)
+        return
+    end
 
-    if equipId == self.RootUi.SelectEquipId then
-        self.BtnLockSelect.gameObject:SetActive(isLock)
-        self.BtnUnlockSelect.gameObject:SetActive(not isLock)
+    if not equipId then return end
+
+    local isLock = XDataCenter.EquipManager.IsLock(equipId)
+    if equipId == self.EquipId then
+        self.BtnLockSelect.gameObject:SetActiveEx(isLock)
+        self.BtnUnlockSelect.gameObject:SetActiveEx(not isLock)
     end
 end
 
@@ -95,75 +110,75 @@ function XUiEquipAwarenessPopup:UpdateSelectPanel()
         self.SelectEquipGrid = XUiGridEquip.New(self.GridEquipSelect)
         self.SelectEquipGrid:InitRootUi(self)
     end
-    self.SelectEquipGrid:Refresh(self.RootUi.SelectEquipId)
+    self.SelectEquipGrid:Refresh(self.EquipId)
 
-    local equip = XDataCenter.EquipManager.GetEquip(self.RootUi.SelectEquipId)
+    local equip = XDataCenter.EquipManager.GetEquip(self.EquipId)
     self.TxtNameA.text = XDataCenter.EquipManager.GetEquipName(equip.TemplateId)
 
     local attrCount = 1
-    local attrMap = XDataCenter.EquipManager.GetEquipAttrMap(self.RootUi.SelectEquipId)
+    local attrMap = XDataCenter.EquipManager.GetEquipAttrMap(self.EquipId)
     for attrIndex, attrInfo in pairs(attrMap) do
         if attrCount > MAX_AWARENESS_ATTR_COUNT then break end
-
+        
         local usingAttr = self.UsingAttrMap[attrIndex]
         local usingAttrValue = usingAttr and usingAttr.Value or 0
         local selectAttrValue = attrInfo.Value
         if selectAttrValue > usingAttrValue then
             self["TxtSelectAttrValue" .. attrCount].color = ATTR_COLOR.OVER
-            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActive(true)
-            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActive(false)
+            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActiveEx(true)
+            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActiveEx(false)
         elseif selectAttrValue == usingAttrValue then
             self["TxtSelectAttrValue" .. attrCount].color = ATTR_COLOR.EQUAL
-            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActive(false)
-            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActive(false)
+            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActiveEx(false)
+            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActiveEx(false)
         else
             self["TxtSelectAttrValue" .. attrCount].color = ATTR_COLOR.BELOW
-            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActive(false)
-            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActive(true)
+            self["ImgArrowUpSelect" .. attrCount].gameObject:SetActiveEx(false)
+            self["ImgArrowDownSelect" .. attrCount].gameObject:SetActiveEx(true)
         end
         self["TxtSelectAttrName" .. attrCount].text = attrInfo.Name
         self["TxtSelectAttrValue" .. attrCount].text = selectAttrValue
-        self["PanelSelectAttr" .. attrCount].gameObject:SetActive(true)
+        self["PanelSelectAttr" .. attrCount].gameObject:SetActiveEx(true)
 
         attrCount = attrCount + 1
     end
     for i = attrCount, MAX_AWARENESS_ATTR_COUNT do
-        self["PanelSelectAttr" .. i].gameObject:SetActive(false)
+        self["PanelSelectAttr" .. i].gameObject:SetActiveEx(false)
     end
 
     --是否激活颜色不同
     local suitId = XDataCenter.EquipManager.GetSuitId(equip.Id)
-    local activeEquipsCount = XDataCenter.EquipManager.GetActiveSuitEquipsCount(self.RootUi.CharacterId, suitId)
+    local activeEquipsCount = XDataCenter.EquipManager.GetActiveSuitEquipsCount(self.CharacterId, suitId)
     local skillDesList = XDataCenter.EquipManager.GetSuitActiveSkillDesList(suitId, activeEquipsCount)
     for i = 1, XEquipConfig.MAX_SUIT_SKILL_COUNT do
         local componentText = self["TxtSkillDesA" .. i]
         if not skillDesList[i] then
-            componentText.gameObject:SetActive(false)
+            componentText.gameObject:SetActiveEx(false)
         else
             local color = SKILL_DES_COLOR[skillDesList[i].IsActive]
             componentText.text = skillDesList[i].SkillDes
-            componentText.gameObject:SetActive(true)
+            componentText.gameObject:SetActiveEx(true)
             componentText.color = color
             self["TxtPosA" .. i].color = color
         end
     end
 
     --修正弹窗位置
-    if self.RootUi.NeedFixPopUpPos and (not self.UsingEquipId or self.UsingEquipId == self.RootUi.SelectEquipId) then
-        local equipSite = XDataCenter.EquipManager.GetEquipSite(self.RootUi.SelectEquipId)
+    if self.RootUi.NeedFixPopUpPos and (not self.UsingEquipId or self.UsingEquipId == self.EquipId) then
+        local equipSite = XDataCenter.EquipManager.GetEquipSite(self.EquipId)
         self.PanelSelectRectTransform.anchoredPosition = CUR_EQUIP_CLICK_POPUP_POS[equipSite]
     else
         self.PanelSelectRectTransform.anchoredPosition = CUR_EQUIP_CLICK_POPUP_POS[XEquipConfig.EquipSite.Awareness.One]
     end
 
-    self.BtnStrengthen.gameObject:SetActive(not self.NotShowStrengthenBtn)
+    self.BtnStrengthen.gameObject:SetActiveEx(not self.HideStrengthenBtn and not self.HideAllBtns)
 
     CS.UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(self.PanelContentA)
 end
 
 function XUiEquipAwarenessPopup:UpdateUsingPanel()
-    if not self.UsingEquipId or self.UsingEquipId == self.RootUi.SelectEquipId then
-        self.PanelUsing.gameObject:SetActive(false)
+    if not self.UsingEquipId or self.UsingEquipId == self.EquipId then
+        self.PanelUsing.gameObject:SetActiveEx(false)
         return
     end
 
@@ -183,48 +198,54 @@ function XUiEquipAwarenessPopup:UpdateUsingPanel()
 
         self["TxtUsingAttrName" .. attrCount].text = attrInfo.Name
         self["TxtUsingAttrValue" .. attrCount].text = attrInfo.Value
-        self["PanelUsingAttr" .. attrCount].gameObject:SetActive(true)
-
+        self["PanelUsingAttr" .. attrCount].gameObject:SetActiveEx(true)
+        
         attrCount = attrCount + 1
     end
     for i = attrCount, MAX_AWARENESS_ATTR_COUNT do
-        self["PanelUsingAttr" .. i].gameObject:SetActive(false)
+        self["PanelUsingAttr" .. i].gameObject:SetActiveEx(false)
     end
 
     --是否激活颜色不同
     local suitId = XDataCenter.EquipManager.GetSuitId(equip.Id)
-    local activeEquipsCount = XDataCenter.EquipManager.GetActiveSuitEquipsCount(self.RootUi.CharacterId, suitId)
+    local activeEquipsCount = XDataCenter.EquipManager.GetActiveSuitEquipsCount(self.CharacterId, suitId)
     local skillDesList = XDataCenter.EquipManager.GetSuitActiveSkillDesList(suitId, activeEquipsCount)
 
     for i = 1, XEquipConfig.MAX_SUIT_SKILL_COUNT do
         local componentText = self["TxtSkillDes" .. i]
         if not skillDesList[i] then
-            componentText.gameObject:SetActive(false)
+            componentText.gameObject:SetActiveEx(false)
         else
             local color = SKILL_DES_COLOR[skillDesList[i].IsActive]
             componentText.text = skillDesList[i].SkillDes
-            componentText.gameObject:SetActive(true)
+            componentText.gameObject:SetActiveEx(true)
             componentText.color = color
             self["TxtPos" .. i].color = color
         end
     end
 
     --去掉穿戴中装备的锁按钮
-    self.BtnLockUsing.gameObject:SetActive(false)
-    self.BtnUnlockUsing.gameObject:SetActive(false)
+    self.BtnLockUsing.gameObject:SetActiveEx(false)
+    self.BtnUnlockUsing.gameObject:SetActiveEx(false)
 
-    self.PanelUsing.gameObject:SetActive(true)
-
+    self.PanelUsing.gameObject:SetActiveEx(true)
+    
     CS.UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(self.PanelContent)
 end
 
 function XUiEquipAwarenessPopup:UpdateUsingPanelBtn()
-    if self.UsingEquipId and self.UsingEquipId == self.RootUi.SelectEquipId then
-        self.BtnPutOn.gameObject:SetActive(false)
-        self.BtnTakeOff.gameObject:SetActive(true)
+    if self.HideAllBtns then
+        self.BtnPutOn.gameObject:SetActiveEx(false)
+        self.BtnTakeOff.gameObject:SetActiveEx(false)
+        return
+    end
+
+    if self.UsingEquipId and self.UsingEquipId == self.EquipId then
+        self.BtnPutOn.gameObject:SetActiveEx(false)
+        self.BtnTakeOff.gameObject:SetActiveEx(true)
     else
-        self.BtnPutOn.gameObject:SetActive(true)
-        self.BtnTakeOff.gameObject:SetActive(false)
+        self.BtnPutOn.gameObject:SetActiveEx(true)
+        self.BtnTakeOff.gameObject:SetActiveEx(false)
     end
 end
 
@@ -239,11 +260,11 @@ function XUiEquipAwarenessPopup:AutoAddListener()
 end
 
 function XUiEquipAwarenessPopup:OnBtnUnlockSelectClick(eventData)
-    XDataCenter.EquipManager.SetLock(self.RootUi.SelectEquipId, true)
+    XDataCenter.EquipManager.SetLock(self.EquipId, true)
 end
 
 function XUiEquipAwarenessPopup:OnBtnLockSelectClick(eventData)
-    XDataCenter.EquipManager.SetLock(self.RootUi.SelectEquipId, false)
+    XDataCenter.EquipManager.SetLock(self.EquipId, false)
 end
 
 function XUiEquipAwarenessPopup:OnBtnLockUsingClick(eventData)
@@ -255,14 +276,14 @@ function XUiEquipAwarenessPopup:OnBtnUnlockUsingClick(eventData)
 end
 
 function XUiEquipAwarenessPopup:OnBtnStrengthenClick(eventData)
-    XLuaUiManager.Open("UiEquipDetail", self.RootUi.SelectEquipId)
+    XLuaUiManager.Open("UiEquipDetail", self.EquipId)
     self:Close()
 end
 
 function XUiEquipAwarenessPopup:OnBtnPutOnClick(eventData)
-    XDataCenter.EquipManager.PutOn(self.RootUi.CharacterId, self.RootUi.SelectEquipId)
+    XDataCenter.EquipManager.PutOn(self.CharacterId, self.EquipId)
 end
 
 function XUiEquipAwarenessPopup:OnBtnTakeOffClick(eventData)
-    XDataCenter.EquipManager.TakeOff({ self.RootUi.SelectEquipId })
+    XDataCenter.EquipManager.TakeOff({ self.EquipId })
 end

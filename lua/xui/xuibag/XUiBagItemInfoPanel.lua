@@ -29,7 +29,6 @@ function XUiBagItemInfoPanel:OnStart(itemData)
         return
     end
     self.IsUseable = XDataCenter.ItemManager.IsUseable(id)
-
     self:SetupContent()
     self:SetBtnShowOfActionPointOverLimit()
 end
@@ -254,7 +253,7 @@ function XUiBagItemInfoPanel:SetupBaseInfo()
     if XDataCenter.ItemManager.IsTimeLimit(self.ItemData.Id) then
         local leftTime = 0
         if self.RecycleBatch then
-            leftTime = self.RecycleBatch.RecycleTime - XTime.Now()
+            leftTime = self.RecycleBatch.RecycleTime - XTime.GetServerNowTimestamp()
         else
             leftTime = XDataCenter.ItemManager.GetRecycleLeftTime(self.ItemData.Id)
         end

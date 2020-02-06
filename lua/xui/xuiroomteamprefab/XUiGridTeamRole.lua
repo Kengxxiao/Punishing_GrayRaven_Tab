@@ -80,8 +80,9 @@ function XUiGridTeamRole:Refresh(curPos, teamData)
     self.CurPos = curPos
     self.TeamData = teamData
     local chrId = teamData.TeamData[curPos]
-    local captainPos = XDataCenter.TeamManager.GetCaptainPos()
-    self.PanelLeader.gameObject:SetActive(captainPos == self.CurPos)
+    -- local captainPos = XDataCenter.TeamManager.GetCaptainPos()
+    -- self.PanelLeader.gameObject:SetActive(captainPos == self.CurPos)
+    self.PanelLeader.gameObject:SetActive(false)
     if chrId > 0 then
         self:SetHave(chrId)
     else

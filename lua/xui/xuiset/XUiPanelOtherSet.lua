@@ -4,7 +4,7 @@ local SetConfigs = XSetConfigs
 local SetManager
 local MaxOff
 
-function XUiPanelOtherSet:Ctor(ui,parent)
+function XUiPanelOtherSet:Ctor(ui, parent)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.Parent = parent
@@ -15,20 +15,44 @@ function XUiPanelOtherSet:Ctor(ui,parent)
 end
 
 function XUiPanelOtherSet:InitUi()
-    self.IsChange = false
     self.TabObs = {}
     self.TabObs[1] = self.TogGraphics_0
     self.TabObs[2] = self.TogGraphics_1
     self.TabObs[3] = self.TogGraphics_2
     self.TabObs[4] = self.TogGraphics_3
-    self.TGroupResolution:Init(self.TabObs, function(tab) self:TabSkip(tab) end)
+    self.TGroupResolution:Init(
+        self.TabObs,
+        function(tab)
+            self:TabSkip(tab)
+        end
+    )
+
+    local focusTypes = {}
+    focusTypes[1] = self.TogType1
+    focusTypes[2] = self.TogType2
+    self.TGroupFocusType:Init(
+        focusTypes,
+        function(index)
+            self:OnFocusTypeChanged(index)
+        end
+    )
+
+    self.TxtType1.text = CS.XGame.ClientConfig:GetString("FocusType1")
+    self.TxtType2.text = CS.XGame.ClientConfig:GetString("FocusType2")
+
     self:AddListener()
 end
 
 function XUiPanelOtherSet:AddListener()
-    self.OnSliderValueCb = function(value) self:OnSliderValueChanged(value) end
-    self.OnTogFriEffectsValueCb = function(value) self:OnTogFriEffectsValueChanged(value) end
-    self.OnTogFriNumValueCb = function(value) self:OnTogFriNumValueChanged(value) end
+    self.OnSliderValueCb = function(value)
+        self:OnSliderValueChanged(value)
+    end
+    self.OnTogFriEffectsValueCb = function(value)
+        self:OnTogFriEffectsValueChanged(value)
+    end
+    self.OnTogFriNumValueCb = function(value)
+        self:OnTogFriNumValueChanged(value)
+    end
     self.Slider.onValueChanged:AddListener(self.OnSliderValueCb)
     self.TogFriEffects.onValueChanged:AddListener(self.OnTogFriEffectsValueCb)
     self.TogFriNum.onValueChanged:AddListener(self.OnTogFriNumValueCb)
@@ -42,13 +66,15 @@ function XUiPanelOtherSet:Getcache()
     self.TGroupResolution:SelectIndex(self.SelfNumState)
     self.TogFriEffects.isOn = self.FriendEffectEnumState == SetConfigs.FriendNumEnum.Open
     self.TogFriNum.isOn = self.FriendNumState == SetConfigs.FriendNumEnum.Open
-    local v = tonumber(self.ScreenOffValue) 
+    local v = tonumber(self.ScreenOffValue)
     self.IsFirstSlider = true
     self.Slider.value = v
     self.SaveSelfNumState = self.SelfNumState
     self.SaveFriendNumState = self.FriendNumState
     self.SaveFriendEffectEnumState = self.FriendEffectEnumState
     self.SaveScreenOffValue = self.ScreenOffValue
+    self.FocusType = XDataCenter.SetManager.FocusType
+    self.TGroupFocusType:SelectIndex(self.FocusType)
 end
 
 function XUiPanelOtherSet:TabSkip(tab)
@@ -56,17 +82,11 @@ function XUiPanelOtherSet:TabSkip(tab)
     self.SelfNumState = tab
     if self.IsPassTab then
         self.IsPassTab = false
-        return 
-    end
-    if not self.IsFirstTab then
-        self.IsFirstTab = true
-    else
-        self.IsChange = self.SelfNumState ~= self.SaveSelfNumState
+        return
     end
 end
 
 function XUiPanelOtherSet:ResetToDefault()
-    self.IsChange = self:IsDefaultChange()
     self.SelfNumState = SetConfigs.SelfNumEnum.Middle
     self.FriendNumState = SetConfigs.FriendNumEnum.Close
     self.FriendEffectEnumState = SetConfigs.FriendEffectEnum.Open
@@ -76,15 +96,11 @@ function XUiPanelOtherSet:ResetToDefault()
     self.TGroupResolution:SelectIndex(self.SelfNumState)
     self.ScreenOffValue = 0
     self.Slider.value = 0
-end
-
-function XUiPanelOtherSet:IsDefaultChange()
-    local f = (self.SaveSelfNumState ~= SetConfigs.SelfNumEnum.Middle) or (self.SaveFriendNumState ~= SetConfigs.FriendNumEnum.Close) or (self.SaveFriendEffectEnumState ~= SetConfigs.FriendEffectEnum.Open) or (self.SaveScreenOffValue ~= self.Slider.value)
-    return f
+    self.FocusType = SetConfigs.DefaultFocusType
+    self.TGroupFocusType:SelectIndex(self.FocusType)
 end
 
 function XUiPanelOtherSet:SaveChange()
-    self.IsChange = false
     self.SaveSelfNumState = self.SelfNumState
     self.SaveFriendNumState = self.FriendNumState
     self.SaveFriendEffectEnumState = self.FriendEffectEnumState
@@ -98,28 +114,32 @@ function XUiPanelOtherSet:SaveChange()
     SetManager.SetOwnFontSizeByTab(self.SelfNumState)
     SetManager.SetAllyDamage(self.FriendNumState == SetConfigs.FriendNumEnum.Open)
     SetManager.SetAllyEffect(self.FriendEffectEnumState == SetConfigs.FriendEffectEnum.Open)
+
+    XDataCenter.SetManager.SetFocusType(self.FocusType)
 end
 
-function XUiPanelOtherSet:CheckDataIsChange()    
-    return self.IsChange
+function XUiPanelOtherSet:CheckDataIsChange()
+    return self.SaveSelfNumState ~= self.SelfNumState or self.SaveFriendNumState ~= self.FriendNumState or
+        self.SaveFriendEffectEnumState ~= self.FriendEffectEnumState or
+        self.SaveScreenOffValue ~= self.ScreenOffValue or
+        self.FocusType ~= XDataCenter.SetManager.FocusType
 end
 
-function XUiPanelOtherSet:CancelChange( ... )
+function XUiPanelOtherSet:CancelChange(...)
     self.ScreenOffValue = self.SaveScreenOffValue
     self:SetSliderValueChanged(self.SaveScreenOffValue)
 end
 
 function XUiPanelOtherSet:OnSliderValueChanged(value)
     if value < 0 then
-        return 
+        return
     end
 
     if self.IsFirstSlider then
         self.IsFirstSlider = false
-        return 
+        return
     end
     self.ScreenOffValue = value
-    self.IsChange = self.ScreenOffValue ~= self.SaveScreenOffValue
     self:SetSliderValueChanged(value)
     SetManager.SetAdaptorScreenChange()
 end
@@ -138,7 +158,6 @@ function XUiPanelOtherSet:OnTogFriEffectsValueChanged(value)
         v = SetConfigs.FriendEffectEnum.Open
     end
     self.FriendEffectEnumState = v
-    self.IsChange = self.FriendEffectEnumState ~= self.SaveFriendEffectEnumState
 end
 
 function XUiPanelOtherSet:OnTogFriNumValueChanged(value)
@@ -147,7 +166,15 @@ function XUiPanelOtherSet:OnTogFriNumValueChanged(value)
         v = SetConfigs.FriendNumEnum.Open
     end
     self.FriendNumState = v
-    self.IsChange = self.FriendNumState ~= self.SaveFriendNumState
+end
+
+function XUiPanelOtherSet:OnFocusTypeChanged(index)
+    if index == 0 then
+        return
+    end
+    self.FocusType = index
+    self.DescriptionType1.gameObject:SetActive(index == 1)
+    self.DescriptionType2.gameObject:SetActive(index == 2)
 end
 
 function XUiPanelOtherSet:ShowPanel()
@@ -157,11 +184,9 @@ function XUiPanelOtherSet:ShowPanel()
     end
     self:Getcache()
     self.IsShow = true
-    self.IsChange = false
 end
 
 function XUiPanelOtherSet:HidePanel()
     self.IsShow = false
-    self.IsChange = false
     self.GameObject:SetActive(false)
 end

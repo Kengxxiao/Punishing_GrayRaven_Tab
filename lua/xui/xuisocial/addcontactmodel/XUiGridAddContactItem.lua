@@ -59,7 +59,7 @@ function XUiGridAddContactItem:AutoAddListener()
     self.BtnApplyFor.CallBack = function()
         self:OnBtnApplyForClick()
     end
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
 end
 -- auto
 function XUiGridAddContactItem:OnBtnApplyForClick(...)

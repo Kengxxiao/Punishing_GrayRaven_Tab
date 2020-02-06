@@ -10,3 +10,5 @@ UiSetPanelFightSet	Assets/Product/Ui/ComponentPrefab/Set/PanelFightSet.prefab
 UiSetPanelPushSet	
 UiSetPanelOther	Assets/Product/Ui/ComponentPrefab/Set/PanelOther.prefab
 UiDrawOpenBoxPre	Assets/Product/Effect/Prefab/FxUi/FxUiDrawCard/FxUiDrawOpenBoxPre.prefab
+UiGachaLoop	Assets/Product/Effect/Prefab/FxUi/FxUiDrawCard/FxUiDrawActivityCubeHold.prefab
+UiGachaSteap1	Assets/Product/Effect/Prefab/FxUi/FxUiDrawCard/FxUiDrawActivityCubeOpen00.prefab

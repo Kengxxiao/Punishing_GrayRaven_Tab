@@ -28,7 +28,7 @@ function XUiFirstGetPopUp:OnEnable()
         self:OnEnable()
     end
 
-    XUiHelper.PlayAnimation(self, AnimBegin, nil, onEnd)
+    --XUiHelper.PlayAnimation(self, AnimBegin, nil, onEnd)
 end
 
 function XUiFirstGetPopUp:Refresh(data)

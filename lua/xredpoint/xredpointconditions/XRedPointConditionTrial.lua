@@ -12,7 +12,11 @@ end
 
 function XRedPointConditionTrial.Check()
     -- 没有开启
-    local isOpen = XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.Trial)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenChallengeTrial) then
+        return false
+    end
+
+    local isOpen = XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.FubenChallengeTrial)
     if not isOpen then
         return false
     end

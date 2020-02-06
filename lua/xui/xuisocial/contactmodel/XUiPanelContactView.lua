@@ -5,8 +5,9 @@ function XUiPanelContactView:Ctor(ui, mainPanel)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.MainPanel = mainPanel
-
+    XTool.InitUiObject(self)
     self:InitAutoScript()
+
 
     self.FriendList = {}
     self.IsDeleteFriendState = false
@@ -36,22 +37,22 @@ function XUiPanelContactView:InitAutoScript()
 end
 
 function XUiPanelContactView:AutoInitUi()
-    self.GridContact = self.Transform:Find("Viewport/ContactList/GridContact")
-    self.PanelDeleteFriend = self.Transform:Find("PanelDeleteFriend")
-    self.BtnRemove = self.Transform:Find("PanelDeleteFriend/BtnRemove"):GetComponent("Button")
-    self.BtnClose = self.Transform:Find("PanelDeleteFriend/BtnClose"):GetComponent("XUiButton")
-    self.PanelShare = self.Transform:Find("Share")
-    self.PanelFriendList = self.Transform:Find("PanelFriendList")
+    -- self.GridContact = self.Transform:Find("Viewport/ContactList/GridContact")
+    -- self.PanelDeleteFriend = self.Transform:Find("PanelDeleteFriend")
+    -- self.BtnRemove = self.Transform:Find("PanelDeleteFriend/BtnRemove"):GetComponent("Button")
+    -- self.BtnClose = self.Transform:Find("PanelDeleteFriend/BtnClose"):GetComponent("XUiButton")
+    -- self.PanelShare = self.Transform:Find("Share")
+    -- self.PanelFriendList = self.Transform:Find("PanelFriendList")
 
-    self.TxtFriendCount = self.Transform:Find("Share/TxtFriendCount"):GetComponent("Text")
-    self.Tips = self.Transform:Find("Tips")
+    -- self.TxtFriendCount = self.Transform:Find("Share/TxtFriendCount"):GetComponent("Text")
+    -- self.Tips = self.Transform:Find("Tips")
 
 
-    self.BtnAdd = self.Transform:Find("Tips/BtnAdd"):GetComponent("Button")
+    -- self.BtnAdd = self.Transform:Find("Tips/BtnAdd"):GetComponent("Button")
 
-    self.BtnDelete = self.Transform:Find("Share/BtnDelete"):GetComponent("XUiButton")
-    self.BtnAllCharge = self.Transform:Find("PanelFriendList/BtnAllCharge"):GetComponent("XUiButton")
-    self.BtnGroupThrow = self.Transform:Find("PanelFriendList/BtnGroupThrow"):GetComponent("XUiButton")
+    -- self.BtnDelete = self.Transform:Find("Share/BtnDelete"):GetComponent("XUiButton")
+    -- self.BtnAllCharge = self.Transform:Find("PanelFriendList/BtnAllCharge"):GetComponent("XUiButton")
+    -- self.BtnGroupThrow = self.Transform:Find("PanelFriendList/BtnGroupThrow"):GetComponent("XUiButton")
 end
 
 function XUiPanelContactView:GetAutoKey(uiNode, eventName)
@@ -88,7 +89,7 @@ end
 
 function XUiPanelContactView:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
 
     self.BtnDelete.CallBack = function () self:OnBtnDeleteClick() end
     self.BtnClose.CallBack = function() self:OnBtnCloseClick() end

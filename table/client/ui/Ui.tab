@@ -2,8 +2,8 @@ UiName	ParentUiName	LoadWithParent	UiType	UiResType	ClassType	PrefabUrl	SceneUrl
 UiActivityBase			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBase.prefab			5000
 UiActivityBaseChild	UiActivityBase			Bundle		Assets/Product/Ui/Prefab/UiActivityBaseChild.prefab			5000
 UiGameNotice	UiActivityBase			Bundle		Assets/Product/Ui/Prefab/UiGameNotice.prefab			5000
-UiActivityBossSingle			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingle.prefab			5000
-UiActivityBossSingleDetail			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingleDetail.prefab			5000
+UiActivityBossSingle			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingle.prefab	Assets/Product/Ui/Scene3DPrefab/UiActivityBossSingle3d.prefab		5000
+UiActivityBossSingleDetail			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBossSingleDetail.prefab	Assets/Product/Ui/Scene3DPrefab/UiActivityBossSingle3d.prefab		5000
 UiActivityBranch			Normal	Bundle		Assets/Product/Ui/Prefab/UiActivityBranch.prefab			5000
 UiFubenBranchStageDetail	UiActivityBranch			Bundle		Assets/Product/Ui/Prefab/UiFubenBranchStageDetail.prefab			5000
 UiActivityBranchReward			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiActivityBranchReward.prefab			5000
@@ -36,6 +36,7 @@ UiBuyAsset			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiBuyAsset.prefab			50
 UiUnlockShow			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiUnlockShow.prefab			5000
 UiLeftPopupTip			Tips	Bundle		Assets/Product/Ui/Prefab/UiLeftPopupTip.prefab			5000
 UiCharacter			Normal	Bundle		Assets/Product/Ui/Prefab/UiCharacter.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
+UiCharacterElementDetail			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiCharacterElementDetail.prefab			5000
 UiPanelCharacterExchange	UiCharacter			Bundle		Assets/Product/Ui/Prefab/UiPanelCharacterExchange.prefab			5000
 UiCharacterCarerrTips			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiCharacterCarerrTips.prefab			5000
 UiCharacterOwnedInfo	UiCharacter	1		Bundle		Assets/Product/Ui/Prefab/UiCharacterOwnedInfo.prefab			5000
@@ -75,7 +76,11 @@ UiDrawRule			Popup	Bundle		Assets/Product/Ui/Prefab/UiDrawRule.prefab			5000
 UiDrawShow	UiDraw			Bundle		Assets/Product/Ui/Prefab/UiDrawShow.prefab	Assets/Product/Ui/Scene3DPrefab/UiDraw.prefab		5000
 UiEnterFight			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEnterFight.prefab			5000
 UiEquipAwarenessReplace			Normal	Bundle		Assets/Product/Ui/Prefab/UiEquipAwarenessReplace.prefab			5000
-UiEquipAwarenessPopup	UiEquipAwarenessReplace			Bundle		Assets/Product/Ui/Prefab/UiEquipAwarenessPopup.prefab			5000
+UiEquipAwarenessSuitPrefab			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEquipAwarenessSuitPrefab.prefab			5000
+UiEquipSuitPrefabConfirm			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEquipSuitPrefabConfirm.prefab			5000
+UiEquipSuitPrefabConflict			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEquipSuitPrefabConflict.prefab			5000
+UiEquipSuitPrefabRename			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEquipSuitPrefabRename.prefab			5000
+UiEquipAwarenessPopup			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiEquipAwarenessPopup.prefab			5000
 UiEquipBreakThroughPopUp			Tips	Bundle		Assets/Product/Ui/Prefab/UiEquipBreakThroughPopUp.prefab			5000
 UiEquipLevelUpTips			Tips	Bundle		Assets/Product/Ui/Prefab/UiEquipLevelUpTips.prefab			5000
 UiEquipDetail			Normal	Bundle		Assets/Product/Ui/Prefab/UiEquipDetail.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
@@ -199,9 +204,6 @@ UiTip			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiTip.prefab			5000
 UiTipReward			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiTipReward.prefab			5000
 UiTrial			Normal	Bundle		Assets/Product/Ui/Prefab/UiTrial.prefab			5000
 UiLoading			TopMask	Bundle		Assets/Product/Ui/Prefab/UiLoading.prefab			5000
-UiResourceViewer			Tips	Bundle	XUiResourceViewer	Assets/Product/Ui/Prefab/UiResourceViewer.prefab		1	5000
-UiResourceOperationPanel	UiResourceViewer	1		SetGameObject	XUiAssetOperationPanel	UiResourceOperationPanel		1	5000
-UiResourceDetailPanel	UiResourceViewer	1		SetGameObject	XUiAssetDetailPanel	UiResourceDetailPanel		1	5000
 UiFight			Normal	Bundle	XUiFight	Assets/Product/Ui/Prefab/UiFight.prefab			30000
 UiFightJoystick	UiFight	1		Bundle	XUiFightJoystick	Assets/Product/Ui/Prefab/UiFightJoystick.prefab			30000
 UiFightLeadHead	UiFight	1		Bundle	XUiFightLeadHead	Assets/Product/Ui/Prefab/UiFightLeadHead.prefab			30000
@@ -211,7 +213,6 @@ UiFightAffix	UiFight	1		Bundle	XUiFightAffix	Assets/Product/Ui/Prefab/UiFightAff
 UiFightComponent	UiFight	1		Bundle	XUiFightComponent	Assets/Product/Ui/Prefab/UiFightComponent.prefab			30000
 UiFightTips	UiFight	1		Bundle	XUiFightTips	Assets/Product/Ui/Prefab/UiFightTips.prefab			30000
 UiFightReboot	UiFight	1		Bundle	XUiFightReboot	Assets/Product/Ui/Prefab/UiFightReboot.prefab			30000
-UiFightSetting	UiFight	1		Bundle	XUiFightSetting	Assets/Product/Ui/Prefab/UiFightSetting.prefab			5000
 UiFightCustom			NormalPopup	Bundle	XUiFightCustom	Assets/Product/Ui/Prefab/UiFightCustom.prefab			5000
 UiChooseLoadMode			Tips	Resources	XUiChooseLoadMode	UiChooseLoadMode		1	5000
 UiMultiplayerRoom			Normal	Bundle		Assets/Product/Ui/Prefab/UiMultiplayerRoom.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
@@ -233,7 +234,21 @@ UiActivityBriefShop	UiActivityBriefBase			Bundle		Assets/Product/Ui/Prefab/UiAct
 UiFurnitureCreate			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiFurnitureCreate.prefab			5000
 UiDrawLog			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiDrawLog.prefab			5000
 UiSystemDialog			System	Bundle		Assets/Product/Ui/Prefab/UiDialog.prefab			5000
-UiUsePackage			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiUsePackage.prefab			5000
 UiStoryChristmasStageDetail	UiFubenChristmasMainLineChapter			Bundle		Assets/Product/Ui/Prefab/UiStoryChristmasStageDetail.prefab			5000
 UiFubenChristmasStageDetail	UiFubenChristmasMainLineChapter			Bundle		Assets/Product/Ui/Prefab/UiFubenChristmasStageDetail.prefab			5000
 UiFubenChristmasMainLineChapter			Normal	Bundle		Assets/Product/Ui/Prefab/UiFubenChristmasMainLineChapter.prefab			5000
+UiUsePackage			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiUsePackage.prefab			5000
+UiWaterMask			Top	Bundle		Assets/Product/Ui/Prefab/UiWaterMask.prefab			5000
+UiDormFoundryDetail	UiDormWork		Normal	Bundle		Assets/Product/Ui/Prefab/UiDormFoundryDetail.prefab			5000
+UiBabelTowerAutoFight			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerAutoFight.prefab			5000
+UiBabelTowerBase			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerBase.prefab			5000
+UiBabelTowerChildSupport	UiBabelTowerBase			Bundle		Assets/Product/Ui/Prefab/UiBabelTowerChildSupport.prefab			5000
+UiBabelTowerChildChallenge	UiBabelTowerBase			Bundle		Assets/Product/Ui/Prefab/UiBabelTowerChildChallenge.prefab			5000
+UiBabelTowerTask			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerTask.prefab			5000
+UiBabelTowerDetails			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerDetails.prefab			5000
+UiBabelTowerTeamTips			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerTeamTips.prefab			5000
+UiBabelTowerRoomCharacter			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerRoomCharacter.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
+UiFightBabelTower			Normal	Bundle		Assets/Product/Ui/Prefab/UiFightBabelTower.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
+UiBabelTowerMainNew			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerMainNew.prefab			5000
+UiDrawActivity			Normal	Bundle		Assets/Product/Ui/Prefab/UiDrawActivity.prefab	Assets/Product/Ui/Scene3DPrefab/UiDrawActivity.prefab		5000
+UiDrawActivityShow	UiDrawActivity			Bundle		Assets/Product/Ui/Prefab/UiDrawActivityShow.prefab	Assets/Product/Ui/Scene3DPrefab/UiDrawActivity.prefab		5000

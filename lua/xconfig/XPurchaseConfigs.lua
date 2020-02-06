@@ -97,6 +97,8 @@ XPurchaseConfigs.PurchaseRewardAddState = {
 function XPurchaseConfigs.Init()
     XPurchaseConfigs.PurChaseGiftTips = CS.XGame.ClientConfig:GetInt("PurChaseGiftTips") or 1
     XPurchaseConfigs.PurChaseCardId = CS.XGame.ClientConfig:GetInt("PurchaseCardId")
+    XPurchaseConfigs.PurYKContinueBuyDays = CS.XGame.ClientConfig:GetInt("PurYKContinueBuyDays") or 0
+
 
     PayConfig = XTableManager.ReadByStringKey(TABLE_PAY, XTable.XTablePay, "Key")
     PurchaseIconAssetPathConfig = XTableManager.ReadByStringKey(TABLE_PURCHASE_ICON_ASSETPATH, XTable.XTablePurchaseIconAssetPath, "Icon")

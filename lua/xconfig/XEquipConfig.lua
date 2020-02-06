@@ -379,6 +379,17 @@ function XEquipConfig.GetEquipModelName(modelTransId)
     return template.ModelName
 end
 
+function XEquipConfig.GetWeaponResonanceEffectPath(modelTransId, resonanceCount)
+    local template = EquipModelTemplates[modelTransId]
+
+    if not template then
+        XLog.Error("XEquipConfig.GetWeaponResonanceEffectPath error: can not find template, templateId is " .. modelTransId)
+        return
+    end
+
+    return template.ResonanceEffectPath[resonanceCount]
+end
+
 --返回武器模型和位置配置（双枪只返回一把）
 function XEquipConfig.GetEquipModelTransformCfg(templateId, uiName)
     local modelCfg, template
@@ -614,6 +625,7 @@ function XEquipConfig.GetEquipResonanceConsumeItemCfg(templateId)
     local equipResonanceItemCfg = EquipResonanceConsumeItemTemplates[templateId]
 
     if not equipResonanceItemCfg then
+        XLog.Error("XEquipConfig.GetEquipResonanceConsumeItemCfg error: can not find template, templateId is " .. templateId)
         return
     end
 

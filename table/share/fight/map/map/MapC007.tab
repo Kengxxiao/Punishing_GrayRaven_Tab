@@ -1,0 +1,6 @@
+Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCamera	CameraId	Terrains[1]	Terrains[2]	Terrains[3]	Position[1]	Position[2]	Position[3]	Rotation[1]	Rotation[2]	Rotation[3]
+78787878	78787878	华韬怪物测试01			0.15	15	9	9	787878780			0|0|0			0|0|0		
+78787879	78787879	轨道BOSS测试关卡			0.15	15	50	9	787878790			0|0|0			0|0|0		
+78787880	78787880	隧道场景验收关卡			0.15	15	52	9	787878800			0|0|0			0|0|0		
+78787881	78787881	车站场景验收关卡			0.15	15	46	9	787878810			0|0|0			0|0|0		
+78787882	78787882	第一节贵族车厢关卡			0.15	15	52	9	787878820			0|0|0			0|0|0		

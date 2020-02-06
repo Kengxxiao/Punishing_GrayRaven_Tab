@@ -64,6 +64,8 @@ XSoundManager.UiBasicsMusic = {
     Fuben_UiRoomCharacter_JoinTeam = 1059, --  点击队员编辑界面编入队伍音效
 
     UiActivityBranch_SwitchBg = 1102, --极地副本切换背景图 
+    UiActivityBrief_Anim = 1103, --极地活动简介入场动画音效 
+    
     UiActivity_Jidi_BGM = 6, --极地暗流版本BGM
     UiActivity_NewYear_BGM = 11, --新年活动BGM
 
@@ -84,7 +86,8 @@ XSoundManager.UiBasicsMusic = {
     UiEquip_Awake_Up_Click = 1071, -- 装备觉醒等级提升
 
     --抽卡
-    UiDrawCard_BoxOpen = 1517,              --开启宝箱音效
+    UiDrawCard_BoxOpen = 1517, --开启宝箱音效
+    UiDrawCard_GachaOpen = 1617, --开启活动魔方音效
     UiDrawCard_Type = {                             --卡片展示音效
         --普通
         Normal = {

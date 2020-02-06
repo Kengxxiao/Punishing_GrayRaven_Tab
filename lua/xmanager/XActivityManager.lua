@@ -6,7 +6,7 @@ XActivityManagerCreator = function()
     local tableSort = table.sort
     local tableInsert = table.insert
     local stringSplit = string.Split
-    local CSXDateGetTime = CS.XDate.GetTime
+    local ParseToTimestamp = XTime.ParseToTimestamp
     local CSUnityEnginePlayerPrefs = CS.UnityEngine.PlayerPrefs
 
     local SortedActivityGroupInfos = {}
@@ -59,15 +59,15 @@ XActivityManagerCreator = function()
         if not activityCfg then return false end
 
         local beginTime, endTime
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if activityCfg.ActivityType == XActivityConfigs.ActivityType.Task then
             local taskGroupId = activityCfg.Params[1]
             local timeLimitTaskCfg = XTaskConfig.GetTimeLimitTaskCfg(taskGroupId)
-            beginTime = CSXDateGetTime(timeLimitTaskCfg.StartTimeStr)
-            endTime = CSXDateGetTime(timeLimitTaskCfg.EndTimeStr)
+            beginTime = ParseToTimestamp(timeLimitTaskCfg.StartTimeStr)
+            endTime = ParseToTimestamp(timeLimitTaskCfg.EndTimeStr)
         else
-            beginTime = CSXDateGetTime(activityCfg.BeginTime)
-            endTime = CSXDateGetTime(activityCfg.EndTime)
+            beginTime = ParseToTimestamp(activityCfg.BeginTime)
+            endTime = ParseToTimestamp(activityCfg.EndTime)
         end
 
         return beginTime <= now and now < endTime

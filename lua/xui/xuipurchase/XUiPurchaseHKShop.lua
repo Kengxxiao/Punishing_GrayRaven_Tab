@@ -75,12 +75,12 @@ function XUiPurchaseHKShop:BuyReq()
         return
     end
 
-    if self.CurData.TimeToShelve > 0 and self.CurData.TimeToShelve > XTime.Now() then --没有上架
+    if self.CurData.TimeToShelve > 0 and self.CurData.TimeToShelve > XTime.GetServerNowTimestamp() then --没有上架
         XUiManager.TipText("PurchaseBuyNotSet")
         return
     end
     
-    if self.CurData.TimeToUnShelve > 0 and self.CurData.TimeToUnShelve < XTime.Now() then --下架了
+    if self.CurData.TimeToUnShelve > 0 and self.CurData.TimeToUnShelve < XTime.GetServerNowTimestamp() then --下架了
         XUiManager.TipText("PurchaseSettOff")
         return
     end

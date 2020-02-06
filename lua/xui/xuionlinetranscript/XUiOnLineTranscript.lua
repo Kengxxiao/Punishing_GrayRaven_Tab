@@ -93,10 +93,10 @@ end
 
 function XUiOnLineTranscript:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
-    self:RegisterListener(self.BtnMatch, "onClick", self.OnBtnMatchClick)
-    self:RegisterListener(self.BtnCreateRoom, "onClick", self.OnBtnCreateRoomClick)
-    self:RegisterListener(self.BtnBuyChallengeTimes, "onClick", self.OnBtnBuyChallengeTimesClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnMatch, self.OnBtnMatchClick)
+    self:RegisterClickEvent(self.BtnCreateRoom, self.OnBtnCreateRoomClick)
+    self:RegisterClickEvent(self.BtnBuyChallengeTimes, self.OnBtnBuyChallengeTimesClick)
 end
 -- auto
 function XUiOnLineTranscript:OnBtnCloseClick(...)

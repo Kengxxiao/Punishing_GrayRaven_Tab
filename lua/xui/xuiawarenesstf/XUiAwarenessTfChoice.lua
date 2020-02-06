@@ -257,7 +257,7 @@ end
 
 --设置倒计时
 function XUiAwarenessTfChoice:SetUpCountDown()
-    local remainTime = self.EndTime - XTime.Now()
+    local remainTime = self.EndTime - XTime.GetServerNowTimestamp()
     XCountDown.CreateTimer(self.GameObject.name, remainTime)
     XCountDown.BindTimer(self.GameObject, self.GameObject.name, function(v, oldV)
 

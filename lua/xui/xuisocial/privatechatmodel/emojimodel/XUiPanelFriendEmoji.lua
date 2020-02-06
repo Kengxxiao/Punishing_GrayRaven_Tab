@@ -4,6 +4,7 @@ function XUiPanelFriendEmoji:Ctor(ui, mainPanel)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.MainPanel = mainPanel
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 
     self.EmojiPrefab = self.GridEmoji.gameObject
@@ -59,8 +60,8 @@ function XUiPanelFriendEmoji:InitAutoScript()
 end
 
 function XUiPanelFriendEmoji:AutoInitUi()
-    self.GridEmoji = self.Transform:Find("PanelEmojiItems/EmojiItem")
-    self.BtnBack = self.Transform:Find("BtnBack"):GetComponent("Button")
+    -- self.GridEmoji = self.Transform:Find("PanelEmojiItems/EmojiItem")
+    -- self.BtnBack = self.Transform:Find("BtnBack"):GetComponent("Button")
 end
 
 function XUiPanelFriendEmoji:GetAutoKey(uiNode, eventName)
@@ -97,7 +98,7 @@ end
 
 function XUiPanelFriendEmoji:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
 end
 -- auto
 

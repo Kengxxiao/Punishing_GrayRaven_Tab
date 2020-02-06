@@ -51,8 +51,12 @@ function XUiGridLikeRoleItem:IsRed()
         local rumorReddot = XDataCenter.FavorabilityManager.HasRumorsToBeUnlock(characterId)
         local dataReddot = XDataCenter.FavorabilityManager.HasDataToBeUnlock(characterId)
         local audioReddot = XDataCenter.FavorabilityManager.HasAudioToBeUnlock(characterId)
+        local documentReddot = (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityFile)) and (rumorReddot or dataReddot or audioReddot)
+
         local storyReddot = XDataCenter.FavorabilityManager.HasStroyToBeUnlock(characterId)
-        return rumorReddot or dataReddot or audioReddot or storyReddot
+        local plotReddot = (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityStory)) and storyReddot
+        
+        return documentReddot or plotReddot
     end
     return false
 end

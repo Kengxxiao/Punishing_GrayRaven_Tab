@@ -14,4 +14,6 @@ Id	BigImgPath	ObtainElementList[1]	ObtainElementList[2]	ObtainElementList[3]	Obt
 1011003	RoleStory.R3LiNormal01	1			100			连击	物理伤害		极易打出高段数的伤害	技能组合非常强大		75	65	40	85	50	75	突破了准则的限制，过去与现在的感情交织，构造了机体的基础。以强大的运算能力更精确地把握住弹道，里成为了战场上最精锐的攻击尖兵。	1	RoleStory.R3LiNormal01
 1071003	RoleStory.R3KalieninaNormal01	1	2		30	70		混战	混合伤害		强大的群体攻击能力	可造成物理伤害和属性伤害		65	75	40	90	55	65	解放了武器的出力限制，获得完全状态的卡列尼娜。脱去隐藏烈焰的外套，展现战斗本能，释放的高热是她燃尽一切阻碍的决心。	1	RoleStory.R3KalieninaNormal01
 1051003	RoleStory.R3Yongyechaonormal01	1	2		50	50		混合伤害	抗性削减		可造成物理伤害和属性伤害	拥有减少怪物属性抗性的能力		68	85	70	70	60	55	七实的机动强化型机体，自行加装了IR-005推进轮，拥有高速突进能力的她能在战场上自由驰骋，“只能看到我的残影吧，哼哼”。	2	RoleStory.R3Yongyechaonormal01
-1021003	RoleStory.R3LuxiyaNormal03	1			100			单挑	形态切换		强大的单体攻击能力	技能可切换攻击模式		90	60	40	75	45	90	在015号城市的行动中与灰鸦小队初次见面的神秘敌人，给人留下了强大而随性的印象。似乎对灰鸦小队，特别是露西亚，有着不同寻常的关注。	1	RoleStory.R3LuxiyaNormal03
+1021003	RoleStory.R3LuxiyaNormal03	1			100			单挑	形态切换		强大的单体攻击能力	技能可切换攻击模式		90	60	40	75	45	90	在015号城市的行动中与灰鸦小队初次见面的神秘敌人，给人留下了强大而随性的印象。	1	RoleStory.R3LuxiyaNormal03
+1081003	RoleStory.R3DubianNormal01	1	5		50	50		灵活	混合伤害		拥有瞬间位移的能力	可造成物理伤害和属性伤害		85	67	25	50	80	82	航机适应型机体，是渡边作为执行者部队成员时，为了驾驶航天机而特殊设计的机体。	1	RoleStory.R3DubianNormal01
+1091002	RoleStory.R2AilaNormal01	1			100			聚怪	护盾		聚拢、嘲讽怪物的能力	释放护盾保护自身		63	80	55	77	70	63	考古小队队员，归属于自空中花园艺术协会，是出生在空中花园的“年轻一派”，自然散发的自信气场和对艺术的狂热追求是她的主要特征。	2	RoleStory.R2AilaNormal01

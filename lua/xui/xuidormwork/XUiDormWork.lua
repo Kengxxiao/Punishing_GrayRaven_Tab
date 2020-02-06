@@ -19,6 +19,7 @@ function XUiDormWork:OnAwake()
     DormManager = XDataCenter.DormManager
     WorkPosState = XDormConfig.WorkPosState
     self.TimerWorkDic = {}
+    self.DaiGongDataCache = {}
     XTool.InitUiObject(self)
     self:InitMaxCount()
     self:InitUI()
@@ -90,7 +91,7 @@ function XUiDormWork:SetListData()
     self.DynamicTable:SetDataSource(self.ListData)
     self.DynamicTable:ReloadDataASync(1)
     self.RefreshTime = DormManager.GetDormWorkRefreshTime()
-    self.TextCount.text = TextManager.GetText("DormWorkRefreshTime",os.date("%H:%M",self.RefreshTime))
+    self.TextCount.text = TextManager.GetText("DormWorkRefreshTime",XTime.TimestampToGameDateTimeString(self.RefreshTime,"HH:mm"))
     self.TxtWorkCount.text = CS.XTextManager.GetText("DormWorkCount", self.CurWorkCount, DormWorkMaxCount)
 end
 
@@ -111,10 +112,15 @@ function XUiDormWork:UpdataWorkList()
     self.TxtWorkCount.text = CS.XTextManager.GetText("DormWorkCount", self.CurWorkCount, DormWorkMaxCount)
 end
 
+function XUiDormWork:UpdataDaiGong()
+    self:UpdataWorkList()
+    self:CloseChildUi("UiDormFoundryDetail")
+end
+
 -- 通知打工刷新时间
 function XUiDormWork:DormWorkRefresh()
     local WorkRefreshTime = DormManager.GetDormWorkRefreshTime()
-    local t = (WorkRefreshTime - XTime.Now())*1000
+    local t = (WorkRefreshTime - XTime.GetServerNowTimestamp())*1000
     if t > 0 then
         self.DormWorkTimer = CS.XScheduleManager.ScheduleOnce(self.DormWorkRefreshReqCb,t)
     end
@@ -262,6 +268,7 @@ end
 function XUiDormWork:OnEnable()
     self:DormWorkRefresh()
     XEventManager.AddEventListener(XEventId.EVENT_DORM_WORK_RESET, self.DormWorkRefreshReq, self)
+    XEventManager.AddEventListener(XEventId.EVENT_DORM_DAI_GONE_REWARD, self.UpdataDaiGong, self)
 end
 
 function XUiDormWork:OnDisable()
@@ -274,6 +281,7 @@ function XUiDormWork:OnDisable()
         self.WorkTimer = nil
     end
     XEventManager.RemoveEventListener(XEventId.EVENT_DORM_WORK_RESET, self.DormWorkRefreshReq, self)
+    XEventManager.RemoveEventListener(XEventId.EVENT_DORM_DAI_GONE_REWARD, self.UpdataDaiGong, self)
 
 end
 
@@ -288,6 +296,7 @@ end
 
 function XUiDormWork:InitUI()
     self.AssetPanel = XUiPanelAsset.New(self,self.PanelAsset,XDataCenter.ItemManager.ItemId.DormCoin,XDataCenter.ItemManager.ItemId.FurnitureCoin)
+    self.TxtDaigong.text = TextManager.GetText("DormTxtDaigongDes")
     self:Initfun()
 end
 
@@ -305,6 +314,45 @@ function XUiDormWork:Initfun()
     self:RegisterClickEvent(self.BtnBack, self.OnBtnReturnClickCb)
     self:RegisterClickEvent(self.BtnHelp, self.OnBtnHelpClickCb)
     self:RegisterClickEvent(self.BtnTotalGet, self.OnBtnTotalGetCb)
+    self.BtnDaigong.CallBack = function() self:OnBtnDaigong() end
+end
+
+function XUiDormWork:OnBtnDaigong()
+    local count = DormManager.GetDormitoryCount()
+    local daiGongData = XDormConfig.GetDormCharacterWorkById(count)
+    local data = DormManager.GetDormWorkData()
+    local daigongList = {}
+    for _,v in pairs(data)do
+        if v.WorkEndTime > 0 and v.WorkEndTime > XTime.GetServerNowTimestamp() then
+            local mood = DormManager.GetMoodById(v.CharacterId)
+            if math.floor(daiGongData.Mood/100) <= mood then
+                if not self.DaiGongDataCache[v.CharacterId] then
+                    local d = {}
+                    d.DaiGongData = daiGongData
+                    d.WorkPos = v.WorkPos
+                    d.CurIconpath = XDormConfig.GetCharacterStyleConfigQIconById(v.CharacterId)
+                    self.DaiGongDataCache[v.CharacterId] = d
+                end
+                if self.PreDormCount ~= count then
+                    self.PreDormCount = count
+                    self.DaiGongDataCache[v.CharacterId].DaiGongData = daiGongData
+                end
+                table.insert(daigongList, self.DaiGongDataCache[v.CharacterId])
+            end
+        end
+    end
+
+    if not Next(daigongList) then
+        XUiManager.TipText("DormDaiGongWarnTips")
+        return 
+    end
+
+    self:OpenOneChildUi("UiDormFoundryDetail",self,daigongList)
+    if not self.FundryDetail then
+        self.FundryDetail = self:FindChildUiObj("UiDormFoundryDetail")
+    end
+    self.FundryDetail:OnRefreshData(daigongList)
+    self.PanelWork.gameObject:SetActiveEx(false)
 end
 
 function XUiDormWork:OnBtnHelpClick()
@@ -316,7 +364,7 @@ function XUiDormWork:OnBtnTotalGet()
     local data = DormManager.GetDormWorkData()
 
     for _,v in pairs(data)do
-        if v.WorkEndTime > 0 and v.WorkEndTime - XTime.Now() < 0 then
+        if v.WorkEndTime > 0 and v.WorkEndTime - XTime.GetServerNowTimestamp() < 0 then
             table.insert(poslist,v.WorkPos)
         end 
     end
@@ -325,8 +373,7 @@ function XUiDormWork:OnBtnTotalGet()
         XUiManager.TipMsg(TextManager.GetText("DormWorkNoRewardTips"))
         return
     end
-
-    -- DormManager.RequestDormitoryWorkReward(poslist,self.OnUpdataListDataCb)
+    
     DormManager.RequestDormitoryWorkReward(poslist,self.OnUpdataWorkListDataCb)
 end
 

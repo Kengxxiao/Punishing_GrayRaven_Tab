@@ -15,9 +15,9 @@ end
 
 function XUiGridInvestment:AddBtnsListeners()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnReduce, "onClick", self.OnBtnReduceClick)
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
-    self:RegisterListener(self.BtnMax, "onClick", self.OnBtnMaxClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnReduce, self.OnBtnReduceClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnMax, self.OnBtnMaxClick)
 end
 
 function XUiGridInvestment:OnBtnReduceClick(eventData)

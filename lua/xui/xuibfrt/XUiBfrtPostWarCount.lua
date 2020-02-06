@@ -103,8 +103,8 @@ end
 
 function XUiBfrtPostWarCount:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnExit, "onClick", self.OnBtnExitClick)
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnExit, self.OnBtnExitClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiBfrtPostWarCount:OnBtnExitClick(...)

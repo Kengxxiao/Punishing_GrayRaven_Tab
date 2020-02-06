@@ -230,11 +230,12 @@ end
 
 --改变状态
 function XHomeCharObj:ChangeStatus(state)
-    if self.Status == state then
+    if self.Status == state and self.Status ~= XHomeCharStatus.IDLE then
         return
     end
 
     self.FondleTypeList = {}
+
 
     --隐藏特效
     self:HideEffect()
@@ -731,16 +732,59 @@ function XHomeCharObj:GetFondleType()
     return self.FondleType
 end
 
---重新出生点
+-- 重新出生点
 function XHomeCharObj:ReBorn()
+    self.GameObject:SetActive(true)
     self.NavMeshAgent.IsObstacle = true
     self:ChangeStatus(XHomeCharStatus.IDLE)
-    self.GameObject:SetActive(true)
 end
 
-function XHomeCharObj:OnShow()
+-- 刷新位置
+function XHomeCharObj:ReSetPosition()
+    if self.LastInteractInfoPos then
+        self.LastInteractInfoPos = nil
+    end
+
+    local IsBornPos = false
+    local x = 0
+    local y = 0
+
+    while (not IsBornPos) do
+
+        x = math.random(1, CS.XHomeMapManager.Inst.MapSize.x - 2)
+        y = math.random(1, CS.XHomeMapManager.Inst.MapSize.y - 2)
+
+        local gridInfo = self.Map:GetGridInfo(x, y)
+        if gridInfo < ((1 << 1) - 1) then
+            IsBornPos = true
+        end
+    end
+
+    local pos = XHomeDormManager.GetLocalPosByGrid(x, y, CS.XHomePlatType.Ground, 0)
+    pos = self.Room.Transform.localToWorldMatrix:MultiplyPoint(pos)
+
+    self.Transform.position = pos
+
+    self.OrignalPosition = self.Transform.position
+end
+
+-- 检查是否在交互，如果在与家具交互，构造体重置到家具交互位置
+function XHomeCharObj:CheckInteractFurniture()
+    if self.LastInteractInfoPos then
+        self.Transform.position = CS.UnityEngine.Vector3(self.LastInteractInfoPos.x, self.LastInteractInfoPos.y, self.LastInteractInfoPos.z)
+        self.LastInteractInfoPos = nil
+    end
+end
+
+function XHomeCharObj:OnShow(isResetPosition)
     if self.Visible then
         return
+    end
+
+    if isResetPosition then
+        self:ReSetPosition()
+    else
+        self:CheckInteractFurniture()
     end
 
     self.Visible = true
@@ -752,6 +796,16 @@ function XHomeCharObj:OnHide()
 
     if not self.Visible then
         return
+    end
+
+    -- 保存家具交互点信息
+    if self.Furniture then
+        local info = self.Furniture:GetInteractById(self.Id)
+        self.LastInteractInfoPos = {
+            x = info.InteractPos.transform.position.x,
+            y = info.InteractPos.transform.position.y,
+            z = info.InteractPos.transform.position.z
+        }
     end
 
     self:ChangeStateMachine(XHomeCharFSMType.EMPTY)

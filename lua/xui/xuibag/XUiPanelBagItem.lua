@@ -6,7 +6,6 @@ local XUiPanelBagItem = XClass()
 function XUiPanelBagItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
-    self:InitAutoScript()
     XTool.InitUiObject(self)
 end
 
@@ -71,37 +70,4 @@ function XUiPanelBagItem:PlayAnimation()
     end
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelBagItem:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelBagItem:AutoInitUi()
-    self.GridEquip = self.Transform:Find("GridEquip")
-    self.GridBagItem = self.Transform:Find("GridBagItem")
-    self.GridSuitSimple = self.Transform:Find("GridSuitSimple")
-end
-
-function XUiPanelBagItem:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelBagItem:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelBagItem:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
-end
-
-function XUiPanelBagItem:AutoAddListener()
-end
--- auto
 return XUiPanelBagItem

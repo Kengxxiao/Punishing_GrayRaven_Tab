@@ -14,6 +14,10 @@ function XRedPointConditionFavorabilityGift.GetSubEvents()
 end
 
 function XRedPointConditionFavorabilityGift.Check(checkArgs)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityGift) then
+        return false
+    end
+
     if not checkArgs then return false end
     local characterId = checkArgs.CharacterId
     if characterId == nil then return false end

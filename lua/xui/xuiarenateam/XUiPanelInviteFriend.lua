@@ -49,6 +49,8 @@ function XUiPanelInviteFriend:Refresh()
             self.DynamicTable:ReloadDataASync()
         end
     end)
+
+    self.TxtTips.text = CS.XTextManager.GetText("ArenaTeamInvitTip")
 end
 
 --动态列表事件

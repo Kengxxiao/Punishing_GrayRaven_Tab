@@ -3,6 +3,7 @@ local XUiPanelMedal = XLuaUiManager.Register(XLuaUi, "UiPanelMedal")
 -----------------------------------------------------------------------
 local TextManager = CS.XTextManager
 local UiButtonState = CS.UiButtonState
+local TimestampToGameDateTimeString = XTime.TimestampToGameDateTimeString
 
 local AnimListEnable = "MedalListEnable"
 local AnimDetailEnable = "MdealDetailsEnable"
@@ -173,7 +174,7 @@ function XUiPanelMedal:SetDetailInfo(detailInfo)
     if detailInfo then
         --self.TxtUnlock.text = TextManager.GetText("MedalNumber",detailInfo.Num)
         self.TxtUnlock.gameObject:SetActiveEx(false)
-        self.TxtUnlockTime.text = TextManager.GetText("DayOfGetMedal",CS.XDate.FormatTime(detailInfo.Time))
+        self.TxtUnlockTime.text = TextManager.GetText("DayOfGetMedal",TimestampToGameDateTimeString(detailInfo.Time))
     end
 end
 

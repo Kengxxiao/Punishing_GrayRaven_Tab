@@ -90,7 +90,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 181	1	9120	普通第四章	通关普通剧情4-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					181			1	100081	181			剧情	173		6	5		1
 182	1	9110	普通第四章	通关普通剧情4-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					182			1	100082	182			剧情	173		6	5		1
 185	1	9100	普通第四章	拥有3件35级以上意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					185			3	100085	185			剧情	173		6	5		1
-186	1	9090	普通第四章	将1件橙色武器升至35级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					186			1	100086	186			剧情	173		6	5		1
+186	1	9090	普通第四章	将1件5星或6星的武器升至35级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					186			1	100086	186			剧情	173		6	5		1
 183	1	9080	普通第四章	通关普通剧情4-7	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					183			1	100083	183			剧情	173		6	5		1
 184	1	9070	普通第四章	通关普通剧情4-8	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					184			1	100084	184			剧情	173		6	5		1
 187	1	9060	普通第四章	通关普通剧情4-9	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					187			1	100087	187			剧情	173		6	5		1
@@ -114,7 +114,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 203	1	8880	普通第五章	通关普通剧情5-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					203			1	100103	203			剧情	201		8	7		1
 204	1	8870	普通第五章	通关普通剧情5-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					204			1	100104	204			剧情	201		8	7		1
 205	1	8860	普通第五章	通关普通剧情5-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					205			1	100105	205			剧情	201		8	7		1
-206	1	8850	普通第五章	拥有1件40级以上的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					206			1	100106	206			剧情	201		8	7		1
+206	1	8850	普通第五章	拥有1件40级以上的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					206			1	100106	206			剧情	201		8	7		1
 207	1	8735	普通第五章	通关1次构造体特训第2难度	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					207			1	100107	207			剧情	201		8	7		1
 208	1	8830	普通第五章	通关普通剧情5-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					208			1	100108	208			剧情	201		8	7		1
 209	1	8820	普通第五章	通关普通剧情5-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					209			1	100109	209			剧情	201		8	7		1
@@ -135,15 +135,15 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 223	1	8670	隐藏第四章	通关隐藏剧情4-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					223			1	100123	223			剧情	217		9	8		1
 226	1	8660	隐藏第四章	通关隐藏剧情4-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					226			1	100126	226			剧情	217		9	8		1
 331	1	8650	隐藏第四章	通关隐藏剧情4-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					331			1	100231	331			剧情	217		9	8		1
-224	1	8640	隐藏第四章	拥有2件40级以上的橙色意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					224			2	100124	224			剧情	217		9	8		1
+224	1	8640	隐藏第四章	拥有2件40级以上的5星或6星意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					224			2	100124	224			剧情	217		9	8		1
 225	1	8630	隐藏第四章	升级构造体技能70次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					225			70	100125	225			剧情	217		9	8		1
 227	1	8620	完成第四章所有任务	完成隐藏第四章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					227			8	100127				剧情	217		9	8	1	1
 228	1	8610	普通第六章	通关普通剧情6-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					228			1	100128	228			剧情	227		10	9		1
 229	1	8600	普通第六章	通关普通剧情6-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					229			1	100129	229			剧情	227		10	9		1
 230	1	8590	普通第六章	通关普通剧情6-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					230			1	100130	230			剧情	227		10	9		1
 231	1	8580	普通第六章	通关普通剧情6-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					231			1	100131	231			剧情	227		10	9		1
-232	1	8570	普通第六章	拥有4件40级以上的橙色意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					232			4	100132	232			剧情	227		10	9		1
-233	1	8560	普通第六章	拥有1件40级以上的橙色武器	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					233			1	100133	233			剧情	227		10	9		1
+232	1	8570	普通第六章	拥有4件40级以上的5星或6星意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					232			4	100132	232			剧情	227		10	9		1
+233	1	8560	普通第六章	拥有1件40级以上的5星或6星武器	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					233			1	100133	233			剧情	227		10	9		1
 234	1	8550	普通第六章	通关普通剧情6-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					234			1	100134	234			剧情	227		10	9		1
 235	1	8540	普通第六章	通关普通剧情6-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					235			1	100135	235			剧情	227		10	9		1
 238	1	8530	普通第六章	意识突破25次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					238			25	100138	238			剧情	227		10	9		1
@@ -164,14 +164,14 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 252	1	8380	隐藏第五章	通关隐藏剧情5-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					252			1	100152	252			剧情	243		11	10		1
 332	1	8370	隐藏第五章	通关隐藏剧情5-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					332			1	100232	332			剧情	243		11	10		1
 250	1	8360	隐藏第五章	1个构造体达到50级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					250			1	100150	250			剧情	243		11	10		1
-251	1	8350	隐藏第五章	拥有1件45级以上的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					251			1	100151	251			剧情	243		11	10		1
+251	1	8350	隐藏第五章	拥有1件45级以上的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					251			1	100151	251			剧情	243		11	10		1
 253	1	8340	完成第五章所有任务	完成隐藏第五章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					253			8	100153				剧情	243		11	10	1	1
 254	1	8330	普通第七章	通关普通剧情7-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					254			1	100154	254			剧情	253		12	11		1
 255	1	8320	普通第七章	通关普通剧情7-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					255			1	100155	255			剧情	253		12	11		1
 256	1	8310	普通第七章	通关普通剧情7-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					256			1	100156	256			剧情	253		12	11		1
 257	1	8300	普通第七章	通关普通剧情7-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					257			1	100157	257			剧情	253		12	11		1
-258	1	8290	普通第七章	拥有3件45级以上的橙色意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					258			3	100158	258			剧情	253		12	11		1
-259	1	8280	普通第七章	拥有1件45级以上的橙色武器	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					259			1	100159	259			剧情	253		12	11		1
+258	1	8290	普通第七章	拥有3件45级以上的5星或6星意识	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					258			3	100158	258			剧情	253		12	11		1
+259	1	8280	普通第七章	拥有1件45级以上的5星或6星武器	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					259			1	100159	259			剧情	253		12	11		1
 260	1	8270	普通第七章	通关普通剧情7-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					260			1	100160	260			剧情	253		12	11		1
 261	1	8260	普通第七章	通关普通剧情7-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					261			1	100161	261			剧情	253		12	11		1
 264	1	8250	普通第七章	意识突破30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					264			30	100164	264			剧情	253		12	11		1
@@ -192,13 +192,13 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 278	1	8100	隐藏第六章	通关隐藏剧情6-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					278			1	100178	278			剧情	269		13	12		1
 333	1	8090	隐藏第六章	通关隐藏剧情6-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					333			1	100233	333			剧情	269		13	12		1
 276	1	8080	隐藏第六章	3个构造体达到55级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					276			3	100176	276			剧情	269		13	12		1
-277	1	8070	隐藏第六章	拥有7件45级的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					277			7	100177	277			剧情	269		13	12		1
+277	1	8070	隐藏第六章	拥有7件45级的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					277			7	100177	277			剧情	269		13	12		1
 279	1	8060	完成第六章所有任务	完成隐藏第六章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					279			8	100179				剧情	269		13	12	1	1
 280	1	8050	普通第八章	通关普通剧情8-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					280			1	100180	280			剧情	279		14	13		1
 281	1	8040	普通第八章	通关普通剧情8-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					281			1	100181	281			剧情	279		14	13		1
 282	1	8030	普通第八章	通关普通剧情8-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					282			1	100182	282			剧情	279		14	13		1
 283	1	8020	普通第八章	通关普通剧情8-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					283			1	100183	283			剧情	279		14	13		1
-284	1	8010	普通第八章	拥有10件45级的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					284			10	100184	284			剧情	279		14	13		1
+284	1	8010	普通第八章	拥有10件45级的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					284			10	100184	284			剧情	279		14	13		1
 285	1	8000	普通第八章	升级构造体技能120次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					285			120	100185	285			剧情	279		14	13		1
 286	1	7990	普通第八章	通关普通剧情8-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					286			1	100186	286			剧情	279		14	13		1
 287	1	7980	普通第八章	通关普通剧情8-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					287			1	100187	287			剧情	279		14	13		1
@@ -220,7 +220,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 304	1	7820	隐藏第七章	通关隐藏剧情7-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					304			1	100204	304			剧情	295		15	14		1
 334	1	7810	隐藏第七章	通关隐藏剧情7-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					334			1	100234	334			剧情	295		15	14		1
 302	1	7800	隐藏第七章	3个构造体达到60级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					302			3	100202	302			剧情	295		15	14		1
-303	1	7790	隐藏第七章	拥有12件45级的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					303			12	100203	303			剧情	295		15	14		1
+303	1	7790	隐藏第七章	拥有12件45级的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					303			12	100203	303			剧情	295		15	14		1
 305	1	7780	完成第七章所有任务	完成隐藏第七章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					305			8	100205				剧情	295		15	14	1	1
 306	1	7770	隐藏第八章	通关隐藏剧情8-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					306			1	100206	306			剧情	305		16	15		1
 307	1	7760	隐藏第八章	通关隐藏剧情8-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					307			1	100207	307			剧情	305		16	15		1
@@ -229,8 +229,19 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 312	1	7730	隐藏第八章	通关隐藏剧情8-5	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					312			1	100212	312			剧情	305		16	15		1
 335	1	7720	隐藏第八章	通关隐藏剧情8-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					335			1	100235	335			剧情	305		16	15		1
 310	1	7710	隐藏第八章	6个构造体达到60级	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					310			6	100210	310			剧情	305		16	15		1
-311	1	7700	隐藏第八章	拥有18件45级的橙色装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					311			18	100211	311			剧情	305		16	15		1
+311	1	7700	隐藏第八章	拥有18件45级的5星或6星装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					311			18	100211	311			剧情	305		16	15		1
 313	1	7690	完成第八章所有任务	完成隐藏第八章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					313			8	100213				剧情	305		16	15	1	1
+400	1	7680	普通第九章	通关普通剧情9-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					400			1	100301	400			剧情	313		17	16		1
+401	1	7670	普通第九章	通关普通剧情9-4	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					401			1	100302	401			剧情	313		17	16		1
+402	1	7660	普通第九章	通关普通剧情9-6	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					402			1	100303	402			剧情	313		17	16		1
+403	1	7650	普通第九章	通关普通剧情9-8	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					403			1	100304	403			剧情	313		17	16		1
+404	1	7640	普通第九章	通关普通剧情9-10	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					404			1	100305	404			剧情	313		17	16		1
+405	1	7630	普通第九章	通关普通剧情9-12	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					405			1	100306	405			剧情	313		17	16		1
+406	1	7620	完成第九章所有任务	完成普通第九章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					406			6	100307				剧情	313		17	16	1	1
+407	1	7610	隐藏第九章	通关隐藏剧情9-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					407			1	100308	407			剧情	406		18	17		1
+408	1	7600	隐藏第九章	通关隐藏剧情9-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					408			1	100309	408			剧情	406		18	17		1
+409	1	7590	隐藏第九章	通关隐藏剧情9-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					409			1	100310	409			剧情	406		18	17		1
+410	1	7580	完成第九章所有任务	完成隐藏第九章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					410			5	100311				剧情	406		18	17	1	1
 700	9	10000	远征	派遣1次队伍通关据点战	Assets/Product/Texture/Image/IconTask/TaskIconThread01.png					700			1	210000	700			通关						
 710	9	9970	新的地区	通关据点战2-1	Assets/Product/Texture/Image/IconTask/TaskIconThread02.png					710			1	210001	710			通关						
 720	9	9940	炮火覆盖	通关据点战3-1	Assets/Product/Texture/Image/IconTask/TaskIconThread03.png					720			1	210002	720			通关						
@@ -603,65 +614,81 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 3455	4	7626	赤渊之上Ⅵ	露西亚·深红之渊提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3455			1	34350	3435			培养	3454	3				
 3456	4	7625	赤渊之上Ⅶ	露西亚·深红之渊提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3456			1	34360	3436			培养	3455	3				
 3457	4	7624	GR·赤渊之上	露西亚·深红之渊提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconLuxiyaaerfa.png					3457			1	34370	3437			培养	3456	3				
-3500	4	7630	军勋在此Ⅰ	构造体累积晋升5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3500			5	35000	3500			培养		3				
-3501	4	7620	军勋在此Ⅱ	构造体累积晋升10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3501			10	35010	3501			培养	3500	3				
-3502	4	7610	军勋在此Ⅲ	构造体累积晋升20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3502			20	35020	3502			培养	3501	3				
-3503	4	7600	军勋在此Ⅳ	构造体累积晋升30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3503			30	35030	3503			培养	3502	3				
-3504	4	7590	军勋在此Ⅴ	构造体累积晋升40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3504			40	35040	3504			培养	3503	3				
-3505	4	7580	军勋在此Ⅵ	构造体累积晋升50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3505			50	35050	3505			培养	3504	3				
-3506	4	7570	军勋在此Ⅶ	构造体累积晋升75次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3506			75	35060	3506			培养	3505	3				
-3507	4	7560	军勋在此Ⅷ	构造体累积晋升100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3507			100	35070	3507			培养	3506	3				
-3508	4	7550	军勋在此Ⅸ	构造体累积晋升125次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3508			125	35080	3508			培养	3507	3				
-3509	4	7540	军勋在此Ⅹ	构造体累积晋升150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3509			150	35090	3509			培养	3508	3				
-3510	4	7530	我不做人啦Ⅰ	构造体累积进化2次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3510			2	35100	3510			培养		3				
-3511	4	7520	我不做人啦Ⅱ	构造体累积进化4次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3511			4	35110	3511			培养	3510	3				
-3512	4	7510	我不做人啦Ⅲ	构造体累积进化6次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3512			6	35120	3512			培养	3511	3				
-3513	4	7500	我不做人啦Ⅳ	构造体累积进化8次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3513			8	35130	3513			培养	3512	3				
-3514	4	7490	我不做人啦Ⅴ	构造体累积进化10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3514			10	35140	3514			培养	3513	3				
-3515	4	7480	我不做人啦Ⅵ	构造体累积进化12次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3515			12	35150	3515			培养	3514	3				
-3516	4	7470	我不做人啦Ⅶ	构造体累积进化14次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3516			14	35160	3516			培养	3515	3				
-3517	4	7460	我不做人啦Ⅷ	构造体累积进化16次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3517			16	35170	3517			培养	3516	3				
-3518	4	7450	我不做人啦Ⅸ	构造体累积进化18次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3518			18	35180	3518			培养	3517	3				
-3519	4	7440	我不做人啦Ⅹ	构造体累积进化20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3519			20	35190	3519			培养	3518	3				
-3520	4	7430	诸武解禁Ⅰ	装备累积突破5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3520			5	35200	3520			培养		3				
-3521	4	7420	诸武解禁Ⅱ	装备累积突破10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3521			10	35210	3521			培养	3520	3				
-3522	4	7410	诸武解禁Ⅲ	装备累积突破20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3522			20	35220	3522			培养	3521	3				
-3523	4	7400	诸武解禁Ⅳ	装备累积突破30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3523			30	35230	3523			培养	3522	3				
-3524	4	7390	诸武解禁Ⅴ	装备累积突破40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3524			40	35240	3524			培养	3523	3				
-3525	4	7380	诸武解禁Ⅵ	装备累积突破50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3525			50	35250	3525			培养	3524	3				
-3526	4	7370	诸武解禁Ⅶ	装备累积突破75次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3526			75	35260	3526			培养	3525	3				
-3527	4	7360	诸武解禁Ⅷ	装备累积突破100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3527			100	35270	3527			培养	3526	3				
-3528	4	7350	诸武解禁Ⅸ	装备累积突破125次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3528			125	35280	3528			培养	3527	3				
-3529	4	7340	诸武解禁Ⅹ	装备累积突破150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3529			150	35290	3529			培养	3528	3				
-3530	4	7330	同频共振Ⅰ	装备累积共鸣2次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3530			2	35300	3530			培养		3				
-3531	4	7320	同频共振Ⅱ	装备累积共鸣5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3531			5	35310	3531			培养	3530	3				
-3532	4	7310	同频共振Ⅲ	装备累积共鸣10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3532			10	35320	3532			培养	3531	3				
-3533	4	7300	同频共振Ⅳ	装备累积共鸣15次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3533			15	35330	3533			培养	3532	3				
-3534	4	7290	同频共振Ⅴ	装备累积共鸣20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3534			20	35340	3534			培养	3533	3				
-3535	4	7280	同频共振Ⅵ	装备累积共鸣25次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3535			25	35350	3535			培养	3534	3				
-3536	4	7270	同频共振Ⅶ	装备累积共鸣30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3536			30	35360	3536			培养	3535	3				
-3537	4	7260	同频共振Ⅷ	装备累积共鸣35次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3537			35	35370	3537			培养	3536	3				
-3538	4	7250	同频共振Ⅸ	装备累积共鸣40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3538			40	35380	3538			培养	3537	3				
-3539	4	7240	同频共振Ⅹ	装备累积共鸣45次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3539			45	35390	3539			培养	3538	3				
-3540	4	7230	同频共振Ⅺ	装备累积共鸣50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3540			50	35400	3540			培养	3539	3				
-3550	4	7220	解体诸因Ⅰ	装备累积分解10件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3550			10	35500	3550			培养		3				
-3551	4	7210	解体诸因Ⅱ	装备累积分解20件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3551			20	35510	3551			培养	3550	3				
-3552	4	7200	解体诸因Ⅲ	装备累积分解40件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3552			40	35520	3552			培养	3551	3				
-3553	4	7190	解体诸因Ⅳ	装备累积分解60件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3553			60	35530	3553			培养	3552	3				
-3554	4	7180	解体诸因Ⅴ	装备累积分解100件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3554			100	35540	3554			培养	3553	3				
-3555	4	7170	解体诸因Ⅵ	装备累积分解150件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3555			150	35550	3555			培养	3554	3				
-3556	4	7160	解体诸因Ⅶ	装备累积分解200件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3556			200	35560	3556			培养	3555	3				
-3557	4	7150	解体诸因Ⅷ	装备累积分解300件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3557			300	35570	3557			培养	3556	3				
-3558	4	7140	解体诸因Ⅸ	装备累积分解400件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3558			400	35580	3558			培养	3557	3				
-3559	4	7130	解体诸因Ⅹ	装备累积分解500件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3559			500	35590	3559			培养	3558	3				
-3560	4	7120	武力全开Ⅰ	装备累积强化25次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3560			25	35600	3560			培养		3				
-3561	4	7110	武力全开Ⅱ	装备累积强化50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3561			50	35610	3561			培养	3560	3				
-3562	4	7100	武力全开Ⅲ	装备累积强化100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3562			100	35620	3562			培养	3561	3				
-3563	4	7090	武力全开Ⅳ	装备累积强化150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3563			150	35630	3563			培养	3562	3				
-3570	6	7080	居家必备Ⅰ	获得25件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3570			25	35700	3570			培养		3				
-3571	6	7070	居家必备Ⅱ	获得50件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3571			50	35710	3571			培养	3570	3				
-3572	6	7060	居家必备Ⅲ	获得100件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3572			100	35720	3572			培养	3571	3				
-3573	6	7050	居家必备Ⅳ	获得150件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3573			150	35730	3573			培养	3572	3				
+3460	4	7623	陨地之星Ⅰ	渡边·夙星提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3460			1	34300	3430			培养		3				
+3461	4	7622	陨地之星Ⅱ	渡边·夙星提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3461			1	34310	3431			培养	3460	3				
+3462	4	7621	陨地之星Ⅲ	渡边·夙星提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3462			1	34320	3432			培养	3461	3				
+3463	4	7620	陨地之星Ⅳ	渡边·夙星提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3463			1	34330	3433			培养	3462	3				
+3464	4	7619	陨地之星Ⅴ	渡边·夙星提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3464			1	34340	3434			培养	3463	3				
+3465	4	7618	陨地之星Ⅵ	渡边·夙星提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3465			1	34350	3435			培养	3464	3				
+3466	4	7617	陨地之星Ⅶ	渡边·夙星提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3466			1	34360	3436			培养	3465	3				
+3467	4	7616	GR·陨地之星	渡边·夙星提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconDubian3.png					3467			1	34370	3437			培养	3466	3				
+3670	4	7615	异彩纷呈Ⅰ	艾拉·溢彩提升至10级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3670			1	34300	3430			培养		3				
+3671	4	7614	异彩纷呈Ⅱ	艾拉·溢彩提升至20级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3671			1	34310	3431			培养	3670	3				
+3672	4	7613	异彩纷呈Ⅲ	艾拉·溢彩提升至30级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3672			1	34320	3432			培养	3671	3				
+3673	4	7612	异彩纷呈Ⅳ	艾拉·溢彩提升至40级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3673			1	34330	3433			培养	3672	3				
+3674	4	7611	异彩纷呈Ⅴ	艾拉·溢彩提升至50级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3674			1	34340	3434			培养	3673	3				
+3675	4	7610	异彩纷呈Ⅵ	艾拉·溢彩提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3675			1	34350	3435			培养	3674	3				
+3676	4	7609	异彩纷呈Ⅶ	艾拉·溢彩提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3676			1	34360	3436			培养	3675	3				
+3677	4	7608	GR·异彩纷呈	艾拉·溢彩提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3677			1	34370	3437			培养	3676	3				
+3500	4	5630	军勋在此Ⅰ	构造体累积晋升5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3500			5	35000	3500			培养	3677	3				
+3501	4	5620	军勋在此Ⅱ	构造体累积晋升10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3501			10	35010	3501			培养	3500	3				
+3502	4	5610	军勋在此Ⅲ	构造体累积晋升20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3502			20	35020	3502			培养	3501	3				
+3503	4	5600	军勋在此Ⅳ	构造体累积晋升30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3503			30	35030	3503			培养	3502	3				
+3504	4	5590	军勋在此Ⅴ	构造体累积晋升40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3504			40	35040	3504			培养	3503	3				
+3505	4	5580	军勋在此Ⅵ	构造体累积晋升50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3505			50	35050	3505			培养	3504	3				
+3506	4	5570	军勋在此Ⅶ	构造体累积晋升75次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3506			75	35060	3506			培养	3505	3				
+3507	4	5560	军勋在此Ⅷ	构造体累积晋升100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3507			100	35070	3507			培养	3506	3				
+3508	4	5550	军勋在此Ⅸ	构造体累积晋升125次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3508			125	35080	3508			培养	3507	3				
+3509	4	5540	军勋在此Ⅹ	构造体累积晋升150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3509			150	35090	3509			培养	3508	3				
+3510	4	5530	我不做人啦Ⅰ	构造体累积进化2次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3510			2	35100	3510			培养		3				
+3511	4	5520	我不做人啦Ⅱ	构造体累积进化4次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3511			4	35110	3511			培养	3510	3				
+3512	4	5510	我不做人啦Ⅲ	构造体累积进化6次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3512			6	35120	3512			培养	3511	3				
+3513	4	5500	我不做人啦Ⅳ	构造体累积进化8次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3513			8	35130	3513			培养	3512	3				
+3514	4	5490	我不做人啦Ⅴ	构造体累积进化10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3514			10	35140	3514			培养	3513	3				
+3515	4	5480	我不做人啦Ⅵ	构造体累积进化12次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3515			12	35150	3515			培养	3514	3				
+3516	4	5470	我不做人啦Ⅶ	构造体累积进化14次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3516			14	35160	3516			培养	3515	3				
+3517	4	5460	我不做人啦Ⅷ	构造体累积进化16次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3517			16	35170	3517			培养	3516	3				
+3518	4	5450	我不做人啦Ⅸ	构造体累积进化18次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3518			18	35180	3518			培养	3517	3				
+3519	4	5440	我不做人啦Ⅹ	构造体累积进化20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3519			20	35190	3519			培养	3518	3				
+3520	4	5430	诸武解禁Ⅰ	装备累积突破5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3520			5	35200	3520			培养		3				
+3521	4	5420	诸武解禁Ⅱ	装备累积突破10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3521			10	35210	3521			培养	3520	3				
+3522	4	5410	诸武解禁Ⅲ	装备累积突破20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3522			20	35220	3522			培养	3521	3				
+3523	4	5400	诸武解禁Ⅳ	装备累积突破30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3523			30	35230	3523			培养	3522	3				
+3524	4	5390	诸武解禁Ⅴ	装备累积突破40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3524			40	35240	3524			培养	3523	3				
+3525	4	5380	诸武解禁Ⅵ	装备累积突破50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3525			50	35250	3525			培养	3524	3				
+3526	4	5370	诸武解禁Ⅶ	装备累积突破75次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3526			75	35260	3526			培养	3525	3				
+3527	4	5360	诸武解禁Ⅷ	装备累积突破100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3527			100	35270	3527			培养	3526	3				
+3528	4	5350	诸武解禁Ⅸ	装备累积突破125次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3528			125	35280	3528			培养	3527	3				
+3529	4	5340	诸武解禁Ⅹ	装备累积突破150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3529			150	35290	3529			培养	3528	3				
+3530	4	5330	同频共振Ⅰ	装备累积共鸣2次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3530			2	35300	3530			培养		3				
+3531	4	5320	同频共振Ⅱ	装备累积共鸣5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3531			5	35310	3531			培养	3530	3				
+3532	4	5310	同频共振Ⅲ	装备累积共鸣10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3532			10	35320	3532			培养	3531	3				
+3533	4	5300	同频共振Ⅳ	装备累积共鸣15次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3533			15	35330	3533			培养	3532	3				
+3534	4	5290	同频共振Ⅴ	装备累积共鸣20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3534			20	35340	3534			培养	3533	3				
+3535	4	5280	同频共振Ⅵ	装备累积共鸣25次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3535			25	35350	3535			培养	3534	3				
+3536	4	5270	同频共振Ⅶ	装备累积共鸣30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3536			30	35360	3536			培养	3535	3				
+3537	4	5260	同频共振Ⅷ	装备累积共鸣35次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3537			35	35370	3537			培养	3536	3				
+3538	4	5250	同频共振Ⅸ	装备累积共鸣40次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3538			40	35380	3538			培养	3537	3				
+3539	4	5240	同频共振Ⅹ	装备累积共鸣45次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3539			45	35390	3539			培养	3538	3				
+3540	4	5230	同频共振Ⅺ	装备累积共鸣50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3540			50	35400	3540			培养	3539	3				
+3550	4	5220	解体诸因Ⅰ	装备累积分解10件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3550			10	35500	3550			培养		3				
+3551	4	5210	解体诸因Ⅱ	装备累积分解20件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3551			20	35510	3551			培养	3550	3				
+3552	4	5200	解体诸因Ⅲ	装备累积分解40件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3552			40	35520	3552			培养	3551	3				
+3553	4	5190	解体诸因Ⅳ	装备累积分解60件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3553			60	35530	3553			培养	3552	3				
+3554	4	5180	解体诸因Ⅴ	装备累积分解100件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3554			100	35540	3554			培养	3553	3				
+3555	4	5170	解体诸因Ⅵ	装备累积分解150件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3555			150	35550	3555			培养	3554	3				
+3556	4	5160	解体诸因Ⅶ	装备累积分解200件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3556			200	35560	3556			培养	3555	3				
+3557	4	5150	解体诸因Ⅷ	装备累积分解300件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3557			300	35570	3557			培养	3556	3				
+3558	4	5140	解体诸因Ⅸ	装备累积分解400件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3558			400	35580	3558			培养	3557	3				
+3559	4	5130	解体诸因Ⅹ	装备累积分解500件	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3559			500	35590	3559			培养	3558	3				
+3560	4	5120	武力全开Ⅰ	装备累积强化25次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3560			25	35600	3560			培养		3				
+3561	4	5110	武力全开Ⅱ	装备累积强化50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3561			50	35610	3561			培养	3560	3				
+3562	4	5100	武力全开Ⅲ	装备累积强化100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3562			100	35620	3562			培养	3561	3				
+3563	4	5090	武力全开Ⅳ	装备累积强化150次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3563			150	35630	3563			培养	3562	3				
+3570	6	5080	居家必备Ⅰ	获得25件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3570			25	35700	3570			培养		3				
+3571	6	5070	居家必备Ⅱ	获得50件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3571			50	35710	3571			培养	3570	3				
+3572	6	5060	居家必备Ⅲ	获得100件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3572			100	35720	3572			培养	3571	3				
+3573	6	5050	居家必备Ⅳ	获得150件橙色基地装备	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3573			150	35730	3573			培养	3572	3				
 3600	4	7040	是消耗品Ⅰ	消耗1000000螺母	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3600			1000000	36000	3600			特殊		4				
 3601	4	7030	是消耗品Ⅱ	消耗3000000螺母	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3601			3000000	36010	3601			特殊	3600	4				
 3602	4	7020	是消耗品Ⅲ	消耗5000000螺母	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3602			5000000	36020	3602			特殊	3601	4				
@@ -749,29 +776,30 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 90204	6	1	林地截击Ⅰ	完成清剿异变体第1关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90204			活动						
 90205	6	1	林地截击Ⅱ	完成清剿异变体第2关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					100			1	100000	90205			活动						
 90206	6	1	林地截击Ⅲ	完成清剿异变体第3关	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					1			1	100000	90206			活动						
-12001	13	487	旧的不去新的不来	回收家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12001			1	12001	12001			宿舍						
-12002	13	486	小小粉刷匠	制造家具3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12002			3	12002	12002			宿舍						
-12003	13	488	恒定温柔	爱抚构造体5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍						
-12004	13	500	能者多劳	宿舍构造体执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍						
-12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍						
-12006	13	485	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006		2019/12/31 5:00		宿舍						
-14001	12	2001	宿舍指引	指引-入住1位构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14001			1	14001	14001			宿舍			9999			
+12001	13	487	旧的不去新的不来	回收家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12001			1	12001	12001			宿舍			9998			
+12002	13	486	小小粉刷匠	制造家具3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12002			3	12002	12002			宿舍			9998			
+12003	13	488	恒定温柔	爱抚伙伴5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12003			5	12003	12003			宿舍			9998			
+12004	13	500	能者多劳	宿舍伙伴执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍			9998			
+12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍			9998			
+12006	13	485	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006		2019/12/31 5:00		宿舍			9998		1	
+12007	13	510	温馨指标	完成任意4个宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12007			4	12007		2020/2/7 5:00		宿舍			9998			
+14001	12	2001	宿舍指引	指引-入住1位伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14001			1	14001	14001			宿舍			9999			
 14002	12	2000	宿舍指引	指引-放置家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14002			1	14002	14002			宿舍			9999			
 14003	12	1999	宿舍指引	指引-将椅子改装1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14003			1	14003	14003			宿舍			9999			
 14004	12	1998	宿舍指引	指引-制造1件家具	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14004			1	14004	14004			宿舍			9999			
-14005	12	1996	宿舍指引	指引-构造体执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14005			1	14005	14005			宿舍			9999			
-14006	12	1997	宿舍指引	指引-爱抚构造体1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14006			1	14006	14006			宿舍			9999			
+14005	12	1996	宿舍指引	指引-伙伴执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14005			1	14005	14005			宿舍			9999			
+14006	12	1997	宿舍指引	指引-爱抚伙伴1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14006			1	14006	14006			宿舍			9999			
 14007	12	2002	宿舍指引	指引-完成所有指引任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14007			6	14007				宿舍			9999		1	
 13001	12	1400	最好的投资Ⅰ	解锁房间2间	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13001			2	13001	13001			宿舍	14007					
 13002	12	1398	最好的投资Ⅱ	解锁房间3间	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13002			3	13002	13002			宿舍	13001					
 13003	12	1396	最好的投资Ⅲ	解锁房间4间	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13003			4	13003	13003			宿舍	13002					
 13004	12	1394	最好的投资Ⅳ	解锁房间5间	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13004			5	13004	13004			宿舍	13003					
 13005	12	1392	最好的投资Ⅴ	解锁房间6间	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13005			6	13005	13005			宿舍	13004					
-13006	12	1390	加入派对！Ⅰ	入住3个构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13006			3	13006	13006			宿舍	14007					
-13007	12	1388	加入派对！Ⅱ	入住6个构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13007			6	13007	13007			宿舍	13006					
-13008	12	1386	加入派对！Ⅲ	入住9个构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13008			9	13008	13008			宿舍	13007					
-13009	12	1384	加入派对！Ⅳ	入住12个构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13009			12	13009	13009			宿舍	13008					
-13010	12	1382	加入派对！Ⅴ	入住15个构造体	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13010			15	13010	13010			宿舍	13009					
+13006	12	1390	加入派对！Ⅰ	入住3个伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13006			3	13006	13006			宿舍	14007					
+13007	12	1388	加入派对！Ⅱ	入住6个伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13007			6	13007	13007			宿舍	13006					
+13008	12	1386	加入派对！Ⅲ	入住9个伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13008			9	13008	13008			宿舍	13007					
+13009	12	1384	加入派对！Ⅳ	入住12个伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13009			12	13009	13009			宿舍	13008					
+13010	12	1382	加入派对！Ⅴ	入住15个伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13010			15	13010	13010			宿舍	13009					
 13011	12	1380	兴家创业Ⅰ	宿舍累计执勤次数达到10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13011			10	13011	13011			宿舍	14007					
 13012	12	1378	兴家创业Ⅱ	宿舍累计执勤次数达到50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13012			50	13012	13012			宿舍	13011					
 13013	12	1376	兴家创业Ⅲ	宿舍累计执勤次数达到100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13013			100	13013	13013			宿舍	13012					
@@ -787,21 +815,21 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 13023	12	1356	邂逅指数Ⅲ	宿舍累计触发并完成奖励事件50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13023			50	13023	13023			宿舍	13022					
 13024	12	1354	邂逅指数Ⅳ	宿舍累计触发并完成奖励事件100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13024			100	13024	13024			宿舍	13023					
 13025	12	1352	邂逅指数Ⅴ	宿舍累计触发并完成奖励事件250次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13025			250	13025	13025			宿舍	13024					
-13026	12	1350	小心别摸秃了Ⅰ	宿舍累计爱抚构造体10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13026			10	13026	13026			宿舍	14007					
-13027	12	1348	小心别摸秃了Ⅱ	宿舍累计爱抚构造体50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13027			50	13027	13027			宿舍	13026					
-13028	12	1346	小心别摸秃了Ⅲ	宿舍累计爱抚构造体100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13028			100	13028	13028			宿舍	13027					
-13029	12	1344	小心别摸秃了Ⅳ	宿舍累计爱抚构造体200次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13029			200	13029	13029			宿舍	13028					
-13030	12	1342	小心别摸秃了Ⅴ	宿舍累计爱抚构造体500次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13030			500	13030	13030			宿舍	13029					
-13031	12	1340	继续嗨，别停下！Ⅰ	保持3个构造体心情值在80以上1天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13031			1	13031	13031			宿舍	14007					
-13032	12	1338	继续嗨，别停下！Ⅱ	保持3个构造体心情值在80以上2天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13032			2	13032	13032			宿舍	13031					
-13033	12	1336	继续嗨，别停下！Ⅲ	保持3个构造体心情值在80以上4天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13033			4	13033	13033			宿舍	13032					
-13034	12	1334	继续嗨，别停下！Ⅳ	保持3个构造体心情值在80以上7天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13034			7	13034	13034			宿舍	13033					
-13035	12	1332	继续嗨，别停下！Ⅴ	保持3个构造体心情值在80以上15天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13035			15	13035	13035			宿舍	13034					
-13036	12	1330	继续嗨，别停下！Ⅵ	保持3个构造体心情值在80以上30天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13036			30	13036	13036			宿舍	13035					
-13037	12	1328	继续嗨，别停下！Ⅶ	保持3个构造体心情值在80以上45天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13037			45	13037	13037			宿舍	13036					
-13038	12	1326	继续嗨，别停下！Ⅷ	保持3个构造体心情值在80以上60天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13038			60	13038	13038			宿舍	13037					
-13039	12	1324	继续嗨，别停下！Ⅸ	保持3个构造体心情值在80以上90天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13039			90	13039	13039			宿舍	13038					
-13040	12	1322	继续嗨，别停下！Ⅹ	保持3个构造体心情值在80以上180天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13040			180	13040	13040			宿舍	13039					
+13026	12	1350	小心别摸秃了Ⅰ	宿舍累计爱抚伙伴10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13026			10	13026	13026			宿舍	14007					
+13027	12	1348	小心别摸秃了Ⅱ	宿舍累计爱抚伙伴50次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13027			50	13027	13027			宿舍	13026					
+13028	12	1346	小心别摸秃了Ⅲ	宿舍累计爱抚伙伴100次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13028			100	13028	13028			宿舍	13027					
+13029	12	1344	小心别摸秃了Ⅳ	宿舍累计爱抚伙伴200次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13029			200	13029	13029			宿舍	13028					
+13030	12	1342	小心别摸秃了Ⅴ	宿舍累计爱抚伙伴500次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13030			500	13030	13030			宿舍	13029					
+13031	12	1340	继续嗨，别停下！Ⅰ	保持3个伙伴心情值在80以上1天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13031			1	13031	13031			宿舍	14007					
+13032	12	1338	继续嗨，别停下！Ⅱ	保持3个伙伴心情值在80以上2天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13032			2	13032	13032			宿舍	13031					
+13033	12	1336	继续嗨，别停下！Ⅲ	保持3个伙伴心情值在80以上4天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13033			4	13033	13033			宿舍	13032					
+13034	12	1334	继续嗨，别停下！Ⅳ	保持3个伙伴心情值在80以上7天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13034			7	13034	13034			宿舍	13033					
+13035	12	1332	继续嗨，别停下！Ⅴ	保持3个伙伴心情值在80以上15天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13035			15	13035	13035			宿舍	13034					
+13036	12	1330	继续嗨，别停下！Ⅵ	保持3个伙伴心情值在80以上30天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13036			30	13036	13036			宿舍	13035					
+13037	12	1328	继续嗨，别停下！Ⅶ	保持3个伙伴心情值在80以上45天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13037			45	13037	13037			宿舍	13036					
+13038	12	1326	继续嗨，别停下！Ⅷ	保持3个伙伴心情值在80以上60天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13038			60	13038	13038			宿舍	13037					
+13039	12	1324	继续嗨，别停下！Ⅸ	保持3个伙伴心情值在80以上90天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13039			90	13039	13039			宿舍	13038					
+13040	12	1322	继续嗨，别停下！Ⅹ	保持3个伙伴心情值在80以上180天	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13040			180	13040	13040			宿舍	13039					
 13041	12	1320	小心地滑Ⅰ	累计制造地板类家具5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13041			5	13041	13041			宿舍	14007					
 13042	12	1318	小心地滑Ⅱ	累计制造地板类家具10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13042			10	13042	13042			宿舍	13041					
 13043	12	1316	小心地滑Ⅲ	累计制造地板类家具20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					13043			20	13043	13043			宿舍	13042					
@@ -1025,3 +1053,73 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 11112	11	9780	六六大顺	累计使用46个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11112			46	11112	10029			收集						
 11113	11	9760	八方来财	累计使用56个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11113			56	11113	10029			收集						
 11114	11	9740	十全十美	累计使用66个年禧红封	Assets/Product/Texture/Image/IconTask/TaskIconChallenge05.png					11114			66	11114	10029			收集						
+11201	11	9990		50						11201			50	11201				收集						
+11202	11	9980		100						11202			100	11202				收集						
+11203	11	9970		150						11203			150	11203				收集						
+11204	11	9960		200						11204			200	11204				收集						
+11205	11	9950		250						11205			250	11205				收集						
+11206	11	9940		300						11206			300	11206				收集						
+11207	11	9930		350						11207			350	11207				收集						
+11208	11	9920		400						11208			400	11208				收集						
+11209	11	9910		450						11209			450	11209				收集						
+11210	11	9900		500						11210			500	11210				收集						
+11211	11	9890		550						11211			550	11211				收集						
+11212	11	9880		600						11212			600	11212				收集						
+11213	11	9870		650						11213			650	11213				收集						
+11214	11	9860		700						11214			700	11214				收集						
+11215	11	9850		750						11215			750	11215				收集						
+11216	11	9840		800						11216			800	11216				收集						
+11217	11	9830		850						11217			850	11217				收集						
+11218	11	9820		900						11218			900	11218				收集						
+11219	11	9810		950						11219			950	11219				收集						
+11220	11	9800		1000						11220			1000	11220				收集						
+11221	11	9790		1050						11221			1050	11221				收集						
+11222	11	9780		1100						11222			1100	11222				收集						
+11223	11	9770		1150						11223			1150	11223				收集						
+11224	11	9760		1200						11224			1200	11224				收集						
+11225	11	9750	太空作业	通关1次质量流失-普通	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11225			1	11225	11225			通关						
+11226	11	9740	专业级太空作业	通关1次质量流失-挑战	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11226			1	11226	11226			通关						
+11227	11	9730	银河勇士	通关1次黑闪	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11227			1	11227	11227			通关						
+11228	11	9720	特殊作战	通关1次巴别塔计划	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11228			1	11228	20015			通关						
+11229	11	9710	异聚拾遗Ⅰ	异聚体层析实验研发10次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11229			10	11229	20009			收集						
+11230	11	9700	异聚拾遗Ⅱ	异聚体层析实验研发30次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11230			30	11230	20009			收集						
+11231	11	9690	异聚拾遗Ⅲ	异聚体层析实验研发50次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11231			50	11231	20009			收集						
+11232	11	9680	异聚拾遗Ⅳ	异聚体层析实验研发100次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11232			100	11232	20009			收集						
+11233	11	9670	飒沓流星	激活渡边·夙星	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11233			1	11233	11049			激活						
+11234	11	9660	群星之首Ⅰ	渡边·夙星等级升至20级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11234			1	11234	11060			培养						
+11235	11	9650	群星之首Ⅱ	渡边·夙星等级升至40级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11235			1	11235	11061			培养						
+11236	11	9640	群星之首Ⅲ	渡边·夙星等级升至60级	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11236			1	11236	11062			培养						
+11237	11	9630	电掣星驰Ⅰ	渡边·夙星学习技能20次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11237			20	11237	11063			培养						
+11238	11	9620	电掣星驰Ⅱ	渡边·夙星学习技能40次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11238			40	11238	11064			培养						
+11239	11	9610	电掣星驰Ⅲ	渡边·夙星学习技能60次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11239			60	11239	11065			培养						
+11240	11	9600	电掣星驰Ⅳ	渡边·夙星学习技能80次	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11240			80	11240	11066			培养						
+11300	15	9599	巴别塔计划Ⅰ	通关巴别塔计划BP-1	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11300			1	11300				通关						
+11301	15	9598	巴别塔计划Ⅱ	通关巴别塔计划BP-2	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11301			1	11301				通关						
+11302	15	9597	巴别塔计划Ⅲ	通关巴别塔计划BP-3	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11302			1	11302				通关						
+11303	15	9596	巴别塔计划Ⅳ	通关巴别塔计划BP-4	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11303			1	11303				通关						
+11304	15	9595	巴别塔计划Ⅴ	通关巴别塔计划BP-5	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11304			1	11304				通关						
+11305	15	9594	宝剑Ⅰ	巴别塔计划总战略等级达到5	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11305			5	11305				通关						
+11306	15	9593	宝剑Ⅱ	巴别塔计划总战略等级达到10	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11306			10	11306				通关						
+11307	15	9592	宝剑Ⅲ	巴别塔计划总战略等级达到15	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11307			15	11307				通关						
+11308	15	9591	宝剑Ⅳ	巴别塔计划总战略等级达到20	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11308			20	11308				通关						
+11309	15	9590	宝剑Ⅴ	巴别塔计划总战略等级达到25	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11309			25	11309				通关						
+11310	15	9589	权杖Ⅰ	巴别塔计划总战略等级达到30	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11310			30	11310				通关						
+11311	15	9588	权杖Ⅱ	巴别塔计划总战略等级达到35	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11311			35	11311				通关						
+11312	15	9587	权杖Ⅲ	巴别塔计划总战略等级达到40	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11312			40	11312				通关						
+11313	15	9586	权杖Ⅳ	巴别塔计划总战略等级达到45	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11313			45	11313				通关						
+11314	15	9585	权杖Ⅴ	巴别塔计划总战略等级达到50	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11314			50	11314				通关						
+11315	15	9584	星币Ⅰ	巴别塔计划总战略等级达到55	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11315			55	11315				通关						
+11316	15	9583	星币Ⅱ	巴别塔计划总战略等级达到60	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11316			60	11316				通关						
+11317	15	9582	星币Ⅲ	巴别塔计划总战略等级达到65	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11317			65	11317				通关						
+11318	15	9581	星币Ⅳ	巴别塔计划总战略等级达到70	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11318			70	11318				通关						
+11319	15	9580	星币Ⅴ	巴别塔计划总战略等级达到75	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11319			75	11319				通关						
+11320	15	9579	圣杯Ⅰ	巴别塔计划总战略等级达到80	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11320			80	11320				通关						
+11321	15	9578	圣杯Ⅱ	巴别塔计划总战略等级达到85	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11321			85	11321				通关						
+11322	15	9577	圣杯Ⅲ	巴别塔计划总战略等级达到90	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11322			90	11322				通关						
+11323	15	9576	圣杯Ⅳ	巴别塔计划总战略等级达到95	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11323			95	11323				通关						
+11324	15	9575	圣杯Ⅴ	巴别塔计划总战略等级达到100	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11324			100	11324				通关						
+11325	6	9574	君临高塔Ⅰ	巴别塔计划总战略等级达到120	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11325			120	11325				通关						
+11326	6	9573	君临高塔Ⅱ	巴别塔计划总战略等级达到140	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11326			140	11326				通关						
+11327	6	9572	君临高塔Ⅲ	巴别塔计划总战略等级达到160	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11327			160	11327				通关						
+11328	6	9571	君临高塔Ⅳ	巴别塔计划总战略等级达到180	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11328			180	11328				通关						
+11329	6	9570	君临高塔Ⅴ	巴别塔计划总战略等级达到200	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11329			200	11329				通关						

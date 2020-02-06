@@ -3,6 +3,7 @@ local XUiGridTrialDesItem = XClass()
 function XUiGridTrialDesItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -21,7 +22,7 @@ function XUiGridTrialDesItem:InitAutoScript()
 end
 
 function XUiGridTrialDesItem:AutoInitUi()
-    self.TxtNameA = self.Transform:Find("TxtName"):GetComponent("Text")
+    -- self.TxtNameA = self.Transform:Find("TxtName"):GetComponent("Text")
 end
 
 function XUiGridTrialDesItem:RegisterClickEvent(uiNode, func)

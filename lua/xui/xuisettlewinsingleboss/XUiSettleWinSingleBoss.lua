@@ -10,7 +10,8 @@ end
 
 function XUiSettleWinSingleBoss:OnEnable()
     XDataCenter.FunctionEventManager.UnLockFunctionEvent()
-    XUiHelper.PlayAnimation(self, "PanelBossSingleinfo")
+    self:PlayAnimation("PanelBossSingleinfo")
+    --XUiHelper.PlayAnimation(self, "PanelBossSingleinfo")
 end
 
 function XUiSettleWinSingleBoss:OnDestroy()
@@ -77,7 +78,6 @@ function XUiSettleWinSingleBoss:ShowPanel(data)
     self.GameObject:SetActive(true)
     -- 播放音效
     self.AudioInfo = CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.UiSettle_Win_Number)
-
     XUiHelper.Tween(time, function(f)
         if XTool.UObjIsNil(self.Transform) then
             return

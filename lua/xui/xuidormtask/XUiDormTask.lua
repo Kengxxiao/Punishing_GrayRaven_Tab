@@ -23,7 +23,8 @@ function XUiDormTask:Init()
     self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
     self.BtnBack.CallBack = function() self:Close() end
     self.BtnMainUi.CallBack = function() XLuaUiManager.RunMain() end
-    self.BtnMoneyReward.CallBack = function() self:OnBtnMoneyRewardClick() end
+
+    self.BtnMoneyReward.gameObject:SetActiveEx(false)
 
     self.TogStory:SetNameByGroup(1,TextManager.GetText("DormTaskNText"))
     self.TogDaily:SetNameByGroup(1,TextManager.GetText("DormTaskDText"))
@@ -95,15 +96,6 @@ function XUiDormTask:GetAutoKey(uiNode, eventName)
         return
     end
     return eventName .. uiNode:GetHashCode()
-end
-
-function XUiDormTask:OnBtnMoneyRewardClick(...)
-    if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.BountyTask) then
-        return
-    end
-
-    XDataCenter.BountyTaskManager.SetBountyTaskLastLoginTime()
-    XLuaUiManager.Open("UiMoneyReward")
 end
 
 function XUiDormTask:InitBtnSound()

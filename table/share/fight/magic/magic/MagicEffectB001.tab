@@ -236,6 +236,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 873124000	HideJoint	Mb1LuosaitaMd010002Weapon2																													
 873125	AddBuff	873125																													
 873125000	ResetBuffDurationByBuffId	873111																													
+873126	AddBuff	873126																													
+873126000	ChangeAttribValue	1|0|0																													
 873150	AddBuff	873150																													
 873150000	ShakeCamera	5|00.3|-00.15|12|00.3|0																													
 873151	ChangeTimeScale	00.2|1|0|0																													

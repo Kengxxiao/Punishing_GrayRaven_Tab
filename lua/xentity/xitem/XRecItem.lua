@@ -27,7 +27,7 @@ function XRecItem:GetMaxCount()
 end
 
 function XRecItem:RefreshCount()
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local second = now - self.RefreshTime
     if second < 0 then
         return
@@ -61,7 +61,7 @@ function XRecItem:CheckRefreshTime()
 end
 
 function XRecItem:ResetCount()
-    self.RefreshTime = XTime.Now()
+    self.RefreshTime = XTime.GetServerNowTimestamp()
     self:SetCount(max(min(self.Template.RecCount + self.Count, self.Template.MaxCount), 0))
     self:CheckRefreshTime()
 end
@@ -71,7 +71,7 @@ function XRecItem:CheckCount()
         self:RefreshCount()
     else
         if self.NextRefreshTime > 0 then
-            if XTime.Now() >= self.NextRefreshTime then
+            if XTime.GetServerNowTimestamp() >= self.NextRefreshTime then
                 self:ResetCount()
             end
 
@@ -97,7 +97,7 @@ function XRecItem:GetRefreshResidueSecond()
         return 0
     end
 
-    local second = XTime.Now() - self.RefreshTime
+    local second = XTime.GetServerNowTimestamp() - self.RefreshTime
     if second < 0 then
         return 0
     end

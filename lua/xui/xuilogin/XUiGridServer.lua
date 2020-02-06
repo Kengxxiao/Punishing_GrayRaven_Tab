@@ -85,7 +85,7 @@ end
 
 function XUiGridServer:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnServer, "onClick", self.OnBtnServerClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnServer, self.OnBtnServerClick)
 end
 -- auto
 

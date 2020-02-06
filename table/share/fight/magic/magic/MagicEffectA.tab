@@ -2,7 +2,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100000	AddBuff	100000																													
 100000000	AddTimeScaleBuff	0.1																													
 100001	AddBuff	100001																													
-100001000	SetCameraRotation	5|-100|0|00.3|1|0																													
+100001000	SetCameraRotation	5|-100|0|00.3|00.3|1|0																													
 100002	Die																														
 100003	AddBuff	100003																													
 100003000	ChangeAttribAdditive	7|99999|0																													
@@ -12,7 +12,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100006	AddBuff	100006																													
 100006000	PlayScreenEffect	100010																													
 100007	AddBuff	100007																													
-100007000	SetCameraPosition	00.5|-00.1|-2.4|00.3																													
+100007000	SetCameraPosition	00.5|-00.1|-2.4|00.3|00.3																													
 100008	AddBuff	100008																													
 100009	AddBuff	100009																													
 100010	AddAttribValue	2|-1000|0																													
@@ -24,7 +24,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100014	AddBuff	100014																													
 100015	AddBuff	100015																													
 100016	AddBuff	100016																													
-100016000	SetCameraPositionOffset	0|0|1|00.2|1																													
+100016000	SetCameraPositionOffset	0|0|1|00.2|00.2|1																													
 100017	AddBuff	100017																													
 100017000	AddNpcState	23																													
 100018	AddBuff	100018																													
@@ -96,7 +96,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100063000	AddBehavior	100063																													
 100064	AddBuff	100064																													
 100065	AddBuff	100065																													
-100065000	SetCameraPositionOffset	0|-00.2|1.2|2|1																													
+100065000	SetCameraPositionOffset	0|-00.2|1.2|2|2|1																													
 100066	AddBuff	100066																													
 100067	ChangeTimeScale	1|4|0|0																													
 100068	AddBuff	100068																													
@@ -105,7 +105,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100070	AddBuff	100070																													
 100070000	AddNpcState	26																													
 100071	AddBuff	100071																													
-100071000	AddBuff	100094																													
+100071000	AddBuff	100069																													
 100072	AddBuff	100072																													
 100072000	PlayBallExEffect																														
 100073	AddBuff	100073																													
@@ -142,7 +142,6 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100093000	AddNpcState	32																													
 100094	AddBuff	100094																													
 100095	AddBuff	100095																													
-100095000	ChangeAttribAdditive	1|0|200																													
 100096	AddBuff	100096																													
 100097	AddBuff	100097																													
 100098	AddBuff	100098																													
@@ -151,9 +150,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 199900	AddBuff	199900																													
 199900000	AddBehavior	199900																													
 199901	AddBuff	199901																													
-199901000	SetCameraPosition	00.5|00.3|-4.5|00.5																													
+199901000	SetCameraPosition	00.5|00.3|-4.5|00.5|00.5																													
 199902	AddBuff	199902																													
-199902000	SetCameraRotation	0|-20|0|00.5|1|0																													
+199902000	SetCameraRotation	0|-20|0|00.5|00.5|1|0																													
 199903	AddBuff	199903																													
 199904	AddBuff	199904																													
 199904000	SetDOFFocus																														
@@ -350,7 +349,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 220808	PlayCV	108168|0																													
 220809	PlayCV	108169|0																													
 220810	PlayCV	108170|0																													
-230800	PlayCV	108160|0																													
+230800	PlayCV	108151|0																													
 230801	PlayCV	108161|0																													
 230802	PlayCV	108162|0																													
 230803	PlayCV	108163|0																													
@@ -361,6 +360,17 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 230808	PlayCV	108168|0																													
 230809	PlayCV	108169|0																													
 230810	PlayCV	108170|0																													
+220900	PlayCV	109036|0																													
+220901	PlayCV	109027|0																													
+220902	PlayCV	109028|0																													
+220903	PlayCV	109029|0																													
+220904	PlayCV	109030|0																													
+220905	PlayCV	109031|0																													
+220906	PlayCV	109032|0																													
+220907	PlayCV	109033|0																													
+220908	PlayCV	109035|0																													
+220909	PlayCV	109034|0																													
+220910	PlayCV	109037|0																													
 200001	ChangeTimeScale	1|1|0|0																													
 200002	ChangeTimeScale	00.5|2|0|0																													
 200003	ChangeTimeScale	00.3|3|0|0																													
@@ -463,16 +473,15 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100272	ChangeTimeScale	0|3|0|1																													
 100273	ChangeTimeScale	0|4|0|2																													
 100274	AddBuff	100274																													
-100274000	SetCameraRotation	4|50|0|00.4|1|1																													
+100274000	SetCameraRotation	4|50|0|00.4|00.4|1|1																													
 100275	AddBuff	100275																													
-100275000	SetCameraPosition	-00.5|0|-1.5|00.4																													
+100275000	SetCameraPosition	-00.5|0|-1.5|00.4|00.4																													
 100276	AddBuff	100276																													
 100276000	PlaySound	20701|0																													
 100277	AddBuff	100277																													
 100277000	PlaySound	20702|0																													
 100278	AddBuff	100278																													
 100278000	AddBuff	100089																													
-100279	AddBuff	100279																													
 100290	AddBuff	100290																													
 100290000	AddBehavior	100290																													
 100291	ChangeDamageAdditive	25|1500|0																													

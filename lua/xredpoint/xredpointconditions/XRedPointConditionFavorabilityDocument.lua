@@ -13,6 +13,10 @@ function XRedPointConditionFavorabilityDocument.GetSubConditions()
 end
 
 function XRedPointConditionFavorabilityDocument.Check(checkArgs)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityFile) then
+        return false
+    end
+
     if not checkArgs then return false end
     local characterId = checkArgs.CharacterId
     if characterId == nil then return false end

@@ -63,3 +63,11 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 87330095	AddNpcState	21																													
 87330092	AddBuff	87330092																													
 87330093	AddNpcState	22																													
+87340096	AddBuff	87340096																													
+87340097	AddMissile	873499|1																													
+87340098	AddBuff	87340098																													
+87340099	HideJoint	Root																													
+87340094	AddBuff	87340094																													
+87340095	AddNpcState	21																													
+87340092	AddBuff	87340092																													
+87340093	AddNpcState	22																													

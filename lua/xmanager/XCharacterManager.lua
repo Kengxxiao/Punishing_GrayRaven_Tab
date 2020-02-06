@@ -47,6 +47,11 @@ XCharacterManagerCreator = function()
         return OwnCharacters[characterId] ~= nil
     end
 
+    function XCharacterManager.IsIsomer(characterId)
+        local isomer = XCharacterConfigs.GetCharacterIsomer(characterId)
+        return isomer and isomer ~= 0
+    end
+
     local DefaultSort = function(a, b)
         if a.Level ~= b.Level then
             return a.Level > b.Level
@@ -128,10 +133,10 @@ XCharacterManagerCreator = function()
 
     function XCharacterManager.GetCharacterCountByAbility(ability)
         local count = 0
-        for _, v in pairs(OwnCharacters) do
+        for _,v in pairs(OwnCharacters) do
             local curAbility = XCharacterManager.GetCharacterAbility(v)
             if curAbility and curAbility >= ability then
-                count = count + 1        
+                count = count + 1            
             end
         end
 
@@ -623,17 +628,7 @@ XCharacterManagerCreator = function()
             return false
         end
 
-        local skillLevelDict = XCharacterConfigs.GetCharSkillLevel(subSkillId)
-        if not skillLevelDict then
-            return false
-        end
-
-        local tabId = skillLevelDict[subSkillLevel]
-        if not tabId then
-            return false
-        end
-
-        local gradeConfig = XCharacterConfigs.GetSkillGradeConfig(tabId)
+        local gradeConfig = XCharacterConfigs.GetSkillGradeConfig(subSkillId, subSkillLevel)
         if gradeConfig.ConditionId then
             for k, v in pairs(gradeConfig.ConditionId) do
                 if not XConditionManager.CheckCondition(v, charId) then
@@ -880,14 +875,14 @@ XCharacterManagerCreator = function()
             XUiManager.TipCode(XCode.CharacterManagerPromoteQualityStarNotEnough)
             return
         end
-
+        
         if not XDataCenter.ItemManager.DoNotEnoughBuyAsset(XDataCenter.ItemManager.ItemId.Coin,
-        XCharacterConfigs.GetPromoteUseCoin(character.Quality),
-        1,
-        function()
-            XCharacterManager.PromoteQuality(character, cb)
-        end,
-        "CharacterManagerItemNotEnough") then
+                XCharacterConfigs.GetPromoteUseCoin(character.Quality),
+                1,
+                function() 
+                    XCharacterManager.PromoteQuality(character, cb)
+                end,
+                "CharacterManagerItemNotEnough") then
             return
         end
 
@@ -1033,10 +1028,10 @@ XCharacterManagerCreator = function()
             return
         end
         growUpLevel = growUpLevel or XDataCenter.ExhibitionManager.GetCharacterGrowUpLevel(characterId)
-
+ 
         return XCharacterConfigs.GetCharLiberationLevelEffectRootAndPath(characterId, growUpLevel)
     end
-
+    
     function XCharacterManager.GetCharResIcon(resId)
         if not resId then
             XLog.Error("XCharacterManager.GetCharResModel error: resId is nil")

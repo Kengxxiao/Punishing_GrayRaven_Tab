@@ -603,7 +603,7 @@ function XUiMultiplayerRoom:CheckLeaderCountDown()
 end
 
 function XUiMultiplayerRoom:StartTimer()
-    self.StartTime = XTime.Now()
+    self.StartTime = XTime.GetServerNowTimestamp()
     self.Timer = CS.XScheduleManager.ScheduleForever(handler(self, self.UpdateTimer), CS.XScheduleManager.SECOND)
     local role = self:GetLeaderRole()
     self.CurCountDownGrid = self:GetGrid(role.Id)
@@ -622,7 +622,7 @@ function XUiMultiplayerRoom:StopTimer()
 end
 
 function XUiMultiplayerRoom:UpdateTimer()
-    local elapseTime = XTime.Now() - self.StartTime
+    local elapseTime = XTime.GetServerNowTimestamp() - self.StartTime
     if elapseTime > self.RoomKickCountDownShowTime then
         self.CurCountDownGrid:ShowCountDownPanel(true)
         local leftTime = self.RoomKickCountDownTime - elapseTime

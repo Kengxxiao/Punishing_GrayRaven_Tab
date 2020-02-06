@@ -71,8 +71,8 @@ end
 
 function XUiGridDrawGroupBanner:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
-    self:RegisterListener(self.BtnTransform, "onClick", self.OnBtnTransformClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnClick, self.OnBtnClickClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnTransform, self.OnBtnTransformClick)
 end
 -- auto
 
@@ -107,7 +107,7 @@ function XUiGridDrawGroupBanner:SetUpCountDown()
         self.TxtCountDown.gameObject:SetActive(false)
     end
     if self.Info.EndTime > 0 then
-        local remainTime = self.Info.EndTime - XTime.Now()
+        local remainTime = self.Info.EndTime - XTime.GetServerNowTimestamp()
         XCountDown.CreateTimer(self.GameObject.name, remainTime)
         XCountDown.BindTimer(self.GameObject, self.GameObject.name, function(v, oldV)
             if self.TxtCountDownShort then

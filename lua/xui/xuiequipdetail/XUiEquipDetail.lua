@@ -21,9 +21,11 @@ function XUiEquipDetail:OnAwake()
 end
 
 --参数isPreview为true时是装备详情预览，传templateId进来
-function XUiEquipDetail:OnStart(equipId, isPreview)
+--characterId只有需要判断武器共鸣特效时才传
+function XUiEquipDetail:OnStart(equipId, isPreview, characterId)
     self.IsPreview = isPreview
     self.EquipId = equipId
+    self.CharacterId = characterId
     self.TemplateId = isPreview and self.EquipId or XDataCenter.EquipManager.GetEquipTemplateId(equipId)
 
     local sceneRoot = self:GetSceneRoot().transform
@@ -90,7 +92,7 @@ function XUiEquipDetail:InitClassifyPanel()
                 if rotate then
                     rotate.Target = model.transform
                 end
-            end)
+            end, self.CharacterId, self.EquipId)
         end
         self.PanelWeapon.gameObject:SetActive(true)
         self.ImgLihuiMask.gameObject:SetActive(false)
@@ -118,9 +120,8 @@ function XUiEquipDetail:InitTabBtnState()
         return
     end
 
-    if not XDataCenter.EquipManager.CanResonanceByTemplateId(self.TemplateId) then
-        self.BtnResonance.gameObject:SetActive(false)
-    end
+    self.BtnStrengthen.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.EquipStrengthen))
+    self.BtnResonance.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.EquipResonance) and XDataCenter.EquipManager.CanResonanceByTemplateId(self.TemplateId))
 
     self.BtnStrengthen:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.EquipStrengthen))
     self.BtnResonance:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.EquipResonance))

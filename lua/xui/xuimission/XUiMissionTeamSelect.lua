@@ -15,7 +15,8 @@ function XUiMissionTeamSelect:OnStart(characterIds, memberCount, index, callback
     self.CurSelectGrid = nil
     self:SetupCharacterList()
 
-    XUiHelper.PlayAnimation(self, "AniMissionTeamSelectBegin")
+    self:PlayAnimation("AniMissionTeamSelectBegin")
+    --XUiHelper.PlayAnimation(self, "AniMissionTeamSelectBegin")
 
 end
 
@@ -106,11 +107,11 @@ function XUiMissionTeamSelect:InitAutoScript()
 end
 
 function XUiMissionTeamSelect:AutoInitUi()
-    self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
-    self.PanelMissionTeamSelect = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect")
-    self.PanelScrollView = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/PanelScrollView")
-    self.GridMisssionTeam = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/PanelScrollView/Viewport/GridMisssionTeam")
-    self.BtnSure = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/BtnSure"):GetComponent("Button")
+    -- self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
+    -- self.PanelMissionTeamSelect = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect")
+    -- self.PanelScrollView = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/PanelScrollView")
+    -- self.GridMisssionTeam = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/PanelScrollView/Viewport/GridMisssionTeam")
+    -- self.BtnSure = self.Transform:Find("SafeAreaContentPane/PanelMissionTeamSelect/BtnSure"):GetComponent("Button")
 end
 
 function XUiMissionTeamSelect:GetAutoKey(uiNode, eventName)
@@ -143,15 +144,19 @@ end
 
 function XUiMissionTeamSelect:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
-    self:RegisterListener(self.BtnSure, "onClick", self.OnBtnSureClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnSure, self.OnBtnSureClick)
 end
 -- auto
 function XUiMissionTeamSelect:OnBtnBgClick(...)
-    XUiHelper.PlayAnimation(self, "AniMissionTeamSelectEnd", nil, function()
+    self:PlayAnimation("AniMissionTeamSelectEnd", function()
         --CS.XUiManager.ViewManager:Pop()
         self:Close()
     end)
+    -- XUiHelper.PlayAnimation(self, "AniMissionTeamSelectEnd", nil, function()
+    --     --CS.XUiManager.ViewManager:Pop()
+    --     self:Close()
+    -- end)
 end
 
 function XUiMissionTeamSelect:OnBtnSureClick(...)
@@ -164,8 +169,7 @@ function XUiMissionTeamSelect:OnBtnSureClick(...)
         end
     end
 
-
-    XUiHelper.PlayAnimation(self, "AniMissionTeamSelectEnd", nil, function()
+    self:PlayAnimation("AniMissionTeamSelectEnd", function()
         if self.CallBack then
             self.CallBack(self.CharacterIds)
         end
@@ -174,5 +178,14 @@ function XUiMissionTeamSelect:OnBtnSureClick(...)
         self:Close()
 
     end)
+    -- XUiHelper.PlayAnimation(self, "AniMissionTeamSelectEnd", nil, function()
+    --     if self.CallBack then
+    --         self.CallBack(self.CharacterIds)
+    --     end
+
+    --     --CS.XUiManager.ViewManager:Pop()
+    --     self:Close()
+
+    -- end)
 
 end

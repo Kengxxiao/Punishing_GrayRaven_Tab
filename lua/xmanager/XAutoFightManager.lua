@@ -40,7 +40,7 @@ XAutoFightManagerCreator = function()
 
     local function CreateTimer()
         timer = CS.XScheduleManager.ScheduleForever(function(timer)
-            local now = XTime.Now()
+            local now = XTime.GetServerNowTimestamp()
             local cnt = 0
             for k, v in pairs(Records) do
                 if now >= v.CompleteTime then

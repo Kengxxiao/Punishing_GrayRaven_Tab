@@ -1,7 +1,7 @@
 Id	CueSheetName	CueAwb	HasAwb
 1	External/Criware/b_char.acb		0
 2	External/Criware/c_nornal_step.acb		0
-3	External/Criware/g_amb.acb		0
+3	External/Criware/g_amb_sea_ice.acb		0
 4	External/Criware/g_amb_story.acb	External/Criware/g_amb_story.awb	1
 5	External/Criware/g_ui.acb		0
 6	External/Criware/e_signal.acb		0
@@ -35,6 +35,27 @@ Id	CueSheetName	CueAwb	HasAwb
 34	External/Criware/m_ev1_intro.acb	External/Criware/m_ev1_intro.awb	1
 35	External/Criware/m_ev1_normalbattle.acb	External/Criware/m_ev1_normalbattle.awb	1
 36	External/Criware/m_ev1_bossbattle.acb	External/Criware/m_ev1_bossbattle.awb	1
+37	External/Criware/amb_building_in.acb		0
+38	External/Criware/amb_building_out.acb		0
+39	External/Criware/amb_city_barren.acb		0
+40	External/Criware/amb_city_desert.acb		0
+41	External/Criware/amb_digital.acb		0
+42	External/Criware/amb_digital_2.acb		0
+43	External/Criware/amb_factory_in.acb		0
+44	External/Criware/amb_factory_out.acb		0
+45	External/Criware/amb_generator.acb		0
+46	External/Criware/amb_jungle.acb		0
+47	External/Criware/amb_rain.acb		0
+48	External/Criware/amb_room.acb		0
+49	External/Criware/amb_sea.acb		0
+50	External/Criware/amb_sky.acb		0
+51	External/Criware/amb_snow.acb		0
+52	External/Criware/g_amb_story_crowd.acb		0
+53	External/Criware/g_amb_story_fire.acb		0
+54	External/Criware/g_amb_story_rain.acb		0
+55	External/Criware/g_amb_story_wind.acb		0
+56	External/Criware/m_ev2_battle.acb	External/Criware/m_ev2_battle.awb	1
+57	External/Criware/m_ev2_intro.acb	External/Criware/m_ev2_intro.awb	1
 58	External/Criware/m_sys_newyear.acb	External/Criware/m_sys_newyear.awb	1
 101	External/Criware/c_liRK2.acb		0
 111	External/Criware/c_liRK3.acb		0
@@ -52,6 +73,8 @@ Id	CueSheetName	CueAwb	HasAwb
 107	External/Criware/c_karenRK2.acb		0
 117	External/Criware/c_karenRK3.acb		0
 108	External/Criware/c_watanabeRK2.acb		0
+118	External/Criware/c_watanabeRK3.acb		0
+109	External/Criware/c_ailaRK2.acb		0
 202	External/Criware/ja/v_lucia.acb	External/Criware/ja/v_lucia.awb	1
 203	External/Criware/ja/v_liv.acb	External/Criware/ja/v_liv.awb	1
 201	External/Criware/ja/v_li.acb	External/Criware/ja/v_li.awb	1
@@ -60,6 +83,7 @@ Id	CueSheetName	CueAwb	HasAwb
 204	External/Criware/ja/v_bianca.acb	External/Criware/ja/v_bianca.awb	1
 208	External/Criware/ja/v_watanabe.acb	External/Criware/ja/v_watanabe.awb	1
 207	External/Criware/ja/v_karen.acb	External/Criware/ja/v_karen.awb	1
+209	External/Criware/ja/v_aila.acb	External/Criware/ja/v_aila.awb	1
 302	External/Criware/zh/v_lucia.acb	External/Criware/zh/v_lucia.awb	1
 303	External/Criware/zh/v_liv.acb	External/Criware/zh/v_liv.awb	1
 301	External/Criware/zh/v_li.acb	External/Criware/zh/v_li.awb	1
@@ -68,6 +92,7 @@ Id	CueSheetName	CueAwb	HasAwb
 304	External/Criware/zh/v_bianca.acb	External/Criware/zh/v_bianca.awb	1
 308	External/Criware/zh/v_watanabe.acb	External/Criware/zh/v_watanabe.awb	1
 307	External/Criware/zh/v_karen.acb	External/Criware/zh/v_karen.awb	1
+309	External/Criware/zh/v_aila.acb	External/Criware/zh/v_aila.awb	1
 402	External/Criware/ca/v_lucia.acb	External/Criware/ca/v_lucia.awb	1
 403	External/Criware/ca/v_liv.acb	External/Criware/ca/v_liv.awb	1
 401	External/Criware/ca/v_li.acb	External/Criware/ca/v_li.awb	1
@@ -76,6 +101,7 @@ Id	CueSheetName	CueAwb	HasAwb
 404	External/Criware/ca/v_bianca.acb	External/Criware/ca/v_bianca.awb	1
 408	External/Criware/ca/v_watanabe.acb	External/Criware/ca/v_watanabe.awb	1
 407	External/Criware/ca/v_karen.acb	External/Criware/ca/v_karen.awb	1
+409	External/Criware/ca/v_aila.acb	External/Criware/ca/v_aila.awb	1
 9708	External/Criware/me_sword.acb		0
 8130	External/Criware/mb_sword.acb		0
 8140	External/Criware/mb_lady.acb		0
@@ -124,3 +150,10 @@ Id	CueSheetName	CueAwb	HasAwb
 8320	External/Criware/me_luosaita_ma.acb		0
 8322	External/Criware/me_luosaita_ren.acb		0
 9002	External/Criware/mo_kuro.acb		0
+9047	External/Criware/me_heizhuizongzhe.acb		0
+9048	External/Criware/me_heibaoan.acb		0
+9049	External/Criware/me_heizhenchaji.acb		0
+9050	External/Criware/me_shizijia.acb		0
+8736	External/Criware/me_cube.acb		0
+8739	External/Criware/me_cube2.acb		0
+8741	External/Criware/me_cube3.acb		0

@@ -235,6 +235,22 @@ XArenaManagerCreator = function()
             end
         end
 
+        table.sort(list, function(a, b)
+            local isSameIdA = ChallengeId == a.ChallengeId
+            local isSameIdB = ChallengeId == b.ChallengeId
+            if isSameIdA ~= isSameIdB then 
+                return isSameIdA
+            end
+
+            local isEnterFightA = a.ChallengeId > 0
+            local isEnterFightB = b.ChallengeId > 0
+            if isEnterFightA ~= isEnterFightB then 
+                return isEnterFightB
+            end
+
+            return a.Info.Id > b.Info.Id
+        end)
+
         return list
     end
 
@@ -354,7 +370,7 @@ XArenaManagerCreator = function()
         end
 
         -- 请求间隔保护
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if LastHallTeamListTime + SYNC_HALL_SECOND >= now then
             if cb then
                 cb()
@@ -386,7 +402,7 @@ XArenaManagerCreator = function()
         end
 
         -- 请求间隔保护
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if LastHallPlayerListTime + SYNC_HALL_SECOND >= now then
             if cb then
                 cb()
@@ -441,7 +457,7 @@ XArenaManagerCreator = function()
         end
 
         -- 请求间隔保护
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if LastFriendPlayerTime + SYNC_OTHER_SECOND >= now then
             if cb then
                 cb()
@@ -686,8 +702,7 @@ XArenaManagerCreator = function()
         if not time or time <= 0 then
             return ""
         end
-        local str = os.date("%y/%m/%d  %H:%M", time)
-
+        local str = XTime.TimestampToGameDateTimeString(time, "yy/MM/dd  HH:mm")
         return str
     end
 
@@ -842,8 +857,8 @@ XArenaManagerCreator = function()
             return ""
         end
 
-        local begin_time = os.date("%Y.%m.%d", TeamRankData.BeginTime)
-        local end_time = os.date("%Y.%m.%d", TeamRankData.EndTime)
+        local begin_time = XTime.TimestampToGameDateTimeString(TeamRankData.BeginTime, "yy.MM.dd")
+        local end_time = XTime.TimestampToGameDateTimeString(TeamRankData.EndTime, "yy.MM.dd")
         local desc = CS.XTextManager.GetText("ArenaRankDesc")
         return begin_time .. "-" .. end_time .. desc
     end
@@ -1044,7 +1059,7 @@ XArenaManagerCreator = function()
             IsJoinActivity = false
         end
 
-        local remainTime = CountDownTime - XTime.Now()
+        local remainTime = CountDownTime - XTime.GetServerNowTimestamp()
         XCountDown.CreateTimer(XArenaConfigs.ArenaTimerName, remainTime)
 
         JudgeGotoMain()
@@ -1203,7 +1218,7 @@ XArenaManagerCreator = function()
     -- 请求队伍排行
     function XArenaManager.RequestTeamRankData(cb)
         -- 请求间隔保护
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if LastSyncRankListTime + SYNC_RANK_LIST_SECOND >= now and TeamRankChallengeId > 0 then
             if cb then
                 cb()

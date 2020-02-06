@@ -120,8 +120,8 @@ end
 
 function XUiPanelBountyTask:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnSkip, "onClick", self.OnBtnSkipClick)
-    self:RegisterListener(self.BtnBountyTask, "onClick", self.OnBtnBountyTaskClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnSkip, self.OnBtnSkipClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBountyTask, self.OnBtnBountyTaskClick)
 end
 -- auto
 

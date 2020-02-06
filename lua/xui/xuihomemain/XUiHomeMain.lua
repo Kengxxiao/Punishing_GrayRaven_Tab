@@ -92,15 +92,15 @@ end
 
 function XUiHomeMain:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnVisitFriend, "onClick", self.OnBtnVisitFriendClick)
-    self:RegisterListener(self.BtnFuncArea, "onClick", self.OnBtnFuncAreaClick)
-    self:RegisterListener(self.BtnFloorOne, "onClick", self.OnBtnFloorOneClick)
-    self:RegisterListener(self.BtnFloorTwo, "onClick", self.OnBtnFloorTwoClick)
-    self:RegisterListener(self.BtnFloorThree, "onClick", self.OnBtnFloorThreeClick)
-    self:RegisterListener(self.BtnJumpMenu, "onClick", self.OnBtnJumpMenuClick)
-    self:RegisterListener(self.BtnAssignChar, "onClick", self.OnBtnAssignCharClick)
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnVisitFriend, self.OnBtnVisitFriendClick)
+    self:RegisterClickEvent(self.BtnFuncArea, self.OnBtnFuncAreaClick)
+    self:RegisterClickEvent(self.BtnFloorOne, self.OnBtnFloorOneClick)
+    self:RegisterClickEvent(self.BtnFloorTwo, self.OnBtnFloorTwoClick)
+    self:RegisterClickEvent(self.BtnFloorThree, self.OnBtnFloorThreeClick)
+    self:RegisterClickEvent(self.BtnJumpMenu, self.OnBtnJumpMenuClick)
+    self:RegisterClickEvent(self.BtnAssignChar, self.OnBtnAssignCharClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
 end
 -- auto
 

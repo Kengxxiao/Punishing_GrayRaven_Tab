@@ -42,6 +42,8 @@ function XUiGridCommon:AutoInitUi()
     self.ImgRail = XUiHelper.TryGetComponent(self.Transform, "ImgRail", "Image")
     self.ImgReceived = XUiHelper.TryGetComponent(self.Transform, "ImgReceived", "Image")
     self.ImgQualityTag = XUiHelper.TryGetComponent(self.Transform, "ImgQualityTag", "Image")
+    self.TxtStock = XUiHelper.TryGetComponent(self.Transform, "TxtStock", "Text")
+    self.ImgNone = XUiHelper.TryGetComponent(self.Transform, "ImgNone", nil)
 end
 
 function XUiGridCommon:GetAutoKey(uiNode, eventName)
@@ -78,7 +80,7 @@ end
 
 function XUiGridCommon:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnClick, self.OnBtnClickClick)
 end
 -- auto
 function XUiGridCommon:OnBtnClickClick(...)
@@ -141,7 +143,7 @@ end
 
 -- data支持数据结构： XEquipData XItemData XCharacterData
 -- tags可包含: { ShowUp, ShowNew }
-function XUiGridCommon:Refresh(data, params, isBigIcon, hideSkipBtn)
+function XUiGridCommon:Refresh(data, params, isBigIcon, hideSkipBtn,curCount)
     self.GameObject:SetActive(data)
     if not data then
         return
@@ -263,6 +265,17 @@ function XUiGridCommon:Refresh(data, params, isBigIcon, hideSkipBtn)
 
     -- Params.Disable 不可点击
     self.Disable = params.Disable
+    
+    --特殊抽奖中奖品的剩余数
+    if self.TxtStock and curCount then
+        self.TxtStock.text = CS.XTextManager.GetText("ResidueStockText", curCount)
+        self:SetUiActive(self.TxtName, false) 
+    end
+    
+    --特殊抽奖中是否有库存的提示
+    if self.ImgNone and curCount then
+        self.ImgNone.gameObject:SetActive(curCount <= 0) 
+    end
 end
 
 function XUiGridCommon:ShowCount(show)

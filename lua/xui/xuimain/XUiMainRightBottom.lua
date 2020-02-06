@@ -11,6 +11,9 @@ function XUiMainRightBottom:Ctor(rootUi)
     --RedPoint
     XRedPointManager.AddRedPointEvent(self.BtnMember.ReddotObj, self.OnCheckMemberNews, self, { XRedPointConditions.Types.CONDITION_MAIN_MEMBER })
     -- XRedPointManager.AddRedPointEvent(self.BtnRecharge.ReddotObj, self.OnCheckRechargeNews, self, { XRedPointConditions.Types.CONDITION_PURCHASE_RED })
+    
+    --Filter
+    self:CheckFilterFunctions()
 end
 
 function XUiMainRightBottom:OnEnable()
@@ -22,6 +25,20 @@ function XUiMainRightBottom:OnEnable()
     local isOpen = XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.ShopCommon)
     or XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.ShopActive)
     self.BtnStore:SetDisable(not isOpen)
+
+    XEventManager.AddEventListener(XEventId.EVENT_DAYLY_REFESH_RECHARGE_BTN, self.OnCheckRechargeNews, self)
+end
+
+function XUiMainRightBottom:OnDisable()
+    XEventManager.RemoveEventListener(XEventId.EVENT_DAYLY_REFESH_RECHARGE_BTN, self.OnCheckRechargeNews, self)
+end
+
+function XUiMainRightBottom:CheckFilterFunctions()
+    self.BtnMember.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Character))
+    self.BtnBag.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Bag))
+    self.BtnStore.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.ShopCommon)
+    and not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.ShopActive))
+    self.BtnRecharge.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipRecharge))
 end
 
 --成员入口
@@ -60,6 +77,6 @@ end
 
 --充值红点
 function XUiMainRightBottom:OnCheckRechargeNews()
-    local f = XDataCenter.PurchaseManager.FreeLBRed() or XDataCenter.PurchaseManager.AccumlatePayRedPoint()
+    local f = XDataCenter.PurchaseManager.FreeLBRed() or XDataCenter.PurchaseManager.AccumlatePayRedPoint() or XDataCenter.PurchaseManager.CheckYKContinueBuy()
     self.BtnRecharge:ShowReddot(f)
 end

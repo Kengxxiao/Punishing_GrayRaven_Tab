@@ -66,6 +66,11 @@ function XUiPanelCharProperty:InitChildUiInfos()
 end
 
 function XUiPanelCharProperty:InitBtnTabGroup()
+    self.BtnTabGrade.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterGrade))
+    self.BtnTabQuality.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterQuality))
+    self.BtnTabSkill.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterSkill))
+    self.BtnTabLevel.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.CharacterLevelUp))
+
     self.BtnTabGrade:SetDisable(not XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.CharacterGrade))
     self.BtnTabQuality:SetDisable(not XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.CharacterQuality))
     self.BtnTabSkill:SetDisable(not XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.CharacterSkill))

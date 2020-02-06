@@ -56,7 +56,7 @@ function XUiStoryStageDetail:OnBtnEnterClick(eventData)
         XDataCenter.FubenManager.FinishStoryRequest(stageId, function(res)
                 if CS.Movie.XMovieManager.Instance:CheckMovieExist(stageCfg.BeginStoryId) then
                     CS.Movie.XMovieManager.Instance:PlayById(stageCfg.BeginStoryId, function()
-                            self.RootUi:RefreshRegional()
+                            self.RootUi:RefreshForChangeDiff()
                         end)
                 end
             end)

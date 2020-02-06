@@ -135,6 +135,8 @@ function XUiFubenMainLineBanner:InitTabBtnGroup()
     self.BtnTabJD:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.FubenNightmare))
     self.PanelTab:Init(tabGroup, function(tabIndex) self:OnClickTabCallBack(tabIndex) end)
 
+    -- 功能屏蔽
+    self.BtnTabDZ.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Prequel))
 end
 
 function XUiFubenMainLineBanner:OnClickTabCallBack(tabIndex)

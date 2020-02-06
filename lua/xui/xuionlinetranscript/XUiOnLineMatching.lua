@@ -69,8 +69,8 @@ end
 
 function XUiOnLineMatching:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnReturn, "onClick", self.OnBtnReturnClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnReturn, self.OnBtnReturnClick)
 end
 -- auto
 function XUiOnLineMatching:OnBtnBackClick()

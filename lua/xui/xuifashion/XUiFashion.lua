@@ -286,9 +286,7 @@ function XUiFashion:UpdateUnLockPanleInfo(state)
         self.PanelUnlockShow.gameObject:SetActive(true)
         self.ImgUnlockShowIcon.fillAmount = 0
 
-        XUiHelper.PlayAnimation
-        (self, "AniPanelUnlockShowBegin", nil,
-        function()
+        self:PlayAnimation("AniPanelUnlockShowBegin", function()
             if not self.PanelUnlockShow.gameObject:Exist() then
                 return
             end
@@ -310,8 +308,34 @@ function XUiFashion:UpdateUnLockPanleInfo(state)
                 self:PlayUnLockAnimation()
             end
             )
-        end
-        )
+        end)
+
+        -- XUiHelper.PlayAnimation
+        -- (self, "AniPanelUnlockShowBegin", nil,
+        -- function()
+        --     if not self.PanelUnlockShow.gameObject:Exist() then
+        --         return
+        --     end
+
+        --     self.PanelUnlockShow.gameObject:SetActive(false)
+
+        --     local lockId = self.CurFashionId
+        --     XDataCenter.FashionManager.UnlockFashion
+        --     (lockId,
+        --     function()
+        --         if not self.GameObject:Exist() then
+        --             return
+        --         end
+
+        --         self:UpdateButtonState()
+        --         if self.FashionGrids and self.CurIndex and self.FashionGrids[self.CurIndex] then
+        --             self.FashionGrids[self.CurIndex]:UpdateStatus()
+        --         end
+        --         self:PlayUnLockAnimation()
+        --     end
+        --     )
+        -- end
+        -- )
         return
     end
 
@@ -377,12 +401,19 @@ function XUiFashion:PlayUnLockAnimation()
 
     self.ImgEffectHuanren.gameObject:SetActive(false)
     self.ImgEffectHuanren.gameObject:SetActive(true)
-    XUiHelper.PlayAnimation(self, "AniPanelAssistDistanceTip", nil, function()
+
+    self:PlayAnimation("AniPanelAssistDistanceTip", function()
         if self.GameObject:Exist() then
             self.PanelAssistDistanceTip.gameObject:SetActive(falses)
 
         end
     end)
+    -- XUiHelper.PlayAnimation(self, "AniPanelAssistDistanceTip", nil, function()
+    --     if self.GameObject:Exist() then
+    --         self.PanelAssistDistanceTip.gameObject:SetActive(falses)
+
+    --     end
+    -- end)
 end
 
 function XUiFashion:OnBtnBackClick(...)

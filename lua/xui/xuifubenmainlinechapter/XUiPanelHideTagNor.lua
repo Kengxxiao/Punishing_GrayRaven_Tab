@@ -6,12 +6,19 @@ function XUiPanelHideTagNor:Ctor(ui, stageId, rootUi)
     self.StageId = stageId
     self.RootUi = rootUi
     self:InitAutoScript()
+    self:Refresh()
+end
+
+function XUiPanelHideTagNor:Refresh()
+    local stageInfo = XDataCenter.FubenManager.GetStageInfo(self.StageId)
+    if self.PanelPass then
+        self.PanelPass.gameObject:SetActiveEx(stageInfo.Passed)
+    end
 end
 
 function XUiPanelHideTagNor:UpdateStageId(stageId)
-    if self.StageId ~= stageId then
-        self.StageId = stageId
-    end
+    self.StageId = stageId
+    self:Refresh()
 end
 
 -- auto
@@ -23,6 +30,7 @@ end
 
 function XUiPanelHideTagNor:AutoInitUi()
     self.BtnOnHideLock = self.Transform:Find("BtnOnHideLock"):GetComponent("Button")
+    self.PanelPass = self.Transform:Find("ImageHideTagNor/PanelPass")
 end
 
 function XUiPanelHideTagNor:RegisterClickEvent(uiNode, func)

@@ -63,9 +63,9 @@ end
 
 function XUiHostelCharacterWork:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnCharWork, "onClick", self.OnBtnCharWorkClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnMainUi, self.OnBtnMainUiClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCharWork, self.OnBtnCharWorkClick)
 end
 -- auto
 
@@ -164,7 +164,7 @@ function XUiHostelCharacterWork:UpdatePowerStationSlotInfo(slotConfig)
     local slotData = XDataCenter.HostelManager.GetWorkCharBySlot(self.SlotType)
     if slotData and slotData.BeginTime > 0 then
         self.PanelRight.gameObject:SetActive(false)
-        local curTime = XTime.Now()
+        local curTime = XTime.GetServerNowTimestamp()
         local passTime = curTime - slotData.BeginTime
         local electric = math.floor(passTime/slotConfig.FunctionParam[3]) *(slotConfig.FunctionParam[4] + deviceConfig.FunctionParam[4])
         if electric < 0 then

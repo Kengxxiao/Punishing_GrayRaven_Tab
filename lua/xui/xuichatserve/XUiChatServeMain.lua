@@ -422,7 +422,7 @@ function XUiChatServeMain:OnBtnRoomClick()
     self.PanelChannel.gameObject:SetActive(true)
 
     -- 1分钟之内不重复请求
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     if now - XDataCenter.ChatManager.GetLastRequestChannelTime() <= 60 then
         self.ChannelInfos = XDataCenter.ChatManager.GetAllChannelInfos()
         self:InitChannelInfos(self.ChannelInfos)

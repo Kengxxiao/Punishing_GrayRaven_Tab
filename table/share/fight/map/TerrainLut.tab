@@ -49,7 +49,6 @@ Scene00305d	Assets/Product/Scene/ScenePrefab/Scene00305d.prefab	Share/Fight/Map/
 Scene00306a	Assets/Product/Scene/ScenePrefab/Scene00306a.prefab	Share/Fight/Map/Info/Scene00306a/Size.tab	Share/Fight/Map/Info/Scene00306a/Area.tab	Share/Fight/Map/Info/Scene00306a/Position.tab
 Scene00306d	Assets/Product/Scene/ScenePrefab/Scene00306d.prefab	Share/Fight/Map/Info/Scene00306d/Size.tab	Share/Fight/Map/Info/Scene00306d/Area.tab	Share/Fight/Map/Info/Scene00306d/Position.tab
 Scene00307a	Assets/Product/Scene/ScenePrefab/Scene00307a.prefab	Share/Fight/Map/Info/Scene00307a/Size.tab	Share/Fight/Map/Info/Scene00307a/Area.tab	Share/Fight/Map/Info/Scene00307a/Position.tab
-Scene00307d	Assets/Product/Scene/ScenePrefab/Scene00307d.prefab	Share/Fight/Map/Info/Scene00307d/Size.tab	Share/Fight/Map/Info/Scene00307d/Area.tab	Share/Fight/Map/Info/Scene00307d/Position.tab
 Scene00308a	Assets/Product/Scene/ScenePrefab/Scene00308a.prefab	Share/Fight/Map/Info/Scene00308a/Size.tab	Share/Fight/Map/Info/Scene00308a/Area.tab	Share/Fight/Map/Info/Scene00308a/Position.tab
 Scene00308d	Assets/Product/Scene/ScenePrefab/Scene00308d.prefab	Share/Fight/Map/Info/Scene00308d/Size.tab	Share/Fight/Map/Info/Scene00308d/Area.tab	Share/Fight/Map/Info/Scene00308d/Position.tab
 Scene00310d	Assets/Product/Scene/ScenePrefab/Scene00310d.prefab	Share/Fight/Map/Info/Scene00310d/Size.tab	Share/Fight/Map/Info/Scene00310d/Area.tab	Share/Fight/Map/Info/Scene00310d/Position.tab
@@ -77,7 +76,15 @@ Scene00504b	Assets/Product/Scene/ScenePrefab/Scene00504b.prefab	Share/Fight/Map/
 Scene00601a	Assets/Product/Scene/ScenePrefab/Scene00601a.prefab	Share/Fight/Map/Info/Scene00601a/Size.tab	Share/Fight/Map/Info/Scene00601a/Area.tab	Share/Fight/Map/Info/Scene00601a/Position.tab
 Scene00901a	Assets/Product/Scene/ScenePrefab/Scene00901a.prefab	Share/Fight/Map/Info/Scene00901a/Size.tab	Share/Fight/Map/Info/Scene00901a/Area.tab	Share/Fight/Map/Info/Scene00901a/Position.tab
 Scene00901CHtest	Assets/Product/Scene/ScenePrefab/Scene00901CHtest.prefab	Share/Fight/Map/Info/Scene00901CHtest/Size.tab	Share/Fight/Map/Info/Scene00901CHtest/Area.tab	Share/Fight/Map/Info/Scene00901CHtest/Position.tab
+Scene00903a	Assets/Product/Scene/ScenePrefab/Scene00903a.prefab	Share/Fight/Map/Info/Scene00903a/Size.tab	Share/Fight/Map/Info/Scene00903a/Area.tab	Share/Fight/Map/Info/Scene00903a/Position.tab
+Scene00903pingtai	Assets/Product/Scene/ScenePrefab/SubScenePrefab/Scene00903pingtai.prefab	Share/Fight/Map/Info/Scene00903pingtai/Size.tab	Share/Fight/Map/Info/Scene00903pingtai/Area.tab	Share/Fight/Map/Info/Scene00903pingtai/Position.tab
+Scene00904a	Assets/Product/Scene/ScenePrefab/Scene00904a.prefab	Share/Fight/Map/Info/Scene00904a/Size.tab	Share/Fight/Map/Info/Scene00904a/Area.tab	Share/Fight/Map/Info/Scene00904a/Position.tab
+Scene00905a	Assets/Product/Scene/ScenePrefab/Scene00905a.prefab	Share/Fight/Map/Info/Scene00905a/Size.tab	Share/Fight/Map/Info/Scene00905a/Area.tab	Share/Fight/Map/Info/Scene00905a/Position.tab
+Scene00906a	Assets/Product/Scene/ScenePrefab/Scene00906a.prefab	Share/Fight/Map/Info/Scene00906a/Size.tab	Share/Fight/Map/Info/Scene00906a/Area.tab	Share/Fight/Map/Info/Scene00906a/Position.tab
+Scene00907a	Assets/Product/Scene/ScenePrefab/Scene00907a.prefab	Share/Fight/Map/Info/Scene00907a/Size.tab	Share/Fight/Map/Info/Scene00907a/Area.tab	Share/Fight/Map/Info/Scene00907a/Position.tab
+Scene00907pingtai	Assets/Product/Scene/ScenePrefab/SubScenePrefab/Scene00907pingtai.prefab	Share/Fight/Map/Info/Scene00907pingtai/Size.tab	Share/Fight/Map/Info/Scene00907pingtai/Area.tab	Share/Fight/Map/Info/Scene00907pingtai/Position.tab
 Scene07000	Assets/Product/Scene/ScenePrefab/Scene07000.prefab	Share/Fight/Map/Info/Scene07000/Size.tab	Share/Fight/Map/Info/Scene07000/Area.tab	Share/Fight/Map/Info/Scene07000/Position.tab
+Scene07000a	Assets/Product/Scene/ScenePrefab/Scene07000a.prefab	Share/Fight/Map/Info/Scene07000a/Size.tab	Share/Fight/Map/Info/Scene07000a/Area.tab	Share/Fight/Map/Info/Scene07000a/Position.tab
 Scene07001	Assets/Product/Scene/ScenePrefab/Scene07001.prefab	Share/Fight/Map/Info/Scene07001/Size.tab	Share/Fight/Map/Info/Scene07001/Area.tab	Share/Fight/Map/Info/Scene07001/Position.tab
 Scene07002	Assets/Product/Scene/ScenePrefab/Scene07002.prefab	Share/Fight/Map/Info/Scene07002/Size.tab	Share/Fight/Map/Info/Scene07002/Area.tab	Share/Fight/Map/Info/Scene07002/Position.tab
 Scene07003	Assets/Product/Scene/ScenePrefab/Scene07003.prefab	Share/Fight/Map/Info/Scene07003/Size.tab	Share/Fight/Map/Info/Scene07003/Area.tab	Share/Fight/Map/Info/Scene07003/Position.tab
@@ -85,6 +92,7 @@ Scene07004	Assets/Product/Scene/ScenePrefab/Scene07004.prefab	Share/Fight/Map/In
 Scene07004CH1	Assets/Product/Scene/ScenePrefab/Scene07004CH1.prefab	Share/Fight/Map/Info/Scene07004CH1/Size.tab	Share/Fight/Map/Info/Scene07004CH1/Area.tab	Share/Fight/Map/Info/Scene07004CH1/Position.tab
 Scene07005	Assets/Product/Scene/ScenePrefab/Scene07005.prefab	Share/Fight/Map/Info/Scene07005/Size.tab	Share/Fight/Map/Info/Scene07005/Area.tab	Share/Fight/Map/Info/Scene07005/Position.tab
 Scene07006	Assets/Product/Scene/ScenePrefab/Scene07006.prefab	Share/Fight/Map/Info/Scene07006/Size.tab	Share/Fight/Map/Info/Scene07006/Area.tab	Share/Fight/Map/Info/Scene07006/Position.tab
+Scene07007	Assets/Product/Scene/ScenePrefab/Scene07007.prefab	Share/Fight/Map/Info/Scene07007/Size.tab	Share/Fight/Map/Info/Scene07007/Area.tab	Share/Fight/Map/Info/Scene07007/Position.tab
 Scene07101a	Assets/Product/Scene/ScenePrefab/Scene07101a.prefab	Share/Fight/Map/Info/Scene07101a/Size.tab	Share/Fight/Map/Info/Scene07101a/Area.tab	Share/Fight/Map/Info/Scene07101a/Position.tab
 Scene07101b	Assets/Product/Scene/ScenePrefab/Scene07101b.prefab	Share/Fight/Map/Info/Scene07101b/Size.tab	Share/Fight/Map/Info/Scene07101b/Area.tab	Share/Fight/Map/Info/Scene07101b/Position.tab
 Scene10001	Assets/Product/Scene/ScenePrefab/Scene10001.prefab	Share/Fight/Map/Info/Scene10001/Size.tab	Share/Fight/Map/Info/Scene10001/Area.tab	Share/Fight/Map/Info/Scene10001/Position.tab
@@ -125,3 +133,12 @@ SceneDLC00112	Assets/Product/Scene/ScenePrefab/SceneDLC00112.prefab	Share/Fight/
 Scene93101	Assets/Product/Scene/ScenePrefab/Scene93101.prefab	Share/Fight/Map/Info/Scene93101/Size.tab	Share/Fight/Map/Info/Scene93101/Area.tab	Share/Fight/Map/Info/Scene93101/Position.tab
 SceneDLC00102jiaojing	Assets/Product/Scene/ScenePrefab/SubScenePrefab/SceneDLC00102jiaojing.prefab	Share/Fight/Map/Info/SceneDLC00102jiaojing/Size.tab	Share/Fight/Map/Info/SceneDLC00102jiaojing/Area.tab	Share/Fight/Map/Info/SceneDLC00102jiaojing/Position.tab
 SceneDLC00102	Assets/Product/Scene/ScenePrefab/SceneDLC00102.prefab	Share/Fight/Map/Info/SceneDLC00102/Size.tab	Share/Fight/Map/Info/SceneDLC00102/Area.tab	Share/Fight/Map/Info/SceneDLC00102/Position.tab
+Scene01003	Assets/Product/Scene/ScenePrefab/Scene01003.prefab	Share/Fight/Map/Info/Scene01003/Size.tab	Share/Fight/Map/Info/Scene01003/Area.tab	Share/Fight/Map/Info/Scene01003/Position.tab
+Scene01001b	Assets/Product/Scene/ScenePrefab/Scene01001b.prefab	Share/Fight/Map/Info/Scene01001b/Size.tab	Share/Fight/Map/Info/Scene01001b/Area.tab	Share/Fight/Map/Info/Scene01001b/Position.tab
+Scene01001a	Assets/Product/Scene/ScenePrefab/Scene01001a.prefab	Share/Fight/Map/Info/Scene01001a/Size.tab	Share/Fight/Map/Info/Scene01001a/Area.tab	Share/Fight/Map/Info/Scene01001a/Position.tab
+Scene01002	Assets/Product/Scene/ScenePrefab/Scene01002.prefab	Share/Fight/Map/Info/Scene01002/Size.tab	Share/Fight/Map/Info/Scene01002/Area.tab	Share/Fight/Map/Info/Scene01002/Position.tab
+Scene01007	Assets/Product/Scene/ScenePrefab/Scene01007.prefab	Share/Fight/Map/Info/Scene01007/Size.tab	Share/Fight/Map/Info/Scene01007/Area.tab	Share/Fight/Map/Info/Scene01007/Position.tab
+Scene01003xingzoumian	Assets/Product/Scene/ScenePrefab/SubScenePrefab/Scene01003xingzoumian.prefab	Share/Fight/Map/Info/Scene01003xingzoumian/Size.tab	Share/Fight/Map/Info/Scene01003xingzoumian/Area.tab	Share/Fight/Map/Info/Scene01003xingzoumian/Position.tab
+Scenetest0001	Assets/Product/Scene/ScenePrefab/Scenetest0001.prefab	Share/Fight/Map/Info/Scenetest0001/Size.tab	Share/Fight/Map/Info/Scenetest0001/Area.tab	Share/Fight/Map/Info/Scenetest0001/Position.tab
+Scenetest0002	Assets/Product/Scene/ScenePrefab/Scenetest0002.prefab	Share/Fight/Map/Info/Scenetest0001/Size.tab	Share/Fight/Map/Info/Scenetest0001/Area.tab	Share/Fight/Map/Info/Scenetest0001/Position.tab
+Scene01008	Assets/Product/Scene/ScenePrefab/Scene01008.prefab	Share/Fight/Map/Info/Scene01008/Size.tab	Share/Fight/Map/Info/Scene01008/Area.tab	Share/Fight/Map/Info/Scene01008/Position.tab

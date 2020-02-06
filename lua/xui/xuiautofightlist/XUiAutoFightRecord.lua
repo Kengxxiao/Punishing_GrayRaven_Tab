@@ -67,7 +67,7 @@ function XUiAutoFightRecord:InitCharacters()
 end
 
 function XUiAutoFightRecord:BindTimer()
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local remainTime = self.Record.CompleteTime - now
     local complete = remainTime <= 0
     self:SetState(complete)

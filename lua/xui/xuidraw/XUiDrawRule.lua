@@ -9,7 +9,7 @@ function XUiDrawRule:OnStart(drawId, closeCb)
     self.PanelProbability.gameObject:SetActive(false)
     self.CloseCb = closeCb
     self:SetData(drawId)
-    XUiHelper.PlayAnimation(self, "DrawRuleBegin")
+    --XUiHelper.PlayAnimation(self, "DrawRuleBegin")
 end
 
 function XUiDrawRule:SetData(drawId)
@@ -56,11 +56,11 @@ function XUiDrawRule:InitAutoScript()
 end
 
 function XUiDrawRule:AutoInitUi()
-    self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
-    self.PanelRule = self.Transform:Find("SafeAreaContentPane/PanelRule")
-    self.PanelDetailContent = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent")
-    self.TxtRule = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent/TxtRule"):GetComponent("Text")
-    self.PanelProbability = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent/PanelProbability")
+    -- self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
+    -- self.PanelRule = self.Transform:Find("SafeAreaContentPane/PanelRule")
+    -- self.PanelDetailContent = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent")
+    -- self.TxtRule = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent/TxtRule"):GetComponent("Text")
+    -- self.PanelProbability = self.Transform:Find("SafeAreaContentPane/PanelRule/PnlScrollView/PnlViewport/PanelDetailContent/PanelProbability")
 end
 
 function XUiDrawRule:GetAutoKey(uiNode, eventName)
@@ -97,7 +97,7 @@ end
 
 function XUiDrawRule:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiDrawRule:OnBtnCloseClick(...)
@@ -106,9 +106,9 @@ function XUiDrawRule:OnBtnCloseClick(...)
     end
 
     self.Closed = true
-    XUiHelper.PlayAnimation(self, "DrawRuleEnd", nil, function()
-        --CS.XUiManager.ViewManager:Pop()
-        self:Close()
-        self.CloseCb()
-    end)
+    -- XUiHelper.PlayAnimation(self, "DrawRuleEnd", nil, function()
+    --     --CS.XUiManager.ViewManager:Pop()
+    --     self:Close()
+    --     self.CloseCb()
+    -- end)
 end

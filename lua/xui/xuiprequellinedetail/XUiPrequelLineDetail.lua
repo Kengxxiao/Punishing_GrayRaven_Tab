@@ -31,9 +31,8 @@ end
 
 function XUiPrequelLineDetail:Refresh(stage)
     self.PrequelStage = stage
-    XUiHelper.PlayAnimation(self, PANELPREQUELDETAILBEGIN, function()
-        self:RefreshDetail(self.PrequelStage)
-    end, nil)
+    self:PlayAnimation(PANELPREQUELDETAILBEGIN)
+    self:RefreshDetail(self.PrequelStage)
 end
 
 
@@ -109,10 +108,9 @@ function XUiPrequelLineDetail:AutoAddListener()
 end
 -- auto
 function XUiPrequelLineDetail:OnBtnMaskClick(eventData)
-    XUiHelper.PlayAnimation(self, PANELPREQUELDETAILEND, nil, function()
+    self:PlayAnimation(PANELPREQUELDETAILEND, function()
         self:OnPrequelDetailClose()
     end)
-
 end
 
 function XUiPrequelLineDetail:OnPrequelDetailClose()
@@ -271,7 +269,7 @@ function XUiPrequelLineDetail:UpdateRewards()
         local autoFightRecord = XDataCenter.AutoFightManager.GetRecordByStageId(stageId)
 
         if autoFightRecord then
-            local now = XTime.Now()
+            local now = XTime.GetServerNowTimestamp()
             if now >= autoFightRecord.CompleteTime then
                 self:SetAutoFightStatus(XDataCenter.AutoFightManager.State.Complete)
             else

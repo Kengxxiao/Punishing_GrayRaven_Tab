@@ -5,7 +5,7 @@ local TypeText = {}
 local IsInit = {}
 local AnimeNames = {}
 local InitFunctionList = {}
-local CSFormatTime = CS.XDate.FormatTime
+local TimestampToGameDateTimeString = XTime.TimestampToGameDateTimeString
 local DrawLogLimit = CS.XGame.ClientConfig:GetInt("DrawLogLimit")
 function XUiDrawLog:OnStart(drawInfo,selectIndex,cb)
     self.DrawId = drawInfo.Id
@@ -34,11 +34,11 @@ function XUiDrawLog:OnStart(drawInfo,selectIndex,cb)
         function ()
             self:InitEventRulePanel()
         end,
-        } 
+        }
     IsInit = {false,false,false,false}
     AnimeNames = {"QieHuanOne","QieHuanTwo","QieHuanThree","QieHuanFour"}
     self:SetTypeText()
-    self:InitBtnTab()  
+    self:InitBtnTab()
 end
 
 function XUiDrawLog:SetTypeText()
@@ -59,11 +59,11 @@ function XUiDrawLog:InitDrawLogListPanel()
     local fromName = ""
     local time = 0
     local type = 0
-    
+
     local PanelObj = {}
     PanelObj.Transform = self.Panel3.transform
     XTool.InitUiObject(PanelObj)
-    
+
     PanelObj.GridLogHigh.gameObject:SetActiveEx(false)
     PanelObj.GridLogMid.gameObject:SetActiveEx(false)
     PanelObj.GridLogLow.gameObject:SetActiveEx(false)
@@ -85,7 +85,7 @@ function XUiDrawLog:InitDrawLogListPanel()
             end
             name = Goods.Name
             type = XArrangeConfigs.GetType(v.RewardGoods.ConvertFrom)
-            time = CSFormatTime(v.DrawTime)
+            time = TimestampToGameDateTimeString(v.DrawTime)
             self:SetLogData(PanelObj,fromName,type,name,time,quality)
         else
             local Goods = XGoodsCommonManager.GetGoodsShowParamsByTemplateId(v.RewardGoods.TemplateId)
@@ -96,14 +96,14 @@ function XUiDrawLog:InitDrawLogListPanel()
                 name = name.."."..Goods.TradeName
             end
             type = XArrangeConfigs.GetType(v.RewardGoods.TemplateId)
-            time = CSFormatTime(v.DrawTime)
+            time = TimestampToGameDateTimeString(v.DrawTime)
             self:SetLogData(PanelObj,name,type,nil,time,quality)
         end
     end
 end
 
 function XUiDrawLog:SetLogData(obj,name,type,from,time,quality)
-  
+
     local go = {}
     if type == XArrangeConfigs.Types.Character then
         if quality >= 3 then
@@ -120,7 +120,7 @@ function XUiDrawLog:SetLogData(obj,name,type,from,time,quality)
             go = CS.UnityEngine.Object.Instantiate(obj.GridLogLow, obj.PanelContent)
         end
     end
-    
+
     local tmpObj = {}
     tmpObj.Transform = go.transform
     tmpObj.GameObject = go.gameObject
@@ -175,7 +175,7 @@ function XUiDrawLog:InitDrawPreview()
     PanelObj.PanelStdCard.gameObject:SetActiveEx(false)
     PanelObj.TxtUp.gameObject:SetActiveEx(false)
     PanelObj.TxtNor.gameObject:SetActiveEx(false)
-    
+
     local previewList = XDataCenter.DrawManager.GetDrawPreview(self.DrawId)
     if not previewList then
         return
@@ -220,7 +220,7 @@ end
 function XUiDrawLog:InitBtnTab()
     local groupId = XDataCenter.DrawManager.GetDrawInfo(self.DrawId).GroupId
     local eventRules = XDataCenter.DrawManager.GetDrawGroupRule(groupId).EventRules
-    
+
     self.TabGroup = self.TabGroup or {}
     for i = 1, BtnMaxCount do
         if not self.TabGroup[i] then
@@ -244,13 +244,13 @@ function XUiDrawLog:OnSelectedTog(index)
     for i = 1, BtnMaxCount do
         self["Panel"..i].gameObject:SetActiveEx(false)
     end
-    
+
     self["Panel"..index].gameObject:SetActiveEx(true)
     if not IsInit[index] then
         InitFunctionList[index]()
         IsInit[index] = true
     end
-    
+
     self:PlayAnimation(AnimeNames[index])
 end
 

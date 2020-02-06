@@ -16,7 +16,7 @@ end
 
 function XUiDrawPreview:OnEnable()
     self:Init(self.Father.DrawInfo.Id)
-    XUiHelper.PlayAnimation(self, "UiDrawPreviewBegin")
+    --XUiHelper.PlayAnimation(self, "UiDrawPreviewBegin")
 end
 
 function XUiDrawPreview:Init(id)
@@ -82,13 +82,13 @@ function XUiDrawPreview:InitAutoScript()
 end
 
 function XUiDrawPreview:AutoInitUi()
-    self.PanelPreview = self.Transform:Find("SafeAreaContentPane/PanelPreview")
-    self.PanelPro = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelPro")
-    self.PanelProCard = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelPro/PanelProCard")
-    self.PanelStd = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelStd")
-    self.PanelStdCard = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelStd/PanelStdCard")
-    self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
-    self.ProTitle = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/ProTitle")
+    -- self.PanelPreview = self.Transform:Find("SafeAreaContentPane/PanelPreview")
+    -- self.PanelPro = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelPro")
+    -- self.PanelProCard = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelPro/PanelProCard")
+    -- self.PanelStd = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelStd")
+    -- self.PanelStdCard = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/PanelStd/PanelStdCard")
+    -- self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
+    -- self.ProTitle = self.Transform:Find("SafeAreaContentPane/PanelPreview/PnlScrollView/PnlViewport/PnlDetailContent/ProTitle")
 end
 
 function XUiDrawPreview:GetAutoKey(uiNode, eventName)
@@ -125,7 +125,7 @@ end
 
 function XUiDrawPreview:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiDrawPreview:OnBtnCloseClick(...)
@@ -138,9 +138,9 @@ function XUiDrawPreview:OnBtnCloseClick(...)
     --]]
 
 
-    XUiHelper.PlayAnimation(self, "UiDrawPreviewEnd", nil, function()
-        self:Close()
-        self.CloseCb()
-    end)
+    -- XUiHelper.PlayAnimation(self, "UiDrawPreviewEnd", nil, function()
+    --     self:Close()
+    --     self.CloseCb()
+    -- end)
 
 end

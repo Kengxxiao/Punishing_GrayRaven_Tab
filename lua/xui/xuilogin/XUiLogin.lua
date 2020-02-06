@@ -125,13 +125,11 @@ function XUiLogin:DoLogin(...)
     end
     self.IsLoginingGameServer = true
 
-    XLuaUiManager.SetAnimationMask(true)
-    XLog.Debug("login ui: do login open mask.")
+    XLuaUiManager.SetAnimationMask("DoLogin",true)
     local loginProfiler = CS.XProfiler.Create("login")
     loginProfiler:Start()
     XLoginManager.Login(function(code)
-        XLog.Debug("login ui: do login close mask.")
-        XLuaUiManager.SetAnimationMask(false)
+        XLuaUiManager.SetAnimationMask("DoLogin",false)
         if code and code ~= XCode.Success then
             if code == XCode.LoginServiceInvalidToken then
                 XUserManager.ClearLoginData()
@@ -147,6 +145,11 @@ function XUiLogin:DoLogin(...)
         local runMainProfiler = loginProfiler:CreateChild("RunMain")
         runMainProfiler:Start()
 
+        --打开水印窗口
+        if CS.XRemoteConfig.WatermarkEnabled then
+            XLuaUiManager.Open("UiWaterMask")
+        end
+            
         --BDC
         CS.XHeroBdcAgent.BdcAfterSdkLoginPage()
 
@@ -182,8 +185,12 @@ function XUiLogin:DoLogin(...)
                     XLuaUiManager.RunMain()
                 end
             end
+
+            -- 设置月卡信息本地缓存
+            XDataCenter.PurchaseManager.SetYKLoaclCache()
         end)
 
+        XDataCenter.SetManager.SetOwnFontSizeByCache()
         runMainProfiler:Stop()
 
         loginProfiler:Stop()
@@ -327,12 +334,11 @@ function XUiLogin:InitServerList()
 end
 
 function XUiLogin:RequestLoginNotice()
-    CS.XUiManager.Instance:SetAnimationMask(true)
-    XLog.Debug("login ui: request notice to open mask.")
+    
+    XLuaUiManager.SetAnimationMask("RequestLoginNotice",true)
     XDataCenter.NoticeManager.RequestLoginNotice(function(invalid)
         self.IsRequestNotice = true
-        CS.XUiManager.Instance:SetAnimationMask(false)
-        XLog.Debug("login ui: request notice to close mask.")
+        XLuaUiManager.SetAnimationMask("RequestLoginNotice",false)
         if not XTool.UObjIsNil(self.BtnLoginNotice) then 
             self.BtnLoginNotice.gameObject:SetActive(invalid)
         end

@@ -74,7 +74,7 @@ function XUiPanelSetName:RefreshLimit()
     self.InFSigmA.text = XPlayer.Name
     if not XPlayer.ChangeNameTime then return end
     local nextCanChangeTime = XPlayer.ChangeNameTime + XPlayerManager.PlayerChangeNameInterval
-    local timeLimit = nextCanChangeTime - XTime.Now()
+    local timeLimit = nextCanChangeTime - XTime.GetServerNowTimestamp()
     local hour = math.floor(timeLimit / 3600)
     local minute = math.ceil(timeLimit % 3600 / 60)
     if timeLimit > 0 then

@@ -1,8 +1,15 @@
 local next = next
 local tableInsert = table.insert
 
-local HtmlMap = {}
 local TagTextPrefix = "NoticeTag"
+
+local HtmlMap = {}
+
+local BTN_INDEX = {
+    First = 1,
+    Second = 2,
+}
+
 local XUiGameNotice = XLuaUiManager.Register(XLuaUi, "UiGameNotice")
 
 function XUiGameNotice:OnStart(rootUi, selectIdx, type)
@@ -22,6 +29,11 @@ function XUiGameNotice:OnDisable()
     end
 
     self:ClearTabBtns()
+end
+
+function XUiGameNotice:OnEnable()
+    self:UpdateLeftTabBtns(nil, self.Type)
+    self:OnSelectedTog()
 end
 
 function XUiGameNotice:OnDestroy()
@@ -47,6 +59,28 @@ function XUiGameNotice:OnNotify(evt, ...)
     end
 end
 
+function XUiGameNotice:GetCertainBtnModel(index, hasChild, pos, totalNum)
+    if index == BTN_INDEX.First then
+        if hasChild then
+            return self.BtnFirstHasSnd
+        else
+            return self.BtnFirst
+        end
+    elseif index == BTN_INDEX.Second then
+        if totalNum == 1 then
+           return self.BtnSecondAll 
+        end
+
+        if pos == 1 then
+            return self.BtnSecondTop
+        elseif pos == totalNum then
+            return self.BtnSecondBottom
+        else
+            return self.BtnSecond
+        end
+    end
+end
+
 function XUiGameNotice:ClearTabBtns()
     if not self.TabBtns then
         return
@@ -68,13 +102,15 @@ function XUiGameNotice:UpdateLeftTabBtns(selectIdx, type)
     local btnIndex = 0
     local firstRedPointIndex
 
-    self.BtnFirst.gameObject:SetActive(true)
-    self.BtnSecond.gameObject:SetActive(true)
-
     --一级标题
     for groupIndex, data in ipairs(noticeInfos) do
-        local btn = CS.UnityEngine.Object.Instantiate(self.BtnFirst)
+        local htmlList = data.Content
+        local totalNum = #htmlList
+
+        local btnModel = self:GetCertainBtnModel(BTN_INDEX.First, totalNum > 1)
+        local btn = CS.UnityEngine.Object.Instantiate(btnModel)
         btn.transform:SetParent(self.PanelNoticeTitleBtnGroup.transform, false)
+        btn.gameObject:SetActiveEx(true)
         btn:SetName(data.Title)
 
         if not data.Tag or data.Tag == 0 then
@@ -92,15 +128,15 @@ function XUiGameNotice:UpdateLeftTabBtns(selectIdx, type)
         --二级标题
         local needRedPoint = false
         local firstIndex = btnIndex
-        local htmlList = data.Content
-        local onlyOne = #htmlList == 1
+        local onlyOne = totalNum == 1
         for htmlIndex, htmlCfg in ipairs(htmlList) do
             needRedPoint = XDataCenter.NoticeManager.CheckHasRedPoint(data, htmlIndex)
             if needRedPoint and not firstRedPointIndex then
                 firstRedPointIndex = btnIndex
             end
             if not onlyOne then
-                local btn = CS.UnityEngine.Object.Instantiate(self.BtnSecond)
+                local btnModel = self:GetCertainBtnModel(BTN_INDEX.Second, nil, htmlIndex, totalNum)
+                local btn = CS.UnityEngine.Object.Instantiate(btnModel)
                 btn:SetName(htmlCfg.Title)
                 btn.transform:SetParent(self.PanelNoticeTitleBtnGroup.transform, false)
 
@@ -127,8 +163,6 @@ function XUiGameNotice:UpdateLeftTabBtns(selectIdx, type)
 
         uiButton:ShowReddot(needRedPoint)
     end
-    self.BtnSecond.gameObject:SetActive(false)
-    self.BtnFirst.gameObject:SetActive(false)
 
     local selectIndex = selectIdx or firstRedPointIndex or 1
     self.PanelNoticeTitleBtnGroup:Init(self.TabBtns, function(index) self:OnSelectedTog(index) end)
@@ -147,7 +181,7 @@ function XUiGameNotice:OnSelectedTog(index)
     end
 
     --刷新右边UI
-    self:UpdateWebView(indexInfo.HtmlUrl, indexInfo.HtmlUrlSlave)
+    self:UpdateWebView(indexInfo.HtmlUrl)
 
     --取消小红点
     XDataCenter.NoticeManager.ChangeInGameNoticeReadStatus(indexInfo.HtmlReadKey, true)
@@ -171,7 +205,7 @@ function XUiGameNotice:OnSelectedTog(index)
     end
 end
 
-function XUiGameNotice:ShowHtml(html)
+function XUiGameNotice:ShowHtml()
     CS.XTool.WaitNativeCoroutine(CS.UnityEngine.WaitForEndOfFrame(), function()
         if self.WebViewPanel then
             CS.UnityEngine.Object.DestroyImmediate(self.WebViewPanel.gameObject)
@@ -192,10 +226,11 @@ function XUiGameNotice:ShowHtml(html)
     end)
 end
 
-function XUiGameNotice:UpdateWebView(url, urlSlave)
+function XUiGameNotice:UpdateWebView(url)
     if self.CurUrl == url then
         return
     end
+
     self.CurUrl = url
 
     if HtmlMap[url] then
@@ -203,9 +238,9 @@ function XUiGameNotice:UpdateWebView(url, urlSlave)
         return
     end
 
-    local request = CS.XUriPrefixRequest.Get(self.CurUrl)
+    local request = CS.XUriPrefixRequest.Get(url)
     self.RequestMap[request] = url
-    
+
     CS.XTool.WaitCoroutine(request:SendWebRequest(), function()
         if request.isNetworkError or request.isHttpError then
             return
@@ -213,9 +248,11 @@ function XUiGameNotice:UpdateWebView(url, urlSlave)
 
         local requestUrl = self.RequestMap[request]
         HtmlMap[requestUrl] = request.downloadHandler.text
+
         self:ShowHtml()
 
         self.RequestMap[request] = nil
         request:Dispose()
     end)
+
 end

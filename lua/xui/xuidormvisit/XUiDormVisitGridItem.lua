@@ -23,7 +23,6 @@ function XUiDormVisitGridItem:OnBtnClick()
     end
         
     local charId = DormManager.GetVisitorDormitoryCharacterId()
-    DormManager.RequestDormitoryVisit(self.ItemData.PlayerId,self.ItemData.DormitoryId,charId,self.OnEnterDormcb)
     XLuaUiManager.CloseWithCallback("UiDormVisit",function()
         DormManager.RequestDormitoryVisit(self.ItemData.PlayerId,self.ItemData.DormitoryId,charId,self.OnEnterDormcb)
     end)
@@ -50,6 +49,7 @@ function XUiDormVisitGridItem:Init(uiroot)
     self.UiRoot = uiroot
     self.HostelSecond = uiroot.HostelSecond
     self.UiRoot:RegisterClickEvent(self.BtnVisit,self.OnBtnClickcb)
+    self.BtnView.CallBack = function() self:OnBtnViewClick() end
 end
 
 function XUiDormVisitGridItem:GetMaxScore(atts)
@@ -110,4 +110,14 @@ function XUiDormVisitGridItem:OnRefresh(itemData)
         self.TxtOnline.text = self.TextOffline
     end
 end
+
+function XUiDormVisitGridItem:OnBtnViewClick()
+    if not self.ItemData or  not self.ItemData.PlayerId then
+        return 
+    end
+    
+    --个人信息
+    XDataCenter.PersonalInfoManager.ReqShowInfoPanel(self.ItemData.PlayerId)  
+end
+
 return XUiDormVisitGridItem

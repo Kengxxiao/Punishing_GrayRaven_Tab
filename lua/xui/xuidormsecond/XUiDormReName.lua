@@ -20,6 +20,7 @@ function XUiDormReName:Init(uiroot)
     self.UiRoot = uiroot
     self.BtnReNameCancel.CallBack = self.OnBtnCancelClickCb
     self.BtnTanchuangClose.CallBack = self.OnBtnCancelClickCb
+    self.TanchuangBgCloseBtn.CallBack = self.OnBtnCancelClickCb
     self.BtnReNameConfirm.CallBack = self.OnBtnConfirmClickCb
     self.BtnReNameCancel:SetName(TextManager.GetText("CancelText"))
     self.BtnReNameConfirm:SetName(TextManager.GetText("ConfirmText"))

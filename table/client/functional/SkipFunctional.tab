@@ -14,6 +14,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 50008	2	UiPurchase	1	充值界面		1	0	0						
 50009	6	UiSign		首充界面		3	0	0						 
 50010	2	UiSignBanner	5	圣诞节签到										
+50011	2	UiSignBanner	6	空间站签到										
 50012	2	UiSignBanner	7	春节签到										
 500	1	UiMedalUnlock		进入徽章解锁										
 11	2	UiDrawGroup	1	研发系统										
@@ -256,6 +257,15 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 334	3	UiFuben	11070106	困难7-6	10102									
 335	3	UiFuben	11080106	困难8-6	10102									
 350	6	UiCharacter		前往晋升	102	0								
+400	3	UiFuben	10090102	普通9-2	10102									
+401	3	UiFuben	10090104	普通9-4	10102									
+402	3	UiFuben	10090202	普通9-6	10102									
+403	3	UiFuben	10090204	普通9-8	10102									
+404	3	UiFuben	10090302	普通9-10	10102									
+405	3	UiFuben	10090304	普通9-12	10102									
+407	3	UiFuben	11090101	困难9-1	10102									
+408	3	UiFuben	11090102	困难9-2	10102									
+409	3	UiFuben	11090103	困难9-3	10102									
 700	3	UiFuben	12010102	前往据点模式	10103									
 701	3	UiFuben	12010202	前往据点模式	10103									
 702	3	UiFuben	12010402	前往据点模式	10103									
@@ -965,7 +975,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 20001	7	OnOpenUiActivityBossSingle		格式塔										
 20002	7	OnOpenUiOnlineBoss		协同作战	10302									
 20003	7	OnOpenMainlineSubtab		间章	1701	2								
-20004	6	UiFubenChristmasMainLineChapter		极地暗流	10306	2	0	0						
+20004	7	OnOpenFestivalActivity		极地暗流	10306	2	0	0						
 20005	7	OnOpenUiActivityBranch		极圈之夜	10303	1								
 20006	7	OnOpenUiActivityBossSingle		深蓝伤痕	10304									
 20007	7	OnOpenUiOnlineBoss		协同作战	10302									
@@ -973,8 +983,10 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 20009	6	UiActivityBriefBase		极地暗流	10303	0	0	0						
 20010	6	UiDrawMain		主题限定研发	401	2	0	0						
 20011	6	UiPurchase		新涂装	3	2	0	3						
-20012	6	UiFubenChristmasMainLineChapter		圣诞	10306	1	0	0						
+20012	7	OnOpenFestivalActivity		圣诞	10306	1	0	0						
 20013	6	UiActivityBriefBase		前往极地商店	10306	3	0	0						
+20014	1	UiFuben		第九章	10308									
+20015	7	OnOpenBabelTower		巴别塔	10307									
 20016	7	OnOpenFestivalActivity		前往春节挑战	10306	3								
 11010101	3	UiFuben	11010101	困难1-1										
 11010102	3	UiFuben	11010102	困难1-2										
@@ -1186,7 +1198,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 11033	6	UiActivityBriefBase		前往极地商店	10306	3	0	0						
 11034	6	UiActivityBriefBase		前往极地商店	10306	3	0	0						
 11035	6	UiActivityBriefBase		前往极地商店	10306	3	0	0						
-11036	6	UiFubenChristmasMainLineChapter		圣诞奇妙夜	10306	1	0	0						
+11036	7	OnOpenFestivalActivity		圣诞奇妙夜	10306	1	0	0						
 11037	7	OnOpenFestivalActivity		极地暗流	10306	2	0	0						
 11038	7	OnOpenUiActivityBranch		极圈之夜	10303	1								
 11039	7	OnOpenUiActivityBossSingle		深蓝伤痕	10304									
@@ -1226,3 +1238,7 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 11073	7	OnOpenFestivalActivity		孤狼的战斗	10306	1	30130107	0						
 11074	7	OnOpenFestivalActivity		烟火与礼物	10306	1	30130108	0						
 11075	7	OnOpenFestivalActivity		圣诞快乐！	10306	1	30130109	0						
+50020	2	UiPurchase	2	礼包界面		3	3	0						
+11225	7	OnOpenUiActivityBranch		质量流失	10303	1								
+11226	7	OnOpenUiActivityBranch		质量流失	10303	2								
+11227	7	OnOpenUiActivityBossSingle		黑闪	10304									

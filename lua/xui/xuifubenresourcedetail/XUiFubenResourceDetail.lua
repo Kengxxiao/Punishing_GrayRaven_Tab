@@ -95,7 +95,7 @@ function XUiFubenResourceDetail:OnBtnCloseClick(...)
             self.Params.closeCb()
         end
     end
-    XUiHelper.PlayAnimation(self, ANIMATION_END, nil, End)
+    --XUiHelper.PlayAnimation(self, ANIMATION_END, nil, End)
 end
 
 function XUiFubenResourceDetail:OnBtnAddNumClick()
@@ -231,7 +231,7 @@ function XUiFubenResourceDetail:Show()
     local End = function()
         self.IsPlaying = false
     end
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, End)
+    --XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, End)
 end
 
 

@@ -82,7 +82,7 @@ DoGetNpcCamp	2|2
 DoGetNpcComboCount	2|2
 DoGetNpcKind	2|2
 DoGetNpcMaster	2|2
-DoGetNpcOffsetPosition	2|2|2|2|2|2|4
+DoGetNpcOffsetPosition	2|4|4|2|2|2|4
 DoGetNpcOffsetPositionEx	2|2|2|2|2|2|4
 DoGetNpcPosition	2|2|2
 DoGetPositionOffsetPosition	2|2|2|2|2|2|2|4
@@ -261,4 +261,20 @@ DoPlaySceneObjectAnimation	2|2
 DoSetIntToIntRecord	2|2
 DoSetStringToIntRecord	0|2
 DoShowTopHp	2
-DoRecordRebootByPay	
+DoRemoveBuffExceptKind	2|2
+DoAddLink	2|2|2|0|0|0
+CheckLink	2
+DoQueryLinkNpc	2|2|2
+DoRemoveLink	2
+DoCreateNpcSearcher	2
+DoSetNpcSearcher	2|2|2|4|2|2|2
+DoUpdateNpcSearcher	2
+DoGetNpcSearcherResult	2|2
+DoClearNpcSearcher	2
+DoGetCameraOperation	2|2
+DoGetFocusType	2|2
+DoCameraRecenter	2
+CheckNpcInTerrainArea	2|2|0
+DoSetActiveTerrain	2
+CheckCaptain	2
+DoBoneShakeByIndex	2|2|3|3

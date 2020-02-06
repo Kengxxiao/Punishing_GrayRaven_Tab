@@ -17,7 +17,7 @@ function XRedPointConditionBountyTask.Check()
         return false
     end
 
-    return XDataCenter.BountyTaskManager.CheckBountyTaskHasReward()
+    return XDataCenter.BountyTaskManager.CheckBountyTaskHasReward() or XDataCenter.BountyTaskManager.IsFirstTimeLoginInWeek()
 end
 
 return XRedPointConditionBountyTask

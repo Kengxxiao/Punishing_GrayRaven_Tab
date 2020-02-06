@@ -1,0 +1,4 @@
+Id	Behavior	Name	Environment	TerrainRoot	CloseLoadingDelay	SwitchNpcCd	SceneCamera	CameraId	Terrains[1]	Terrains[2]	Terrains[3]	Position[1]	Position[2]	Position[3]	Rotation[1]	Rotation[2]	Rotation[3]
+11090101	11090101	空间站 - 合二为一			0.15	15	30	9	110901010			0|0|0			0|0|0		
+11090102	11090102	空间站 - 始即为终			0.15	15	9	9	110901020			0|0|0			0|0|0		
+11090103	11090103	空间站 - 从虚至实			0.15	15	9	9	110901030			0|0|0			0|0|0		

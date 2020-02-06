@@ -12,6 +12,7 @@ function XUiPanelPrivateChatView:Ctor(rootUi, ui, emojiPanel)
     self.RootUi = rootUi
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.ChatButtonGroups = {}
     self.FriendId = 0
@@ -53,15 +54,15 @@ function XUiPanelPrivateChatView:InitAutoScript()
 end
 
 function XUiPanelPrivateChatView:AutoInitUi()
-    self.PanelChatView = self.Transform:Find("Content/MsgList/Content/PanelChatView"):GetComponent("XVerticalDynamicList")
-    self.PanelSocialPools = self.Transform:Find("Content/MsgList/Content/PanelChatView/PanelSocialPools")
-    self.PanelInputField = self.Transform:Find("Content/MsgList/Share/PanelInputField"):GetComponent("InputField")
-    self.ContactGroupList = self.Transform:Find("Content/ContactGroupList")
-    self.PanelEmoji = self.Transform:Find("Content/MsgList/Share/PanelEmoji")
-    self.PanelMsgListPools = self.Transform:Find("Content/MsgList/Content/PanelChatView/PanelSocialPools")
-    self.BtnSendMsg = self.Transform:Find("Content/MsgList/Share/BtnSendMsg"):GetComponent("XUiButton")
-    self.BtnEmoji = self.Transform:Find("Content/MsgList/Share/BtnEmoji"):GetComponent("XUiButton")
-    self.BtnLuomu = self.Transform:Find("Content/MsgList/Share/BtnLuomu"):GetComponent("XUiButton")
+    -- self.PanelChatView = self.Transform:Find("Content/MsgList/Content/PanelChatView"):GetComponent("XVerticalDynamicList")
+    -- self.PanelSocialPools = self.Transform:Find("Content/MsgList/Content/PanelChatView/PanelSocialPools")
+    -- self.PanelInputField = self.Transform:Find("Content/MsgList/Share/PanelInputField"):GetComponent("InputField")
+    -- self.ContactGroupList = self.Transform:Find("Content/ContactGroupList")
+    -- self.PanelEmoji = self.Transform:Find("Content/MsgList/Share/PanelEmoji")
+    -- self.PanelMsgListPools = self.Transform:Find("Content/MsgList/Content/PanelChatView/PanelSocialPools")
+    -- self.BtnSendMsg = self.Transform:Find("Content/MsgList/Share/BtnSendMsg"):GetComponent("XUiButton")
+    -- self.BtnEmoji = self.Transform:Find("Content/MsgList/Share/BtnEmoji"):GetComponent("XUiButton")
+    -- self.BtnLuomu = self.Transform:Find("Content/MsgList/Share/BtnLuomu"):GetComponent("XUiButton")
 end
 
 function XUiPanelPrivateChatView:GetAutoKey(uiNode, eventName)
@@ -98,7 +99,7 @@ end
 
 function XUiPanelPrivateChatView:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnSendMsg, "onClick", self.OnBtnSendMsgClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnSendMsg, self.OnBtnSendMsgClick)
 
     self.BtnSendMsg.CallBack = function () self:OnBtnSendMsgClick() end
     self.BtnEmoji.CallBack = function () self:OnBtnEmojiPanelClick() end

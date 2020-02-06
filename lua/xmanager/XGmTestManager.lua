@@ -1,4 +1,5 @@
 local tonumber = tonumber
+local Json = require("XCommon/Json")
 local table = table
 local tableInsert = table.insert
 local tableConcat = table.concat
@@ -7,6 +8,7 @@ XGmTestManager = XGmTestManager or {}
 
 local DebuggerGm
 local DebuggerGmMessage
+local GMCode
 
 local function CheckLogin()
     if not XLoginManager.IsLogin() then
@@ -263,9 +265,38 @@ local function InitGmMessage()
     DebuggerGmMessage = CS.XDebugManager.DebuggerCheat
     DebuggerGmMessage.SendAction = function (content)
         XNetwork.Call("SendCheatRequest", {Content = content}, function (response)
+            if content == "help" then
+                GMCode = Json.decode(response.Massage)
+                --TODO
+            end
             DebuggerGmMessage:SetShowBoxText(response.Massage)
         end)
     end
+    DebuggerGmMessage.HelpAction = function()
+        XNetwork.Call("SendCheatRequest", {Content = "help"}, function (response)
+            GMCode = Json.decode(response.Massage)
+            local GMStr = ""
+            for i = 1, #GMCode do
+                GMStr = GMStr .. "命令格式：" .. GMCode[i].Usage .. "\n"
+            end
+            DebuggerGmMessage.GMCodeText.text = GMStr
+        end)
+    end
+    --先更新一次
+    XNetwork.Call("SendCheatRequest", {Content = "help"}, function (response)
+        GMCode = Json.decode(response.Massage)
+        local GMStr = ""
+        for i = 1, #GMCode do
+            GMStr = GMStr .. "命令格式：" .. GMCode[i].Usage .. "\n"
+        end
+        DebuggerGmMessage.GMCodeText.text = GMStr
+    end)
+end
+
+local function AddCurServerName()
+    local txt = DebuggerGm:AddText(string.format("当前服务器:<color=#F90000FF>%s</color>",tostring(XServerManager.GetCurServerName())))
+    txt.transform.localPosition = CS.UnityEngine.Vector3(300, 260, 0)
+    txt.rectTransform.sizeDelta = CS.UnityEngine.Vector2(400,80)
 end
 
 function XGmTestManager.Init()
@@ -279,6 +310,9 @@ function XGmTestManager.Init()
     AddTestPay()
     AddDormEvent()
     AddLoginPlatform()
-    -- 作弊消息
-    InitGmMessage()
+    AddCurServerName()
+    if XLoginManager.IsLogin() then
+        -- 作弊消息
+        InitGmMessage()
+    end
 end

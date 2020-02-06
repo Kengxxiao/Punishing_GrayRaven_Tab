@@ -73,7 +73,7 @@ end
 
 function XUiMoneyRewardLevelUpTips:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBg, "onClick", self.OnBtnBgClick)
+    self:RegisterClickEvent(self.BtnBg, self.OnBtnBgClick)
 end
 -- auto
 function XUiMoneyRewardLevelUpTips:OnBtnBgClick(...)

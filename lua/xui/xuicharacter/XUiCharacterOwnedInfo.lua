@@ -77,7 +77,7 @@ function XUiCharacterOwnedInfo:UpdateView(characterId)
         end
     end
 
-    XRedPointManager.Check(self.RedPointId, self.CharacterId)
+    XRedPointManager.Check(self.RedPointId, characterId)
 end
 
 function XUiCharacterOwnedInfo:AddListener()
@@ -91,6 +91,7 @@ function XUiCharacterOwnedInfo:AddListener()
     self:RegisterClickEvent(self.BtnWeaponReplace, self.OnBtnWeaponReplaceClick)
     self:RegisterClickEvent(self.BtnJoin, self.OnBtnJoinClick)
     self:RegisterClickEvent(self.BtnCareerTips, self.OnBtnCareerTipsClick)
+    self.BtnElementDetail.CallBack = function() self:OnBtnElementDetailClick() end
 end
 
 function XUiCharacterOwnedInfo:OnBtnAwarenessReplace5Click(eventData)
@@ -147,4 +148,8 @@ function XUiCharacterOwnedInfo:OnBtnJoinClick()
             XLuaUiManager.Close("UiCharacter")
         end
     end)
+end
+
+function XUiCharacterOwnedInfo:OnBtnElementDetailClick(eventData)
+    XLuaUiManager.Open("UiCharacterElementDetail", self.CharacterId)
 end

@@ -5,6 +5,7 @@ function XUiPanelRewardBig:Ctor(ui, parent)
     self.Transform = ui.transform
     self.Parent = parent
     self.GridList = {}
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.GridMissionCommon.gameObject:SetActive(false)
 end
@@ -102,13 +103,13 @@ function XUiPanelRewardBig:InitAutoScript()
 end
 
 function XUiPanelRewardBig:AutoInitUi()
-    self.PanelRewardInfo = self.Transform:Find("GameObject/PanelRewardInfo")
-    self.ScrollView = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView"):GetComponent("Scrollbar")
-    self.PanelRewardBigA = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView/Viewport/PanelRewardBig")
-    self.GridMissionCommon = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView/Viewport/PanelRewardBig/GridMissionCommon")
-    self.PanelRole = self.Transform:Find("GameObject/PanelRewardInfo/PanelRole")
-    self.RImgRole = self.Transform:Find("GameObject/PanelRewardInfo/PanelRole/RImgRole"):GetComponent("RawImage")
-    self.TxtDesc = self.Transform:Find("GameObject/PanelRewardInfo/Image/TxtDesc"):GetComponent("Text")
+    -- self.PanelRewardInfo = self.Transform:Find("GameObject/PanelRewardInfo")
+    -- self.ScrollView = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView"):GetComponent("Scrollbar")
+    -- self.PanelRewardBigA = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView/Viewport/PanelRewardBig")
+    -- self.GridMissionCommon = self.Transform:Find("GameObject/PanelRewardInfo/ScrollView/Viewport/PanelRewardBig/GridMissionCommon")
+    -- self.PanelRole = self.Transform:Find("GameObject/PanelRewardInfo/PanelRole")
+    -- self.RImgRole = self.Transform:Find("GameObject/PanelRewardInfo/PanelRole/RImgRole"):GetComponent("RawImage")
+    -- self.TxtDesc = self.Transform:Find("GameObject/PanelRewardInfo/Image/TxtDesc"):GetComponent("Text")
 end
 
 function XUiPanelRewardBig:GetAutoKey(uiNode, eventName)

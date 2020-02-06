@@ -36,7 +36,7 @@ XFunctionalSkipManagerCreator = function()
             XFunctionalSkipManager[skipDatas.UiName](skipDatas)
         end
     end
-
+    
     -- 前往宿舍房间
     function  XFunctionalSkipManager.SkipDormRoom(list)
         local param1 = (list.CustomParams[1] ~= 0) and list.CustomParams[1] or nil
@@ -58,7 +58,7 @@ XFunctionalSkipManagerCreator = function()
                 else
                     XEventManager.DispatchEvent(XEventId.EVENT_DORM_SKIP, param1)
                 end
-
+                
                 XHomeDormManager.SetSelectedRoom(param1, true)
             else
                 if XLuaUiManager.IsUiShow("UiDormTask") then
@@ -172,7 +172,7 @@ XFunctionalSkipManagerCreator = function()
             end)
         end
     end
-
+    
     -- 前往宿舍研发界面
     function XFunctionalSkipManager.SkipDormDraw(list)
         if XHomeDormManager.InDormScene() then
@@ -183,7 +183,6 @@ XFunctionalSkipManagerCreator = function()
                     XDataCenter.DrawManager.GetDrawInfoList(DormDrawGroudId, function()
                         XLuaUiManager.Open("UiDraw", DormDrawGroudId, function()
                             XHomeSceneManager.ResetToCurrentGlobalIllumination()
-                            XHomeSceneManager.ResetToCurrentGlobalPointLight()
                         end, info.UiBackGround)
                     end)
                 end
@@ -197,7 +196,6 @@ XFunctionalSkipManagerCreator = function()
                         XDataCenter.DrawManager.GetDrawInfoList(DormDrawGroudId, function()
                             XLuaUiManager.Open("UiDraw", DormDrawGroudId, function()
                                 XHomeSceneManager.ResetToCurrentGlobalIllumination()
-                                XHomeSceneManager.ResetToCurrentGlobalPointLight()
                             end, info.UiBackGround)
                         end)
                     end
@@ -218,9 +216,25 @@ XFunctionalSkipManagerCreator = function()
         end
     end
 
+    -- 前往巴别塔
+    function XFunctionalSkipManager.OnOpenBabelTower(list)
+        if not XFunctionManager.DetectionFunction(XFunctionManager.FunctionName.BabelTower) then
+            return
+        end
+        
+        local currentActivityNo = XDataCenter.FubenBabelTowerManager.GetCurrentActivityNo()
+        if not currentActivityNo or not XDataCenter.FubenBabelTowerManager.IsInActivityTime(currentActivityNo) then
+            XUiManager.TipMsg(CS.XTextManager.GetText("BabelTowerNoneOpen"))
+            return
+        end
+
+        XLuaUiManager.Open("UiBabelTowerMainNew")
+    end
+
     -- 前往赏金任务
     function XFunctionalSkipManager.OnOpenUiMoneyReward(list)
-        XDataCenter.BountyTaskManager.SetBountyTaskLastLoginTime()
+       -- XDataCenter.BountyTaskManager.SetBountyTaskLastLoginTime()
+        XDataCenter.BountyTaskManager.SetBountyTaskLastRefreshTime()
         XLuaUiManager.Open("UiMoneyReward")
     end
 
@@ -245,16 +259,16 @@ XFunctionalSkipManagerCreator = function()
         if param1 == XDataCenter.FubenActivityBranchManager.BranchType.Difficult then
             if not XDataCenter.FubenActivityBranchManager.IsStatusEqualChallengeBegin() then
                 XUiManager.TipText("ActivityBranchNotOpen")
-                return
+                return 
             end
         end
-
+        
         if XFunctionalSkipManager.IsStageLock(param2) then return end
-
+        
         local sectionId = XDataCenter.FubenActivityBranchManager.GetCurSectionId()
         XLuaUiManager.Open("UiActivityBranch", sectionId, param1, param2)
     end
-
+    
     -- 前往格式塔
     function XFunctionalSkipManager.OnOpenUiActivityBossSingle(list)
 
@@ -272,7 +286,7 @@ XFunctionalSkipManagerCreator = function()
             XLuaUiManager.Open("UiActivityBossSingleDetail", param1)
         end
     end
-
+    
     -- 前往纷争战区
     function XFunctionalSkipManager.OnOpenUiArena(list)
         local arenaChapters = XFubenConfigs.GetChapterBannerByType(XDataCenter.FubenManager.ChapterType.ARENA)
@@ -280,7 +294,7 @@ XFunctionalSkipManagerCreator = function()
             XLuaUiManager.Open("UiArena", arenaChapters)
         end)
     end
-
+    
     -- 前往幻痛囚笼
     function XFunctionalSkipManager.OnOpenUiFubenBossSingle(list)
         local bossSingleChapters = XFubenConfigs.GetChapterBannerByType(XDataCenter.FubenManager.ChapterType.BOSSSINGLE)
@@ -295,7 +309,7 @@ XFunctionalSkipManagerCreator = function()
             XLuaUiManager.Open("UiFuben", XDataCenter.FubenManager.StageType.Resource)
             return
         end
-
+        
         XLuaUiManager.OpenWithCallback("UiFubenDaily", function()
             CsXGameEventManager.Instance:Notify(XEventId.EVENT_FUBEN_RESOURCE_AUTOSELECT, param2)
         end, XDataCenter.FubenDailyManager.GetDailyDungeonRulesById(param1))
@@ -315,9 +329,9 @@ XFunctionalSkipManagerCreator = function()
                 end
             end
             if covers[index] then
-                if covers[index].IsAllChapterLock and (not covers[index].IsActivity) then
+                if covers[index].IsAllChapterLock and (not covers[index].IsActivity) then 
                     XUiManager.TipMsg(XDataCenter.PrequelManager.GetChapterUnlockDescription(covers[index].ShowChapter))
-                    return
+                    return 
                 end
                 XLuaUiManager.Open("UiPrequel", covers[index], nil, param2)
             end
@@ -332,7 +346,7 @@ XFunctionalSkipManagerCreator = function()
         local param1 = (list.CustomParams[1] ~= 0) and list.CustomParams[1] or 1
         XLuaUiManager.Open("UiFuben", 1, nil, param1)
     end
-
+    
     -- 前往隐藏关卡主界面
     function XFunctionalSkipManager.OnOpenMainlineWithDifficuty(list)
         XLuaUiManager.OpenWithCallback("UiFuben", function()

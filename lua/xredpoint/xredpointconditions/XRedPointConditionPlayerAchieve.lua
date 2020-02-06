@@ -9,6 +9,11 @@ function XRedPointConditionPlayerAchieve.GetSubConditions()
 end
 
 function XRedPointConditionPlayerAchieve.Check()
+
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.PlayerAchievement) then
+        return false
+    end
+
     if not XFunctionManager.JudgeOpen(XFunctionManager.FunctionName.PlayerAchievement) then
         return false
     end

@@ -108,12 +108,12 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 504305			0	-1			1	0	5043050								
 504306			0	0.8			1	0	5043060				FxWeaponBow61Wuqi02	WeaponCase1			
 504310			0	-1			1	0	5043100			504310000					
-504311			0	5	101		1	0	5043110|101|100|6	5043110		504311000	FxTongyongJiagong	HitCase			
-504312			0	0.1			1	0	5043120			504312000					
-504314			0	-1			1	0	5043140			504314000					
+504313			0	-1			4	0	5043130				FxR3BiankaAttack21Arrow	HitCase			
+504314			0	0			1	0	5043140	5043130	5043130						
 504315			0	0.8			1	0	5043150				FxWeaponBow62Wuqi02	WeaponCase1			
+504316			0	-1			1	0	5043160			504316000					
 505001			0	-1			1	0	5050010			505001000					
-505002			0	3	101		1	0	5050020|101|100|6	5050020		505002000	FxTongyongJiagong	HitCase			
+505002			0	3	101		1	0	5050020|101|100|6			505002000	FxTongyongJiagong	HitCase			
 505101			0	-1			1	0	5051010			505101000					
 505102			0	3	202		5	0	5051020|202|23|200|5|5			505102000	FxTongyongJianfang	HitCase			
 505201			0	-1			1	0	5052010			505201000					
@@ -209,6 +209,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 508204			0	4	101		1	0	5082040|101|100|6	5082040		508204000	FxTongyongJiagong	HitCase			
 508205			0	4	101		1	0	5082050|101|100|6	5082050		508205000	FxTongyongJiagong	HitCase			
 508206			0	4	101		1	0	5082060|101|100|6	5082060		508206000	FxTongyongJiagong	HitCase			
+508210			0	-1			1	0	5082100			508210000					
 508301			0	-1			1	0	5083010			508301000					
 508302			0	3	24		1	0	5083020|24|5	5083020			FxTongyongShousun	HitCase	508303	1	
 508304			0	-1			1	0	5083040			508304000					
@@ -216,22 +217,22 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 508307			0	0.8			1	0	5083070				FxWeaponDagger61Wuqi02	WeaponCase1			
 508308			0	0.8			1	0	5083080				FxWeaponDagger61Wuqi02	WeaponCase2			
 508310			0	-1			1	0	5083100			508310000					
-508312			0	-1	101		2	0	5083120|101|100|6				FxTongyongJiagong	HitCase			
-508313			0	-1			1	0	5083130			508313000					
-508314			0	0			1	0	5083140			508314000					
-508315			0	0.6			1	0	5083150				FxWeaponDagger62Wuqi02	WeaponCase1			
-508316			0	0.6			1	0	5083160				FxWeaponDagger62Wuqi02	WeaponCase2			
+508312			0	-1			1	0	5083120|101|100|6			508312000					
+508313			0	0.6			1	0	5083130				FxWeaponDagger62Wuqi02	WeaponCase1			
+508314			0	0.6			1	0	5083140				FxWeaponDagger62Wuqi02	WeaponCase2			
 531001			0	-1			1	0	5310010			531001000					
-531002			0	5	101		1	0	5310020|101|100|6	5310020		531002000	FxTongyongJiagong	HitCase			
 531101			0	-1			1	0	5311010			531101000					
-531301			0	0			1	0	5313010			531301000					
-531302			0	5	101		3	0	5313020|101|100|6			531302000	FxTongyongJiagong	HitCase			
+531102			0	4	101		1	0	5311020|101|100|6	5311020		531102000	FxTongyongJiagong	HitCase			
+531301			0	-1			1	0	5313010			531301000					
+531302			0	3	101		3	0	5313020|101|100|6			531302000	FxTongyongJiagong	HitCase			
 531303			0	2			1	0	5313030|17|5|10			531303000	FxTongyongYunxuan	MarkCase			
 531304			0	0.2			1	0	5313040								
 531305			0	0.1			1	0	5313050			531305000					
 531306			0	10			1	0	5313060								
 531307			0	-1			1	0	5313070			531307000					
-531308			0	0.6			1	0	5313080				FxWeaponDagger62Wuqi02	WeaponCase1			
+531308			0	7	101		1	0	5313080|101|100|6	5313080		531308000	FxTongyongJiagong	HitCase			
+531309			0	-1			1	0	5313090			531309000					
+531310			0	0.6			1	0	5313100				FxWeaponScythe61Wuqi02	WeaponCase1			
 509001			0	-1			1	0	5090010			509001000					
 509101			0	-1			1	0	5091010			509101000					
 509102			0	-1			1	0	5091020			509102000					
@@ -347,6 +348,11 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 600620			0	-1			1	0	6006200	6006190|6006210|6006220			FxRE2SwordMd120111Chongneng01	Root			
 600621			0	-1			1	0	6006210	6006190|6006200|6006220			FxRE2SwordMd120111Chongneng02	Root			
 600622			0	1.8			1	0	6006220	6006200|6006210			FxRE2SwordMd120111Chongneng03	Root			
+600701			0	-1			1	0	6007010|101|100|6			600701000					
+600702			0	-1			1	0	6007020|101|100|6			600702000					
+600703			0	-1			1	0	6007030|101|100|6			600703000					
+600704			0	-1			1	0	6007040|101|100|6			600704000					
+600705			0	-1			1	0	6007050|101|100|6			600705000					
 610101			0	-1			1	0	6101010			610101000					
 610107			0	-1			1	0	6101070			610107000					
 610108			0	-1			1	0	6101080			610108000					
@@ -385,11 +391,15 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 620214			0	1	102		1	0	6202140|102|6202080|100|6	6202140		620214000	FxTongyongJiafang	HitCase			
 620215			0	1	102		1	0	6202150|102|6202080|100|6	6202150		620215000	FxTongyongJiafang	HitCase			
 620216			0	0			1	0	6202160			620216000					
+620217			0	-1			1	0	6202170			620217000					
+620218			0	0			1	0	6202180								
 620301			0	-1			1	0	6203010			620301000					
 620302			0	-1			1	0	6203020|104|100|6			620302000					
 620303			0	4	101		1	0	6203030|101|100|6	6203030		620303000	FxTongyongJiagong	HitCase			
 620304			0	-1			1	0	6203040			620304000					
 620306			0	0			1	0	6203060				FxTongyongJiaqiu	HitCase			
+620307			0	-1			1	0	6203070			620307000					
+620308			0	0			1	0	6203080								
 620401			0	-1			1	0	6204010			620401000					
 620402			0	5	202		1	0	6204020|202|200|5	6204020		620402000	FxTongyongJianfang	HitCase			
 620403			0	5	202		1	0	6204030|202|200|5	6204030		620403000	FxTongyongJianfang	HitCase			
@@ -402,11 +412,15 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 620410			0	1	202		1	0	6204100|202|6204070|200|5			620410000	FxTongyongJianfang	HitCase			
 620411			0	7			1	0	6204110	6204110	6204110	620411000	FxEquipFumianGuanghuan	Root			
 620412			0	0			1	0	6204120			620412000					
+620413			0	-1			1	0	6204130			620413000					
+620414			0	0			1	0	6204140								
 620501			0	-1			1	0	6205010			620501000					
 620502			0	5	202		1	0	6205020|202|200|5	6205020		620502000	FxTongyongJianfang	HitCase			
 620503			0	-1			1	0	6205030			620503000					
 620504			0	7	202		2	0	6205040|202|200|5			620504000	FxTongyongJianfang	HitCase			
 620505			0	0			1	0	6205050			620505000					
+620506			0	-1			1	0	6205060			620506000					
+620507			0	0			1	0	6205070								
 620601			0	-1			1	0	6206010|101|100|6			620601000					
 620602			0	-1			1	0	6206020|101|100|6			620602000					
 620603			0	-1			1	0	6206030|101|100|6			620603000					
@@ -423,6 +437,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 620701			0	-1			1	0	6207010			620701000					
 620702			0	3	101		5	0	6207020|101|100|6			620702000	FxTongyongJiagong	HitCase			
 620703			0	0			1	0	6207030			620703000					
+620704			0	0			1	0	6207040								
 620705			0	-1			1	0	6207050			620705000					
 620706			0	-1			1	0	6207060				FxEquipTripleBall64Ready				
 620707			0	0			1	0	6207070	6207060	6207060						
@@ -445,6 +460,20 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 621004			0	-1			1	0	6210040			621004000					
 621005			0	-1			1	0	6210050			621005000					
 621006			0	-1			1	0	6210060			621006000					
+621101			0	-1			1	0	6211010			621101000					
+621102			0	0.3	101		1	0	6211020|101|6211020|100|6			621102000	FxTongyongJiagong	HitCase			
+621103			0	0.3	101		1	0	6211030|101|6211020|100|6			621103000	FxTongyongJiagong	HitCase			
+621104			0	0.3	101		1	0	6211040|101|6211020|100|6			621104000	FxTongyongJiagong	HitCase			
+621105			0	0.3	101		1	0	6211050|101|6211020|100|6			621105000	FxTongyongJiagong	HitCase			
+621106			0	0.3	101		1	0	6211060|101|6211020|100|6			621106000	FxTongyongJiagong	HitCase			
+621107			0	0.3	103		1	0	6211070|103|6211020|100|6			621107000	FxTongyongJiasu	Root			
+621108			0	0.3	103		1	0	6211080|103|6211020|100|6			621108000	FxTongyongJiasu	Root			
+621109			0	0.3			1	0	6211090			621109000					
+621110			0	-1			1	0	6211100			621110000					
+621111			0	0.1			1	0	6211110			621111000					
+621112			0	-1			1	0	6211120			621112000					
+621113			0	15.1			1	0	6211130			621113000					
+621114			0	-1			1	0	6211140				FxEquipLanternFestival01				
 630101			0	-1			1	0	6301010			630101000					
 630102			0	-1			3	0	6301020|104|100|6			630102000					
 630103			0	5	101		1	0	6301030|101|100|6	6301030		630103000	FxTongyongJiagong	HitCase			
@@ -474,6 +503,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 630127			0	-1			1	0	6301270				FxEquipMagicSup64FlyBuff				
 630128			0	-1			1	0	6301280			630128000					
 630129			0	-1			1	0	6301290			630129000					
+630130			0	-1			1	0	6301300			630130000					
+630131			0	0			1	0	6301310								
 630201			0	-1			1	0	6302010			630201000					
 630202			0	-1			3	0	6302020|104|100|6			630202000					
 630203			0	5	101		1	0	6302030|101|100|6	6302030		630203000	FxTongyongJiagong	HitCase			
@@ -492,6 +523,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 630216			0	0			1	0	6302160			630216000					
 630217			0	0.1			1	0	6302170			630217000					
 630218			0	-1			1	0	6302180				FxEquipPhySup64FlyBuff				
+630219			0	-1			1	0	6302190			630219000					
+630220			0	0			1	0	6302200								
 630301			0	-1			1	0	6303010			630301000					
 630302			0	5	202		1	0	6303020|202|200|5	6303020		630302000	FxTongyongJianfang	HitCase			
 630303			0	5	202		1	0	6303030|202|200|5	6303030		630303000	FxTongyongJianfang	HitCase			
@@ -507,6 +540,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 630313			0	5	101		1	0	6303130|101|100|6	6303130		630313000	FxTongyongJiagong	HitCase			
 630314			0	5	101		1	0	6303140|101|100|6	6303140		630314000	FxTongyongJiagong	HitCase			
 630315			0	5			1	0	6303150	6303150			FxEquipMagicTank64Guanghuan				
+630316			0	-1			1	0	6303160			630316000					
+630317			0	0			1	0	6303170								
 630401			0	-1			1	0	6304010			630401000					
 630402			0	5	202		1	0	6304020|202|200|5	6304020		630402000	FxTongyongJianfang	HitCase			
 630403			0	-1			1	0	6304030			630403000					
@@ -514,6 +549,8 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 630405			0	5	101		1	0	6304050|101|100|6	6304050		630405000	FxTongyongJiagong	HitCase			
 630407			0	-1			1	0	6304070				FxEquipPhyTank64HudunShouji	HitCase			
 630408			0	0.1			1	0	6304080			630408000					
+630409			0	-1			1	0	6304090			630409000					
+630410			0	0			1	0	6304100								
 630501			0	-1			1	0	6305010			630501000					
 630502			0	5	102		1	0	6305020|102|100|6	6305020		630502000	FxTongyongJiafang	HitCase			
 630503			0	5	101		1	0	6305030|101|100|6	6305030		630503000	FxTongyongJiagong	HitCase			

@@ -122,10 +122,10 @@ end
 
 function XUiFubenChallengeMapEmex:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnActDesc, "onClick", self.OnBtnActDescClick)
-    self:RegisterListener(self.BtnCancelMatch, "onClick", self.OnBtnCancelMatchClick)
-    self:RegisterListener(self.BtnReward, "onClick", self.OnBtnRewardClick)
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnActDesc, self.OnBtnActDescClick)
+    self:RegisterClickEvent(self.BtnCancelMatch, self.OnBtnCancelMatchClick)
+    self:RegisterClickEvent(self.BtnReward, self.OnBtnRewardClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
 end
 -- auto

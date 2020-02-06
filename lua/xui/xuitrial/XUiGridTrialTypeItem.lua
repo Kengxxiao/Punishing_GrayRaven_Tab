@@ -3,6 +3,7 @@ local XUiGridTrialTypeItem = XClass()
 function XUiGridTrialTypeItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -27,7 +28,7 @@ function XUiGridTrialTypeItem:InitAutoScript()
 end
 
 function XUiGridTrialTypeItem:AutoInitUi()
-    self.TxtName = self.Transform:Find("TxtName"):GetComponent("Text")
+    -- self.TxtName = self.Transform:Find("TxtName"):GetComponent("Text")
 end
 
 function XUiGridTrialTypeItem:RegisterClickEvent(uiNode, func)

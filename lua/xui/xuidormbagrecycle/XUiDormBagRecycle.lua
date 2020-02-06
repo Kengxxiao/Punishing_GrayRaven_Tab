@@ -6,9 +6,10 @@ function XUiDormBagRecycle:OnAwake()
     self:AddListener()
 end
 
-function XUiDormBagRecycle:OnStart(recycleFurnitures, rewardItems)
+function XUiDormBagRecycle:OnStart(recycleFurnitures, rewardItems, openFinishCallBack)
     self.RecycleItems = {}
     self.RewardItems = {}
+    self.OpenFinishCallBack = openFinishCallBack
     self:Refresh(recycleFurnitures, rewardItems)
 end
 
@@ -31,6 +32,10 @@ function XUiDormBagRecycle:Refresh(recycleFurnitures, rewardItems)
     XUiHelper.CreateTemplates(self, self.RecycleItems, recycleFurnitures, XUiGridFurniture.New, self.GridFurnitureRecycle.gameObject, self.PanelRecycle, onFurnitureCreate)
     XUiHelper.CreateTemplates(self, self.RewardItems, rewardGridDatas, XUiBagItem.New, self.GridFurnitureRecycle.gameObject, self.PanelReward, onCreate)
     self.GridFurnitureRecycle.gameObject:SetActive(false)
+
+    if self.OpenFinishCallBack then 
+        self.OpenFinishCallBack()
+    end
 end
 
 function XUiDormBagRecycle:AddListener()

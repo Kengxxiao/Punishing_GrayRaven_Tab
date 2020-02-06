@@ -25,10 +25,10 @@ function XSignBoardPlayer:Init(playUi, coolTime, delay)
     self.CoolTime = coolTime --冷却时间
     self.PlayUi = playUi    --执行Ui
     self.Status = PlayerState.IDLE
-    self.DelayStart = XTime.Now() + delay
+    self.DelayStart = XTime.GetServerNowTimestamp() + delay
     self.LastPlayTime = -1
     self.Delay = delay
-    self.Time = XTime.Now()
+    self.Time = XTime.GetServerNowTimestamp()
     self.AutoPlay = true
 end
 
@@ -142,11 +142,11 @@ function XSignBoardPlayer:Stop()
         return
     end
 
-    self.PlayerData.PlayedList[self.PlayerData.PlayingElement.Id] = XTime.Now() + self.PlayerData.PlayingElement.CoolTime
+    self.PlayerData.PlayedList[self.PlayerData.PlayingElement.Id] = XTime.GetServerNowTimestamp() + self.PlayerData.PlayingElement.CoolTime
     self.PlayUi:Stop(self.PlayerData.PlayingElement)
     self.PlayerData.PlayingElement = nil
     self.Status = PlayerState.IDLE
-    self.LastPlayTime = XTime.Now()
+    self.LastPlayTime = XTime.GetServerNowTimestamp()
 end
 
 --暂停

@@ -5,6 +5,7 @@ function XUiPanelTaskCard:Ctor(ui, parent)
     self.Transform = ui.transform
     self.GridList = {}
     self.Parent = parent
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.GridCommon.gameObject:SetActive(false)
 end
@@ -88,20 +89,20 @@ function XUiPanelTaskCard:InitAutoScript()
 end
 
 function XUiPanelTaskCard:AutoInitUi()
-    self.ImgLevel = self.Transform:Find("ImgLevel"):GetComponent("Image")
-    self.ImgBG = self.Transform:Find("ImgLevel/ImgBG"):GetComponent("Image")
-    self.TxtLevel = self.Transform:Find("ImgLevel/ImgBG/TxtLevel"):GetComponent("Text")
-    self.RImgRoleIcon = self.Transform:Find("ImgLevel/RImgRoleIcon"):GetComponent("RawImage")
-    self.ImgIconQuality = self.Transform:Find("ImgLevel/ImgIconQuality"):GetComponent("Image")
-    self.TxtTitle = self.Transform:Find("TxtTitle"):GetComponent("Text")
-    self.TxtDesc = self.Transform:Find("TxtDesc"):GetComponent("Text")
-    self.TxtBuff = self.Transform:Find("Image/TxtBuff"):GetComponent("Text")
-    self.PanelReward = self.Transform:Find("PanelReward")
-    self.GridCommon = self.Transform:Find("PanelReward/GridCommon")
-    self.RImgIcon = self.Transform:Find("PanelReward/GridCommon/RImgIcon"):GetComponent("RawImage")
-    self.PanelSite = self.Transform:Find("PanelReward/GridCommon/PanelSite")
-    self.TxtSite = self.Transform:Find("PanelReward/GridCommon/PanelSite/TxtSite"):GetComponent("Text")
-    self.BtnAccept = self.Transform:Find("BtnAccept"):GetComponent("Button")
+    -- self.ImgLevel = self.Transform:Find("ImgLevel"):GetComponent("Image")
+    -- self.ImgBG = self.Transform:Find("ImgLevel/ImgBG"):GetComponent("Image")
+    -- self.TxtLevel = self.Transform:Find("ImgLevel/ImgBG/TxtLevel"):GetComponent("Text")
+    -- self.RImgRoleIcon = self.Transform:Find("ImgLevel/RImgRoleIcon"):GetComponent("RawImage")
+    -- self.ImgIconQuality = self.Transform:Find("ImgLevel/ImgIconQuality"):GetComponent("Image")
+    -- self.TxtTitle = self.Transform:Find("TxtTitle"):GetComponent("Text")
+    -- self.TxtDesc = self.Transform:Find("TxtDesc"):GetComponent("Text")
+    -- self.TxtBuff = self.Transform:Find("Image/TxtBuff"):GetComponent("Text")
+    -- self.PanelReward = self.Transform:Find("PanelReward")
+    -- self.GridCommon = self.Transform:Find("PanelReward/GridCommon")
+    -- self.RImgIcon = self.Transform:Find("PanelReward/GridCommon/RImgIcon"):GetComponent("RawImage")
+    -- self.PanelSite = self.Transform:Find("PanelReward/GridCommon/PanelSite")
+    -- self.TxtSite = self.Transform:Find("PanelReward/GridCommon/PanelSite/TxtSite"):GetComponent("Text")
+    -- self.BtnAccept = self.Transform:Find("BtnAccept"):GetComponent("Button")
 end
 
 function XUiPanelTaskCard:RegisterClickEvent(uiNode, func)

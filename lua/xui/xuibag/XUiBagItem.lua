@@ -132,52 +132,51 @@ function XUiBagItem:AddListener()
     self.AutoCreateListeners = {}
 
     if self.Btn then
-        self:RegisterListener(self.Btn, "onClick", self.OnBtnClick)
+        XUiHelper.RegisterClickEvent(self, self.Btn, self.OnBtnClick)
     end
 
     if self.Btn2 then
-        self:RegisterListener(self.Btn2, "onClick", self.OnBtn2Click)
+        XUiHelper.RegisterClickEvent(self, self.Btn2, self.OnBtn2Click)
     end
 
     if self.BtnOk then
-        self:RegisterListener(self.BtnOk, "onClick", self.Hide)
+        XUiHelper.RegisterClickEvent(self, self.BtnOk, self.Hide)
     end
 
     if self.BtnSell then
-        self:RegisterListener(self.BtnSell, "onClick", self.OnBtnSellClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnSell, self.OnBtnSellClick)
     end
 
     if self.BtnClose then
-        self:RegisterListener(self.BtnClose, "onClick", self.Hide)
+        XUiHelper.RegisterClickEvent(self, self.BtnClose, self.Hide)
     end
 
     if self.BtnGet then
-        self:RegisterListener(self.BtnGet, "onClick", self.OnBtnGetClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnGet, self.OnBtnGetClick)
     end
 
     if self.BtnBlock then
-        self:RegisterListener(self.BtnBlock, "onClick", self.Hide)
+        XUiHelper.RegisterClickEvent(self, self.BtnBlock, self.Hide)
     end
 
     if self.BtnMinusSelect then
-        self:RegisterListener(self.BtnMinusSelect, "onClick", self.MinusSelectCount)
-
+        XUiHelper.RegisterClickEvent(self, self.BtnMinusSelect, self.MinusSelectCount)
     end
 
     if self.BtnAddSelect then
-        self:RegisterListener(self.BtnAddSelect, "onClick", self.AddSelectCount)
+        XUiHelper.RegisterClickEvent(self, self.BtnAddSelect, self.AddSelectCount)
     end
 
     if self.BtnMax then
-        self:RegisterListener(self.BtnMax, "onClick", self.SelectAll)
+        XUiHelper.RegisterClickEvent(self, self.BtnMax, self.SelectAll)
     end
 
     if self.BtnUse then
-        self:RegisterListener(self.BtnUse, "onClick", self.OnBtnUseClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnUse, self.OnBtnUseClick)
     end
 
     if self.BtnItemTip then
-        self:RegisterListener(self.BtnItemTip, "onClick", self.OnBtnItemTipClick)
+        XUiHelper.RegisterClickEvent(self, self.BtnItemTip, self.OnBtnItemTipClick)
     end
 end
 
@@ -553,7 +552,7 @@ function XUiBagItem:RefreshSelf(NeedDefulatQulity, isSmallIcon, notCommonBg)
             sprite = XUiHelper.TagBgPath.Blue
             text = CS.XTextManager.GetText("ItemCanConvert")
         elseif XDataCenter.ItemManager.IsTimeLimit(self.TemplateId) then
-            local leftTime = self.RecycleBatch and self.RecycleBatch.RecycleTime - XTime.Now() or XDataCenter.ItemManager.GetRecycleLeftTime(self.Data.Id)
+            local leftTime = self.RecycleBatch and self.RecycleBatch.RecycleTime - XTime.GetServerNowTimestamp() or XDataCenter.ItemManager.GetRecycleLeftTime(self.Data.Id)
             text, sprite = XUiHelper.GetBagTimeLimitTimeStrAndBg(leftTime)
         end
 

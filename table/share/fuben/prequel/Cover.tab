@@ -4,6 +4,7 @@ CoverId	CoverName	Priority	ChallengeCondition	ChallengeStage[1]	ChallengeConsume
 1003	七实	3		13010301	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel03.prefab	1003001	1003002	
 1004	里	4		13010401	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel04.prefab	1004001		
 1005	卡列尼	5		13010501	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel05.prefab	1005001		
-1006	渡边	6		13010601	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel06.prefab	1006001		
+1006	渡边	6		13010601	21	0	13010602	21	0				Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel06.prefab	1006001	1006002	
 1007	卡安比	7		13010701	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel07.prefab	1007001		
 1008	神威	8		13010801	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel08.prefab	1008001		
+1009	艾拉	9		13011201	21	0							Assets/Product/Ui/ComponentPrefab/FuBenChallengePrequel/FuBenChallengePrequel09.prefab	1009001		

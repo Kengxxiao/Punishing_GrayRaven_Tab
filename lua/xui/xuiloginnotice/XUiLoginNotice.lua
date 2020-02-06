@@ -17,17 +17,15 @@ function XUiLoginNotice:OnStart(loginNotice)
     CS.XTool.WaitCoroutine(request:SendWebRequest(), function()
         if request.isNetworkError or request.isHttpError then
             local msgTab = {}
-            msgTab["error"] = tostring(request.error)
-            local jsonstr = Json.encode(msgTab)
-            CS.XRecord.Record("24001", "LoginNoticeError",jsonstr)
+            msgTab.error = request.error
+            CS.XRecord.Record(msgTab, "24001", "LoginNoticeError")
             return
         end
 
         if not request.downloadHandler then
             local msgTab = {}
-            msgTab["error"] = "request.downloadHandler is nil"
-            local jsonstr = Json.encode(msgTab)
-            CS.XRecord.Record("24002", "LoginNoticeError",jsonstr)
+            msgTab.error = "request.downloadHandler is nil"
+            CS.XRecord.Record(msgTab, "24002", "LoginNoticeError")
             return
         end
 

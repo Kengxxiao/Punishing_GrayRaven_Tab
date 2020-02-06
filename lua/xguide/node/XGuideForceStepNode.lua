@@ -106,7 +106,7 @@ function GuideForceStepNode:OnEnter()
         if ui then
             local templateId = tonumber(self.Fields["Par1"])
             ui.UiProxy.UiLuaTable.SelectEquipId = XDataCenter.EquipManager.GetFirstEquip(templateId).Id
-            ui:OpenOneChildUi("UiEquipAwarenessPopup", ui.UiProxy.UiLuaTable, false)
+            XLuaUiManager.Open("UiEquipAwarenessPopup", ui.UiProxy.UiLuaTable, false)
             self.Agent:SetVarDicByKey("UiEquipSelectEquipId", ui.UiProxy.UiLuaTable.SelectEquipId)
         end
 

@@ -1,2 +1,2 @@
 Id	BeginTimeStr	EndTimeStr	StageList[0]	StageList[1]	StageTypeList[0]	StageTypeList[1]	DropItemId[0]	DropItemCount[0]	DropRate[0]	DropBottomCount[0]	DropDailyCount[0]	DropActivityCount[0]
-1	2019/3/14 0:00	2020/1/31 5:00	30090106	30090306	15	2	96000	1	10000	1	10	110
+1	2019/3/14 0:00	2020/1/31 5:00			15	2	96000	1	10000	1	10	110

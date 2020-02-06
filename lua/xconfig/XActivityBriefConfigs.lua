@@ -15,6 +15,7 @@ XActivityBriefConfigs.ActivityGroupId = {
     BossSingle = 3, --单机Boss活动
     BossOnline = 4, --联机Boss活动
     Prequel = 5, --间章预告
+    BabelTower = 6 --巴别塔
 }
 
 function XActivityBriefConfigs.Init()

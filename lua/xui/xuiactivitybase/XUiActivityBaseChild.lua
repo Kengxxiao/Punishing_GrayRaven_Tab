@@ -5,14 +5,19 @@ local XUiPanelTask = require("XUi/XUiActivityBase/XUiPanelTask")
 local XUiPanelShop = require("XUi/XUiActivityBase/XUiPanelShop")
 local XUiPanelSkip = require("XUi/XUiActivityBase/XUiPanelSkip")
 
+local BTN_INDEX = {
+    First = 1,
+    Second = 2,
+}
+
 local XUiActivityBaseChild = XLuaUiManager.Register(XLuaUi, "UiActivityBaseChild")
 
 function XUiActivityBaseChild:OnStart(activityGroupInfos, selectIndex)
     local isAcitivityOpen = next(activityGroupInfos)
-    self.PaneNothing.gameObject:SetActive(not isAcitivityOpen)
-    self.ScrollTitleTab.gameObject:SetActive(isAcitivityOpen)
-    self.PanelRightContent.gameObject:SetActive(isAcitivityOpen)
-    self.RImgContentBg.gameObject:SetActive(isAcitivityOpen)
+    self.PaneNothing.gameObject:SetActiveEx(not isAcitivityOpen)
+    self.ScrollTitleTab.gameObject:SetActiveEx(isAcitivityOpen)
+    self.PanelRightContent.gameObject:SetActiveEx(isAcitivityOpen)
+    self.RImgContentBg.gameObject:SetActiveEx(isAcitivityOpen)
     if not isAcitivityOpen then return end
 
     self.ActivityGroupInfos = activityGroupInfos
@@ -20,7 +25,7 @@ function XUiActivityBaseChild:OnStart(activityGroupInfos, selectIndex)
 end
 
 function XUiActivityBaseChild:OnEnable()
-    if self.SelectIndex then 
+    if self.SelectIndex then
         self.PanelNoticeTitleBtnGroup:SelectIndex(self.SelectIndex)
     end
 end
@@ -37,7 +42,30 @@ end
 
 function XUiActivityBaseChild:OnNotify(evt, ...)
     if evt == XEventId.EVENT_FINISH_TASK then
+        self.AutoRefresh = true
         self.PanelNoticeTitleBtnGroup:SelectIndex(self.SelectIndex)
+    end
+end
+
+function XUiActivityBaseChild:GetCertainBtnModel(index, hasChild, pos, totalNum)
+    if index == BTN_INDEX.First then
+        if hasChild then
+            return self.BtnFirstHasSnd
+        else
+            return self.BtnFirst
+        end
+    elseif index == BTN_INDEX.Second then
+        if totalNum == 1 then
+            return self.BtnSecondAll
+        end
+
+        if pos == 1 then
+            return self.BtnSecondTop
+        elseif pos == totalNum then
+            return self.BtnSecondBottom
+        else
+            return self.BtnSecond
+        end
     end
 end
 
@@ -54,9 +82,13 @@ function XUiActivityBaseChild:UpdateLeftTabBtns(selectIndex)
     --一级标题
     for groupId, activityGroupInfo in ipairs(self.ActivityGroupInfos) do
         local activityGroupCfg = activityGroupInfo.ActivityGroupCfg
+        local activityCfgs = activityGroupInfo.ActivityCfgs
+        local numOfActivityCfgs = #activityCfgs
 
-        local btn = btnIndex == 0 and self.BtnFirst or CS.UnityEngine.Object.Instantiate(self.BtnFirst)
+        local btnModel = self:GetCertainBtnModel(BTN_INDEX.First, numOfActivityCfgs > 1)
+        local btn = CS.UnityEngine.Object.Instantiate(btnModel)
         btn.transform:SetParent(self.PanelNoticeTitleBtnGroup.transform, false)
+        btn.gameObject:SetActiveEx(true)
         btn:SetName(activityGroupCfg.Name)
 
         local bg = btn.transform:Find("RImgBg"):GetComponent("RawImage")
@@ -70,16 +102,16 @@ function XUiActivityBaseChild:UpdateLeftTabBtns(selectIndex)
         --二级标题
         local needRedPoint = false
         local firstIndex = btnIndex
-        local activityCfgs = activityGroupInfo.ActivityCfgs
-        local onlyOne = #activityCfgs == 1
+        local onlyOne = numOfActivityCfgs == 1
         for activityIndex, activityCfg in ipairs(activityCfgs) do
             needRedPoint = XDataCenter.ActivityManager.CheckRedPointByActivityId(activityCfg.Id)
 
             if not onlyOne then
-                local btn = CS.UnityEngine.Object.Instantiate(self.BtnSecond)
+                local btnModel = self:GetCertainBtnModel(BTN_INDEX.Second, nil, activityIndex, numOfActivityCfgs)
+                local btn = CS.UnityEngine.Object.Instantiate(btnModel)
                 btn:SetName(activityCfg.Name)
                 btn.transform:SetParent(self.PanelNoticeTitleBtnGroup.transform, false)
-                btn.gameObject:SetActive(true)
+                btn.gameObject:SetActiveEx(true)
 
                 local uiButton = btn:GetComponent("XUiButton")
                 uiButton.SubGroupIndex = firstIndex
@@ -95,6 +127,8 @@ function XUiActivityBaseChild:UpdateLeftTabBtns(selectIndex)
                 else
                     uiButton:ShowReddot(false)
                 end
+            else
+                firstNeedRed = needRedPoint
             end
 
             local activityIndexInfo = {
@@ -106,7 +140,6 @@ function XUiActivityBaseChild:UpdateLeftTabBtns(selectIndex)
 
         uiButton:ShowReddot(firstNeedRed)
     end
-    self.BtnSecond.gameObject:SetActive(false)
 
     self.PanelNoticeTitleBtnGroup:Init(self.TabBtns, function(index) self:OnSelectedTog(index) end)
     self.SelectIndex = selectIndex or firstRedPointIndex or 1
@@ -127,19 +160,19 @@ function XUiActivityBaseChild:OnSelectedTog(index)
 
     --刷新右边UI
     if activityCfg.ActivityType == XActivityConfigs.ActivityType.Task then
-        self.PanelTask.gameObject:SetActive(true)
-        self.PanelShop.gameObject:SetActive(false)
-        self.PanelSkip.gameObject:SetActive(false)
+        self.PanelTask.gameObject:SetActiveEx(true)
+        self.PanelShop.gameObject:SetActiveEx(false)
+        self.PanelSkip.gameObject:SetActiveEx(false)
         self:UpdatePanelTask(activityCfg)
     elseif activityCfg.ActivityType == XActivityConfigs.ActivityType.Shop then
-        self.PanelShop.gameObject:SetActive(true)
-        self.PanelSkip.gameObject:SetActive(false)
-        self.PanelTask.gameObject:SetActive(false)
+        self.PanelShop.gameObject:SetActiveEx(true)
+        self.PanelSkip.gameObject:SetActiveEx(false)
+        self.PanelTask.gameObject:SetActiveEx(false)
         self:UpdatePanelShop(activityCfg)
     elseif activityCfg.ActivityType == XActivityConfigs.ActivityType.Skip then
-        self.PanelSkip.gameObject:SetActive(true)
-        self.PanelShop.gameObject:SetActive(false)
-        self.PanelTask.gameObject:SetActive(false)
+        self.PanelSkip.gameObject:SetActiveEx(true)
+        self.PanelShop.gameObject:SetActiveEx(false)
+        self.PanelTask.gameObject:SetActiveEx(false)
         self:UpdatePanelSkip(activityCfg)
     end
 
@@ -165,11 +198,15 @@ function XUiActivityBaseChild:OnSelectedTog(index)
         self.TabBtns[subGroupIndex]:ShowReddot(needRed)
     end
 
-    self:PlayAnimation("QieHuanTwo", function()
-        XLuaUiManager.SetMask(false)
-    end, function()
-        XLuaUiManager.SetMask(true)
-    end)
+    if not self.AutoRefresh then
+        self:PlayAnimation("QieHuanTwo", function()
+            XLuaUiManager.SetMask(false)
+        end, function()
+            XLuaUiManager.SetMask(true)
+        end)
+    else
+        self.AutoRefresh = nil
+    end
 end
 
 function XUiActivityBaseChild:UpdatePanelTask(activityCfg)

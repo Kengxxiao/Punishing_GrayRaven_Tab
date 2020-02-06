@@ -132,7 +132,12 @@ function XUiNewPlayerTask:OnEnable()
 
     -- 不是第一次播放了，可以直接播入場動畫
     if self.OnStartState and hintTabFirstOpen == 1 then
-        self.AnimEnableOpen:PlayTimelineAnimation()
+        self:PlayAnimation("AnimEnableOpen", function()
+            XLuaUiManager.SetMask(false)
+        end,
+        function()
+            XLuaUiManager.SetMask(true)
+        end)
     end
     self.OnStartState = false
 end

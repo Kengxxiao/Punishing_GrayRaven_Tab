@@ -67,7 +67,7 @@ end
 
 function XUiPanelDeviceUpgradeInfo:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnUpgrade, "onClick", self.OnBtnUpgradeClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnUpgrade, self.OnBtnUpgradeClick)
 end
 -- auto
 

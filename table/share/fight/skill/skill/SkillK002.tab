@@ -18,7 +18,7 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 832022	受击 勒马		1.2	0	Attack23				6		0		4	
 832023	瘫痪 In		7.1	0	Attack14				6		0		4	
 832024	瘫痪 Out		1	0	Attack15				6		0		0	
-832030	出生动作		4.33	0	Born				6		0		0	
+832030	出生动作		4	0	Born				6		0		0	
 832031	跑停 右		2.23	0	Attack31				6		0		4	
 832032	跑停 左		2.23	0	Attack32				6		0		4	
 832033	转向 左		1	0	Attack33				6		0		4	

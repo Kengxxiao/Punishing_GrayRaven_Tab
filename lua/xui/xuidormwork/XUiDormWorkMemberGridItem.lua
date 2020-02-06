@@ -61,11 +61,12 @@ function XUiDormWorkMemberGridItem:OnRefresh(itemData)
     self.CurStata = false
     self:OnSetState(false)
     self.ItemData = itemData
+    local eventtemp = XHomeCharManager.GetCharacterEvent(itemData.CharacterId,true)
     local icon = DormManager.GetCharSmallHeadIcon(itemData)
     if icon then
         self.UiRoot:SetUiSprite(self.ImgIcon,icon)
     end
-
+    self.Events.gameObject:SetActiveEx(eventtemp)
     self.Vitality = DormManager.GetVitalityById(self.ItemData) or 0
     
     self.TxtVitCount.text = TextManager.GetText("DormWorkVitTxt",self.Vitality,MaxVitality)

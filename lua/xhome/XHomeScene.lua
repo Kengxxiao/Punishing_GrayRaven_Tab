@@ -125,23 +125,6 @@ function XHomeScene:SetRaycasterMask(mask)
 end
 
 ----------------------------光照信息接口 start-----------------------------
--- 设置光照场景类型
---function XHomeScene:SetSceneType(sceneType)
---    if not sceneType then
---        return
---    end
---
---    self.IlluminationSceneType = sceneType
---    CS.XGlobalIllumination.SetSceneType(sceneType)
---end
---
--- 重置为当前光照场景类型
---function XHomeScene:ResetToCurrentSceneType()
---    if self.IlluminationSceneType then
---        CS.XGlobalIllumination.SetSceneType(self.IlluminationSceneType)
---    end
---end
-
 -- 设置全局光照
 function XHomeScene:SetGlobalIllumSO(soPath)
     if not soPath or string.len(soPath) <= 0 then
@@ -165,71 +148,5 @@ function XHomeScene:ResetToCurrentGlobalIllumination()
     if resource then
         CS.XGlobalIllumination.SetGlobalIllumSO(resource.Asset)
     end
-end
-
--- 设置全局点光源
-function XHomeScene:SetGlobalPointLight(path, rootTrans)
-    if not path or string.len(path) <= 0 then
-        return
-    end
-
-    self.CurrentPointLightPath = path
-    self.CurrentPintLightParent = rootTrans
-
-    local temp = self.GlobalPointLightMap[path]
-    if not temp then
-        temp = {}
-        self.GlobalPointLightMap[path] = temp
-    end
-
-    if not temp.Resource then
-        temp.Resource = CS.XResourceManager.Load(path)
-    end
-
-    if XTool.UObjIsNil(rootTrans) then
-        return
-    end
-
-    if XTool.UObjIsNil(temp.SoTrans) then
-        local go = CS.UnityEngine.Object.Instantiate(temp.Resource.Asset)
-        temp.SoTrans = go.transform
-    end
-
-    temp.SoTrans:SetParent(rootTrans, false)
-    temp.SoTrans.localPosition = CS.UnityEngine.Vector3.zero
-    temp.SoTrans.localEulerAngles = CS.UnityEngine.Vector3.zero
-    temp.SoTrans.localScale = CS.UnityEngine.Vector3.one
-    local pointLight = temp.SoTrans:GetComponent(typeof(CS.XGlobalPointLight))
-
-    CS.XGlobalIllumination.SetGlobalPointLight(pointLight)
-end
-
--- 重置为当前场景点光源
-function XHomeScene:ResetToCurrentGlobalPointLight()
-    local temp = self.GlobalPointLightMap[self.CurrentPointLightPath]
-    if not temp then
-        return
-    end
-
-    if not temp.Resource then
-        return
-    end
-
-    if XTool.UObjIsNil(self.CurrentPintLightParent) then
-        return
-    end
-
-    if XTool.UObjIsNil(temp.SoTrans) then
-        local go = CS.UnityEngine.Object.Instantiate(temp.Resource.Asset)
-        temp.SoTrans = go.transform
-    end
-
-    temp.SoTrans:SetParent(self.CurrentPintLightParent, false)
-    temp.SoTrans.localPosition = CS.UnityEngine.Vector3.zero
-    temp.SoTrans.localEulerAngles = CS.UnityEngine.Vector3.zero
-    temp.SoTrans.localScale = CS.UnityEngine.Vector3.one
-    local pointLight = temp.SoTrans:GetComponent(typeof(CS.XGlobalPointLight))
-
-    CS.XGlobalIllumination.SetGlobalPointLight(pointLight)
 end
 ----------------------------光照信息接口 end-----------------------------

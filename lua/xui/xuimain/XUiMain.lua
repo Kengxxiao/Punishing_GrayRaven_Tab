@@ -42,6 +42,7 @@ function XUiMain:OnEnable()
     self.Other:OnEnable()
     self:SetCacheFight()
     self:SetScreenAdaptorCache()
+    XDataCenter.SetManager.SetSceneUIType()
 end
 
 function XUiMain:OnDisable()
@@ -50,6 +51,7 @@ function XUiMain:OnDisable()
     self.LeftBottom:OnDisable()
     self.RightMid:OnDisable()
     self.Other:OnDisable()
+    self.RightBottom:OnDisable()
 end
 
 function XUiMain:OnDestroy(delete)
@@ -68,6 +70,7 @@ function XUiMain:OnNotify(evt, ...)
     end
     self.LeftBottom:OnNotify(evt)
     self.RightMid:OnNotify(evt)
+    self.RightTop:OnNotify(evt)
 end
 
 function XUiMain:OnGetEvents()
@@ -75,9 +78,9 @@ function XUiMain:OnGetEvents()
         XEventId.EVENT_CHAT_OPEN,
         XEventId.EVENT_CHAT_CLOSE,
         XEventId.EVENT_NOTICE_PIC_CHANGE,
-        XEventId.EVENT_NOTICE_STATUS_CHANGE,
         XEventId.EVENT_TASKFORCE_INFO_NOTIFY,
-        XEventId.EVENT_ACTIVITY_MAINLINE_STATE_CHANGE}
+        XEventId.EVENT_ACTIVITY_MAINLINE_STATE_CHANGE,
+        XEventId.EVENT_MAIL_COUNT_CHEAK}
 end
 
 --初始化摄像机
@@ -120,8 +123,8 @@ function XUiMain:PlayEnterAnim()
             XLoginManager.SetFirstOpenMainUi(false)
         else
             XLoginManager.SetStartGuide(true)
-            XEventManager.DispatchEvent(XEventId.EVENT_CARD_REFRESH_WELFARE_BTN)
             XEventManager.DispatchEvent(XEventId.EVENT_MAINUI_ENABLE)
+            XEventManager.DispatchEvent(XEventId.EVENT_CARD_REFRESH_WELFARE_BTN)
             XLuaUiManager.SetMask(false)
         end
     end

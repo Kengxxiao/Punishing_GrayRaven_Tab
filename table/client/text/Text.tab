@@ -24,8 +24,6 @@ EquipAwakenMax	已觉醒到最高等级
 EquipAwakenItemNotEnough	材料不足
 EquipAwakenCoinNotEnough	螺母不足
 EquipAutoTakeOffNotWearingEquip	当前没有可卸下的装备
-EquipMinCritMultiple	小暴击  {0:P1} 的经验
-EquipMaxCritMultiple	小暴击  {0:P1} 的经验
 EquipBreakthroughConfirmTiltle	装备突破确认
 EquipBreakthroughConfirmContent	突破后提升等级，可大幅度提升属性。
 EquipBreakThroughDes0	暂无
@@ -90,7 +88,24 @@ EquipStrengthenPreciousTipTitle	强化提示
 EquipStrengthenPreciousTipContent	强化材料中包含5★或以上装备，是否继续。
 EquipResonancePreciousTipTitle	共鸣提示
 EquipResonancePreciousTipContent	共鸣材料中包含5★或以上装备，是否继续。
+EquipResonanceWeaponRepeatTipTitle	重复共鸣提示
+EquipResonanceWeaponRepeatTipContent	共鸣技能已经解锁后，再次共鸣只能更换绑定对象，是否继续？
 EquipResonancePosText	位置{0}
+EquipSuitPrefabCount	 <color=#ff4e4e>{0}</color>/{1}
+EquipSuitPrefabCountMax	{0}/{1}
+EquipSuitPrefabCurName	当前组合
+EquipSuitPrefabRenameLengthError	请输入组合名称
+EquipSuitPrefabSaveNotEquipIds	组合内没有装备意识
+EquipSuitPrefabSaveNotName	请输入组合名称
+EquipSuitPrefabSaveOverMaxNum	组合数量超过上限
+EquipSuitPrefabEquipSame	已装备相同意识
+EquipSuitPrefabRenameSuc	组合改名成功
+EquipSuitPrefabDeleteSuc	组合删除成功
+EquipSuitPrefabSaveSuc	组合保存成功
+EquipSuitPrefabEquipSuc	组合装备成功
+EquipSuitPrefabNum	{0}/{1}
+EquipGridUsingWords	装备中
+EquipGridInPrefabWords	预设中
 StoryReviewTip	选项
 StoryGetRewardTip	获得{0}x{1}
 OnlineInstanceQuitRoom	确定退出协同作战房间？
@@ -256,7 +271,7 @@ GiftText	[礼物]
 FashionNoGet	此【涂装】暂未解锁
 FashionNoWay	暂时没有获取途径
 CharacterLock	角色暂未解锁
-ApplyForTip	您现在无法向对方发送好友，请在{0}小时后再发送
+ApplyForTip	无法向对方发送好友请求，请在{0}小时后再发送
 ApplyButtonName1	申请
 ApplyButtonName2	好友
 ActiveTime	<size=26><color=#626c78>开放剩余时间：</color></size>{0}
@@ -305,8 +320,8 @@ ShopHaveNotBuyCount	超过商店可购买的数量
 ShopGridCommonCount	x{0}
 NoLimit	无限
 HostelFloorLock	【区域未解锁】
-HostelSelectChar	【点击右方选择构造体入住】
-HostelCharInWork	【执勤中的构造体不可离开楼层】
+HostelSelectChar	【点击右方选择伙伴入住】
+HostelCharInWork	【执勤中的伙伴不可离开楼层】
 HostelFullElectric	已满
 HostelFullVitality	已满
 TeamSelectError	此角色已经在编队中
@@ -321,7 +336,7 @@ HostelWorkSlot	槽位数量
 HostelDeviceUp	提升到
 HostelDeviceLevel	等级
 HostelDeviceNeedEle	需要{0}个{1}作为能源
-HostelSelectCharWork	请先选择构造体
+HostelSelectCharWork	请先选择伙伴
 CharacterVitality	集中力{0}
 HostelProductElectric	产出粒子
 HostelSlotProduct	产出{0}
@@ -529,9 +544,9 @@ EquipResonanceSelectWeaponTip	消耗一件同星级武器
 EquipResonanceSelectAwarenessTip	消耗一件同名意识
 EquipResonanceNoWeaponTip	暂无武器选择
 EquipResonanceNoAwarenessTip	暂无意识选择
-CustomUiTip	<color=#ffffff>提示：点击需要调整的按钮，拖动调整位置</color>
-CustomUiConflict	<color=#ff0000>提示：有按钮重叠，请重新检查</color>
-CustomUiSaved	<color=#0000ff>提示：方案保存成功</color>
+CustomUiTip	<color=#ffffff>点击需要调整的按钮，拖动调整位置</color>
+CustomUiConflict	<color=#ffffff>有按钮重叠，请重新检查</color>
+CustomUiSaved	<color=#ffffff>方案保存成功</color>
 CustomUiUnsave	按键方案尚未保存，确定要退出吗？
 CustomUiSchemeCustomName	自定义方案
 AwarenessDetailTitle	意识属性
@@ -555,7 +570,7 @@ ArenaActivityResultCountDown	距离下次活动时间
 ArenaActivityEndCountDown	进行中：{0}
 ArenaOverDescription	结算期
 ArenaTeamDescription	组队期
-ArenaFightNotJoinDescription	战区任务已刷新
+ArenaFightNotJoinDescription	任务奖励已刷新
 ArenaFightJoinDescription	战斗期
 ArenaWaveRate	波动指数{0}
 ArenaPlayerLevelRange	等级段：{0}-{1}
@@ -586,7 +601,10 @@ ArenaMaxSingleNoScore	最高分无上限
 ArenaMaxAllScore	{0}<size=40>MAX</size>
 ArenaMaxAllHistoryScore	{0}<size=30>MAX</size>
 ArenaGrouplScore	第 {0} 波
-ArenaTeamInvitError	组队需等级段位相同
+ArenaTeamInvitError	组队需等级区与段位相同
+ArenaTeamInvitTip	状态刷新可能存在延迟
+ArenaTeamLevelError	组队需等级区与段位相同
+ArenaTeamChallengeError	该玩家尚未进入本期战区
 ComeAcrossTips	每天可偶遇3次，24点重置次数
 ComeAcrossStart	开始！
 ComeAcrossRight	<color=#8cfa7a>正确！</color>
@@ -652,10 +670,9 @@ TrialNoFinishTips	请先通过阿斯麦
 NoActivities	当前没有活动公告
 NoInGameNotice	当前没有公告
 ItemCanConvert	溢出
-ItemTimeLimit	回收
 DrawCardResetTime	<size=28><color=#AFAFAFFF>距离重置还有:</color></size>{0}
 ArenaActivityTeamStatusWrong	组队功能暂未开放，请于组队期进行操作
-ArenaActivityStatusWrong	战区状态已变更
+ArenaActivityStatusWrong	当前状态无法执行此操作
 EmailExpireTime	剩余时间：{0}
 EmailForever	剩余时间：永久
 ArenaActivityStatusChange	竞技场状态已经改变
@@ -677,7 +694,7 @@ DormFurnitureRecycelUsingComfirm	有家具正在使用确认继续回收
 DormFurnitureRecycelUsingTip	无法回收使用中的家具
 DormFurnitureNotSuit	无套装属性
 DormCharacterLevel	阶段{0}
-DormCharacterHpRecover	当所在宿舍达到{0}{1}{2}构造体每小时恢复体力{3}
+DormCharacterHpRecover	当所在宿舍达到{0}{1}{2}伙伴每小时恢复体力{3}
 DormCharacterHpLeft	<color=#0E70BD><size=40>{0}</size></color>/{1}
 DormCharacterHpSpeed	每小时恢复{0}点体力
 DormCharacterMoodSpeed	每小时恢复{0}点心情
@@ -707,8 +724,8 @@ DormWorked	完成执勤
 DormBase	基础
 DormJapanese	日系
 DormPunk	朋克
-DormDesSecond	宿舍舒适度由：美观、舒适、实用组成，不同的构造体喜欢的属性各不相同。\n进入仓库可查看构造体喜欢的属性。舒适度可提升构造体的体力恢复速度（ps.构造体喜欢的属性高的话，还可以恢复心情值）。\n初始解锁一间宿舍，可使用家具币不断解锁其他宿舍。每个宿舍最多放置3个构造体。\n\n家具可通过商店购买（ps.商店内的家具属性固定）/建造/改装获取。\n建造仅可建造“基础套”家具，但可以自定义家具属性。\n改装可以通过消耗图纸，更改家具的样子（还会出现特殊效果）。\n\n心情值很高的构造体会定期赠送指挥官礼物，不断提高构造体的心情值吧！
-DormDesWork	通过消耗构造体体力进行执勤，可获取家具币。\n每次执勤会消耗构造体几乎全部的体力。\n体力与可获取家具币的比例成固定值。\n执勤的座次数量可通过解锁宿舍房间提升。\n每日凌晨5:00的执勤座次。
+DormDesSecond	宿舍舒适度由：美观、舒适、实用组成，不同的伙伴喜欢的属性各不相同。\n进入仓库可查看构造体/侵蚀体喜欢的属性。舒适度可提升构造体的体力恢复速度（ps.伙伴喜欢的属性高的话，还可以恢复心情值）。\n初始解锁一间宿舍，可使用家具币不断解锁其他宿舍。每个宿舍最多放置3个伙伴。\n\n家具可通过商店购买（ps.商店内的家具属性固定）/建造/改装获取。\n建造仅可建造“基础套”家具，但可以自定义家具属性。\n改装可以通过消耗图纸，更改家具的样子（还会出现特殊效果）。\n\n心情值很高的伙伴会定期赠送指挥官礼物，不断提高伙伴的心情值吧！
+DormDesWork	通过消耗伙伴体力进行执勤，可获取家具币。\n每次执勤会消耗伙伴几乎全部的体力。\n体力与可获取家具币的比例成固定值。\n执勤的座次数量可通过解锁宿舍房间提升。\n每日凌晨5:00的执勤座次。
 DormChinese	宿舍
 DormReNameSuccess	改名成功
 DormReNameFail	改名失败
@@ -718,12 +735,15 @@ DormOnline	在线
 DormOffline	离线
 DormNoCount	没有宿舍
 DormBagFurnitureCount	<size=26><color=#000000FF>拥有的家具   </color></size><size=52><color=#0f70bc>{0}</color></size>
+DormBagEmneyCount	<size=26><color=#000000FF>拥有的侵蚀体   </color></size><size=52><color=#0f70bc>{0}</color></size>/{1}
 DormBagCharacterCount	<size=26><color=#000000FF>拥有的构造体   </color></size><size=52><color=#0f70bc>{0}</color></size>/{1}
 DormBagDraftCount	<size=26><color=#000000FF>拥有的图纸   </color></size><size=52><color=#0f70bc>{0}</color></size>
 DormHight	<color=#{0}>{1}(高)</color>
 DormFondleCount	爱抚次数  <color=#34AFF8FF><size=66>{0}</size></color>/{1}
 DormFondleRecovey	{0}恢复中
 DormMiddle	<color=#{0}>{1}(中)</color>
+DormHightDescription	<color=#0f70bcff>超爱</color>
+DormMiddleDescription	<color=#0f70bcff>喜爱</color>
 BaseEquipNeedLevel	指挥官等级需达到{0}级
 BaseEquipType1	进攻专属
 BaseEquipType2	装甲专属
@@ -793,7 +813,7 @@ PaySuccess	充值成功
 PayFail	充值失败
 ActivityMainLineEnd	活动已结束
 ActivityBranchFightEnd	战斗时间已结束
-DormCaressTips	构造体放于床上有助于恢复心情
+DormCaressTips	伙伴放于床上有助于恢复心情
 FurnitureCleanRoom	是否全部收起？
 FurnitureRevertRoom	是否重置修改
 DormReNameTips	名字中不能有空格
@@ -900,6 +920,7 @@ BossSingleAutoFightDesc8	挑战次数不足，无法替换记录
 BossSingleAutoFightDesc9	替换记录将消耗阵容耐力及每日次数各1点，是否挑战
 BossSingleAutoFightDesc10	（最高可获取{0}）
 BossSingleAutoFightDesc11	替换记录将消耗阵容耐力及每日次数各1点，并将讨伐值更新为保存记录的80%，是否挑战
+BossSingleAutoFightDesc12	自动战斗讨伐值低于目前讨伐值，无法自动战斗
 DrawNotEnoughError	您的货币不足
 CdKeyIsEmpty	请输入兑换码
 MaxCurRecommendFight	(当前角色最高战力{0})
@@ -931,7 +952,7 @@ DormDisable	宿舍未开放
 PurchaseLBBuySuccessTips	购买成功
 PurchaseSettOff	礼包已下架
 DormNoRoomsTips	无可切换宿舍
-DormComfortLevelTips	提升构造体喜欢的舒适度属性，可增加体力/心情恢复速度
+DormComfortLevelTips	提升伙伴喜欢的舒适度属性，可增加体力/心情恢复速度
 ConfirmText	确定
 FurnitureColorS	#daa10d
 FurnitureColorA	#a029c9
@@ -957,7 +978,7 @@ FurnitureColorAttrA	#ff8a8f
 FurnitureColorAttrB	#ffc259
 FurnitureColorAttrC	#87afff
 DormWorkVitTxt	体力<color=#000000FF><size=32>{0}/{1}</size></color>
-BossSingleDesc	可挑战游戏中各大boss，boss每次随机刷新3只（初级区2只）。\nboss以α、β、γ组区分，并进行刷新。\n击杀boss可获取讨伐值，当讨伐值达到一定值后，自动领取讨伐值奖励。\n每周一结算排名奖励，根据当前的排名情况发送奖励。\n当角色耐力为0时，无法挑战未通关关卡，角色耐力每次重置时恢复。\n每日仅可挑战boss3次。\n使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。
+BossSingleDesc	可挑战游戏中各大boss，boss每次随机刷新3只（初级区2只）。\nboss以α、β、γ组区分，并进行刷新。\n击杀boss可获取讨伐值，当讨伐值达到一定值后，自动领取讨伐值奖励。\n每周一结算排名奖励，根据当前的排名情况发送奖励。\n当角色耐力为0时，无法挑战未通关关卡，角色耐力每次重置时恢复。\n每日仅可挑战boss4次。\n使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。
 BossSingleAutoFightDesc	使用自动战斗可还原最高纪录的80%。\n自动战斗将会扣除记录中编队成员耐力，并消耗当日次数。\n自动战斗刷新周期内可使用5次。
 BossSingleAutoFightRateDesc	该处讨伐值为原记录的<color=#0e70bd>{0}</color>
 BossSingleAutoFightCount2	自动作战       {0}/{1}
@@ -970,6 +991,7 @@ TaskStoryNoTask	已完成当前剧情任务
 InTeamCantLookExhibition	联机房间中不能进入构造体军团
 InTeamCantLookDorm	联机房间中不能进入宿舍
 DormNullFurniture	暂无家具
+DormNullEnmey	暂无侵蚀体
 DormNullCharacter	暂无构造体
 DormNullDraft	暂无图纸
 LoginNetworkError	登录网络错误
@@ -1013,8 +1035,10 @@ ActivityBriefLeftTime	剩余{0}
 ActivityBriefShopLeftTime	（商店剩余：{0}）
 ActivityBriefTaskLeftTime	（任务剩余：{0}）
 ActivityBriefNoTask	当前暂无任务
-ActivityBriefMainlineNotInTime	活动已结束
-ActivityBriefPrequelNotInTime	活动已结束
+ActivityBriefMainlineNotInTime	活动未开启
+ActivityBriefTaskMissionInfo	任务详情
+ActivityBriefTaskDesc	可通过以下途径获取【空间作战日志】\n\n质量流失：关卡首通奖励（普通/挑战）\n黑闪：关卡首通奖励\n日志奖励：部分任务获取
+ActivityBriefPrequelNotInTime	活动未开启
 ChannelLabel	频道
 ChannelNumberLabel	（{0}人）
 ChannelChanged	进入 [ <color=#78e1ff>{0}</color> ] 频道
@@ -1057,5 +1081,39 @@ DormScoreAttrADes	<size=28><color=#AD3434FF>{0}</color></size>
 DormScoreAttrBDes	<size=28><color=#D58216FF>{0}</color></size>
 DormScoreAttrCDes	<size=28><color=#0A77b9FF>{0}</color></size>
 FestivalNotInActivity	活动已结束
+DormWorkNoMoodTips	心情值不足，无法使用代工
+DormDaiGongWarnTips	无法一键代工
+DormTxtDaigongDes	消耗<color=#0f70bc>60</color>点心情值寻找代工，可额外获得<color=#0f70bc>10</color>家具币
 BatteryLeftTime	血清组剩余时间：{0}
 TimeLimitItemLeftTime	(物品过期：{0})
+MailBoxIsFull	邮箱已满，以防溢出物品邮件覆盖原有邮件请先清理邮箱后再行操作
+WaferBoxIsFull	意识仓库已满，请先清理仓库后再行操作
+WeaponBoxIsFull	武器仓库已满，请先清理仓库后再行操作
+WaferBoxWillBeFull	意识仓库将超过上限
+WeaponBoxWillBeFull	武器仓库将到达上限
+ItemBoxWillBeFull	该道具的持有数将到达上限
+ActivityBabelTowerNotInTime	活动未开启
+ActivityBabelTowerOver	活动已结束
+BabelTowerNoneFight	巴别塔计划挑战阶段已经结束
+BabelTowerNoneOpen	巴别塔计划已经全部结束
+BabelTowerNotEnoughScore	{0}分数达到{1}开启
+BabelTowerCurMaxScore	(最高{0})
+BabelTowerLeftTimeDesc	剩余时间：
+BabelTowerNoneCharacter	当前没有构造体可以出战
+BabelTowerLevelDesc	Lv:{0}
+BabelTowerResetDesc	清除记录
+BabelTowerIsResetDesc	清除记录后，将会清除本关获得的战略等级，同时解锁已被使用的角色\n是否清除关卡【{0}】的记录
+BabelTowerCharacterLock	出战阵容中有构造体已被锁定
+BabelTowerPleaseSelectALeader	需要选择一位构造体作为队长
+BabelTowerPassLastGuide	通关上一等级阶段解锁
+BabelTowerGuideStageCanntSelect	当前目标战略选项已被锁定
+BabelTowerActivityTimeLeft	活动时间剩余：
+ResidueStockText	库存：{0}
+AlreadyobtainedCount	<size=40><color=#0f70bc>{0}</color></size>/{1}
+PurchaseLimitBuy	限购{0}/{1}
+GachaIsNotOpen	功能尚未开启
+GachaIsClose	功能已关闭
+GachaIsNotEnough	奖励库存不足
+BabelTowerStageResetSucceed	关卡【{0}】清除记录成功
+BabelTowerStageWipeOutSucceed	关卡【{0}】恢复记录成功
+BabelTowerStageShowDesc	最高战略等级：{0}

@@ -6,7 +6,8 @@ function XUiPanelTrialSelect:Ctor(ui, uiRoot)
     self.Transform = ui.transform
     self.UiRoot = uiRoot
     self.RewardPanelList = {}
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
+    self:AddListener()
     self:InitUiAfterAuto()
 end
 
@@ -142,13 +143,12 @@ end
 
 -- 打开界面
 function XUiPanelTrialSelect:OpenView(data)
-    XUiHelper.PlayAnimation(self.UiRoot,"AniTrialDetailsOpen")
+    self.UiRoot:PlayAnimation("AniTrialDetailsOpen")
     self.GameObject:SetActive(true)
     self.ViewData = data
     self:UpdataView(data)
     self.UiRoot:CloseMainView()
     self.UiRoot:ClostMainListItemFx()
-    -- self.UiRoot:SetTrialBg(XDataCenter.TrialManager.TrialTypeCfg.TrialFor)
 end
 
 -- 关闭界面
@@ -159,64 +159,9 @@ function XUiPanelTrialSelect:CloseView(data)
     self.UiRoot.TrialMain.GameObject:SetActive(true)
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelTrialSelect:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
+function XUiPanelTrialSelect:AddListener()
+   self.BtnEnterB.CallBack = function()self:OnBtnEnterBClick()end
 end
-
-function XUiPanelTrialSelect:AutoInitUi()
-    self.ImgForePartBg = self.Transform:Find("ImgForePartBg"):GetComponent("RawImage")
-    self.ImgBackEndBg = self.Transform:Find("ImgBackEndBg"):GetComponent("Image")
-    self.PanelTrialSelectRight = self.Transform:Find("PanelTrialSelectRight")
-    self.ImgSlBg1 = self.Transform:Find("PanelTrialSelectRight/ImgSlBg1"):GetComponent("Image")
-    self.PanelTrialSelectRightTop = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightTop")
-    self.TxtName = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightTop/TxtName"):GetComponent("Text")
-    self.TxtDes = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightTop/TxtDes"):GetComponent("Text")
-    self.TxtPro = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightTop/TxtPro"):GetComponent("Text")
-    self.PanelTrialSelectRightMiddle = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle")
-    self.PanelTrialDes = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/PanelTrialDes")
-    self.SViewTrialDesList = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/PanelTrialDes/SViewTrialDesList"):GetComponent("ScrollRect")
-    self.GridTrialDesItem = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/PanelTrialDes/SViewTrialDesList/Viewport/GridTrialDesItem")
-    self.UiContent = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent")
-    self.PanelReward = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent/PanelReward")
-    self.ImgIcon = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent/PanelReward/ImgIcon")
-    self.ImgQuality = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent/PanelReward/ImgQuality")
-    self.BtnClick = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent/PanelReward/BtnClick")
-    self.TxtCount = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightMiddle/RewardGridList/Viewport/UiContent/PanelReward/TxtCount")
-    self.PanelTrialSelectRightbottom = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom")
-    self.TxtLevel = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/TxtLevel"):GetComponent("Text")
-    self.TxtNums = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/TxtNums"):GetComponent("Text")
-    self.ImgEnough = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/ImgEnough"):GetComponent("Image")
-    self.TxtFight = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/ImgEnough/TxtFight"):GetComponent("Text")
-    self.ImgNotEnough = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/ImgNotEnough"):GetComponent("Image")
-    self.TxtFightA = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/ImgNotEnough/TxtFight"):GetComponent("Text")
-    self.BtnEnterB = self.Transform:Find("PanelTrialSelectRight/PanelTrialSelectRightbottom/BtnEnterB"):GetComponent("Button")
-    self.ImgIconA = self.Transform:Find("ImgIcon"):GetComponent("RawImage")
-end
-
-function XUiPanelTrialSelect:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelTrialSelect:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelTrialSelect:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
-end
-
-function XUiPanelTrialSelect:AutoAddListener()
-    self:RegisterClickEvent(self.BtnEnterB, self.OnBtnEnterBClick)
-end
--- auto
 
 function XUiPanelTrialSelect:OnSViewRewardListAClick(eventData)
 end

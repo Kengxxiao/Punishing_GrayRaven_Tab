@@ -407,7 +407,6 @@ end
 -- end
 --on show
 function XUiPanelGraphicsSet:ShowPanel()
-
     self.Dirty = false
 
     self.GameObject:SetActive(true)
@@ -430,6 +429,7 @@ end
 
 --on close
 function XUiPanelGraphicsSet:HidePanel()
+    XDataCenter.SetManager.SetUiResolutionEventFlag(false)
     self.GameObject:SetActive(false)
 end
 
@@ -552,6 +552,7 @@ end
 
 --保存设置
 function XUiPanelGraphicsSet:SaveChange()
+    XDataCenter.SetManager.SetUiResolutionEventFlag(true)
 
     if self.CurQualityLevel == 0 then
         local c = GetCQualitySettings(self.QualitySettings)

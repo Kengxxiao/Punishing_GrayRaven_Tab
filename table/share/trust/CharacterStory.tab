@@ -95,3 +95,15 @@ Id	CharacterId	Name	Icon	StoryId	UnlockLv	ConditionDescript	SectionNumber
 94	1021003	露西亚·深红之渊·其之四	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	1150134	4	信赖度4级解锁	4
 95	1021003	露西亚·深红之渊·其之五	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	1150135	5	信赖度5级解锁	5
 96	1021003	露西亚·深红之渊·其之六	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLuxiyaaerfa1SS.png	1150136	6	信赖度6级解锁	6
+97	1081003	渡边·夙星·其之一	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150621	1	信赖度1级解锁	1
+98	1081003	渡边·夙星·其之二	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150622	2	信赖度2级解锁	2
+99	1081003	渡边·夙星·其之三	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150623	3	信赖度3级解锁	3
+100	1081003	渡边·夙星·其之四	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150624	4	信赖度4级解锁	4
+101	1081003	渡边·夙星·其之五	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150625	5	信赖度5级解锁	5
+102	1081003	渡边·夙星·其之六	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	1150626	6	信赖度6级解锁	6
+103	1091002	艾拉·溢彩·其之一	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150911	1	信赖度1级解锁	1
+104	1091002	艾拉·溢彩·其之二	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150912	2	信赖度2级解锁	2
+105	1091002	艾拉·溢彩·其之三	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150913	3	信赖度3级解锁	3
+106	1091002	艾拉·溢彩·其之四	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150914	4	信赖度4级解锁	4
+107	1091002	艾拉·溢彩·其之五	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150915	5	信赖度5级解锁	5
+108	1091002	艾拉·溢彩·其之六	Assets/Product/Texture/Image/RoleCharacter/RoleHeadAila1.png	1150916	6	信赖度6级解锁	6

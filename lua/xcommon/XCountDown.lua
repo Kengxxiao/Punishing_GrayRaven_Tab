@@ -16,7 +16,7 @@ XCountDown.GTimerName = {
 local TimerRecord = { bindCnt = 0, record = {}, timeHandle = nil }
 
 local function UpdateTimerRecord()
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     for _ , v in pairs(TimerRecord.record) do
         if v.bindCnt > 0 and v.remainTime > 0 then
             v.remainTime = v.remainTime - (now - v.lastTime)
@@ -34,7 +34,7 @@ function XCountDown.CreateTimer(name, remainTime, now)
             bindCnt = 0,
         }
     end
-    now = now or XTime.Now()
+    now = now or XTime.GetServerNowTimestamp()
     TimerRecord.record[name].remainTime = remainTime
     TimerRecord.record[name].lastTime = now
 end
@@ -55,7 +55,7 @@ end
 function XCountDown.GetRemainTime(name)
     local record = TimerRecord.record[name]
     if record then
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         if record.bindCnt > 0 and record.remainTime > 0 then
             record.remainTime = record.remainTime - (now - record.lastTime)
             record.lastTime = now

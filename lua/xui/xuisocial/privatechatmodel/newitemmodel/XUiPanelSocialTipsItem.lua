@@ -3,6 +3,7 @@ XUiPanelSocialTipsItem = XClass()
 function XUiPanelSocialTipsItem:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -15,7 +16,7 @@ function XUiPanelSocialTipsItem:InitAutoScript()
 end
 
 function XUiPanelSocialTipsItem:AutoInitUi()
-    self.TxtInfo = self.Transform:Find("bg/TxtInfo"):GetComponent("Text")
+    -- self.TxtInfo = self.Transform:Find("bg/TxtInfo"):GetComponent("Text")
 end
 
 function XUiPanelSocialTipsItem:GetAutoKey(uiNode,eventName)

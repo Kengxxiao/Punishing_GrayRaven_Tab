@@ -270,26 +270,26 @@ function XUiMoneyReward:InitAutoScript()
 end
 
 function XUiMoneyReward:AutoInitUi()
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
-    self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
-    self.PanelProgress = self.Transform:Find("SafeAreaContentPane/PanelProgress")
-    self.TxtCurValue = self.Transform:Find("SafeAreaContentPane/PanelProgress/TxtCurValue"):GetComponent("Text")
-    self.SliderExp = self.Transform:Find("SafeAreaContentPane/PanelProgress/SliderExp"):GetComponent("Slider")
-    self.TxtNeed = self.Transform:Find("SafeAreaContentPane/PanelProgress/SliderExp/TxtNeed"):GetComponent("Text")
-    self.BtnLevel = self.Transform:Find("SafeAreaContentPane/PanelProgress/BtnLevel"):GetComponent("Button")
-    self.TxtMax = self.Transform:Find("SafeAreaContentPane/PanelProgress/TxtMax"):GetComponent("Text")
-    self.PanelEffect = self.Transform:Find("SafeAreaContentPane/PanelProgress/PanelEffect")
-    self.RImgLevelNew = self.Transform:Find("SafeAreaContentPane/PanelProgress/RImgLevelNew"):GetComponent("RawImage")
-    self.BtnHelper = self.Transform:Find("SafeAreaContentPane/BtnHelper"):GetComponent("Button")
-    self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelContent")
-    self.PanelTitle = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTitle")
-    self.TxtTaskSum = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTitle/Image/TxtTaskSum"):GetComponent("Text")
-    self.PanelTaskGroup = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup")
-    self.PanelTask1 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask1")
-    self.PanelTask2 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask2")
-    self.PanelTask3 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask3")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
+    -- self.PanelProgress = self.Transform:Find("SafeAreaContentPane/PanelProgress")
+    -- self.TxtCurValue = self.Transform:Find("SafeAreaContentPane/PanelProgress/TxtCurValue"):GetComponent("Text")
+    -- self.SliderExp = self.Transform:Find("SafeAreaContentPane/PanelProgress/SliderExp"):GetComponent("Slider")
+    -- self.TxtNeed = self.Transform:Find("SafeAreaContentPane/PanelProgress/SliderExp/TxtNeed"):GetComponent("Text")
+    -- self.BtnLevel = self.Transform:Find("SafeAreaContentPane/PanelProgress/BtnLevel"):GetComponent("Button")
+    -- self.TxtMax = self.Transform:Find("SafeAreaContentPane/PanelProgress/TxtMax"):GetComponent("Text")
+    -- self.PanelEffect = self.Transform:Find("SafeAreaContentPane/PanelProgress/PanelEffect")
+    -- self.RImgLevelNew = self.Transform:Find("SafeAreaContentPane/PanelProgress/RImgLevelNew"):GetComponent("RawImage")
+    -- self.BtnHelper = self.Transform:Find("SafeAreaContentPane/BtnHelper"):GetComponent("Button")
+    -- self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelContent")
+    -- self.PanelTitle = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTitle")
+    -- self.TxtTaskSum = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTitle/Image/TxtTaskSum"):GetComponent("Text")
+    -- self.PanelTaskGroup = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup")
+    -- self.PanelTask1 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask1")
+    -- self.PanelTask2 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask2")
+    -- self.PanelTask3 = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelTaskGroup/PanelTask3")
 end
 
 function XUiMoneyReward:AutoAddListener()
@@ -337,12 +337,13 @@ function XUiMoneyReward:SetLeftTime()
 
     local refreshTime = XDataCenter.BountyTaskManager.GetRefreshTime()
     refreshTime = refreshTime or 0
-    local leftTime = refreshTime - XTime.Now()
+    local leftTime = refreshTime - XTime.GetServerNowTimestamp()
 
     if leftTime <= 0 then
         local dataTime = XUiHelper.GetTime(0)
         self.TxtCurTime.text = dataTime
         self:RemoveTimer()
+        self:SetupContent()
     else
         local dataTime = XUiHelper.GetTime(leftTime)
         self.TxtCurTime.text = dataTime
@@ -354,7 +355,7 @@ function XUiMoneyReward:SetLeftTime()
             return
         end
 
-        leftTime = refreshTime - XTime.Now()
+        leftTime = refreshTime - XTime.GetServerNowTimestamp()
 
         if leftTime <= 0 then
             local dataTime = XUiHelper.GetTime(0)

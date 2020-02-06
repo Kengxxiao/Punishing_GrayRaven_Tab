@@ -7,10 +7,10 @@ R3KalieninaMd010021		Standchange	0.1
 R3KalieninaMd010021		Run	0.1
 R3KalieninaMd010021		Walk	0.1
 R3KalieninaMd010021		Death	0.1
-R3KalieninaMd010021		Hit1	0.1
-R3KalieninaMd010021		Hit2	0.1
-R3KalieninaMd010021		Behitfly	0.1
-R3KalieninaMd010021		Hoverhit	0.1
+R3KalieninaMd010021		Hit1	0.05
+R3KalieninaMd010021		Hit2	0.05
+R3KalieninaMd010021		Behitfly	0.05
+R3KalieninaMd010021		Hoverhit	0.05
 R3KalieninaMd010021		Falldown	0.1
 R3KalieninaMd010021		Hitdown	0.1
 R3KalieninaMd010021		Lieonfloor	0.1
@@ -33,8 +33,8 @@ R3KalieninaMd010021		Walkl	0.1
 R3KalieninaMd010021		Walkr	0.1
 R3KalieninaMd010021		Fail	0.1
 R3KalieninaMd010021		Save	0.1
-R3KalieninaMd010021		Hit3	0.1
-R3KalieninaMd010021		Hit4	0.1
+R3KalieninaMd010021		Hit3	0.05
+R3KalieninaMd010021		Hit4	0.05
 R3KalieninaMd010021		RunStart	0.1
 R3KalieninaMd010021		RunStartEnd01	0.1
 R3KalieninaMd010021		Attack01	0.1

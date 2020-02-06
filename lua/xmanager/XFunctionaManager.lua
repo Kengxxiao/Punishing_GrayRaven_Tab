@@ -75,6 +75,7 @@ XFunctionManager.FunctionName = {
     Bag = 301, --背包
     DrawCard = 401, --研发
     DrawCardEquip = 402, --研发装备
+    ActivityDrawCard = 403,--活动研发
     Task = 501, --任务
     TaskDay = 503, --任务每日
     TaskActivity = 504, --任务活动
@@ -107,6 +108,8 @@ XFunctionManager.FunctionName = {
     FubenActivitySingleBoss = 10304, --活动单挑boss
     FubenActivityTrial = 10305, --试验区
     FubenActivityFestival = 10306, --节日活动
+    BabelTower = 10307,--巴别塔计划
+    FubenActivityMainLine = 10308, --活动主线
 
     FubenDaily = 10401, --日常副本
     FubenDailyYSHTX = 10402, --日常意识海特训
@@ -130,14 +133,16 @@ XFunctionManager.FunctionName = {
 
     CustomUi = 1501, --自定义控件
 
-    Trial = 1601, --试炼
-
     Prequel = 1701, --断章
     Practice = 1800, --教学
 
     Trophy = 2100, --战利品（暂定）
     Medal = 2101,--勋章
+
+    FestivalActivity = 10306,--节日活动
+    PurchaseAdd = 3000,--累计充值
 }
+
 XFunctionManager.FunctionType = {
     System = 1,
     Stage = 2,
@@ -250,9 +255,16 @@ function XFunctionManager.SkipInterface(id)
     end
 
     if list.FunctionalId ~= nil and list.FunctionalId ~= 0 then
+        -- 屏蔽功能
+        if XFunctionManager.CheckFunctionFitter(list.FunctionalId) then
+            XUiManager.TipMsg(CS.XTextManager.GetText("FunctionalMaintain"))
+            return
+        end
+
         if not XFunctionManager.DetectionFunction(list.FunctionalId) then
             return
         end
+        
     end
 
     if list.Origin == XFunctionManager.SkipOrigin.System then

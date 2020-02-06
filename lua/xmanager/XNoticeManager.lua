@@ -196,7 +196,7 @@ XNoticeManagerCreator = function()
                         EndTime = tonumber(tab[4]),
                         ModifyTime = tonumber(tab[5]),
                     }
-                    if readInfo.ModifyTime and readInfo.EndTime and readInfo.EndTime > XTime.Now() then
+                    if readInfo.ModifyTime and readInfo.EndTime and readInfo.EndTime > XTime.GetServerNowTimestamp() then
                         local dataKey = XNoticeManager.GetGameNoticeReadDataKey(readInfo, readInfo.Index)
                         InGameNoticeReadList[dataKey] = readInfo
                     end
@@ -246,7 +246,7 @@ XNoticeManagerCreator = function()
                         nowCount = tonumber(tab[3]),
                         overTime = tonumber(tab[4]),
                     }
-                    if countInfo.overTime and countInfo.overTime > XTime.Now() then
+                    if countInfo.overTime and countInfo.overTime > XTime.GetServerNowTimestamp() then
                         ScrollCountList[countInfo.id] = countInfo
                     end
                 end
@@ -260,7 +260,7 @@ XNoticeManagerCreator = function()
         NowTextNotice = notice
 
         if not XNoticeManager.CheckTextNoticeInvalid(notice) then
-            XLuaUiManager.Close("UiNoticeTips")
+            CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_CLOSE_TEXT_NOTICE)
         else
             XLuaUiManager.Open("UiNoticeTips")
         end
@@ -356,7 +356,7 @@ XNoticeManagerCreator = function()
         TextNoticeHideCache = Json.decode(cache)
 
         for _, v in pairs(TextNoticeHideCache) do
-            if XTime.Now() > v.EndTime then
+            if XTime.GetServerNowTimestamp() > v.EndTime then
                 v = nil
             end
         end
@@ -505,7 +505,7 @@ XNoticeManagerCreator = function()
         end
 
         local id = notice.Id .. notice.ModifyTime
-        local resetTime = CS.XReset.GetNextDailyResetTime() - CS.XDate.ONE_DAY_SECOND
+        local resetTime = CS.XReset.GetNextDailyResetTime() - CS.XDateUtil.ONE_DAY_SECOND
         if LoginNoticeTimeInfo[id] and LoginNoticeTimeInfo[id].Time > resetTime then
             return false
         end
@@ -521,7 +521,7 @@ XNoticeManagerCreator = function()
         local id = LoginNotice.Id .. LoginNotice.ModifyTime
         LoginNoticeTimeInfo[id] = {
             Id = id,
-            Time = XTime.Now()
+            Time = XTime.GetServerNowTimestamp()
         }
 
         CS.UnityEngine.PlayerPrefs.SetString(LoginNoticeCacheKey, Json.encode(LoginNoticeTimeInfo))
@@ -537,9 +537,8 @@ XNoticeManagerCreator = function()
                 end
 
                 local msgtab = {}
-                msgtab["error"] = tostring(invalid)
-                local jsonstr = Json.encode(msgtab)
-                CS.XRecord.Record("24000", "RequestLoginNoticeError",jsonstr)
+                msgtab.error = invalid
+                CS.XRecord.Record(msgtab, "24000", "RequestLoginNoticeError")
                 return
             end
 
@@ -549,9 +548,8 @@ XNoticeManagerCreator = function()
                 end
 
                 local msgtab = {}
-                msgtab["error"] = tostring(invalid)
-                local jsonstr = Json.encode(msgtab)
-                CS.XRecord.Record("24006", "RequestLoginNoticeError",jsonstr)
+                msgtab.error = invalid
+                CS.XRecord.Record(msgtab, "24006", "RequestLoginNoticeError")
                 return
             end
 
@@ -612,7 +610,7 @@ XNoticeManagerCreator = function()
 
             if isOpen then
                 isOpen = false
-                if XTime.Now() >= tonumber(v.BeginTime) and XTime.Now() < tonumber(v.EndTime) then--是否在开放区间内（日期）
+                if XTime.GetServerNowTimestamp() >= tonumber(v.BeginTime) and XTime.GetServerNowTimestamp() < tonumber(v.EndTime) then--是否在开放区间内（日期）
                     isOpen = true
                 end
             end
@@ -634,7 +632,7 @@ XNoticeManagerCreator = function()
                 isOpen = false
                 if #v.AppearanceTime > 0 then
                     for k,time in ipairs(v.AppearanceTime) do
-                        if XTime.Now() - XTime.GetTodayTime(0,0,0) >= time[1] and XTime.Now() - XTime.GetTodayTime(0,0,0) < time[2] then--是否位于可以显示的时间段
+                        if XTime.GetServerNowTimestamp() - XTime.GetTodayTime(0,0,0) >= time[1] and XTime.GetServerNowTimestamp() - XTime.GetTodayTime(0,0,0) < time[2] then--是否位于可以显示的时间段
                             isOpen = true
                         end
                     end
@@ -719,11 +717,11 @@ XNoticeManagerCreator = function()
             return false
         end
 
-        if XTime.Now() < notice.BeginTime then
+        if XTime.GetServerNowTimestamp() < notice.BeginTime then
             return false
         end
 
-        if XTime.Now() > notice.EndTime then
+        if XTime.GetServerNowTimestamp() > notice.EndTime then
             return false
         end
 
@@ -757,7 +755,7 @@ XNoticeManagerCreator = function()
             return
         end
 
-        if LastRequestTime[noticeType] and LastRequestTime[noticeType] > 0 and XTime.Now() - LastRequestTime[noticeType] > RequestInterval[noticeType] then
+        if LastRequestTime[noticeType] and LastRequestTime[noticeType] > 0 and XTime.GetServerNowTimestamp() - LastRequestTime[noticeType] > RequestInterval[noticeType] then
             return
         end
 
@@ -838,7 +836,7 @@ XNoticeManagerCreator = function()
         CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_PIC_CHANGE)
     end
 
-    function XNoticeManager.LoadPic(url, successCb)
+    function XNoticeManager.LoadPicFromLocal(url, successCb)
         if NoticePicList and NoticePicList[url] then
             if successCb then
                 successCb(NoticePicList[url])
@@ -846,11 +844,17 @@ XNoticeManagerCreator = function()
             return NoticePicList[url]
         end
 
-        local request = CS.XUriPrefixRequest.Get(url, function () 
-            return CS.UnityEngine.Networking.DownloadHandlerTexture(true) 
-        end, NoticeRequestTimeOut, false)
-        CS.XTool.WaitCoroutine(request:SendWebRequest(), function()
+        local fileName = XNoticeManager.GetImgNameByUrl(url)
+
+        local picPath = CS.XTool.GetNoticeImgPath(fileName)
+        local request = CS.UnityEngine.Networking.UnityWebRequest.Get(picPath)
+        local textureResult = CS.UnityEngine.Networking.DownloadHandlerTexture(true)
+        request.downloadHandler = textureResult
+        request.timeout = NoticeRequestTimeOut
+
+        CS.XTool.WaitNativeCoroutine(request:SendWebRequest(), function()
             if request.isNetworkError or request.isHttpError then
+                XNoticeManager.LoadPic(url, successCb)
                 return
             end
             
@@ -863,9 +867,42 @@ XNoticeManagerCreator = function()
             if successCb then
                 successCb(texture)
             end
+
+            request:Dispose()
         end)
     end
 
+    function XNoticeManager.LoadPic(url, successCb)
+        local request = CS.XUriPrefixRequest.Get(url, function () 
+            return CS.UnityEngine.Networking.DownloadHandlerTexture(true) 
+        end, NoticeRequestTimeOut, false)
+
+        CS.XTool.WaitCoroutine(request:SendWebRequest(), function()
+            if request.isNetworkError or request.isHttpError then
+                return
+            end
+            
+            local texture = request.downloadHandler.texture;
+            if not texture then
+                return
+            end
+
+            local fileName = XNoticeManager.GetImgNameByUrl(url)
+            CS.XTool.SaveNoticeImg(fileName, texture)
+
+            NoticePicList[url] = texture
+            if successCb then
+                successCb(texture)
+            end
+
+            request:Dispose()
+        end)
+    end
+
+    function XNoticeManager.GetImgNameByUrl(url)
+        local _, _, _, fileName = url:find("(.+)/(.+)")
+        return fileName
+    end
 
     function XNoticeManager.InitTimer()
         if NoticeRequestTimer then

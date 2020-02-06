@@ -57,7 +57,7 @@ end
 
 function XUiPanelFubenTab:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnFuben, "onClick", self.OnBtnFubenClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnFuben, self.OnBtnFubenClick)
 end
 -- auto
 

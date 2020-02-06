@@ -10,10 +10,11 @@ local CSTextManager = CS.XTextManager
 local XUiEquipStrengthen = XLuaUiManager.Register(XLuaUi, "UiEquipStrengthen")
 
 function XUiEquipStrengthen:OnAwake()
-    self:InitAutoScript()
+    self:AutoAddListener()
 
     self.GridEquip.gameObject:SetActiveEx(false)
     self.GridEquipReplaceAttr.gameObject:SetActiveEx(false)
+    self.BtnAllSelect.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.EquipStrengthenAutoSelect))
 end
 
 function XUiEquipStrengthen:OnStart(equipId, rootUi)
@@ -223,19 +224,13 @@ function XUiEquipStrengthen:OnSelectEquip(equipId, isSelect)
     self:UpdateEquipPreView()
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiEquipStrengthen:InitAutoScript()
-    self:AutoAddListener()
-end
-
 function XUiEquipStrengthen:AutoAddListener()
     self:RegisterClickEvent(self.BtnOrder, self.OnBtnOrderClick)
     self:RegisterClickEvent(self.BtnStrengthen, self.OnBtnStrengthenClick)
     self:RegisterClickEvent(self.BtnSource, self.OnBtnSourceClick)
     self:RegisterClickEvent(self.BtnAllSelect, self.OnBtnAllSelectClick)
 end
--- auto
+
 function XUiEquipStrengthen:OnBtnOrderClick(eventData)
     self.BtnOrder.enabled = false
     self.IsAscendOrder = not self.IsAscendOrder
@@ -304,6 +299,7 @@ function XUiEquipStrengthen:OnBtnAllSelectClick()
     self.PreExp = 0
     self.SelectEquipIds = {}
 
+    local equipId = self.EquipId
     local equipScroll = self.EquipScroll
     equipScroll:ResetSelectGrids()
 
@@ -312,9 +308,26 @@ function XUiEquipStrengthen:OnBtnAllSelectClick()
         if not self:CheckCanSelect(equipId, true) then
             break
         end
+
         equipIds[equipId] = true
     end
 
+    -- 反选多余的装备
+    local limitLevel = XDataCenter.EquipManager.GetBreakthroughLevelLimit(equipId)
+    local totalNeedExp = XDataCenter.EquipManager.GetEquipLevelTotalNeedExp(equipId, limitLevel)
+    local preLevel, totalExp = XDataCenter.EquipManager.GetEquipPreLevelAndExp(equipId, equipIds, true)
+    for _, costEquipId in ipairs(sortedCanEatEquipIds) do
+        local addExp = XDataCenter.EquipManager.GetEquipAddExp(costEquipId)
+        if totalExp - addExp < totalNeedExp then
+            break
+        end
+        totalExp = totalExp - addExp
+
+        equipIds[costEquipId] = nil
+        self.SelectEquipIds[costEquipId] = nil
+    end
+
+    self.PreLevel, self.PreExp = XDataCenter.EquipManager.GetEquipPreLevelAndExp(equipId, self.SelectEquipIds)
     equipScroll:SelectGrids(equipIds)
     self:OnSelectEquip(nil, true)
 end

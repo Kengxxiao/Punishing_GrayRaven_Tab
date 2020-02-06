@@ -16,7 +16,7 @@ function XUiDraw:OnStart(groupId, closeCb, backGround)
     XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
     local list = XDataCenter.DrawManager.GetDrawInfoListByGroupId(groupId)
     local bool = #list > 1
-    self.BtnOptionalDraw.gameObject:SetActive(bool)
+    self.BtnOptionalDraw.gameObject:SetActiveEx(bool)
     self.UpShows = {}
     self.UpSuitShows = {}
     self.BottomInfoTxts = {}
@@ -28,11 +28,11 @@ function XUiDraw:OnStart(groupId, closeCb, backGround)
         self:UpdateItemCount()
     end, self)
     self:UpdateInfo(drawInfo)
-    self.ImgMask.gameObject:SetActive(false)
+    self.ImgMask.gameObject:SetActiveEx(false)
     self:LoadMainRule()
     self:UpdateResetTime()
     self:InitDrawBackGround(self.BackGroundPath)
-    self.PanelCharacterBottomInfo.gameObject:SetActive(false)
+    self.PanelCharacterBottomInfo.gameObject:SetActiveEx(false)
 end
 
 function XUiDraw:LoadMainRule()
@@ -49,7 +49,7 @@ end
 function XUiDraw:UpdateResetTime()
     local groupInfo = XDataCenter.DrawManager.GetDrawGroupInfoByGroupId(self.GroupId)
     if groupInfo and groupInfo.EndTime > 0 then
-        local remainTime = groupInfo.EndTime - XTime.Now()
+        local remainTime = groupInfo.EndTime - XTime.GetServerNowTimestamp()
         XCountDown.CreateTimer(self.GameObject.name, remainTime)
         XCountDown.BindTimer(self.GameObject, self.GameObject.name, function(v, oldV)
             if groupInfo.Type == XDataCenter.DrawManager.DrawEventType.Activity then
@@ -82,7 +82,7 @@ function XUiDraw:UpdateInfo(drawInfo)
         if combination.Type == XDrawConfigs.CombinationsTypes.Normal then
             self:UpdateLeftUpInfo(combination)
         elseif combination.Type == XDrawConfigs.CombinationsTypes.Aim then
-            self:UpdateLeftUpInfo(combination)    
+            self:UpdateLeftUpInfo(combination)
         elseif combination.Type == XDrawConfigs.CombinationsTypes.NewUp then
             self.PanelNewUp.gameObject:SetActiveEx(true)
             self:UpdateNewUpInfo(combination)
@@ -97,7 +97,7 @@ function XUiDraw:UpdateInfo(drawInfo)
     end
     self:UpdateItemCount()
     CS.UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(self.PanelLeft)
-    
+
     if groupInfo.Type == XDataCenter.DrawManager.DrawEventType.NewHand then
         if drawInfo.MaxBottomTimes == XDataCenter.DrawManager.GetDrawGroupRule(self.GroupId).NewHandBottomCount then
             self.PanelNewHand.gameObject:SetActiveEx(true)
@@ -134,13 +134,8 @@ function XUiDraw:UpdateLeftUpInfo(combination)
     for i = #list + 1, #self.UpShows do
         self.UpShows[i].GameObject:SetActiveEx(false)
     end
-
+    
     if #list > 0 then
-        if self.FirstAnim then
-            self.FirstAnim = false
-        else
-            XUiHelper.PlayAnimation(self, "AniZixuan")
-        end
         self.BtnPreviewLeft.gameObject:SetActiveEx(true)
     else
         self.BtnPreviewLeft.gameObject:SetActiveEx(false)
@@ -169,13 +164,8 @@ function XUiDraw:UpdateLeftSuitUpInfo(combination)
         for i = #list + 1, #self.UpSuitShows do
             self.UpSuitShows[i].GameObject:SetActiveEx(false)
         end
-
+        
         if #list > 0 then
-            if self.FirstAnim then
-                self.FirstAnim = false
-            else
-                XUiHelper.PlayAnimation(self, "AniZixuan")
-            end
             self.BtnPreviewLeft.gameObject:SetActiveEx(true)
         else
             self.BtnPreviewLeft.gameObject:SetActiveEx(false)
@@ -186,22 +176,24 @@ end
 function XUiDraw:UpdateCharacterInfo(combination)
     --self.TxtBottomTimes.text = CS.XTextManager.GetText("DrawRuleHint","asd","asd")--, self.DrawInfo.BottomTimes
     if self.DrawInfo then
-        self.ImgBottomIco = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/UpCharacter/ImgBottomIco"):GetComponent("RawImage")
-        self.ImgBottomRank = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/UpCharacter/ImgBottomRank"):GetComponent("RawImage")
+        -- self.ImgBottomIco = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/UpCharacter/ImgBottomIco"):GetComponent("RawImage")
+        -- self.ImgBottomRank = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/UpCharacter/ImgBottomRank"):GetComponent("RawImage")
         self.GoodsShowParams = XGoodsCommonManager.GetGoodsShowParamsByTemplateId(combination.GoodsId[1])
         self.ImgBottomIco:SetRawImage(self.GoodsShowParams.Icon)
         local quality = XCharacterConfigs.GetCharMinQuality(combination.GoodsId[1])
         self.ImgBottomRank:SetRawImage(XCharacterConfigs.GetCharQualityIcon(quality))
         if #combination.GoodsId > 1 then
-            self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2").gameObject:SetActiveEx(true)
-            self.ImgBottomIco2 = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2/ImgBottomIco2"):GetComponent("RawImage")
-            self.ImgBottomRank2 = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2/ImgBottomRank2"):GetComponent("RawImage")
+            -- self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2").gameObject:SetActiveEx(true)
+            -- self.ImgBottomIco2 = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2/ImgBottomIco2"):GetComponent("RawImage")
+            -- self.ImgBottomRank2 = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2/ImgBottomRank2"):GetComponent("RawImage")
+            self.UpCharacter2.gameObject:SetActiveEx(true)
             self.GoodsShowParams = XGoodsCommonManager.GetGoodsShowParamsByTemplateId(combination.GoodsId[2])
             self.ImgBottomIco2:SetRawImage(self.GoodsShowParams.Icon)
             local quality = XCharacterConfigs.GetCharMinQuality(combination.GoodsId[2])
             self.ImgBottomRank2:SetRawImage(XCharacterConfigs.GetCharQualityIcon(quality))
         else
-            self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2").gameObject:SetActiveEx(false)
+            -- self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow/UpCharacter2").gameObject:SetActiveEx(false)
+            self.UpCharacter2.gameObject:SetActiveEx(false)
         end
     end
 end
@@ -221,17 +213,17 @@ function XUiDraw:UpdateNewUpInfo(combination)
             self.ImgNewUpIco:SetRawImage(self.GoodsShowParams.Icon)
             local quality = XCharacterConfigs.GetCharMinQuality(combination.GoodsId[1])
             self.ImgNewUpRank:SetRawImage(XCharacterConfigs.GetCharQualityIcon(quality))
-            
+
             if self.GoodsShowParams.Quality then
                 local qualityIcon = self.GoodsShowParams.QualityIcon
-                
+
                 if qualityIcon then
                     self:SetUiSprite(self.ImgQuality, qualityIcon)
                 else
                     XUiHelper.SetQualityIcon(self, self.ImgQuality, self.GoodsShowParams.Quality)
                 end
             end
-            
+
             self.NewUpCharacter.gameObject:SetActiveEx(true)
         end
     end
@@ -240,7 +232,7 @@ end
 function XUiDraw:UpdateCharacterTxt()
     local combination = XDataCenter.DrawManager.GetDrawCombination(self.DrawInfo.Id)
     if combination then
-        if combination.Type == XDrawConfigs.CombinationsTypes.CharacterUp then 
+        if combination.Type == XDrawConfigs.CombinationsTypes.CharacterUp then
             self.TxtBottomTimes.text = CS.XTextManager.GetText("DrawBottomTimes", self.DrawInfo.BottomTimes)
         end
         if combination.Type == XDrawConfigs.CombinationsTypes.NewUp then
@@ -262,53 +254,7 @@ end
 -- auto
 -- Automatic generation of code, forbid to edit
 function XUiDraw:InitAutoScript()
-    self:AutoInitUi()
     self:AutoAddListener()
-end
-
-function XUiDraw:AutoInitUi()
-    self.PanelCharacterBottomInfo = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo")
-    self.BtnCloseBottomInfo = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/BtnCloseBottomInfo"):GetComponent("Button")
-    self.ScrollView = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/ScrollView"):GetComponent("Scrollbar")
-    self.PanelBottomInfo = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/ScrollView/Viewport/PanelBottomInfo")
-    self.TxtBottomTitle = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/ScrollView/Viewport/PanelBottomInfo/TxtBottomTitle"):GetComponent("Text")
-    self.TxtBottomInfo = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/ScrollView/Viewport/PanelBottomInfo/TxtBottomInfo"):GetComponent("Text")
-    self.Scrollbar = self.Transform:Find("SafeAreaContentPane/PanelCharacterBottomInfo/ScrollView/Scrollbar"):GetComponent("Scrollbar")
-    self.PanelDrawGroup = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelAsset")
-    self.PanelCharTopButton = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelCharTopButton")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/TopControlSpe/BtnBack"):GetComponent("XUiButton")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/TopControlSpe/BtnMainUi"):GetComponent("XUiButton")
-    self.PanelDraw = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw")
-    self.PanelLeft = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft")
-    self.TxtTitle = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/TxtTitle"):GetComponent("Text")
-    self.TxtDesc = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/TxtDesc"):GetComponent("Text")
-    self.PanelCharacter = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter")
-    self.PanelCharacterBottom = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom")
-    self.TxtBottomTimes = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/TxtBottomTimes"):GetComponent("Text")
-    self.BtnCharacterBottomInfo = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterBottom/BtnCharacterBottomInfo"):GetComponent("Button")
-    self.PanelCharacterUpShow = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelCharacter/PanelCharacterUpShow")
-    self.PanelUpShow = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelUp/PanelUpShow")
-    self.PanelUp = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelUp")
-    self.GridCommon = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelUp/PanelUpShow/GridCommon")
-    self.PanelSuitUpShow = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelSuitUpShow")
-    self.GridSuitCommon = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/PanelSuitUpShow/GridSuitCommon")
-    self.BtnOptionalDraw = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelLeft/BtnOptionalDraw"):GetComponent("Button")
-    self.PanelUseItem = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelUseItem")
-    self.ImgUseItemIcon = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelUseItem/TxtUseItemCount/ImgUseItemIcon"):GetComponent("RawImage")
-    self.BtnUseItem = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelUseItem/TxtUseItemCount/ImgUseItemIcon/BtnUseItem"):GetComponent("Button")
-    self.TxtUseItemCount = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelUseItem/TxtUseItemCount"):GetComponent("Text")
-    self.PanelDrawInfo = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelDrawInfo")
-    self.BtnPreview = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelDrawInfo/BtnPreview"):GetComponent("Button")
-    self.BtnDrawRule = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelDrawInfo/BtnDrawRule"):GetComponent("Button")
-    self.PanelDrawButtons = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelDrawButtons")
-    self.TxtTotalDrawCount = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/PanelDrawButtons/TxtTotalDrawCount"):GetComponent("Text")
-    self.TxtRemainTime = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/TxtRemainTime"):GetComponent("Text")
-    self.BtnMainRule = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/BtnMainRule"):GetComponent("Button")
-    self.ImgMask = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/ImgMask"):GetComponent("Image")
-    self.BtnPreviewLeft = self.Transform:Find("SafeAreaContentPane/PanelDrawGroup/PanelDraw/BtnPreviewLeft"):GetComponent("Button")
-    self.PanelDrawBackGround = self.Transform:Find("FullScreenBackground/PanelDrawBackGround")
-    self.RImgDrawCard = self.Transform:Find("SafeAreaContentPane/RImgDrawCard"):GetComponent("RawImage")
 end
 
 function XUiDraw:AutoAddListener()
@@ -324,7 +270,7 @@ function XUiDraw:AutoAddListener()
     self:RegisterClickEvent(self.BtnDrawRule, self.OnBtnDrawRuleClick)
     self:RegisterClickEvent(self.BtnMainRule, self.OnBtnMainRuleClick)
     self:RegisterClickEvent(self.BtnPreviewLeft, self.OnBtnPreviewLeftClick)
-    self:RegisterClickEvent(self.BtnNewUpInfo, self.OnBtnCharacterBottomInfoClick) 
+    self:RegisterClickEvent(self.BtnNewUpInfo, self.OnBtnCharacterBottomInfoClick)
 end
 -- auto
 
@@ -366,10 +312,11 @@ function XUiDraw:OnBtnMainUiClick(...)
     XLuaUiManager.RunMain()
 end
 
-function XUiDraw:OnBtnOptionalDrawClick(...) 
+function XUiDraw:OnBtnOptionalDrawClick(...)
     self:OpenChildUi("UiDrawOptional", self.GroupId, self.DrawInfo, self, function(drawId)
         local drawInfo = XDataCenter.DrawManager.GetDrawInfo(drawId)
         self:UpdateInfo(drawInfo)
+        self:PlaySpcalAnime()
     end)
 end
 
@@ -394,9 +341,15 @@ end
 
 function XUiDraw:HideUiView(onAnimFinish)
     self.OpenSound = CS.XAudioManager.PlaySound(XSoundManager.UiBasicsMusic.UiDrawCard_BoxOpen)
-    XUiHelper.PlayAnimation(self, "DrawRetract", function()
-        self.ImgMask.gameObject:SetActiveEx(true)
-    end, function() onAnimFinish() end)
+    
+    self:PlayAnimation("DrawRetract", function()
+            onAnimFinish()
+    end, function()
+            self.ImgMask.gameObject:SetActiveEx(true)
+            end)
+    -- XUiHelper.PlayAnimation(self, "DrawRetract", function()
+    --     self.ImgMask.gameObject:SetActiveEx(true)
+    -- end, function() onAnimFinish() end)
 end
 
 function XUiDraw:ResetScene()
@@ -407,11 +360,11 @@ function XUiDraw:PushShow(drawInfo, rewardList)
     self:OpenChildUi("UiDrawShow")
     self.PanelNewHand.gameObject:SetActiveEx(false)
     self:FindChildUiObj("UiDrawShow"):SetData(drawInfo, rewardList, function()
-        if self.OpenSound then
-            self.OpenSound:Stop()
-        end
-        self:PushResult(drawInfo, rewardList)
-        self:UpdateInfo(drawInfo)
+            if self.OpenSound then
+                self.OpenSound:Stop()
+            end
+            self:PushResult(drawInfo, rewardList)
+            self:UpdateInfo(drawInfo)
             local groupInfo = XDataCenter.DrawManager.GetDrawGroupInfoByGroupId(self.GroupId)
             if groupInfo.Type == XDataCenter.DrawManager.DrawEventType.NewHand then
                 if drawInfo.MaxBottomTimes == XDataCenter.DrawManager.GetDrawGroupRule(self.GroupId).NewHandBottomCount then
@@ -440,10 +393,24 @@ end
 function XUiDraw:OnEnable()
     XUiHelper.SetDelayPopupFirstGet(true)
     self.ImgMask.gameObject:SetActiveEx(true)
-    self.GameObject:PlayLegacyAnimation("DrawBegan", function() self.ImgMask.gameObject:SetActiveEx(false) end)
+    self:PlayAnimation("DrawBegan", function() self.ImgMask.gameObject:SetActiveEx(false) end)
+    self:PlaySpcalAnime()
     self.PlayableDirector = self.BackGround:GetComponent("PlayableDirector")
     self.PlayableDirector:Stop()
     self.PlayableDirector:Evaluate()
+end
+
+function XUiDraw:PlaySpcalAnime()
+    local combination = XDataCenter.DrawManager.GetDrawCombination(self.DrawInfo.Id)
+    if combination then
+        if combination.Type == XDrawConfigs.CombinationsTypes.Aim then
+            if self.FirstAnim then
+                self.FirstAnim = false
+            else
+                self:PlayAnimation("AniZixuan")
+            end
+        end
+    end
 end
 
 function XUiDraw:OnDisable()

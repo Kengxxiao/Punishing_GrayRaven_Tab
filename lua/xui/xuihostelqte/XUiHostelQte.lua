@@ -51,7 +51,7 @@ end
 
 function XUiHostelQte:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOk, "onClick", self.OnBtnOkClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnOk, self.OnBtnOkClick)
     self:RegisterListener(self.SliTime, "onValueChanged", self.OnSliTimeValueChanged)
 end
 -- auto

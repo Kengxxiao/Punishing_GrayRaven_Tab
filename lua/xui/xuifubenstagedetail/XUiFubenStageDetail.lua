@@ -25,7 +25,9 @@ function XUiFubenStageDetail:OnEnable()
     self.StarItemsList = { self.GridStar1, self.GridStar2, self.GridStar3 }
     self.GridCommonItem = self.Transform:Find("SafeAreaContentPane/PanelDropList/DropList/Viewport/PanelDropContent/GridCommon")
     self.GridCommonItem.gameObject:SetActive(false)
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN)
+
+    self:PlayAnimation(ANIMATION_OPEN)
+    --XUiHelper.PlayAnimation(self, ANIMATION_OPEN)
 
     self:UpdatePanelTargetList()
     self:UpdateRewards()
@@ -311,7 +313,8 @@ function XUiFubenStageDetail:PlayHideAnimation(callback)
         end
     end
 
-    XUiHelper.PlayAnimation(self, ANIMATION_END, nil, End)
+    self:PlayAnimation(ANIMATION_END, End)
+    --XUiHelper.PlayAnimation(self, ANIMATION_END, nil, End)
 end
 
 function XUiFubenStageDetail:ActiveSelf()

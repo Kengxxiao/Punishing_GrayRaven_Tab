@@ -18,7 +18,8 @@ function XUiBfrtRoomCharacter:OnStart(viewData)
     self.ImgEffectHuanren = root:FindTransform("ImgEffectHuanren")
 
     self:RefreshView(viewData)
-    XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, nil)
+    self:PlayAnimation(ANIMATION_OPEN)
+    --XUiHelper.PlayAnimation(self, ANIMATION_OPEN, nil, nil)
 end
 
 function XUiBfrtRoomCharacter:OnEnable()

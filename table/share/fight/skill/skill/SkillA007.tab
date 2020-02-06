@@ -1,0 +1,24 @@
+Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	SkillMoveType	DistAbort	SkillMoveTrackDistance	MissileLockTarget	SkillFaceType	DodgeLimitTime
+110101	普攻1	1	0.5	1	Attack01			10	2		2	0	0	
+110102	普攻2	1	1	1.5	Attack02			10	2		2	0	0	
+110103	普攻3	1	1.05	1.45	Attack03			10	2		2	0	0	
+110104	普攻4	1	0.9	1.7	Attack04			10	2		2	0	0	
+110105	普攻5	1	1.3	1.5	Attack05			10	2		2	0	0	
+110106	红球1消	11	1	2	Attack11			10	2		2	0	0	
+110107	红球2消	12	1	2	Attack11			10	2		2	0	0	
+110108	红球3消	13	1	2	Attack11			10	2		2	0	0	
+110109	蓝球1消	21	0.8	1.2	Attack21			10	2		2	0	0	
+110110	蓝球2消	22	0.8	1.2	Attack21			10	2		2	0	0	
+110111	蓝球3消	23	0.8	1.2	Attack21			10	2		2	0	0	
+110112	黄球1消	31	1.2	1.5	Attack31			10	2		2	0	0	
+110113	黄球2消	32	1.2	1.5	Attack31			10	2		2	0	0	
+110114	黄球3消	33	1.2	1.5	Attack31			10	2		2	0	0	
+110115	大招	2	3.6	0.7	Attack51	100092		10	2		2	0	0	
+110116	闪避	5	0.5	0.9	Move1			10	2		2	0	0	0.5
+110117	默认向后闪避	6	0.5	1	Move2			10	2		2	0	0	0.5
+110118	出生动作	4	3.7	0	Born			10	2		2	0	0	
+110119	出场技	3	1.5	1.1	Attack11			10	2		2	0	0	
+110120	胜利	8	100	0	Win			10	2		2	0	0	
+110121	胜利2	8	100	0	Win2			10	2		2	0	0	
+110122	援助技能	7	2.7	0	AttackQte			10	2		2	0	0	
+110123	交互技能	9	0	100	Save			10	2		2	0	0	

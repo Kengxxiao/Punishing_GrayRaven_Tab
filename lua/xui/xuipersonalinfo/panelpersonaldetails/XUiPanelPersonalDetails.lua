@@ -91,18 +91,18 @@ end
 
 function XUiPanelPersonalDetails:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnCopy, "onClick", self.OnBtnCopyClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCopy, self.OnBtnCopyClick)
     self:RegisterListener(self.Slider, "onValueChanged", self.OnSliderValueChanged)
-    self:RegisterListener(self.BtnViewTeam, "onClick", self.OnBtnViewClick)
-    self:RegisterListener(self.BtnContent, "onClick", self.OnBtnContentClick)
-    self:RegisterListener(self.BtnDormitory, "onClick", self.OnBtnDormitoryClick)
-    self:RegisterListener(self.BtnPrivateChat, "onClick", self.OnBtnPrivateChatClick)
-    self:RegisterListener(self.BtnAssistance, "onClick", self.OnBtnAssistanceClick)
-    self:RegisterListener(self.BtnDelete, "onClick", self.OnBtnDeleteClick)
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
-    self:RegisterListener(self.BtnReport, "onClick", self.OnBtnReportClick)
-    self:RegisterListener(self.BtnPraise, "onClick", self.OnBtnPraiseClick)
-    self:RegisterListener(self.BtnViewJb, "onClick", self.OnBtnViewJbClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnViewTeam, self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnContent, self.OnBtnContentClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnDormitory, self.OnBtnDormitoryClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnPrivateChat, self.OnBtnPrivateChatClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAssistance, self.OnBtnAssistanceClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnDelete, self.OnBtnDeleteClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnReport, self.OnBtnReportClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnPraise, self.OnBtnPraiseClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnViewJb, self.OnBtnViewJbClick)
 end
 -- auto
 

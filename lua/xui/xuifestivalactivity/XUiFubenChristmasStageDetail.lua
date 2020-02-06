@@ -144,3 +144,9 @@ function XUiFubenChristmasStageDetail:OnBtnEnterClick()
         self:Close()
     end
 end
+
+function XUiFubenChristmasStageDetail:CloseDetailWithAnimation()
+    self:PlayAnimation("AnimDisableEnd", function()
+        self:Close()
+    end)
+end

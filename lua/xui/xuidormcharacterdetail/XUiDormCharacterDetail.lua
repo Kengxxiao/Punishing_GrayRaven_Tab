@@ -72,15 +72,12 @@ end
 
 function XUiDormCharacterDetail:InitStyleInfo()
     self.GridHostelCharacter.gameObject:SetActive(false)
-
-    local charConfig = XCharacterConfigs.GetCharacterTemplate(self.CharacterId)
-    self.TxtName.text = charConfig.Name
-    self.TxtLastName.text = charConfig.TradeName
-
     local charStyleConfig = XDormConfig.GetCharacterStyleConfigById(self.CharacterId)
     local loveTypeConfig = XFurnitureConfigs.GetDormFurnitureType(charStyleConfig.LoveType)
     local likeTypeConfig = XFurnitureConfigs.GetDormFurnitureType(charStyleConfig.LikeType)
 
+    self.TxtName.text = charStyleConfig.NameFrist
+    self.TxtLastName.text = charStyleConfig.NameLast
     self:SetUiSprite(self.ImgLove, loveTypeConfig.TypeIcon)
     self:SetUiSprite(self.ImgLike, likeTypeConfig.TypeIcon)
 

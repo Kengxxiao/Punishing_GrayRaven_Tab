@@ -57,17 +57,19 @@ function XUiGridTeam:Refresh(teamData)
 end
 
 function XUiGridTeam:RefreshCaptainSkill()
-    self.PanelSkillInfo.gameObject:SetActive(true)
-    local captainId = self.TeamData.TeamData[self.TeamData.CaptainPos]
-    if captainId <= 0 then
-        self.PanelSkillInfo.gameObject:SetActive(false)
-        return
-    end
+    self.PanelSkillInfo.gameObject:SetActive(false)
 
-    local captianSkillInfo = XDataCenter.CharacterManager.GetCaptainSkillInfo(captainId)
-    self.RootUi:SetUiSprite(self.ImgSkillIcon, captianSkillInfo.Icon)
-    self.TxtSkillName.text = captianSkillInfo.Name
-    self.TxtSkillDesc.text = captianSkillInfo.Intro
+    -- self.PanelSkillInfo.gameObject:SetActive(true)
+    -- local captainId = self.TeamData.TeamData[self.TeamData.CaptainPos]
+    -- if captainId <= 0 then
+    --     self.PanelSkillInfo.gameObject:SetActive(false)
+    --     return
+    -- end
+
+    -- local captianSkillInfo = XDataCenter.CharacterManager.GetCaptainSkillInfo(captainId)
+    -- self.RootUi:SetUiSprite(self.ImgSkillIcon, captianSkillInfo.Icon)
+    -- self.TxtSkillName.text = captianSkillInfo.Name
+    -- self.TxtSkillDesc.text = captianSkillInfo.Intro
 end
 
 function XUiGridTeam:RefreshTeamRoles()

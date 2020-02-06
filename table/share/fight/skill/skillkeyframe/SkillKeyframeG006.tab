@@ -22,8 +22,56 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 997158	9|Cast|99715801	0|Effect|FxMb1RobotarmorMd030001Attack17||1	3|Turn|400|0.3|1	0|Turn|480|0.1|1																																																																												
 997161	14|Cast|99716101	19|Cast|99716103	23|Cast|99716105	27|Cast|99716107	31|Cast|99716109	35|Cast|99716111	39|Cast|99716113	43|Cast|99716115	0|Turn|480|0.1|1	3|Turn|80|2|1																																																																						
 997162	16|Cast|99716201|99716202|99716203																																																																															
-997163	28|Cast|99716301	0|Effect|FxMb1RobotarmorMd030001Attack03Y01||1	0|Effect|FxMb1RobotarmorMd030001Attack03Y02||1	12|Move|20|0.8|1	28|Magic|997115|0																																																																											
+997163	28|Cast|99716301	0|Effect|FxMb1RobotarmorMd030001Attack03Y01||1	0|Effect|FxMb1RobotarmorMd030001Attack03Y02||1	12|Move|20|0.8|1	28|Magic|997115|0	0|Magic|905018|0	0|Magic|700230|0																																																																									
 997164	14|Cast|99716401	14|Effect|FxMb1RobotarmorMd030001Attack08||1	19|Cast|99716403	19|Effect|FxMb1RobotarmorMd030001Attack08||1	23|Cast|99716405	23|Effect|FxMb1RobotarmorMd030001Attack08||1	27|Cast|99716407	27|Effect|FxMb1RobotarmorMd030001Attack08||1	31|Cast|99716409	31|Effect|FxMb1RobotarmorMd030001Attack08||1	35|Cast|99716411	35|Effect|FxMb1RobotarmorMd030001Attack08||1	39|Cast|99716413	39|Effect|FxMb1RobotarmorMd030001Attack08||1	43|Cast|99716415	43|Effect|FxMb1RobotarmorMd030001Attack08||1	0|Turn|480|0.1|1	3|Turn|80|2|1																																																														
 997165	16|Cast|99716501|99716502|99716503																																																																															
 997166	10|Cast|99716601	2|Effect|FxMb1RobotarmorMd030001Attack16||1	10|Magic|997115|0																																																																													
 997171	28|Cast|99717101	0|Effect|FxMb1RobotarmorMd030001Attack03Y01||1	0|Effect|FxMb1RobotarmorMd030001Attack03Y02||1	19|Magic|750136|0	28|Magic|997115|0																																																																											
+905001	35|Cast|90500101|90500102	0|Magic|905051|0	0|Effect|FxMe1BioMd006010Attack01||1	0|Magic|905044|0	0|Magic|905045|0	0|Turn|100|0.35|1																																																																										
+905002	0|Magic|905003|0	0|Magic|905051|0	0|Effect|FxMe1BioMd006010Attack02|Hip|1	0|Magic|905044|0	0|Magic|905045|0	80|Magic|905028|0	78|Magic|905049|0	0|Magic|905060|0																																																																								
+905003	0|Move|-1|999|																																																																															
+905004	0|Move|1|999|																																																																															
+905005																																																																																
+905006	0|Magic|905007|0	0|Magic|700230|0	0|Magic|905042|0	0|Magic|905044|0	0|Magic|905045|0																																																																											
+905007	0|Effect|FxMe1BioMd006010Attack07||1																																																																															
+905008																																																																																
+905009	0|Magic|905009|0	0|Magic|905051|0	0|Effect|FxMe1BioMd006010Attack09||1	0|Magic|905044|0	0|Magic|905045|0	0|Magic|905060|0																																																																										
+905010	0|Magic|905046|0																																																																															
+905011																																																																																
+905012	0|Effect|FxMe1BioMd006010Bianshen01|HitCase|1	0|Magic|905067|0																																																																														
+905013																																																																																
+905014																																																																																
+905051	10|Magic|750310|0	29|Magic|750311|0	39|Magic|750312|0	49|Magic|750313|0	0|Magic|905044|0	0|Magic|905045|0	33|Magic|905050|0																																																																									
+905052																																																																																
+997301	0|Effect|FxMe1BioMd006010Attack02|Hip|1																																																																															
+997302	0|Move|1|999|																																																																															
+997303	0|Move|-1|999|																																																																															
+904701	24|Cast|90470101	0|Effect|FxMo1ArmorMd010112Attack01||1	13|Effect|FxYubei02|HitCase|1	10|Magic|730063|0																																																																												
+904702	26|Cast|90470201	0|Effect|FxMo1ArmorMd010112Attack02||1	14|Effect|FxYubei02|HitCase|1	13|Magic|730063|0																																																																												
+904703	9|Move|30|0.7|0	22|Cast|90470302	7|Cast|90470303	1|Magic|730044|0	0|Cast|90470305	22|Cast|90470306																																																																										
+904704	24|Cast|90470401|90470403	0|Effect|FxMo1ArmorMd010112Attack0501GuadianSpine3|Spine3|1	50|Cast|90470404	14|Cast|90470405																																																																												
+904801	28|Cast|90480101	31|Cast|90480102	28|Cast|90480103	30|Cast|90480104	0|Turn|20|1|1	0|Effect|FxMo1BioMd030052Attack01||	0|Cast|90480107|90480108	21|Cast|90480109|90480110																																																																								
+904802	32|Move|4|1.7|0	23|Cast|90480202	26|Cast|90480203	32|Cast|90480204	38|Cast|90480205	44|Cast|90480206	50|Cast|90480207	56|Cast|90480208	62|Cast|90480209	0|Effect|FxMo1BioMd030052Attack02||1	22|Move|3|0.5|0	5|Effect|FxYubei02|HitCase|1	8|Magic|730063|0																																																																			
+904803	0|Effect|FxMo1BioMd030052Attack03||1	30|Cast|90480302|90480303																																																																														
+904901	22|Cast|90490101	0|Effect|FxMo1BioMd010042Attack01||1	21|Move|15|0.3|	8|Effect|FxYubei02|Head|1	9|Magic|730063|0	0|Cast|90490106	29|Magic|900025|0																																																																									
+904902	0|Effect|FxMo1BioMd010042Attack02||1	19|Cast|90490202	0|Cast|90490203																																																																													
+904903	0|Turn|360|0.1|1	32|Cast|90490303	26|Cast|90490305	0|Cast|90490306																																																																												
+906001																																																																																
+906005																																																																																
+906011	19|Cast|90601101	0|Turn|360|0.1|1	11|Cast|90601103	18|Move|5|0.1|0																																																																												
+906012	24|Cast|90601201	17|Move|20|0.5|-10	17|Turn|60|0.5|1	0|Turn|360|0.1|1	16|Cast|90601205																																																																											
+906013	0|Magic|906001|0	15|Turn|120|0.15|1	25|Cast|90601303																																																																													
+906014	0|Move|20|999|1	0|Turn|20|999|1	0|Cast|90601403																																																																													
+906015																																																																																
+906021	0|Magic|906003|0																																																																															
+906022	0|Magic|906005|0																																																																															
+906023																																																																																
+906024	0|Cast|90602401																																																																															
+906101																																																																																
+906105																																																																																
+906111	20|Cast|90611101																																																																															
+906112	27|Cast|90611201	27|Move|-20|0.4|10	17|Turn|60|0.5|1	0|Turn|360|0.1|1																																																																												
+906113	40|Cast|90611301	78|Cast|90611302																																																																														
+906121	0|Magic|905103|0																																																																															
+906122	0|Magic|905105|0																																																																															
+906123																																																																																

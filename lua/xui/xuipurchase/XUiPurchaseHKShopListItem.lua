@@ -59,7 +59,7 @@ function XUiPurchaseHKShopListItem:SetData()
     self.TxtPutawayTime.gameObject:SetActive(false)
     if self.ItemData.TimeToUnShelve > 0 then
         self.TxtUnShelveTime.gameObject:SetActive(true)
-        self.TxtUnShelveTime.text = TextManager.GetText("PurchaseSetOffTime",XUiHelper.GetTime(self.ItemData.TimeToUnShelve - XTime.Now()))
+        self.TxtUnShelveTime.text = TextManager.GetText("PurchaseSetOffTime",XUiHelper.GetTime(self.ItemData.TimeToUnShelve - XTime.GetServerNowTimestamp()))
     else
         self.TxtUnShelveTime.gameObject:SetActive(false)
     end

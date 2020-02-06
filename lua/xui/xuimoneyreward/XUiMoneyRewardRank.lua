@@ -48,11 +48,11 @@ function XUiMoneyRewardRank:InitAutoScript()
 end
 
 function XUiMoneyRewardRank:AutoInitUi()
-    self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelContent")
-    self.PanelScroll = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelScroll")
-    self.PanelRewardGird = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelScroll/Viewport/PanelRewardGird")
-    self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
-    self.TxtDesc = self.Transform:Find("SafeAreaContentPane/TxtDesc"):GetComponent("Text")
+    -- self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelContent")
+    -- self.PanelScroll = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelScroll")
+    -- self.PanelRewardGird = self.Transform:Find("SafeAreaContentPane/PanelContent/PanelScroll/Viewport/PanelRewardGird")
+    -- self.BtnBg = self.Transform:Find("FullScreenBackground/BtnBg"):GetComponent("Button")
+    -- self.TxtDesc = self.Transform:Find("SafeAreaContentPane/TxtDesc"):GetComponent("Text")
 end
 
 function XUiMoneyRewardRank:AutoAddListener()

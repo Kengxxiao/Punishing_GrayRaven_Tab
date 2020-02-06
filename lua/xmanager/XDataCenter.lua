@@ -8,6 +8,7 @@ XDataCenter = XDataCenter or {}
 function XDataCenter.Init()
     XEventManager.RemoveAllListener()
     CsXGameEventManager.Instance:Clear()
+    CS.XLuaMethodManager.ClearAll()
 
     XAnalyticsEvent.Init()
 
@@ -28,12 +29,12 @@ function XDataCenter.Init()
     loadingProfiler:Start()
     XDataCenter.LoadingManager = XLoadingManagerCreator()
     loadingProfiler:Stop()
-    
+
     local characterProfiler = dataCenterProfiler:CreateChild("CharacterManager")
     characterProfiler:Start()
     XDataCenter.CharacterManager = XCharacterManagerCreator()
     characterProfiler:Stop()
-    
+
     local itemProfiler = dataCenterProfiler:CreateChild("ItemManager")
     itemProfiler:Start()
     XDataCenter.ItemManager = XItemManagerCreator()
@@ -43,7 +44,7 @@ function XDataCenter.Init()
     fubenProfiler:Start()
     XDataCenter.FubenMainLineManager = XFubenMainLineManagerCreator()
     fubenProfiler:Stop()
-    
+
     local fubenDailyProfiler = dataCenterProfiler:CreateChild("FubenDailyManager")
     fubenDailyProfiler:Start()
     XDataCenter.FubenDailyManager = XFubenDailyManagerCreator()
@@ -68,7 +69,7 @@ function XDataCenter.Init()
     fubenUrgentProfiler:Start()
     XDataCenter.FubenUrgentEventManager = XFubenUrgentEventManagerCreator()
     fubenUrgentProfiler:Stop()
-    
+
     local fubenBossSingleProfiler = dataCenterProfiler:CreateChild("FubenBossSingleManager")
     fubenBossSingleProfiler:Start()
     XDataCenter.FubenBossSingleManager = XFubenBossSingleManagerCreator()
@@ -85,7 +86,7 @@ function XDataCenter.Init()
     fubenActivityBranchProfiler:Stop()
 
     XDataCenter.FubenActivityBossSingleManager = XFubenActivityBossSingleManagerCreator()
-    
+
     local teamProfiler = dataCenterProfiler:CreateChild("TeamManager")
     teamProfiler:Start()
     XDataCenter.TeamManager = XTeamManagerCreator()
@@ -100,12 +101,12 @@ function XDataCenter.Init()
     furnitureProfiler:Start()
     XDataCenter.FurnitureManager = XFurnitureManagerCreator()
     furnitureProfiler:Stop()
-    
+
     local HeadPortraitProfiler = dataCenterProfiler:CreateChild("XHeadPortraitManager")
     HeadPortraitProfiler:Start()
     XDataCenter.HeadPortraitManager = XHeadPortraitManagerCreator()
     HeadPortraitProfiler:Stop()
-    
+
     local dormProfiler = dataCenterProfiler:CreateChild("DormManager")
     dormProfiler:Start()
     XDataCenter.DormManager = XDormManagerCreator()
@@ -120,17 +121,17 @@ function XDataCenter.Init()
     personalInfoProfiler:Start()
     XDataCenter.PersonalInfoManager = XPersonalInfoManagerCreator()
     personalInfoProfiler:Stop()
-    
+
     local displayProfiler = dataCenterProfiler:CreateChild("DisplayManager")
     displayProfiler:Start()
     XDataCenter.DisplayManager = XDisplayManagerCreator()
     displayProfiler:Stop()
-    
+
     local storyProfiler = dataCenterProfiler:CreateChild("StoryManager")
     storyProfiler:Start()
     XDataCenter.StoryManager = XStoryManagerCreator()
     storyProfiler:Stop()
-    
+
     local assistProfiler = dataCenterProfiler:CreateChild("AssistManager")
     assistProfiler:Start()
     XDataCenter.AssistManager = XAssistManagerCreator()
@@ -151,21 +152,26 @@ function XDataCenter.Init()
     XDataCenter.DrawManager = XDrawManagerCreator()
     drawProfiler:Stop()
 
+    local gaChaProfiler = dataCenterProfiler:CreateChild("GachaManager")
+    gaChaProfiler:Start()
+    XDataCenter.GachaManager = XGachaManagerCreator()
+    gaChaProfiler:Stop()
+
     local mailProfiler = dataCenterProfiler:CreateChild("MailManager")
     mailProfiler:Start()
     XDataCenter.MailManager = XMailManagerCreator()
     mailProfiler:Stop()
-    
+
     local socialProfiler = dataCenterProfiler:CreateChild("SocialManager")
     socialProfiler:Start()
     XDataCenter.SocialManager = XSocialManagerCreator()
     socialProfiler:Stop()
-    
+
     local chatProfiler = dataCenterProfiler:CreateChild("ChatManager")
     chatProfiler:Start()
     XDataCenter.ChatManager = XChatManagerCreator()
     chatProfiler:Stop()
-    
+
     local hostelProfiler = dataCenterProfiler:CreateChild("HostelManager")
     hostelProfiler:Start()
     XDataCenter.HostelManager = XHostelManagerCreator()
@@ -180,12 +186,12 @@ function XDataCenter.Init()
     bountyTaskProfiler:Start()
     XDataCenter.BountyTaskManager = XBountyTaskManagerCreator()
     bountyTaskProfiler:Stop()
-    
+
     local taskForceProfiler = dataCenterProfiler:CreateChild("TaskForceManager")
     taskForceProfiler:Start()
     XDataCenter.TaskForceManager = XTaskForceManagerCreator()
     taskForceProfiler:Stop()
-    
+
     local bfrtProfiler = dataCenterProfiler:CreateChild("BfrtManager")
     bfrtProfiler:Start()
     XDataCenter.BfrtManager = XBfrtManagerCreator()
@@ -196,6 +202,11 @@ function XDataCenter.Init()
     XDataCenter.PrequelManager = XPrequelManagerCreator()
     prequelProfiler:Stop()
 
+    local fubenBabelTowerProfiler = dataCenterProfiler:CreateChild("FubenBabelTowerManager")
+    fubenBabelTowerProfiler:Start()
+    XDataCenter.FubenBabelTowerManager = XFubenBabelTowerManagerCreator()
+    fubenBabelTowerProfiler:Stop()
+
     local trialProfiler = dataCenterProfiler:CreateChild("TrialManager")
     trialProfiler:Start()
     XDataCenter.TrialManager = XTrialManagerCreator()
@@ -205,7 +216,7 @@ function XDataCenter.Init()
     arenaProfiler:Start()
     XDataCenter.ArenaManager = XArenaManagerCreator()
     arenaProfiler:Stop()
-    
+
     local fubenExploreProfiler = dataCenterProfiler:CreateChild("FubenExploreManager")
     fubenExploreProfiler:Start()
     XDataCenter.FubenExploreManager = XFubenExploreManagerCreator()
@@ -217,15 +228,15 @@ function XDataCenter.Init()
     fubenProfiler:Stop()
 
     local signBoardProfiler = dataCenterProfiler:CreateChild("SignBoardManager")
-    signBoardProfiler:Start() 
+    signBoardProfiler:Start()
     XDataCenter.SignBoardManager = XSignBoardManagerCreator()
     signBoardProfiler:Stop()
-    
+
     local voteProfiler = dataCenterProfiler:CreateChild("VoteManager")
     voteProfiler:Start()
     XDataCenter.VoteManager = XVoteManagerCreator()
     voteProfiler:Stop()
-    
+
     local favourProfiler = dataCenterProfiler:CreateChild("FavorabilityManager")
     favourProfiler:Start()
     XDataCenter.FavorabilityManager = XFavorabilityManagerCreator()
@@ -244,7 +255,7 @@ function XDataCenter.Init()
     local noticeProfiler = dataCenterProfiler:CreateChild("NoticeManager")
     noticeProfiler:Start()
     XDataCenter.NoticeManager = XNoticeManagerCreator()
-    noticeProfiler:Stop() 
+    noticeProfiler:Stop()
 
     local roomProfiler = dataCenterProfiler:CreateChild("RoomManager")
     roomProfiler:Start()
@@ -265,7 +276,7 @@ function XDataCenter.Init()
     typeProfiler:Start()
     XTypeManager.Init()
     typeProfiler:Stop()
-    
+
     local fubenExperimentProfiler = dataCenterProfiler:CreateChild("FubenExperimentManager")
     fubenExperimentProfiler:Start()
     XDataCenter.FubenExperimentManager = XFubenExperimentManagerCreator()
@@ -290,12 +301,12 @@ function XDataCenter.Init()
     signInProfiler:Start()
     XDataCenter.SignInManager = XSignInManagerCreator()
     signInProfiler:Stop()
-    
+
     local MedalProfiler = dataCenterProfiler:CreateChild("XMedalManager")
     MedalProfiler:Start()
     XDataCenter.MedalManager = XMedalManagerCreator()
     MedalProfiler:Stop()
-    
+
     local purchaseProfiler = dataCenterProfiler:CreateChild("PurchaseManagerCreator")
     purchaseProfiler:Start()
     XDataCenter.PurchaseManager = XPurchaseManagerCreator()
@@ -312,7 +323,7 @@ function XDataCenter.Init()
     CdKeyProfiler:Start()
     XDataCenter.CdKeyManager = XCdKeyManagerCreator()
     CdKeyProfiler:Stop()
-    
+
     local functionalSkipProfiler = dataCenterProfiler:CreateChild("FunctionalSkipManagerCreator")
     functionalSkipProfiler:Start()
     XDataCenter.FunctionalSkipManager = XFunctionalSkipManagerCreator()
@@ -327,4 +338,6 @@ function XDataCenter.Init()
     XDataCenter.ActivityBriefManager = XActivityBriefManagerCreator()
 
     XDataCenter.SetManager = XSetManagerCreator()
+
+    CS.XLuaMethodManager.RefreshAll()
 end

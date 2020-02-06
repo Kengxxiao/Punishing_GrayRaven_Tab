@@ -20,6 +20,7 @@ XFubenManagerCreator = function()
         ActivityBossSingle = 16, --活动单挑BOSS
         Practice = 17, --教学关卡
         Festival = 18, --节日副本
+        BabelTower = 19,--  巴别塔计划
     }
 
     XFubenManager.ChapterType = {
@@ -73,9 +74,8 @@ XFubenManagerCreator = function()
     local PlayerStageData = {}
     local AssistSuccess = false
     local UnlockHideStages = {}
-
+    local NewHideStageId = nil --存储新开启的隐藏关卡的ID
     local EnterFightStartTime = 0
-
     -- CheckPreFight function
     local InitStageInfoHandler = {}
     local CheckPreFightHandler = {}
@@ -143,6 +143,7 @@ XFubenManagerCreator = function()
         XFubenManager.RegisterFubenManager(XFubenManager.StageType.ActivtityBranch, XDataCenter.FubenActivityBranchManager)
         XFubenManager.RegisterFubenManager(XFubenManager.StageType.Practice, XDataCenter.PracticeManager)
         XFubenManager.RegisterFubenManager(XFubenManager.StageType.Festival, XDataCenter.FubenFestivalActivityManager)
+        XFubenManager.RegisterFubenManager(XFubenManager.StageType.BabelTower, XDataCenter.FubenBabelTowerManager)
         XFubenManager.InitStageLevelMap()
         XFubenManager.InitStageMultiplayerLevelMap()
     end
@@ -393,7 +394,7 @@ XFubenManagerCreator = function()
             curChapterOrderId = chapter.OrderId
             if curStageOrderId and curChapterOrderId then
                 return  "【"..curChapterOrderId .. "-" .. curStageOrderId.."】"..XFubenManager.GetStageName(stageId)
-            end
+            end 
         end
         return XFubenManager.GetStageName(stageId)
     end
@@ -403,7 +404,8 @@ XFubenManagerCreator = function()
         XDataCenter.FubenBossOnlineManager.GetBossOnlineChapters()--联机boss
         , XDataCenter.FubenActivityBranchManager.GetActivitySections()--副本支线活动
         , XDataCenter.FubenActivityBossSingleManager.GetActivitySections()--单挑BOSS活动
-        , XDataCenter.FubenFestivalActivityManager.GetAvaliableFestivals())--节日活动副本
+        , XDataCenter.FubenFestivalActivityManager.GetAvaliableFestivals()--节日活动副本
+        , XDataCenter.FubenBabelTowerManager.GetBabelTowerSection())--巴别塔系统
 
         return chapters
     end
@@ -414,6 +416,7 @@ XFubenManagerCreator = function()
             , XDataCenter.FubenActivityBranchManager.GetActivitySections()--副本支线活动
             , XDataCenter.FubenActivityBossSingleManager.GetActivitySections()--单挑BOSS活动
             , XDataCenter.FubenFestivalActivityManager.GetAvaliableFestivals()--节日活动副本
+            , XDataCenter.FubenBabelTowerManager.GetBabelTowerSection()--巴别塔计划
         )
         table.sort(chapters, function(a, b)
                 local priority1 = XFubenConfigs.GetActivityPriorityByActivityIdAndType(a.Id,a.Type)
@@ -422,37 +425,56 @@ XFubenManagerCreator = function()
             end)
         return chapters
     end
-
-
+    
     function XFubenManager.GetChallengeChapters()
         local list = {}
+        local isTrialFinish = false
+        local isExploreFinishAll = false
+        local exploreChapters = nil
+        local arenaChapters = nil
+        local bossSingleChapters = nil
+        local practiceChapters = nil
+        local trialChapters = nil      
+        local isOpen = false
         --如果完成了全部探索需要把探索拍到最后
-        if not XDataCenter.FubenExploreManager.IsFinishAll() then
-            local exploreChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Explore)
+        isOpen = not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenExplore)
+        if isOpen then
+            exploreChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Explore)
             if exploreChapters.IsOpen and exploreChapters.IsOpen == 1 then
-                table.insert(list, exploreChapters)
+                if not XDataCenter.FubenExploreManager.IsFinishAll() then
+                    table.insert(list, exploreChapters)
+                else
+                    isExploreFinishAll = true
+                end
             end
         end
-
-        local arenaChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.ARENA)
-        if arenaChapters.IsOpen and arenaChapters.IsOpen == 1 then
-            table.insert(list, arenaChapters)
+        
+        isOpen = not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenArena)
+        if isOpen then
+            arenaChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.ARENA)
+            if arenaChapters.IsOpen and arenaChapters.IsOpen == 1 then
+                table.insert(list, arenaChapters)
+            end
         end
-
-        local bossSingleChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.BOSSSINGLE)
-        if bossSingleChapters.IsOpen and bossSingleChapters.IsOpen == 1 then
-            table.insert(list, bossSingleChapters)
+        
+        isOpen = not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenChallengeBossSingle)
+        if isOpen then
+            bossSingleChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.BOSSSINGLE)
+            if bossSingleChapters.IsOpen and bossSingleChapters.IsOpen == 1 then
+                table.insert(list, bossSingleChapters)
+            end
         end
-
-        local practiceChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Practice)
-        if practiceChapters.IsOpen and practiceChapters.IsOpen == 1 then
-            table.insert(list, practiceChapters)
+        
+        isOpen = not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Practice)
+        if isOpen then
+            practiceChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Practice)
+            if practiceChapters.IsOpen and practiceChapters.IsOpen == 1 then
+                table.insert(list, practiceChapters)
+            end
         end
-
-        local isTrialFinish = false
-        local trialChapters = nil
-        -- local isOpen = XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.Trial)
-        -- if isOpen then
+        
+        isOpen = not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FubenChallengeTrial)
+        if isOpen then
             trialChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Trial)
             if trialChapters and trialChapters.IsOpen and trialChapters.IsOpen == 1  then
                 if XDataCenter.TrialManager.EntranceOpen() then
@@ -461,7 +483,7 @@ XFubenManagerCreator = function()
                     isTrialFinish = true
                 end
             end
-        -- end
+        end
 
         table.sort(list, function(chapterA, chapterB)
             local weightA = XFunctionManager.JudgeCanOpen(XFubenManager.ChapterFunctionName[chapterA.Type]) and 1 or 0
@@ -472,11 +494,8 @@ XFubenManagerCreator = function()
             return weightA > weightB
         end)
         --如果完成了全部探索需要把探索拍到最后
-        if XDataCenter.FubenExploreManager.IsFinishAll() then
-            local exploreChapters = XFubenConfigs.GetChapterBannerByType(XFubenManager.ChapterType.Explore)
-            if exploreChapters.IsOpen and exploreChapters.IsOpen == 1 then
-                table.insert(list, exploreChapters)
-            end
+        if isExploreFinishAll then
+            table.insert(list, exploreChapters)
         end
 
         if isTrialFinish then
@@ -499,7 +518,9 @@ XFubenManagerCreator = function()
             tmpData.Lock = tmpCon or (tmpDay and not tmpOpen)
             tmpData.Rule = v
             tmpData.Open = tmpOpen and not tmpCon
-            table.insert(tmpDataList, tmpData)
+            if not XFunctionManager.CheckFunctionFitter(XDataCenter.FubenDailyManager.GetConditionData(v.Id).functionNameId) then
+                table.insert(tmpDataList, tmpData)
+            end
         end
 
         -- local resourceChapters = XDataCenter.FubenResourceManager.GetResourceChapters()
@@ -591,7 +612,7 @@ XFubenManagerCreator = function()
                 end
             end
         end
-
+        
         -- 检测体力
         if stage.RequireActionPoint > 0 then
             if not XDataCenter.ItemManager.DoNotEnoughBuyAsset(XDataCenter.ItemManager.ItemId.ActionPoint,
@@ -680,6 +701,7 @@ XFubenManagerCreator = function()
             for _, v in pairs(teamData) do
                 table.insert(preFight.CardIds, v)
             end
+            preFight.CaptainPos = XDataCenter.TeamManager.GetTeamCaptainPos(teamId)
         end
 
         return preFight
@@ -694,7 +716,6 @@ XFubenManagerCreator = function()
         if isBountyTaskFight then
             XDataCenter.BountyTaskManager.RecordPreFightData(task.Id, teamId)
         end
-
         local preFight = XFubenManager.PreFight(stage, teamId, isAssist)
         XNetwork.Call(METHOD_NAME.PreFight, { PreFightData = preFight }, function(res)
             if res.Code ~= XCode.Success then
@@ -723,6 +744,48 @@ XFubenManagerCreator = function()
         end)
     end
 
+    function XFubenManager.EnterBabelTowerFight(stageId, team, cb)
+        local stage = XFubenManager.GetStageCfg(stageId)
+        if not XFubenManager.CheckPreFight(stage) then
+            return
+        end
+
+        local preFight = {}
+        preFight.CardIds = {}
+        preFight.StageId = stageId
+        preFight.CaptainPos = 1
+
+        for _, v in pairs(team) do
+            table.insert(preFight.CardIds, v)
+        end
+
+        local rep = { PreFightData = preFight }
+        XNetwork.Call(METHOD_NAME.PreFight, rep, function(res)
+            if res.Code ~= XCode.Success then
+                XUiManager.TipCode(res.Code)
+                return 
+            end
+            local fightData = res.FightData
+            local stageInfo = XFubenManager.GetStageInfo(fightData.StageId)
+            if stage and stage.BeginStoryId ~= 0 and (not stageInfo or not stageInfo.Passed) then
+                if CS.Movie.XMovieManager.Instance:CheckMovieExist(stage.BeginStoryId) then
+                    CS.Movie.XMovieManager.Instance:PlayById(stage.BeginStoryId, function()
+                        XFubenManager.EnterRealFight(preFight, fightData)
+                        if cb then
+                            cb()
+                        end
+                    end)
+                end
+            else
+                XFubenManager.EnterRealFight(preFight, fightData)
+                if cb then
+                    cb()
+                end
+            end
+        end)
+
+    end
+
     function XFubenManager.EnterBfrtFight(stageId, team)
         local stage = XFubenManager.GetStageCfg(stageId)
         if not XFubenManager.CheckPreFight(stage) then
@@ -732,11 +795,11 @@ XFubenManagerCreator = function()
         local preFight = {}
         preFight.CardIds = {}
         preFight.StageId = stage.StageId
-
+        preFight.CaptainPos=1
+        
         for _, v in pairs(team) do
             table.insert(preFight.CardIds, v)
         end
-
         local req = { PreFightData = preFight }
         XNetwork.Call(METHOD_NAME.PreFight, req, function(res)
             if res.Code ~= XCode.Success then
@@ -1027,11 +1090,10 @@ XFubenManagerCreator = function()
                 end
             end
             local msgtab = {}
-            msgtab["stageId"] = tostring(stageId)
-            msgtab["loadingTime"] = tostring(loadingTime)
-            msgtab["roleIdStr"] = tostring(roleIdStr)
-            local jsonstr = Json.encode(msgtab)
-            CS.XRecord.Record("24034", "BdcEnterFightLoadingTime",jsonstr)
+            msgtab.stageId = stageId
+            msgtab.loadingTime = loadingTime
+            msgtab.roleIdStr = roleIdStr
+            CS.XRecord.Record(msgtab, "24034", "BdcEnterFightLoadingTime")
             CS.XHeroBdcAgent.BdcEnterFightLoadingTime(stageId, loadingTime, roleIdStr)
         end
         local list = CS.System.Collections.Generic.List(CS.System.String)()
@@ -1615,17 +1677,21 @@ XFubenManagerCreator = function()
     --     else
     --         return false
     --     end
-    -- end
+    -- end        
     function XFubenManager.CheckStageIsPass(stageId)
         local stageInfo = XFubenManager.GetStageInfo(stageId)
+        if not stageInfo then
+            return
+        end
+        
         if stageInfo then
             if stageInfo.Type == XFubenManager.StageType.Bfrt then
-                return XDataCenter.BfrtManager.IsGroupPassedByStageId(stageId)
+                return XDataCenter.BfrtManager.IsGroupPassedByStageId(stageId)              
             end
 
             return stageInfo.Passed
         end
-
+        
         return false
     end
 
@@ -1662,10 +1728,6 @@ XFubenManagerCreator = function()
 
     function XFubenManager.CallOpenFightLoading(stageId)
         local stageInfo = XFubenManager.GetStageInfo(stageId)
-        if not stageInfo then
-            return
-        end
-        
         if OpenFightLoadingHandler[stageInfo.Type] then
             OpenFightLoadingHandler[stageInfo.Type](stageId)
         else
@@ -1759,9 +1821,9 @@ XFubenManagerCreator = function()
         -- 初始化数据结构
         XMessagePack.MarkAsTable(fightResult.IntToIntRecord)
         XMessagePack.MarkAsTable(fightResult.StringToIntRecord)
-        XMessagePack.MarkAsTable(fightResult.Operations)
         XMessagePack.MarkAsTable(fightResult.NpcHpInfo)
         XMessagePack.MarkAsTable(fightResult.NpcDpsTable)
+        XMessagePack.MarkAsTable(fightResult.Operations)
 
         return fightResult
     end
@@ -1820,7 +1882,7 @@ XFubenManagerCreator = function()
                         return
                     end
                 end
-                --
+                -- 
                 for _, conditionId in pairs(stageCfg.ForceConditionId or {}) do
                     local ret, desc = XConditionManager.CheckCondition(conditionId)
                     if not ret then
@@ -1859,6 +1921,27 @@ XFubenManagerCreator = function()
         XEventManager.DispatchEvent(XEventId.EVENT_FUBEN_SETTLE_REWARD, response.Settle)
     end
 
+    function XFubenManager.NewHideStage(Id) --记录新的隐藏关卡
+        XFubenManager.NewHideStageId = Id
+    end
+    
+    function XFubenManager.CheakHasNewHideStage()--检查是否有新的隐藏关卡
+        if XFubenManager.NewHideStageId then
+            local cfg = XDataCenter.FubenManager.GetStageCfg(XFubenManager.NewHideStageId)
+            local msg = CS.XTextManager.GetText("HideStageIsOpen",cfg.Name)
+            XUiManager.TipMsg(msg,XUiManager.UiTipType.Success,function()
+                    XFubenManager.ClearNewHideStage()
+                    XEventManager.DispatchEvent(XEventId.EVENT_FUNCTION_EVENT_COMPLETE)
+                end)    
+            return true                      
+        end
+        return false 
+    end
+    
+    function XFubenManager.ClearNewHideStage()--消除新的隐藏关卡记录
+        XFubenManager.NewHideStageId = nil
+    end
+    
     XFubenManager.Init()
     return XFubenManager
 end
@@ -1877,6 +1960,7 @@ end
 XRpc.NotifyUnlockHideStage = function(data)
     if not data then return end
     XDataCenter.FubenManager.OnSyncUnlockHideStage(data.UnlockHideStage)
+    XDataCenter.FubenManager.NewHideStage(data.UnlockHideStage)
 end
 
 XRpc.FightSettleNotify = function(response)

@@ -91,6 +91,11 @@ function XConfigCenter.Init()
     XDrawConfigs.Init()
     drawProfiler:Stop()
 
+    local gachaProfiler = configCenterProfiler:CreateChild("XGachaConfigs")
+    gachaProfiler:Start()
+    XGachaConfigs.Init()
+    gachaProfiler:Stop()
+    
     local fubenMailLineProfiler = configCenterProfiler:CreateChild("XFubenMainLineConfigs")
     fubenMailLineProfiler:Start()
     XFubenMainLineConfigs.Init()
@@ -207,6 +212,11 @@ function XConfigCenter.Init()
     festivalProfiler:Start()
     XFestivalActivityConfig.Init()
     festivalProfiler:Stop()
+
+    local babelTowerProfiler = configCenterProfiler:CreateChild("XFubenBabelTowerConfigs")
+    babelTowerProfiler:Start()
+    XFubenBabelTowerConfigs.Init()
+    babelTowerProfiler:Stop()
 
     XActivityConfigs.Init()
     XPurchaseConfigs.Init()

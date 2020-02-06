@@ -42,18 +42,18 @@ function XUiPanelRoleModel:UpdateRoleModel(roleName, targetPanelRole, targetUiNa
     local curModelInfo = modelPool[curRoleName]
     if curModelInfo then
         curModelInfo.Model.gameObject:SetActive(false)
-		curModelInfo.time = os.clock()
+        curModelInfo.time = XTime.GetServerNowTimestamp()
     end
     if curRoleName ~= roleName then
         self.CurRoleName = roleName
     end
-	
-	local needRemove = nil
+
+    local needRemove = nil
 
     for k,v in pairs(modelPool) do
         --不等于当前要显示的模型且时间超出5秒的都要删掉
         if k ~= roleName and v and v.time then
-            local diff = os.clock() - v.time
+            local diff = XTime.GetServerNowTimestamp() - v.time
             if diff >= 5 then
                 if needRemove == nil then
                     needRemove = {}
@@ -81,18 +81,18 @@ function XUiPanelRoleModel:UpdateRoleModel(roleName, targetPanelRole, targetUiNa
         self:RoleModelLoaded(roleName, targetUiName, cb)
     else
         XModelManager.LoadRoleModel(self.CurRoleName, self.Transform, self.RefName, function(model)
-            local modelInfo = {}
-            modelInfo.Model = model
-            self.RoleModelPool[roleName] = modelInfo
+                local modelInfo = {}
+                modelInfo.Model = model
+                self.RoleModelPool[roleName] = modelInfo
 
-            if self.LoadClip then
-                self:LoadAnimationClips(model.gameObject, defaultAnimation, function()
+                if self.LoadClip then
+                    self:LoadAnimationClips(model.gameObject, defaultAnimation, function()
+                            self:RoleModelLoaded(roleName, targetUiName, cb)
+                        end)
+                else
                     self:RoleModelLoaded(roleName, targetUiName, cb)
-                end)
-            else
-                self:RoleModelLoaded(roleName, targetUiName, cb)
-            end
-        end)
+                end
+            end)
     end
 end
 
@@ -116,9 +116,9 @@ function XUiPanelRoleModel:LoadAnimationClips(model, defaultAnimation, cb)
         local activeState = model.gameObject.activeSelf
         model.gameObject:SetActive(false)
         loadAnimationClip:LoadAnimationClips(clips, function()
-            model.gameObject:SetActive(activeState)
-            if cb then cb() end
-        end)
+                model.gameObject:SetActive(activeState)
+                if cb then cb() end
+            end)
     else
         if cb then cb() end
     end
@@ -139,6 +139,11 @@ function XUiPanelRoleModel:RoleModelLoaded(name, uiName, cb)
     -- 阴影要放在武器模型加载完之后
     if self.ShowShadow then
         CS.XShadowHelper.AddShadow(self.GameObject)
+    end
+
+    -- 只有不是三个模型同时出现的界面调用此接口
+    if not self.FixLight then
+        CS.XShadowHelper.SetCharRealtimeShadow(self.GameObject, true)
     end
 
     if self.SetFocus then
@@ -181,23 +186,24 @@ function XUiPanelRoleModel:UpdateCharacterModel(characterId, targetPanelRole, ta
     end
 
     self:UpdateRoleModel(modelName, targetPanelRole, targetUiName, function(model)
-        if not self.HideWeapon then
-            self:UpdateCharacterWeaponModels(characterId, modelName, weapoonCb, hideEffect)
-        end
+            if not self.HideWeapon then
+                self:UpdateCharacterWeaponModels(characterId, modelName, weapoonCb, hideEffect)
+            end
 
-        if not hideEffect then
-            self:UpdateCharacterLiberationLevelEffect(modelName, characterId, growUpLevel)
-        end
+            if not hideEffect then
+                self:UpdateCharacterLiberationLevelEffect(modelName, characterId, growUpLevel)
+            end
 
-        if cb then
-            cb(model)
-        end
+            if cb then
+                cb(model)
+            end
 
-        if self.FixLight then
-            CS.XGraphicManager.FixUICharacterLightDir(model.gameObject)
-        end
+            if self.FixLight then
+                CS.XGraphicManager.FixUICharacterLightDir(model.gameObject)
+            end
     end)
 end
+
 
 --==============================--
 --desc: 更新机器人角色模型
@@ -235,16 +241,16 @@ function XUiPanelRoleModel:UpdateCharacterResModel(resId, characterId, targetPan
     local modelName = XDataCenter.CharacterManager.GetCharResModel(resId)
     if modelName then
         self:UpdateRoleModel(modelName, targetPanelRole, targetUiName, function(model)
-            if not self.HideWeapon then
-                self:UpdateCharacterWeaponModels(characterId, modelName)
-            end
+                if not self.HideWeapon then
+                    self:UpdateCharacterWeaponModels(characterId, modelName)
+                end
 
-            self:UpdateCharacterLiberationLevelEffect(modelName, characterId, growUpLevel)
+                self:UpdateCharacterLiberationLevelEffect(modelName, characterId, growUpLevel)
 
-            if cb then
-                cb(model)
-            end
-        end)
+                if cb then
+                    cb(model)
+                end
+            end)
     end
 end
 
@@ -252,25 +258,25 @@ function XUiPanelRoleModel:UpdateCharacterModelByModelId(modelId, characterId, t
     if not modelId then return end
 
     self:UpdateRoleModel(modelId, targetPanelRole, targetUiName, function(model)
-        if not self.HideWeapon then
-            self:UpdateCharacterWeaponModels(characterId, modelId)
-        end
+            if not self.HideWeapon then
+                self:UpdateCharacterWeaponModels(characterId, modelId)
+            end
 
-        self:UpdateCharacterLiberationLevelEffect(modelId, characterId, growUpLevel)
+            self:UpdateCharacterLiberationLevelEffect(modelId, characterId, growUpLevel)
 
-        if cb then
-            cb(model)
-        end
-    end)
+            if cb then
+                cb(model)
+            end
+        end)
 end
 
 function XUiPanelRoleModel:UpdateBossModel(modelName, targetUiName, targetPanelRole, cb)
     if modelName then
         self:UpdateRoleModel(modelName, targetPanelRole, targetUiName, function(model)
-            if cb then
-                cb(model)
-            end
-        end)
+                if cb then
+                    cb(model)
+                end
+            end)
     end
 end
 
@@ -292,12 +298,12 @@ function XUiPanelRoleModel:UpdateCharacterModelByFightNpcData(fightNpcData, cb)
 
         if modelName then
             self:UpdateRoleModel(modelName, nil, nil, function(model)
-                self:UpdateEquipsModels(model, equips)
-                self:UpdateCharacterLiberationLevelEffect(modelName, char.Id, char.LiberateLv)
-                if cb then
-                    cb(model)
-                end
-            end)
+                    self:UpdateEquipsModels(model, equips)
+                    self:UpdateCharacterLiberationLevelEffect(modelName, char.Id, char.LiberateLv)
+                    if cb then
+                        cb(model)
+                    end
+                end)
         end
     end
 end

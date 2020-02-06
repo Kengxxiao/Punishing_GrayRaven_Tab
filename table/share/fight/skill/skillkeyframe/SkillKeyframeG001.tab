@@ -1,24 +1,12 @@
 Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11]	Key[12]	Key[13]	Key[14]	Key[15]	Key[16]	Key[17]	Key[18]	Key[19]	Key[20]	Key[21]	Key[22]	Key[23]	Key[24]	Key[25]	Key[26]	Key[27]	Key[28]	Key[29]	Key[30]	Key[31]	Key[32]	Key[33]	Key[34]	Key[35]	Key[36]	Key[37]	Key[38]	Key[39]	Key[40]	Key[41]	Key[42]	Key[43]	Key[44]	Key[45]	Key[46]	Key[47]	Key[48]	Key[49]	Key[50]	Key[51]	Key[52]	Key[53]	Key[54]	Key[55]	Key[56]	Key[57]	Key[58]	Key[59]	Key[60]	Key[61]	Key[62]	Key[63]	Key[64]	Key[65]	Key[66]	Key[67]	Key[68]	Key[69]	Key[70]	Key[71]	Key[72]	Key[73]	Key[74]	Key[75]	Key[76]	Key[77]	Key[78]	Key[79]	Key[80]
-994101	45|Cast|99410101	0|Effect|FxMo1JgrcMd000002Attack0102||1	25|Cast|99410103	55|Turn|90|1|																																																																												
-994102	0|Cast|99410201|99410202|99410203																																																																															
-994103	12|Cast|99410301	27|Cast|99410302|99410303																																																																														
-994104	45|Cast|99410401	0|Effect|FxMo1JgrcMd000002Attack0102||1	25|Cast|99410403	55|Turn|-90|1|																																																																												
-994105	30|Cast|99410501	0|Cast|99410502																																																																														
+994101	0|Cast|99410101																																																																															
+994102	0|Cast|99410201																																																																															
+994103	0|Cast|99410301																																																																															
+994104	0|Cast|99410401																																																																															
+994105	0|Cast|99410501																																																																															
 994106	0|Cast|99410601																																																																															
-904101																																																																																
 994501	45|Cast|99450101	0|Effect|FxMo1JgrcMd000002Attack0102||1																																																																														
-994301	27|Cast|99430101	0|Effect|||1	11|Effect|FxYubei02|HitCase|1	14|Magic|730063|0	0|Effect||Bip001Prop2|1	1|Magic|900029|0	0|Turn|180|1|																																																																									
-994302	23|Cast|99430201	0|Effect|FxMo1ArmorMd010071Attack02||1	10|Effect|FxYubei02|HitCase|1	13|Magic|730063|0	0|Effect||Bip001Prop1|1	1|Magic|900029|0	1|Turn|180|1|																																																																									
-994303	0|Magic|901907|0	0|Turn|180|1|																																																																														
-994304	1|Cast|99430401	0|Cast|99430402	0|Magic|901909|0	0|Move|10|1|0	0|Magic|901908|0	1|Magic|900029|0																																																																										
-994305	0|Magic|901913|0	0|Cast|99430502	0|Move|5|1|-5																																																																													
-994306	1|Magic|901911|0	0|Cast|99430602																																																																														
-994307	1|Magic|901913|0	0|Cast|99430702																																																																														
-994308																																																																																
-994401	26|Cast|99440101	0|Turn|30|1.2|1	0|Effect||Bip001Prop1|1	0|Cast|99440104	28|Effect|FxYubei02|HitCase|1																																																																											
-994402	15|Cast|99440201	0|Effect|||1																																																																														
-994403	15|Cast|99440301	0|Effect||Bip001Prop1|1	0|Turn|30|1.3|1																																																																													
-994404	15|Cast|99440401	0|Effect||Bip001Prop1|1	0|Turn|40|1.3|1																																																																													
+904101																																																																																
 904001	35|Cast|90400101|90400102	999|Move|||	999|Move|||	999|Magic|904006|0	999|Magic|904007|0	999|Magic|904008|0	1|Cast|90400108	20|Effect|FxYubei02|HitCase|1	23|Magic|730063|0	0|Effect|FxMe1CattleMd000002Attack01||1	999|Cast|90400112|90400113	113|Magic|900025|0																																																																				
 904002	19|Cast|90400201|90400202	1|Cast|90400203|90400204	4|Effect|FxYubei02|HitCase|1	7|Magic|730063|0	0|Effect|FxMe1CattleMd000002Attack02||1	0|Effect|FxMe1CattleMd000002Attack02GuadianBone03|Bone03|1	0|Effect|FxMe1CattleMd000002Attack02GuadianBone09|Bone09|1																																																																									
 904003	26|Cast|90400301|90400302|90400303	23|Cast|90400304	5|Cast|90400305	7|Cast|90400306	1|Magic|970001|0	1|Cast|90400308	0|Effect|FxMe1CattleMd000002Attack03||1																																																																									
@@ -44,7 +32,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 904510	0|Cast|90451001																																																																															
 904511	0|Cast|90451101																																																																															
 904512	0|Cast|90451201|90451205	0|Magic|730095|0	0|Move|8|0.9|	6|Move|0|0|	30|Magic|730096|0	1|Magic|700021|0	24|Cast|90451208	0|Magic|700230|0	0|Magic|710076|0	24|Magic|710077|0	24|Magic|700249|0																																																																					
-904513	0|Cast|90451301	0|Magic|904518|0	0|Move|-1|0.3|	39|Magic|700031|0																																																																												
+904513	0|Cast|90451301	0|Magic|904518|0	0|Move|-1|0.3|	39|Magic|700031|0	0|Magic|730018|0																																																																											
 904514	15|Cast|90451401	3|Cast|90451402	45|Magic|904511|0	11|Magic|730020|0	14|Effect|FxMe1BioMd005010Attack14||1	45|Magic|700031|0	16|Magic|710077|0	16|Magic|700249|0	2|Magic|700271|0	2|Magic|700021|0																																																																						
 904515	0|Cast|90451501|90451504	0|Move|10|3|2																																																																														
 904516	0|Cast|90451601|90451605	0|Magic|730095|0	0|Move|40|0.9|	6|Move|20|0|	30|Magic|730096|0	1|Magic|700021|0	24|Cast|90451608	0|Magic|700230|0	0|Magic|710076|0	24|Magic|710077|0	24|Magic|700249|0																																																																					

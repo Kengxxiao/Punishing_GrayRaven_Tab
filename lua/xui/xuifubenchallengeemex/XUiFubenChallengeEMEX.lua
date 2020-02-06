@@ -117,10 +117,10 @@ function XUiFubenChallengeEMEX:Init(chapter)
         rImgOpen:SetRawImage(stageCfg.Icon)
         stageButton.interactable = true
         stageLock.interactable = true
-        self:RegisterListener(stageButton, "onClick", function()
+        self:RegisterClickEvent(stageButton, function()
             self:OpenDetail(stageItem, stageCfg)
         end)
-        self:RegisterListener(stageLock, "onClick", function()
+        self:RegisterClickEvent(stageLock, function()
             self:OpenDetail(stageItem, stageCfg)
         end)
     end

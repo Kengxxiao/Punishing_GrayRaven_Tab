@@ -3,7 +3,7 @@ local XUiTogFriendBox = XClass()
 function XUiTogFriendBox:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
-
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -29,11 +29,11 @@ function XUiTogFriendBox:InitAutoScript()
 end
 
 function XUiTogFriendBox:AutoInitUi()
-    self.BtnBackground = self.Transform:Find("BtnBackground"):GetComponent("XUiButton")
-    self.ImgNewTag = self.Transform:Find("ImgNewTag"):GetComponent("Image")
-    self.TxtUnMsgCount = self.Transform:Find("ImgNewTag/TxtUnMsgCount"):GetComponent("Text")
-    self.ImgFriendIcon = self.Transform:Find("PanelRole/ImgFriendIcon"):GetComponent("RawImage")
-    self.HeadIconEffect = self.Transform:Find("PanelRole/ImgFriendIcon/Effect"):GetComponent("XUiEffectLayer")
+    -- self.BtnBackground = self.Transform:Find("BtnBackground"):GetComponent("XUiButton")
+    -- self.ImgNewTag = self.Transform:Find("ImgNewTag"):GetComponent("Image")
+    -- self.TxtUnMsgCount = self.Transform:Find("ImgNewTag/TxtUnMsgCount"):GetComponent("Text")
+    -- self.ImgFriendIcon = self.Transform:Find("PanelRole/ImgFriendIcon"):GetComponent("RawImage")
+    -- self.HeadIconEffect = self.Transform:Find("PanelRole/ImgFriendIcon/Effect"):GetComponent("XUiEffectLayer")
 end
 
 function XUiTogFriendBox:GetAutoKey(uiNode,eventName)

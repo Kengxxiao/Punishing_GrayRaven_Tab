@@ -29,6 +29,7 @@ function XUiPurchaseYK:OnRefresh(uiType)
         return
     end
 
+    PurchaseManager.SetYKContinueBuy()
     self.CurUitype = uiType
     self.Data = data[1]
     self.GameObject:SetActive(true)
@@ -36,6 +37,9 @@ function XUiPurchaseYK:OnRefresh(uiType)
 end
 
 function XUiPurchaseYK:OnUpdate()
+    -- 设置月卡信息本地缓存
+    XDataCenter.PurchaseManager.SetYKLoaclCache()
+
     if self.CurUitype then
         self:OnRefresh(self.CurUitype)
     end
@@ -121,12 +125,12 @@ function XUiPurchaseYK:BuyReq()
         return
     end
 
-    if self.Data.TimeToShelve > 0 and self.Data.TimeToShelve > XTime.Now() then --没有上架
+    if self.Data.TimeToShelve > 0 and self.Data.TimeToShelve > XTime.GetServerNowTimestamp() then --没有上架
         XUiManager.TipText("PurchaseBuyNotSet")
         return
     end
     
-    if self.Data.TimeToUnShelve > 0 and self.Data.TimeToUnShelve < XTime.Now() then --下架了
+    if self.Data.TimeToUnShelve > 0 and self.Data.TimeToUnShelve < XTime.GetServerNowTimestamp() then --下架了
         XUiManager.TipText("PurchaseSettOff")
         return
     end

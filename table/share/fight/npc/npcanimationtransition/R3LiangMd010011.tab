@@ -10,7 +10,7 @@ R3LiangMd010011		Death	0.1
 R3LiangMd010011		Hit1	0.05
 R3LiangMd010011		Hit2	0.05
 R3LiangMd010011		Behitfly	0.05
-R3LiangMd010011		Hoverhit	0
+R3LiangMd010011		Hoverhit	0.05
 R3LiangMd010011		Falldown	0.1
 R3LiangMd010011		Hitdown	0.1
 R3LiangMd010011		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R3LiangMd010011		TurnLeft	0.1
 R3LiangMd010011		TurnRight	0.1
 R3LiangMd010011		StraightBefore	0.1
 R3LiangMd010011		StraightAfter	0.1
+R3LiangMd010011		UiStand1	0.1
 R3LiangMd010011		Win	0
 R3LiangMd010011		Win2	0.1
 R3LiangMd010011		Runb	0.2
@@ -107,5 +108,5 @@ R3LiangMd010011	Walkr	Walkb	0.1
 R3LiangMd010011	Walkr	Walkl	0.2
 R3LiangMd010011	Hit3	Stand2	0
 R3LiangMd010011	Hit4	Stand2	0
-R3LiangMd010011	RunStart	Run	0.05
+R3LiangMd010011	RunStart	Run	0
 R3LiangMd010011	RunStart	RunStartEnd01	0.1

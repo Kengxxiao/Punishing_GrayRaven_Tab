@@ -15,6 +15,7 @@ local XRewardType = {
     BaseEquip = 5,
     Furniture = 9,
     HeadPortrait = 10,
+    DormCharacter = 11,
 }
 
 local TABLE_REWARD_PATH = "Share/Reward/Reward.tab"
@@ -33,6 +34,7 @@ local Arrange2RewardType = {
     [XArrangeConfigs.Types.BaseEquip] = XRewardType.BaseEquip,
     [XArrangeConfigs.Types.Furniture] = XRewardType.Furniture,
     [XArrangeConfigs.Types.HeadPortrait] = XRewardType.HeadPortrait,
+    [XArrangeConfigs.Types.DormCharacter] = XRewardType.DormCharacter,
 }
 
 local CreateGoodsFunc = {
@@ -155,6 +157,14 @@ local CreateGoodsFunc = {
             TemplateId = templateId,
             Count = count and count or 1,
             Quality = XPlayerManager.GetHeadPortraitQuality()
+        }
+    end,
+
+    [XRewardType.DormCharacter] = function(templateId, count)
+        return {
+            RewardType = XRewardType.DormCharacter,
+            TemplateId = templateId,
+            Count = count and count or 1,
         }
     end,
 }
@@ -333,6 +343,10 @@ local SortHeadPortraits = function(a, b)
     return a.TemplateId > b.TemplateId
 end
 
+local SortDormCharacter = function(a, b)
+    return a.TemplateId > b.TemplateId
+end
+
 local SortRewardTypePrioriy = {
     [XRewardType.Item] = 1,
     [XRewardType.Character] = 4,
@@ -341,6 +355,7 @@ local SortRewardTypePrioriy = {
     [XRewardType.BaseEquip] = 5,
     [XRewardType.Furniture] = 9,
     [XRewardType.HeadPortrait] = 10,
+    [XRewardType.DormCharacter] = 11,
 }
 
 local SortFunc = {
@@ -351,6 +366,7 @@ local SortFunc = {
     [XRewardType.BaseEquip] = SortBaseEquips,
     [XRewardType.Furniture] = SortFurnitures,
     [XRewardType.HeadPortrait] = SortHeadPortraits,
+    [XRewardType.DormCharacter] = SortDormCharacter,
 }
 
 --==============================--

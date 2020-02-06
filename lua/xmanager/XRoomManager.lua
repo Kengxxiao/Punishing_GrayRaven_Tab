@@ -203,7 +203,6 @@ XRoomManagerCreator = function()
         XNetwork.Call(RequestProto.QuitRoomRequest, req, function(res)
             if res.Code ~= XCode.Success then
                 XUiManager.TipCode(res.Code)
-                -- return
             end
             XRoomManager.RoomData = nil
             XEventManager.DispatchEvent(XEventId.EVENT_ROOM_LEAVE_ROOM)
@@ -389,11 +388,11 @@ XRoomManagerCreator = function()
     function XRoomManager.EnterTargetRoom(roomId, stageId, createTime)
         --进入房间
         if XRoomManager.RoomData then
-            XUiManager.TipCode(XCode.RoomManagerEnterRoomTableExist)
+            XUiManager.TipCode(XCode.MatchPlayerAlreadyInRoom)
             return
         end
 
-        if XTime.Now() > createTime + CS.XGame.Config:GetInt("RoomHrefDisableTime") then
+        if XTime.GetServerNowTimestamp() > createTime + CS.XGame.Config:GetInt("RoomHrefDisableTime") then
             XUiManager.TipText("RoomHrefDisabled")
             return
         end
@@ -588,6 +587,9 @@ XRpc.PlayerLeaveNotify = function(response)
 end
 
 XRpc.JoinFightNotify = function(response)
+    if not XDataCenter.RoomManager.RoomData then
+        return
+    end
     XDataCenter.RoomManager.OnJoinFightNotify(response)
 end
 

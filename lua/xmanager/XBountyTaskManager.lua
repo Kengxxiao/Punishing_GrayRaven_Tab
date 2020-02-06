@@ -243,6 +243,19 @@ XBountyTaskManagerCreator = function()
         return false
     end
 
+    --是否本周第一次进入赏金
+    function XBountyTaskManager.IsFirstTimeLoginInWeek()
+        local lastRefreshTime = XBountyTaskManager.GetBountyTaskLastRefreshTime()
+        local refreshTime = XBountyTaskManager.GetRefreshTime()
+
+        if lastRefreshTime ~= refreshTime then
+            return true
+        end
+
+        return false
+    end
+
+
 
     --是否是赏金前置困难副本
     function XBountyTaskManager.CheckBountyTaskPreFight(stageId)
@@ -291,12 +304,36 @@ XBountyTaskManagerCreator = function()
     --设置上次进入赏金的时间
     function XBountyTaskManager.SetBountyTaskLastLoginTime()
         local key = tostring(XPlayer.Id) .. "_LastBountyTaskTime"
-        CS.UnityEngine.PlayerPrefs.SetInt(key, XTime.Now())
+        CS.UnityEngine.PlayerPrefs.SetInt(key, XTime.GetServerNowTimestamp())
     end
 
     --获取上次进入赏金的时间
     function XBountyTaskManager.GetBountyTaskLastLoginTime()
         local key = tostring(XPlayer.Id) .. "_LastBountyTaskTime"
+        local lastLoginTime = CS.UnityEngine.PlayerPrefs.GetInt(key, -1)
+        return lastLoginTime
+    end
+
+
+    --设置上次刷新赏金的时间
+    function XBountyTaskManager.SetBountyTaskLastRefreshTime()
+        local lastRefreshTime = XBountyTaskManager.GetBountyTaskLastRefreshTime()
+
+        if lastRefreshTime == RefreshTime then
+            return
+        end
+
+        local key = tostring(XPlayer.Id) .. "_BountyTaskLastRefreshTime"
+        CS.UnityEngine.PlayerPrefs.SetInt(key, RefreshTime)
+
+
+        XEventManager.DispatchEvent(XEventId.EVENT_BOUNTYTASK_INFO_CHANGE_NOTIFY)
+
+    end
+
+    --获取上次刷新赏金的时间
+    function XBountyTaskManager.GetBountyTaskLastRefreshTime()
+        local key = tostring(XPlayer.Id) .. "_BountyTaskLastRefreshTime"
         local lastLoginTime = CS.UnityEngine.PlayerPrefs.GetInt(key, -1)
         return lastLoginTime
     end

@@ -30,14 +30,14 @@ function XUiPurchaseLB:OnSortFun(data)
     self.SellWaitList = {}--待上架中
     self.ListData = {}
 
-    local curtime = XTime.Now()
+    local curtime = XTime.GetServerNowTimestamp()
     for _,v in pairs(data)do
         if v and not v.IsSelloutHide then
             if v.TimeToUnShelve > 0 and v.TimeToUnShelve <= curtime then--下架了
                 table.insert(self.SellOffList,v)
             elseif v.TimeToShelve > 0 and v.TimeToShelve > curtime then--待上架中
                 table.insert(self.SellWaitList,v)
-            elseif v.BuyTimes > 0 and v.BuyTimes <= v.BuyLimitTimes then--买完了
+            elseif v.BuyTimes > 0 and v.BuyLimitTimes > 0 and v.BuyTimes >= v.BuyLimitTimes then--买完了
                 table.insert(self.SellOutList,v)
             else                                                       --在上架中,还能买。
                 table.insert(self.SellingList,v)
@@ -206,17 +206,17 @@ function XUiPurchaseLB:BuyReq()
         return
     end
 
-    if self.CurData.TimeToShelve > 0 and self.CurData.TimeToShelve > XTime.Now() then --没有上架
+    if self.CurData.TimeToShelve > 0 and self.CurData.TimeToShelve > XTime.GetServerNowTimestamp() then --没有上架
         XUiManager.TipText("PurchaseBuyNotSet")
         return
     end
     
-    if self.CurData.TimeToUnShelve > 0 and self.CurData.TimeToUnShelve < XTime.Now() then --下架了
+    if self.CurData.TimeToUnShelve > 0 and self.CurData.TimeToUnShelve < XTime.GetServerNowTimestamp() then --下架了
         XUiManager.TipText("PurchaseSettOff")
         return
     end
 
-    if self.CurData.TimeToInvalid > 0 and self.CurData.TimeToInvalid < XTime.Now() then --失效了
+    if self.CurData.TimeToInvalid > 0 and self.CurData.TimeToInvalid < XTime.GetServerNowTimestamp() then --失效了
         XUiManager.TipText("PurchaseSettOff")
         return
     end

@@ -55,9 +55,9 @@ function XUiPanelMenu:Update()
             self.Furniture:AdjustPosition(screenPoint)
         end
     end
-
+    
     local viewportPos = camera:WorldToViewportPoint(self.Furniture:GetCenterPosition())
-    self.Transform.anchoredPosition = CS.UnityEngine.Vector2((viewportPos.x-0.5) * CS.UnityEngine.Screen.width, (viewportPos.y-0.5) * CS.UnityEngine.Screen.height)
+    self.Transform.anchoredPosition = CS.UnityEngine.Vector2((viewportPos.x-0.5) * XGlobalVar.UiDesignSize.Width, (viewportPos.y-0.5) * XGlobalVar.UiDesignSize.Height)
     
 end
 

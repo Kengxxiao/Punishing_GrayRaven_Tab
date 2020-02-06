@@ -287,9 +287,18 @@ function XHomeFurnitureObj:GenerateInteractInfo(roomMap)
         local stayPoint = self.GameObject:FindGameObject("StayPos" .. tostring(k))
         local interactPoint = self.GameObject:FindGameObject("Interactpos" .. tostring(k))
 
+        if not XTool.UObjIsNil(stayPoint) then
+            local stayPos = stayPoint.transform.position
+            local stayIsInBound = XHomeDormManager.WorldPosCheckIsInBound(stayPos, self.Room.Transform)
+            if stayIsInBound then
+                info.StayType = XFurnitureInteractUsedType.None
+            else
+                info.StayType = XFurnitureInteractUsedType.Block
+            end
+        end
+
         info.StayPos = stayPoint
         info.InteractPos = interactPoint
-
         table.insert(self.InteractInfoList, info)
     end
 
@@ -371,7 +380,24 @@ end
 function XHomeFurnitureObj:GetAvailableInteract()
     for _, info in ipairs(self.InteractInfoList) do
         if info.UsedType == XFurnitureInteractUsedType.None or info.UsedType == XFurnitureInteractUsedType.Block then
-            return info
+            if info.StayType and info.StayType ~= XFurnitureInteractUsedType.Block then 
+                return info
+            end
+        end
+    end
+
+    return nil
+end
+
+-- 通过构造体ID获取交互中的家具交互点信息
+function XHomeFurnitureObj:GetInteractById(characterId)
+    if not self.InteractInfoList then 
+        return nil
+    end
+
+    for i, v in ipairs(self.InteractInfoList) do
+        if (v.UsedType & XFurnitureInteractUsedType.Character) > 0 and characterId == v.CharacterId then
+            return v
         end
     end
 

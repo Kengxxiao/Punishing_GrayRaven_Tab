@@ -6,7 +6,7 @@ function XUiPanelTrialGrid:Ctor(ui, uiRoot)
     self.Transform = ui.transform
     self.UiRoot = uiRoot
     self.RewardPanelList = {}
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
     self:InitUiAfterAuto()
     XEventManager.AddEventListener(XEventId.EVENT_TRIAL_LEVEL_FINISH, self.OnSettleTrial, self)
 end
@@ -117,22 +117,18 @@ function XUiPanelTrialGrid:SetTrialItemState()
             if XDataCenter.TrialManager.TrialRewardGeted(id) then
                 self.ImgCanGet.gameObject:SetActiveEx(false)
                 self.ImgGeted.gameObject:SetActiveEx(true)
-                -- self.ImgSelect.gameObject:SetActiveEx(false)
             else
                 self.ImgCanGet.gameObject:SetActiveEx(true)
                 self.ImgGeted.gameObject:SetActiveEx(false)
-                -- self.ImgSelect.gameObject:SetActiveEx(true)
             end         
         else
             self.ImgCanGet.gameObject:SetActiveEx(false)
             self.ImgGeted.gameObject:SetActiveEx(false)
-            -- self.ImgSelect.gameObject:SetActiveEx(false)
         end
     else
         self.ImgLock.gameObject:SetActiveEx(true)
         self.ImgCanGet.gameObject:SetActiveEx(false)
         self.ImgGeted.gameObject:SetActiveEx(false)
-        -- self.ImgSelect.gameObject:SetActiveEx(false)
     end
 end
 
@@ -155,46 +151,5 @@ function XUiPanelTrialGrid:SetTrialItemRewardFx()
     end
     self:CloseFx()
 end
-
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelTrialGrid:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelTrialGrid:AutoInitUi()
-    self.ImgCanGet = self.Transform:Find("ImgCanGet"):GetComponent("Image")
-    self.ImgGeted = self.Transform:Find("ImgGeted"):GetComponent("Image")
-    self.ImgIcon = self.Transform:Find("ImgIcon"):GetComponent("Image")
-    self.TxtNameB = self.Transform:Find("TxtName"):GetComponent("Text")
-    self.TxtLevel = self.Transform:Find("TxtLevel"):GetComponent("Text")
-    self.ImgSelect = self.Transform:Find("ImgSelect"):GetComponent("Image")
-    self.ImgLock = self.Transform:Find("ImgLock"):GetComponent("Image")
-    self.TxtLock = self.Transform:Find("ImgLock/TxtLock"):GetComponent("Text")
-    self.UiContent = self.Transform:Find("RewardGridList/Viewport/UiContent")
-    self.PanelReward = self.Transform:Find("RewardGridList/Viewport/UiContent/PanelReward")
-end
-
-function XUiPanelTrialGrid:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelTrialGrid:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelTrialGrid:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
-end
-
-function XUiPanelTrialGrid:AutoAddListener()
-end
--- auto
 
 return XUiPanelTrialGrid

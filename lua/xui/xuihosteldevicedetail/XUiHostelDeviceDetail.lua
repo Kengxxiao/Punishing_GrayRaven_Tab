@@ -70,11 +70,11 @@ end
 
 function XUiHostelDeviceDetail:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
-    self:RegisterListener(self.BtnShowInfo, "onClick", self.OnBtnShowInfoClick)
-    self:RegisterListener(self.BtnIntoUpgrade, "onClick", self.OnBtnIntoUpgradeClick)
-    self:RegisterListener(self.BtnQuest, "onClick", self.OnBtnQuestClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnShowInfo, self.OnBtnShowInfoClick)
+    self:RegisterClickEvent(self.BtnIntoUpgrade, self.OnBtnIntoUpgradeClick)
+    self:RegisterClickEvent(self.BtnQuest, self.OnBtnQuestClick)
 end
 -- auto
 

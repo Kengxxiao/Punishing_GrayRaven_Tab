@@ -1,5 +1,5 @@
 local XUiFubenExperiment = XLuaUiManager.Register(XLuaUi, "UiFubenExperiment")
-local CSXDateGetTime = CS.XDate.GetTime
+local ParseToTimestamp = XTime.ParseToTimestamp
 
 function XUiFubenExperiment:OnAwake()
     self:AddListener()
@@ -79,15 +79,15 @@ function XUiFubenExperiment:CheakTime(id)
     local endTime = XDataCenter.FubenExperimentManager.GetEndTime(id)
     if not endTime then
     else
-        endTime = CSXDateGetTime(endTime)
-        if endTime - XTime.Now() <= 0 then
+        endTime = ParseToTimestamp(endTime)
+        if (endTime == nil) or (endTime - XTime.GetServerNowTimestamp() <= 0) then
             return false
         end
     end
     local startTime = XDataCenter.FubenExperimentManager.GetStartTime(id)
     if startTime then
-        startTime = CSXDateGetTime(startTime)
-        if startTime - XTime.Now() > 0 then
+        startTime = ParseToTimestamp(startTime)
+        if (startTime == nil) or (startTime - XTime.GetServerNowTimestamp() > 0) then
             return false
         end
     end
@@ -95,7 +95,9 @@ function XUiFubenExperiment:CheakTime(id)
 end
 
 function XUiFubenExperiment:SetTime(time)
-    local leftTime = CSXDateGetTime(time) - XTime.Now()
+    local timestamp = ParseToTimestamp(time)
+    if not timestamp then return end
+    local leftTime = timestamp - XTime.GetServerNowTimestamp()
     XCountDown.CreateTimer(self.GameObject.name, leftTime)
     XCountDown.BindTimer(self.GameObject, self.GameObject.name, function(v, oldV)
             self.TxtTime.text = CS.XTextManager.GetText("DrawResetTimeShort", XUiHelper.GetTime(v, XUiHelper.TimeFormatType.DRAW))

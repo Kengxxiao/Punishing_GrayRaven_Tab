@@ -4,8 +4,10 @@ function XUiPanelSelectGift:Ctor(rootUi, ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.RootUi = rootUi
-    self:InitAutoScript()
     self.RewardItems = {}
+
+    XTool.InitUiObject(self)
+    self:AutoAddListener()
 end
 
 function XUiPanelSelectGift:Refresh(id)
@@ -21,7 +23,7 @@ function XUiPanelSelectGift:Refresh(id)
     local onCreate = function(item, data)
         item:Refresh(data, false, true, true)
     end
-    XUiHelper.CreateTemplates(self.RootUi, self.RewardItems, gridDatas, XUiBagItem.New, self.GridRewardItem.gameObject, self.PanelRewardA, onCreate)
+    XUiHelper.CreateTemplates(self.RootUi, self.RewardItems, gridDatas, XUiBagItem.New, self.GridRewardItem.gameObject, self.PanelReward, onCreate)
 
     for _, grid in pairs(self.RewardItems) do
         grid:SetClickCallback(function(gridData, grid)
@@ -39,9 +41,9 @@ function XUiPanelSelectGift:Refresh(id)
     self.TxtCanSelectNum.text = CS.XTextManager.GetText("SelectGiftCount", template.SelectCount)
     self.TxtGfitCount.text = 0
 
-    self.GameObject:SetActive(true)
-    self.ImgCantConfirm.gameObject:SetActive(self.SelectCount ~= self.SupposedCount)
-    self.BtnConfirm.gameObject:SetActive(self.SelectCount == self.SupposedCount)
+    self.GameObject:SetActiveEx(true)
+    self.ImgCantConfirm.gameObject:SetActiveEx(self.SelectCount ~= self.SupposedCount)
+    self.BtnConfirm.gameObject:SetActiveEx(self.SelectCount == self.SupposedCount)
     self.RootUi:PlayAnimation("AnimShengDanEnable")
 end
 
@@ -71,56 +73,17 @@ function XUiPanelSelectGift:SelectRewardGrid(gridData, grid)
     end
 
     self.TxtGfitCount.text = self.SelectCount
-    self.BtnConfirm.gameObject:SetActive(self.SelectCount == self.SupposedCount)
-    self.ImgCantConfirm.gameObject:SetActive(self.SelectCount ~= self.SupposedCount)
-end
-
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelSelectGift:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelSelectGift:AutoInitUi()
-    self.TxtGiftName = self.Transform:Find("TxtGiftName"):GetComponent("Text")
-    self.TxtCanSelectNum = self.Transform:Find("PaneSelectGiftNum/TxtCanSelectNum"):GetComponent("Text")
-    self.TxtGfitCount = self.Transform:Find("PaneSelectGiftNum/TxtGfitCount"):GetComponent("Text")
-    self.GridRewardItem = self.Transform:Find("GridRewardItem")
-    self.RImgIconE = self.Transform:Find("GridRewardItem/RImgIcon"):GetComponent("RawImage")
-    self.PanelRewardA = self.Transform:Find("ViewReward/Viewport/PanelReward")
-    self.BtnCloseA = self.Transform:Find("BtnClose"):GetComponent("Button")
-    self.BtnConfirm = self.Transform:Find("BtnConfirm"):GetComponent("Button")
-    self.ImgCantConfirm = self.Transform:Find("ImgCantConfirm"):GetComponent("Image")
-end
-
-function XUiPanelSelectGift:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelSelectGift:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelSelectGift:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
+    self.BtnConfirm.gameObject:SetActiveEx(self.SelectCount == self.SupposedCount)
+    self.ImgCantConfirm.gameObject:SetActiveEx(self.SelectCount ~= self.SupposedCount)
 end
 
 function XUiPanelSelectGift:AutoAddListener()
-    self:RegisterClickEvent(self.BtnCloseA, self.OnBtnCloseAClick)
-    self:RegisterClickEvent(self.BtnConfirm, self.OnBtnConfirmClick)
-end
--- auto
-function XUiPanelSelectGift:OnBtnCloseAClick(eventData)
-    self.GameObject:SetActive(false)
+    self.BtnClose.CallBack = function() self:Close() end
+    self.BtnCloseAllScreen.CallBack = function() self:Close() end
+    self.BtnConfirm.CallBack = function() self:OnBtnConfirmClick() end
 end
 
-function XUiPanelSelectGift:OnBtnConfirmClick(eventData)
+function XUiPanelSelectGift:OnBtnConfirmClick()
     if self.SelectCount ~= self.SupposedCount then return end
 
     local rewardIds = {}
@@ -133,7 +96,11 @@ function XUiPanelSelectGift:OnBtnConfirmClick(eventData)
     end
     XDataCenter.ItemManager.Use(self.ItemId, nil, 1, callback, rewardIds)
 
-    self.GameObject:SetActive(false)
+    self:Close()
+end
+
+function XUiPanelSelectGift:Close()
+    self.GameObject:SetActiveEx(false)
 end
 
 return XUiPanelSelectGift

@@ -120,9 +120,9 @@ end
 
 function XUiGridTask:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
-    self:RegisterListener(self.BtnFinish, "onClick", self.OnBtnFinishClick)
-    self:RegisterListener(self.BtnSkip, "onClick", self.OnBtnSkipClick)
+    XUiHelper.RegisterClickEvent(self,self.BtnClick, self.OnBtnClickClick)
+    XUiHelper.RegisterClickEvent(self,self.BtnFinish, self.OnBtnFinishClick)
+    XUiHelper.RegisterClickEvent(self ,self.BtnSkip, self.OnBtnSkipClick)
 end
 -- auto
 function XUiGridTask:OnBtnClickClick(...)

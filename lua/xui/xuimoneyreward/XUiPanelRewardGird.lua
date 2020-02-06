@@ -4,6 +4,7 @@ function XUiPanelRewardGird:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.GridList = {}
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.GridCommon.gameObject:SetActive(false)
 end
@@ -60,15 +61,15 @@ function XUiPanelRewardGird:InitAutoScript()
 end
 
 function XUiPanelRewardGird:AutoInitUi()
-    self.TxtValue = self.Transform:Find("TxtValue"):GetComponent("Text")
-    self.TxtName = self.Transform:Find("TxtName"):GetComponent("Text")
-    self.PanelRewards = self.Transform:Find("PanelRewards")
-    self.GridCommon = self.Transform:Find("PanelRewards/GridCommon")
-    self.PanelSite = self.Transform:Find("PanelRewards/GridCommon/PanelSite")
-    self.TxtSite = self.Transform:Find("PanelRewards/GridCommon/PanelSite/TxtSite"):GetComponent("Text")
-    self.ImgCur = self.Transform:Find("ImgCur"):GetComponent("Image")
-    self.ImgQuality = self.Transform:Find("ImgQuality"):GetComponent("Image")
-    self.RImgIcon = self.Transform:Find("RImgIcon"):GetComponent("RawImage")
+    -- self.TxtValue = self.Transform:Find("TxtValue"):GetComponent("Text")
+    -- self.TxtName = self.Transform:Find("TxtName"):GetComponent("Text")
+    -- self.PanelRewards = self.Transform:Find("PanelRewards")
+    -- self.GridCommon = self.Transform:Find("PanelRewards/GridCommon")
+    -- self.PanelSite = self.Transform:Find("PanelRewards/GridCommon/PanelSite")
+    -- self.TxtSite = self.Transform:Find("PanelRewards/GridCommon/PanelSite/TxtSite"):GetComponent("Text")
+    -- self.ImgCur = self.Transform:Find("ImgCur"):GetComponent("Image")
+    -- self.ImgQuality = self.Transform:Find("ImgQuality"):GetComponent("Image")
+    -- self.RImgIcon = self.Transform:Find("RImgIcon"):GetComponent("RawImage")
 end
 
 function XUiPanelRewardGird:RegisterClickEvent(uiNode, func)

@@ -65,7 +65,7 @@ end
 
 function XUiGridFashion:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnFashion, "onClick", self.OnBtnFashionClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnFashion, self.OnBtnFashionClick)
 end
 -- auto
 

@@ -124,10 +124,10 @@ function XUiGridActivityBanner:Refresh(chapter, uiRoot)
         local finishCount, totalCount = XDataCenter.FubenFestivalActivityManager.GetFestivalProgress(sectionId)
         self.TxtConsumeCount.text = CsXTextManager.GetText("ActivityBossSingleProcess", finishCount, totalCount)
 
-        local startTimeSecond = CS.XDate.GetTime(sectionCfg.BeginTimeStr)
-        local endTimeSecond = CS.XDate.GetTime(sectionCfg.EndTimeStr)
-        local now = XTime.Now()
-        if now >= startTimeSecond and now <= endTimeSecond then
+        local startTimeSecond = XTime.ParseToTimestamp(sectionCfg.BeginTimeStr)
+        local endTimeSecond = XTime.ParseToTimestamp(sectionCfg.EndTimeStr)
+        local now = XTime.GetServerNowTimestamp()
+        if startTimeSecond and endTimeSecond and now >= startTimeSecond and now <= endTimeSecond then
             self:CreateCommonTimer(startTimeSecond, endTimeSecond, function()
                 uiRoot:SetupDynamicTable()
             end)
@@ -138,7 +138,7 @@ function XUiGridActivityBanner:Refresh(chapter, uiRoot)
         -- 功能开启AcitvityFestivalProgress
         if sectionCfg.FunctionOpenId > 0 then
             if not XFunctionManager.JudgeCanOpen(sectionCfg.FunctionOpenId) then
-            self.PanelLock.gameObject:SetActive(true)
+                self.PanelLock.gameObject:SetActive(true)
                 self.TxtLock.text = XFunctionManager.GetFunctionOpenCondition(sectionCfg.FunctionOpenId)
             else
                 self.PanelLock.gameObject:SetActive(false)
@@ -146,17 +146,83 @@ function XUiGridActivityBanner:Refresh(chapter, uiRoot)
         else
             self.PanelLock.gameObject:SetActive(false)
         end
+    elseif chapter.Type == XDataCenter.FubenManager.ChapterType.ActivityBabelTower then
+        self:RefreshBabelTowerBanner(chapter, uiRoot)
     end
 end
 
+function XUiGridActivityBanner:RefreshBabelTowerBanner(chapter, uiRoot)
+    local activityId = chapter.Id
+    local activityTemplate = XFubenBabelTowerConfigs.GetBabelTowerActivityTemplateById(activityId)
+    if not activityTemplate then return end
+
+    self.TxtName.text = XFubenBabelTowerConfigs.GetActivityName(activityId)
+    self.PanelActivityTag.gameObject:SetActiveEx(true)
+    self.RImgIcon:SetRawImage(chapter.BannerBg)
+    local curScore, maxScore = XDataCenter.FubenBabelTowerManager.GetCurrentActivityScores()
+    self.TxtConsumeCount.text = CS.XTextManager.GetText("BabelTowerStageShowDesc", maxScore)
+
+    local startTimeSecond = XTime.ParseToTimestamp(activityTemplate.BeginTimeStr)
+    local fightTimeSecond = XTime.ParseToTimestamp(activityTemplate.FightEndTimeStr)
+    local endTimeSecond = XTime.ParseToTimestamp(activityTemplate.EndTimeStr)
+    local now = XTime.GetServerNowTimestamp()
+    if startTimeSecond and endTimeSecond and fightTimeSecond and now >= startTimeSecond and now <= endTimeSecond then
+        self:CreateCommonActivityTimer(startTimeSecond, fightTimeSecond, endTimeSecond, function()
+            uiRoot:SetupDynamicTable()
+        end)
+    else
+        self.PanelLeftTime.gameObject:SetActiveEx(false)
+    end
+    
+    
+    -- 条件是否满足
+    if XFunctionManager.FunctionName.BabelTower then
+        if not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.BabelTower) then
+            self.PanelLock.gameObject:SetActive(true)
+            self.TxtLock.text = XFunctionManager.GetFunctionOpenCondition(XFunctionManager.FunctionName.BabelTower)
+        else
+            self.PanelLock.gameObject:SetActive(false)
+        end
+    else
+        self.PanelLock.gameObject:SetActive(false)
+    end
+end
+
+function XUiGridActivityBanner:CreateCommonActivityTimer(startTime, figthEndTime, activityEndTime, endCb)
+    local time = XTime.GetServerNowTimestamp()
+    local fightStr = CsXTextManager.GetText("ActivityBranchFightLeftTime")
+    local activityStr = CsXTextManager.GetText("BabelTowerActivityTimeLeft")
+    self:StopCommonTimer()
+    self.PanelLeftTime.gameObject:SetActiveEx(true)
+    if time <= figthEndTime then
+        self.TxtLeftTime.text = string.format("%s%s", fightStr, XUiHelper.GetTime(figthEndTime - time, XUiHelper.TimeFormatType.ACTIVITY))
+    else
+        self.TxtLeftTime.text = string.format("%s%s", activityStr, XUiHelper.GetTime(activityEndTime - time, XUiHelper.TimeFormatType.ACTIVITY))
+    end
+
+    self.CommonTimer = CS.XScheduleManager.ScheduleForever(function(...)
+        time = XTime.GetServerNowTimestamp()
+        if time > activityEndTime or time < startTime then
+            self:StopCommonTimer()
+            if endCb then endCb() end
+            return
+        end
+        if time <= figthEndTime then
+            self.TxtLeftTime.text = string.format("%s%s", fightStr, XUiHelper.GetTime(figthEndTime - time, XUiHelper.TimeFormatType.ACTIVITY))
+        else
+            self.TxtLeftTime.text = string.format("%s%s", activityStr, XUiHelper.GetTime(activityEndTime - time, XUiHelper.TimeFormatType.ACTIVITY))
+        end
+    end, CS.XScheduleManager.SECOND, 0)
+end
+
 function XUiGridActivityBanner:CreateCommonTimer(startTime, endTime, endCb)
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local fightStr = CsXTextManager.GetText("ActivityBranchFightLeftTime")
     self.TxtLeftTime.text = string.format("%s%s", fightStr, XUiHelper.GetTime(endTime - time, XUiHelper.TimeFormatType.ACTIVITY))
     self:StopCommonTimer()
     self.PanelLeftTime.gameObject:SetActiveEx(true)
     self.CommonTimer = CS.XScheduleManager.ScheduleForever(function(...)
-        time = XTime.Now()
+        time = XTime.GetServerNowTimestamp()
         if time > endTime then
             self:StopCommonTimer()
             if endCb then endCb() end
@@ -174,8 +240,8 @@ function XUiGridActivityBanner:StopCommonTimer()
 end
 
 function XUiGridActivityBanner:CreateActivityTimer(fightEndTime,activityEndTime,endCb)
-    local time = XTime.Now()
-    if time > activityEndTime then return end  
+    local time = XTime.GetServerNowTimestamp()
+    if time > activityEndTime then return end
 
     self:DestroyActivityTimer()
 

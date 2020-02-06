@@ -57,8 +57,8 @@ end
 
 function XUiHostelDelegateReporter:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnReport, "onClick", self.OnBtnReportClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnReport, self.OnBtnReportClick)
 end
 -- auto
 

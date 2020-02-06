@@ -60,8 +60,8 @@ end
 
 function XUiGridShop:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnCondition, "onClick", self.OnBtnConditionClick)
-    self:RegisterListener(self.BtnBuy, "onClick", self.OnBtnBuyClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCondition, self.OnBtnConditionClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBuy, self.OnBtnBuyClick)
 end
 -- auto
 function XUiGridShop:OnBtnConditionClick(...)

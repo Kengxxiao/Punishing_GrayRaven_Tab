@@ -144,7 +144,7 @@ function XUiPanelSignBoard:Update()
         self.SignBoardPlayer:Update(dt)
     end
 
-    if self.IdleTab and self.IdleTab[1] and self.SignBoardPlayer.Status == 0 and self.SignBoardPlayer.LastPlayTime > 0 and XTime.Now() - self.SignBoardPlayer.LastPlayTime >= CS.XGame.ClientConfig:GetInt("SignBoardWaitInterval") and self.AutoPlay then
+    if self.IdleTab and self.IdleTab[1] and self.SignBoardPlayer.Status == 0 and self.SignBoardPlayer.LastPlayTime > 0 and XTime.GetServerNowTimestamp() - self.SignBoardPlayer.LastPlayTime >= CS.XGame.ClientConfig:GetInt("SignBoardWaitInterval") and self.AutoPlay then
         self.SignBoardPlayer:ForcePlay(self.IdleTab[1])
         self.SignBoardPlayer.LastPlayTime = -1
         self.CanBreakTrigger = true
@@ -205,11 +205,19 @@ function XUiPanelSignBoard:OnBtnReplaceClick(eventData)
 end
 
 function XUiPanelSignBoard:OnBtnCoatingClick(eventData)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityMain) then
+        XUiManager.TipMsg(CS.XTextManager.GetText("FunctionalMaintain"))
+        return
+    end
     self.SignBoardPlayer:Stop()
     XLuaUiManager.Open("UiFashion", self.DisplayCharacterId)
 end
 
 function XUiPanelSignBoard:OnBtnCommunicationClick(eventData)
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityMain) then
+        XUiManager.TipMsg(CS.XTextManager.GetText("FunctionalMaintain"))
+        return
+    end
     self.PanelLayout.gameObject:SetActive(false)
     XLuaUiManager.Open("UiFavorability")
 end

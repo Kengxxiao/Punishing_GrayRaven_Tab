@@ -1,0 +1,107 @@
+Role	State	Target	TransitionDuration
+Mt1DubianfeijiMd010010		Born	0
+Mt1DubianfeijiMd010010		Stand2	0.1
+Mt1DubianfeijiMd010010		Stand1	0.1
+Mt1DubianfeijiMd010010		Stand3	0.1
+Mt1DubianfeijiMd010010		Standchange	0.1
+Mt1DubianfeijiMd010010		Run	0.1
+Mt1DubianfeijiMd010010		Walk	0.1
+Mt1DubianfeijiMd010010		Death	0.1
+Mt1DubianfeijiMd010010		Hit1	0.05
+Mt1DubianfeijiMd010010		Hit2	0.05
+Mt1DubianfeijiMd010010		Behitfly	0.05
+Mt1DubianfeijiMd010010		Hoverhit	0.05
+Mt1DubianfeijiMd010010		Falldown	0.1
+Mt1DubianfeijiMd010010		Hitdown	0.1
+Mt1DubianfeijiMd010010		Lieonfloor	0.1
+Mt1DubianfeijiMd010010		Standup	0.1
+Mt1DubianfeijiMd010010		Straight	0.1
+Mt1DubianfeijiMd010010		Stun	0.1
+Mt1DubianfeijiMd010010		TurnLeft	0.1
+Mt1DubianfeijiMd010010		TurnRight	0.1
+Mt1DubianfeijiMd010010		StraightBefore	0.1
+Mt1DubianfeijiMd010010		StraightAfter	0.1
+Mt1DubianfeijiMd010010		UiStand1	0.1
+Mt1DubianfeijiMd010010		Win	0
+Mt1DubianfeijiMd010010		Win2	0.1
+Mt1DubianfeijiMd010010		Runb	0.2
+Mt1DubianfeijiMd010010		Runl	0.2
+Mt1DubianfeijiMd010010		Runr	0.2
+Mt1DubianfeijiMd010010		Stop	0.1
+Mt1DubianfeijiMd010010		Walkb	0.1
+Mt1DubianfeijiMd010010		Walkl	0.1
+Mt1DubianfeijiMd010010		Walkr	0.1
+Mt1DubianfeijiMd010010		Fail	0.1
+Mt1DubianfeijiMd010010		Save	0.1
+Mt1DubianfeijiMd010010		Hit3	0.05
+Mt1DubianfeijiMd010010		Hit4	0.05
+Mt1DubianfeijiMd010010		RunStart	0.1
+Mt1DubianfeijiMd010010		RunStartEnd01	0.1
+Mt1DubianfeijiMd010010		Move1	0.1
+Mt1DubianfeijiMd010010		Move2	0.1
+Mt1DubianfeijiMd010010		Move3	0.1
+Mt1DubianfeijiMd010010	Stand2	Standchange	0.5
+Mt1DubianfeijiMd010010	Stand2	Run	0.5
+Mt1DubianfeijiMd010010	Stand2	Walk	0.5
+Mt1DubianfeijiMd010010	Stand2	Walkb	0.5
+Mt1DubianfeijiMd010010	Stand2	Walkl	0.5
+Mt1DubianfeijiMd010010	Stand2	Walkr	0.5
+Mt1DubianfeijiMd010010	Stand1	Run	0.5
+Mt1DubianfeijiMd010010	Stand1	Walk	0.5
+Mt1DubianfeijiMd010010	Stand1	Walkb	0.5
+Mt1DubianfeijiMd010010	Stand1	Walkl	0.5
+Mt1DubianfeijiMd010010	Stand1	Walkr	0.5
+Mt1DubianfeijiMd010010	Standchange	Stand1	0.1
+Mt1DubianfeijiMd010010	Standchange	Run	0.1
+Mt1DubianfeijiMd010010	Standchange	Walk	0.1
+Mt1DubianfeijiMd010010	Run	Stop	0.2
+Mt1DubianfeijiMd010010	Run	Stand2	0.2
+Mt1DubianfeijiMd010010	Run	Runb	0.2
+Mt1DubianfeijiMd010010	Run	Runl	0.2
+Mt1DubianfeijiMd010010	Run	Runr	0.2
+Mt1DubianfeijiMd010010	Walk	Stand2	0.1
+Mt1DubianfeijiMd010010	Hit1	Stand2	0
+Mt1DubianfeijiMd010010	Hit2	Stand2	0
+Mt1DubianfeijiMd010010	Behitfly	Hoverhit	0.1
+Mt1DubianfeijiMd010010	Behitfly	Falldown	0.1
+Mt1DubianfeijiMd010010	Hoverhit	Falldown	0.1
+Mt1DubianfeijiMd010010	Falldown	Lieonfloor	0.1
+Mt1DubianfeijiMd010010	Hitdown	Lieonfloor	0.1
+Mt1DubianfeijiMd010010	Standup	Stand2	0.1
+Mt1DubianfeijiMd010010	Straight	Stand2	0.1
+Mt1DubianfeijiMd010010	Stun	Stand2	0.1
+Mt1DubianfeijiMd010010	TurnLeft	Stand2	0.1
+Mt1DubianfeijiMd010010	TurnRight	Stand2	0.1
+Mt1DubianfeijiMd010010	Win	Win2	0.1
+Mt1DubianfeijiMd010010	Runb	Stand2	0.2
+Mt1DubianfeijiMd010010	Runb	Run	0.2
+Mt1DubianfeijiMd010010	Runb	Runl	0.2
+Mt1DubianfeijiMd010010	Runb	Runr	0.2
+Mt1DubianfeijiMd010010	Runl	Stand2	0.2
+Mt1DubianfeijiMd010010	Runl	Run	0.2
+Mt1DubianfeijiMd010010	Runl	Runb	0.2
+Mt1DubianfeijiMd010010	Runl	Runr	0.2
+Mt1DubianfeijiMd010010	Runr	Stand2	0.2
+Mt1DubianfeijiMd010010	Runr	Run	0.2
+Mt1DubianfeijiMd010010	Runr	Runb	0.2
+Mt1DubianfeijiMd010010	Runr	Runl	0.2
+Mt1DubianfeijiMd010010	Stop	Stand2	0.1
+Mt1DubianfeijiMd010010	Walkb	Stand2	0.5
+Mt1DubianfeijiMd010010	Walkb	Walk	0.5
+Mt1DubianfeijiMd010010	Walkb	Walkl	0.5
+Mt1DubianfeijiMd010010	Walkb	Walkr	0.5
+Mt1DubianfeijiMd010010	Walkl	Stand2	0.5
+Mt1DubianfeijiMd010010	Walkl	Walk	0.5
+Mt1DubianfeijiMd010010	Walkl	Walkb	0.5
+Mt1DubianfeijiMd010010	Walkl	Walkr	0.5
+Mt1DubianfeijiMd010010	Walkr	Stand2	0.5
+Mt1DubianfeijiMd010010	Walkr	Walk	0.5
+Mt1DubianfeijiMd010010	Walkr	Walkb	0.5
+Mt1DubianfeijiMd010010	Walkr	Walkl	0.5
+Mt1DubianfeijiMd010010	Hit3	Stand2	0
+Mt1DubianfeijiMd010010	Hit4	Stand2	0
+Mt1DubianfeijiMd010010	RunStart	Run	0
+Mt1DubianfeijiMd010010	RunStart	RunStartEnd01	0.1
+Mt1DubianfeijiMd010010	Walkb	Stand1	0.3
+Mt1DubianfeijiMd010010	Walkl	Stand1	0.3
+Mt1DubianfeijiMd010010	Walkr	Stand1	0.3

@@ -28,7 +28,7 @@ end
 
 function XUiAwarenessTfBtnPos:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnPos, "onClick", self.OnBtnPosClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnPos, self.OnBtnPosClick)
 end
 -- auto
 function XUiAwarenessTfBtnPos:GetAutoKey(uiNode, eventName)

@@ -63,7 +63,7 @@ end
 
 function XUiHostelMissionComplete:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOk, "onClick", self.OnBtnOkClick)
+    self:RegisterClickEvent(self.BtnOk, self.OnBtnOkClick)
 end
 -- auto
 

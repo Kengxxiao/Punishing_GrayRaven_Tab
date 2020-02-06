@@ -22,7 +22,10 @@ function XUiGridChapter:Ctor(rootUi, ui, autoChangeBgCb)
     --配置的格子位移超过某个阀值时，更换背景图片
     if autoChangeBgCb then
         self.AutoChangeBgCb = autoChangeBgCb
-        self:InitAutoChangeBgComponents()
+        local behaviour = self.GameObject:AddComponent(typeof(CS.XLuaBehaviour))
+        if self.Update then
+            behaviour.LuaUpdate = function() self:Update() end
+        end
     end
 
     -- ScrollRect的点击和拖拽会触发关闭详细面板
@@ -33,10 +36,8 @@ function XUiGridChapter:Ctor(rootUi, ui, autoChangeBgCb)
 end
 
 function XUiGridChapter:InitAutoChangeBgComponents()
-    local behaviour = self.GameObject:AddComponent(typeof(CS.XLuaBehaviour))
-    if self.Update then
-        behaviour.LuaUpdate = function() self:Update() end
-    end
+    local datumLinePrecent = XDataCenter.FubenActivityBranchManager.GetChapterDatumLinePrecent(self.Chapter.Id)
+    if not datumLinePrecent or datumLinePrecent == 0 then return end
 
     --阀值为滚动容器去掉自适应扩展的padding宽度之后的实际宽度/2
     -- local padding = self.BoundSizeFitter.padding
@@ -46,16 +47,16 @@ function XUiGridChapter:InitAutoChangeBgComponents()
     local viewPortRect = XUiHelper.TryGetComponent(self.Transform, "PaneStageList/ViewPort", "RectTransform")
     if not viewPortRect then return end
     local realWidth = viewPortRect.rect.width
-    self.LimitPosX = realWidth * 0.5
+    self.LimitPosX = realWidth * datumLinePrecent
 end
 
 function XUiGridChapter:RefreshAutoChangeBgStageIndex()
     if not self.LimitPosX then return end
+
     --关卡格子相对于阀值点的位置
-    local chapterId = self.Chapter.Id
-    local chapterCfg = XFubenActivityBranchConfigs.GetChapterCfg(chapterId)
-    local stageIndex = chapterCfg.MoveStageIndex
-    if stageIndex == 0 then return end
+    local stageIndex = XDataCenter.FubenActivityBranchManager.GetChapterMoveStageIndex(self.Chapter.Id)
+    if not stageIndex or stageIndex == 0 then return end
+
     local stageParent = self.PanelStageContent.transform:Find("Stage" .. stageIndex):GetComponent("RectTransform")
     if XTool.UObjIsNil(stageParent) then
         XLog.Error("XUiGridChapter:RefreshAutoChangeBgStageIndex error:stage not exist,stageIndex is:" .. stageIndex)
@@ -229,20 +230,21 @@ function XUiGridChapter:UpdateChapterGrid(data)
     self.ShowStageCb = data.ShowStageCb
     self.EggStageList = {}
     self.NormalStageList = {}
-    for k,v in pairs(data.StageList) do
+    for k, v in pairs(data.StageList) do
         local stageCfg = XDataCenter.FubenManager.GetStageCfg(v)
         if self:IsEggStage(stageCfg) then
-            local eggNum = self:GetEggNum(data.StageList,stageCfg)
+            local eggNum = self:GetEggNum(data.StageList, stageCfg)
             if eggNum ~= 0 then
-                local egg = {Id = v,Num = eggNum}
-                table.insert(self.EggStageList,egg)
+                local egg = { Id = v, Num = eggNum }
+                table.insert(self.EggStageList, egg)
             end
         else
-            table.insert(self.NormalStageList,v)
+            table.insert(self.NormalStageList, v)
         end
     end
 
     self:SetStageList()
+    self:InitAutoChangeBgComponents()
     self:RefreshAutoChangeBgStageIndex()
 end
 
@@ -279,8 +281,8 @@ function XUiGridChapter:ClickStageGridByStageId(selectStageId)
     end
 end
 
-function XUiGridChapter:GetEggNum(stageList,eggStageCfg)
-    for k,v in pairs(stageList) do
+function XUiGridChapter:GetEggNum(stageList, eggStageCfg)
+    for k, v in pairs(stageList) do
         if v == eggStageCfg.PreStageId[1] then --1为1号前置关卡
             return k
         end
@@ -323,7 +325,7 @@ function XUiGridChapter:SetStageList()
                 local prefabName = CS.XGame.ClientConfig:GetString(uiName)
                 local prefab = parent:LoadPrefab(prefabName)
 
-                grid = XUiGridStage.New(self.RootUi, prefab, handler(self, self.ClickStageGrid),XFubenConfigs.FUBENTYPE_NORMAL)
+                grid = XUiGridStage.New(self.RootUi, prefab, handler(self, self.ClickStageGrid), XFubenConfigs.FUBENTYPE_NORMAL)
                 grid.Parent = parent
                 self.GridStageList[i] = grid
             end
@@ -346,10 +348,10 @@ function XUiGridChapter:SetStageList()
                 if not grid then
                     local uiName = "GridStageSquare"
                     local parentsParent = self.PanelStageContent.transform:Find("Stage" .. self.EggStageList[i].Num)
-                    local parent = self.PanelStageContent.transform:Find("Stage" .. self.EggStageList[i].Num.."/EggStage")
+                    local parent = self.PanelStageContent.transform:Find("Stage" .. self.EggStageList[i].Num .. "/EggStage")
                     local prefabName = CS.XGame.ClientConfig:GetString(uiName)
                     local prefab = parent:LoadPrefab(prefabName)
-                    grid = XUiGridStage.New(self.RootUi, prefab, handler(self, self.ClickStageGrid),XFubenConfigs.FUBENTYPE_NORMAL)
+                    grid = XUiGridStage.New(self.RootUi, prefab, handler(self, self.ClickStageGrid), XFubenConfigs.FUBENTYPE_NORMAL)
                     grid.Parent = parentsParent
                     self.GridEggStageList[i] = grid
                 end
@@ -401,7 +403,8 @@ function XUiGridChapter:ClickStageGrid(grid)
 
     -- 选中当前选择
     grid:SetStageSelect()
-
+    
+    grid:SetStoryStageSelect()
     -- 滚动容器自由移动
     self.ScrollRect.movementType = CS.UnityEngine.UI.ScrollRect.MovementType.Unrestricted
 
@@ -422,6 +425,7 @@ function XUiGridChapter:CancelSelect()
         return false
     end
     self.CurStageGrid:SetStageActive()
+    self.CurStageGrid:SetStoryStageActive()
     self.CurStageGrid = nil
 
     if self.HideStageCb then

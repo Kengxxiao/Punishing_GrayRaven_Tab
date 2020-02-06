@@ -59,7 +59,7 @@ end
 
 function XUiGridSkillItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnIconBg, "onClick", self.OnBtnIconBgClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnIconBg, self.OnBtnIconBgClick)
 end
 -- auto
 function XUiGridSkillItem:OnBtnIconBgClick(...)

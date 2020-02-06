@@ -91,7 +91,7 @@ end
 
 function XUiPanelRewardBox:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnOpen, "onClick", self.OnBtnOpenClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnOpen, self.OnBtnOpenClick)
 end
 -- auto
 function XUiPanelRewardBox:Refresh(data)

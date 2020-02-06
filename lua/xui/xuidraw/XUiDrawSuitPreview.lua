@@ -57,7 +57,7 @@ function XUiDrawSuitPreview:RefreshData()
 end
 
 function XUiDrawSuitPreview:OnEnable()
-    XUiHelper.PlayAnimation(self, "AniDrawSuitPreviewBegin")
+    --XUiHelper.PlayAnimation(self, "AniDrawSuitPreviewBegin")
     if self.ParentUi then
         self:UpdatePanel()
     end
@@ -88,16 +88,16 @@ function XUiDrawSuitPreview:InitAutoScript()
 end
 
 function XUiDrawSuitPreview:AutoInitUi()
-    self.PanelSuitPreview = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview")
-    self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelWafer/TxtName"):GetComponent("Text")
-    self.RImgIco = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelWafer/RImgIco"):GetComponent("RawImage")
-    self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent")
-    self.TxtSkillDes1 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes1"):GetComponent("Text")
-    self.TxtSkillDes2 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes2"):GetComponent("Text")
-    self.TxtSkillDes3 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes3"):GetComponent("Text")
-    self.PanelGrid = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelSuitDetail/PanelGrid")
-    self.GridCommon = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelSuitDetail/PanelGrid/GridCommon")
-    self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
+    -- self.PanelSuitPreview = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview")
+    -- self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelWafer/TxtName"):GetComponent("Text")
+    -- self.RImgIco = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelWafer/RImgIco"):GetComponent("RawImage")
+    -- self.PanelContent = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent")
+    -- self.TxtSkillDes1 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes1"):GetComponent("Text")
+    -- self.TxtSkillDes2 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes2"):GetComponent("Text")
+    -- self.TxtSkillDes3 = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelDetail/PanelContent/TxtSkillDes3"):GetComponent("Text")
+    -- self.PanelGrid = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelSuitDetail/PanelGrid")
+    -- self.GridCommon = self.Transform:Find("SafeAreaContentPane/PanelSuitPreview/PanelSuitDetail/PanelGrid/GridCommon")
+    -- self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
 end
 
 function XUiDrawSuitPreview:AutoAddListener()
@@ -106,7 +106,7 @@ end
 -- auto
 
 function XUiDrawSuitPreview:OnBtnCloseClick(eventData)
-    XUiHelper.PlayAnimation(self, "AniDrawSuitPreviewEnd", nil, function()
-        self:Close()
-    end)
+    -- XUiHelper.PlayAnimation(self, "AniDrawSuitPreviewEnd", nil, function()
+    --     self:Close()
+    -- end)
 end

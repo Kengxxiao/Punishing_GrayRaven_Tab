@@ -47,7 +47,7 @@ end
 
 function XUiHostelDeviceUpgradeResult:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClick, "onClick", self.OnBtnClickClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnClick, self.OnBtnClickClick)
 end
 -- auto
 

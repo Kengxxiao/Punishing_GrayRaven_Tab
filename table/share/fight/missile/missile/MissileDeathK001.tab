@@ -1,9 +1,9 @@
-Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
-815099		2										5			-1					Root	FxMb1OrphanMd030001Death		-1			1																																1										
-816099		2										5			-1					Root	FxMb1LuolanMd010001Death		-1			1																																1										
-817099		2										5			-1					Root	FxMb1VirginbioMd030001Death		-1			1																																1										
-818099		2										5			-1					Root	FxMb1SandwormMd030001Death		-1			1																																1										
-819099		2										5			-1					Root	FxMb1LuxiyaMd000003Death		-1			1																																1										
-831099		2										5			-1					Root	FxMb1XiuMd010001Death		-1			1																																1										
-831199		2										5			-1					HitCase	FxDeath01		-1			1																																1										
-900299		2										5			-1					HitCase	FxDeath01		-1			1																																1										
+Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	TrackTarget	LiveTime	FillTime	DeadExplosion	HitCount	RepeatDamage	HitEffect[1]	HitEffect[2]	DamageInterval	StartJoint	Effect	WaitTime	DamageCount	DamageRange	ExplosionEffect	LineType	LineParams[1]	LineParams[2]	LineParams[3]	LineParams[4]	LineParams[5]	LineParams[6]	LineParams[7]	ScaleFunction	ScaleParams[1]	ScaleParams[2]	ScaleParams[3]	ScaleParams[4]	ScaleParams[5]	ScaleType	BornPosition	ChildDelay	ChildInterval	ChildCountLimit	ChildId	BornChildWhileDead	SwitchTargetOnHit	BornDirectionType	BeHitCenter	HitShakeDirection	HitShakeDuration	HitShakeIntensity	BeHitState	Magic[1]	Magic[2]	Magic[3]	Magic[4]	Magic[5]	MagicLauncherNpc[1]	MagicLauncherNpc[3]	MagicLauncherNpc[2]	EffectHeight	HitOnJoint	ResizeEffect	BindLauncher	LockLauncherFightTarget	BindSkill	ActiveDelayTime	ExplodeOnFloor	DodgeLimitMark	HitEffectUseMissileDirection	IgnoreNpcTimeScale	ScaleTimeOnHit	TimeScale	TimeScaleDuration
+815099		2										5			-1					Root	FxMb1OrphanMd030001Death		-1			1																																							1										
+816099		2										5			-1					Root	FxMb1LuolanMd010001Death		-1			1																																							1										
+817099		2										5			-1					Root	FxMb1VirginbioMd030001Death		-1			1																																							1										
+818099		2										5			-1					Root	FxMb1SandwormMd030001Death		-1			1																																							1										
+819099		2										5			-1					Root	FxMb1LuxiyaMd000003Death		-1			1																																							1										
+831099		2										5			-1					Root	FxMb1XiuMd010001Death		-1			1																																							1										
+831199		2										5			-1					HitCase	FxDeath01		-1			1																																							1										
+900299		2										5			-1					HitCase	FxDeath01		-1			1																																							1										

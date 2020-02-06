@@ -3,7 +3,7 @@ local XUiGridResonanceSkill = require("XUi/XUiEquipResonanceSkill/XUiGridResonan
 local XUiEquipResonanceSkillPreview = XLuaUiManager.Register(XLuaUi, "UiEquipResonanceSkillPreview")
 
 function XUiEquipResonanceSkillPreview:OnAwake()
-    self:InitAutoScript()
+    self:AutoAddListener()
 
     self.GridResonanceSkill.gameObject:SetActive(false)
 end
@@ -46,25 +46,10 @@ function XUiEquipResonanceSkillPreview:UpdateSkillPreviewScroll()
     end
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiEquipResonanceSkillPreview:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiEquipResonanceSkillPreview:AutoInitUi()
-    self.PanelCharacterContent = self.Transform:Find("SafeAreaContentPane/PaneResonanceSkillScroll/Viewport/PanelCharacterContent")
-    self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
-    self.TxtCharacterName = self.Transform:Find("SafeAreaContentPane/TxtCharacterName"):GetComponent("Text")
-    self.GridResonanceSkill = self.Transform:Find("SafeAreaContentPane/PaneResonanceSkillScroll/Viewport/GridResonanceSkill")
-    self.TxtCharacterNameOther = self.Transform:Find("SafeAreaContentPane/TxtCharacterNameOther"):GetComponent("Text")
-end
-
 function XUiEquipResonanceSkillPreview:AutoAddListener()
     self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
--- auto
+
 function XUiEquipResonanceSkillPreview:OnBtnCloseClick(eventData)
     self:Close()
 end

@@ -58,10 +58,10 @@ function XUiFubenChallengeBanner:InitAutoScript()
 end
 
 function XUiFubenChallengeBanner:AutoInitUi()
-    self.PanelChallengeChapter = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter")
-    self.PanelChapterList = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList")
-    self.PanelChapterContent = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList/Viewport/PanelChapterContent")
-    self.GridChallengeBanner = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList/Viewport/GridChallengeBanner")
+    -- self.PanelChallengeChapter = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter")
+    -- self.PanelChapterList = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList")
+    -- self.PanelChapterContent = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList/Viewport/PanelChapterContent")
+    -- self.GridChallengeBanner = self.Transform:Find("SafeAreaContentPane/PanelChallengeChapter/PanelChapterList/Viewport/GridChallengeBanner")
 end
 
 function XUiFubenChallengeBanner:AutoAddListener()

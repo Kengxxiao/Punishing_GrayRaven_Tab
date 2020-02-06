@@ -12,7 +12,7 @@ end
 
 function XUiPracticeBasicsStage:AddBtnsListeners()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnStage, "onClick", self.OnBtnStageClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnStage, self.OnBtnStageClick)
 end
 
 function XUiPracticeBasicsStage:RegisterListener(uiNode, eventName, func)

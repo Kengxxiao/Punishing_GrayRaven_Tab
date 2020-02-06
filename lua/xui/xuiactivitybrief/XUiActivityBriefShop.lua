@@ -1,6 +1,4 @@
 local TimeFormat = "MM/dd"
-local CSXDateGetTime = CS.XDate.GetTime
-local CSXDateFormatTime = CS.XDate.FormatTime
 local CSXTextManagerGetText = CS.XTextManager.GetText
 
 local XUiActivityBriefShop = XLuaUiManager.Register(XLuaUi, "UiActivityBriefShop")
@@ -13,11 +11,15 @@ function XUiActivityBriefShop:OnAwake()
     self:InitPanels()
 end
 
-function XUiActivityBriefShop:OnStart(closeCb)
+function XUiActivityBriefShop:OnStart(closeCb,base)
     self.CloseCb = closeCb
+    self.Base = base
 end
 
 function XUiActivityBriefShop:OnEnable()
+    if self.Base then
+        self.Base.BasePane.gameObject:SetActiveEx(false)
+    end
     local shopId = XDataCenter.ActivityBriefManager.GetActivityShopId()
     if shopId <= 0 then
         XLog.Error("ShopId not Exsit while trying to open UiActivityBriefBase, pls check ActivityBrief.tab!")

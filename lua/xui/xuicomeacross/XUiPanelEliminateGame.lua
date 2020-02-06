@@ -69,7 +69,7 @@ function XUiPanelEliminateGame:OnPlayReadyDelay(IsReady,countDown)
         self.TxtCountDown.text = CS.XTextManager.GetText("ComeAcrossStart")
     end
 
-    XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2ReadyBegin")
+    --XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2ReadyBegin")
 end
 
 --等待下一关
@@ -182,9 +182,9 @@ function XUiPanelEliminateGame:OnPlayStepChange(idx,results,step,totalStep,times
     
     self.TxtResult.text = result == 1 and CS.XTextManager.GetText("ComeAcrossRight") or CS.XTextManager.GetText("ComeAcrossWrong") 
 
-    XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2ResultBegin",nil,function()
-        XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2TimesBegin")
-    end)
+    -- XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2ResultBegin",nil,function()
+    --     XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2TimesBegin")
+    -- end)
     --XUiHelper.PlayAnimation(self.RootUi, "UiComeAcrossGame2TimesBegin")
 end
 

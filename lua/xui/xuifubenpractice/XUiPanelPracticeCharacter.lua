@@ -1,4 +1,5 @@
 XUiPanelPracticeCharacter = XClass()
+local XUguiDragProxy = CS.XUguiDragProxy
 
 function XUiPanelPracticeCharacter:Ctor(rootUi, ui)
     self.RootUi = rootUi
@@ -42,6 +43,18 @@ function XUiPanelPracticeCharacter:InitViews()
         extraStage.gameObject:SetActive(false)
         indexChapter = indexChapter + 1
         extraStage = self.CharacterContent:Find(string.format("Stage%d", indexChapter))
+    end
+
+    local dragProxy = self.CharacterScrollRect:GetComponent(typeof(XUguiDragProxy))
+    if not dragProxy then
+        dragProxy = self.CharacterScrollRect.gameObject:AddComponent(typeof(XUguiDragProxy))
+    end
+    dragProxy:RegisterHandler(handler(self, self.OnDragProxy))
+end
+
+function XUiPanelPracticeCharacter:OnDragProxy(dragType)
+    if dragType == 0 then
+        self.RootUi:CloseStageDetail()
     end
 end
 

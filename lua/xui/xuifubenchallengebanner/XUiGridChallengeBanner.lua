@@ -3,6 +3,7 @@ XUiGridChallengeBanner = XClass()
 function XUiGridChallengeBanner:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -14,16 +15,16 @@ function XUiGridChallengeBanner:InitAutoScript()
 end
 
 function XUiGridChallengeBanner:AutoInitUi()
-    self.RImgChallenge = self.Transform:Find("RImgChallenge"):GetComponent("RawImage")
-    self.PanelOther = self.Transform:Find("PanelOther")
-    self.TxtRank = self.Transform:Find("PanelOther/TxtRank"):GetComponent("Text")
-    self.TxtTime = self.Transform:Find("TxtTime"):GetComponent("Text")
-    self.TxtDes = self.Transform:Find("TxtDes"):GetComponent("Text")
-    self.TxtProgress = self.Transform:Find("TxtProgress"):GetComponent("Text")
-    self.ImgForbidEnter = self.Transform:Find("ImgForbidEnter"):GetComponent("Image")
-    self.PanelLock = self.Transform:Find("PanelLock")
-    self.TxtLock = self.Transform:Find("PanelLock/TxtLock"):GetComponent("Text")
-    self.ImgRedPoint = self.Transform:Find("ImgRedPoint")
+    -- self.RImgChallenge = self.Transform:Find("RImgChallenge"):GetComponent("RawImage")
+    -- self.PanelOther = self.Transform:Find("PanelOther")
+    -- self.TxtRank = self.Transform:Find("PanelOther/TxtRank"):GetComponent("Text")
+    -- self.TxtTime = self.Transform:Find("TxtTime"):GetComponent("Text")
+    -- self.TxtDes = self.Transform:Find("TxtDes"):GetComponent("Text")
+    -- self.TxtProgress = self.Transform:Find("TxtProgress"):GetComponent("Text")
+    -- self.ImgForbidEnter = self.Transform:Find("ImgForbidEnter"):GetComponent("Image")
+    -- self.PanelLock = self.Transform:Find("PanelLock")
+    -- self.TxtLock = self.Transform:Find("PanelLock/TxtLock"):GetComponent("Text")
+    -- self.ImgRedPoint = self.Transform:Find("ImgRedPoint")
 end
 
 function XUiGridChallengeBanner:RegisterClickEvent(uiNode, func)
@@ -81,7 +82,7 @@ function XUiGridChallengeBanner:UpdateGrid(chapter, parent)
             self.TxtLock.text = XFunctionManager.GetFunctionOpenCondition(functionNameId)
             self.TxtTime.text = ""
             self.TxtProgress.text = ""
-        else
+        else    
             local status = XDataCenter.ArenaManager.GetArenaActivityStatus()
             if status == XArenaActivityStatus.Rest then
                 self.TxtProgress.text = CS.XTextManager.GetText("ArenaTeamDescription")
@@ -109,7 +110,7 @@ function XUiGridChallengeBanner:UpdateGrid(chapter, parent)
                 end
                 self.TxtTime.text = timeText
             end)
-        end
+        end 
     elseif chapter.Type == XDataCenter.FubenManager.ChapterType.Trial then
         self.TxtTime.text = ""
         self.TxtRank.text = ""
@@ -173,7 +174,7 @@ function XUiGridChallengeBanner:UpdateGrid(chapter, parent)
         self.TxtTime.text = ""
         self.TxtProgress.text = ""
         self.TxtDes.text = chapter.SimpleDesc
-
+        
         local functionNameId = XFunctionManager.FunctionName.FubenExplore
         if not XFunctionManager.JudgeCanOpen(functionNameId) then
             self.PanelLock.gameObject:SetActive(true)

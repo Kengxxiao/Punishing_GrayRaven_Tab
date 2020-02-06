@@ -35,3 +35,5 @@ Id	CharacterID	Pic	Title	Description	NextTrialID
 34	1011003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Li01.png	常用连招	任意3消+红球释放强化红球	34
 35	1051003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Qishi01.png	核心被动	使用必杀技后，一段时间内增加移动速度且普通攻击变为火属性伤害并使目标火属性抗性降低	35
 36	1021003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Luxiyaaerfa01.png	赤渊-刀光意	3消蓝色信号再次任意3消信号球，进入刀光意，信号球转化为特殊球，消除时释放剑气	36
+37	1091002	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR2Aila01.png	核心被动	任意3消后+蓝球，释放矢量色块，蓄力时吸引敌人，减少伤害，且获得一个持续7秒的护盾，蓄力结束造成大范围伤害	37
+38	1081003	Assets/Product/Texture/Image/UiFightTips/UiFightTipsJiaoxueR3Dubian01.png	核心被动	任意3消后+红球，释放寰宇振荡，技能结束进入强化状态，普攻攻击将附加暗属性伤害	38

@@ -49,7 +49,7 @@ end
 function XUiGridWaitPassItem:AutoAddListener()
     self.AutoCreateListeners = {}
 
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
 
     self.BtnRefused.CallBack = function () self:OnBtnRefusedClick() end
     self.BtnAgreed.CallBack = function () self:OnBtnAgreedClick() end

@@ -59,7 +59,7 @@ end
 
 function XUiGridContactItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnView, "onClick", self.OnBtnViewClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnView, self.OnBtnViewClick)
     self:RegisterListener(self.TogSelect, "onValueChanged", self.OnTogSelectValueChanged)
     self.PanelChat.CallBack = function () self:OnBtnChatClick() end
 end

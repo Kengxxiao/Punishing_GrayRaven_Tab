@@ -102,7 +102,7 @@ end
 
 function XUiTipLayer:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiTipLayer:OnBtnCloseClick(...)
@@ -133,5 +133,9 @@ function XUiTipLayer:OnDestroy()
     end
     if self.Cb then
         self.Cb()
+    end
+    if self.Timer then
+        CS.XScheduleManager.UnSchedule(self.Timer)
+        self.Timer = nil
     end
 end

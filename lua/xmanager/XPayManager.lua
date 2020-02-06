@@ -58,7 +58,7 @@ XPayManagerCreator = function()
                 return
             end
             --BDC
-            CS.XHeroBdcAgent.BdcCreateOrder(template.GoodsId, productKey, XTime.Now(), res.GameOrder)
+            CS.XHeroBdcAgent.BdcCreateOrder(template.GoodsId, productKey, XTime.GetServerNowTimestamp(), res.GameOrder)
             DoPay(productKey, res.GameOrder, template.GoodsId)
         end)
     end

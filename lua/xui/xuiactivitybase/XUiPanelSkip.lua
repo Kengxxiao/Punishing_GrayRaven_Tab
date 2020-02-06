@@ -1,5 +1,5 @@
-local CSXDateGetTime = CS.XDate.GetTime
-local CSXDateFormatTime = CS.XDate.FormatTime
+local ParseToTimestamp = XTime.ParseToTimestamp
+local TimestampToGameDateTimeString = XTime.TimestampToGameDateTimeString
 
 local XUiPanelSkip = XClass()
 
@@ -13,12 +13,14 @@ function XUiPanelSkip:Refresh(activityCfg)
     if not activityCfg then return end
 
     local format = "yyyy-MM-dd HH:mm"
-    local beginTime = CSXDateGetTime(activityCfg.BeginTime)
-    local endTime = CSXDateGetTime(activityCfg.EndTime)
-    local beginTimeStr = CSXDateFormatTime(beginTime, format)
-    local endTimeStr = CSXDateFormatTime(endTime, format)
-    
-    self.TxtContentTimeNotice.text = beginTimeStr .. "~" .. endTimeStr
+    local beginTime = ParseToTimestamp(activityCfg.BeginTime)
+    local endTime = ParseToTimestamp(activityCfg.EndTime)
+    if beginTime and endTime then
+        local beginTimeStr = TimestampToGameDateTimeString(beginTime, format)
+        local endTimeStr = TimestampToGameDateTimeString(endTime, format)
+        self.TxtContentTimeNotice.text = beginTimeStr .. "~" .. endTimeStr
+    end
+
     self.TxtContentTitleNotice.text = string.gsub(activityCfg.ActivityTitle, "\\n", "\n")
     self.TxtContentNotice.text = string.gsub(activityCfg.ActivityDes, "\\n", "\n")
 

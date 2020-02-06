@@ -103,6 +103,7 @@ XFubenFestivalActivityManagerCreator = function()
         if stageCfg.RequireLevel > 0 and XPlayer.Level < stageCfg.RequireLevel then
             return false, CS.XTextManager.GetText("TeamLevelToOpen", stageCfg.RequireLevel)
         end
+
         -- for _, conditionId in pairs(stageCfg.ForceConditionId or {}) do
         --     local ret, desc = XConditionManager.CheckCondition(conditionId)
         --     if not ret then
@@ -217,18 +218,20 @@ XFubenFestivalActivityManagerCreator = function()
     function XFubenFestivalActivityManager.GetAvaliableFestivals()
         local festivals = XFestivalActivityConfig.GetFestivalsTemplates()
         local activityList = {}
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         for k, v in pairs(festivals) do
 
-            local beginTimeSecond = CS.XDate.GetTime(v.BeginTimeStr)
-            local endTimeSecond = CS.XDate.GetTime(v.EndTimeStr)
-            if (not XFunctionManager.CheckFunctionFitter(v.FunctionOpenId)) and now > beginTimeSecond and endTimeSecond > now then
-                table.insert(activityList, {
-                    Id = v.Id,
-                    Type = v.ChapterType,
-                    Name = v.Name,
-                    Icon = v.BannerBg,
-                })
+            local beginTimeSecond = XTime.ParseToTimestamp(v.BeginTimeStr)
+            local endTimeSecond = XTime.ParseToTimestamp(v.EndTimeStr)
+            if beginTimeSecond and endTimeSecond then
+                if (not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FestivalActivity)) and now > beginTimeSecond and endTimeSecond > now then
+                    table.insert(activityList, {
+                        Id = v.Id,
+                        Type = v.ChapterType,
+                        Name = v.Name,
+                        Icon = v.BannerBg,
+                    })
+                end
             end
         end
         return activityList
@@ -236,9 +239,10 @@ XFubenFestivalActivityManagerCreator = function()
 
     function XFubenFestivalActivityManager.IsFestivalInActivity(festivalId)
         local festivalTemplate = XFestivalActivityConfig.GetFestivalById(festivalId)
-        local now = XTime.Now()
-        local beginTimeSecond = CS.XDate.GetTime(festivalTemplate.BeginTimeStr)
-        local endTimeSecond = CS.XDate.GetTime(festivalTemplate.EndTimeStr)
+        local now = XTime.GetServerNowTimestamp()
+        local beginTimeSecond = XTime.ParseToTimestamp(festivalTemplate.BeginTimeStr)
+        local endTimeSecond = XTime.ParseToTimestamp(festivalTemplate.EndTimeStr)
+        if not beginTimeSecond or not endTimeSecond then return false end
         return now > beginTimeSecond and endTimeSecond > now
     end
 

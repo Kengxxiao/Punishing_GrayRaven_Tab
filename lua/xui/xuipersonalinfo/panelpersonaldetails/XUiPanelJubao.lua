@@ -65,8 +65,8 @@ end
 
 function XUiPanelJubao:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnConfirm, "onClick", self.OnBtnConfirmClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnConfirm, self.OnBtnConfirmClick)
     self:RegisterListener(self.TogQt, "onValueChanged", self.OnTogQtValueChanged)
     self:RegisterListener(self.TogDs, "onValueChanged", self.OnTogDsValueChanged)
     self:RegisterListener(self.TogZp, "onValueChanged", self.OnTogZpValueChanged)

@@ -161,7 +161,7 @@ XFubenResourceManagerCreator = function()
     end
 
     function XFubenResourceManager.GetRemainingTime()
-        local timeNow = XTime.Now()
+        local timeNow = XTime.GetServerNowTimestamp()
         if NextRefreshTime < timeNow then
             return 0
         end

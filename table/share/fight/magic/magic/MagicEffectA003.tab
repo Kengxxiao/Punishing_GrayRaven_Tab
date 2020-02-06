@@ -89,7 +89,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100670	AddBuff	100670																													
 100670000	PlayCameraTrack	CTShenwei02|0|0																													
 100671	AddBuff	100671																													
-100671000	SetCameraPositionOffset	0|00.5|-3|00.2|1																													
+100671000	SetCameraPositionOffset	0|00.5|-3|00.2|00.2|1																													
 100672	AddBuff	100672																													
 100672000	PlayCameraTrack	CTShenwei02Born|0|0																													
 100673	AddBuff	100673																													
@@ -103,10 +103,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100677000	AddBehavior	100677																													
 100678	AddBuff	100678																													
 100679	AddBuff	100679																													
-100679000	SetCameraPositionOffset	0|-00.2|1.5|0|1																													
+100679000	SetCameraPositionOffset	0|-00.2|1.5|0|0|1																													
 100680	AddBuff	100680																													
 100680000	AddBuff	100089																													
-100681	AddBuff	100681																													
 100682	AddBuff	100682																													
 100682000	RemoveBuff	100637|1																													
 100683	Damage	31|0|2500|0|0|0|1|20000	31|0|2647|0|0|0|1|20000	31|0|2794|0|0|0|1|20000	31|0|2941|0|0|0|1|20000	31|0|3088|0|0|0|1|20000	31|0|3235|0|0|0|1|20000	31|0|3382|0|0|0|1|20000	31|0|3529|0|0|0|1|20000	31|0|3676|0|0|0|1|20000	31|0|3824|0|0|0|1|20000	31|0|3971|0|0|0|1|20000	31|0|4118|0|0|0|1|20000	31|0|4265|0|0|0|1|20000	31|0|4412|0|0|0|1|20000	31|0|4559|0|0|0|1|20000	31|0|4706|0|0|0|1|20000	31|0|4853|0|0|0|1|20000	31|0|5000|0|0|0|1|20000	31|0|5147|0|0|0|1|20000	31|0|5294|0|0|0|1|20000	31|0|5441|0|0|0|1|20000	31|0|5588|0|0|0|1|20000	31|0|5735|0|0|0|1|20000	31|0|5882|0|0|0|1|20000	31|0|6029|0|0|0|1|20000	31|0|6029|0|0|0|1|20000	31|0|6029|0|0|0|1|20000	31|0|6029|0|0|0|1|20000	31|0|6029|0|0|0|1|20000	31|0|6029|0|0|0|1|20000
@@ -116,6 +115,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100686000	ChangeAttribAdditive	32|7500|																													
 100687	AddBuff	100687																													
 100687000	AddAttribValue	57|-120|0																													
+100688	AddBuff	100688																													
+100688000	ResetBuffDurationByBuffId	100691																													
 100690	AddBuff	100690																													
 100690000	AddBehavior	100690																													
 100691	AddBuff	100691																													
@@ -220,9 +221,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 101168	AddBuff	101168																													
 101168000	PlayCameraTrack	CTLiang03Born|0|0																													
 101169	AddBuff	101169																													
-101169000	SetCameraRotation	8|-12|0|00.3|1|1																													
+101169000	SetCameraRotation	8|-12|0|00.3|00.3|1|1																													
 101170	AddBuff	101170																													
-101170000	SetCameraPosition	1|1|-4|00.3																													
+101170000	SetCameraPosition	1|1|-4|00.3|00.3																													
 101171	AddBuff	101171																													
 101172	AddBuff	101172																													
 101173	AddBuff	101173																													
@@ -238,9 +239,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 101178000	PlaySound	11702|0																													
 101179	AddBuff	101179																													
 101179000	AddBuff	100089																													
-101180	AddBuff	101180																													
 101181	AddBuff	101181																													
 101181000	AddNpcState	34																													
+101182	AddBuff	101182																													
 101190	AddBuff	101190																													
 101190000	AddBehavior	101190																													
 101191	AddBuff	101191																													
@@ -346,7 +347,6 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 100371000	PlaySound	30702|0																													
 100372	AddBuff	100372																													
 100372000	AddBuff	100089																													
-100373	AddBuff	100373																													
 100390	AddBuff	100390																													
 100390000	AddBehavior	100390																													
 100391	AddBall	2|3																													
@@ -548,5 +548,4 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 101295000	ChangeAttribAdditive	25|1500|0																													
 101296	AddBuff	101296																													
 101296000	AddBuff	100089																													
-101297	AddBuff	101297																													
 101298	AddAttribValue	2|-50|0																													

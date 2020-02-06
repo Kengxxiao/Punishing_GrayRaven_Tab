@@ -1,8 +1,9 @@
 MinorType	MinorName	TargetAngleY	AllowYAxis	GroupId
-1	地板	60	1	1
+1	地板	45	1	1
 2	墙	20	1	2
 3	天花板	10	1	3
-4	大件	15	1	4
-5	小件	15	1	4
+4	大件	45	1	4
+5	小件	45	1	4
 6	挂饰	20	1	5
 7	宠物	15	1	4
+8	遮挡墙	45	1	2

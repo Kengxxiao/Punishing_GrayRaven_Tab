@@ -50,8 +50,9 @@ XFunctionEventManagerCreator = function()
         if FunctionState ~= FunctionEvenState.IDLE then
             return
         end
-
         if XPlayer.HandlerPlayLevelUpAnimation() then --玩家等级提升
+            FunctionState = FunctionEvenState.PLAYING
+        elseif XDataCenter.FubenManager.CheakHasNewHideStage() then --隐藏关卡开启
             FunctionState = FunctionEvenState.PLAYING
         elseif XDataCenter.TaskForceManager.HandlerPlayTipMission() then --任务提示
             FunctionState = FunctionEvenState.PLAYING

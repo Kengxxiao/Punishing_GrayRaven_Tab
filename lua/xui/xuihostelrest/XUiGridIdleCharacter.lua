@@ -65,8 +65,8 @@ end
 
 function XUiGridIdleCharacter:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnItem, "onClick", self.OnBtnItemClick)
-    self:RegisterListener(self.BtnCondition, "onClick", self.OnBtnConditionClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnItem, self.OnBtnItemClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCondition, self.OnBtnConditionClick)
 end
 -- auto
 

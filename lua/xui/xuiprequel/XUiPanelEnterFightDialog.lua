@@ -53,17 +53,34 @@ end
 -- auto
 
 function XUiPanelEnterFightDialog:OnBtnMaskBClick(eventData)
-    XUiHelper.PlayAnimation(self.RootUi, "AniBeginPanelEnterFightDialogEnd", nil, function()
-        self.GameObject:SetActive(false)
-    end)
+    self:OnCloseDialog()
 end
 
 function XUiPanelEnterFightDialog:OnBtnEnterStoryClick(eventData)
+    if self:PreCheckChapterCondition() then return end
+
     self:OnCallback()
 end
 
 function XUiPanelEnterFightDialog:OnBtnEnterFightClick(eventData)
+    if self:PreCheckChapterCondition() then return end
+
     self:OnCallback()
+end
+
+function XUiPanelEnterFightDialog:PreCheckChapterCondition()
+    if self.StageId then
+        local chapterId = XDataCenter.PrequelManager.GetChapterIdByStageId(self.StageId)
+        if chapterId then
+            local unlockDescription = XDataCenter.PrequelManager.GetChapterUnlockDescription(chapterId)
+            if unlockDescription then
+                XUiManager.TipMsg(unlockDescription)
+                self:OnCloseDialog()
+                return true
+            end
+        end
+    end
+    return false
 end
 
 function XUiPanelEnterFightDialog:OnShowStoryDialog(stageId, callback)
@@ -94,6 +111,10 @@ function XUiPanelEnterFightDialog:OnCallback()
     if self.Callback then
         self.Callback()
     end
+    self:OnCloseDialog()
+end
+
+function XUiPanelEnterFightDialog:OnCloseDialog()
     self.GameObject:SetActive(false)
 end
 

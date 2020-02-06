@@ -4,6 +4,7 @@ function XUiPanelMissionGrid:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.GridList = {}
+    XTool.InitUiObject(self)
     self:InitAutoScript()
     self.Timer = nil
     self.ShowCompletedAnimation = false
@@ -37,7 +38,7 @@ function XUiPanelMissionGrid:UpdateTime()
         return
     end
 
-    local curTime = XTime.Now()
+    local curTime = XTime.GetServerNowTimestamp()
     local completeTime = self.TaskData.Task.UtcFinishTime
 
     if not self.TxtTime:Exist() then
@@ -46,7 +47,7 @@ function XUiPanelMissionGrid:UpdateTime()
 
     local offset = completeTime - curTime
     if offset > 0 then
-        self.TxtTime.text = CS.XDate.GetTimeString(offset)
+        self.TxtTime.text = CS.XDateUtil.SecondsToTimeString(offset)
     else
         self.TxtTime.text = "00:00:00"
         self:StopTimer()
@@ -54,7 +55,8 @@ function XUiPanelMissionGrid:UpdateTime()
 end
 
 function XUiPanelMissionGrid:PlayCompletedAnimation(cb)
-    XUiHelper.PlayAnimation(self.GameObject, "AniMissionTaskComplete", cb)
+    self:PlayAnimation("AniMissionTaskComplete", cb)
+    --XUiHelper.PlayAnimation(self.GameObject, "AniMissionTaskComplete", cb)
 end
 
 function XUiPanelMissionGrid:Init(parent)
@@ -105,7 +107,7 @@ function XUiPanelMissionGrid:SetupBaseInfo()
         return
     end
     self.TxtName.text = taskCfg.Name
-    self.TxtTime.text = CS.XDate.GetTimeString(taskCfg.Duration)
+    self.TxtTime.text = CS.XDateUtil.SecondsToTimeString(taskCfg.Duration)
     self.TxtTimeRect.anchoredPosition = CS.UnityEngine.Vector2(0, -16.2)
 
     self.BtnSend.gameObject:SetActive(self.TaskData.Task.Status == XDataCenter.TaskForceManager.TaskForceTaskStatus.Normal)
@@ -167,24 +169,24 @@ function XUiPanelMissionGrid:InitAutoScript()
 end
 
 function XUiPanelMissionGrid:AutoInitUi()
-    self.PanelTime = self.Transform:Find("PanelTime")
-    self.TxtTime = self.Transform:Find("PanelTime/TxtTime"):GetComponent("Text")
-    self.PanelRaward = self.Transform:Find("PanelRaward")
-    self.PanelScrollView = self.Transform:Find("PanelRaward/PanelScrollView")
-    self.PanelLayoutReward = self.Transform:Find("PanelRaward/PanelScrollView/Viewport/PanelLayoutReward")
-    self.GridCommonA = self.Transform:Find("PanelRaward/PanelScrollView/Viewport/PanelLayoutReward/GridCommon")
-    self.PanelMainReward = self.Transform:Find("PanelMainReward")
-    self.GridCommon = self.Transform:Find("PanelMainReward/GridCommon")
-    self.PanelBase = self.Transform:Find("PanelBase")
-    self.BtnFinish = self.Transform:Find("PanelBase/BtnFinish"):GetComponent("Button")
-    self.PanelReceive = self.Transform:Find("PanelBase/BtnFinish/PanelReceive")
-    self.BtnSend = self.Transform:Find("PanelBase/BtnSend"):GetComponent("Button")
-    self.PanelStop = self.Transform:Find("PanelBase/PanelStop")
-    self.BtnTimeGo = self.Transform:Find("PanelBase/PanelStop/BtnTimeGo"):GetComponent("Button")
-    self.BtnStop = self.Transform:Find("PanelBase/PanelStop/BtnStop"):GetComponent("Button")
-    self.PanelTitle = self.Transform:Find("PanelTitle")
-    self.ImgQuality = self.Transform:Find("PanelTitle/ImgQuality"):GetComponent("Image")
-    self.TxtName = self.Transform:Find("PanelTitle/TxtName"):GetComponent("Text")
+    -- self.PanelTime = self.Transform:Find("PanelTime")
+    -- self.TxtTime = self.Transform:Find("PanelTime/TxtTime"):GetComponent("Text")
+    -- self.PanelRaward = self.Transform:Find("PanelRaward")
+    -- self.PanelScrollView = self.Transform:Find("PanelRaward/PanelScrollView")
+    -- self.PanelLayoutReward = self.Transform:Find("PanelRaward/PanelScrollView/Viewport/PanelLayoutReward")
+    -- self.GridCommonA = self.Transform:Find("PanelRaward/PanelScrollView/Viewport/PanelLayoutReward/GridCommon")
+    -- self.PanelMainReward = self.Transform:Find("PanelMainReward")
+    -- self.GridCommon = self.Transform:Find("PanelMainReward/GridCommon")
+    -- self.PanelBase = self.Transform:Find("PanelBase")
+    -- self.BtnFinish = self.Transform:Find("PanelBase/BtnFinish"):GetComponent("Button")
+    -- self.PanelReceive = self.Transform:Find("PanelBase/BtnFinish/PanelReceive")
+    -- self.BtnSend = self.Transform:Find("PanelBase/BtnSend"):GetComponent("Button")
+    -- self.PanelStop = self.Transform:Find("PanelBase/PanelStop")
+    -- self.BtnTimeGo = self.Transform:Find("PanelBase/PanelStop/BtnTimeGo"):GetComponent("Button")
+    -- self.BtnStop = self.Transform:Find("PanelBase/PanelStop/BtnStop"):GetComponent("Button")
+    -- self.PanelTitle = self.Transform:Find("PanelTitle")
+    -- self.ImgQuality = self.Transform:Find("PanelTitle/ImgQuality"):GetComponent("Image")
+    -- self.TxtName = self.Transform:Find("PanelTitle/TxtName"):GetComponent("Text")
 end
 
 function XUiPanelMissionGrid:GetAutoKey(uiNode, eventName)
@@ -221,10 +223,10 @@ end
 
 function XUiPanelMissionGrid:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnFinish, "onClick", self.OnBtnFinishClick)
-    self:RegisterListener(self.BtnSend, "onClick", self.OnBtnSendClick)
-    self:RegisterListener(self.BtnTimeGo, "onClick", self.OnBtnTimeGoClick)
-    self:RegisterListener(self.BtnStop, "onClick", self.OnBtnStopClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnFinish, self.OnBtnFinishClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnSend, self.OnBtnSendClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnTimeGo, self.OnBtnTimeGoClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnStop, self.OnBtnStopClick)
 end
 -- auto
 function XUiPanelMissionGrid:OnBtnTimeGoClick(...)

@@ -31,16 +31,17 @@ end
 
 function XHeroSdkManager.Login()
     if not XHeroSdkManager.IsNeedLogin() then
+        CS.XRecord.Record("24035", "HeroSdkRepetitionLogin")
         return
     end
 
-    local curTime = os.time()
+    local curTime = CS.UnityEngine.Time.realtimeSinceStartup
     if curTime - LastTimeOfCallSdkLoginUi < CallLoginUiCountDown then
+        CS.XRecord.Record("24036", "HeroSdkShortTimeLogin")
         return
     end
     LastTimeOfCallSdkLoginUi = curTime
 
-    XLog.Debug("hero sdk login.")
     CS.XRecord.Record("24023", "HeroSdkLogin")
     CS.XHeroSdkAgent.Login()
 end
@@ -54,7 +55,6 @@ function XHeroSdkManager.Logout(cb)
         return
     end
 
-    XLog.Debug("hero sdk logout.")
     LogoutCb = cb
     CS.XRecord.Record("24029", "HeroSdkLogout")
     CS.XHeroSdkAgent.Logout()
@@ -66,7 +66,6 @@ function XHeroSdkManager.Logout(cb)
 end
 
 function XHeroSdkManager.OnLoginSuccess(uid, username, token)
-    XLog.Debug("hero sdk login success.")
     IsSdkLogined = true
     LastTimeOfCallSdkLoginUi = 0
     local info = XRecordUserInfo()
@@ -92,14 +91,12 @@ function XHeroSdkManager.OnLoginFailed(msg)
 end
 
 function XHeroSdkManager.OnLoginCancel()
-    XLog.Debug("hero sdk login cancel.")
     IsSdkLogined = false
     LastTimeOfCallSdkLoginUi = 0
     -- CS.XRecord.Record("24032", "HeroSdkLoginFailed")
 end
 
 function XHeroSdkManager.OnSwitchAccountSuccess(uid, username, token)
-    XLog.Debug("hero sdk switch account success.")
     local info = XRecordUserInfo()
     info.UserId = uid
     info.UserName = username
@@ -110,18 +107,15 @@ function XHeroSdkManager.OnSwitchAccountSuccess(uid, username, token)
 end
 
 function XHeroSdkManager.OnSwitchAccountFailed(msg)
-    XLog.Debug("hero sdk switch account failed.")
     CS.XRecord.Record("24026", "HeroSdkSwitchAccountFailed")
     XUiManager.SystemDialogTip(CS.XTextManager.GetText("TipTitle"), msg, XUiManager.DialogType.OnlySure, nil, nil)
 end
 
 function XHeroSdkManager.OnSwitchAccountCancel()
     --TODO
-    XLog.Debug("hero sdk switch account cancel.")
 end
 
 function XHeroSdkManager.OnLogoutSuccess()
-    XLog.Debug("hero sdk logout success.")
     IsSdkLogined = false
     CS.XRecord.Record("24027", "HeroSdkLogoutSuccess")
     CS.XRecord.Logout()
@@ -135,7 +129,6 @@ function XHeroSdkManager.OnLogoutSuccess()
 end
 
 function XHeroSdkManager.OnLogoutFailed(msg)
-    XLog.Debug("hero sdk logout failed.")
     IsSdkLogined = true
     CS.XRecord.Record("24028", "HeroSdkLogoutFailed")
     XUiManager.SystemDialogTip(CS.XTextManager.GetText("TipTitle"), msg, XUiManager.DialogType.OnlySure, nil, nil)

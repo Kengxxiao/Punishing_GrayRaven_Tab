@@ -7,7 +7,7 @@ function XUiPanelTrialMain:Ctor(ui, uiRoot)
     self.Transform = ui.transform
     self.UiRoot = uiRoot
     XTool.InitUiObject(self)
-    self:InitAutoScript()
+    self:AddListener()
     self:InitUiAfterAuto()
 end
 
@@ -84,11 +84,11 @@ end
 function XUiPanelTrialMain:OpenView()
     XDataCenter.TrialManager.UnLockRed = true
     self.TrialTaskList:OpenFxFinish(false)
-    XUiHelper.PlayAnimation(self.UiRoot, "AniTrialOpen")
     self.UiRoot:PlayAnimation("AnimStartEnable",function ()
         self.Dark.gameObject:SetActive(false)
         self:FxFisish()
     end)
+
     self:RewardGetHandle()
 end
 
@@ -193,76 +193,17 @@ end
 -- 设置单个进度
 function XUiPanelTrialMain:SetTypeTrialSignlePro(index,cb)
     if self.CurTrialType == XDataCenter.TrialManager.TrialTypeCfg.TrialFor then
-        XUiHelper.PlayAnimation(self.UiRoot,self.ProForAnimation[index],nil,cb)
+        self.UiRoot:PlayAnimation(self.ProForAnimation[index], cb)
         self.ProForFx[index].gameObject:SetActive(true)
     else
-        XUiHelper.PlayAnimation(self.UiRoot, self.ProBackEndAnimation[index],nil,cb)
+        self.UiRoot:PlayAnimation(self.ProBackEndAnimation[index], cb)
         self.ProBackEndFx[index].gameObject:SetActive(true)
     end
 end
 
--- auto
--- Automatic generation of code, forbid to edit
-function XUiPanelTrialMain:InitAutoScript()
-    self:AutoInitUi()
-    self:AutoAddListener()
-end
-
-function XUiPanelTrialMain:AutoInitUi()
-    self.PanelTrialMainLeft = self.Transform:Find("PanelTrialMainLeft")
-    self.TxtName = self.Transform:Find("PanelTrialMainLeft/TxtName"):GetComponent("Text")
-    self.BtnHelp = self.Transform:Find("PanelTrialMainLeft/BtnHelp"):GetComponent("Button")
-    self.BtnType = self.Transform:Find("PanelTrialMainLeft/BtnType"):GetComponent("Button")
-    self.ImgForPartPro = self.Transform:Find("PanelTrialMainLeft/ImgForPartPro"):GetComponent("Image")
-    self.ImgBackEndPartPro = self.Transform:Find("PanelTrialMainLeft/ImgBackEndPartPro"):GetComponent("Image")
-    self.PanelForPro = self.Transform:Find("PanelTrialMainLeft/PanelForPro")
-    self.ImgPro1 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/ImgPro1"):GetComponent("Image")
-    self.PanelFx1 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/PanelFx1")
-    self.ImgPro2 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/ImgPro2"):GetComponent("Image")
-    self.PanelFx2 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/PanelFx2")
-    self.ImgPro3 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/ImgPro3"):GetComponent("Image")
-    self.PanelFx3 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/PanelFx3")
-    self.ImgPro4 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/ImgPro4"):GetComponent("Image")
-    self.PanelFx4 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/PanelFx4")
-    self.ImgPro5 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/ImgPro5"):GetComponent("Image")
-    self.PanelFx5 = self.Transform:Find("PanelTrialMainLeft/PanelForPro/PanelFx5")
-    self.PanelBackEndPro = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro")
-    self.ImgPro1A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/ImgPro1"):GetComponent("Image")
-    self.PanelFx1A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/PanelFx1")
-    self.ImgPro2A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/ImgPro2"):GetComponent("Image")
-    self.PanelFx2A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/PanelFx2")
-    self.ImgPro3A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/ImgPro3"):GetComponent("Image")
-    self.PanelFx3A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/PanelFx3")
-    self.ImgPro4A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/ImgPro4"):GetComponent("Image")
-    self.PanelFx4A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/PanelFx4")
-    self.ImgPro5A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/ImgPro5"):GetComponent("Image")
-    self.PanelFx5A = self.Transform:Find("PanelTrialMainLeft/PanelBackEndPro/PanelFx5")
-    self.PanelTrialType = self.Transform:Find("PanelTrialMainLeft/PanelTrialType")
-    self.PanelTrialTaskList = self.Transform:Find("PanelTrialTaskList")
-    self.SViewTaskList = self.Transform:Find("PanelTrialTaskList/SViewTaskList"):GetComponent("ScrollRect")
-    self.PanelTrialGrid = self.Transform:Find("PanelTrialTaskList/SViewTaskList/Viewport/PanelTrialGrid")
-end
-
-function XUiPanelTrialMain:RegisterClickEvent(uiNode, func)
-    if func == nil then
-        XLog.Error("XUiPanelTrialMain:RegisterClickEvent: func is nil")
-        return
-    end
-
-    if type(func) ~= "function" then
-        XLog.Error("XUiPanelTrialMain:RegisterClickEvent: func is not a function")
-    end
-
-    local listener = function(...)
-        func(self, ...)
-    end
-
-    CsXUiHelper.RegisterClickEvent(uiNode, listener)
-end
-
-function XUiPanelTrialMain:AutoAddListener()
-    self:RegisterClickEvent(self.BtnHelp, self.OnBtnHelpClick)
-    self:RegisterClickEvent(self.BtnType, self.OnBtnTypeClick)
+function XUiPanelTrialMain:AddListener()
+    self.BtnHelp.CallBack = function()self:OnBtnHelpClick()end
+    self.BtnType.CallBack = function()self:OnBtnTypeClick()end
 end
 -- auto
 
@@ -293,5 +234,4 @@ function XUiPanelTrialMain:OnBtnTypeClick(eventData)
         end
     end
 end
-
 return XUiPanelTrialMain

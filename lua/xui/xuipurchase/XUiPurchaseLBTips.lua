@@ -33,7 +33,7 @@ function XUiPurchaseLBTips:OnRefresh(data,cb)
 
     self.RetimeSec = 0
     self.UpdateTimerType = nil
-    local curtime = XTime.Now()
+    local curtime = XTime.GetServerNowTimestamp()
     self.BtnBuy.CallBack  = cb
     local closefun = function() self:CloseTips() end
     self.BtnBgClick.CallBack = closefun
@@ -237,12 +237,14 @@ end
 function XUiPurchaseLBTips:SetBuyDes()
     local clientResetInfo = self.Data.ClientResetInfo or {}
     if Next(clientResetInfo) == nil then
+        self.TxtLimitBuy.gameObject:SetActiveEx(false)
         self.TxtLimitBuy.text = ""
         return 
     end
 
     local textKey = nil
     if clientResetInfo.ResetType == RestTypeConfig.Interval then
+        self.TxtLimitBuy.gameObject:SetActiveEx(true)
         self.TxtLimitBuy.text = TextManager.GetText("PurchaseRestTypeInterval",clientResetInfo.DayCount,self.Data.BuyTimes,self.Data.BuyLimitTimes)
         return
     elseif clientResetInfo.ResetType == RestTypeConfig.Day then
@@ -255,9 +257,10 @@ function XUiPurchaseLBTips:SetBuyDes()
 
     if not textKey then
         self.TxtLimitBuy.text = ""
+        self.TxtLimitBuy.gameObject:SetActiveEx(false)
         return
     end
-    
+    self.TxtLimitBuy.gameObject:SetActiveEx(true)
     self.TxtLimitBuy.text = TextManager.GetText(textKey,self.Data.BuyTimes,self.Data.BuyLimitTimes)
 end
 

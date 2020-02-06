@@ -36,7 +36,9 @@ function XUiPanelItemList:GetAutoKey(uiNode, eventName)
 end
 
 function XUiPanelItemList:HidePanel()
-    self.GameObject:SetActive(false)
+    if not XTool.UObjIsNil(self.GameObject) then
+        self.GameObject:SetActiveEx(false)
+    end
 end
 
 function XUiPanelItemList:ShowPanel(id, IsNotSync)

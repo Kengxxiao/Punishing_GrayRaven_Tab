@@ -6,10 +6,14 @@ local XUiDormPersonSelectListItem = require("XUi/XUiDormPerson/XUiDormPersonSele
 local Next = _G.next
 local DormManager
 local TextManager
+local DormIntakeType
+local DormSex
 
 function XUiDormPersonSelect:Ctor(ui,uiroot)
     DormManager = XDataCenter.DormManager
     TextManager = CS.XTextManager
+    DormIntakeType = XDormConfig.DormIntakeType
+    DormSex = XDormConfig.DormSex
     self.SeleCharactList = {}
     self.SeleDormIdList = {}
     self.GameObject = ui.gameObject
@@ -30,6 +34,7 @@ end
 function XUiDormPersonSelect:SetList(dormid)
     self.DormId = dormid
     local rawdata = DormManager.GetCharactersSortedCheckInByDormId(dormid)
+    self.RawListData = rawdata
     if not rawdata or not Next(rawdata) then
         self.ImgNonePerson.gameObject:SetActive(true)
     else
@@ -38,6 +43,7 @@ function XUiDormPersonSelect:SetList(dormid)
     self.ListData = rawdata
     self.DynamicSelectTable:SetDataSource(rawdata)
     self.DynamicSelectTable:ReloadDataASync(1)
+    self.DrdSort.value = 0
 end
 
 -- [监听动态列表事件]
@@ -109,9 +115,68 @@ function XUiDormPersonSelect:AddListener()
     self:RegisterClickEvent(self.BtnClose, self.BtnCancelClick)
     self:RegisterClickEvent(self.BtnConfirm, self.OnBtnConfirmClick)
     self.PutAndRemoveCharacterRespCb = function() self:PutAndRemoveCharacterResp() end
+    self.DrdSort.onValueChanged:AddListener(function()
+        self.PriorSortType = self.DrdSort.value
+        if self.PrePrior == self.PriorSortType then
+            return
+        end
+
+        self.PrePrior = self.PriorSortType
+        self:RefreshSelectedPanel(self.PriorSortType)
+    end)
     self.BtnCancel:SetName(TextManager.GetText("CancelText"))
     self.BtnConfirm:SetName(TextManager.GetText("ConfirmText"))
     self.TxtNonePerson.text = TextManager.GetText("DormNoPerson")
+end
+
+function XUiDormPersonSelect:RefreshSelectedPanel(index)
+    -- self.Count = 0
+    local d = self.RawListData
+    if index == DormIntakeType.All then
+        -- for _,v in pairs(d)do
+        --     if v and v.CharacterId then
+        --         if self.SeleCharactList[v.CharacterId] then
+        --             self.Count = self.Count + 1 
+        --         end
+        --     end 
+        -- end
+        self.ListData = d
+        self.DynamicSelectTable:SetDataSource(d)
+        self.DynamicSelectTable:ReloadDataASync(1)
+        -- self.TxtSelectCount.text = string.format( "%s/%s",self.Count,XDormConfig.GetDormPersonCount(self.DormId))
+        return 
+    end
+
+    self.ListData = {}
+    if index == DormIntakeType.Architecture then
+        for _,v in pairs(d)do
+            if v and v.CharacterId then
+                local t = DormManager.GetDormSex(v.CharacterId) 
+                if t == DormSex.Man or t == DormSex.Woman then
+                    -- if self.SeleCharactList[v.CharacterId] then
+                    --     self.Count = self.Count + 1 
+                    -- end
+                    table.insert(self.ListData, v)
+                end
+            end 
+        end
+    elseif index == DormIntakeType.Infection then
+        for _,v in pairs(d)do
+            if v and v.CharacterId then
+                local t = DormManager.GetDormSex(v.CharacterId) 
+                if t == DormSex.Infect then
+                    -- if self.SeleCharactList[v.CharacterId] then
+                    --     self.Count = self.Count + 1 
+                    -- end
+                    table.insert(self.ListData, v)
+                end
+            end 
+        end
+    end
+
+    self.DynamicSelectTable:SetDataSource(self.ListData)
+    self.DynamicSelectTable:ReloadDataASync(1)
+    -- self.TxtSelectCount.text = string.format( "%s/%s",self.Count,XDormConfig.GetDormPersonCount(self.DormId))
 end
 
 function XUiDormPersonSelect:BtnCancelClick()

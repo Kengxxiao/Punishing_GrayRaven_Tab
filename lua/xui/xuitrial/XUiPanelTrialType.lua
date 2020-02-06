@@ -10,7 +10,8 @@ function XUiPanelTrialType:Ctor(ui, uiRoot, parent)
     self.Transform = ui.transform
     self.UiRoot = uiRoot
     self.Parent = parent
-    self:InitAutoScript()
+    XTool.InitUiObject(self)
+    self:InitScript()
     self:InitUiAfterAuto()
 end
 
@@ -44,7 +45,6 @@ function XUiPanelTrialType:OnDynamicTableEvent(event, index, grid)
         self.Parent:SeleTrialType(index)
         self.Parent:SetTrialBg(index)
         self.Parent:SetTypeTrialPro()
-        XUiHelper.PlayAnimation(self.UiRoot, "AniTrialOpen")
     end
 end
 
@@ -77,21 +77,8 @@ end
 
 -- auto
 -- Automatic generation of code, forbid to edit
-function XUiPanelTrialType:InitAutoScript()
-    self:AutoInitUi()
+function XUiPanelTrialType:InitScript()
     self:AutoAddListener()
-end
-
-function XUiPanelTrialType:AutoInitUi()
-    self.TxtTitle = self.Transform:Find("TxtTitle"):GetComponent("Text")
-    self.ImgArrowUp = self.Transform:Find("ImgArrowUp"):GetComponent("Image")
-    self.ImgArrowDown = self.Transform:Find("ImgArrowDown"):GetComponent("Image")
-    self.BtnClick = self.Transform:Find("BtnClick"):GetComponent("Button")
-    self.ImgAfter = self.Transform:Find("BtnClick/ImgAfter"):GetComponent("Image")
-    self.ImgFront = self.Transform:Find("BtnClick/ImgFront"):GetComponent("Image")
-    self.SViewTrialTypeList = self.Transform:Find("SViewTrialTypeList"):GetComponent("ScrollRect")
-    self.GridTrialTypeItem = self.Transform:Find("SViewTrialTypeList/Viewport/GridTrialTypeItem")
-    self.TxtNameA = self.Transform:Find("SViewTrialTypeList/Viewport/GridTrialTypeItem/TxtName"):GetComponent("Text")
 end
 
 function XUiPanelTrialType:RegisterClickEvent(uiNode, func)

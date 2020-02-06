@@ -13,7 +13,7 @@ end
 
 function XUiFubenDailyBanner:OnEnable()
     self:SetupDynamicTable()
-    self:PlayAnimation("DailyQieHuanEnable")
+    self:PlayAnimation("DailyOut")
 end
 
 --动态列表事件

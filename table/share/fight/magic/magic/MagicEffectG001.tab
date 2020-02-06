@@ -52,6 +52,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 904534	HideJoint	Me1BioMd005010WeaponL																													
 904535	AddBuff	904535																													
 904535000	AddBehavior	904535																													
+904536	AddBuff	904536																													
+904536000	AddBehavior	904536																													
 904601	AddBuff	904601																													
 904601000	AddBehavior	904601																													
 904602	AddBuff	904602																													

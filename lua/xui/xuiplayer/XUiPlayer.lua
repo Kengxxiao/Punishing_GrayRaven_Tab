@@ -7,6 +7,7 @@ function XUiPlayer:OnStart(closeCb, selectIdx, achiveIdx, playerMedal, isSelf)
         Setting = 3,
         Collect = 4,
     }
+    self.SelectIdx = selectIdx
     self.BtnBack.CallBack = function() self:OnBtnBackClick() end
     self.BtnMainUi.CallBack = function() self:OnBtnMainUiClick() end
     self.BtnAchievement:SetDisable(not XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.PlayerAchievement))
@@ -22,11 +23,23 @@ function XUiPlayer:OnStart(closeCb, selectIdx, achiveIdx, playerMedal, isSelf)
     else
         self.InType = XDataCenter.MedalManager.InType.Normal
     end
-
-    self.TabBtnGroup:SelectIndex(selectIdx or self.TagPage.PlayerInfo)
+    
+    self:OnCheckBtnIsNotShow()
+    self.TabBtnGroup:SelectIndex(self.SelectIdx or self.TagPage.PlayerInfo)
     XRedPointManager.AddRedPointEvent(self.ImgSetNameTag, self.OnCheckSetName, self, { XRedPointConditions.Types.CONDITION_PLAYER_SETNAME, XRedPointConditions.Types.CONDITION_HEADPORTRAIT_RED })
     XRedPointManager.AddRedPointEvent(self.BtnAchievement, self.OnCheckAcchiveRedPoint, self, { XRedPointConditions.Types.CONDITION_PLAYER_ACHIEVE })
     XRedPointManager.AddRedPointEvent(self.BtnCollect, self.OnCheckMedalRedPoint, self, { XRedPointConditions.Types.CONDITION_MEDAL_RED })
+    -- 功能屏蔽
+    self.BtnAchievement.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.PlayerAchievement))
+end
+
+function XUiPlayer:OnCheckBtnIsNotShow()
+    if XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.Medal) then
+        self.BtnCollect.gameObject:SetActive(false)
+        if self.SelectIdx == self.TagPage.Collect then
+            self.SelectIdx = nil
+        end
+    end
 end
 
 function XUiPlayer:OnCheckSetName(count)
@@ -38,11 +51,7 @@ function XUiPlayer:OnCheckAcchiveRedPoint(count)
 end
 
 function XUiPlayer:OnCheckMedalRedPoint(count)
-    if XFunctionManager.JudgeCanOpen(XFunctionManager.FunctionName.Medal) then
-        self.BtnCollect:ShowReddot(count >= 0)
-    else
-        self.BtnCollect:ShowReddot(false)
-    end
+    self.BtnCollect:ShowReddot(count >= 0)
 end
 
 function XUiPlayer:OnTabBtnGroup(index)

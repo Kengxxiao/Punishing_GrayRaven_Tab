@@ -1,0 +1,101 @@
+Role	State	Target	TransitionDuration
+Mb1CubeMd050002		Born	0
+Mb1CubeMd050002		Stand2	0.1
+Mb1CubeMd050002		Stand1	0.1
+Mb1CubeMd050002		Stand3	0.1
+Mb1CubeMd050002		Standchange	0.1
+Mb1CubeMd050002		Run	0.1
+Mb1CubeMd050002		Walk	0.1
+Mb1CubeMd050002		Death	0.1
+Mb1CubeMd050002		Hit1	0.05
+Mb1CubeMd050002		Hit2	0.05
+Mb1CubeMd050002		Behitfly	0.05
+Mb1CubeMd050002		Hoverhit	0.05
+Mb1CubeMd050002		Falldown	0.1
+Mb1CubeMd050002		Hitdown	0.1
+Mb1CubeMd050002		Lieonfloor	0.1
+Mb1CubeMd050002		Standup	0.1
+Mb1CubeMd050002		Straight	0.1
+Mb1CubeMd050002		Stun	0.1
+Mb1CubeMd050002		TurnLeft	0.1
+Mb1CubeMd050002		TurnRight	0.1
+Mb1CubeMd050002		StraightBefore	0.1
+Mb1CubeMd050002		StraightAfter	0.1
+Mb1CubeMd050002		UiStand1	0.1
+Mb1CubeMd050002		Win	0
+Mb1CubeMd050002		Win2	0.1
+Mb1CubeMd050002		Runb	0.2
+Mb1CubeMd050002		Runl	0.2
+Mb1CubeMd050002		Runr	0.2
+Mb1CubeMd050002		Stop	0.1
+Mb1CubeMd050002		Walkb	0.1
+Mb1CubeMd050002		Walkl	0.1
+Mb1CubeMd050002		Walkr	0.1
+Mb1CubeMd050002		Fail	0.1
+Mb1CubeMd050002		Save	0.1
+Mb1CubeMd050002		Hit3	0.05
+Mb1CubeMd050002		Hit4	0.05
+Mb1CubeMd050002		RunStart	0.1
+Mb1CubeMd050002		RunStartEnd01	0.1
+Mb1CubeMd050002		Move1	0.1
+Mb1CubeMd050002		Move2	0.1
+Mb1CubeMd050002		Move3	0.1
+Mb1CubeMd050002	Stand2	Standchange	0.1
+Mb1CubeMd050002	Stand2	Run	0.2
+Mb1CubeMd050002	Stand2	Walk	0.3
+Mb1CubeMd050002	Stand2	Walkb	0.3
+Mb1CubeMd050002	Stand2	Walkl	0.3
+Mb1CubeMd050002	Stand2	Walkr	0.3
+Mb1CubeMd050002	Stand1	Run	0.2
+Mb1CubeMd050002	Stand1	Walk	0.1
+Mb1CubeMd050002	Standchange	Stand1	0.1
+Mb1CubeMd050002	Standchange	Run	0.1
+Mb1CubeMd050002	Standchange	Walk	0.1
+Mb1CubeMd050002	Run	Stop	0.2
+Mb1CubeMd050002	Run	Stand2	0.2
+Mb1CubeMd050002	Run	Runb	0.2
+Mb1CubeMd050002	Run	Runl	0.2
+Mb1CubeMd050002	Run	Runr	0.2
+Mb1CubeMd050002	Walk	Stand2	0.1
+Mb1CubeMd050002	Hit1	Stand2	0
+Mb1CubeMd050002	Hit2	Stand2	0
+Mb1CubeMd050002	Behitfly	Hoverhit	0.1
+Mb1CubeMd050002	Behitfly	Falldown	0.1
+Mb1CubeMd050002	Hoverhit	Falldown	0.1
+Mb1CubeMd050002	Falldown	Lieonfloor	0.1
+Mb1CubeMd050002	Hitdown	Lieonfloor	0.1
+Mb1CubeMd050002	Standup	Stand2	0.1
+Mb1CubeMd050002	Straight	Stand2	0.1
+Mb1CubeMd050002	Stun	Stand2	0.1
+Mb1CubeMd050002	TurnLeft	Stand2	0.1
+Mb1CubeMd050002	TurnRight	Stand2	0.1
+Mb1CubeMd050002	Win	Win2	0.1
+Mb1CubeMd050002	Runb	Stand2	0.2
+Mb1CubeMd050002	Runb	Run	0.2
+Mb1CubeMd050002	Runb	Runl	0.2
+Mb1CubeMd050002	Runb	Runr	0.2
+Mb1CubeMd050002	Runl	Stand2	0.2
+Mb1CubeMd050002	Runl	Run	0.2
+Mb1CubeMd050002	Runl	Runb	0.2
+Mb1CubeMd050002	Runl	Runr	0.2
+Mb1CubeMd050002	Runr	Stand2	0.2
+Mb1CubeMd050002	Runr	Run	0.2
+Mb1CubeMd050002	Runr	Runb	0.2
+Mb1CubeMd050002	Runr	Runl	0.2
+Mb1CubeMd050002	Stop	Stand2	0.1
+Mb1CubeMd050002	Walkb	Stand2	0.1
+Mb1CubeMd050002	Walkb	Walk	0.2
+Mb1CubeMd050002	Walkb	Walkl	0.1
+Mb1CubeMd050002	Walkb	Walkr	0.1
+Mb1CubeMd050002	Walkl	Stand2	0.1
+Mb1CubeMd050002	Walkl	Walk	0.1
+Mb1CubeMd050002	Walkl	Walkb	0.1
+Mb1CubeMd050002	Walkl	Walkr	0.2
+Mb1CubeMd050002	Walkr	Stand2	0.1
+Mb1CubeMd050002	Walkr	Walk	0.1
+Mb1CubeMd050002	Walkr	Walkb	0.1
+Mb1CubeMd050002	Walkr	Walkl	0.2
+Mb1CubeMd050002	Hit3	Stand2	0
+Mb1CubeMd050002	Hit4	Stand2	0
+Mb1CubeMd050002	RunStart	Run	0
+Mb1CubeMd050002	RunStart	RunStartEnd01	0.1

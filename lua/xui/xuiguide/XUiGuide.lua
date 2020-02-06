@@ -153,7 +153,7 @@ function XUiGuide:OnBtnPanelMaskGuideClick(...)
 end
 
 function XUiGuide:CheckDouble()
-    if XTime.Now() - self.LastClickTime > self.ClickInterval then
+    if XTime.GetServerNowTimestamp() - self.LastClickTime > self.ClickInterval then
         self.ContinueClickTimes = 0
     else
         self.ContinueClickTimes = self.ContinueClickTimes + 1
@@ -164,7 +164,7 @@ function XUiGuide:CheckDouble()
         self.BtnSkip.gameObject:SetActive(true)
     end
 
-    self.LastClickTime = XTime.Now()
+    self.LastClickTime = XTime.GetServerNowTimestamp()
 end
 
 function XUiGuide:SetPanel()

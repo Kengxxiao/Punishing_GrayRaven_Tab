@@ -68,11 +68,6 @@ XGame.Start5 = function()
     XModelManager.Init()
     modelProfiler:Stop()
 
-    local resourceLutProfiler = XGame.Profiler:CreateChild("XResourceLutManager")
-    resourceLutProfiler:Start()
-    XResourceLutManager.Init()
-    resourceLutProfiler:Stop()
-
     local conditionProfiler = XGame.Profiler:CreateChild("XConditionManager")
     conditionProfiler:Start()
     XConditionManager.Init()

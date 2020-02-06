@@ -23,7 +23,7 @@ function XUiPanelDormTaskStory:ShowPanel()
     self.GameObject:SetActive(true)
     self.PanelTaskStoryList.gameObject:SetActive(true)
 
-    self.StoryTasks = XDataCenter.TaskManager.GetTaskStoryListData()
+    self.StoryTasks = XDataCenter.TaskManager.GetDormTaskStoryListData()
     local len = #self.StoryTasks
     self.PanelNoneStoryTask.gameObject:SetActive(len<=0)
     self.DynamicTable:SetDataSource(self.StoryTasks)
@@ -38,7 +38,7 @@ function XUiPanelDormTaskStory:ShowCourseReward(rewardId, name)
 end
 
 function XUiPanelDormTaskStory:Refresh()
-    self.StoryTasks = XDataCenter.TaskManager.GetTaskStoryListData()
+    self.StoryTasks = XDataCenter.TaskManager.GetDormTaskStoryListData()
     local len = #self.StoryTasks
     self.PanelNoneStoryTask.gameObject:SetActive(len<=0)
     self.DynamicTable:SetDataSource(self.StoryTasks)

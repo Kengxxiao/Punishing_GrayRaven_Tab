@@ -1,7 +1,7 @@
 XFubenActivityBranchManagerCreator = function()
     local pairs = pairs
     local tableInsert = table.insert
-    local CSXDateGetTime = CS.XDate.GetTime
+    local ParseToTimestamp = XTime.ParseToTimestamp
 
     local ActivityId = 0
     local SectionId = 0
@@ -29,10 +29,10 @@ XFubenActivityBranchManagerCreator = function()
         if activityId == 0 then return end  --未配置活动信息
         local config = XFubenActivityBranchConfigs.GetActivityConfig(activityId)
         ActivityId = activityId
-        BeginTime = CSXDateGetTime(config.BeginTimeStr)
-        ChallengeBeginTime = CSXDateGetTime(config.ChallengeBeginTimeStr)
-        FightEndTime = CSXDateGetTime(config.FightEndTimeStr)
-        EndTime = CSXDateGetTime(config.EndTimeStr)
+        BeginTime = ParseToTimestamp(config.BeginTimeStr)
+        ChallengeBeginTime = ParseToTimestamp(config.ChallengeBeginTimeStr)
+        FightEndTime = ParseToTimestamp(config.FightEndTimeStr)
+        EndTime = ParseToTimestamp(config.EndTimeStr)
     end
 
     function XFubenActivityBranchManager.HandlerFightResult(stageId)
@@ -114,6 +114,18 @@ XFubenActivityBranchManagerCreator = function()
         return ScheduleDic[chapterId]
     end
 
+    function XFubenActivityBranchManager.GetChapterMoveStageIndex(chapterId)
+        if not chapterId then return end
+        local chapterCfg = XFubenActivityBranchConfigs.GetChapterCfg(chapterId)
+        return chapterCfg and chapterCfg.MoveStageIndex
+    end
+
+    function XFubenActivityBranchManager.GetChapterDatumLinePrecent(chapterId)
+        if not chapterId then return end
+        local chapterCfg = XFubenActivityBranchConfigs.GetChapterCfg(chapterId)
+        return chapterCfg and chapterCfg.DatumLinePrecent
+    end
+
     function XFubenActivityBranchManager.GetActivityBeginTime()
         return BeginTime
     end
@@ -131,17 +143,17 @@ XFubenActivityBranchManagerCreator = function()
     end
 
     function XFubenActivityBranchManager.IsStatusEqualFightEnd()
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         return FightEndTime <= now and now < EndTime
     end
 
     function XFubenActivityBranchManager.IsStatusEqualChallengeBegin()
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         return ChallengeBeginTime <= now and now < EndTime
     end
 
     function XFubenActivityBranchManager.IsOpen()
-        local nowTime = XTime.Now()
+        local nowTime = XTime.GetServerNowTimestamp()
         return BeginTime <= nowTime and nowTime < EndTime and SectionId ~= 0
     end
 

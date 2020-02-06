@@ -8,6 +8,7 @@ function XUiPanelAddContactView:Ctor(ui,rootUi)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
     self.RootUi = rootUi
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 
     self.RecommendedList = {}
@@ -27,12 +28,12 @@ function XUiPanelAddContactView:InitAutoScript()
 end
 
 function XUiPanelAddContactView:AutoInitUi()
-    self.TxtMyId = self.Transform:Find("AddPanelOther/TxtMyId"):GetComponent("Text")
-    self.BtnRefresh = self.Transform:Find("AddPanelOther/BtnRefresh"):GetComponent("Button")
-    self.BtnCopy = self.Transform:Find("AddPanelOther/BtnCopy"):GetComponent("Button")
-    self.BtnSerach = self.Transform:Find("AddPanelOther/BtnSerach"):GetComponent("Button")
-    self.InFSerach = self.Transform:Find("AddPanelOther/InFSerach"):GetComponent("InputField")
-    self.PanelAddContactViewPools = self.Transform:Find("PanelAddContactViewPools")
+    -- self.TxtMyId = self.Transform:Find("AddPanelOther/TxtMyId"):GetComponent("Text")
+    -- self.BtnRefresh = self.Transform:Find("AddPanelOther/BtnRefresh"):GetComponent("Button")
+    -- self.BtnCopy = self.Transform:Find("AddPanelOther/BtnCopy"):GetComponent("Button")
+    -- self.BtnSerach = self.Transform:Find("AddPanelOther/BtnSerach"):GetComponent("Button")
+    -- self.InFSerach = self.Transform:Find("AddPanelOther/InFSerach"):GetComponent("InputField")
+    -- self.PanelAddContactViewPools = self.Transform:Find("PanelAddContactViewPools")
 end
 
 function XUiPanelAddContactView:GetAutoKey(uiNode,eventName)
@@ -65,9 +66,9 @@ end
 
 function XUiPanelAddContactView:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnRefresh, "onClick", self.OnBtnRefreshClick)
-    self:RegisterListener(self.BtnCopy, "onClick", self.OnBtnCopyClick)
-    self:RegisterListener(self.BtnSerach, "onClick", self.OnBtnSerachClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnRefresh, self.OnBtnRefreshClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCopy, self.OnBtnCopyClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnSerach, self.OnBtnSerachClick)
 end
 -- auto
 

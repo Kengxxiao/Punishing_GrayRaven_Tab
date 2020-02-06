@@ -2,4 +2,3 @@ Id	Auto	MaxRebootCount	RebootItemId	ConsumeCount	HpRetain	MagicIds[1]	MagicIds[2
 1	1	3	3	0	1	100028	100039
 2		3	3	25	1	100028	100039
 3	1	99999	3	0	1	100028	100039
-4		1	3	0	1	100028	100039

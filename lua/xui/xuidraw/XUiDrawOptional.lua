@@ -74,10 +74,10 @@ function XUiDrawOptional:InitAutoScript()
 end
 
 function XUiDrawOptional:AutoInitUi()
-    self.PanelOptional = self.Transform:Find("SafeAreaContentPane/PanelOptional")
-    self.PanelCombinations = self.Transform:Find("SafeAreaContentPane/PanelOptional/SrollViewInfoList/PanelCombinations")
-    self.PanelCombination = self.Transform:Find("SafeAreaContentPane/PanelOptional/SrollViewInfoList/PanelCombinations/PanelCombination")
-    self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
+    -- self.PanelOptional = self.Transform:Find("SafeAreaContentPane/PanelOptional")
+    -- self.PanelCombinations = self.Transform:Find("SafeAreaContentPane/PanelOptional/SrollViewInfoList/PanelCombinations")
+    -- self.PanelCombination = self.Transform:Find("SafeAreaContentPane/PanelOptional/SrollViewInfoList/PanelCombinations/PanelCombination")
+    -- self.BtnClose = self.Transform:Find("SafeAreaContentPane/BtnClose"):GetComponent("Button")
 end
 
 function XUiDrawOptional:GetAutoKey(uiNode, eventName)
@@ -114,14 +114,16 @@ end
 
 function XUiDrawOptional:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnClose, "onClick", self.OnBtnCloseClick)
+    self:RegisterClickEvent(self.BtnClose, self.OnBtnCloseClick)
 end
 -- auto
 function XUiDrawOptional:OnBtnCloseClick(...)
-    XUiHelper.PlayAnimation(self, "UiDrawOptionalEnd", nil, function()
-        self.OptionalCb(self.CurSelectDrawId)
-        self:Close()
-    end)
+    self.OptionalCb(self.CurSelectDrawId)
+    self:Close()
+    -- XUiHelper.PlayAnimation(self, "UiDrawOptionalEnd", nil, function()
+    --     self.OptionalCb(self.CurSelectDrawId)
+    --     self:Close()
+    -- end)
     XDataCenter.DrawManager.SaveDrawAimId(self.CurSelectDrawId,self.GroupId)
 end
 

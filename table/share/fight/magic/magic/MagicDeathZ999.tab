@@ -7,14 +7,6 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 83210095	AddNpcState	21																													
 83210092	AddBuff	83210092																													
 83210093	AddNpcState	22																													
-83300096	AddBuff	83300096																													
-83300097	AddMissile	833099|1																													
-83300098	AddBuff	83300098																													
-83300099	HideJoint	Root																													
-83300094	AddBuff	83300094																													
-83300095	AddNpcState	21																													
-83300092	AddBuff	83300092																													
-83300093	AddNpcState	22																													
 81610096	AddBuff	81610096																													
 81610097	AddMissile	816199|1																													
 81610098	AddBuff	81610098																													

@@ -9,6 +9,7 @@ function XUiGridEmoji:Ctor(rootUi, ui, parent)
     if emojiPanel then
         self.MainPanel = emojiPanel
     end
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 
     self.ClickCallBack = nil
@@ -23,8 +24,8 @@ function XUiGridEmoji:InitAutoScript()
 end
 
 function XUiGridEmoji:AutoInitUi()
-    self.RImgEmojiD = self.Transform:Find("RImgEmoji"):GetComponent("RawImage")
-    self.BtnEmoji = self.Transform:Find("BtnEmoji"):GetComponent("Button")
+    -- self.RImgEmojiD = self.Transform:Find("RImgEmoji"):GetComponent("RawImage")
+    -- self.BtnEmoji = self.Transform:Find("BtnEmoji"):GetComponent("Button")
 end
 
 function XUiGridEmoji:GetAutoKey(uiNode, eventName)
@@ -61,7 +62,7 @@ end
 
 function XUiGridEmoji:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnEmoji, "onClick", self.OnBtnEmojiClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnEmoji, self.OnBtnEmojiClick)
 end
 -- auto
 

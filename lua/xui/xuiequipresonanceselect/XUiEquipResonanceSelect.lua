@@ -49,7 +49,7 @@ function XUiEquipResonanceSelect:OnNotify(evt, ...)
     if evt == XEventId.EVENT_EQUIP_RESONANCE_NOTYFY then
         self.RootUi:FindChildUiObj("UiEquipResonanceSkill").UiProxy:SetActive(true)
         self.UiProxy:SetActive(false)
-        XLuaUiManager.Open("UiEquipResonanceSelectAfter", self.EquipId, self.Pos)
+        XLuaUiManager.Open("UiEquipResonanceSelectAfter", self.EquipId, self.Pos, self.RootUi.CharacterId)
 
         self.SelectEquipId = nil
         self.SelectCharacterId = nil

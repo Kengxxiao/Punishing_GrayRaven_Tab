@@ -100,7 +100,7 @@ end
 
 function XUiPanelDetailTeamItem:OnBtnVoteClick(...)
     XUiHelper.StopAnimation()
-    XUiHelper.PlayAnimation(self.GameObject, "AniPanelTeamInfoVote")
+    --XUiHelper.PlayAnimation(self.GameObject, "AniPanelTeamInfoVote")
     XDataCenter.VoteManager.AddVote(self.VoteId)
 end
 

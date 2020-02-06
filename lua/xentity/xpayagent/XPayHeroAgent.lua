@@ -7,6 +7,7 @@ local RuntimePlatform = CS.UnityEngine.RuntimePlatform
 local function TipPayFail()
     local text = CS.XTextManager.GetText("PayFail")
     XUiManager.DialogTip("", text, XUiManager.DialogType.OnlySure)
+    XEventManager.DispatchEvent(XEventId.EVNET_FAIL_PAY)
 end
 
 local function PayAndroid(self, productKey, cpOrderId, goodsId, cb)

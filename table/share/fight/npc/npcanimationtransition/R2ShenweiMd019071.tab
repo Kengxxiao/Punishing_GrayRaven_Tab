@@ -10,7 +10,7 @@ R2ShenweiMd019071		Death	0.1
 R2ShenweiMd019071		Hit1	0.05
 R2ShenweiMd019071		Hit2	0.05
 R2ShenweiMd019071		Behitfly	0.05
-R2ShenweiMd019071		Hoverhit	0
+R2ShenweiMd019071		Hoverhit	0.05
 R2ShenweiMd019071		Falldown	0.1
 R2ShenweiMd019071		Hitdown	0.1
 R2ShenweiMd019071		Lieonfloor	0.1
@@ -21,6 +21,7 @@ R2ShenweiMd019071		TurnLeft	0.1
 R2ShenweiMd019071		TurnRight	0.1
 R2ShenweiMd019071		StraightBefore	0.1
 R2ShenweiMd019071		StraightAfter	0.1
+R2ShenweiMd019071		UiStand1	0.1
 R2ShenweiMd019071		Win	0
 R2ShenweiMd019071		Win2	0.1
 R2ShenweiMd019071		Runb	0.2
@@ -109,5 +110,5 @@ R2ShenweiMd019071	Walkr	Walkb	0.1
 R2ShenweiMd019071	Walkr	Walkl	0.2
 R2ShenweiMd019071	Hit3	Stand2	0
 R2ShenweiMd019071	Hit4	Stand2	0
-R2ShenweiMd019071	RunStart	Run	0.05
+R2ShenweiMd019071	RunStart	Run	0
 R2ShenweiMd019071	RunStart	RunStartEnd01	0.1

@@ -48,11 +48,11 @@ function XUiDrawMain:InitAutoScript()
 end
 
 function XUiDrawMain:AutoInitUi()
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
-    self.PanelContentTabBtns = self.Transform:Find("SafeAreaContentPane/PanelTab/PanelSview/SViewCards/Viewport/PanelContentTabBtns")
-    self.TxtTabName = self.Transform:Find("SafeAreaContentPane/PanelTab/Bt/TxtTabName"):GetComponent("Text")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnBack"):GetComponent("Button")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelCharTopButton/BtnMainUi"):GetComponent("Button")
+    -- self.PanelContentTabBtns = self.Transform:Find("SafeAreaContentPane/PanelTab/PanelSview/SViewCards/Viewport/PanelContentTabBtns")
+    -- self.TxtTabName = self.Transform:Find("SafeAreaContentPane/PanelTab/Bt/TxtTabName"):GetComponent("Text")
 end
 
 function XUiDrawMain:AutoAddListener()
@@ -76,6 +76,7 @@ function XUiDrawMain:InitDrawCardsData()
     XDataCenter.DrawManager.GetDrawGroupList(function()
         self.InfoList = XDataCenter.DrawManager.GetDrawGroupInfos()
         self.InfoListFull = self.InfoList
+        --XDataCenter.DrawManager.UpdateActivityDrawListByTag(self.InfoList)
         self:InitDrawTabs()
     end)
 end
@@ -209,6 +210,11 @@ function XUiDrawMain:DefaultSelect()
     end
     --如果到这里说明没有结果满足选择条件，默认选中第一个
     self.PanelTogBtns:SelectIndex(1)
+end
+
+--研发红点
+function XUiDrawMain:OnCheckTabNews(count)
+    self.BtnReward:ShowReddot(count >= 0)
 end
 
 function XUiDrawMain:OnSelectedTog(index)

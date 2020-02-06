@@ -55,8 +55,8 @@ end
 
 function XUiGridWorkSlotState:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnComplete, "onClick", self.OnBtnCompleteClick)
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnComplete, self.OnBtnCompleteClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
 end
 -- auto
 

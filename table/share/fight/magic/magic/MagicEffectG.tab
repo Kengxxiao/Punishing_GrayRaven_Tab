@@ -115,6 +115,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 901922	ShakeCamera	3|00.3|-1|10|00.25|0																													
 901923	ShakeCamera	2|00.6|-1|10|00.35|0																													
 901924	ShakeCamera	7|00.2|-00.5|20|00.2|0																													
+901925	AddBuff	901925																													
+901925000	ChangeAttribValue	33|5000|																													
 902002	AddBuff	902002																													
 902002000	HideJoint	ModelCase																													
 902003	AddBuff	902003																													

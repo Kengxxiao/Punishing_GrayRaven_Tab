@@ -54,8 +54,8 @@ end
 
 function XUiGridFloorItem:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnFloor, "onClick", self.OnBtnFloorClick)
-    self:RegisterListener(self.BtnLock, "onClick", self.OnBtnLockClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnFloor, self.OnBtnFloorClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnLock, self.OnBtnLockClick)
 end
 -- auto
 

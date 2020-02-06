@@ -98,7 +98,7 @@ end
 function XUiEquipResonanceSkill:OnBtnResonanceClick(pos)
     self:PlayAnimation("PanelSkill" .. pos, function ()
         if XDataCenter.EquipManager.CheckEquipPosUnconfirmedResonanced(self.EquipId, pos) then
-            XLuaUiManager.Open("UiEquipResonanceSelectAfter", self.EquipId, pos)
+            XLuaUiManager.Open("UiEquipResonanceSelectAfter", self.EquipId, pos, self.RootUi.CharacterId)
         else
             self.RootUi:FindChildUiObj("UiEquipResonanceSelect"):Refresh(pos)
             self.RootUi:FindChildUiObj("UiEquipResonanceSelectEquip"):Reset()

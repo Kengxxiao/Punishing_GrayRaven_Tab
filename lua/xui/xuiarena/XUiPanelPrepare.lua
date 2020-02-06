@@ -93,6 +93,11 @@ function XUiPanelPrepare:Refresh()
         self.RImgLevel:SetRawImage(arenaLevelCfg.Icon)
     end
 
+    local challengeCfg = XDataCenter.ArenaManager.GetCurChallengeCfg()
+    if challengeCfg then
+        self.TxtLevel.text = CS.XTextManager.GetText("ArenaPlayerLevelRange", challengeCfg.MinLv, challengeCfg.MaxLv)
+    end
+
     local isEnd = XDataCenter.ArenaManager.GetArenaActivityStatus() == XArenaActivityStatus.Over
     self.PanelNorResult.gameObject:SetActiveEx(not isEnd)
     self.PanelSelectResult.gameObject:SetActiveEx(isEnd)

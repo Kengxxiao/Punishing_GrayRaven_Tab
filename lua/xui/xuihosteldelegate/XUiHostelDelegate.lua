@@ -69,13 +69,13 @@ end
 
 function XUiHostelDelegate:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnReport, "onClick", self.OnBtnReportClick)
-    self:RegisterListener(self.BtnAdd, "onClick", self.OnBtnAddClick)
-    self:RegisterListener(self.BtnMinus, "onClick", self.OnBtnMinusClick)
-    self:RegisterListener(self.BtnRelease, "onClick", self.OnBtnReleaseClick)
-    self:RegisterListener(self.BtnCancel, "onClick", self.OnBtnCancelClick)
-    self:RegisterListener(self.BtnHelp, "onClick", self.OnBtnHelpClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnBack, self.OnBtnBackClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnReport, self.OnBtnReportClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnAdd, self.OnBtnAddClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnMinus, self.OnBtnMinusClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnRelease, self.OnBtnReleaseClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnCancel, self.OnBtnCancelClick)
+    XUiHelper.RegisterClickEvent(self, self.BtnHelp, self.OnBtnHelpClick)
 end
 -- auto
 

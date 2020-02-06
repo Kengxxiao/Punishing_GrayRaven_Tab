@@ -263,8 +263,15 @@ function XUiFubenMainLineChapter:UpdateDifficultToggles(showAll)
     self.IsShowDifficultPanel = showAll
     --progress
     local pageDatas = XDataCenter.FubenMainLineManager.GetChapterMainTemplates(self.CurDiff)
-    self.TxtNormalProgress.text = XDataCenter.FubenMainLineManager.GetProgressByChapterId(pageDatas[self.Chapter.OrderId].ChapterId[1])
-    self.TxtHardProgress.text = XDataCenter.FubenMainLineManager.GetProgressByChapterId(pageDatas[self.Chapter.OrderId].ChapterId[2])
+    local chapterIds = {}
+    for _, v in pairs(pageDatas) do
+        if v.OrderId == self.Chapter.OrderId then
+            chapterIds = v.ChapterId
+            break
+        end
+    end
+    self.TxtNormalProgress.text = XDataCenter.FubenMainLineManager.GetProgressByChapterId(chapterIds[1])
+    self.TxtHardProgress.text = XDataCenter.FubenMainLineManager.GetProgressByChapterId(chapterIds[2])
     -- 抢先体验活动倒计时
     self:UpdateActivityTime()
 end
@@ -370,10 +377,6 @@ function XUiFubenMainLineChapter:ShowStageDetail(stage)
     self.Stage = stage
     local childUi = self:GetCurDetailChildUi()
     self:OpenOneChildUi(childUi, self)
-    local childUiObj = self:FindChildUiObj(childUi)
-    if childUiObj then
-        childUiObj:Refresh(stage)
-    end
 end
 
 function XUiFubenMainLineChapter:OnEnterStory(stageId)
@@ -450,14 +453,10 @@ function XUiFubenMainLineChapter:UpdatePanelBfrtTask()
 end
 
 function XUiFubenMainLineChapter:UpdateChapterStars()
-    local chapterInfo = XDataCenter.FubenMainLineManager.GetChapterInfo(self.Chapter.ChapterId)
     local curStars = 0
-    if chapterInfo then
-        curStars = chapterInfo.Stars
-    end
-
-    local stageList = XDataCenter.FubenMainLineManager.GetStageList(self.Chapter.ChapterId)
-    local totalStars = 3 * #stageList
+    local totalStars = 0
+    curStars,totalStars = XDataCenter.FubenMainLineManager.GetChapterStars(self.Chapter.ChapterId)
+    
     self.ImgJindu.fillAmount = totalStars > 0 and curStars / totalStars or 0
     self.ImgJindu.gameObject:SetActive(true)
     self.TxtStarNum.text = CS.XTextManager.GetText("Fract", curStars, totalStars)
@@ -492,7 +491,7 @@ function XUiFubenMainLineChapter:OnBtnTreasureClick()
         end
 
         local taskId = XDataCenter.BfrtManager.GetBfrtTaskId(chapterId)
-        XDataCenter.TaskManager.FinishTask(taskId, function(rewardGoodsList) 
+        XDataCenter.TaskManager.FinishTask(taskId, function(rewardGoodsList)
             XUiManager.OpenUiObtain(rewardGoodsList)
             self:UpdatePanelBfrtTask()
         end)
@@ -517,7 +516,7 @@ function XUiFubenMainLineChapter:CloseStageDetail()
 end
 
 function XUiFubenMainLineChapter:OnBtnTreasureBgClick()
-        self:PlayAnimation("TreasureDisable",handler(self, function()
+    self:PlayAnimation("TreasureDisable", handler(self, function()
         self.PanelTreasure.gameObject:SetActive(false)
         self.PanelTop.gameObject:SetActive(true)
         self.PanelBottom.gameObject:SetActive(true)
@@ -711,9 +710,9 @@ end
 function XUiFubenMainLineChapter:CreateActivityTimer()
     self:DestroyActivityTimer()
 
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local endTime = XDataCenter.FubenMainLineManager.GetActivityEndTime()
-    self.TxtLeftTime.text = XUiHelper.GetTime(endTime - time)
+    self.TxtLeftTime.text = XUiHelper.GetTime(endTime - time, XUiHelper.TimeFormatType.ACTIVITY)
     self.ActivityTimer = CS.XScheduleManager.ScheduleForever(function(...)
         if XTool.UObjIsNil(self.TxtLeftTime) then
             self:DestroyActivityTimer()
@@ -749,5 +748,11 @@ function XUiFubenMainLineChapter:GetCurDetailChildUi()
         return "UiStoryStageDetail"
     else
         return "UiFubenMainLineDetail"
+    end
+end
+
+function XUiFubenMainLineChapter:GoToStage(stageId)
+    if self.CurChapterGrid then
+        self.CurChapterGrid:GoToStage(stageId)
     end
 end

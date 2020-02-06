@@ -5,7 +5,6 @@ local TABLE_CHARACTER_EXHIBITION_LEVEL = "Client/Exhibition/ExhibitionLevel.tab"
 local TABLE_CHARACTER_GROW_TASK_INFO = "Share/Exhibition/ExhibitionReward.tab"
 
 local DefaultPortraitImagePath = CS.XGame.ClientConfig:GetString("DefaultPortraitImagePath")
-
 local ExhibitionLevelPoint = {} 
 local ExhibitionConfig = {}
 local ExhibitionGroupNameConfig = {}
@@ -39,7 +38,6 @@ function XExhibitionConfigs.Init()
             ExhibitionGroupDescConfig[v.GroupId] = v.GroupDescription
         end
     end
-    
     ExhibitionLevelPoint[1] = CS.XGame.ClientConfig:GetInt("ExhibitionLevelPoint_01")
     ExhibitionLevelPoint[2] = CS.XGame.ClientConfig:GetInt("ExhibitionLevelPoint_02")
     ExhibitionLevelPoint[3] = CS.XGame.ClientConfig:GetInt("ExhibitionLevelPoint_03")
@@ -48,6 +46,18 @@ end
 
 function XExhibitionConfigs.GetDefaultPortraitImagePath()
     return DefaultPortraitImagePath
+end
+
+function XExhibitionConfigs.GetExhibitionLevelPoints()
+     return ExhibitionLevelPoint
+end
+
+function XExhibitionConfigs.GetGrowUpLevelMax()
+     local maxPoint = 0
+     for i = 1,4 do
+          maxPoint = maxPoint + ExhibitionLevelPoint[i]
+     end
+     return maxPoint
 end
 
 function XExhibitionConfigs.GetExhibitionConfig()
@@ -72,18 +82,6 @@ end
 
 function XExhibitionConfigs.GetCharacterGrowUpTasks(characterId)
     return CharacterGrowUpTasksConfig[characterId]
-end
-
-function XExhibitionConfigs.GetExhibitionLevelPoints()
-    return ExhibitionLevelPoint
-end
-
-function XExhibitionConfigs.GetGrowUpLevelMax()
-    local maxPoint = 0
-    for i = 1,4 do
-        maxPoint = maxPoint + ExhibitionLevelPoint[i]
-    end
-    return maxPoint
 end
 
 function XExhibitionConfigs.GetCharacterGrowUpTask(characterId, level)

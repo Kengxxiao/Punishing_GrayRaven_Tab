@@ -5,17 +5,9 @@ function XUiGridTitle:Ctor(ui)
     self.Transform = ui.transform
     XTool.InitUiObject(self)
     self:InitAutoScript()
-    self:SetTitleBg(false)
-    self.RepointId = XRedPointManager.AddRedPointEvent(self.ImgRedDot,self.CheckUnReadOrHasReward,self,{XRedPointConditions.Types.CONDITION_MAIL_PERSONAL},nil)
-
+    self:SetTitleBg(false)   
 end
 
-function XUiGridTitle:CheckUnReadOrHasReward(count)
-    self.ImgRedDot.gameObject:SetActiveEx(count >= 0)
-end
-
--- auto
--- Automatic generation of code, forbid to edit
 function XUiGridTitle:InitAutoScript()
     self:AutoAddListener()
 end
@@ -25,7 +17,6 @@ function XUiGridTitle:AutoAddListener()
         self:OnBtnTitleClick()
     end
 end
--- auto
 
 function XUiGridTitle:OnBtnTitleClick(...)
     self.Base.CurMailInfo = self.MailInfo
@@ -60,14 +51,13 @@ function XUiGridTitle:UpdateMailGrid(base,mailInfo)
     self.MailInfo = mailInfo
     local mailId = mailInfo.Id
     self.TxtTitleRead.text = mailInfo.Title
-    self.TxtDateRead.text = CS.XDate.FormatTime(mailInfo.CreateTime)
+    -- self.TxtDateRead.text = XTime.TimestampToGameDateTimeString(mailInfo.CreateTime)
     self.TxtDateRead.gameObject:SetActiveEx(false)
     self.TxtTitleUnread.text = mailInfo.Title
-    self.TxtDateUnread.text = CS.XDate.FormatTime(mailInfo.CreateTime)
+    -- self.TxtDateUnread.text = XTime.TimestampToGameDateTimeString(mailInfo.CreateTime)
     self.TxtDateUnread.gameObject:SetActiveEx(false)
     self:SetMailStatusByStatu()
     self:OpenMail(false)
-    XRedPointManager.Check(self.RepointId,mailId)
 end
 
 function XUiGridTitle:SetMailStatusByStatu()

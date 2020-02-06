@@ -1,11 +1,10 @@
 XActivityBriefManagerCreator = function()
     local pairs = pairs
-    local CSXDateGetTime = CS.XDate.GetTime
+    local ParseToTimestamp = XTime.ParseToTimestamp
     local CSUnityEnginePlayerPrefs = CS.UnityEngine.PlayerPrefs
 
     local ActivityConfig = XActivityBriefConfigs.GetActivityConfig()
     local ActivityEntryConfigTemp = XActivityBriefConfigs.GetActivityEntryConfigTemp()
-    local ActivityEntryIcon = CS.XGame.ClientConfig:GetString("ActivityBriefEntryIcon")
     local FirstOpenUi = true
     local CookieInited = false
 
@@ -13,6 +12,31 @@ XActivityBriefManagerCreator = function()
 
     function XActivityBriefManager.GetActivityShopId()
         return ActivityConfig.ShopId
+    end
+
+    function XActivityBriefManager.GetActivityGachaId()
+        return ActivityConfig.GachaId
+    end
+
+    function XActivityBriefManager.GetActivityGachaUi()
+        return ActivityConfig.GachaUi
+    end
+
+    function XActivityBriefManager.GetActivityGacha3DBg()
+        return ActivityConfig.Gacha3DBg
+    end
+
+    function XActivityBriefManager.GetActivityActivityPointId()
+        return ActivityConfig.ActivityPointId
+    end
+
+    function XActivityBriefManager.CheakTaskIsInMark(Id)
+        for k, v in pairs(ActivityConfig.MarkTaskId or {}) do
+            if v == Id then
+                return true
+            end
+        end
+        return false
     end
 
     function XActivityBriefManager.GetActivityShopGoods()
@@ -29,9 +53,9 @@ XActivityBriefManagerCreator = function()
         if taskGroupId == 0 then return endTime end
 
         local taskConfig = XTaskConfig.GetTimeLimitTaskCfg(taskGroupId)
-        endTime = CSXDateGetTime(taskConfig.EndTimeStr)
+        endTime = ParseToTimestamp(taskConfig.EndTimeStr)
 
-        return endTime
+        return endTime or 0
     end
 
     function XActivityBriefManager.GetActivityTaskTime()
@@ -41,10 +65,17 @@ XActivityBriefManagerCreator = function()
         if taskGroupId == 0 then return beginTime, endTime end
 
         local taskConfig = XTaskConfig.GetTimeLimitTaskCfg(taskGroupId)
-        beginTime = CSXDateGetTime(taskConfig.StartTimeStr)
-        endTime = CSXDateGetTime(taskConfig.EndTimeStr)
+        beginTime = ParseToTimestamp(taskConfig.StartTimeStr)
+        endTime = ParseToTimestamp(taskConfig.EndTimeStr)
 
-        return beginTime, endTime
+        return beginTime or 0, endTime or 0
+    end
+
+    function XActivityBriefManager.GetActivityBriefTime()
+        local beginTime = ParseToTimestamp(ActivityConfig.StartTimeStr)
+        local endTime = ParseToTimestamp(ActivityConfig.EndTimeStr)
+
+        return beginTime or 0, endTime or 0
     end
 
     function XActivityBriefManager.GetActivityTaskDatas()
@@ -71,10 +102,10 @@ XActivityBriefManagerCreator = function()
             return false
         end
 
-        local nowTime = XTime.Now()
-        local startTime = CSXDateGetTime(ActivityConfig.StartTimeStr)
-        local endTime = CSXDateGetTime(ActivityConfig.EndTimeStr)
-        return startTime <= nowTime and nowTime < endTime
+        local nowTime = XTime.GetServerNowTimestamp()
+        local startTime = ParseToTimestamp(ActivityConfig.StartTimeStr)
+        local endTime = ParseToTimestamp(ActivityConfig.EndTimeStr)
+        return startTime and endTime and startTime <= nowTime and nowTime < endTime
     end
 
     function XActivityBriefManager.IsFirstOpen()
@@ -99,11 +130,11 @@ XActivityBriefManagerCreator = function()
         return CSUnityEnginePlayerPrefs.HasKey(XActivityBriefManager.GetCookieKeyStr())
     end
 
-    -- 临时活动入口 begin 
+    -- 涓存椂娲诲姩鍏ュ彛 begin 
     function XActivityBriefManager:CheckActivityEntryOpen()
-        local nowTime = XTime.Now()
-        local startTime = CSXDateGetTime(ActivityEntryConfigTemp.StartTimeStr)
-        local endTime = CSXDateGetTime(ActivityEntryConfigTemp.EndTimeStr)
+        local nowTime = XTime.GetServerNowTimestamp()
+        local startTime = ParseToTimestamp(ActivityEntryConfigTemp.StartTimeStr)
+        local endTime = ParseToTimestamp(ActivityEntryConfigTemp.EndTimeStr)
         return startTime and endTime and startTime <= nowTime and nowTime < endTime
     end
 
@@ -112,8 +143,8 @@ XActivityBriefManagerCreator = function()
     end
 
     function XActivityBriefManager.GetActivityEntryIcon()
-        return ActivityEntryIcon
+        return ActivityEntryConfigTemp.Gacha3DBg
     end
-    -- 临时活动入口 end 
+    -- 涓存椂娲诲姩鍏ュ彛 end 
     return XActivityBriefManager
 end

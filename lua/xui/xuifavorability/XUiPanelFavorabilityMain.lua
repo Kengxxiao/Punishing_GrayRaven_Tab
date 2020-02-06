@@ -35,9 +35,24 @@ function XUiPanelFavorabilityMain:InitUiAfterAuto()
     self.BtnTabList[FuncType.Story] = self.BtnScenario
     self.BtnTabList[FuncType.Gift] = self.BtnGift
     self.MenuBtnGroup:Init(self.BtnTabList, function(index) self:OnBtnTabListClick(index) end)
-    self.CurrentSelectTab = FuncType.File
-    -- self.LastSelectTab = FuncType.File
+
+    self.CurrentSelectTab = self:GetAvaliableSelectTab()
+    -- self.LastSelectTab = self.CurrentSelectTab
     self.MenuBtnGroup:SelectIndex(self.CurrentSelectTab)
+end
+
+function XUiPanelFavorabilityMain:GetAvaliableSelectTab()
+    if not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityFile) then
+        return FuncType.File
+    end
+    
+    if not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityStory) then
+        return FuncType.Story
+    end
+
+    if not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityGift) then
+        return FuncType.Gift
+    end
 end
 
 -- [刷新主界面]
@@ -59,6 +74,15 @@ function XUiPanelFavorabilityMain:UpdateAllInfos(doAnim)
 
     -- 红点checkcheck
     self:CheckLockAndReddots()
+
+    -- 功能屏蔽
+    self:CheckFunctionalFilter()
+end
+
+function XUiPanelFavorabilityMain:CheckFunctionalFilter()
+    self.BtnFile.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityFile))
+    self.BtnScenario.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityStory))
+    self.BtnGift.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.FavorabilityGift))
 end
 
 function XUiPanelFavorabilityMain:UpdateMainInfo(doAnim)
@@ -195,6 +219,7 @@ function  XUiPanelFavorabilityMain:OnBtnTabListClick(index)
     if self.LastSelectTab then
         self.UiRoot:PlayBaseTabAnim()
     end
+
     self.LastSelectTab = self.CurrentSelectTab
     self.CurrentSelectTab = index
 

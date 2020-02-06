@@ -72,12 +72,17 @@ function XUiGridCourse:Refresh(courseData, lastStageId, nextChapterId)
             self.PanelEffect.gameObject:SetActive(false)
         end
 
-        local grid = XUiGridCommon.New(self.RootUi, self.GridCommon)
         local data = {
             TemplateId = courseData.ShowId,
             Star = 0
         }
-        grid:Refresh(data)
+        if self.CurGrid then
+            self.CurGrid:Refresh(data)
+        else
+            local grid = XUiGridCommon.New(self.RootUi, self.GridCommon)
+            grid:Refresh(data)
+            self.CurGrid = grid
+        end
     elseif courseData.CouresType == XDataCenter.TaskManager.CourseType.Function then
         self.PanelPassDesc.gameObject:SetActive(stageInfo.Passed)
         self.PanelNoPassDesc.gameObject:SetActive(not stageInfo.Passed)

@@ -93,7 +93,6 @@ function XUiDormMain:OpenDrawUI()
             XLuaUiManager.Open("UiDraw", DormDrawGroudId, function()
                 --XHomeSceneManager.ResetToCurrentSceneType()
                 XHomeSceneManager.ResetToCurrentGlobalIllumination()
-                XHomeSceneManager.ResetToCurrentGlobalPointLight()
             end, info.UiBackGround)
         end)
     end

@@ -12,11 +12,11 @@ function XUiActivityBossSingle:OnAwake()
 end
 
 function XUiActivityBossSingle:OnStart(sectionId)
+    self:GetSceneRoot()
     self.SectionId = sectionId
 end
 
 function XUiActivityBossSingle:OnEnable()
-    XSoundManager.PlaySoundDoNotInterrupt(XSoundManager.UiBasicsMusic.UiActivity_Jidi_BGM)
     self:Refresh()
 end
 
@@ -65,7 +65,7 @@ end
 function XUiActivityBossSingle:CreateActivityTimer()
     self:DestroyActivityTimer()
 
-    local time = XTime.Now()
+    local time = XTime.GetServerNowTimestamp()
     local fightEndTime = XDataCenter.FubenActivityBossSingleManager.GetFightEndTime()
     local activityEndTime = XDataCenter.FubenActivityBossSingleManager.GetActivityEndTime()
     local shopStr = CsXTextManager.GetText("ActivityBranchShopLeftTime")

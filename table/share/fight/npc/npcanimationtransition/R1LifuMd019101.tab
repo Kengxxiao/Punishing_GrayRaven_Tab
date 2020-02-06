@@ -1,57 +1,57 @@
 Role	State	Target	TransitionDuration
-R1LifuMd019101	AnyState	Born	0
-R1LifuMd019101	AnyState	Stand2	0.1
-R1LifuMd019101	AnyState	Stand1	0.1
-R1LifuMd019101	AnyState	Stand3	0.1
-R1LifuMd019101	AnyState	Standchange	0.1
-R1LifuMd019101	AnyState	Run	0.1
-R1LifuMd019101	AnyState	Walk	0.1
-R1LifuMd019101	AnyState	Death	0.1
-R1LifuMd019101	AnyState	Hit1	0.05
-R1LifuMd019101	AnyState	Hit2	0.05
-R1LifuMd019101	AnyState	Behitfly	0.05
-R1LifuMd019101	AnyState	Hoverhit	0.05
-R1LifuMd019101	AnyState	Falldown	0.1
-R1LifuMd019101	AnyState	Hitdown	0.1
-R1LifuMd019101	AnyState	Lieonfloor	0.1
-R1LifuMd019101	AnyState	Standup	0.1
-R1LifuMd019101	AnyState	Straight	0.1
-R1LifuMd019101	AnyState	Stun	0.1
-R1LifuMd019101	AnyState	TurnLeft	0.1
-R1LifuMd019101	AnyState	TurnRight	0.1
-R1LifuMd019101	AnyState	StraightBefore	0.1
-R1LifuMd019101	AnyState	StraightAfter	0.1
-R1LifuMd019101	AnyState	UiStand1	0.1
-R1LifuMd019101	AnyState	Win	0
-R1LifuMd019101	AnyState	Win2	0.1
-R1LifuMd019101	AnyState	Runb	0.2
-R1LifuMd019101	AnyState	Runl	0.2
-R1LifuMd019101	AnyState	Runr	0.2
-R1LifuMd019101	AnyState	Stop	0.1
-R1LifuMd019101	AnyState	Walkb	0.1
-R1LifuMd019101	AnyState	Walkl	0.1
-R1LifuMd019101	AnyState	Walkr	0.1
-R1LifuMd019101	AnyState	Fail	0.1
-R1LifuMd019101	AnyState	Save	0.1
-R1LifuMd019101	AnyState	Hit3	0.05
-R1LifuMd019101	AnyState	Hit4	0.05
-R1LifuMd019101	AnyState	RunStart	0.1
-R1LifuMd019101	AnyState	RunStartEnd01	0.1
-R1LifuMd019101	AnyState	Attack01	0.1
-R1LifuMd019101	AnyState	Attack02	0.1
-R1LifuMd019101	AnyState	Attack03	0.1
-R1LifuMd019101	AnyState	Attack04	0.1
-R1LifuMd019101	AnyState	Attack05	0.1
-R1LifuMd019101	AnyState	Attack11	0.1
-R1LifuMd019101	AnyState	Attack21	0.1
-R1LifuMd019101	AnyState	Attack31	0.1
-R1LifuMd019101	AnyState	Attack33	0.1
-R1LifuMd019101	AnyState	Attack41	0.1
-R1LifuMd019101	AnyState	Attack51	0.1
-R1LifuMd019101	AnyState	Move1	0.1
-R1LifuMd019101	AnyState	Move2	0.1
-R1LifuMd019101	AnyState	Move3	0.1
-R1LifuMd019101	AnyState	AttackQte	0
+R1LifuMd019101		Born	0
+R1LifuMd019101		Stand2	0.1
+R1LifuMd019101		Stand1	0.1
+R1LifuMd019101		Stand3	0.1
+R1LifuMd019101		Standchange	0.1
+R1LifuMd019101		Run	0.1
+R1LifuMd019101		Walk	0.1
+R1LifuMd019101		Death	0.1
+R1LifuMd019101		Hit1	0.05
+R1LifuMd019101		Hit2	0.05
+R1LifuMd019101		Behitfly	0.05
+R1LifuMd019101		Hoverhit	0.05
+R1LifuMd019101		Falldown	0.1
+R1LifuMd019101		Hitdown	0.1
+R1LifuMd019101		Lieonfloor	0.1
+R1LifuMd019101		Standup	0.1
+R1LifuMd019101		Straight	0.1
+R1LifuMd019101		Stun	0.1
+R1LifuMd019101		TurnLeft	0.1
+R1LifuMd019101		TurnRight	0.1
+R1LifuMd019101		StraightBefore	0.1
+R1LifuMd019101		StraightAfter	0.1
+R1LifuMd019101		UiStand1	0.1
+R1LifuMd019101		Win	0
+R1LifuMd019101		Win2	0.1
+R1LifuMd019101		Runb	0.2
+R1LifuMd019101		Runl	0.2
+R1LifuMd019101		Runr	0.2
+R1LifuMd019101		Stop	0.1
+R1LifuMd019101		Walkb	0.1
+R1LifuMd019101		Walkl	0.1
+R1LifuMd019101		Walkr	0.1
+R1LifuMd019101		Fail	0.1
+R1LifuMd019101		Save	0.1
+R1LifuMd019101		Hit3	0.05
+R1LifuMd019101		Hit4	0.05
+R1LifuMd019101		RunStart	0.1
+R1LifuMd019101		RunStartEnd01	0.1
+R1LifuMd019101		Attack01	0.1
+R1LifuMd019101		Attack02	0.1
+R1LifuMd019101		Attack03	0.1
+R1LifuMd019101		Attack04	0.1
+R1LifuMd019101		Attack05	0.1
+R1LifuMd019101		Attack11	0.1
+R1LifuMd019101		Attack21	0.1
+R1LifuMd019101		Attack31	0.1
+R1LifuMd019101		Attack33	0.1
+R1LifuMd019101		Attack41	0.1
+R1LifuMd019101		Attack51	0.1
+R1LifuMd019101		Move1	0.1
+R1LifuMd019101		Move2	0.1
+R1LifuMd019101		Move3	0.1
+R1LifuMd019101		AttackQte	0
 R1LifuMd019101	Stand2	Standchange	0.1
 R1LifuMd019101	Stand2	Run	0.2
 R1LifuMd019101	Stand2	Walk	0.3

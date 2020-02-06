@@ -28,6 +28,7 @@ function XUiDormBag:OnDestroy()
     self.SelectIds = nil
     self.SelectSuitIds = nil
     self.PageRecord = 0
+    self.CharPageRecord = 0
     self.FurnitureState = 0
     self.AscendSort = false
 end
@@ -57,6 +58,8 @@ function XUiDormBag:InitPrivateVariable(pageRecord, furnitureState, selectCb, fi
         self.PageRecord = XDormConfig.DORM_BAG_PANEL_INDEX.FURNITURE
     end
 
+    self.CharPageRecord = XDormConfig.DORM_CHAR_INDEX.CHARACTER
+
     if furnitureState then
         self.FurnitureState = furnitureState
     else
@@ -75,6 +78,15 @@ function XUiDormBag:InitTabGroup()
 
     self.PanelTogs:Init(self.BtnList, function(index)
         self:RefreshSelectedPanel(index, true)
+    end)
+
+    -- 处理构造体/感染体
+    self.BtnCharList = {}
+    table.insert(self.BtnCharList, self.BtnTogChar)
+    table.insert(self.BtnCharList, self.BtnTogEmney)
+
+    self.PanelCharacterBtn:Init(self.BtnCharList, function(index)
+        self:RefreshSelectedCharPanel(index)
     end)
 
     -- 选择家具状态处理
@@ -121,6 +133,9 @@ function XUiDormBag:InitTabGroup()
 
     -- 设置默认开启
     self.PanelTogs:SelectIndex(self.PageRecord)
+
+    -- 设置默认开启
+    self.PanelCharacterBtn:SelectIndex(self.CharPageRecord)
 end
 
 function XUiDormBag:InitDynamicTable()
@@ -310,6 +325,11 @@ function XUiDormBag:RefreshSelectedPanel(index, startIndex)
     self:UpdateDynamicTable(startIndex)
 end
 
+function XUiDormBag:RefreshSelectedCharPanel(index)
+    self.CharPageRecord = index
+    self:UpdateDynamicTable(true)
+end
+
 function XUiDormBag:OnFurnitureGridClick(furnitureId, furnitureConfigId, grid)
     if self.FurnitureState == XFurnitureConfigs.FURNITURE_STATE.DETAILS then
         grid:SetNewActive()
@@ -408,18 +428,25 @@ function XUiDormBag:UpdateDynamicTable(startIndex)
     if self.PageRecord == XDormConfig.DORM_BAG_PANEL_INDEX.FURNITURE then
         self.PanelFurnitureBtn.gameObject:SetActiveEx(true)
         self.PanelDraftBtn.gameObject:SetActiveEx(false)
+        self.PanelCharacterBtn.gameObject:SetActiveEx(false)
         if isEmpty then
             self.TxtNull.text = CS.XTextManager.GetText("DormNullFurniture")
         end
     elseif self.PageRecord == XDormConfig.DORM_BAG_PANEL_INDEX.CHARACTER then
         self.PanelFurnitureBtn.gameObject:SetActiveEx(false)
         self.PanelDraftBtn.gameObject:SetActiveEx(false)
+        self.PanelCharacterBtn.gameObject:SetActiveEx(true)        
         if isEmpty then
-            self.TxtNull.text = CS.XTextManager.GetText("DormNullCharacter")
+            if self.CharPageRecord == XDormConfig.DORM_CHAR_INDEX.CHARACTER then
+                self.TxtNull.text = CS.XTextManager.GetText("DormNullCharacter")
+            else
+                self.TxtNull.text = CS.XTextManager.GetText("DormNullEnmey")
+            end
         end
     elseif self.PageRecord == XDormConfig.DORM_BAG_PANEL_INDEX.DRAFT then
         self.PanelFurnitureBtn.gameObject:SetActiveEx(false)
         self.PanelDraftBtn.gameObject:SetActiveEx(true)
+        self.PanelCharacterBtn.gameObject:SetActiveEx(false)        
         if isEmpty then
             self.TxtNull.text = CS.XTextManager.GetText("DormNullDraft")
         end
@@ -448,15 +475,25 @@ function XUiDormBag:GetDataByPage()
         return furnitureIds
     end
 
-    -- 构造体
+    -- 构造体/感染体
     if self.PageRecord == XDormConfig.DORM_BAG_PANEL_INDEX.CHARACTER then
-        local characterIds = {}
-        characterIds = XDataCenter.DormManager.GetCharacterIds()
+        if self.CharPageRecord == XDormConfig.DORM_CHAR_INDEX.CHARACTER then
+            local characterIds = {}
+            characterIds = XDataCenter.DormManager.GetCharacterIds()
 
-        local allCount = XCharacterConfigs.GetCharacterTemplatesCount()
-        self.TxtCount.text = CS.XTextManager.GetText("DormBagCharacterCount", #characterIds, allCount)
-        self.TxtSelectCount.text = CS.XTextManager.GetText("DormBagCharacterCount", #characterIds, allCount)
-        return characterIds
+            local allCount = XDormConfig.GetCharacterTemplatesCount()
+            self.TxtCount.text = CS.XTextManager.GetText("DormBagCharacterCount", #characterIds, allCount)
+            self.TxtSelectCount.text = CS.XTextManager.GetText("DormBagCharacterCount", #characterIds, allCount)
+            return characterIds
+        else
+            local enmeyIds = {}
+            enmeyIds = XDataCenter.DormManager.GetEmneyIds()
+
+            local allCount = XDormConfig.GetEnmeyTemplatesCount()
+            self.TxtCount.text = CS.XTextManager.GetText("DormBagEmneyCount", #enmeyIds, allCount)
+            self.TxtSelectCount.text = CS.XTextManager.GetText("DormBagEmneyCount", #enmeyIds, allCount)
+            return enmeyIds
+        end
     end
 
     -- 图纸

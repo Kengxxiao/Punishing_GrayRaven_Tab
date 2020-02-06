@@ -79,21 +79,21 @@ function XUiDrawShow:InitAutoScript()
 end
 
 function XUiDrawShow:AutoInitUi()
-    self.PanelDrawBackGround = self.Transform:Find("FullScreenBackground/PanelDrawBackGround")
-    self.PanelResult = self.Transform:Find("SafeAreaContentPane/PanelResult")
-    self.ImgItem = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgItem"):GetComponent("RawImage")
-    self.ImgCharacter = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgCharacter"):GetComponent("RawImage")
-    self.ImgWafer = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgWafer"):GetComponent("RawImage")
-    self.RImgDrawCardShow = self.Transform:Find("SafeAreaContentPane/RImgDrawCardShow"):GetComponent("RawImage")
-    self.PanelEffect = self.Transform:Find("SafeAreaContentPane/PanelEffect")
-    self.BtnClick = self.Transform:Find("SafeAreaContentPane/BtnClick"):GetComponent("Button")
-    self.PanelAnim = self.Transform:Find("SafeAreaContentPane/ModelRoot/NearRoot/PanelAnim")
-    self.PanelInfo = self.Transform:Find("SafeAreaContentPane/PanelInfo")
-    self.TxtType = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtType"):GetComponent("Text")
-    self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtName"):GetComponent("Text")
-    self.TxtQuality = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtQuality"):GetComponent("Text")
-    self.ImgEquip = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgEquip"):GetComponent("RawImage")
-    self.BtnSkip = self.Transform:Find("SafeAreaContentPane/BtnSkip"):GetComponent("Button")
+    -- self.PanelDrawBackGround = self.Transform:Find("FullScreenBackground/PanelDrawBackGround")
+    -- self.PanelResult = self.Transform:Find("SafeAreaContentPane/PanelResult")
+    -- self.ImgItem = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgItem"):GetComponent("RawImage")
+    -- self.ImgCharacter = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgCharacter"):GetComponent("RawImage")
+    -- self.ImgWafer = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgWafer"):GetComponent("RawImage")
+    -- self.RImgDrawCardShow = self.Transform:Find("SafeAreaContentPane/RImgDrawCardShow"):GetComponent("RawImage")
+    -- self.PanelEffect = self.Transform:Find("SafeAreaContentPane/PanelEffect")
+    -- self.BtnClick = self.Transform:Find("SafeAreaContentPane/BtnClick"):GetComponent("Button")
+    -- self.PanelAnim = self.Transform:Find("SafeAreaContentPane/ModelRoot/NearRoot/PanelAnim")
+    -- self.PanelInfo = self.Transform:Find("SafeAreaContentPane/PanelInfo")
+    -- self.TxtType = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtType"):GetComponent("Text")
+    -- self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtName"):GetComponent("Text")
+    -- self.TxtQuality = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtQuality"):GetComponent("Text")
+    -- self.ImgEquip = self.Transform:Find("SafeAreaContentPane/PanelResult/ImgEquip"):GetComponent("RawImage")
+    -- self.BtnSkip = self.Transform:Find("SafeAreaContentPane/BtnSkip"):GetComponent("Button")
 end
 
 function XUiDrawShow:AutoAddListener()
@@ -228,7 +228,7 @@ function XUiDrawShow:NextPack()
             self.BtnClick.gameObject:SetActiveEx(true)
         end
     else
-    if Type == XArrangeConfigs.Types.Character then
+        if Type == XArrangeConfigs.Types.Character then
             icon = XDataCenter.CharacterManager.GetCharHalfBodyImage(id)
             if quality < 3 then
                 soundType = XSoundManager.UiBasicsMusic.UiDrawCard_Type.FiveStar

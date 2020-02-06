@@ -32,22 +32,21 @@ function XUiGuideNew:OnStart(targetImg, isWeakGuide, guideDesc, icon, name, call
         self:FocuOnFightPanel(targetImg)
     end
 
-    CsXGameEventManager.Instance:RegisterEvent(CS.XEventId.EVENT_GUIDE_FIGHT_BTNDOWN, function(evt, args)
-        if self.Callback and not self.IsWeakGuide then
-            self.Callback()
-            self.Callback = nil
-        end
-    end)
+    -- CsXGameEventManager.Instance:RegisterEvent(CS.XEventId.EVENT_GUIDE_FIGHT_BTNDOWN, function(evt, args)
+    --     if self.Callback and not self.IsWeakGuide then
+    --         self.Callback()
+    --         self.Callback = nil
+    --     end
+    -- end)
 
 end
 
 function XUiGuideNew:OnDestroy()
-    CsXGameEventManager.Instance:RemoveEvent(XEventId.EVENT_GUIDE_FIGHT_BTNDOWN, function(evt, args)
-        if self.Callback and not self.IsWeakGuide then
-            self.Callback()
-            self.Callback = nil
-        end
-    end)
+    -- CsXGameEventManager.Instance:RemoveEvent(XEventId.EVENT_GUIDE_FIGHT_BTNDOWN, function(evt, args)
+    --     if self.Callback and not self.IsWeakGuide then
+    --         self.Callback = nil
+    --     end
+    -- end)
 end
 
 
@@ -96,7 +95,7 @@ function XUiGuideNew:OnBtnConfrimClick(...)
 end
 
 function XUiGuideNew:CheckDouble()
-    if XTime.Now() - self.LastClickTime > self.ClickInterval then
+    if XTime.GetServerNowTimestamp() - self.LastClickTime > self.ClickInterval then
         self.ContinueClickTimes = 0
     else
         self.ContinueClickTimes = self.ContinueClickTimes + 1
@@ -107,7 +106,7 @@ function XUiGuideNew:CheckDouble()
         self.BtnSkip.gameObject:SetActive(true)
     end
 
-    self.LastClickTime = XTime.Now()
+    self.LastClickTime = XTime.GetServerNowTimestamp()
 end
 
 function XUiGuideNew:OnBtnCancelClick(...)

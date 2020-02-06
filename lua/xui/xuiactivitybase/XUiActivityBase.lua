@@ -106,17 +106,24 @@ function XUiActivityBase:OnClickTabCallBack(tabIndex)
             XUiManager.TipText("NoInGameNotice")
             return
         end
-        self:OpenOneChildUi("UiGameNotice", self, self.SubSkipIndex, XUiActivityBase.GameNoticeType.Notice)
 
-        CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_TYPE_CHANAGE, XUiActivityBase.GameNoticeType.Notice)
+        if not XLuaUiManager.IsUiShow("UiGameNotice") then
+            self:OpenOneChildUi("UiGameNotice", self, self.SubSkipIndex, XUiActivityBase.GameNoticeType.Notice)
+        else
+            CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_TYPE_CHANAGE, XUiActivityBase.GameNoticeType.Notice)
+        end
         self.SubSkipIndex = nil
     elseif tabIndex == XUiActivityBase.BtnTabIndex.ActivityNotice then
         if not XDataCenter.NoticeManager.CheckHaveNotice(XUiActivityBase.GameNoticeType.ActivityNotice) then
             XUiManager.TipText("NoActivities")
             return
         end
-        self:OpenOneChildUi("UiGameNotice", self, self.SubSkipIndex, XUiActivityBase.GameNoticeType.ActivityNotice)
-        CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_TYPE_CHANAGE, XUiActivityBase.GameNoticeType.ActivityNotice)
+
+        if not XLuaUiManager.IsUiShow("UiGameNotice") then
+            self:OpenOneChildUi("UiGameNotice", self, self.SubSkipIndex, XUiActivityBase.GameNoticeType.ActivityNotice)
+        else
+            CsXGameEventManager.Instance:Notify(XEventId.EVENT_NOTICE_TYPE_CHANAGE, XUiActivityBase.GameNoticeType.ActivityNotice)
+        end
         self.SubSkipIndex = nil
     end
 

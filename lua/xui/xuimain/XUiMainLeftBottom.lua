@@ -17,6 +17,9 @@ function XUiMainLeftBottom:Ctor(rootUi)
     self.RedPoinFristRechargeId = XRedPointManager.AddRedPointEvent(self.BtnWelfare.TagObj, self.OnCheckFristRecharge, self, { XRedPointConditions.Types.CONDITION_PURCHASE_GET_RERARGE })
     XRedPointManager.AddRedPointEvent(self.BtnNotice.ReddotObj, self.OnCheckNoticeNews, self, { XRedPointConditions.Types.CONDITION_MAIN_NOTICE })
     self:InitChatMsg()
+
+    --Filter
+    self:CheckFilterFunctions()
 end
 
 function XUiMainLeftBottom:OnEnable()
@@ -46,6 +49,13 @@ function XUiMainLeftBottom:OnNotify(evt, ...)
     if evt == XEventId.EVENT_NOTICE_PIC_CHANGE then
         self:UpdatePanelAd()
     end
+end
+
+function XUiMainLeftBottom:CheckFilterFunctions()
+    self.BtnNotice.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipNotice))
+    self.BtnSocial.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SocialFriend))
+    self.BtnWelfare.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SkipWelfare))
+    self.BtnChat.gameObject:SetActiveEx(not XFunctionManager.CheckFunctionFitter(XFunctionManager.FunctionName.SocialChat))
 end
 
 --公告入口

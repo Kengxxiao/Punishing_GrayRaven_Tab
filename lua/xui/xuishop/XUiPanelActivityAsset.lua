@@ -51,10 +51,16 @@ function XUiPanelActivityAsset:OnBtnClick(index)
 end
 
 function XUiPanelActivityAsset:HidePanel()
-    self.GameObject:SetActive(false)
+    if not XTool.UObjIsNil(self.GameObject) then
+        self.GameObject:SetActiveEx(false)
+    end
 end
 
 function XUiPanelActivityAsset:Refresh(idlist)
+    if XTool.UObjIsNil(self.GameObject) then
+        return
+    end
+
     --读取数据  
     if idlist == nil then
         self.GameObject:SetActive(false)
@@ -69,14 +75,14 @@ function XUiPanelActivityAsset:Refresh(idlist)
             self["PanelSpecialTool" .. i].gameObject:SetActive(true)
         end
     end
-    
+
     self.PanelSpecialTool.gameObject:SetActive(self.PanelSpecialTool3.gameObject.activeSelf or self.PanelSpecialTool2.gameObject.activeSelf or self.PanelSpecialTool1.gameObject.activeSelf)
-    
+
     local items = {}
     for _, id in pairs(self.ItemIds) do
         table.insert(items, XDataCenter.ItemManager.GetItem(id))
     end
-    
+
     for i = 1, #items do
         local item = items[i]
         local count = item ~= nil and tostring(item.Count) or "0"
@@ -85,11 +91,10 @@ function XUiPanelActivityAsset:Refresh(idlist)
         if items[i].Template.ItemType == 2 then
             self["TxtSpecialTool" .. i].text = count .. "/" .. XDataCenter.ItemManager.GetMaxActionPoints()
         end
-        
+
         local rImgSpecialTool = self["RImgSpecialTool" .. i]
         if rImgSpecialTool and rImgSpecialTool:Exist() then
             rImgSpecialTool:SetRawImage(items[i].Template.Icon)
         end
     end
 end
-

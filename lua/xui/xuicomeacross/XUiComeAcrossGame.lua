@@ -74,7 +74,7 @@ function XUiComeAcrossGame:SetupReward()
     local result = XDataCenter.ComeAcrossManager.GetLastResult()
     if result then
         self.PanelComeAcrossReward.gameObject:SetActive(true)
-        XUiHelper.PlayAnimation(self, "UiComeAcrossGameRewardBegin")
+        --XUiHelper.PlayAnimation(self, "UiComeAcrossGameRewardBegin")
         self.ComeAcrossRewardPanel:SetupReward(self.GameData,result)
     end
 end

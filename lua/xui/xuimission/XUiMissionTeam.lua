@@ -20,7 +20,9 @@ function XUiMissionTeam:OnStart(task)
     self:Init()
     self.CharacterIds = {}
     self:SetupContent()
-    XUiHelper.PlayAnimation(self, "UiMissionTeamBegin")
+
+    self:PlayAnimation("UiMissionTeamBegin")
+    --XUiHelper.PlayAnimation(self, "UiMissionTeamBegin")
 
 end
 
@@ -66,7 +68,7 @@ end
 function XUiMissionTeam:SetupBaseInfo()
     local taskCfg = self.TaskCfg
     self.TxtName.text = taskCfg.Name
-    self.TxtTime.text = CS.XDate.GetTimeString(taskCfg.Duration)
+    self.TxtTime.text = CS.XDateUtil.SecondsToTimeString(taskCfg.Duration)
     self:SetUiSprite(self.ImgQuality, MissionQuality[taskCfg.Quality])
 
     local curSectionId = XDataCenter.TaskForceManager.GetCurTaskForceSectionId()
@@ -163,36 +165,36 @@ function XUiMissionTeam:InitAutoScript()
 end
 
 function XUiMissionTeam:AutoInitUi()
-    self.PanelInfo = self.Transform:Find("SafeAreaContentPane/PanelInfo")
-    self.TxtTime = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtTime"):GetComponent("Text")
-    self.PanelImg = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg")
-    self.ImgZhangjie = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/ImgZhangjie"):GetComponent("Image")
-    self.ImgQuality = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/ImgQuality"):GetComponent("Image")
-    self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/TxtName"):GetComponent("Text")
-    self.PanelRequire = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire")
-    self.PanelLayoutAct = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire/PanelLayoutAct")
-    self.GridConditionTxt = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire/PanelLayoutAct/GridConditionTxt")
-    self.BtnSend = self.Transform:Find("SafeAreaContentPane/PanelInfo/BtnSend"):GetComponent("Button")
-    self.BtnAutoTeam = self.Transform:Find("SafeAreaContentPane/PanelInfo/BtnAutoTeam"):GetComponent("Button")
-    self.PanelTeam = self.Transform:Find("SafeAreaContentPane/PanelTeam")
-    self.PanelMissionCharacter2 = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter2")
-    self.PanelMissionCharacter1 = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter1")
-    self.PanelMissionCharacter = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter")
-    self.PanelOtherReward = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward")
-    self.PanelOn = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn")
-    self.TxtDescA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/TxtDesc"):GetComponent("Text")
-    self.ImgResA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/ImgRes"):GetComponent("Image")
-    self.BtnResOn = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/ImgRes/BtnResOn"):GetComponent("Button")
-    self.TxtCountA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/TxtCount"):GetComponent("Text")
-    self.PanelOff = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff")
-    self.TxtDesc = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/TxtDesc"):GetComponent("Text")
-    self.ImgRes = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/ImgRes"):GetComponent("Image")
-    self.BtnResOff = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/ImgRes/BtnResOff"):GetComponent("Button")
-    self.TxtCount = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/TxtCount"):GetComponent("Text")
-    self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
-    self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
-    self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
-    self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
+    -- self.PanelInfo = self.Transform:Find("SafeAreaContentPane/PanelInfo")
+    -- self.TxtTime = self.Transform:Find("SafeAreaContentPane/PanelInfo/TxtTime"):GetComponent("Text")
+    -- self.PanelImg = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg")
+    -- self.ImgZhangjie = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/ImgZhangjie"):GetComponent("Image")
+    -- self.ImgQuality = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/ImgQuality"):GetComponent("Image")
+    -- self.TxtName = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelImg/TxtName"):GetComponent("Text")
+    -- self.PanelRequire = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire")
+    -- self.PanelLayoutAct = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire/PanelLayoutAct")
+    -- self.GridConditionTxt = self.Transform:Find("SafeAreaContentPane/PanelInfo/PanelRequire/PanelLayoutAct/GridConditionTxt")
+    -- self.BtnSend = self.Transform:Find("SafeAreaContentPane/PanelInfo/BtnSend"):GetComponent("Button")
+    -- self.BtnAutoTeam = self.Transform:Find("SafeAreaContentPane/PanelInfo/BtnAutoTeam"):GetComponent("Button")
+    -- self.PanelTeam = self.Transform:Find("SafeAreaContentPane/PanelTeam")
+    -- self.PanelMissionCharacter2 = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter2")
+    -- self.PanelMissionCharacter1 = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter1")
+    -- self.PanelMissionCharacter = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelMissionCharacter")
+    -- self.PanelOtherReward = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward")
+    -- self.PanelOn = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn")
+    -- self.TxtDescA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/TxtDesc"):GetComponent("Text")
+    -- self.ImgResA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/ImgRes"):GetComponent("Image")
+    -- self.BtnResOn = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/ImgRes/BtnResOn"):GetComponent("Button")
+    -- self.TxtCountA = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOn/TxtCount"):GetComponent("Text")
+    -- self.PanelOff = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff")
+    -- self.TxtDesc = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/TxtDesc"):GetComponent("Text")
+    -- self.ImgRes = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/ImgRes"):GetComponent("Image")
+    -- self.BtnResOff = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/ImgRes/BtnResOff"):GetComponent("Button")
+    -- self.TxtCount = self.Transform:Find("SafeAreaContentPane/PanelTeam/PanelOtherReward/PanelOff/TxtCount"):GetComponent("Text")
+    -- self.PanelTopBtn = self.Transform:Find("SafeAreaContentPane/PanelTopBtn")
+    -- self.BtnBack = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnBack"):GetComponent("Button")
+    -- self.BtnMainUi = self.Transform:Find("SafeAreaContentPane/PanelTopBtn/BtnMainUi"):GetComponent("Button")
+    -- self.PanelAsset = self.Transform:Find("SafeAreaContentPane/PanelAsset")
 end
 
 function XUiMissionTeam:GetAutoKey(uiNode, eventName)
@@ -229,12 +231,12 @@ end
 
 function XUiMissionTeam:AutoAddListener()
     self.AutoCreateListeners = {}
-    self:RegisterListener(self.BtnSend, "onClick", self.OnBtnSendClick)
-    self:RegisterListener(self.BtnAutoTeam, "onClick", self.OnBtnAutoTeamClick)
-    self:RegisterListener(self.BtnResOn, "onClick", self.OnBtnResOnClick)
-    self:RegisterListener(self.BtnResOff, "onClick", self.OnBtnResOffClick)
-    self:RegisterListener(self.BtnBack, "onClick", self.OnBtnBackClick)
-    self:RegisterListener(self.BtnMainUi, "onClick", self.OnBtnMainUiClick)
+    self:RegisterClickEvent(self.BtnSend, self.OnBtnSendClick)
+    self:RegisterClickEvent(self.BtnAutoTeam, self.OnBtnAutoTeamClick)
+    self:RegisterClickEvent(self.BtnResOn, self.OnBtnResOnClick)
+    self:RegisterClickEvent(self.BtnResOff, self.OnBtnResOffClick)
+    self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)
+    self:RegisterClickEvent(self.BtnMainUi, self.OnBtnMainUiClick)
 end
 -- auto
 
@@ -289,7 +291,8 @@ function XUiMissionTeam:OnBtnAutoTeamClick(...)
 
     self.CharacterIds = characterIds
 
-    XUiHelper.PlayAnimation(self, "UiMissionTeamSlect")
+    self:PlayAnimation("UiMissionTeamSlect")
+    --XUiHelper.PlayAnimation(self, "UiMissionTeamSlect")
 
     self:SetupContent()
 end

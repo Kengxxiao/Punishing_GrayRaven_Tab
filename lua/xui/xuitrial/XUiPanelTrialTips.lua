@@ -3,6 +3,7 @@ local XUiPanelTrialTips = XClass()
 function XUiPanelTrialTips:Ctor(ui)
     self.GameObject = ui.gameObject
     self.Transform = ui.transform
+    XTool.InitUiObject(self)
     self:InitAutoScript()
 end
 
@@ -30,12 +31,12 @@ function XUiPanelTrialTips:InitAutoScript()
 end
 
 function XUiPanelTrialTips:AutoInitUi()
-    self.ImgFor = self.Transform:Find("ImgFor"):GetComponent("Image")
-    self.ImgForIcon = self.Transform:Find("ImgFor/ImgForIcon"):GetComponent("Image")
-    self.ImgBackEnd = self.Transform:Find("ImgBackEnd"):GetComponent("Image")
-    self.ImgBackEndIcon = self.Transform:Find("ImgBackEnd/ImgBackEndIcon"):GetComponent("Image")
-    self.ImgBackEnd2 = self.Transform:Find("ImgBackEnd2"):GetComponent("Image")
-    self.ImgForIconA = self.Transform:Find("ImgBackEnd2/ImgForIcon"):GetComponent("Image")
+    -- self.ImgFor = self.Transform:Find("ImgFor"):GetComponent("Image")
+    -- self.ImgForIcon = self.Transform:Find("ImgFor/ImgForIcon"):GetComponent("Image")
+    -- self.ImgBackEnd = self.Transform:Find("ImgBackEnd"):GetComponent("Image")
+    -- self.ImgBackEndIcon = self.Transform:Find("ImgBackEnd/ImgBackEndIcon"):GetComponent("Image")
+    -- self.ImgBackEnd2 = self.Transform:Find("ImgBackEnd2"):GetComponent("Image")
+    -- self.ImgForIconA = self.Transform:Find("ImgBackEnd2/ImgForIcon"):GetComponent("Image")
 end
 
 function XUiPanelTrialTips:RegisterClickEvent(uiNode, func)

@@ -82,19 +82,19 @@ function XUiDormCaress:ReqFondleData()
         self.FondleData = fondleData
 
         self:SetRecoveryInfo(fondleData.LeftCount, fondleData.LastRecoveryTime)
-        self.PanelParticularCaress.gameObject:SetActive(true)
+        self.PanelParticularCaress.gameObject:SetActiveEx(true)
     end)
 end
 
 function XUiDormCaress:SetRecoveryInfo(leftCount, recoveryTime)
-    self.PanelTimeOut.gameObject:SetActive(leftCount < self.FondleConfig.MaxCount)
+    self.PanelTimeOut.gameObject:SetActiveEx(leftCount < self.FondleConfig.MaxCount)
     self.TxtTouchCount.text = CS.XTextManager.GetText("DormFondleCount", leftCount, self.FondleConfig.MaxCount)
 
     if leftCount >= self.FondleConfig.MaxCount then
         return
     end
 
-    local now = XTime.Now()
+    local now = XTime.GetServerNowTimestamp()
     local leftTime = recoveryTime + self.FondleConfig.RecoveryTime - now
     local timeString = XUiHelper.GetTime(leftTime, XUiHelper.TimeFormatType.CHALLENGE)
     self.TxtTimeOut.text = CS.XTextManager.GetText("DormFondleRecovey", timeString)
@@ -134,7 +134,7 @@ function XUiDormCaress:OnClose(curDormId)
     self:RemoveTimer()
     self:RemoveAnimaTimer()
     self:RefreshData()
-    self.PanelParticularCaress.gameObject:SetActive(false)
+    self.PanelParticularCaress.gameObject:SetActiveEx(false)
 
      -- 拉远摄像头
      local cameraController = XHomeSceneManager.GetSceneCameraController()
@@ -209,7 +209,7 @@ function XUiDormCaress:GetPisont()
                 end
 
                 if CS.UnityEngine.Input.GetTouch(0).phase == CS.UnityEngine.TouchPhase.Stationary or
-                    CS.UnityEngine.Input.GetTouch(0).phase == CS.UnityEngine.TouchPhase.Moved then
+                   CS.UnityEngine.Input.GetTouch(0).phase == CS.UnityEngine.TouchPhase.Moved then
                     local p = CS.UnityEngine.Input.GetTouch(0).position
                     screenPoint = CS.UnityEngine.Vector3(p.x, p.y, 0)
                 end

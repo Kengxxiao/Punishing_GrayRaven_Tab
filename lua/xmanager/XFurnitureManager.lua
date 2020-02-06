@@ -662,7 +662,7 @@ XFurnitureManagerCreator = function()
         if not FurnitureCreateDatas then 
             return false 
         end
-        local now = XTime.Now()
+        local now = XTime.GetServerNowTimestamp()
         local canCollect = false
         for k, v in pairs(FurnitureCreateDatas) do
             if v.EndTime <= now then 

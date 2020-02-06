@@ -49,10 +49,13 @@ Id	BigIconPath	IconPath	LiHuiPath	ModelTransId[1]	ModelTransId[2]	PainterName
 2083001	Assets/Product/Texture/Image/IconTools/E1DaggerMd030011.png	Assets/Product/Texture/Image/IconToolsSp/E1DaggerMd030011Sp.png		1080301	1080302	画师48								
 2084001	Assets/Product/Texture/Image/IconTools/E2DaggerMd040011.png	Assets/Product/Texture/Image/IconToolsSp/E2DaggerMd040011Sp.png		1080401	1080402	画师49								
 2085001	Assets/Product/Texture/Image/IconTools/E2DaggerMd050011.png	Assets/Product/Texture/Image/IconToolsSp/E2DaggerMd050011Sp.png		1080501	1080502	画师50								
-2085002	Assets/Product/Texture/Image/IconTools/E2DaggerMd060011.png	Assets/Product/Texture/Image/IconToolsSp/E2DaggerMd060011Sp.png		1080601	1080602	画师51								
+2085002	Assets/Product/Texture/Image/IconTools/E2DaggerMd090011.png	Assets/Product/Texture/Image/IconToolsSp/E2DaggerMd090011Sp.png		1080601	1080602	画师51								
 2086001	Assets/Product/Texture/Image/IconTools/E3DaggerMd070011.png	Assets/Product/Texture/Image/IconToolsSp/E3DaggerMd070011Sp.png		1080701	1080702	画师52								
-2086002	Assets/Product/Texture/Image/IconTools/E3DaggerMd080011.png	Assets/Product/Texture/Image/IconToolsSp/E3DaggerMd080011Sp.png		1080711	1080712	画师53								
-2093001	Assets/Product/Texture/Image/IconTools/E3DaggerMd080011.png	Assets/Product/Texture/Image/IconToolsSp/E3DaggerMd080011Sp.png		1090301										
+2086002	Assets/Product/Texture/Image/IconTools/E3DaggerMd110011.png	Assets/Product/Texture/Image/IconToolsSp/E3DaggerMd110011Sp.png		1080711	1080712	画师53								
+2093001	Assets/Product/Texture/Image/IconTools/E1SickMd030011.png	Assets/Product/Texture/Image/IconToolsSp/E1SickMd030011Sp.png		1090301		画师54								
+2094001	Assets/Product/Texture/Image/IconTools/E2SickMd040011.png	Assets/Product/Texture/Image/IconToolsSp/E2SickMd040011Sp.png		1090401		画师55								
+2095001	Assets/Product/Texture/Image/IconTools/E2SickMd050011.png	Assets/Product/Texture/Image/IconToolsSp/E2SickMd050011Sp.png		1090501		画师56								
+2096001	Assets/Product/Texture/Image/IconTools/E3SickMd070011.png	Assets/Product/Texture/Image/IconToolsSp/E3SickMd070011Sp.png		1090601		画师57								
 3011001	Assets/Product/Texture/Image/IconTools/EGouliangI01001.png	Assets/Product/Texture/Image/IconToolsSp/EGouliangI01001Sp.png	product/texture/image/rolewaferlihui/egouliangd01001.png.unity3d			zki_								
 3012001	Assets/Product/Texture/Image/IconTools/ESipeierI01001.png	Assets/Product/Texture/Image/IconToolsSp/ESipeierI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/ESipeierD01001.png			春日								
 3013001	Assets/Product/Texture/Image/IconTools/EModeerI01001.png	Assets/Product/Texture/Image/IconToolsSp/EModeerI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EModeerD01001.png			春日								
@@ -265,9 +268,21 @@ Id	BigIconPath	IconPath	LiHuiPath	ModelTransId[1]	ModelTransId[2]	PainterName
 3046014	Assets/Product/Texture/Image/IconTools/EBadunI01001.png	Assets/Product/Texture/Image/IconToolsSp/EBadunI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EBadunD01001.png			3Q58								
 3056014	Assets/Product/Texture/Image/IconTools/EBadunI02001.png	Assets/Product/Texture/Image/IconToolsSp/EBadunI02001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EBadunD02001.png			3Q58								
 3066014	Assets/Product/Texture/Image/IconTools/EBadunI03001.png	Assets/Product/Texture/Image/IconToolsSp/EBadunI03001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EBadunD03001.png			3Q58								
+3016013	Assets/Product/Texture/Image/IconTools/EManyinsitanI01001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD01001.png			EB十								
+3026013	Assets/Product/Texture/Image/IconTools/EManyinsitanI02001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI02001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD02001.png			EB十								
+3036013	Assets/Product/Texture/Image/IconTools/EManyinsitanI03001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI03001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD03001.png			EB十								
+3046013	Assets/Product/Texture/Image/IconTools/EManyinsitanI01001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD01001.png			EB十								
+3056013	Assets/Product/Texture/Image/IconTools/EManyinsitanI02001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI02001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD02001.png			EB十								
+3066013	Assets/Product/Texture/Image/IconTools/EManyinsitanI03001.png	Assets/Product/Texture/Image/IconToolsSp/EManyinsitanI03001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EManyinsitanD03001.png			EB十								
 3015051	Assets/Product/Texture/Image/IconTools/EXinniankalieI01001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD01001.png			摔饺的跟头								
 3025051	Assets/Product/Texture/Image/IconTools/EXinniankalieI02001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI02001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD02001.png			摔饺的跟头								
 3035051	Assets/Product/Texture/Image/IconTools/EXinniankalieI03001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI03001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD03001.png			摔饺的跟头								
 3045051	Assets/Product/Texture/Image/IconTools/EXinniankalieI01001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD01001.png			摔饺的跟头								
 3055051	Assets/Product/Texture/Image/IconTools/EXinniankalieI02001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI02001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD02001.png			摔饺的跟头								
 3065051	Assets/Product/Texture/Image/IconTools/EXinniankalieI03001.png	Assets/Product/Texture/Image/IconToolsSp/EXinniankalieI03001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EXinniankalieD03001.png			摔饺的跟头								
+3015052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								
+3025052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								
+3035052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								
+3045052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								
+3055052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								
+3065052	Assets/Product/Texture/Image/IconTools/EYuanxiaoluxiyaI01001.png	Assets/Product/Texture/Image/IconToolsSp/EYuanxiaoluxiyaI01001Sp.png	Assets/Product/Texture/Image/RoleWaferLihui/EYuanxiaoluxiyaD01001.png			梁巨爽								

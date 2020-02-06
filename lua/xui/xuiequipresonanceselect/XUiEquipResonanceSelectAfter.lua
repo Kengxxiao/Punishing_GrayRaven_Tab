@@ -6,7 +6,8 @@ function XUiEquipResonanceSelectAfter:OnAwake()
     self.PanelWeapon = self:GetSceneRoot().transform:FindTransform("PanelWeapon")
 end
 
-function XUiEquipResonanceSelectAfter:OnStart(equipId, pos)
+function XUiEquipResonanceSelectAfter:OnStart(equipId, pos, characterId)
+    self.CharacterId = characterId
     self.EquipId = equipId
     self.Pos = pos
 
@@ -49,11 +50,10 @@ function XUiEquipResonanceSelectAfter:InitClassifyPanel()
                 if rotate then
                     rotate.Target = model.transform
                 end
-            end)
+            end, self.CharacterId, self.EquipId)
         end
         self.PanelWeapon.gameObject:SetActive(true)
         self.PanelAwareness.gameObject:SetActive(false)
-        
     elseif XDataCenter.EquipManager.IsClassifyEqual(self.EquipId, XEquipConfig.Classify.Awareness) then
         local equip = XDataCenter.EquipManager.GetEquip(self.EquipId)
         local resource = CS.XResourceManager.Load(XDataCenter.EquipManager.GetEquipLiHuiPath(equip.TemplateId, equip.Breakthrough))
@@ -64,6 +64,7 @@ function XUiEquipResonanceSelectAfter:InitClassifyPanel()
         end
         self.Resource = resource
         CS.XScheduleManager.Schedule(function()
+            if XTool.UObjIsNil(self.FxUiLihuiChuxian01) then return end
             self.FxUiLihuiChuxian01.gameObject:SetActive(true)
         end, 0, 1, 500)
 
