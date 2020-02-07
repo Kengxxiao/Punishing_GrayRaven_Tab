@@ -370,10 +370,10 @@ function XUiGridChapter:SetStageList()
         self:SetLineActive(i, false)
     end
 
-    -- -- 滑到最右边
-    -- if self.ScrollRect then
-    --     self.ScrollRect.horizontalNormalizedPosition = 1
-    -- end
+    -- 移动至ListView正确的位置
+    if self.BoundSizeFitter then
+        self.BoundSizeFitter:SetLayoutHorizontal()
+    end
 end
 
 function XUiGridChapter:SetLineActive(index, active)
@@ -403,7 +403,7 @@ function XUiGridChapter:ClickStageGrid(grid)
 
     -- 选中当前选择
     grid:SetStageSelect()
-    
+
     grid:SetStoryStageSelect()
     -- 滚动容器自由移动
     self.ScrollRect.movementType = CS.UnityEngine.UI.ScrollRect.MovementType.Unrestricted
