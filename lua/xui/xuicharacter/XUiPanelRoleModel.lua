@@ -60,6 +60,14 @@ function XUiPanelRoleModel:UpdateRoleModel(roleName, targetPanelRole, targetUiNa
                 end
                 table.insert(needRemove,k)
             end
+        else
+            --主界面特殊处理，需要每次删掉重新生成
+            if targetUiName == XModelManager.MODEL_UINAME.XUiMain then
+                if needRemove == nil then
+                    needRemove = {}
+                end
+                table.insert(needRemove, k)
+            end
         end
     end
 
