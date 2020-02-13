@@ -16,6 +16,7 @@ local Default = {
     GiftStatus = 0,
     IsRead = false,
     CurrMedalId = 0,
+    BabelTowerLevel = 0,
 }
 
 function XChatData:Ctor(chatData)
@@ -40,6 +41,7 @@ function XChatData:Ctor(chatData)
     self.GiftCount = chatData.GiftCount
     self.GiftStatus = chatData.GiftStatus
     self.CurrMedalId = chatData.CurrMedalId
+    self.BabelTowerLevel = chatData.BabelTowerLevel
     self.CustomContent = chatData.CustomContent
     self.IsRead = false
 end

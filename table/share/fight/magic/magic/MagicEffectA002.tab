@@ -352,8 +352,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 101788000	AddBehavior	101788																													
 101789	AddBuff	101789																													
 101789000	ChangeAttribAdditive	34|-1500|0																													
-101790	AddBuff	101790																													
-101790000	AddBehavior	101790																													
+101790	SetDamage	2|0																													
 101791	AddBuff	101791																													
 101791000	PlaySound	71701|0																													
 101792	AddBuff	101792																													

@@ -45,8 +45,8 @@ function XUiBfrtDeploy:InitGroupInfo(groupId)
     self.GroupId = groupId
     self.FightInfoIdList = XDataCenter.BfrtManager.GetFightInfoIdList(groupId)
     self.LogisticsInfoIdList = XDataCenter.BfrtManager.GetLogisticsInfoIdList(groupId)
-    self.FightTeamList = {}
-    self.LogisticsTeamList = {}
+    self.FightTeamList = XDataCenter.BfrtManager.GetFightTeamList(groupId)
+    self.LogisticsTeamList = XDataCenter.BfrtManager.GetLogisticsTeamList(groupId)
 
     self:UpdateEchelonList()
 end

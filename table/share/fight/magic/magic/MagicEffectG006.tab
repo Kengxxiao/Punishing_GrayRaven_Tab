@@ -144,6 +144,8 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 905069000	AddBehavior	905069																													
 905070	AddBuff	905070																													
 905070000	AddNpcState	13																													
+905071	AddBuff	905071																													
+905071000	AddNpcState	11																													
 906001	AddBuff	906001																													
 906001000	AddBehavior	906001																													
 906002	AddBuff	906002																													

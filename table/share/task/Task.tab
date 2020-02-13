@@ -630,7 +630,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 3675	4	7610	异彩纷呈Ⅵ	艾拉·溢彩提升至60级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3675			1	34350	3435			培养	3674	3				
 3676	4	7609	异彩纷呈Ⅶ	艾拉·溢彩提升至70级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3676			1	34360	3436			培养	3675	3				
 3677	4	7608	GR·异彩纷呈	艾拉·溢彩提升至80级	Assets/Product/Texture/Image/IconTask/TaskIconAila2.png					3677			1	34370	3437			培养	3676	3				
-3500	4	5630	军勋在此Ⅰ	构造体累积晋升5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3500			5	35000	3500			培养	3677	3				
+3500	4	5630	军勋在此Ⅰ	构造体累积晋升5次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3500			5	35000	3500			培养		3				
 3501	4	5620	军勋在此Ⅱ	构造体累积晋升10次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3501			10	35010	3501			培养	3500	3				
 3502	4	5610	军勋在此Ⅲ	构造体累积晋升20次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3502			20	35020	3502			培养	3501	3				
 3503	4	5600	军勋在此Ⅳ	构造体累积晋升30次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					3503			30	35030	3503			培养	3502	3				
@@ -782,7 +782,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 12004	13	500	能者多劳	宿舍伙伴执勤1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12004			1	12004	12004			宿舍			9998			
 12005	13	499	与你邂逅	触发并完成宿舍事件3次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12005			3	12005	12005			宿舍			9998			
 12006	13	485	高屋建瓴	完成所有宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12006			5	12006		2019/12/31 5:00		宿舍			9998		1	
-12007	13	510	温馨指标	完成任意4个宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12007			4	12007		2020/2/7 5:00		宿舍			9998			
+12007	13	510	温馨指标	完成任意2个宿舍任务	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					12007			2	12007		2020/2/7 5:00		宿舍			9998			
 14001	12	2001	宿舍指引	指引-入住1位伙伴	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14001			1	14001	14001			宿舍			9999			
 14002	12	2000	宿舍指引	指引-放置家具1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14002			1	14002	14002			宿舍			9999			
 14003	12	1999	宿舍指引	指引-将椅子改装1次	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					14003			1	14003	14003			宿舍			9999			
@@ -1118,8 +1118,23 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 11322	15	9577	圣杯Ⅲ	巴别塔计划总战略等级达到90	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11322			90	11322				通关						
 11323	15	9576	圣杯Ⅳ	巴别塔计划总战略等级达到95	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11323			95	11323				通关						
 11324	15	9575	圣杯Ⅴ	巴别塔计划总战略等级达到100	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11324			100	11324				通关						
-11325	6	9574	君临高塔Ⅰ	巴别塔计划总战略等级达到120	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11325			120	11325				通关						
-11326	6	9573	君临高塔Ⅱ	巴别塔计划总战略等级达到140	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11326			140	11326				通关						
-11327	6	9572	君临高塔Ⅲ	巴别塔计划总战略等级达到160	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11327			160	11327				通关						
-11328	6	9571	君临高塔Ⅳ	巴别塔计划总战略等级达到180	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11328			180	11328				通关						
-11329	6	9570	君临高塔Ⅴ	巴别塔计划总战略等级达到200	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11329			200	11329				通关						
+11325	15	9574	君临高塔Ⅰ	巴别塔计划总战略等级达到120	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11325			120	11325				通关						
+11326	15	9573	君临高塔Ⅱ	巴别塔计划总战略等级达到140	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11326			140	11326				通关						
+11327	15	9572	君临高塔Ⅲ	巴别塔计划总战略等级达到160	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11327			160	11327				通关						
+11328	15	9571	君临高塔Ⅳ	巴别塔计划总战略等级达到180	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11328			180	11328				通关						
+11329	15	9570	君临高塔Ⅴ	巴别塔计划总战略等级达到200	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11329			200	11329				通关						
+11330	15	9569	君临高塔Ⅵ	巴别塔计划总战略等级达到220	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11330			220	11330				通关						
+11331	15	9568	君临高塔Ⅶ	巴别塔计划总战略等级达到240	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11331			240	11331				通关						
+11332	15	9567	君临高塔Ⅷ	巴别塔计划总战略等级达到260	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11332			260	11332				通关						
+11333	15	9566	君临高塔Ⅸ	巴别塔计划总战略等级达到280	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11333			280	11333				通关						
+11334	15	9565	君临高塔Ⅹ	巴别塔计划总战略等级达到300	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png					11334			300	11334				通关						
+11335	6	9564	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11336	6	9563	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11337	6	9562	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11338	6	9561	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11339	6	9560	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11340	6	9559	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11341	6	9558	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11342	6	9557	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11343	6	9556	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						
+11344	6	9555	任务已失效	已失效	Assets/Product/Texture/Image/IconTask/TaskIconChallenge06.png								1					通关						

@@ -2109,13 +2109,13 @@ Id	IsMask	MaskTarget	Type	Icon	Name	DescriptionType	Text	Duration
 309010505	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	等一下，里先生没有把伊凡算进去……	
 309010506	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	有些支撑足十分接近伊凡被困的位置。	
 309010507	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	请大家一定要顾及伊凡的安全。	
-10099001	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	类似十字的终端使得其他设备呈现出粒子化的状态。	4
+10099001	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	类似十字的终端使得其他设备呈现出波化的状态。	4
 10099002	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	使被影响的设备可以无视几乎所有来自我们的攻击。	4
 10099003	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	对十字形终端进行持续的攻击可以迫使它及被影响的设备从这个状态中脱离。	6
-10099004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	这些异聚终端放射出的光雾会修复受到照射的异聚体设备。	5
-10099005	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	不过也要当心，被这种带有病毒的喷雾直接命中会使我们的神经产生应激反应。	6
+10099004	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	这些异聚终端放射出的光照射线会修复受到照射的异聚体设备。	5
+10099005	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLi1.png	里	1	不过也要当心，被这种带有病毒的光照射线直接命中会使我们的仿生神经产生应激反应。	6
 10099006	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	灰鸦的指挥官，这些形状奇特的终端具有分裂的能力。	5
-10099007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	它们之间释放的极性电流能够麻痹构造体的神经，或者减少构造体的出力。	5
+10099007	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	它们之间释放的极性电流能够麻痹构造体的仿生神经，或者减少构造体的出力。	5
 10099008	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	不过如果受到持续的攻击，就能让它们的电极作用对象反转。	4
 10099009	0	Guide/Guide1	1	Assets/Product/Texture/Image/RoleCharacter/RoleHeadDubian1SS.png	渡边	1	当它们以这个形态出现，不妨以这个思路去对付吧。	4
 10090101	0	Guide/Guide1	2	Assets/Product/Texture/Image/RoleCharacter/RoleHeadLifu1.png	丽芙	1	根据地形图指示，我们已经降落在了预定地点——	

@@ -130,7 +130,7 @@ end
 
 function XUiBfrtPostWarCount:UpdatePanelEchelonExpContent()
     local data = {
-        EchelonId = nil,
+        GroupId = self.GroupId,
         EchelonType = nil,
         EchelonIndex = nil,
         BaseStage = XDataCenter.BfrtManager.GetBaseStage(self.GroupId),
@@ -138,7 +138,6 @@ function XUiBfrtPostWarCount:UpdatePanelEchelonExpContent()
 
     local fightInfoIdList = XDataCenter.BfrtManager.GetFightInfoIdList(self.GroupId)
     for index, echelonId in ipairs(fightInfoIdList) do
-        data.EchelonId = echelonId
         data.EchelonIndex = index
         data.EchelonType = XDataCenter.BfrtManager.EchelonType.Fight
 
@@ -150,7 +149,6 @@ function XUiBfrtPostWarCount:UpdatePanelEchelonExpContent()
 
     local lgoisticsInfoIdList = XDataCenter.BfrtManager.GetLogisticsInfoIdList(self.GroupId)
     for index, echelonId in ipairs(lgoisticsInfoIdList) do
-        data.EchelonId = echelonId
         data.EchelonIndex = index
         data.EchelonType = XDataCenter.BfrtManager.EchelonType.Logistics
 

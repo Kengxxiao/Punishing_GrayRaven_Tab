@@ -163,6 +163,7 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 905124	停机坪浮空		9999	0	Lieonfloor			10	0				0	
 905125	左闪避		0.6	0	Walkr			10	5				0	
 905126	左闪避		0.6	0	Walkl			10	5				0	
+905127	出生动作		10	0	Born			10	2				0	
 905201	普通球型子弹		0.4	0				10	2				0	
 905202	面朝向球型子弹		0.4	0				10	4				0	
 905203	直线连射子弹		0.4	0				10	4				0	
@@ -181,3 +182,11 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 905910	8米-坠落		0.967	0	Attack10			10	2				0	
 905911	8米-旋转		9999	0	Attack11			10	2				0	
 905912	8米-上升		1	0	Attack12			10	2				0	
+874301	飞机几何体技能1		4.7	0	Attack05			10	0				4	
+874302	飞机几何体技能2		4.7	0	Attack05			10	0				4	
+874303	飞机几何体技能3		7.05	0	Attack05			10	0				4	
+874304	飞机几何体技能4		7.05	0	Attack05			10	0				4	
+874305	飞机几何体技能5		3.05	0	Attack04			10	0				4	
+874306	飞机几何体技能6		2.35	0	Attack05			10	0				4	
+874307	红色不可击破子弹-散射		2.35	0	Attack05			10	0				4	
+874308	红色不可击破子弹-直射		2.35	0	Attack05			10	0				4	

@@ -207,17 +207,28 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
 
     end
 
-    if not XDataCenter.DormManager.IsFirstTotal then
-        if isSelf then
+    -- if not XDataCenter.DormManager.IsFirstTotal then
+    --     if isSelf then
+    --         XDataCenter.DormManager.RequestDormitoryData(cb)
+    --     else
+    --         XDataCenter.DormManager.RequestDormitoryData()
+    
+    --         local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
+    --         XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
+    --     end
+    -- else
+    --     cb()
+    -- end
+    if isSelf then
+        if not XDataCenter.DormManager.IsFirstTotal then
             XDataCenter.DormManager.RequestDormitoryData(cb)
         else
-            XDataCenter.DormManager.RequestDormitoryData()
-    
-            local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
-            XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
+            cb()
         end
     else
-        cb()
+        XDataCenter.DormManager.RequestDormitoryData()    
+        local charId = XDataCenter.DormManager.GetVisitorDormitoryCharacterId()
+        XDataCenter.DormManager.RequestDormitoryVisit(targetId, dormitoryId, charId, cb)
     end
 end
 

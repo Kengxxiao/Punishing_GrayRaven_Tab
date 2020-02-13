@@ -122,6 +122,42 @@ XFavorabilityManagerCreator = function()
         return currCharacterData.TrustExp or 0
     end
 
+    --获取好感度最高的角色Id
+    function XFavorabilityManager.GetHighestTrustExpCharacter()
+        local characters = XDataCenter.CharacterManager.GetOwnCharacter()
+        local char = nil
+        local highestExp = -1
+        for _, v in pairs(characters) do
+          --  local exp = XFavorabilityManager.GetCharacterTrustExpById(v.Id)
+            local level = XFavorabilityManager.GetCurrCharacterFavorabilityLevel(v.Id)
+          --  local num = exp + level * 100000 --权重
+
+            if char and level == highestExp then
+                if char.Level == v.Level then
+
+                    if char.CreateTime == v.CreateTime then
+                        if char.Id > v.Id then
+                            highestExp = level
+                            char = v
+                        end
+                    elseif char.CreateTime > v.CreateTime then
+                        highestExp = level
+                        char = v
+                    end
+
+                elseif char.Level < v.Level then
+                    highestExp = level
+                    char = v
+                end
+
+            elseif level > highestExp then
+                char = v
+                highestExp = level
+            end
+        end
+
+        return char.Id
+    end
     -- [获取好感度等级经验表数据]
     function XFavorabilityManager.GetFavorabilityTableData(characterId)
         local curTrustExp = XFavorabilityConfigs.GetTrustExpById(characterId)
@@ -509,7 +545,7 @@ XFavorabilityManagerCreator = function()
     local PlayingCvInfo = nil
     function XFavorabilityManager.PlayCvByType(characterId, soundType)
         if not characterId or characterId == 0 then return end
-        
+
         local voices = XFavorabilityConfigs.GetCharacterVoiceById(characterId)
         for _, voice in pairs(voices) do
             if voice.SoundType == soundType then
@@ -518,7 +554,7 @@ XFavorabilityManagerCreator = function()
                 if PlayingCvId and PlayingCvId == cvId then return end
                 PlayingCvId = cvId
 
-                PlayingCvInfo = CS.XAudioManager.PlayCv(voice.CvId,function ()
+                PlayingCvInfo = CS.XAudioManager.PlayCv(voice.CvId, function()
                     PlayingCvId = nil
                 end)
 
@@ -575,8 +611,8 @@ XFavorabilityManagerCreator = function()
     function XFavorabilityManager.GetFavorabilitySkipIds()
         local skip_size = ClientConfig:GetInt("FavorabilitySkipSize")
         local skipIds = {}
-        for i=1, skip_size do
-            table.insert(skipIds, ClientConfig:GetInt(string.format("FavorabilitySkip%d",i)))
+        for i = 1, skip_size do
+            table.insert(skipIds, ClientConfig:GetInt(string.format("FavorabilitySkip%d", i)))
         end
 
         return skipIds

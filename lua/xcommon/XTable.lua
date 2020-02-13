@@ -99,6 +99,7 @@ XTable = {
         ExSkillIconImage = {ValueType = "string"},
         BodyRadius = {ValueType = "fix"},
         HitRadius = {ValueType = "float"},
+        BaseHeight = {ValueType = "float"},
         CameraCollideRadius = {ValueType = "float"},
         MoveUseFaceDir = {ValueType = "bool"},
         AttribId = {ValueType = "int"},
@@ -1616,6 +1617,7 @@ XTable = {
         ConditionIds = {Type = 1, ValueType = "int"},
         Priority = {ValueType = "int"},
         SkipId = {ValueType = "int"},
+        BtnContent = {ValueType = "string"},
         NpcName = {ValueType = "string"},
         NpcHandIcon = {ValueType = "string"},
         NpcHalfIcon = {ValueType = "string"},
@@ -3720,6 +3722,7 @@ XTable = {
         BeginTimeStr = {ValueType = "string"},
         FightEndTimeStr = {ValueType = "string"},
         EndTimeStr = {ValueType = "string"},
+        ShowEndTimeStr = {ValueType = "string"},
         StageId = {Type = 1, ValueType = "int"},
     },
     XTableBabelTowerStage = {
@@ -3859,5 +3862,17 @@ XTable = {
         Rare = {ValueType = "bool"},
         Priority = {ValueType = "int"},
         Note = {ValueType = "string"},
+    },
+    XTableFestival = {
+        Id = {ValueType = "int"},
+        StartTimeStr = {ValueType = "string"},
+        EndTimeStr = {ValueType = "string"},
+        Note = {ValueType = "string"},
+    },
+    XTableFestivalMail = {
+        Id = {ValueType = "int"},
+        FestivalId = {ValueType = "int"},
+        CharacterId = {ValueType = "int"},
+        MailId = {ValueType = "int"},
     },
 }

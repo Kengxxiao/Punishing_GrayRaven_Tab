@@ -28,9 +28,6 @@ XBfrtManagerCreator = function()
     local BfrtGroupTemplates = {}
     local EchelonInfoTemplates = {}
 
-    local BfrtData = {}
-    local IsNeedSyncData = true
-
     local BfrtFollowGroupDic = {}
     local ChapterInfos = {}
     local GroupInfos = {}
@@ -47,8 +44,9 @@ XBfrtManagerCreator = function()
         [3] = 3,
     }
 
-    local FightTeam = {}
-    local LogisticsTeam = {}
+    local BfrtData = {}
+    local FightTeams = {}
+    local LogisticsTeams = {}
 
     local function IsGroupPassed(groupId)
         local records = BfrtData.BfrtGroupRecords
@@ -296,6 +294,20 @@ XBfrtManagerCreator = function()
         end
     end
 
+    local function InitTeamRecords()
+        local records = BfrtData.BfrtGroupRecords
+        if not records then return end
+
+        for _, record in pairs(records) do
+            local teamInfo = record.TeamInfo
+            if teamInfo then
+                local groupId = record.Id
+                FightTeams[groupId] = teamInfo.FightTeamList
+                LogisticsTeams[groupId] = teamInfo.LogisticsTeamList
+            end
+        end
+    end
+
     local function UnlockFollowGroup(groupId)
         local list = BfrtFollowGroupDic[groupId]
         if not list then
@@ -318,43 +330,6 @@ XBfrtManagerCreator = function()
             local chapterInfo = XBfrtManager.GetChapterInfo(chapterId)
             chapterInfo.Unlock = true
         end
-    end
-
-    function XBfrtManager.UnlockChapterViaActivity(chapterId)
-        -- local chapterInfo = XBfrtManager.GetChapterInfo(chapterId)
-        -- if not chapterInfo then return end
-        -- chapterInfo.IsActivity = true
-
-        -- if not XBfrtManager.CheckAnyTaskRewardCanGet(chapterId) then
-        --     return
-        -- end
-
-        -- chapterInfo.Unlock = true
-        -- chapterInfo.IsOpen = true
-
-        -- local chapterCfg = BfrtChapterTemplates[chapterId]
-        -- local groupId = chapterCfg.GroupId[1]
-        -- local groupInfo = GetGroupInfo(groupId)
-        -- --可能不存在这个关卡（未开放）
-        -- if groupInfo then
-        --     groupInfo.Unlock = true
-        -- end
-
-        -- local groupCfg = BfrtGroupTemplates[groupId]
-        -- if groupCfg then
-        --     for k, v in pairs(groupCfg.StageId) do
-        --         local stageInfo = XDataCenter.FubenManager.GetStageInfo(v)
-        --         stageInfo.Unlock = true
-        --         stageInfo.IsOpen = true
-        --     end
-
-        --     local baseStageInfo = XDataCenter.FubenManager.GetStageInfo(groupCfg.BaseStage)
-        --     baseStageInfo.Unlock = true
-        --     baseStageInfo.IsOpen = true
-        -- end
-
-        --暂时屏蔽掉主线活动的据点战关卡支持
-        return
     end
 
     function XBfrtManager.CheckActivityCondition(chapterId)
@@ -445,7 +420,7 @@ XBfrtManagerCreator = function()
     --获取当前最新解锁的Chapter
     function XBfrtManager.GetActiveChapterId()
         local activeChapterId = 1
-        
+
         for orderId, chapterId in ipairs(ChapterDic) do
             local chapterInfo = XBfrtManager.GetChapterInfo(chapterId)
             if chapterInfo.Unlock then
@@ -539,12 +514,14 @@ XBfrtManagerCreator = function()
         return false
     end
 
-    function XBfrtManager.GetFightTeamList()
-        return FightTeam
+    function XBfrtManager.GetFightTeamList(groupId)
+        local team = FightTeams[groupId] or {}
+        return XTool.Clone(team)
     end
 
-    function XBfrtManager.GetLogisticsTeamList()
-        return LogisticsTeam
+    function XBfrtManager.GetLogisticsTeamList(groupId)
+        local team = LogisticsTeams[groupId] or {}
+        return XTool.Clone(team)
     end
 
     function XBfrtManager.GetTotalTaskNum(chapterId)
@@ -553,10 +530,8 @@ XBfrtManagerCreator = function()
     end
 
     function XBfrtManager.GetCurFinishTaskNum(chapterId)
-        
-
-        local taskIdList = GetChpaterTaskIdList(chapterId)
         local finishTaskNum = 0
+        local taskIdList = GetChpaterTaskIdList(chapterId)
         for _, taskId in pairs(taskIdList) do
             local taskData = XDataCenter.TaskManager.GetTaskDataById(taskId)
             if taskData then
@@ -637,7 +612,7 @@ XBfrtManagerCreator = function()
     function XBfrtManager.GetGroupMaxChallengeNum(baseStage)
         local groupId = XBfrtManager.GetGroupIdByBaseStage(baseStage)
         local groupCfg = GetGroupCfg(groupId)
-        return groupCfg.ChallengeNum 
+        return groupCfg.ChallengeNum
     end
 
     function XBfrtManager.GetChapterIdByGroupId(groupId)
@@ -711,18 +686,6 @@ XBfrtManagerCreator = function()
     end
 
     ----------------------服务端协议begin----------------------
-    function XBfrtManager.GetBfrtData(cb)
-        if not IsNeedSyncData then
-            if cb then
-                cb()
-            end
-
-            return
-        end
-
-        XNetwork.Call(METHOD_NAME.GetBfrtDataRequest, nil, XRpc.NotifyBfrtData)
-    end
-
     local function CheckFightTeamCondition(groupId, teamList)
         local infoList = XBfrtManager.GetFightInfoIdList(groupId)
 
@@ -771,15 +734,15 @@ XBfrtManagerCreator = function()
         XNetwork.Call(METHOD_NAME.BfrtTeamSetRequest, {
             BfrtGroupId = groupId,
             FightTeam = fightTeamList, --List<List<int /*characterId*/> /*characterId list*/>
-            LogisticsTeam = logisticsTeamList       --List<List<int /*characterId*/> /*characterId list*/>
+            LogisticsTeam = logisticsTeamList --List<List<int /*characterId*/> /*characterId list*/>
         }, function(res)
             if res.Code ~= XCode.Success then
                 XUiManager.TipCode(res.Code)
                 return
             end
 
-            FightTeam = fightTeamList
-            LogisticsTeam = logisticsTeamList
+            FightTeams[groupId] = fightTeamList
+            LogisticsTeams[groupId] = logisticsTeamList
 
             if cb then
                 cb()
@@ -835,10 +798,10 @@ XBfrtManagerCreator = function()
             for memberIndex = 1, teamInfo.NeedCharacter do
                 for index, character in ipairs(ownCharacters) do
                     -- if character.Ability >= teamInfo.RequireAbility then
-                        teamInfo.Team[memberIndex] = character.Id
-                        tableRemove(ownCharacters, index)
-                        anyMemberInTeam = true
-                        break
+                    teamInfo.Team[memberIndex] = character.Id
+                    tableRemove(ownCharacters, index)
+                    anyMemberInTeam = true
+                    break
                     -- end
                 end
             end
@@ -867,11 +830,11 @@ XBfrtManagerCreator = function()
 
     function XBfrtManager.NotifyBfrtData(data)
         BfrtData = data.BfrtData
-        IsNeedSyncData = false
 
         InitGroupInfo()
         InitChapterInfo()
         InitFollowGroup()
+        InitTeamRecords()
     end
     ----------------------服务端协议end----------------------
     XBfrtManager.Init()

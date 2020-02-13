@@ -122,6 +122,12 @@ local PlayerCondition = {
         local total = XDataCenter.ItemManager.GetRedEnvelopeCertainNpcItemCount(activityId, npcId, itemId)
         return total >= count, condition.Desc
     end,
+    [15110] = function(condition)   --查询纷争战区是否开启
+        return XDataCenter.ArenaManager.IsPlayerCanEnterFight(), condition.Desc
+    end,
+    [15111] = function(condition)   --幻痛囚笼是否开启
+        return XDataCenter.FubenBossSingleManager.IsBossSingleOpen(), condition.Desc
+    end,
 }
 
 local CharacterCondition = {
@@ -319,6 +325,22 @@ local CharacterCondition = {
                 end
             end
         end
+        return false, condition.Desc
+    end,
+
+    [13113] = function(condition) --判断是否是好感度最高的构造体
+        if not condition.Params or #condition.Params < 1 then
+            return false, condition.Desc
+        end
+
+        local id = XDataCenter.FavorabilityManager.GetHighestTrustExpCharacter()
+
+        for _, roleId in pairs(condition.Params) do
+            if id == roleId then
+                return true
+            end
+        end
+
         return false, condition.Desc
     end
 }

@@ -64,6 +64,14 @@ function XUiPanelWorldChatMyMsgItem:OnBtnHrefClick(param)
     XDataCenter.RoomManager.ClickEnterRoomHref(param, self.CreateTime)
 end
 
+function XUiPanelWorldChatMyMsgItem:RefreshBabelTowerLevel(chatData)
+    local isShowTitleTime = XDataCenter.FubenBabelTowerManager.IsBabelTowerInShowTime()
+    local babelTowerLevel = chatData.BabelTowerLevel
+    local isShow = isShowTitleTime and babelTowerLevel > 0
+    self.TxtBabelTowerLv.text = babelTowerLevel
+    self.ImgBabelTowerLv.gameObject:SetActiveEx(isShow)
+end
+
 function XUiPanelWorldChatMyMsgItem:Refresh(chatData)
     self.CreateTime = chatData.CreateTime
     self.playerId = chatData.SenderId
@@ -71,6 +79,7 @@ function XUiPanelWorldChatMyMsgItem:Refresh(chatData)
     self.TxtName.text = chatData.NickName
     self.TxtWord.text = chatData.Content
 
+    self:RefreshBabelTowerLevel(chatData)
     if not string.IsNilOrEmpty(chatData.CustomContent) then
         self.TxtWord.supportRichText = true
     else

@@ -1242,3 +1242,4 @@ SkipId	Origin	UiName	ParamId	Explain	FunctionalId	CustomParams[1]	CustomParams[2
 11225	7	OnOpenUiActivityBranch		质量流失	10303	1								
 11226	7	OnOpenUiActivityBranch		质量流失	10303	2								
 11227	7	OnOpenUiActivityBossSingle		黑闪	10304									
+9001	1	UiMail		前往邮箱										

@@ -138,6 +138,7 @@ XCode = {
     FubenManagerAutoFightTimesError = 20003089,
     FubenManagerBossSingleResetCanNotSaveScore = 20003090,
     FubenManagerBossSingleDataIsRefresh = 20003091,
+    FubenManagerStartFightIntervalFast = 20003092,
     TeamManagerGetTeamIdFail = 20004001,
     TeamManagerPrefabExceedMax = 20004002,
     TeamManagerSetTeamParaError = 20004003,

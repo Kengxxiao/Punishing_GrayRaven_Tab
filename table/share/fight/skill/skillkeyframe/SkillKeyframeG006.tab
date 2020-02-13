@@ -49,7 +49,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 904701	24|Cast|90470101	0|Effect|FxMo1ArmorMd010112Attack01||1	13|Effect|FxYubei02|HitCase|1	10|Magic|730063|0																																																																												
 904702	26|Cast|90470201	0|Effect|FxMo1ArmorMd010112Attack02||1	14|Effect|FxYubei02|HitCase|1	13|Magic|730063|0																																																																												
 904703	9|Move|30|0.7|0	22|Cast|90470302	7|Cast|90470303	1|Magic|730044|0	0|Cast|90470305	22|Cast|90470306																																																																										
-904704	24|Cast|90470401|90470403	0|Effect|FxMo1ArmorMd010112Attack0501GuadianSpine3|Spine3|1	50|Cast|90470404	14|Cast|90470405																																																																												
+904704	24|Cast|90470401|90470403	0|Effect|FxMo1ArmorMd010112Attack0501GuadianSpine3|Spine3|1	50|Cast|90470404	4|Cast|90470405																																																																												
 904801	28|Cast|90480101	31|Cast|90480102	28|Cast|90480103	30|Cast|90480104	0|Turn|20|1|1	0|Effect|FxMo1BioMd030052Attack01||	0|Cast|90480107|90480108	21|Cast|90480109|90480110																																																																								
 904802	32|Move|4|1.7|0	23|Cast|90480202	26|Cast|90480203	32|Cast|90480204	38|Cast|90480205	44|Cast|90480206	50|Cast|90480207	56|Cast|90480208	62|Cast|90480209	0|Effect|FxMo1BioMd030052Attack02||1	22|Move|3|0.5|0	5|Effect|FxYubei02|HitCase|1	8|Magic|730063|0																																																																			
 904803	0|Effect|FxMo1BioMd030052Attack03||1	30|Cast|90480302|90480303																																																																														

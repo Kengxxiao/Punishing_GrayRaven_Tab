@@ -23,7 +23,7 @@ XFunctionEventManagerCreator = function()
             XEventManager.AddEventListener(XEventId.EVENT_AUTO_WINDOW_STOP, XFunctionEventManager.OnFunctionEventBreak)
             XEventManager.AddEventListener(XEventId.EVENT_MAINUI_ENABLE, XFunctionEventManager.OnFunctionEventValueChange)
             XEventManager.AddEventListener(XEventId.EVENT_ARENA_RESULT_CLOSE, XFunctionEventManager.UnLockFunctionEvent)
-
+            XEventManager.AddEventListener(XEventId.EVENT_LOVE_COMMUNICATE_FUNCTION_EVENT_END, XFunctionEventManager.OnLoveCommunicateFunctionEventCompleteted)
             local FunctionState = FunctionEvenState.IDLE
         end)
     end
@@ -46,7 +46,6 @@ XFunctionEventManagerCreator = function()
 
         XDataCenter.CommunicationManager.SetCommunication()
         XFunctionManager.CheckOpen()
-
         if FunctionState ~= FunctionEvenState.IDLE then
             return
         end
@@ -66,7 +65,9 @@ XFunctionEventManagerCreator = function()
             FunctionState = FunctionEvenState.PLAYING
         elseif XFunctionManager.ShowOpenHint() then --系统开放
             FunctionState = FunctionEvenState.PLAYING
-        elseif XDataCenter.GuideManager.CheckGuideOpen() then -- 引导
+        elseif XDataCenter.GuideManager.CheckGuideOpen() then -- 引导            
+            FunctionState = FunctionEvenState.PLAYING
+        elseif XDataCenter.CommunicationManager.ShowLoveCommunication(XDataCenter.CommunicationManager.Type.Love) then --情人节通讯
             FunctionState = FunctionEvenState.PLAYING
         elseif XDataCenter.AutoWindowManager.CheckAutoWindow() then -- 打脸
             FunctionState = FunctionEvenState.PLAYING
@@ -97,6 +98,7 @@ XFunctionEventManagerCreator = function()
     -- 打脸中断
     function XFunctionEventManager.OnFunctionEventBreak()
         FunctionState = FunctionEvenState.IDLE
+        XFunctionEventManager.OnFunctionEventValueChange()
     end
 
     --完成
@@ -110,6 +112,11 @@ XFunctionEventManagerCreator = function()
         FunctionState = FunctionEvenState.IDLE
         XFunctionEventManager.OnFunctionEventValueChange()
     end
+
+    function XFunctionEventManager.OnLoveCommunicateFunctionEventCompleteted()
+        FunctionState = FunctionEvenState.IDLE
+    end
+    
 
     --锁
     function XFunctionEventManager.LockFunctionEvent()

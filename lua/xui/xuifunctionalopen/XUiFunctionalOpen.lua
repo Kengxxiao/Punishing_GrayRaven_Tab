@@ -1,6 +1,6 @@
 local XUiFunctionalOpen = XLuaUiManager.Register(XLuaUi, "UiFunctionalOpen")
 
-local Type = {Normal = 1,Medal = 2}
+local Type = { Normal = 1, Medal = 2 }
 
 function XUiFunctionalOpen:OnAwake()
     self:InitAutoScript()
@@ -9,7 +9,9 @@ function XUiFunctionalOpen:OnAwake()
 end
 
 function XUiFunctionalOpen:OnStart(actionList)
-    self.Transform:PlayLegacyAnimation("ComOpen",function()
+    self:RemovePresentTimer()
+    self:RefreshTime()
+    self.Transform:PlayLegacyAnimation("ComOpen", function()
         self:SetupContent(actionList)
     end)
     self.IsEnd = false
@@ -30,6 +32,11 @@ function XUiFunctionalOpen:SetupContent(actionList)
     self.Timer = nil
     self.ActionList = actionList
 
+
+    if self.ActionList.BtnContent then
+        self.TextBtnClear.text = self.ActionList.BtnContent
+    end
+
     if self.ActionList.NpcHandIcon then
         self:SetUiSprite(self.ImgNpcHand, self.ActionList.NpcHandIcon)
     end
@@ -41,9 +48,6 @@ function XUiFunctionalOpen:SetupContent(actionList)
     self.TxtNameHalf.text = self.ActionList.NpcName
     self.TxtTalk.text = ""
     self:Init()
-    self:RemovePresentTimer()
-    self:RefreshTime()
-
 end
 
 -- auto
@@ -153,21 +157,17 @@ function XUiFunctionalOpen:OnBtnOpenCommunicationClick(...)
 
     self:PlayAnimation("TongxinBegan", onEnd)
     --XUiHelper.PlayAnimation(self, "TongxinBegan", nil, onEnd)
-
 end
 
 function XUiFunctionalOpen:OnBtnRefuseClick(...)
-    local onEnd = function()
-        self.PanelHintCommunication.gameObject:SetActiveEx(false)
-        self.BtnOnAction.gameObject:SetActiveEx(true)
-        XTipManager.Execute()
-    end
-
-
-   -- XUiHelper.StopAnimation()
+    -- local onEnd = function()
+    --     self.PanelHintCommunication.gameObject:SetActiveEx(false)
+    --     self.BtnOnAction.gameObject:SetActiveEx(true)
+    --     XTipManager.Execute()
+    -- end
+    -- XUiHelper.StopAnimation()
     self:OnBtnClearClick()
-   -- XUiHelper.PlayAnimation(self, "ComRefuse", nil, onEnd)
-
+    -- XUiHelper.PlayAnimation(self, "ComRefuse", nil, onEnd)
 end
 
 function XUiFunctionalOpen:OnBtnNoobClick(...)
@@ -178,7 +178,7 @@ function XUiFunctionalOpen:OnBtnClearClick(...)
     if self.IsEnd then
         return
     end
-    
+
     local data = XDataCenter.CommunicationManager.GetNextCommunication(self.ActionList.Type)
     XUiHelper.StopAnimation()
 
@@ -209,17 +209,22 @@ function XUiFunctionalOpen:OnBtnClearClick(...)
             self.PanelHintCommunication.gameObject:SetActiveEx(false)
             self.PanelHintAction.gameObject:SetActiveEx(false)
             XDataCenter.CommunicationManager.SetCommunicating(false)
-            
+
             self:Close()
 
-            if actionType ~= XDataCenter.CommunicationManager.Type.Medal then
-                XEventManager.DispatchEvent(XEventId.EVENT_FUNCTION_EVENT_COMPLETE)
-            end
+
             if axtionSkipId then
                 XFunctionManager.SkipInterface(axtionSkipId)
             end
 
+            if actionType == XDataCenter.CommunicationManager.Type.Love then
+                XEventManager.DispatchEvent(XEventId.EVENT_LOVE_COMMUNICATE_FUNCTION_EVENT_END)
+            elseif actionType ~= XDataCenter.CommunicationManager.Type.Medal then
+                XEventManager.DispatchEvent(XEventId.EVENT_FUNCTION_EVENT_COMPLETE)
+            end
+
         end
+
         self:PlayAnimation("TongxinClose", onEnd)
         --XUiHelper.PlayAnimation(self, "TongxinClose", nil, onEnd)
         self.IsEnd = true
@@ -275,9 +280,12 @@ function XUiFunctionalOpen:Typewriting()
     self:RemoveTimer()
     self.TxtTalk.text = ""
     local content = self.ActionList.Contents[self.Content]
+
+    local temp = string.gsub(content, CS.XGame.ClientConfig:GetString("CommunicateReplaceStr"), XPlayer.Name)
+
     self.CurrCharTab = {}
-    if content and type(content) == "string" then
-        self.CurrCharTab = string.CharsConvertToCharTab(self.ActionList.Contents[self.Content])
+    if temp and type(temp) == "string" then
+        self.CurrCharTab = string.CharsConvertToCharTab(temp)
     end
 
     local interval = math.floor(self.Interval * 1000 / #self.CurrCharTab)
@@ -296,14 +304,16 @@ function XUiFunctionalOpen:TypewritingFinish()
 end
 
 function XUiFunctionalOpen:RefreshTime()
-    self.PresentTimer = CS.XScheduleManager.ScheduleForever(function(...)
+    local refreshFunc = function(...)
         if XTool.UObjIsNil(self.GameObject) then
             return
         end
         self.getTime = XTime.TimestampToGameDateTimeString(XTime.GetServerNowTimestamp(), "HH:mm:ss")
         self.TxtTimeHand.text = self.getTime
         self.TxtTimeHalf.text = self.getTime
-    end, 1000, 0)
+    end
+    refreshFunc()
+    self.PresentTimer = CS.XScheduleManager.ScheduleForever(refreshFunc, 1000, 0)
 end
 
 function XUiFunctionalOpen:PlayDialog(timer)

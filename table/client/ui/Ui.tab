@@ -248,7 +248,7 @@ UiBabelTowerTask			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerTask.pref
 UiBabelTowerDetails			NormalPopup	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerDetails.prefab			5000
 UiBabelTowerTeamTips			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerTeamTips.prefab			5000
 UiBabelTowerRoomCharacter			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerRoomCharacter.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
-UiFightBabelTower			Normal	Bundle		Assets/Product/Ui/Prefab/UiFightBabelTower.prefab	Assets/Product/Ui/Scene3DPrefab/UiCharacter3d.prefab		5000
+UiFightBabelTower			Normal	Bundle		Assets/Product/Ui/Prefab/UiFightBabelTower.prefab			5000
 UiBabelTowerMainNew			Normal	Bundle		Assets/Product/Ui/Prefab/UiBabelTowerMainNew.prefab			5000
 UiDrawActivity			Normal	Bundle		Assets/Product/Ui/Prefab/UiDrawActivity.prefab	Assets/Product/Ui/Scene3DPrefab/UiDrawActivity.prefab		5000
 UiDrawActivityShow	UiDrawActivity			Bundle		Assets/Product/Ui/Prefab/UiDrawActivityShow.prefab	Assets/Product/Ui/Scene3DPrefab/UiDrawActivity.prefab		5000

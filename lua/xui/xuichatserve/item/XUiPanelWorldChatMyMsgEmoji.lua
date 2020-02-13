@@ -60,6 +60,14 @@ function XUiPanelWorldChatMyMsgEmoji:OnBtnViewClick(...)
         end)
 end
 
+function XUiPanelWorldChatMyMsgEmoji:RefreshBabelTowerLevel(chatData)
+    local isShowTitleTime = XDataCenter.FubenBabelTowerManager.IsBabelTowerInShowTime()
+    local babelTowerLevel = chatData.BabelTowerLevel
+    local isShow = isShowTitleTime and babelTowerLevel > 0
+    self.TxtBabelTowerLv.text = babelTowerLevel
+    self.ImgBabelTowerLv.gameObject:SetActiveEx(isShow)
+end
+
 function XUiPanelWorldChatMyMsgEmoji:Refresh(chatData)
     self.playerId = chatData.SenderId
     self.TxtName.text = chatData.NickName
@@ -75,6 +83,7 @@ function XUiPanelWorldChatMyMsgEmoji:Refresh(chatData)
             self.HeadIconEffect.gameObject:SetActiveEx(false)
         end
     end
+    self:RefreshBabelTowerLevel(chatData)
     
     local emojiId = string.match(chatData.Content, "%d%d%d%d%d")
     local icon = XDataCenter.ChatManager.GetEmojiIcon(emojiId)

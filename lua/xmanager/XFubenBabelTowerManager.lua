@@ -332,6 +332,19 @@ XFubenBabelTowerManagerCreator = function()
         return now >= beginTime and now <= endTime
     end
 
+    -- 是否在显示等级的时间段
+    function XFubenBabelTowerManager.IsBabelTowerInShowTime()
+        local activityNo = XFubenBabelTowerManager.GetCurrentActivityNo()
+        if not activityNo then return false end
+        local activityTemplate = XFubenBabelTowerConfigs.GetBabelTowerActivityTemplateById(activityNo)
+        if not activityTemplate then return false end
+        local now = XTime.GetServerNowTimestamp()
+        local beginTime = XTime.ParseToTimestamp(activityTemplate.BeginTimeStr)
+        local shwoEndTime = XTime.ParseToTimestamp(activityTemplate.ShowEndTimeStr)
+        if not beginTime or not shwoEndTime then return false end
+        return now >= beginTime and now <= shwoEndTime
+    end
+
     -- StageInfo相关
 
     -- 刷新通过的StageInfo

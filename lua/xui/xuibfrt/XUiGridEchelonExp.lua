@@ -15,13 +15,13 @@ function XUiGridEchelonExp:InitComponentState()
 end
 
 function XUiGridEchelonExp:ResetDataInfo()
-    self.EchelonId = nil
+    self.GroupId = nil
     self.EchelonIndex = nil
     self.BaseStage = nil
 end
 
 function XUiGridEchelonExp:UpdateDataInfo(data)
-    self.EchelonId = data.EchelonId
+    self.GroupId = data.GroupId
     self.EchelonIndex = data.EchelonIndex
     self.BaseStage = data.BaseStage
     self.EchelonType = data.EchelonType
@@ -96,7 +96,7 @@ function XUiGridEchelonExp:UpdatePanelMembers()
 end
 
 function XUiGridEchelonExp:UpdateFightTeamCharacter()
-    local fightTeamList = XDataCenter.BfrtManager.GetFightTeamList()
+    local fightTeamList = XDataCenter.BfrtManager.GetFightTeamList(self.GroupId)
     if not fightTeamList then
         XLog.Error("XUiGridEchelonExp UpdateFightTeamCharacter error: do not have fightTeamList.")
         return
@@ -116,7 +116,7 @@ function XUiGridEchelonExp:UpdateFightTeamCharacter()
 end
 
 function XUiGridEchelonExp:UpdateLogisticsTeamCharacter()
-    local logisticsTeamList = XDataCenter.BfrtManager.GetLogisticsTeamList()
+    local logisticsTeamList = XDataCenter.BfrtManager.GetLogisticsTeamList(self.GroupId)
     if not logisticsTeamList then
         XLog.Error("XUiGridEchelonExp UpdateLogisticsTeamCharacter error: do not have logisticsTeamList.")
         return

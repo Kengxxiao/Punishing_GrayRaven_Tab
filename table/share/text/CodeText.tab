@@ -65,7 +65,7 @@ Id	Key	Text
 20003018	FubenManagerStageAllReadyMaxChallegeCount	副本已经达到最大挑战次数
 20003019	FubenManagerStageAllReadyMaxBuyCount	副本已经达到最大购买次数
 20003020	FubenManagerFinishToStageStageNotFound	副本不存在
-20003021	FubenManagerFightIntervalFast	副本挑战间隔过快
+20003021	FubenManagerFightIntervalFast	副本战斗时间过快
 20003022	FubenManagerRebootCountNotMatch	副本复活次数不匹配
 20003023	FubenManagerStageLocked	关卡尚未解锁
 20003024	FubenControlPreFightParamsError	队伍信息有误
@@ -136,6 +136,7 @@ Id	Key	Text
 20003089	FubenManagerAutoFightTimesError	自动战斗次数错误
 20003090	FubenManagerBossSingleResetCanNotSaveScore	玩法已刷新，无法保存记录
 20003091	FubenManagerBossSingleDataIsRefresh	副本数据已刷新，请重新打开页面
+20003092	FubenManagerStartFightIntervalFast	副本挑战间隔过快
 20004001	TeamManagerGetTeamIdFail	获取队伍ID失败
 20004002	TeamManagerPrefabExceedMax	队伍预设达到上限
 20004003	TeamManagerSetTeamParaError	队伍设置数量错误

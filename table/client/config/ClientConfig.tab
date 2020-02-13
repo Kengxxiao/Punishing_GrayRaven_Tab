@@ -243,3 +243,6 @@ FightCoLoadRate	int	3
 FightCoLoadMaxDT	float	0.0666667
 FightCoLoadMinDT	float	0.04
 MailWillFullCount	int	70
+LovelCommunicateStartTime	string	1581609600
+LovelCommunicateEndTime	string	1581868740
+CommunicateReplaceStr	string	KURONAME
