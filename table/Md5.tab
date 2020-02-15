@@ -91,7 +91,7 @@ Share/Equip/LevelUpTemplate/605.tab	3ac25395957b3c4f8860988e505a1491
 Share/Equip/WeaponSkill.tab	74df7168afa246dade887561f96e976b
 Share/Equip/WeaponSkillPool.tab	7af69a66dbcb5dfe8fbb4311696bc1b1
 Share/Exhibition/ExhibitionReward.tab	25dba0a64fd26dbe99a05b5e5d003c3a
-Share/Fashion/Fashion.tab	ec4ae22ce5be21a1ec893fba73abfb69
+Share/Fashion/Fashion.tab	1a649da93109581f94dd8350f46f5b5d
 Share/Fashion/FashionQuality.tab	54912fb5ef50e2141fe8cf747dce8d40
 Share/Fetters/FettersLevel.tab	47032989e1f417a06aa7436459f616e6
 Share/Fetters/FettersType.tab	1d7831a66934a33fe1a60def90e2fd00
@@ -1691,4 +1691,4 @@ Share/Trust/TrustGameGrid.tab	8a2b77b6cd6a2ebe55399bb343a8543b
 Share/Trust/TrustGamePosition.tab	dc6d0bc6627e022fe5283cdbead06d5a
 Share/Trust/TrustGameReward.tab	fbd3c92eab1ac37eeedf4dc2555450b4
 Share/Trust/TrustGameTypeConfig.tab	a903dfae2b321332d37382453abd598a
-All	b7e15460d841cf95db2bf39321e9aa6a
+All	41cf2be50cf6b62ba37f4f79a62d0a5e
