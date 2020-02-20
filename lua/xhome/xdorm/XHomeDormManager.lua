@@ -63,7 +63,7 @@ local FurnitureMiniorType = {
 
 local RecordRoomPutup = {}
 -- 初始化场景
-local function InitScene(go, datas,dormDataType, onFinishLoadScene)
+local function InitScene(go, datas,dormDataType, onFinishLoadScene,isenterroom)
     CS.XGridManager.Instance:Init()
 
     --场景全局光照
@@ -94,7 +94,9 @@ local function InitScene(go, datas,dormDataType, onFinishLoadScene)
             if onFinishLoadScene then
                 onFinishLoadScene()
             end
-            
+            if isenterroom then
+                XLuaUiManager.Open("UiDormSecond", XDormConfig.VisitDisplaySetType.MySelf, XHomeDormManager.DormitoryId)
+            end
         end)
     else
         if not XLuaUiManager.IsUiLoad("UiDormSecond") then
@@ -181,7 +183,7 @@ function XHomeDormManager.EnterDorm(targetId, dormitoryId, isSele, onFinishLoadS
 
         local onLoadCompleteCb = function(go)
             go.gameObject:SetActive(true)
-            InitScene(go, datas,dormDataType, onFinishLoadScene)
+            InitScene(go, datas,dormDataType, onFinishLoadScene,isSele)
             
             if dormitoryId and isSele then
                 -- if not XLuaUiManager.IsUiLoad("UiDormSecond") then

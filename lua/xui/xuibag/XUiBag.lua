@@ -32,8 +32,6 @@ function XUiBag:OnStart(record)
     end
 
     self.SortBtnGroup:SelectIndex(self.SortType + 1, false)
-
-    self:UpdateRecyclePanel()
 end
 
 function XUiBag:OnEnable()
@@ -55,26 +53,9 @@ end
 
 --处理事件监听
 function XUiBag:OnNotify(evt, ...)
-
-    if evt == XEventId.EVENT_ITEM_USE then
+    if evt == XEventId.EVENT_ITEM_USE or evt == XEventId.EVENT_ITEM_RECYCLE then
         self:UpdateDynamicTable()
-    elseif evt == XEventId.EVENT_ITEM_RECYCLE then
-        self:UpdateRecyclePanel()
     end
-end
-
---回收道具弹窗
-function XUiBag:UpdateRecyclePanel()
-    local recycleItemList = XDataCenter.ItemManager.GetRecycleItemList()
-    if not recycleItemList then return end
-
-    local recycleItems = recycleItemList.RecycleItems
-    local rewardGoodsList = recycleItemList.RewardGoodsList
-
-    self.BagRecyclePanel:Refresh(recycleItems, rewardGoodsList)
-    self:UpdateDynamicTable()
-
-    XDataCenter.ItemManager.ResetRecycleItemList()
 end
 
 function XUiBag:Init()

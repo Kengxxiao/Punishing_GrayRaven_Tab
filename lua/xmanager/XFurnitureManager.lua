@@ -352,17 +352,24 @@ XFurnitureManagerCreator = function()
     -- 添加家具
     function XFurnitureManager.AddFurniture(furnitureData, dormDataType)
         local datas
-        if not dormDataType or dormDataType == XDormConfig.DormDataType.Self then
+        if not dormDataType then
+            dormDataType = XDormConfig.DormDataType.Self
+        end
+        if dormDataType == XDormConfig.DormDataType.Self then
             datas = FurnitureDatas
         else
             datas = OtherFurnitureDatas
         end
+
 
         if datas[furnitureData.Id] then
             XLog.Error("FurnitureDatas is already exist furniture id is" .. furnitureData.Id)
             return
         end
 
+        if dormDataType == XDormConfig.DormDataType.Self then
+            XDataCenter.DormManager.FurnitureUnlockList[furnitureData.ConfigId] = furnitureData.ConfigId
+        end
         datas[furnitureData.Id] = XHomeFurnitureData.New(furnitureData)
 
         if not dormDataType or dormDataType == XDormConfig.DormDataType.Self then

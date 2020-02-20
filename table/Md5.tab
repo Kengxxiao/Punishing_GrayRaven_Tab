@@ -34,7 +34,7 @@ Share/Character/Skill/CharacterSkillPos.tab	394946499f8d9dbe4067bf4df90f47f0
 Share/Character/Skill/CharacterSkillUpgrade.tab	0ab85241ab2435a43717b23ab66899a0
 Share/Cheat/Cheat.tab	6925523d5ee5bab889c0464be271ee3e
 Share/Condition/Condition.tab	0a0561a44362394d7f9d786e1aaf28ee
-Share/Config/Config.tab	35e9130cb74fc85a67934fdb84c392b0
+Share/Config/Config.tab	dc61a50f30870d5bfa0aeb291b770aab
 Share/Dormitory/Character/DormCharacterBehavior.tab	5e9f3e16b50e095c95e843caabeade2f
 Share/Dormitory/Character/DormCharacterEvent.tab	a52c7ac7105d860e14870c5c5b815035
 Share/Dormitory/Character/DormCharacterEventCondition.tab	ec4c8a9ebf9233ef6048c078f1a0266b
@@ -91,7 +91,7 @@ Share/Equip/LevelUpTemplate/605.tab	3ac25395957b3c4f8860988e505a1491
 Share/Equip/WeaponSkill.tab	74df7168afa246dade887561f96e976b
 Share/Equip/WeaponSkillPool.tab	7af69a66dbcb5dfe8fbb4311696bc1b1
 Share/Exhibition/ExhibitionReward.tab	25dba0a64fd26dbe99a05b5e5d003c3a
-Share/Fashion/Fashion.tab	1a649da93109581f94dd8350f46f5b5d
+Share/Fashion/Fashion.tab	cf4489914eee531042b371d0018b5897
 Share/Fashion/FashionQuality.tab	54912fb5ef50e2141fe8cf747dce8d40
 Share/Fetters/FettersLevel.tab	47032989e1f417a06aa7436459f616e6
 Share/Fetters/FettersType.tab	1d7831a66934a33fe1a60def90e2fd00
@@ -110,7 +110,7 @@ Share/Fight/Behavior/Behavior/BehaviorEffectC001.tab	b8e13eadb6f06931f20ffd640ab
 Share/Fight/Behavior/Behavior/BehaviorEffectC002.tab	8837513283704dec0f3c4d231a0e613d
 Share/Fight/Behavior/Behavior/BehaviorEffectC003.tab	5fd4eb3e1180c429f03979cb51e31d43
 Share/Fight/Behavior/Behavior/BehaviorEffectC004.tab	041594ffc9f8e7a21501958a9e8b6f1a
-Share/Fight/Behavior/Behavior/BehaviorEffectC005.tab	965a352b080fc95d7cbd1c17a020459c
+Share/Fight/Behavior/Behavior/BehaviorEffectC005.tab	d473252a71f431e4d2e789264a0c4042
 Share/Fight/Behavior/Behavior/BehaviorEffectD001.tab	be047a3ecda86c4cb5b8122aedaf7b7f
 Share/Fight/Behavior/Behavior/BehaviorEffectD002.tab	ab1d00cba7d2657790bea6378a77469a
 Share/Fight/Behavior/Behavior/BehaviorEffectD003.tab	0271674b6c7b7272ad12b87ce94103e1
@@ -165,7 +165,7 @@ Share/Fight/Behavior/Behavior/BehaviorMapE011.tab	c50b4aa899882acae5cbb48fab9241
 Share/Fight/Behavior/Behavior/BehaviorMapE012.tab	e398531489c994f04f09002cf871f9c8
 Share/Fight/Behavior/Behavior/BehaviorMapE013.tab	95d4e694b2c3484e158128c1c67eb39e
 Share/Fight/Behavior/Behavior/BehaviorMapE014.tab	b45faf0fe911931c43254128dfa3d004
-Share/Fight/Behavior/Behavior/BehaviorMapE015.tab	1b36d9bae4f8a377e7460094eaf0259c
+Share/Fight/Behavior/Behavior/BehaviorMapE015.tab	4ca9c6a06945bc8a643d84b64a641253
 Share/Fight/Behavior/Behavior/BehaviorMapF001.tab	c8acaa48c12404ea7d8641201d67da64
 Share/Fight/Behavior/Behavior/BehaviorMapF002.tab	7bbd9f82da88bcd1cdced7e8c8c58084
 Share/Fight/Behavior/Behavior/BehaviorMapF003.tab	b65c336d60730a7e36ee617474ad0582
@@ -209,7 +209,7 @@ Share/Fight/Behavior/Behavior/BehaviorNpcK002.tab	21b8a27145d038a42126756233bb8f
 Share/Fight/Behavior/Behavior/BehaviorNpcZ999.tab	90c4e51f612488cfe60c6667e194f47e
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA.tab	3374632b5903a9c38eec5511976b9a9c
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA001.tab	eaf439ea04ca210762985e120a49ac80
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA002.tab	f7766bd2f5e1259ccbfcaca64153d2c5
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA002.tab	c6e0e57e6a3a6315b15afe8e82c4e25c
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA003.tab	d7c90d62d35bc2e3a295f33055615d75
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA004.tab	4994c4fb6a9c889043890a7ccd04191d
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectA005.tab	23df307dda4976b1dd8def80e3e49865
@@ -222,13 +222,13 @@ Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC001.tab	eb043cef8c794a5a133
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC002.tab	1996f46cd0405a16e8e082044c12f008
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC003.tab	4266126983ecee935354a47dfa2ce865
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC004.tab	3924ec818560324c3090f3b1e40ed35f
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC005.tab	9cd3fb531dd4ef45470cbebf2f0454b7
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectC005.tab	02fead1cfa8000991446c1405e4ec81a
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectD001.tab	580cf0fa87b25476dde746f8c8136126
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectD002.tab	9642aae0dece1affbf19cd07ef38b45b
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectD003.tab	fbe3224330dffc6faa98de5fc095e6e1
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectD004.tab	297b36f5c658141f05b6082c08d4306a
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG.tab	978b328262ba653901a293c91c49d3e5
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG001.tab	3c50676de907d8ae6393790337d6fc79
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG001.tab	008e2e18e97419f56b726fe6da37164a
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG002.tab	6a9ee789a009a849fc641837ac102073
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG003.tab	1bf9726eba51bfafe34604c57a6e40f1
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG004.tab	87993ff01dd9c5e40bb5d923aa1b70eb
@@ -251,7 +251,7 @@ Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB006.tab	5dc028d1e0fac36916ecc5
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB007.tab	04ffdaa3d01c7934bfd5d134fa69ef80
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB008.tab	193525c9eaec474d17b451d7574fb916
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB009.tab	563f5aaf115ef0a60ea5c62e8126d410
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB010.tab	18dbf270050b101550b418f829c9da2b
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB010.tab	fa847fe4a6dd441ea0c3feb26969c4f2
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapB011.tab	cf9b43c1739a91f8a6f485679725d905
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapC.tab	2d8f17a10032eef9b4e21d16c02add6f
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapC001.tab	808dffc2d06919f92890dd838d57750c
@@ -277,7 +277,7 @@ Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE011.tab	c9ad3a0e390e9907df69a3
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE012.tab	4a7ce0ee63ed13aa8ebf1992458b8159
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE013.tab	dc3caf36b7d11a45ef8dcf4491aaa0f4
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE014.tab	a877036d3a4fd40ed35ec2bb41e638cd
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE015.tab	46feaf29a86cb131ecf123ce37b5b9bd
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapE015.tab	c45c92725ca389f334a823e579f755bb
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapF001.tab	89976535a13e5c488102d71d32852493
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapF002.tab	f169eeb3c6f0a820d566384797e99aa9
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapF003.tab	7a1be831a4bdf25ef96fdfa427d3c574
@@ -299,7 +299,7 @@ Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapY002.tab	f4ff485b5fb9ac16af5b82
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeMapZ.tab	fb9e2962e086d0b2e2ac50d51506cfec
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA.tab	ea9b5c7c0747b119addae0c2a5d90896
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA001.tab	c5c8c585a606f6c4d4b75458a246a039
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA002.tab	8a77901d27a5eae85bc6e96219834e0a
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA002.tab	c659863a66c0a1f7f9277cedc85c84af
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA003.tab	9cf4cf45f20a45d6b11ede17ee30a2e6
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA004.tab	fed6d8758355d59affd619cbe10670c9
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeNpcA005.tab	65852f92dd3dabc723402b3e867a0741
@@ -340,7 +340,7 @@ Share/Fight/Buff/Buff/BuffC001.tab	53bae403094716c45b9719776e4818fe
 Share/Fight/Buff/Buff/BuffC002.tab	df6f2ba8f8f3626f3e6fcd448ffaf0c9
 Share/Fight/Buff/Buff/BuffC003.tab	aad902783d42f9a50216d305cec563ac
 Share/Fight/Buff/Buff/BuffC004.tab	58ae8ff495f2863835d90ae9aaf0eb2c
-Share/Fight/Buff/Buff/BuffC005.tab	472776cc99bdbbe3d219ccc17ecde26e
+Share/Fight/Buff/Buff/BuffC005.tab	58602aeed0a1ee19cd0e4461ccdde32e
 Share/Fight/Buff/Buff/BuffD001.tab	3792addffdecd12962f7edb5add8d667
 Share/Fight/Buff/Buff/BuffD002.tab	be353dba16fc30cc24cc59458e1c17da
 Share/Fight/Buff/Buff/BuffD003.tab	c215acacd364e20169fe6ffe24cbd6a2
@@ -427,7 +427,7 @@ Share/Fight/Magic/Magic/MagicEffectC001.tab	154f45ac9f262a0f608bb746ef3bff67
 Share/Fight/Magic/Magic/MagicEffectC002.tab	9d70958c61c32548b8fd2e52a0b1d7b3
 Share/Fight/Magic/Magic/MagicEffectC003.tab	e5af5c6d6f53031e61a6e72d690f38c1
 Share/Fight/Magic/Magic/MagicEffectC004.tab	66e490115c9aa1269ee2e03094ad2f04
-Share/Fight/Magic/Magic/MagicEffectC005.tab	bab3cd4c195b34f9e615c93e602a95e3
+Share/Fight/Magic/Magic/MagicEffectC005.tab	482acdb1e0679cff07fc8a43436e8f66
 Share/Fight/Magic/Magic/MagicEffectD001.tab	97293f8cdc0f8ae0c9175234a1015f6e
 Share/Fight/Magic/Magic/MagicEffectD002.tab	12a5f2dcf4bfa5fb7ad062a42a1e25a7
 Share/Fight/Magic/Magic/MagicEffectD003.tab	23f753c078345ab708b08f0ede3136b2
@@ -756,7 +756,7 @@ Share/Fight/Map/Info/Scene00901CHtest/Area.tab	2e195e36fc1d3145271406509cced384
 Share/Fight/Map/Info/Scene00901CHtest/Position.tab	7fdbeb0d5db54f70f50fa50e2a218536
 Share/Fight/Map/Info/Scene00901CHtest/Size.tab	30b8de194f3c79c7d67e3be776bb0de1
 Share/Fight/Map/Info/Scene00903a/Area.tab	b51795fb64b407ba4186739d494a74c7
-Share/Fight/Map/Info/Scene00903a/Position.tab	7a5c281069d35caa1f326964464caf27
+Share/Fight/Map/Info/Scene00903a/Position.tab	94ef69bc0b3dff106c1c8a5759153e5f
 Share/Fight/Map/Info/Scene00903a/Size.tab	4cc5dde53638501e073e5a96f58f1a57
 Share/Fight/Map/Info/Scene00903pingtai/Area.tab	c5d672ae0959918c8a4392da298eefc0
 Share/Fight/Map/Info/Scene00903pingtai/Position.tab	4bb6976cb94266510b7766cb42076e6b
@@ -970,7 +970,7 @@ Share/Fight/Map/Map/MapB006.tab	dd3e41f68ab9e99536d1a0d3d6fb6a9c
 Share/Fight/Map/Map/MapB007.tab	6c241b1dd38b7804d9745eea05fad78c
 Share/Fight/Map/Map/MapB008.tab	b9c03d764a455ee1fa0f9877a2c9c309
 Share/Fight/Map/Map/MapB009.tab	18abc68e9d39a1898204ff24516f4317
-Share/Fight/Map/Map/MapB010.tab	a9d4db9db6ee92f0c89bc01b32ec2cd5
+Share/Fight/Map/Map/MapB010.tab	9daa4b2f5b6b244f266ce4aa80bec29d
 Share/Fight/Map/Map/MapB011.tab	9bab50d38b80aab27accda36de6a5561
 Share/Fight/Map/Map/MapC.tab	028f912323dfef7ce1b4912356320454
 Share/Fight/Map/Map/MapC001.tab	9fb7463cabda1eac8f6ff9b1f5d04a04
@@ -996,7 +996,7 @@ Share/Fight/Map/Map/MapE011.tab	3d0de2b335d584a77333c576889f833b
 Share/Fight/Map/Map/MapE012.tab	05054fa9f66b4e06f5285f613fead2c3
 Share/Fight/Map/Map/MapE013.tab	41f7768b8315d619302a2bb80ebc5e5f
 Share/Fight/Map/Map/MapE014.tab	eb310a0083bb37c92ccec17b6d3a1158
-Share/Fight/Map/Map/MapE015.tab	c0cf0ef2bd88843df547d081362ecc82
+Share/Fight/Map/Map/MapE015.tab	260781eddf396707109e4d63b183b82f
 Share/Fight/Map/Map/MapF001.tab	5ca0dd66fe2d0566397d3128e73a82c0
 Share/Fight/Map/Map/MapF002.tab	11d70186e65cd5bfb990d2297970697f
 Share/Fight/Map/Map/MapF003.tab	9e38794a4a416f4a22fe07a5f1f523a7
@@ -1053,7 +1053,7 @@ Share/Fight/Map/Terrain/TerrainE011.tab	a569b824d56648c19a15183f82df313a
 Share/Fight/Map/Terrain/TerrainE012.tab	0fb81170bd3683a147b93180ca8ca223
 Share/Fight/Map/Terrain/TerrainE013.tab	c0e1413f1764ea7f51a67c936c70f2e4
 Share/Fight/Map/Terrain/TerrainE014.tab	be2cca528ea95671e93c00aadf7592fa
-Share/Fight/Map/Terrain/TerrainE015.tab	e57a1d0d6244a33595f71a6b584f95ba
+Share/Fight/Map/Terrain/TerrainE015.tab	fc666158b5e555ab18ba4f85a81692fc
 Share/Fight/Map/Terrain/TerrainF001.tab	381d03b3a9cb72ad6b8d57426a4f530a
 Share/Fight/Map/Terrain/TerrainF002.tab	d76ed35f7e10334386f30cac3a478007
 Share/Fight/Map/Terrain/TerrainF003.tab	ecb0a0a41a6d3afa60015dd374b3dea9
@@ -1100,7 +1100,7 @@ Share/Fight/Missile/Missile/MissileDeathK001.tab	1be34c8a56172ebaebf0129be2d7856
 Share/Fight/Missile/Missile/MissileDeathK002.tab	0303eace87312861f79c5ed4b7de0f65
 Share/Fight/Missile/Missile/MissileDeathZ999.tab	3b4455baade2634344adee3f601ba783
 Share/Fight/Missile/Missile/MissileG.tab	7fb25b9c22e45ecf92fc5ff2d6ef08a8
-Share/Fight/Missile/Missile/MissileG001.tab	a15bf6f9a023fdb2bef88b851053f31d
+Share/Fight/Missile/Missile/MissileG001.tab	211512f1f0542b708e95b5f6c98aaf3e
 Share/Fight/Missile/Missile/MissileG002.tab	0e777195f6d879ce5a2ab54588760a13
 Share/Fight/Missile/Missile/MissileG003.tab	00c88172942dd6594bcd02a4c615b4e8
 Share/Fight/Missile/Missile/MissileG004.tab	e4bc332b18e6b07d964b3a52fe0d167b
@@ -1506,7 +1506,7 @@ Share/Fight/Skill/SkillKeyframe/SkillKeyframeA002.tab	84568d983e74445b7c7353425a
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeA003.tab	20338f5b304a4a72c5bd02ac63ddf6a7
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeA004.tab	c85eed664824cc050d7a72e80c09b6b5
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeA005.tab	39417e175db3f8df2935cbf783782778
-Share/Fight/Skill/SkillKeyframe/SkillKeyframeA006.tab	fe166bdde84616a5faeb4b871858c05e
+Share/Fight/Skill/SkillKeyframe/SkillKeyframeA006.tab	bf9d95f5a1e7e8b33793c81e1f799023
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeA007.tab	045ae8f3abca73807f9b0ff32d64255f
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeB.tab	b7ea95ec22e81c4790afd8eff255d09d
 Share/Fight/Skill/SkillKeyframe/SkillKeyframeB001.tab	7f16688d4ca66a723aa027db0f7ca765
@@ -1583,7 +1583,7 @@ Share/Fuben/FightOnlineReboot.tab	5dfd46678e2dd1ce04e4f46ab54f535a
 Share/Fuben/FightReboot.tab	736aea2ae16bd26a265c4b438e827199
 Share/Fuben/FlopReward.tab	1e28129c72cab4e4b2576325bafeb4f8
 Share/Fuben/FubenBranch/FubenBranchActivity.tab	d40b567b227c519041393e42a258bccb
-Share/Fuben/FubenBranch/FubenBranchChallenge.tab	01f7f8278865aa738ad8b6d4c2939190
+Share/Fuben/FubenBranch/FubenBranchChallenge.tab	14f2639949502ce740abc81b64fa4cfc
 Share/Fuben/FubenBranch/FubenBranchSection.tab	9d6b1c40787e5ec4e2a78e6daab14fff
 Share/Fuben/FubenChallengeBanner.tab	9a76838b9b3fd61ea8c309d0f88a4fdb
 Share/Fuben/FubenResource/FubenResourceChapter.tab	b4f791d14b6ef2c6f282e899962d37e7
@@ -1601,9 +1601,9 @@ Share/Fuben/NpcControl/StageNpc.tab	1493380ea26878bbb203d4527020091a
 Share/Fuben/Practice/PracticeChapter.tab	a5b2bd819dcb8cb7346de967c0e22ac3
 Share/Fuben/Prequel/Chapter.tab	5fa8a3fd8a5e9b7d2969e86e60b3f099
 Share/Fuben/Prequel/Cover.tab	7588dcc022a5fb001bbb2871400f06e2
-Share/Fuben/Stage.tab	c0be3f464c17c3d8697d545dccce4d33
+Share/Fuben/Stage.tab	a06c4792a391aa4b292dc69eba990021
 Share/Fuben/StageFightControl.tab	d070810ef3159e1177295134f941c0f3
-Share/Fuben/StageLevelControl.tab	9f1f190ece7a84d42e1e21df14ddf486
+Share/Fuben/StageLevelControl.tab	a8dd303a9643baf4d9b53cd7f892bded
 Share/Fuben/StageMultiplayerLevelControl.tab	736d30cc972a55a3a8ce7371b68f0650
 Share/Fuben/StageTransform.tab	19be441250f8c033298923780e29823d
 Share/Fuben/Story/CharacterStoryChaper.tab	21412c3b4f5b4e64cc64cd63b94a1712
@@ -1618,7 +1618,7 @@ Share/Gacha/Gacha.tab	a01313b3ddfb6331f010093c9140a559
 Share/Gacha/GachaReward.tab	37625819415834e24fece542d7a8aa67
 Share/Guide/GuideComplete.tab	a341c7f671398d1aaf74293459e6c644
 Share/Guide/GuideFight.tab	b59795f46e7eb3e268d0b2d2f24fa1d3
-Share/Guide/GuideFightStep.tab	823f067cdd9a0ce3f0c84bded3f73620
+Share/Guide/GuideFightStep.tab	f04bd8939139e31e7cfbeead67dc4509
 Share/Guide/GuideGroup.tab	ec9a171b01ae682b40c0c91640df7c4d
 Share/Guide/GuideStep.tab	a0d150318df1a79087149c97c18ea566
 Share/Guild/GuildCreate.tab	d8217fff33264f1e96c6133753bd3913
@@ -1632,7 +1632,7 @@ Share/Hostel/HostelRoom.tab	da6fcfd0bd6c74647a181bb23b99657a
 Share/Hostel/RoomMap.tab	5e173371d0e2a5c1b39dbab0742a94a3
 Share/Item/BuyAsset.tab	3a62b0a9d3aea882b586b610917bb023
 Share/Item/BuyAssetConfig.tab	cb5532addd33913e6a0cb453fd16ceff
-Share/Item/Item.tab	3ff18e1df5c1172ea11346f55ed97aef
+Share/Item/Item.tab	41e492e0790c3e1c2ba680683bfb6947
 Share/Login/LoginCode.tab	82860628dc2232a4b7e367ec7f1dbaf3
 Share/Mail/Mail.tab	b0f60977af0c7d8b31e717ed7c6c4de5
 Share/Mail/MailRewardGoods.tab	40612de86a165328746d6dde965c4703
@@ -1650,8 +1650,8 @@ Share/RedEnvelope/RedEnvelopeDrop.tab	100bddd69b358cc3e27f4c2153044fb1
 Share/RedEnvelope/RedEnvelopeNpc.tab	0637f20e6a964ad8d32d866097425d36
 Share/Report/ReportTag.tab	36fd04bc5e4c384932459c4cb6793dc7
 Share/Reset/SystemResetConfig.tab	5dbed531fa4eaf44904b455e430f9085
-Share/Reward/Reward.tab	bfec9ae44cb34e6c81cfe5b154c071ad
-Share/Reward/RewardGoods.tab	91a2a0326da28a9a83ec943894da180a
+Share/Reward/Reward.tab	1846e57f4a9d4e4112733f7475eac38f
+Share/Reward/RewardGoods.tab	9792044b3aa87b498a60d555dae11fde
 Share/Robot/Robot.tab	b84de424a1bd088de9ffb504650c913c
 Share/Robot/RobotPlayer.tab	e1cec58d4c1e4e064ba588bb540e0f10
 Share/SignIn/SignIn.tab	b24942f535abe70813acdba0a4257408
@@ -1691,4 +1691,4 @@ Share/Trust/TrustGameGrid.tab	8a2b77b6cd6a2ebe55399bb343a8543b
 Share/Trust/TrustGamePosition.tab	dc6d0bc6627e022fe5283cdbead06d5a
 Share/Trust/TrustGameReward.tab	fbd3c92eab1ac37eeedf4dc2555450b4
 Share/Trust/TrustGameTypeConfig.tab	a903dfae2b321332d37382453abd598a
-All	41cf2be50cf6b62ba37f4f79a62d0a5e
+All	318b06be1a52e32679f3303f11fecac1

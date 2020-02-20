@@ -625,7 +625,7 @@ FragmentCapacityDes	拥有的碎片
 DecomposeTitle	分解预览
 ConverseTitle	转化预览
 SellTitle	出售预览
-DecomposeConfirmTip	分解返还70%左右所有培养材料（返还不包括共鸣材料）
+DecomposeConfirmTip	分解返还70%左右所有培养材料（返还不包括共鸣材料，返还计算出现非整数数量时，向下取整）
 DecomposeConfirmTitle	装备分解二次确认
 SellConfirmTip	选中物品为高品质物品
 SellConfirmTitle	物品出售二次确认

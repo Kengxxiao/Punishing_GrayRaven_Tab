@@ -1367,6 +1367,30 @@ Id	Type	Title	Desc	Time
 10091001	2		击败异聚核心	
 10091101	2		击败异聚核心	
 10091201	2		追击异聚核心	
+301501	1		雷光剑影\n<color=#fffff><size=27>当前第一回合</size></color>	1
+301502	1		贯雷破空\n<color=#fffff><size=27>当前第一回合</size></color>	1
+301503	1		风驰电掣\n<color=#fffff><size=27>当前第一回合</size></color>	1
+301504	1		不贴合矩阵\n<color=#fffff><size=27>当前第二回合</size></color>	1
+301505	1		差异化锥体\n<color=#fffff><size=27>当前第二回合</size></color>	1
+301506	1		非相交圆柱\n<color=#fffff><size=27>当前第二回合</size></color>	1
+301507	1		刀刃决心\n<color=#fffff><size=27>当前第三回合</size></color>	1
+301508	1		刚毅卫戍\n<color=#fffff><size=27>当前第三回合</size></color>	1
+301509	1		铁壁泰坦\n<color=#fffff><size=27>当前第三回合</size></color>	1
+301510	1		电磁感应块\n<color=#fffff><size=27>当前第四回合</size></color>	1
+301511	1		波粒二象角\n<color=#fffff><size=27>当前第四回合</size></color>	1
+301512	1		万有引力球\n<color=#fffff><size=27>当前第四回合</size></color>	1
+301513	1		不朽之剑\n<color=#fffff><size=27>当前第五回合</size></color>	1
+301514	1		锋芒毕现\n<color=#fffff><size=27>当前第五回合</size></color>	1
+301515	1		全能神机\n<color=#fffff><size=27>当前第五回合</size></color>	1
+301516	8	关卡进度	{0}/1	1
+301517	8	关卡进度	{0}/3	1
+301518	8	关卡进度	{0}/5	1
+301519	8	成功！	提示	2
+301520	2		击败异聚拟态·武藏玖型	
+301521	2		下一波异聚体即将到来	
+301522	2		击败所有异聚体	
+301523	2		击败异聚拟态·极地机兵	
+301524	2		击败异聚拟态·禁卫	
 10100101	2		抵御来自未知感染体的猛烈攻势	
 10100102	2		迎战未知感染体	
 10100201	2		继续追击	

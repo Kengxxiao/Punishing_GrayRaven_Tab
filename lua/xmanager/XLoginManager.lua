@@ -647,7 +647,6 @@ XRpc.NotifyLogin = function(data)
     itemProfiler:Start()
     XDataCenter.ItemManager.InitItemData(data.ItemList)
     XDataCenter.ItemManager.InitItemRecycle(data.ItemRecycleDict)
-    XDataCenter.ItemManager.InitBatchItemRecycle(data.BatchItemRecycle)
     itemProfiler:Stop()
 
     local characterProfiler = loginProfiler:CreateChild("CharacterManager")

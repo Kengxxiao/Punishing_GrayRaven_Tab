@@ -14,12 +14,6 @@ XItemManagerCreator = function()
     local ItemTemplates = {}
     local ItemFirstGetCheckTable = {}
     local RedEnvelopeInfos = {}                      -- 红包道具使用记录
-    -- 已被回收道具，在下次打开背包时弹出信息
-    local RecycleItemList = {}
-    local RecycleItemListDefault = {
-        RecycleItems = {},
-        RewardGoodsList = {},
-    }
 
     local BuyAssetCoinBase    = 0
     local BuyAssetCoinMul    = 0
@@ -180,8 +174,6 @@ XItemManagerCreator = function()
             end
         end
 
-        RecycleItemList = XSaveTool.GetData(XItemManager.GetCookieKeyStr()) or RecycleItemListDefault
-
         XItemManager.AddItemListener()
     end
 
@@ -191,11 +183,6 @@ XItemManagerCreator = function()
         for id, itemRecycleList in pairs(list) do
             Items[id].ItemRecycleList = itemRecycleList
         end
-    end
-
-    function XItemManager.InitBatchItemRecycle(data)
-        if not data or not next(data) then return end
-        XItemManager.NotifyBatchItemRecycle(data)
     end
 
     -- 获取数据
@@ -623,6 +610,8 @@ XItemManagerCreator = function()
 
         local startTime
         local item = XItemManager.GetItem(id)
+        if not item then return leftTime end
+
         if item.Template.TimelinessType == XItemManager.TimelinessType.FromConfig then
             startTime = XTime.ParseToTimestamp(item.Template.StartTime)
         elseif item.Template.TimelinessType == XItemManager.TimelinessType.AfterGet then
@@ -1054,20 +1043,6 @@ XItemManagerCreator = function()
         end
     end
 
-    function XItemManager.GetRecycleItemList()
-        if not next(RecycleItemList.RecycleItems) then return end
-        return RecycleItemList
-    end
-
-    function XItemManager.ResetRecycleItemList()
-        RecycleItemList = {
-            RecycleItems = {},
-            RewardGoodsList = {},
-        }
-
-        XSaveTool.RemoveData(XItemManager.GetCookieKeyStr())
-    end
-
     function XItemManager.GetCookieKeyStr()
         return string.format("RecycleItemList_%s", XPlayer.Id)
     end
@@ -1076,15 +1051,8 @@ XItemManagerCreator = function()
         if not next(data.RecycleIds) then return end
 
         for _, id in pairs(data.RecycleIds) do
-            tableInsert(RecycleItemList.RecycleItems, { Id = id, Count = XDataCenter.ItemManager.GetCount(id) })
             Items[id] = nil
         end
-
-        for _, v in pairs(data.RewardGoodsList) do
-            tableInsert(RecycleItemList.RewardGoodsList, v)
-        end
-
-        XSaveTool.SaveData(XItemManager.GetCookieKeyStr(), RecycleItemList)
 
         CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
     end
@@ -1094,7 +1062,6 @@ XItemManagerCreator = function()
 
         for _, recycleInfo in pairs(data.ItemRecycleList) do
             local id = recycleInfo.Id
-            tableInsert(RecycleItemList.RecycleItems, { Id = id, Count = recycleInfo.RecycleCount })
 
             local item = Items[id]
             local itemRecycleList = item and item.ItemRecycleList
@@ -1111,12 +1078,6 @@ XItemManagerCreator = function()
                 end
             end
         end
-
-        for _, v in pairs(data.RewardGoodsList) do
-            tableInsert(RecycleItemList.RewardGoodsList, v)
-        end
-
-        XSaveTool.SaveData(XItemManager.GetCookieKeyStr(), RecycleItemList)
 
         CsXGameEventManager.Instance:Notify(XEventId.EVENT_ITEM_RECYCLE)
     end

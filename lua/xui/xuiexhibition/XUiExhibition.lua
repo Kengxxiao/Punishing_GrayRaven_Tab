@@ -33,6 +33,10 @@ function XUiExhibition:OnEnable()
     self:RefreshExhibitionInfo()
 end
 
+function XUiExhibition:OnDestroy()
+    XDataCenter.ExhibitionManager.SetCharacterInfo(XDataCenter.ExhibitionManager.GetSelfGatherRewards())
+end
+
 function XUiExhibition:AddBtnListener()
     self.BtnHelp.CallBack = function() self:OnBtnHelpClick() end
     self:RegisterClickEvent(self.BtnBack, self.OnBtnBackClick)

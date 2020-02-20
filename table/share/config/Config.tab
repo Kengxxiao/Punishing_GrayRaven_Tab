@@ -200,3 +200,4 @@ RedEnvelopeWeightReduceValue	int	2000
 RedEnvelopeMinWeightValue	int	2000
 EquipSuitPrefabNameLength	int	8
 EquipSuitPrefabMaxNum	int	8
+ItemRecycleText	string	{0} × {1}

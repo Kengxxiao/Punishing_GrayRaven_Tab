@@ -464,6 +464,12 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 750334000	AddBehavior	750334																													
 750335	AddBuff	750335																													
 750336	AddBuff	750336																													
+750337	AddBuff	750337																													
+750337000	AddBehavior	750337																													
+750338	AddBuff	750338																													
+750338000	AddBehavior	750338																													
+750339	AddBuff	750339																													
+750339000	AddBehavior	750339																													
 750340	AddBuff	750340																													
 750340000	AddBehavior	750340																													
 750341	AddBuff	750341																													
