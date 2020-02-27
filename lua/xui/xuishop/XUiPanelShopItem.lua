@@ -26,36 +26,9 @@ end
 -- auto
 -- Automatic generation of code, forbid to edit
 function XUiPanelShopItem:InitAutoScript()
-    self:AutoInitUi()
     XTool.InitUiObject(self)
     self.SpecialSoundMap = {}
     self:AutoAddListener()
-end
-
-function XUiPanelShopItem:AutoInitUi()
-    self.BtnBlock = self.Transform:Find("BtnBlock"):GetComponent("Button")
-    self.GridBuyCommon = self.Transform:Find("GameObject/GridBuyCommon")
-    self.ImgQuality = self.Transform:Find("GameObject/GridBuyCommon/ImgQuality"):GetComponent("Image")
-    self.RImgIcon = self.Transform:Find("GameObject/GridBuyCommon/RImgIcon"):GetComponent("RawImage")
-    self.RImgType = self.Transform:Find("GameObject/GridBuyCommon/RImgType"):GetComponent("RawImage")
-    self.TxtCount = self.Transform:Find("GameObject/GridBuyCommon/TxtCount"):GetComponent("Text")
-    self.TxtOwnCount = self.Transform:Find("GameObject/GridBuyCommon/TxtOwnCount"):GetComponent("Text")
-    self.PanelPrice = self.Transform:Find("GameObject/Count/PanelPrice")
-    self.PanelCostItem1 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem1")
-    self.RImgCostIcon1 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem1/RImgCostIcon1"):GetComponent("RawImage")
-    self.TxtCostCount1 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem1/TxtCostCount1"):GetComponent("Text")
-    self.PanelCostItem2 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem2")
-    self.RImgCostIcon2 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem2/RImgCostIcon2"):GetComponent("RawImage")
-    self.TxtCostCount2 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem2/TxtCostCount2"):GetComponent("Text")
-    self.PanelCostItem3 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem3")
-    self.RImgCostIcon3 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem3/RImgCostIcon3"):GetComponent("RawImage")
-    self.TxtCostCount3 = self.Transform:Find("GameObject/Count/PanelPrice/PanelCostItem3/TxtCostCount3"):GetComponent("Text")
-    self.BtnAddSelect = self.Transform:Find("GameObject/BtnAddSelect"):GetComponent("Button")
-    self.BtnMinusSelect = self.Transform:Find("GameObject/BtnMinusSelect"):GetComponent("Button")
-    self.BtnMax = self.Transform:Find("GameObject/BtnMax"):GetComponent("Button")
-    self.TxtCanBuy = self.Transform:Find("GameObject/TxtCanBuy"):GetComponent("Text")
-    self.TxtSelect = self.Transform:Find("GameObject/TxtSelect"):GetComponent("InputField")
-    self.BtnUse = self.Transform:Find("GameObject/BtnUse"):GetComponent("Button")
 end
 
 function XUiPanelShopItem:GetAutoKey(uiNode, eventName)
@@ -418,8 +391,15 @@ function XUiPanelShopItem:GetMaxCount()
         local buyCount = self.Data.TotalBuyTimes and self.Data.TotalBuyTimes or 0
         leftGoodsTimes = self.Data.BuyTimesLimit - buyCount
     end
-    self.MaxCount = math.min(leftGoodsTimes, math.min(leftShopTimes, leftSalesGoods))
+    local tmpMaxCount = math.min(leftGoodsTimes, math.min(leftShopTimes, leftSalesGoods))
+    self.MaxCount = tmpMaxCount
     self.MaxCount = XDataCenter.EquipManager.GetMaxCountOfBoxOverLimit(self.Data.RewardGoods.TemplateId,self.MaxCount,self.Data.RewardGoods.Count)
+    
+    if self.MaxCount < tmpMaxCount then
+        self.BuyHintText.text = CS.XTextManager.GetText("MaxCanBuyText")
+    else
+        self.BuyHintText.text = CS.XTextManager.GetText("CanBuyText")
+    end
 end
 
 function XUiPanelShopItem:SetCanBuyCount()

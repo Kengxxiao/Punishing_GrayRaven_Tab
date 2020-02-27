@@ -40,7 +40,7 @@ Id	Name	SkillType	CastTime	AfterTime	Animation	FinalMagicIds	Cd	DistNoTarget	Ski
 901706	重构演出者召唤术		2.7	0	Attack06			10	2				1	
 901801	重构猎手一般戳刺		1.9	0	Attack03			10	2				0	
 901802	重构猎手破隐戳刺		1.9	0	Attack03			10	4				0	
-901803	重构猎手跳砸		2.4	0	Attack02	730045		10	3				0	
+901803	重构猎手跳砸		2.4	0	Attack02	730045		10	2				0	
 901804	重构猎手渐隐戳刺		1.9	0	Attack03	730026		10	4				0	
 901901	重构镇暴兵盾猛		1.8	0	Attack01	700033		10	2				0	
 901902	重构镇暴兵横扫		1.8	0	Attack02	700033		10	2				0	

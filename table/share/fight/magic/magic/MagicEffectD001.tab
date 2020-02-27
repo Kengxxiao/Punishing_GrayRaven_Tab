@@ -1002,13 +1002,13 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 630301	AddBuff	630301																													
 630301000	AddBehavior	630301																													
 630302	AddBuff	630302																													
-630302000	ChangeAttribAdditive	34|-1200|0																													
+630302000	ChangeAttribAdditive	34|-1500|0																													
 630303	AddBuff	630303																													
-630303000	ChangeAttribAdditive	35|-1200|0																													
+630303000	ChangeAttribAdditive	35|-1500|0																													
 630304	AddBuff	630304																													
-630304000	ChangeAttribAdditive	36|-1200|0																													
+630304000	ChangeAttribAdditive	36|-1500|0																													
 630305	AddBuff	630305																													
-630305000	ChangeAttribAdditive	37|-1200|0																													
+630305000	ChangeAttribAdditive	37|-1500|0																													
 630306	AddBuff	630306																													
 630306000	AddBehavior	630306																													
 630307	AddBuff	630307																													
@@ -1217,7 +1217,7 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 631207	AddBuff	631207																													
 631207000	AddBehavior	631207																													
 631208	AddBuff	631208																													
-631209	Damage	7|0|0|1|0|800|0|0																													
+631209	Damage	7|0|0|1|0|1200|0|0																													
 631210	Damage	7|0|0|1|0|10000|0|0																													
 631211	AddBuff	631211																													
 631212	AddBuff	631212																													

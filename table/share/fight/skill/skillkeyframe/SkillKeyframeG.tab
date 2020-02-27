@@ -67,7 +67,7 @@ Id	Key[1]	Key[2]	Key[3]	Key[4]	Key[5]	Key[6]	Key[7]	Key[8]	Key[9]	Key[10]	Key[11
 902108	0|Cast|90210801	10|Magic|730011|0	0|Magic|700031|0	0|Magic|902119|0																																																																												
 902109	0|Cast|90210901	0|Magic|730012|0																																																																														
 902110	1|Magic|800043|0	1|Magic|800044|0	1|Magic|800045|0	1|Magic|800046|0	1|Magic|800047|0	1|Cast|90211006																																																																										
-902501	22|Cast|90250101	8|Cast|90250102	19|Move|60|0.15|0	999|Magic|902512|0	999|Magic|902513|0	999|Magic|902514|0	22|Cast|90250107	5|Effect|FxYubei02|HitCase|	0|Effect|FxMo1SsjkMd000004Attack01||1																																																																							
+902501	18|Cast|90250101	8|Cast|90250102	19|Move|60|0.15|0	999|Magic|902512|0	999|Magic|902513|0	999|Magic|902514|0	22|Cast|90250107	5|Effect|FxYubei02|HitCase|	0|Effect|FxMo1SsjkMd000004Attack01||1																																																																							
 902502	24|Cast|90250201	28|Cast|90250202	43|Cast|90250203	33|Cast|90250204	39|Move|90|0.1|	999|Magic|902512|0	999|Magic|902513|0	999|Magic|902514|0	42|Cast|90250209	0|Effect|FxMo1SsjkMd000004Attack02||1	11|Effect|FxYubei02|HitCase|1																																																																					
 902503	17|Cast|90250301	16|Cast|90250302	0|Effect|FxMo1SsjkMd000004Attack03||1	5|Effect|FxYubei02|HitCase|1	0|Turn|120|0.2|1																																																																											
 902504	21|Cast|90250401|90250403	0|Effect|FxMo1SsjkMd000004Attack04||1	10|Effect|FxYubei02|HitCase|1	0|Turn|120|0.2|1																																																																												

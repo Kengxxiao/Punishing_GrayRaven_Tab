@@ -81,7 +81,7 @@ DormCharacterInteractMinDistance	int	2
 DormCharacterTouchCD	float	3
 DormCharacterTouchProportion	float	0.2
 AreanShopId	int	2001
-PurYKContinueBuyDays	int	0
+PurYKContinueBuyDays	int	3
 PurChaseGiftTips	int	1
 FavorabilityDelaySecond	int	400
 AudioManagerAssetUrl	string	Assets/Product/Common/AudioManager.prefab

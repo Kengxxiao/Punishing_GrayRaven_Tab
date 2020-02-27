@@ -52,7 +52,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101661			0	5			1	0	1016610			101661000					1
 101662			0	3.7			1	0	1016620|401			101662000					1
 101663			0	-1			1	0	1016630|403			101663000					1
-101666			0	5	202		1	0	1016660|202|200|5	1016660		101666000	FxTongyongJianfang	HitCase			
+101666			0	6	202		1	0	1016660|202|200|5	1016660		101666000	FxTongyongJianfang	HitCase			
 101667			0	-1			1	0	1016670			101667000					
 101669			0	-1			1	0	1016690			101669000					
 101670			0	-1			1	0	1016700			101670000					
@@ -178,7 +178,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 102365			0	1			1	0	1023650			102365000					
 102366			0	1			1	0	1023660			102366000					
 102367			0	0.1			1	0	1023670	1023640|1023650|1023660							
-102369			0	3			1	0	1023690			102369000	FxEquipHudun	HitCase			
+102369			0	3			1	0	1023690|111|110|100|6			102369000	FxEquipHudun	HitCase			
 102370			0	-1			1	0	1023700				FxR3LifuParticle	Root			
 102371			0	3			1	0	1023710			102371000					
 102372			0	0.5			1	0	1023720				FxEquipHudunShouji	Root			

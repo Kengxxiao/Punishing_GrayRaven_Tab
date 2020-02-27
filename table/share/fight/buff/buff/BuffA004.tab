@@ -1,17 +1,12 @@
 Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	Effect	EffectJoint	TriggerMagic	TriggerInterval	TriggerOnAdd
 100100			0	-1			1	0	1001000			100100000					
-100104			0	0			1	0.05	1001040			100104000					
-100105			0	0			1	0.05	1001050			100105000					
-100106			0	0			1	0.05	1001060			100106000					
-100107			0.2	1.2			-1	0	1001070			100107000					
+100107			0	0.1			1	0	1001070	1001070		100107000					1
 100108			0	1			-1	0	1001080	1001080			FxR2LiangAttack3103	Root			
-100109			0	0			1	0.05	1001090			100109000					
 100110			0	0			1	0	1001100	1001140|1001150|1001160							
 100114			0	5	21		1	0	1001140|21|5	1001140		100114000	FxTongyongGandian	HitCase			
 100115			0	5	21		1	0	1001150|21|5	1001140|1001150		100115000	FxTongyongGandian	HitCase			
 100116			0	5	21		1	0	1001160|21|5	1001140|1001150|1001160		100116000	FxTongyongGandian	HitCase			
-100120			0	1.5			1	0	1001200	1001240			FxR2LiangBuffZhuoshao	HitCase			
-100127			0	2			1	0	1001270|15|5	1001270		100127000					
+100120			0	1.5			1	0	1001200				FxR2LiangBuffZhuoshao	HitCase			
 100128			0	-1			1	0	1001280			100128000					
 100129			0	-1			1	0	1001290	1001290			FxR2LiangBuffBeidong	HitCase			
 100130			0	0			1	0	1001300	1001290							
@@ -52,6 +47,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100192			0	-1			1	0	1001920			100192000					
 100194			0	-1			1	0	1001940			100194000					
 100196			0	10			1	0	1001960	1001960							
+100197			0	-1			1	0	1001970			100197000					
 100515			0	-1			1	0	1005150				FxR2YongyechaoBuff	HitCase			
 100516			0	0			1	0	1005160	1005150	1005150						
 100521			0	4			1	0	1005210|102|100|6	1005210		100521000	FxR2YongyechaoAttack21Buff	HitCase			

@@ -50,7 +50,7 @@ Id	Name	Shape	SizeX	SizeY	OffsetX	OffsetY	Speed	HitSpeed	Direction	TargetType	Tr
 20630124	630124-元素治疗刷新-6星元素辅助	2	5				300			3	1	1.1			-1								-1			1					0	0	0								3							4	3		0.2	0.1		630126								0	HitCase		0					0	1				
 20630214	631214-物理治疗-6星物理辅助	2	5				300			3	1	1.1			-1								-1			1					0	0	0								3							4	3		0	0		630212	630213	630216						0	HitCase		0					0	1				
 20630804	630804-红黄蓝冲击波-6星消球套	2	6				0			4		0.5			-1						FxEquipBall64Chongjibo		-1			1					0	0	0								3							4	3		0.2	0.1	206308041	630808								0	HitCase		0					0	1				
-20630907	630907-暗区域-6星暗元素套	2	3.5				0			4		5			-1	1			0.5		FxEquipDarkAtk64Anying		-1			1					0	0	0								3							4	3		0	0		630908	630912							0	HitCase		0					0	1				
+20630907	630907-暗区域-6星暗元素套	2	6				0			4		5			-1	1			0.5		FxEquipDarkAtk64Anying		-1			1					0	0	0								3							4	3		0	0		630908	630912							0	HitCase		0					0	1				
 20631007	631007-冰径伤害-6星冰元素套	2	0.5			-0.3	300			4	1	0.1			-1		FxTongyongIceShouji						-1			1					0	0	0								3							4	3		0.2	0.1		631011	631008							0	HitCase		0					0	1				
 20631107	631107-雷暴-6星雷元素套	2	3.5				0			4		0.5			-1		FxTongyongEleShouji						-1			1					0	0	0								3							4	3		0.2	0.1	206311071	631109	631108							0	HitCase		0					0	1				
 20631108	621108-雷暴特效-6星雷元素套	2	0.3				0			4		1.2			-1						FxEquipEleAtk64Leibao		-1			1					0	0	0								3							4	3		0	0										0	HitCase		0					0	1				

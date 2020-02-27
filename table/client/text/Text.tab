@@ -1117,3 +1117,6 @@ GachaIsNotEnough	奖励库存不足
 BabelTowerStageResetSucceed	关卡【{0}】清除记录成功
 BabelTowerStageWipeOutSucceed	关卡【{0}】恢复记录成功
 BabelTowerStageShowDesc	最高战略等级：{0}
+PurchaseYKExpireDes	月卡可续购
+CanBuyText	还可购买
+MaxCanBuyText	仓库位置有限，还可购买

@@ -7,10 +7,12 @@ function XUiMainLeftMid:Ctor(rootUi)
     self.RootUi = rootUi
     --ClickEvent
     self.BtnGiftExpire.CallBack = function() self:OnBtnGiftExpire() end
+    self.BtnYKExpire.CallBack = function() self:OnBtnYKExpire() end
     self.BtnAutoFight.CallBack = function() self:OnBtnAutoFight() end
     --RedPoint
     --Filter
     self:CheckFilterFunctions()
+    self.BtnYKExpire:SetNameByGroup(0,CS.XTextManager.GetText("PurchaseYKExpireDes"))
 end
 
 function XUiMainLeftMid:OnEnable()
@@ -20,6 +22,8 @@ function XUiMainLeftMid:OnEnable()
     XEventManager.AddEventListener(XEventId.EVENT_AUTO_FIGHT_REMOVE, self.OnAutoFightRemove, self)
     -- XEventManager.AddEventListener(XEventId.EVENT_LB_EXPIRE_NOTIFY, self.UpdatePurchaseGift, self)
     self:SetPurchaseGiftExpire()
+    self:UpdateYKExpire()
+
 end
 
 function XUiMainLeftMid:OnDisable()
@@ -36,6 +40,10 @@ end
 
 function XUiMainLeftMid:OnBtnGiftExpire(eventData)
     XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.LB)
+end
+
+function XUiMainLeftMid:OnBtnYKExpire(eventData)
+    XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.YK)
 end
 
 function XUiMainLeftMid:OnBtnAutoFight(eventData)
@@ -84,6 +92,12 @@ function XUiMainLeftMid:UpdatePurchaseGift(count)
             self.BtnGiftExpire:SetName(TextManager.GetText("PurchaseGiftValitimeTips2"))
         end
     end
+end
+
+-- 月卡
+function XUiMainLeftMid:UpdateYKExpire()
+    local flag = XDataCenter.PurchaseManager.CheckYKContinueBuy()
+    self.PanelYKExpire.gameObject:SetActiveEx(flag)
 end
 
 function XUiMainLeftMid:SetPurchaseGiftExpire()

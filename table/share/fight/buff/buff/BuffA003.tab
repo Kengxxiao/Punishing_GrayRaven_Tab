@@ -1,9 +1,9 @@
 Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	Effect	EffectJoint	TriggerMagic	TriggerInterval	TriggerOnAdd
 100614			0	1			1	0	1006140|1006140								
 100619			0	4			1	0	1006190|402			100619000					1
-100620			0	10			1	0	1006200	1006200		100620000	FxR2ShenweiAttack21Hudun	Root			
-100621			0	10			1	0	1006210	1006200|1006210		100621000	FxR2ShenweiAttack21Hudun	Root			
-100622			0	10			1	0	1006220	1006200|1006210|1006220		100622000	FxR2ShenweiAttack21Hudun	Root			
+100620			0	10			1	0	1006200|111|110|100|6	1006200		100620000	FxR2ShenweiAttack21Hudun	Root			
+100621			0	10			1	0	1006210|111|110|100|6	1006200|1006210		100621000	FxR2ShenweiAttack21Hudun	Root			
+100622			0	10			1	0	1006220|111|110|100|6	1006200|1006210|1006220		100622000	FxR2ShenweiAttack21Hudun	Root			
 100623			0	1	17		1	0	1006230|17|5|10			100623000	FxTongyongYunxuan	MarkCase			
 100624			0	1.5	17		1	0	1006240|17|5|10			100624000	FxTongyongYunxuan	MarkCase			
 100625			0	2	17		1	0	1006250|17|5|10			100625000	FxTongyongYunxuan	MarkCase			
@@ -24,7 +24,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 100649			0	1			1	0	1006490	1006480|1006490			FxR2ShenweiAttack33Chongdian	Root			
 100650			0	-1			1	0	1006500			100650000					
 100652			0	3	17		1	0	1006520|17|5|10			100652000	FxTongyongYunxuan	MarkCase			
-100653			0	5	102		1	0	1006530|102|100|6			100653000	FxTongyongJianfang	HitCase			
+100653			0	6	102		1	0	1006530|102|100|6			100653000	FxTongyongJianfang	HitCase			
 100654			0	-1			3	0	1006540|1006370			100654000					
 100655			0	-1			3	0	1006550|1006370			100655000					
 100656			0	-1			3	0	1006560|1006370			100656000					
@@ -192,6 +192,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 101243			0	12			1	0	1012430	1012410|1012420|1012430			FxR2LuxiyaBiaoji03	MarkCase			
 101244			0	-1			1	0	1012440			101244000					
 101246			0	1			1	0	1012460	1012460			FxR2LuxiyaBeidong	HitCase			
+101249			0	0.1			1	0	1012490	1012490							1
 101250			0	2.3			1	0	1012500|402			101250000					1
 101251			0	15			1	0	1012510	1012510		101251000					
 101252			0	15.5			1	0	1012520	1012520		101252000					
