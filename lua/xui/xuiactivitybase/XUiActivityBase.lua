@@ -21,7 +21,6 @@ function XUiActivityBase:OnAwake()
         self.BtnActivityNotice,
     }
     self.PanelType:Init(tabGroup, function(tabIndex) self:OnClickTabCallBack(tabIndex) end)
-    self.AssetPanel = XUiPanelAsset.New(self, self.PanelAsset, XDataCenter.ItemManager.ItemId.FreeGem, XDataCenter.ItemManager.ItemId.ActionPoint, XDataCenter.ItemManager.ItemId.Coin)
 
     XRedPointManager.AddRedPointEvent(self.BtnActivity, self.OnCheckNewActivities, self, { XRedPointConditions.Types.CONDITION_ACTIVITY_NEW_ACTIVITIES })
     XRedPointManager.AddRedPointEvent(self.BtnGameNotice, self.OnCheckNewGameNotices, self, { XRedPointConditions.Types.CONDITION_ACTIVITY_NEW_NOTICES })

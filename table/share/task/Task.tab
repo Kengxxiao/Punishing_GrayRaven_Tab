@@ -241,7 +241,7 @@ Id	Type	Priority	Title	Desc	Icon	PreTaskId	ActivateCondition[1]	ActivateConditio
 407	1	7610	隐藏第九章	通关隐藏剧情9-1	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					407			1	100308	407			剧情	406		18	17		1
 408	1	7600	隐藏第九章	通关隐藏剧情9-2	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					408			1	100309	408			剧情	406		18	17		1
 409	1	7590	隐藏第九章	通关隐藏剧情9-3	Assets/Product/Texture/Image/IconTask/TaskIconCommon.png					409			1	100310	409			剧情	406		18	17		1
-410	1	7580	完成第九章所有任务	完成隐藏第九章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					410			5	100311				剧情	406		18	17	1	1
+410	1	7580	完成第九章所有任务	完成隐藏第九章所有任务	Assets/Product/Texture/Image/IconTask/TaskIconFight.png					410			3	100311				剧情	406		18	17	1	1
 700	9	10000	远征	派遣1次队伍通关据点战	Assets/Product/Texture/Image/IconTask/TaskIconThread01.png					700			1	210000	700			通关						
 710	9	9970	新的地区	通关据点战2-1	Assets/Product/Texture/Image/IconTask/TaskIconThread02.png					710			1	210001	710			通关						
 720	9	9940	炮火覆盖	通关据点战3-1	Assets/Product/Texture/Image/IconTask/TaskIconThread03.png					720			1	210002	720			通关						
