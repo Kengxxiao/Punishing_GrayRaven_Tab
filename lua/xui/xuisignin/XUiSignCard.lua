@@ -42,8 +42,8 @@ function XUiSignCard:InitAddListen()
 end
 
 function XUiSignCard:OnBtnSkipClick()
-    XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.YK, false)
     XDataCenter.AutoWindowManager.StopAutoWindow()
+    XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.YK, false)
 end
 
 function XUiSignCard:OnBtnHelpClick()
@@ -51,8 +51,8 @@ function XUiSignCard:OnBtnHelpClick()
 end
 
 function XUiSignCard:OnBtnContinueClick()
-    XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.YK, false)
     XDataCenter.AutoWindowManager.StopAutoWindow()
+    XLuaUiManager.Open("UiPurchase", XPurchaseConfigs.TabsConfig.YK, false)
 end
 
 function XUiSignCard:OnBtnGetClick()

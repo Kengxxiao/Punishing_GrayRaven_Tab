@@ -237,6 +237,9 @@ Id	Name	Level[1]	Level[2]	Level[3]	Level[4]	Level[5]	Level[6]	Level[7]	Level[8]	
 831062000	AddBehavior	831062																													
 831063	AddBuff	831063																													
 831063000	AddBehavior	831063																													
+831064	AddBuff	831064																													
+831064000	AddBehavior	831064																													
+831065	SetDamage	1|0																													
 831071	AddBuff	831071																													
 831072	AddBuff	831072																													
 831072000	AddBehavior	831072																													

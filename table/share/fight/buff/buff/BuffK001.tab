@@ -125,6 +125,7 @@ Id	Name	Desc	Delay	Duration	EffectType	AffixId	Limit	Cd	Kind	Cover	Mutex	Magic	E
 831061			0	-1			1	0	8310610			831061000					
 831062			0	-1			1	0	8310620			831062000					
 831063			0	0			1	0	8310630			831063000					
+831064			0	1			1	0	8310640|8		10|15	831064000					
 831071			0	-1			1	0	8310710				FxMb1XiuMd010002Attack01Dandao	Root			
 831072			0	-1			1	0	8310720			831072000					
 831073			0	-1			1	0	8310730				FxMb1XiuMd010001Attack01Tuowei	WeaponCase1			

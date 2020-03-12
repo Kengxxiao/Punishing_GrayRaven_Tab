@@ -483,7 +483,7 @@ XNoticeManagerCreator = function()
 
 ----------------------------------------login beg----------------------------------------
     function XNoticeManager.OpenLoginNotice()
-        if not XNoticeManager.CheckNoticeInvalid(LoginNotice) then
+        if not XNoticeManager.CheckNoticeInvalid(LoginNotice, os.time()) then
             return
         end
 
@@ -530,7 +530,7 @@ XNoticeManagerCreator = function()
 
     function XNoticeManager.RequestLoginNotice(cb)
         local requestCb = function (notice)
-            local invalid = XNoticeManager.CheckNoticeInvalid(notice)
+            local invalid = XNoticeManager.CheckNoticeInvalid(notice, os.time())
             if not invalid then
                 if cb then
                     cb(invalid)
@@ -712,16 +712,17 @@ XNoticeManagerCreator = function()
         end
     end
 
-    function XNoticeManager.CheckNoticeInvalid(notice)
+    function XNoticeManager.CheckNoticeInvalid(notice, nowTime)
         if not notice then
             return false
         end
 
-        if XTime.GetServerNowTimestamp() < notice.BeginTime then
+        nowTime = nowTime or XTime.GetServerNowTimestamp()
+        if nowTime < notice.BeginTime then
             return false
         end
 
-        if XTime.GetServerNowTimestamp() > notice.EndTime then
+        if nowTime > notice.EndTime then
             return false
         end
 

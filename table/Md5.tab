@@ -91,7 +91,7 @@ Share/Equip/LevelUpTemplate/605.tab	3ac25395957b3c4f8860988e505a1491
 Share/Equip/WeaponSkill.tab	74df7168afa246dade887561f96e976b
 Share/Equip/WeaponSkillPool.tab	7af69a66dbcb5dfe8fbb4311696bc1b1
 Share/Exhibition/ExhibitionReward.tab	25dba0a64fd26dbe99a05b5e5d003c3a
-Share/Fashion/Fashion.tab	cf4489914eee531042b371d0018b5897
+Share/Fashion/Fashion.tab	2dd1ffb75daeacbe2f2799fcc532af3b
 Share/Fashion/FashionQuality.tab	54912fb5ef50e2141fe8cf747dce8d40
 Share/Fetters/FettersLevel.tab	47032989e1f417a06aa7436459f616e6
 Share/Fetters/FettersType.tab	1d7831a66934a33fe1a60def90e2fd00
@@ -123,7 +123,7 @@ Share/Fight/Behavior/Behavior/BehaviorEffectG004.tab	2705139674d3422c868a8fd2fa4
 Share/Fight/Behavior/Behavior/BehaviorEffectG005.tab	fb313ac32658b9f5cbf7faf13f5173a5
 Share/Fight/Behavior/Behavior/BehaviorEffectG006.tab	2c077d39cec518529344f210fbe6c691
 Share/Fight/Behavior/Behavior/BehaviorEffectK.tab	6a949bdfc87605935cb5784aae566532
-Share/Fight/Behavior/Behavior/BehaviorEffectK001.tab	caade62a854899d39d9f2a3872912794
+Share/Fight/Behavior/Behavior/BehaviorEffectK001.tab	6e5413bd77c66b773963b8df76a53e5b
 Share/Fight/Behavior/Behavior/BehaviorEffectK002.tab	e28d5f3c92394e83244157f9c4032188
 Share/Fight/Behavior/Behavior/BehaviorEffectZ.tab	58ae0ea96886e200d20c1e1ed1a538c4
 Share/Fight/Behavior/Behavior/BehaviorEffectZ001.tab	835513e5775234436495fe9f78d67695
@@ -235,7 +235,7 @@ Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG004.tab	87993ff01dd9c5e40bb
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG005.tab	e5481d96c09ccaebf34b2c83e859dbdb
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectG006.tab	a7af833b4ee56d46eff78811ab1af9cc
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectK.tab	d9c3c542bd96169b7b75388ba501a23d
-Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectK001.tab	340d84dd9fd1a3c9e2c6e03e0f69a1af
+Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectK001.tab	e57070048c4f4275f946587ed4a3848a
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectK002.tab	0f628b370abe1189577bcd3525cb3eef
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectZ.tab	763c241fa288180beeed1f9e12092254
 Share/Fight/Behavior/BehaviorNode/BehaviorNodeEffectZ001.tab	ab556b7620959bc5a49a60b35aa926ec
@@ -367,7 +367,7 @@ Share/Fight/Buff/Buff/BuffG004.tab	59ee05785e5cfd889baa0d1e7fdd11aa
 Share/Fight/Buff/Buff/BuffG005.tab	ff5bd68ee45a4d6528350d2c96702a86
 Share/Fight/Buff/Buff/BuffG006.tab	7aa5810b208405f65ef77b0416011f39
 Share/Fight/Buff/Buff/BuffK.tab	fc37818256012ede4349d68fdd55703d
-Share/Fight/Buff/Buff/BuffK001.tab	d4da5b2407b4883d72d1cdc5d7c486b9
+Share/Fight/Buff/Buff/BuffK001.tab	faed4754c97d5537782da50c9ef5ab14
 Share/Fight/Buff/Buff/BuffK002.tab	255bb099efc24f27685b098331443125
 Share/Fight/Buff/Buff/BuffNpcA.tab	c0035a7892d9efd52597ab7df818c98b
 Share/Fight/Buff/Buff/BuffNpcA001.tab	2b179ee31ae7378c3cf990594f4ba475
@@ -440,7 +440,7 @@ Share/Fight/Magic/Magic/MagicEffectG004.tab	bc63cb1d81e144d4f98c5e5730e4155d
 Share/Fight/Magic/Magic/MagicEffectG005.tab	54416a884eca6eda55183792abc47426
 Share/Fight/Magic/Magic/MagicEffectG006.tab	6cf33fbce88e268a7d83bbcfe47bb2ad
 Share/Fight/Magic/Magic/MagicEffectK.tab	8b2c9c6f264853249651c8f60da4f8fa
-Share/Fight/Magic/Magic/MagicEffectK001.tab	d8519384d1797c1006b32f610d06bddc
+Share/Fight/Magic/Magic/MagicEffectK001.tab	8325eca64f292957aa012e6ee0e5fc52
 Share/Fight/Magic/Magic/MagicEffectK002.tab	ab6ab4c3c733eb18f83360fda1f93fb0
 Share/Fight/Magic/Magic/MagicEffectZ.tab	42a71ea482655fe705b06b1c208149c5
 Share/Fight/Magic/Magic/MagicEffectZ001.tab	a7df99c3fdbf938b2e7b97ce11708f3d
@@ -1210,7 +1210,7 @@ Share/Fight/Npc/NpcAnimationMotion/R2KalieninaMd010011.tab	b74ca88af041c2088163c
 Share/Fight/Npc/NpcAnimationMotion/R2KalieninaMd019131.tab	0a6855490f27f3a31857d92cf4cf99ee
 Share/Fight/Npc/NpcAnimationMotion/R2LiangMd010011.tab	00f2da82c2d39fafb410770975766d47
 Share/Fight/Npc/NpcAnimationMotion/R2LifuMd010011.tab	62fa9ed69a7e5168be1bc6ff39a16105
-Share/Fight/Npc/NpcAnimationMotion/R2LuxiyaMd010011.tab	21733cfcf3bfd627f60f50a1945099bb
+Share/Fight/Npc/NpcAnimationMotion/R2LuxiyaMd010011.tab	1f8c593c5bf997119627a328def7d7cc
 Share/Fight/Npc/NpcAnimationMotion/R2ShenweiMd010011.tab	e2633fdb346208f6874db4c09f106581
 Share/Fight/Npc/NpcAnimationMotion/R2SufeiyaMd010011.tab	2e6942e982496ca1bdb0d302044348e4
 Share/Fight/Npc/NpcAnimationMotion/R2SufeiyaMd010021.tab	dbcbf4939ca6b995042aeb7c1eb199a2
@@ -1462,7 +1462,7 @@ Share/Fight/Npc/NpcBeHitState/NpcBeHitStateK.tab	3cab259acb376ed86a371ac59ccc77a
 Share/Fight/Npc/NpcBeHitState/NpcBeHitStateK001.tab	f9b3a21d0edcde5c93cf667d972161bf
 Share/Fight/Npc/NpcBeHitState/NpcBeHitStateK002.tab	f24ef7fe739412f2276be13296bd6947
 Share/Fight/Npc/NpcBeHitState/NpcBeHitStateZ999.tab	218b15cd85a828c69795257e50167958
-Share/Fight/Npc/NpcRes.tab	1f832b034581a127cfa8c0360216b6c2
+Share/Fight/Npc/NpcRes.tab	8be9c4379eda03088249529bb01b7bbf
 Share/Fight/Npc/NpcSkillBall/NpcSkillBallA.tab	3ed0db05139f0559994e53f5b0a9b66a
 Share/Fight/Npc/NpcSkillBall/NpcSkillBallA001.tab	41fdfdf4039e67566eabffd858611fe4
 Share/Fight/Npc/NpcSkillBall/NpcSkillBallA002.tab	622ec3e4b823a6a39321519c33a0c151
@@ -1528,7 +1528,7 @@ Share/Fuben/ActSection.tab	5cb33b3edec6901df3a9bf58252df109
 Share/Fuben/Arena/AreaStage.tab	ce59408c2ddc43ce81127491bb73e1bd
 Share/Fuben/Arena/ArenaActivityControl.tab	2dd3442261aca6bf178614869c2311af
 Share/Fuben/Arena/ArenaLevel.tab	3222779fb8479b70218e9ba98e02def7
-Share/Fuben/Arena/ChallengeArea.tab	d7659e0f331caad959c414ab631e1dd4
+Share/Fuben/Arena/ChallengeArea.tab	e6f85cdb5074ded1ab77cb8e1017eb32
 Share/Fuben/Arena/Mark.tab	cbd048a44a5e54c168797143a07369e6
 Share/Fuben/Arena/TeamRankReward.tab	3c11d11c6d7d66a456535d762f7f756f
 Share/Fuben/Arena/WaveRevise.tab	236547214b03a0fa1a06430d6057d77d
@@ -1633,7 +1633,7 @@ Share/Hostel/HostelRoom.tab	da6fcfd0bd6c74647a181bb23b99657a
 Share/Hostel/RoomMap.tab	5e173371d0e2a5c1b39dbab0742a94a3
 Share/Item/BuyAsset.tab	3a62b0a9d3aea882b586b610917bb023
 Share/Item/BuyAssetConfig.tab	cb5532addd33913e6a0cb453fd16ceff
-Share/Item/Item.tab	41e492e0790c3e1c2ba680683bfb6947
+Share/Item/Item.tab	a8d8addb8d58e4a9fe1286ad884a177f
 Share/Login/LoginCode.tab	82860628dc2232a4b7e367ec7f1dbaf3
 Share/Mail/Mail.tab	b0f60977af0c7d8b31e717ed7c6c4de5
 Share/Mail/MailRewardGoods.tab	40612de86a165328746d6dde965c4703
@@ -1644,15 +1644,15 @@ Share/Pay/FirstPayReward.tab	a81cd761ab3d39b3e1d321807c5fb3ec
 Share/Pay/Pay.tab	bf3b8f0a351b4271547266e7f2ab25fa
 Share/Player/Player.tab	3555bb612928020c364b298e52c9638a
 Share/Purchase/PurchaseItem.tab	031f5de6401f12e648841faf5b3acd46
-Share/Purchase/PurchasePackage.tab	5f9eba9cdbc29ae2768d355c2929607b
+Share/Purchase/PurchasePackage.tab	183dd0a63efbe3adba37222a037a9758
 Share/Rank/RankReward.tab	5dd2c52dca008abcf806284ad18cbc8f
 Share/RedEnvelope/RedEnvelope.tab	e0c5d69b72158d947accfb813f178d1f
 Share/RedEnvelope/RedEnvelopeDrop.tab	100bddd69b358cc3e27f4c2153044fb1
 Share/RedEnvelope/RedEnvelopeNpc.tab	0637f20e6a964ad8d32d866097425d36
 Share/Report/ReportTag.tab	36fd04bc5e4c384932459c4cb6793dc7
 Share/Reset/SystemResetConfig.tab	5dbed531fa4eaf44904b455e430f9085
-Share/Reward/Reward.tab	1846e57f4a9d4e4112733f7475eac38f
-Share/Reward/RewardGoods.tab	9792044b3aa87b498a60d555dae11fde
+Share/Reward/Reward.tab	34b86c158eb2ab590fe39008b1a1b46f
+Share/Reward/RewardGoods.tab	15d05e202974e4a8cd95b967eec93a47
 Share/Robot/Robot.tab	b84de424a1bd088de9ffb504650c913c
 Share/Robot/RobotPlayer.tab	e1cec58d4c1e4e064ba588bb540e0f10
 Share/SignIn/SignIn.tab	b24942f535abe70813acdba0a4257408
@@ -1692,4 +1692,4 @@ Share/Trust/TrustGameGrid.tab	8a2b77b6cd6a2ebe55399bb343a8543b
 Share/Trust/TrustGamePosition.tab	dc6d0bc6627e022fe5283cdbead06d5a
 Share/Trust/TrustGameReward.tab	fbd3c92eab1ac37eeedf4dc2555450b4
 Share/Trust/TrustGameTypeConfig.tab	a903dfae2b321332d37382453abd598a
-All	52da8aff7fb5d6d7175e8ba4e3dbaf49
+All	2ba350e50b97fc3effe94c15be6ca6a2
