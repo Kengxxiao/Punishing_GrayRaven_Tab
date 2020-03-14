@@ -1633,7 +1633,7 @@ Share/Hostel/HostelRoom.tab	da6fcfd0bd6c74647a181bb23b99657a
 Share/Hostel/RoomMap.tab	5e173371d0e2a5c1b39dbab0742a94a3
 Share/Item/BuyAsset.tab	3a62b0a9d3aea882b586b610917bb023
 Share/Item/BuyAssetConfig.tab	cb5532addd33913e6a0cb453fd16ceff
-Share/Item/Item.tab	a8d8addb8d58e4a9fe1286ad884a177f
+Share/Item/Item.tab	0e4fe15cf292ca49a51d01c4504ac3e3
 Share/Login/LoginCode.tab	82860628dc2232a4b7e367ec7f1dbaf3
 Share/Mail/Mail.tab	b0f60977af0c7d8b31e717ed7c6c4de5
 Share/Mail/MailRewardGoods.tab	40612de86a165328746d6dde965c4703
@@ -1692,4 +1692,4 @@ Share/Trust/TrustGameGrid.tab	8a2b77b6cd6a2ebe55399bb343a8543b
 Share/Trust/TrustGamePosition.tab	dc6d0bc6627e022fe5283cdbead06d5a
 Share/Trust/TrustGameReward.tab	fbd3c92eab1ac37eeedf4dc2555450b4
 Share/Trust/TrustGameTypeConfig.tab	a903dfae2b321332d37382453abd598a
-All	2ba350e50b97fc3effe94c15be6ca6a2
+All	8d341c62745dd2dea4e6cb7c666c723e
